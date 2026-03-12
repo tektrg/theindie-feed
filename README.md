@@ -81,34 +81,37 @@ Done! Your feed will be live at:
 
 ## Usage
 
-### Adding New Content
+### Adding New Content (Automated)
 
-Whenever you convert a YouTube video to markdown:
+**The feed auto-updates whenever you convert a YouTube video!**
 
-1. Markdown file saved to `/Users/trungluong/clawd/output/`
-2. Run: `npm run build`
-3. Commit and push:
-   ```bash
-   git add public/
-   git commit -m "Add new article: [title]"
-   git push
-   ```
-4. Cloudflare auto-deploys in ~1 minute
+The `youtube-to-epub-runner` skill automatically triggers `update-feed.sh` after generating markdown.
 
-### Automation (Optional)
-
-Update `youtube-to-epub-runner` to auto-regenerate feed:
-
-Add to `/Users/trungluong/clawd/skills/private/youtube-to-epub-runner/scripts/run_youtube_to_epub.sh`:
-
+Just convert a YouTube video as usual:
 ```bash
-# After generating markdown
-cd /Users/trungluong/clawd/projects/theindie-feed
-npm run build
-git add public/
-git commit -m "Auto-update feed: $(date)"
-git push
+/Users/trungluong/clawd/skills/private/youtube-to-epub-runner/scripts/run_youtube_to_epub.sh "https://youtube.com/watch?v=..."
 ```
+
+The script will:
+1. ✅ Generate markdown → `/Users/trungluong/clawd/output/`
+2. ✅ Copy to Obsidian inbox
+3. ✅ Regenerate RSS feed
+4. ✅ Commit & push to GitHub
+5. ✅ Cloudflare auto-deploys (~1 min)
+
+### Manual Update
+
+If you need to manually regenerate the feed:
+```bash
+cd ~/projects/theindie-feed
+./update-feed.sh
+```
+
+This script:
+- Regenerates feed from all markdown files in `/Users/trungluong/clawd/output/`
+- Only commits if there are actual changes
+- Auto-pushes to GitHub
+- Triggers Cloudflare deployment
 
 ## Configuration
 
