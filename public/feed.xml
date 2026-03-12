@@ -7,8 +7,55 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 10:51:02 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 10:58:47 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 7 phases of AI-driven development</title>
+      <link>https://myfeed.theindie.app/articles/The 7 phases of AI-driven development.html</link>
+      <guid>https://myfeed.theindie.app/articles/The 7 phases of AI-driven development.html</guid>
+      <pubDate>Thu, 12 Mar 2026 10:58:44 GMT</pubDate>
+      <description><![CDATA[As you work with an AI coding assistant—in this case, Claude Code—there are seven specific phases of development you should follow to ship high-quality work. While the specific implementation might va...]]></description>
+      <content:encoded><![CDATA[<h1>The Seven Phases of AI-Assisted Development</h1>
+<p>As you work with an AI coding assistant—in this case, <strong>Claude Code</strong>—there are <strong>seven</strong> specific phases of development you should follow to ship high-quality work. While the specific implementation might vary depending on whether you are using <strong>Ralph loops</strong>, <strong>GSD</strong>, or <strong>SpecKit</strong>, these phases represent a common foundation for successful AI engineering.</p>
+<p>Engineering fundamentals remain critical even in the age of artificial intelligence. Building applications that are built to last requires moving beyond &quot;vibe coding&quot; and adopting a serious, structured approach to development. These <strong>seven</strong> phases provide that structure, ensuring that your projects are robust and well-executed.</p>
+<h2>Phase One: The Idea</h2>
+<p>[0:00:57] Every project begins with an idea, which serves as the primary reason for invoking the development process. This idea can range in scale from a complete application concept to a narrow task within an existing codebase. It encompasses new features, specific bug fixes, and even code refactors. Whether the idea is massive or tiny and focused, the process remains the same.</p>
+<p>The primary goal of this phase is to eventually translate the idea into a set of tickets or a task list. These tasks might be handled by multiple AI agents working simultaneously or by a single agent completing them sequentially. Regardless of the complexity, the idea is the catalyst that sets the entire workflow in motion.</p>
+<h2>Phase Two: The Research Phase</h2>
+<p>[0:01:52] If your idea involves difficult exploration or unfamiliar territory, you should include a dedicated research phase. This is particularly important when you are working with external APIs that are not widely known, such as a complex <strong>Stripe</strong> integration. Because AI agents often explore a repository in a fresh context window, difficult-to-access information can hinder their progress.</p>
+<p>To solve this, you should create a research asset, such as a <em>research.md</em> file, to cache the findings. By documenting the research and placing it inside the repository or somewhere accessible to the agent, you provide a stable knowledge base. This prevents the agent from having to repeatedly struggle with the same external documentation or difficult-to-reach data.</p>
+<h2>Phase Three: Prototyping</h2>
+<p>[0:02:41] Prototyping is the stage where you begin to visualize what you are building, even if the exact &quot;why&quot; or &quot;how&quot; isn't fully solidified. This phase is essential for imposing your own personal taste on the outcome. For example, if you need a user interface to look or behave in a specific way, you may not know which direction to take until you see several options.</p>
+<p>A successful strategy is to have the Large Language Model (LLM) generate multiple versions of an idea on a throwaway route. This allows you to see different ways the AI thinks the project could be built. By iterating on these versions over a few sessions, you can identify the best approach early. Once you settle on a direction, you can commit that prototype to the codebase, making it available for the agent to use as a reference during the actual implementation.</p>
+<h2>Phase Four: Creating the Product Requirements Document</h2>
+<p>[0:03:25] Once you have completed the research and seen initial code through prototyping, it is time to properly describe the destination. This is the <strong>PRD</strong> (<strong>Product Requirements Document</strong>) phase. At this point, you should feel confident enough to define the end state of the project—the final result you are trying to create.</p>
+<p>While you may not yet know every single implementation decision, you should understand the basic experience the user will have and how the application will behave. The <strong>PRD</strong> acts as a document that describes the end state of where the project is going, ensuring that both you and the AI agent are aligned on the ultimate goal.</p>
+<h3>Hammering Out the Design</h3>
+<p>We are going toward a defined end state, and in the process of creating this, we really need to hammer out the design. This means we must prompt the agent to absolutely <strong>grill</strong> us, walking down every part of our decision tree. I have a <em>writer PRD skill</em> that is purpose-designed for this specific task.</p>
+<h3>Translating the PRD into an Implementation Plan</h3>
+<p>Once we have created the PRD, it is time to start breaking it down into an <strong>implementation plan</strong>. For those who are not developers or have never used a <strong>Kanban board</strong> or a <strong>Jira board</strong>, a Kanban board is simply a list of tickets that have <strong>blocking relationships</strong> between them. We are essentially describing the work that needs to be done.</p>
+<p>I use a separate skill for turning the PRD into separate issues. While we could create a single sequential plan to turn the PRD into actual code, a Kanban board allows us to <strong>parallelize</strong> the work effectively. I can find all the tickets on my board that are not currently blocked and spin up an agent for each one to resolve them.</p>
+<h3>Executing the Work with Coding Agents</h3>
+<p>The next phase is <strong>execution</strong>. This involves running a coding agent in a loop to execute all the tickets on the Kanban board. In most cases, you will not actually need to parallelize this; a sequential agent working through each ticket is usually enough. For my workflow, this is a <strong>Ralph loop</strong>, which works very effectively with this setup.</p>
+<h3>The Quality Assurance and Iteration Loop</h3>
+<p>Finally, once execution is complete and you have a finished asset to look at, you get the agent to create a <strong>QA plan</strong> for the human to test the completed work. This step usually results in more tasks being added back to the Kanban board, requiring another trip through the execution loop.</p>
+<p>You will tend to loop these last three steps—implementation planning, execution, and QA—quite a few times as you iterate toward a perfect product. In this context, <strong>QA</strong> also involves a human reading the code produced during the execution loop. This might not always be necessary, particularly if you are using a <strong>gray box architecture</strong>, but it is a valuable part of the process.</p>
+<h3>Reviewing the Seven-Phase Workflow</h3>
+<p>These <strong>seven phases</strong> represent the framework I use whenever I am working with an AI agent. We start with the <strong>idea</strong>, which could be an app, a feature, or a refactor. If there are external dependencies or difficult explore phases, we cache that knowledge in a <strong>research phase</strong>.</p>
+<p>It is important to note that this research generally only lives for the lifetime of the specific <strong>sprint</strong> or the idea we are imposing on the application. Research can go out of date or <strong>rot away</strong>, which might cause an agent to take a wrong turn later if it relies on stale information.</p>
+<h3>Prototyping and Specification</h3>
+<p>If I need to impose my personal taste, I use a <strong>prototype</strong>. I will sit with an agent in a <em>human-in-the-loop</em> setup to hash out ideas. This is not strictly for design; it can also be used for <strong>software architecture</strong> or testing an external service. This is an essential step because the PRD can be a bit too abstract; you need <strong>concrete feedback</strong> first.</p>
+<p>Next, I write the <strong>PRD</strong>, which serves as the documentation and the specification for our destination. I then turn that PRD into a Kanban board to understand the journey. I generally use <strong>GitHub issues</strong> for both the PRD and the Kanban board because it is convenient, although GitHub does not yet have a built-in way to represent <strong>blocking relationships</strong> between tickets. You might be better off using a tool like <strong>Linear</strong>, which does support those relationships.</p>
+<h3>AFK Execution and Human QA</h3>
+<p>Once the Kanban board is ready, I execute it in a loop, specifically a <strong>Ralph loop</strong>. While you could perform execution in a <em>human-in-the-loop</em> style by sitting and executing tickets individually, I find that with the right research, prototype, and Kanban setup, you can run the execution loop <strong>AFK</strong> (away from keyboard) and still achieve high-quality results.</p>
+<p>To ensure those results are solid, we enter the <strong>QA phase</strong>. The agent produces a QA plan, and then a <strong>human</strong> actually walks through and tests the completed work. This produces more tickets for the Kanban board, leading to more execution and more QA. These phases will likely grow to eight or nine as I develop more ideas, as there is currently no explicit mention of <strong>code review</strong> in this seven-phase breakdown.</p>
+<h2>Integrating Code Review</h2>
+<p>[0:08:08] While it is not explicitly listed as a separate stage in the current workflow, <em>code review</em> is a vital component of the development process. It could potentially be incorporated as part of the <em>execution flow</em> or managed within the <strong>QA phase</strong>. In any case, performing code reviews is an <em>essential step</em> for anyone dedicated to producing <em>good code</em>.</p>
+<h2>Conclusion and Resources</h2>
+<p>The structured approach described reflects a deep commitment to maintaining high standards in software development. If you also prioritize the creation of <em>good code</em>, you are encouraged to check out the <em>newsletter</em> for more detailed discussions and updates. [0:08:24] Thank you for watching, and I look forward to seeing you again very soon.</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw</title>
       <link>https://myfeed.theindie.app/articles/Builders Unscripted- Ep. 1 - Peter Steinberger, Creator of OpenClaw.html</link>
