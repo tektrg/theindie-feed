@@ -7,8 +7,58 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2026 16:46:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 17:14:23 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Powerful Alternative To Fine-Tuning</title>
+      <link>https://myfeed.theindie.app/articles/20260315-001322-www.youtube.com-watch-v-UPGB-hsAoVY.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260315-001322-www.youtube.com-watch-v-UPGB-hsAoVY.html</guid>
+      <pubDate>Sat, 14 Mar 2026 17:14:22 GMT</pubDate>
+      <description><![CDATA[The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment consta...]]></description>
+      <content:encoded><![CDATA[<h2>The AI &quot;Stilts&quot; That Outperform Frontier Models</h2>
+<p>The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment constantly. &quot;Every day, do something with AI,&quot; he advises. &quot;Don't limit yourself. Anything that you imagine, you should just try to use AI and see how far you can get with it.&quot;</p>
+<p>Fischer speaks from experience. After a decade at Google DeepMind and founding a YC startup, he is now tackling one of the biggest challenges in the field: creating AI that can improve itself. His company, <strong>Poetiq</strong>, is building what he calls &quot;stilts&quot; for large language models (LLMs), enabling them to perform better than their base capabilities.</p>
+<h2>What Is Poetiq?</h2>
+<p>Poetiq is building a <strong>recursively self-improving</strong> system for LLMs. This concept is often described as the &quot;holy grail of AI,&quot; where the model actively makes itself smarter. Fischer explains that Poetiq’s core insight was finding a way to achieve this far more quickly and cheaply than other methods.</p>
+<p>Most approaches to self-improvement require training a new LLM from scratch, a process that costs hundreds of millions of dollars and takes months. This leaves developers vulnerable to being outpaced by the next major model release from labs like OpenAI, Anthropic, or Google.</p>
+<h2>The Fine-Tuning Trap</h2>
+<p>For startups, the cycle of model releases creates a significant challenge. Committing to a fine-tuning process involves a massive investment that can be rendered obsolete overnight. As the podcast host noted, &quot;The second you're in fine-tuning land, I'm spending millions to hundreds of millions of dollars, and then... I just lit it on fire because the next version of the frontier model comes out, and I'll never catch up.&quot;</p>
+<p>Poetiq aims to solve this problem. Instead of competing with frontier models, Poetiq builds on top of them. &quot;They're the ones that we're using the stilts, you know, building stilts to stand on top of,&quot; Fischer says. This approach ensures that as foundation models improve, so do the systems built with Poetiq.</p>
+<h2>“Stilts” and Harnesses for LLMs</h2>
+<p>Poetiq provides what are often called <strong>harnesses</strong> or agentic systems. These systems are automatically generated for a specific problem and sit on top of one or more language models to consistently outperform them.</p>
+<p>The process for a company without Poetiq would typically be:</p>
+<ol>
+<li>Collect a large dataset with tens of thousands of examples.</li>
+<li>Spend a significant amount of money fine-tuning the best available model.</li>
+<li>End up with a system that is soon outperformed by a newer, better foundation model.</li>
+</ol>
+<p>With Poetiq, a user gets a harness that is compatible with new models as they are released. This allows them to get a performance bump without starting over, effectively vaccinating them against &quot;the bitter lesson&quot; of being outpaced by larger players.</p>
+<h2>Taking the Top Spot on Benchmarks</h2>
+<p>Poetiq has demonstrated its capabilities on several challenging AI benchmarks.</p>
+<h3>Beating the Best on ARC-AGI</h3>
+<p>When Poetiq first emerged from stealth, it targeted the <strong>ARC-AGI</strong> V2 benchmark, a difficult reasoning challenge. At the time, Google's Gemini 3 DeepThink held the top spot on the leaderboard with 45%. Just two days later, Poetiq released its results, achieving 54%—a nine-percentage-point improvement.</p>
+<p>Notably, Poetiq achieved this by building on top of Gemini 3 Pro, a cheaper model. Their solution cost only $32 per problem, compared to the over $70 cost of the DeepThink system. &quot;That's what it's like to have stilts,&quot; the host remarked. &quot;Whatever model comes out, you can be taller than that one with Poetiq.&quot;</p>
+<h3>Conquering Humanity’s Last Exam</h3>
+<p>More recently, Poetiq announced state-of-the-art results on <strong>Humanity's Last Exam</strong>, a set of 2,500 extremely difficult questions designed by experts to be challenging even for PhDs in their respective fields.</p>
+<p>Poetiq achieved a score of 55%, surpassing the previous record of 53.1% set by Anthropic's Claude Opus 4.6. Fischer confirmed that the optimization cost for this achievement was less than $100,000—a fraction of the hundreds of millions required for training a foundation model. This result was delivered by a team of just seven people.</p>
+<h2>How the Meta-System Works</h2>
+<p>The core technology behind these results is the <strong>Poetiq meta-system</strong>, a recursively self-improving system that generates other systems to solve hard problems. These generated systems, or harnesses, are a combination of code, prompts, and data built on top of one or more LLMs.</p>
+<p>While a person could theoretically build these harnesses by hand, it requires immense effort and insight. The Poetiq meta-system automates this optimization process, making it faster and cheaper. It can even take an existing agent built by a startup and optimize its prompts, reasoning strategies, or other components to improve performance.</p>
+<h3>A New Paradigm Beyond RL</h3>
+<p>This approach represents a different paradigm from reinforcement learning (RL). Each new foundation model has its own performance S-curve, and the Poetiq meta-system has its own as well. As both the underlying models and the meta-system improve, the performance ceiling keeps rising, pushing closer to AGI.</p>
+<h3>Automating Prompt and Context Engineering</h3>
+<p>Many developers spend countless hours on prompt and context engineering. Poetiq's system automates this by letting the meta-system analyze the data and determine the best strategy.</p>
+<p>&quot;We're kind of outsourcing that to the AI itself,&quot; Fischer explains. &quot;It's the AI's job to understand the dataset and figure out where are the failure modes and where are the kind of robust reasoning strategies that the agent could use.&quot;</p>
+<p>The results can be surprising. For the ARC-AGI benchmark, the system generated simple, non-human-like examples, one of which was technically incorrect. However, the team left it as is, trusting the process. Fischer notes that while automated prompt optimization offers some gains, the biggest improvements come from reasoning strategies written in code, which can take performance from 5% to 95% on hard problems.</p>
+<h2>From YC Founder to AI Researcher</h2>
+<p>Fischer's journey into AI was not a direct one. His first YC startup, which ported mobile apps across platforms, was acquired by Google over a decade ago. The acquisition gave him an opportunity to reflect on his next steps.</p>
+<p>&quot;I realized that the problems that I was most excited about were really actually AI and robotics,&quot; he says. He joined a new AI robotics team in Google Research, despite his background being in computer security and systems building. He quickly discovered that &quot;hardware is hard&quot; and pivoted his focus entirely to machine learning research, which he pursued for a decade at Google and then DeepMind.</p>
+<h2>How to Get Started with Poetiq</h2>
+<p>Poetiq is currently offering early access to its platform. Startups and companies with difficult problems that they haven't been able to solve with existing methods are encouraged to sign up at <strong>poetiq.ai</strong>.</p>
+<p>&quot;If you're at the top of humanity's last exam, then that's pretty big,&quot; the host concluded. &quot;The stilts basically let any agentic company become state-of-the-art.&quot;</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)</title>
       <link>https://myfeed.theindie.app/articles/20260314-234558-www.youtube.com-watch-v-dQw4w9WgXcQ.html</link>
