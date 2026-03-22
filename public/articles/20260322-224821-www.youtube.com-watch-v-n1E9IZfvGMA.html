@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwarkesh Patel - Dario Amodei — “We are near the end of the exponential” - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="A conversation with Dario Amodei, CEO of Anthropic.
+
+🎥 Watch on YouTube: Dario Amodei — “We are near the end of the exponential”
+
+---
+
+
+
+Three years ago, the path of AI development seemed to be a ste...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Dwarkesh Patel - Dario Amodei — “We are near the end of the exponential”</h1>
+      <time datetime="2026-03-22T15:49:37.606Z">
+        March 22, 2026
+      </time>
+      <h2>We Are Near the End of the Exponential</h2>
+<p><em>A conversation with Dario Amodei, CEO of Anthropic.</em></p>
+<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=n1E9IZfvGMA">Dario Amodei — “We are near the end of the exponential”</a></p>
+<hr>
+<h3>What Exactly Are We Scaling?</h3>
+<p>Three years ago, the path of AI development seemed to be a steady exponential march. Today, that exponential continues, moving models from the intelligence of a smart high school student to a college student, and now, beginning to tackle professional and PhD-level work. The frontier is uneven, but the progress is roughly as expected. What is most surprising is the lack of public recognition of how close we are to the end of this exponential growth phase.</p>
+<p>The scaling hypothesis for AI has evolved. While pre-training scaling laws are now well-understood, the story for Reinforcement Learning (RL) scaling is less clear to the public. Is it for teaching skills or meta-learning? The core hypothesis remains consistent with what could be called the <strong>&quot;Big Blob of Compute Hypothesis&quot;</strong>. This idea posits that clever new methods are less important than a few key ingredients:</p>
+<ul>
+<li>Raw compute</li>
+<li>Quantity of data</li>
+<li>Quality and broad distribution of data</li>
+<li>Training duration</li>
+<li>A scalable objective function (like pre-training or RL objectives)</li>
+<li>Numerical stability (normalization and conditioning)</li>
+</ul>
+<p>This framework holds true. We are now observing the same scaling phenomena in <strong>Reinforcement Learning (RL)</strong> that were first seen in pre-training. Models improve in a log-linear fashion with the duration of training on tasks like math competitions, and this applies across a wide variety of RL tasks.</p>
+<p>However, this raises a puzzle articulated by thinkers like Rich Sutton, the author of <strong>&quot;The Bitter Lesson&quot;</strong>. If we are building a true human-like learning algorithm, why does it require billions of dollars in data and compute to learn tasks like using Excel or a web browser? The fact that we must explicitly build these skills using RL environments suggests we might be scaling the wrong thing.</p>
+<p>The distinction between RL and pre-training may be a red herring. Just as GPT-1, trained on a narrow distribution of text, did not generalize well, early RL models trained on narrow tasks also fail to generalize. The key to generalization, as seen in the transition from GPT-1 to GPT-2, was training on a massive, diverse dataset scraped from the internet. The same principle applies to RL: as we move from simple tasks like math competitions to a broader range of tasks, we will see increasing generalization.</p>
+<p>There is, however, a genuine sample efficiency difference between models and humans. Models require trillions of tokens of data, whereas humans learn from far less. The answer may be that model pre-training is not analogous to human learning, but rather sits somewhere between human learning and <strong>human evolution</strong>. Our brains are not blank slates; they have priors built by evolution. Language models start as random weights, making them much more like blank slates.</p>
+<p>Therefore, we can think of pre-training and RL as a process between evolution and on-the-spot human learning. The <strong>in-context learning</strong> that models perform within a large context window is then analogous to something between long-term and short-term human learning. This creates a hierarchy:</p>
+<ol>
+<li>Human Evolution</li>
+<li>AI Pre-training / RL</li>
+<li>Long-term Human Learning</li>
+<li>AI In-context Learning</li>
+<li>Short-term Human Learning</li>
+</ol>
+<p>Even if in-context learning can provide a form of sample-efficient learning, the goal of building broad RL environments is not to teach every specific skill. Instead, similar to pre-training, the goal is to train on a wide variety of tasks to achieve <strong>generalization</strong>.</p>
+<h3>Is Continual Learning Necessary?</h3>
+<p>To make a concrete prediction, it’s highly probable (around 90% confidence) that within ten years, we will have what can be described as a &quot;country of geniuses in a data center.&quot; The primary uncertainty lies not in tasks that can be easily verified, like coding, but in tasks that are harder to evaluate, such as planning a mission to Mars, making a fundamental scientific discovery, or writing a great novel. Even so, there is a reliable path to achieving these capabilities.</p>
+<p>For software engineering specifically, we are already almost there. This claim can be broken down into a spectrum of achievements:</p>
+<ol>
+<li>90% of code lines are written by the model. (This has largely been achieved in some environments).</li>
+<li>100% of code lines are written by the model.</li>
+<li>90% of end-to-end software engineering tasks (including compiling, testing, and writing memos) are done by models.</li>
+<li>100% of today's software engineering tasks are done by models.</li>
+<li>A significant reduction in demand for human software engineers.</li>
+</ol>
+<p>Even when models can perform 100% of today's tasks, it doesn't mean software engineers become obsolete. They will move to higher-level roles, managing and directing AI systems. We are proceeding through this spectrum at a rapid pace.</p>
+<p>One might ask why we don't yet see a renaissance of new software and features if these productivity gains are so significant. The world and jobs are complex. However, the effect is already happening very fast. Anthropic's own revenue growth—from zero to \$100 million in 2023, to \$1 billion in 2024, and projected to \$9-10 billion in 2025—demonstrates a curve of extremely fast, though not instantaneous, economic diffusion.</p>
+<p>This middle world, where adoption is incredibly fast but still takes time due to factors like enterprise change management, security permissions, and rewriting legacy systems, is the most likely scenario. An AI will diffuse much faster than previous technologies, but not infinitely fast.</p>
+<p>The argument that AI diffusion is hampered by factors that don't apply to onboarding humans (who require a more complex integration process) is valid. However, real-world friction exists. For a large enterprise to adopt a tool like Claude Code, it must go through legal review, security compliance, and procurement. Leaders need to understand its value and plan a rollout for thousands of developers. These processes take time, even when expedited.</p>
+<p>This brings us to the question of <strong>on-the-job learning</strong>. For many jobs, a human employee's value increases over months as they build context and understanding. If AI models cannot replicate this, their impact could be limited.</p>
+<p>However, we are taking a different path. With coding agents, the lack of &quot;on-the-job learning&quot; is not a primary complaint. The entire codebase can be fed into the context window, effectively giving the model the equivalent of months of a human learning the environment. The model does its &quot;learning on the job&quot; instantly within its context.</p>
+<p>While some studies have shown mixed results on developer productivity with AI tools, internal results at companies like Anthropic are unambiguous. Under immense commercial pressure, these tools provide a significant productivity boost. The competitive advantage from using better coding models is becoming a notable factor, creating a snowball effect as the technology improves. This is all part of a &quot;soft takeoff&quot; driven by steep, smooth exponentials.</p>
+<p>So, do we need to solve <strong>continual learning</strong>—the ability of a single model instance to learn over time? It's possible we can get most of the way to a &quot;country of geniuses in a data center&quot; without it, simply through pre-training, RL generalization, and massive context windows. A million-token context can encompass days or weeks of human-equivalent learning time. This existing paradigm may be enough to generate trillions of dollars of revenue and have massive societal impact.</p>
+<p>Nonetheless, continual learning is being actively worked on. One path is simply making context windows longer, which is largely an engineering and inference problem, not a fundamental research barrier. Another is developing new methods. There's a good chance this problem will be solved within the next year or two, but it may not even be a prerequisite for transformative AI.</p>
+<h3>If AGI is Imminent, Why Not Buy More Compute?</h3>
+<p>Given the prediction that a &quot;country of geniuses in a data center&quot; could arrive in one to three years, why would a company like Anthropic practice &quot;responsible compute scaling&quot; rather than buying as much compute as physically possible?</p>
+<p>The answer lies in the uncertainty of <strong>economic diffusion</strong>. While the technology may be ready in a few years, the revenue from it is not guaranteed to arrive immediately. Buying data centers is a massive upfront cost. If you buy \$1 trillion of compute for 2027 based on a 10x annual revenue growth projection, and that growth is only 5x, or is delayed by a single year, the company would face bankruptcy.</p>
+<p>The strategy is to balance risk. We buy enough compute to capture a strong upside scenario without courting financial ruin if timelines shift slightly. &quot;Responsible&quot; scaling isn't about the absolute amount of spending, but about being thoughtful and avoiding a &quot;YOLO&quot; approach. It's about understanding the risks and building a business with margins that can buffer against prediction errors.</p>
+<p>But if you had an actual country of geniuses, why not have them start their own companies to generate revenue? Why not have them work on AI research to accelerate progress further? This is the core of the dilemma. The gains are real, but a competitor buying a trillion dollars of compute and getting their timing wrong goes bankrupt. We are buying a hell of a lot of compute—comparable to the biggest players—but not a reckless amount. If the &quot;country of geniuses&quot; arrives in mid-2028 instead of mid-2027, a company that bet everything on the earlier date is gone.</p>
+<p>The entire AI industry is on a 3x-per-year compute build-out trajectory. At this rate, the industry as a whole will be spending multiple trillions of dollars a year by 2028 or 2029, which aligns with the scale of the predicted transformation.</p>
+<h3>How Will AI Labs Actually Make Profit?</h3>
+<p>If AGI will unlock unprecedented progress, shouldn't AI labs reinvest every dollar instead of targeting profitability? Profitability in this field is a strange concept. It's less a measure of deliberate investment strategy and more an outcome of demand prediction.</p>
+<p>A simplified model for an AI lab's economics is:</p>
+<ul>
+<li>You buy data centers years in advance.</li>
+<li>You allocate some compute to training (R&amp;D) and some to inference (serving customers).</li>
+<li>Inference has high gross margins (e.g., &gt;50%).</li>
+</ul>
+<p>If you correctly predict demand, the revenue from inference can cover the cost of both inference and training compute, leading to profit. If you <em>underestimate</em> demand, you become highly profitable because a larger portion of your fixed compute cost is dedicated to revenue-generating inference. If you <em>overestimate</em> demand, you become unprofitable, as more compute sits idle or is used for R&amp;D that isn't immediately paid for.</p>
+<p>Therefore, predicting profit in 2028 is an attempt to forecast this balance. It doesn't mean a halt to reinvestment. The industry is currently in an exponential scale-up phase where each new model is vastly more expensive to train than the last, leading to losses even if individual models are profitable. This will eventually level out as the growth of compute spending is capped by the growth of the overall economy.</p>
+<p>In the long run, the AI industry will likely resemble the cloud computing market: an oligopoly of a few large players. The enormous capital and expertise required to enter creates a high barrier. Unlike cloud services, AI models are differentiated products, with different styles and capabilities, which should allow for healthier margins than in a purely commoditized market. Competition will exist, but it won't necessarily drive profits to zero.</p>
+<h3>Why Can’t China and America Both Have a Country of Geniuses in a Datacenter?</h3>
+<p>Why shouldn't both the US and China have access to this transformative technology? The primary concern is national security in an offense-dominant world. If either side can easily destroy the other, it creates a situation more dangerous than the nuclear stalemate. Instability could arise if both sides believe they have a winning advantage in a conflict.</p>
+<p>A second major concern is that authoritarian governments will use powerful AI to oppress their own people, creating high-tech totalitarian states that are very difficult to displace. While diffusion of technology is generally good, the initial conditions for the post-AGI world order matter immensely. The goal should be for democratic nations, representing pro-human values, to hold a stronger hand when the new rules of the road are negotiated.</p>
+<p>This doesn't mean a single country should dictate terms. Rather, a coalition of democracies should have more leverage. We are not imagining a single &quot;fulcrum moment,&quot; but a series of critical windows where AI confers a large advantage. During these moments, negotiations will occur, and it's vital that classical liberal democracy has a strong position.</p>
+<p>This doesn't necessarily mean the West must adopt an interventionist policy to overthrow all autocracies. However, it does mean recognizing that in the age of AGI, authoritarianism becomes a graver threat. There is hope that, just as industrialization made feudalism obsolete, AGI might create conditions that make authoritarian structures unsustainable. It could be that the technology itself, or technologies built upon it, can create an equilibrium where it becomes infeasible for governments to deny their people private access to AI's benefits.</p>
+<p>For now, this translates to a policy of restricting access to the core components of AGI—the advanced chips and data centers—from authoritarian regimes. While this forgoes some positive-sum economic benefits from trade, the stakes are higher than mere economic growth. The things that will be hard to achieve in an AI-driven world are not economic value, but the fair distribution of benefits and the preservation of political freedom. Policy must focus on these harder problems.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
