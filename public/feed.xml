@@ -7,8 +7,84 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2026 08:34:05 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 08:36:39 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pragmatic Engineer - Building WhatsApp with Jean Lee</title>
+      <link>https://myfeed.theindie.app/articles/20260322-153532-www.youtube.com-watch-v-5Kn32cIWPSY.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260322-153532-www.youtube.com-watch-v-5Kn32cIWPSY.html</guid>
+      <pubDate>Sun, 22 Mar 2026 08:36:38 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: Building WhatsApp with Jean Lee
+
+---
+
+This article is based on an interview with Gene Lee, employee #19 at WhatsApp.
+
+
+
+Gene Lee joined WhatsApp as the 19th engineer when the comp...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=5Kn32cIWPSY">Building WhatsApp with Jean Lee</a></p>
+<hr>
+<p>This article is based on an interview with Gene Lee, employee #19 at WhatsApp.</p>
+<h2>Introduction</h2>
+<p>Gene Lee joined WhatsApp as the 19th engineer when the company was largely unknown in the US. She witnessed its explosive growth to 450 million users and its eventual acquisition by Facebook for $19 billion.</p>
+<p>In this conversation, she shares insights into how WhatsApp, with a lean team of just 30 engineers, successfully built and maintained a product across eight different platforms. Key topics include why the founders rejected almost every feature request for years and how the team operated effectively without code reviews, stand-ups, or sprint planning. This provides a look into how a small team with minimal process built one of history's most successful products.</p>
+<h3>Early years in tech</h3>
+<p>My journey into tech began after moving to San Francisco in 1999. Growing up, I didn't consider engineering as a career, but I was fascinated by computers and the magic of writing a few lines of code to make things happen. The feeling of creating and debugging something until it worked was joyous.</p>
+<p>I decided to pursue coding in college after speaking with professionals from various industries. The people in tech were the only ones who seemed genuinely excited about their work, full of hope for the future and proud of what they were building. This inspired me to study computer science at USC.</p>
+<p>My first coding internship was at a three-person startup that aggregated videos from various sharing websites, a concept similar to how some AI platforms now allow switching between different models. I loved the ownership, speed, and immediate impact I could have. However, I wished for more mentorship, as we were all recent graduates.</p>
+<p>Seeking more structure and training, I joined IBM for my first full-time job. The mentorship from seasoned veterans was excellent, but I missed the small-team environment and the ability to see the direct impact of my work. The corporate structure felt large, with many meetings and processes, making it difficult to understand my contribution to the company's overall goals. After two years, I decided to take some time off to explore what I truly wanted in a career.</p>
+<h3>Becoming engineer #19 at WhatsApp</h3>
+<p>After taking time off, I knew I wanted to return to a startup environment, but one that was more stable and offered a balance of autonomy and mentorship. In 2012, I came across a job posting for WhatsApp on LinkedIn. At the time, WhatsApp was still in its early stages, primarily popular in Europe and India, and not well-known in the United States.</p>
+<p>The interview process was less about typical coding challenges and more about system design and product-level discussions. I remember talking to Jan Koum, one of the founders, about different messaging apps, including the popular Korean app KakaoTalk.</p>
+<p>The decision to join was sealed by the speed and decisiveness of the founders. While another company was taking weeks to produce a written offer, Jan called me a few days after the interview and asked, &quot;What would it take for you to take the offer right now?&quot; I signed the offer the next day. It was a lesson in how quickly startups need to move.</p>
+<p>I became engineer #19. What was interesting was the age of the team. Besides a few of us in our 20s, the majority of the engineers were over 30, many with a decade of experience from places like Yahoo. This was unusual for a startup at the time but reflected the founders' strategy of hiring experienced professionals from their network and through targeted outreach.</p>
+<h3>WhatsApp’s unique ways of working</h3>
+<h4>WhatsApp’s tech stack</h4>
+<p>Our tech stack was unique; we supported seven different client platforms, which is something most startups avoid. We had native apps for iPhone (Objective-C), Android (Java), Blackberry, and Windows Phone. We also supported Nokia's S40 and S60 platforms (Symbian C++) and later had a web client, bringing the total to eight.</p>
+<p>The backend was built on <strong>Erlang</strong>, an exotic choice for a startup but perfect for our needs. Erlang was developed for telecommunications and is exceptionally robust at handling concurrency. This was crucial for an international app that had to run 24/7 without downtime. One of our engineers described it as &quot;trying to maintain the engine of an airplane while it's flying.&quot; The core engineering challenge was managing the massive influx of messages, especially during peak times like New Year's Eve when everyone sends messages simultaneously.</p>
+<h4>Why not cross-platform?</h4>
+<p>We built native apps for each platform instead of using a cross-platform framework. Jan Koum often said, &quot;I want a grandma in a remote countryside to be able to use our app.&quot; This meant our app needed to be lightweight, simple, and functional on any device, not just the latest high-end smartphone. Building natively allowed us to optimize performance and reliability for each specific platform, ensuring a quality experience for all users.</p>
+<h4>A &quot;lean&quot; culture</h4>
+<p>WhatsApp was the ultimate lean company. When we were acquired, we had under 30 engineers serving 450 million monthly active users. Our internal processes reflected this.</p>
+<p>We didn't have formal <strong>code reviews</strong>. The only time my code was reviewed was my very first commit, when Brian Acton, the other co-founder, looked it over. After that, trust was implicit. Engineers could read each other's commits in the git log and would discuss issues in WhatsApp groups. Everyone was trusted to merge and push their code to production.</p>
+<p>We also didn't do much canarying, feature flagging, or A/B testing in the way most companies do now. Our primary safety net was rigorous <strong>dogfooding</strong>. Before any release, the entire team would use the new version internally. Jan Koum, who listed his title as &quot;Chief QA Officer,&quot; was relentless in trying to break the app and would personally report any bugs he found.</p>
+<h4>The power of &quot;No&quot;</h4>
+<p>Jan said &quot;no&quot; to feature requests about 99% of the time. As a young engineer, this was confusing. Other messaging apps were bloated with features, and I wondered why we weren't building the latest, coolest things. When I joined, we didn't have group chats, voice calls, or video calls.</p>
+<p>This minimalism was by design. The priority was always the quality of the core experience—ensuring that a &quot;grandma in a remote town&quot; could use our app reliably at any moment. Features were held back for a long time until the team was 100% confident in their quality and performance.</p>
+<h3>Countdown displays and outages</h3>
+<p>In the office, we had a display that counted the number of days since the last outage. This was the one metric we all paid attention to. It was a constant, visible reminder of our top priority: reliability. When an outage did happen, discussions occurred in server group chats to identify and resolve the issue. There were no formal, blameless post-mortems or extensive documentation. The process was simple: if there was a problem, you talked to people and you fixed it.</p>
+<h3>Why WhatsApp won</h3>
+<p>WhatsApp's success in the early years came down to a few factors. The network effect was significant—the more friends who used it, the more essential it became. But more importantly, while competitors chased shiny new features, WhatsApp remained intentionally focused on its core function.</p>
+<p>For example, we worked on video calling for a very long time, long before we shipped it. We used it internally and with our families in a beta group to ensure the quality was perfect before releasing it to the public. This was the opposite of the &quot;launch early and iterate&quot; mantra. At WhatsApp, the approach was to polish a feature until you had full conviction, and only then release it.</p>
+<p>The company was also incredibly disciplined with its finances. For a time, WhatsApp charged a $1 annual subscription fee in certain countries. This was not just a revenue stream; it was a deliberate tactic to suppress growth so it remained manageable. That $1 was enough to cover all server costs, salaries, and SMS registration fees, making the company roughly break-even. We had funding from Sequoia, but we never touched it.</p>
+<h3>The Facebook acquisition</h3>
+<p>In 2014, two years after I joined, news broke that Facebook was acquiring WhatsApp for $19 billion. I remember being at my desk with noise-canceling headphones on when our head of business frantically gathered everyone into our single meeting room. We were told to turn off our phones, and my first thought was that we were going out of business.</p>
+<p>When Jan and Brian announced the acquisition, the room was a mix of shock and excitement. I remember trying to do the math in my head to figure out what my shares were worth. Soon after, Mark Zuckerberg walked in. He was very charismatic and assured everyone that nothing was going to change, a message that helped calm the team's nerves about being absorbed into a corporate giant.</p>
+<h3>Life after acquisition</h3>
+<p>The changes were slow at first. We stayed in our own office for a couple of years before moving to the Facebook headquarters in Menlo Park. It was a gradual merging of cultures, as we started using Facebook's HR and recruiting services.</p>
+<p>After the acquisition, the $1 subscription fee was dropped, and growth accelerated significantly. We started hiring more, and with more people came more ambitious projects and features. While WhatsApp remained its own organization within Facebook, the environment slowly shifted from a scrappy startup to a big tech company. There was a turning point about a year and a half in when I realized I no longer knew everyone's name.</p>
+<h4>Transitioning to management</h4>
+<p>I never asked to become a manager. It happened when a teammate asked our manager if they could report to me, as I was already their tech lead. To learn the role, I read extensively about leadership, communication, and psychology. I focused on understanding each individual on my team—their motivations, strengths, and areas where they wanted to grow—and tried to create an environment where they could flourish.</p>
+<p>A key part of the manager role at a large company is navigating <strong>performance reviews</strong>. I learned that as a middle manager, I had no direct control over promotions or bonuses. My role was to be a lawyer for my team, making a strong case for them during calibration meetings with other managers.</p>
+<p>The engineers who had the easiest time getting recognized were not just great at their jobs; they were also the ones who made their work visible. They posted about their launches and learnings in internal forums, engaged in discussions, and built a reputation. In a large organization, visibility isn't vanity; it's how the system works.</p>
+<h3>After Facebook</h3>
+<p>After eight years, I was feeling burned out and decided to take a break. I challenged myself to do nothing for six months, which I spent reading, exercising, and on meditation retreats. Afterward, I explored founding or joining another startup and talked to over 100 founders.</p>
+<p>Ultimately, I realized my passion wasn't in starting another company but in mentoring and helping others succeed. I enjoyed creating a supportive culture where people could learn and thrive. This led me to start sharing my learnings publicly on YouTube and other platforms.</p>
+<h3>AI’s impact on engineering</h3>
+<p>With AI, we're seeing the emergence of smaller, more efficient teams. It reminds me of WhatsApp. We were efficient because we were small, not because of AI. I believe that today's AI-native startups can learn a lot from WhatsApp's focus. With so many new tools and startups, it's easy to get distracted.</p>
+<p>WhatsApp succeeded because its goal was clear. Jan Koum said no to distractions, which allowed the team to march forward with a clear purpose. If you're building something, have clear goals. Otherwise, you can work very hard and end up nowhere.</p>
+<p>A key lesson from WhatsApp is the power of <strong>empowering employees</strong>. When you give people responsibility, they step up. Brian's initial deep code review with me was a way to challenge my thinking, and afterward, he trusted me completely. This sense of ownership is crucial. We should be careful not to &quot;over-baby&quot; engineers. If you hire smart, ambitious people, give them the space to grow.</p>
+<h3>Book recommendations</h3>
+<ul>
+<li><em><strong>What Color Is Your Parachute?</strong></em>: Excellent for understanding your strengths, goals, and priorities in your career and life.</li>
+<li><em><strong>Surrounded by Idiots</strong></em>: A great read for learning how to communicate and work effectively with different personality types.</li>
+<li><em><strong>A Random Walk Down Wall Street</strong></em>: A foundational book for anyone who wants to understand how to manage their money.</li>
+<li><em><strong>The Hunger Games</strong></em>: One of my favorite fiction series. I love the story of a woman overcoming her challenges and winning against all odds.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The all-in-one workspace for your notes, tasks, wikis, and databases.</title>
       <link>https://myfeed.theindie.app/articles/20260322-153336-www.notion.so-2e6efe69362a80c5b56ce23848b60d6b-v-2e6efe69362a80caaea1000cb5acaa5.html</link>
