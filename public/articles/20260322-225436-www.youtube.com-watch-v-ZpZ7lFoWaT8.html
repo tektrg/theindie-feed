@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work
+
+---
+
+
+
+In a recent Latent Space podcast, host Alessio, founder of Kernel Labs, a...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Latent Space - Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work</h1>
+      <time datetime="2026-03-22T15:55:41.128Z">
+        March 22, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=ZpZ7lFoWaT8">Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work</a></p>
+<hr>
+<h2>The Future is Local: How Claude Cowork Turns Your Mac into an AI Teammate</h2>
+<p>In a recent Latent Space podcast, host Alessio, founder of Kernel Labs, and Swixs, editor of Latent Space, were joined by Felix, a technical lead at Anthropic, to discuss the philosophy and architecture behind <strong>Claude Cowork</strong>. They explored why giving an AI agent its own sandboxed computer on your local machine is a game-changer for productivity and how this approach differs from purely cloud-based AI assistants.</p>
+<h3>What is Claude Cowork?</h3>
+<p>Felix introduced Claude Cowork as a user-friendly version of <strong>Claude Code</strong>, Anthropic's terminal-based coding assistant. However, &quot;user-friendly&quot; in this context doesn't mean less powerful. The core idea was to bring the agentic capabilities of Claude Code to a broader audience, including those not comfortable with the command line.</p>
+<p>Cowork runs Claude Code within a <strong>Virtual Machine (VM)</strong> on the user's computer. This provides a safe, sandboxed environment with guardrails, making it convenient for people who don't want to open a terminal to get work done. It's designed to handle tasks beyond coding, such as managing expenses, organizing a knowledge base, or filling out receipts.</p>
+<h3>Why &quot;User-Friendly&quot; Can Be More Powerful</h3>
+<p>An interesting parallel was drawn to the evolution of Visual Studio Code. Initially perceived as a &quot;dumbed-down&quot; version of the full Visual Studio, VS Code ultimately became dominant due to its hackability and extensibility. Users could easily hook it into any workflow and build extensions for it.</p>
+<p>Similarly, Claude Cowork is a <strong>superset</strong> of Claude Code's capabilities. Its convenience and deep integration with tools like Claude in Chrome make it exceptionally powerful. The value isn't just in the base model but in how easily users can map the tool onto their specific jobs and extend its functionality.</p>
+<h3>Building Products When Execution is Cheap</h3>
+<p>Anthropic's product development has shifted in the new AI paradigm. Where previously a product manager might spend weeks on customer research before drafting a spec, the current philosophy is &quot;let's build all the candidates.&quot;</p>
+<blockquote>
+<p>&quot;We internally had Anthropic up now probably much closer to the point we're like don't even write a memo just like build like let's build all the candidates very quickly like let's just build all of them and then pick the best ones.&quot;</p>
+</blockquote>
+<p>Execution has become so inexpensive that the team can create multiple prototypes to address a problem and then choose the most effective solution. The 10-day development time for Cowork was possible because it leveraged many pre-existing components and prototypes developed over the last year and a half.</p>
+<h3>The Unsung Hero: Your Local Computer</h3>
+<p>A core, contrarian thesis behind Cowork is the immense value of the local computer. Felix argued that Silicon Valley generally undervalues the local machine, yet most power users still rely on MacBooks over Chromebooks or iPads.</p>
+<p>For an AI entity to be &quot;tremendously useful,&quot; it needs access to the same tools the user has. A purely cloud-based agent is often hamstrung, requiring complex permissions and <code>OAuth</code> grants for every tool. By running locally, Cowork can more seamlessly interact with a user's files and environment. This led to a key architectural decision:</p>
+<ul>
+<li><strong>The VM as Claude's Personal Computer:</strong> Cowork runs in a lightweight Linux VM. This is the most powerful part of its architecture, providing safety, security, and the freedom for Claude to install necessary tools like Python or Node.js without interfering with the host system. It's analogous to giving a human employee their own computer to work on.</li>
+<li><strong>Deep Integration:</strong> Cowork is tightly integrated with Claude in Chrome. This allows it to interact with websites and web apps without needing dozens of brittle API connectors, which Felix noted many people are giving up on.</li>
+<li><strong>System Prompt Steering:</strong> Much of Cowork's specialized behavior for knowledge work comes from carefully crafted system prompts that guide the model on how to best use its tools for a given task.</li>
+</ul>
+<h3>From Manual Clicks to Automated Skills</h3>
+<p>The conversation highlighted several powerful workflows that demonstrate the progression from manual work to full automation.</p>
+<h4>Demo: Automating YouTube Uploads</h4>
+<p>Swixs showcased how he uses Cowork to manage the Latent Space YouTube channel.</p>
+<ol>
+<li><strong>Manual Start:</strong> Initially, he manually downloaded recordings from Zoom and uploaded them to YouTube, a laborious, click-heavy process.</li>
+<li><strong>Task Automation:</strong> He then instructed Cowork to perform the downloads and uploads.</li>
+<li><strong>Intelligent Automation:</strong> The process became more advanced, with Cowork analyzing video frames to automatically generate relevant titles for the uploads.</li>
+<li><strong>Self-Generated Skills:</strong> Finally, he asked Cowork to wrap the entire repetitive workflow into a <strong>skill</strong>. Cowork generated the skill file itself, which can now be reused with a single command. He even had it split the master skill into smaller, modular skills for more granular control.</li>
+</ol>
+<p>This progression—from manual task to automated workflow to reusable, agent-generated skill—is the key to unlocking Cowork's potential.</p>
+<h4>Other Use Cases:</h4>
+<ul>
+<li><strong>Bug-Fixing:</strong> Felix described a workflow where Cowork scans internal crash reports, identifies fixable bugs, and then spins up other Claude instances to write the code to fix them.</li>
+<li><strong>Desktop Organization:</strong> A viral use case was &quot;clean up your desktop.&quot; While simple, it's a relatable task that demonstrates the agent's ability to interact with the local file system to organize files thematically.</li>
+<li><strong>Tax Preparation:</strong> Felix mentioned using Cowork for his taxes, feeding it financial documents to handle the complex knowledge work involved.</li>
+</ul>
+<h3>The Future of Cowork: Multiplayer and Portability</h3>
+<p>The discussion also touched on what's next for agentic workflows.</p>
+<h4>Skills Portability</h4>
+<p>A major topic was the portability of skills. Since skills are just markdown files, they are inherently portable. Anthropic uses a container format called <strong>plugins</strong>, which are GitHub repos containing collections of skills, available for both Cowork and Claude Code.</p>
+<p>However, a challenge remains in making skills both portable and deeply personal. A &quot;book a flight&quot; skill, for example, has universal logic (find the cheapest flight) but also personal preferences (seat choice, preferred airports). The industry has yet to solve how to best structure these private and public components.</p>
+<h4>Multiplayer Agents</h4>
+<p>What does a &quot;multiplayer mode&quot; for Cowork look like? The hosts envisioned a future where agents could collaborate.</p>
+<ul>
+<li>An agent could ask a colleague's agent for a file or a status update.</li>
+<li>Agents could share skills with each other automatically. One idea floated was using Bluetooth to detect nearby coworkers and share relevant skills for a common task.</li>
+</ul>
+<p>The path to this future could involve building custom communication protocols, or it could be as simple as giving each agent its own Slack handle and email address, allowing them to communicate using the same tools humans do.</p>
+<h3>Why Shipping Chromium with Electron Still Matters</h3>
+<p>Felix, who was instrumental in the creation of <strong>Electron</strong>, provided insight into why shipping a full version of the <strong>Chromium</strong> browser engine is crucial for desktop apps like Cowork and Slack.</p>
+<p>While using an operating system's native web view seems more efficient, it's a trap. OS web views are often buggy and are only updated with major OS releases. If an app-breaking rendering bug exists, the only recourse is to tell customers to buy a new computer, which is unacceptable.</p>
+<p>Chromium, in contrast, is a &quot;marvel of engineering.&quot; It provides a stable, reliable, and constantly updated rendering engine that works across countless hardware and software configurations. Electron's magic lies in making it easy to package and ship Chromium, giving developers the control they need to deliver a reliable experience to all users.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
