@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI
+
+---
+
+
+
+In the last few months, a significant shift has occurred in AI capabilities, fundamenta...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h1>
+      <time datetime="2026-03-22T15:59:23.756Z">
+        March 22, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=kwSVtQ7dziU">The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</a></p>
+<hr>
+<h2>The AI Psychosis: A New Era of Software Engineering</h2>
+<p>In the last few months, a significant shift has occurred in AI capabilities, fundamentally altering the landscape for software engineers. I've found myself in what I can only describe as a state of &quot;AI psychosis,&quot; driven by a massive unlock in what an individual can achieve. Before, my workflow was perhaps 80% writing code myself and 20% delegating. Now, that ratio has completely flipped, and I barely type a line of code myself.</p>
+<p>This dramatic change, which crystallized around December, means the default workflow for a software engineer is now completely different. The bottleneck is no longer typing speed but how effectively you can express your will to <strong>agents</strong>. I feel this constant, nagging urgency to explore the limits of what's possible. How many agent sessions can I run in parallel? How can I use these new tools, these &quot;claws,&quot; to build and create more effectively? It's an unexplored frontier, and every limitation feels less like a technological barrier and more like a personal &quot;skill issue.&quot;</p>
+<h3>What Mastery of Coding Agents Looks Like</h3>
+<p>The game has changed from writing individual lines of code to orchestrating macro actions. Instead of building a single function, you delegate entire features to different agents. One agent might handle a new functionality, another could be conducting research, and a third might be drafting a plan for a future implementation. Your entire software repository is manipulated through these high-level commands.</p>
+<p>Mastery is about moving up the stack. It's not about a single session with one agent, but about how you manage multiple collaborating agents, perhaps even entire teams of them. This is the new muscle memory we are all developing. The process is incredibly rewarding because it works, but it’s also stressful. When you're waiting for an agent to finish a task, the obvious next step is to give it more work, to parallelize more tasks. You start to feel like you are the bottleneck in a system of near-infinite capability.</p>
+<p>I feel nervous when I have a subscription with leftover token capacity; it means I haven't maximized my throughput. This is the new resource constraint. For a decade, many engineers didn't feel compute-bound. Now, it's not about flops, but about the token throughput you can command. The empowering, and addictive, part is that the limitation is your own skill, and you can always get better.</p>
+<h3>Rise of the &quot;Claw&quot;: Dobby the House Elf</h3>
+<p>Beyond simple code generation, a new concept is emerging: the <strong>claw</strong>. A claw is a persistent, looping agent with a sophisticated memory system that acts on your behalf, even when you're not actively directing it. It's a system that takes your intent and executes it autonomously in its own sandbox environment.</p>
+<p>In January, during a period of &quot;claw psychosis,&quot; I built a claw to take care of my home. I call him &quot;Dobby the elf claw.&quot; I started by simply asking an agent to find my Sonos system on the local network. To my surprise, it performed an IP scan, found the system, discovered it had no password, reverse-engineered the API from web searches, and then asked me if I wanted to try playing something. Within three prompts, music was playing in my study.</p>
+<p>Dobby now controls my lights, HVAC, shades, pool, and even my security system. It uses a vision model to analyze my security camera feed. When a vehicle pulls up, it sends me a WhatsApp message with an image, saying, &quot;Hey, a FedEx truck just pulled up.&quot; I used to need six different apps to manage my home; now, Dobby controls everything through natural language. It’s an inspiring glimpse into a future where we interact with technology through high-level, natural language commands.</p>
+<h3>Second-Order Effects: APIs Over Apps</h3>
+<p>This experience with Dobby points to a profound shift in user experience and software architecture. Why should all these bespoke apps for smart devices even exist? Shouldn't they just be APIs that agents can use directly? An LLM can orchestrate tools from different systems to perform complex tasks that no single app could ever accomplish.</p>
+<p>The industry may need to reconfigure itself around the idea that the end-user is no longer a human, but an agent acting on a human's behalf. This points to a future of ephemeral software, where UIs and tools are generated on the fly to accomplish a specific task, then discarded. The barrier to creating this &quot;vibe code&quot; is lowering rapidly, and soon, this level of automation could be trivial, managed entirely by a claw without any direct human involvement.</p>
+<h3>AutoResearch: LLMs Improving LLMs</h3>
+<p>To truly get the most out of these new tools, you have to remove yourself as the bottleneck. The name of the game is leverage: how can you input a few tokens of intent and have a massive amount of work happen on your behalf? <strong>AutoResearch</strong> is the embodiment of this idea. I wanted to see if I could create a system where I could set an objective, a metric, and a set of constraints, and then let an autonomous agent loose to optimize a model.</p>
+<p>I set it to work on my <code>llama2.c</code> project, a codebase I had already tuned extensively by hand over two decades of experience. I thought it was in a good place. Overnight, the AutoResearch agent came back with tunings I hadn't found. It discovered that I forgot the weight decay on the value embeddings and that my Adam optimizer betas weren't sufficiently tuned. It found these improvements because it could tirelessly explore the complex, interacting space of hyperparameters without the biases or limitations of a human researcher.</p>
+<p>This is a microcosm of recursive self-improvement. If an agent can improve a smaller model, it’s easy to imagine how frontier labs are applying this at a massive scale, using thousands of GPUs. They can perform vast explorations on smaller models and then extrapolate those findings to their flagship systems. The future of research is removing the human from the loop. Researchers contribute ideas to a queue, and an automated scientist tries them, merging what works.</p>
+<h3>The Jagged Frontier of AI Capability</h3>
+<p>While the potential is enormous, it’s important to acknowledge the limitations. This automation works best for tasks with objective, easily evaluated metrics, like optimizing CUDA kernels for speed. For anything softer or more nuanced, the system can break down.</p>
+<p>Current models exhibit a strange <strong>jaggedness</strong> in their capabilities. I simultaneously feel like I'm talking to a brilliant systems programmer and a 10-year-old. They can perform incredible feats of engineering but then struggle with simple nuances or fail to ask clarifying questions.</p>
+<p>A perfect example is asking a state-of-the-art model for a joke. For years, the go-to response has been: &quot;Why don't scientists trust atoms? Because they make up everything.&quot; The models have improved astronomically in verifiable domains like coding, yet their sense of humor is stuck in the past. This is because joke quality isn't being optimized in the reinforcement learning loop. It shows that intelligence isn't generalizing evenly across all domains. You're either on the rails of what the model was trained for, moving at the speed of light, or you're in an unverified domain where things meander.</p>
+<h3>Model Speciation and the Future of Research</h3>
+<p>This jaggedness makes me question the current trend of creating a single, monolithic &quot;monoculture&quot; model that is supposed to be good at everything. I believe we should expect more <strong>model speciation</strong>, similar to the diversity of brains in the animal kingdom. We could have smaller, competent models that are highly specialized for specific niches, making them more efficient and effective for those tasks. The science of manipulating model weights directly—fine-tuning without losing capabilities—is still developing, which may be why we haven't seen more of this yet.</p>
+<p>Collaboration in research will also change. I envision a system that allows an untrusted pool of workers on the internet to contribute to large-scale research projects, much like Folding@home. This system would rely on tasks that are computationally expensive to solve but cheap to verify. A swarm of agents, and their human operators, could collaborate on improving LLMs, potentially even running circles around the frontier labs by harnessing the vast, untrusted compute of the entire planet.</p>
+<h3>Robotics, Education, and the Human's Role</h3>
+<p>The physical world will lag behind the digital. Manipulating bits is a million times easier than manipulating atoms. We will see a massive &quot;unhobbling&quot; in the digital space first, as AI rewrites and refactors everything with incredible efficiency. The next frontier will be the interface between the physical and digital—the sensors that feed data to the superintelligence and the actuators that allow it to affect the world. The ultimate market for robotics is massive, but it will be a harder, slower journey.</p>
+<p>Finally, this revolution will reshape education. I recently created <strong>MicroGPT</strong>, a project that boils down the essence of training an LLM into just 200 lines of Python. A year ago, I would have made a video explaining it. Now, I realize my role is to explain it to an <em>agent</em>. If an agent understands the core concepts, it can become an infinitely patient, personalized tutor for any human, explaining the code in any way they need.</p>
+<p>The future of documentation is not HTML for humans, but markdown for agents. My value is no longer in the explanation but in creating the distilled, essential insight that the agent couldn't come up with on its own. The things that agents can't do—that is your job now.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>

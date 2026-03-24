@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vercel - Introducing Chat SDK - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: Introducing Chat SDK
+
+---
+
+Hey everyone, my name is Malta. I&#039;m the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.
+
+Figur...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Vercel - Introducing Chat SDK</h1>
+      <time datetime="2026-03-24T03:00:14.309Z">
+        March 24, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=7-zJPwJC11Q">Introducing Chat SDK</a></p>
+<hr>
+<p>Hey everyone, my name is Malta. I'm the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.</p>
+<p>Figure out how to multiply your output.</p>
+<p>And seeing what people have built continues to blow us away. Almost every team built an agent to handle complex works and most of them are Slack bots that anyone can use. But we ran into a problem. Everyone was doing the same integration work over and over again.</p>
+<p>Someone would build an agent, then they had to figure out the complexity of Slack and that's harder than it seems.</p>
+<p>You need to understand threats and reactions, how to post matches, how to handle state. Then someone would ask, &quot;Hey, can you wire up that agent's GitHub?&quot; and the process would start all over again with GitHub's APIs with the same logic but different platform code.</p>
+<p>We quickly learned that that chat API seems similar on the surface but completely different under the hood.</p>
+<p>Slack supports native streaming. You can stream tokens directly into a message as the LLM generates them. Discord you have to post edit post edit. GitHub no streaming at all. It's like as modals Discord doesn't. Microsoft Teams gives you read only reactions. These aren't quirks. the fundamental differences in how each platform works. So even for a single simple agent, you end up with a huge amount of logic just to make it usable in different tools. It's a nightmare and it isn't just a versell problem. Every company is going to have to figure out how to deliver their agents across the surfaces where work already happens. That means chat, co- reviewview, issue tracking, and more. AI SDK solves a similar problem for model providers. You write the code once and handles all the API differences whether you're calling GPT, Cloud or Gemini.</p>
+<p>Chat SDK does the same thing for interactive agents. It's a single API for agent interactions across platforms like Slack, GitHub, Linear, Discord, Telegram, WhatsApp, and more. You build the agent and Chat SDK will deliver it to users in the apps they already use.</p>
+<p>So Fernando has been building VZero background agents for the last few weeks and he's going to tell you why chat SDK was a critical part for that stack.</p>
+<p>When I started building VZR background agents, my goal was to let you tag VZR from Slack to open pull requests. I wanted a general purpose coding agent that can run in the background in any codebase with any language. So I started building and I sent the first version of the vzero slack app to my friends. And the first thing they asked was can I also use this in linear issues and can I tag it from a GitHub PR comment. It reminded me of the first time I shipped a mobile app when people started asking if they can also use it on web. It became clear that Vzero has to work everywhere. Expectations have changed.</p>
+<p>So I had to make a choice. Do we build VZO background agents platform by platform or could we build it once with a unified API across every platform like a React Native for chat agents?</p>
+<p>Well, it turns out that I've spent years building crossplatform apps with React Native. This problem is nothing new to me and that's where the chat SDK came in. With the chat SDK, I can focus on building vzero background agents and spend less time worrying about each platform's unique APIs. So, how does this look under the hood? Here's Matt to show you more.</p>
+<p>Hi everyone. Just like Fernando, let's start with Slack. I mention my bot and I get a very simple hello world response.</p>
+<p>Gamechanging, I know. And if you look at the code, you can see how easy it was for me to create this bot. All I had to do was create a new chat instance and add an onmention listener and post hello world back to the thread. That's it. But we don't want developers building plain text bots. We want rich native experiences that take full advantage of each platform. And developers love JSX.</p>
+<p>So, we brought JSX to the chat SDK. Now, you build with components just like you're used to. Let's add two buttons.</p>
+<p>So, down here, you can see I'm going to change our hello world message to a hello world card with a continue button and a cancel button. We're also going to add an action listener that will say the user's full name clicked continue when we click it.</p>
+<p>Back in Slack, I'm going to mention my bot again.</p>
+<p>And as you can expect, we get exactly what we built. The components render natively. I click continue, and the bot handles the action instantly.</p>
+<p>But now, here's where things get interesting. What if I want the same exact experience on Discord?</p>
+<p>I add the Discord adapter. That's it.</p>
+<p>Now, if I go back to my Discord channel, I can mention my bot and the same exact UI renders natively in Discord. Zero code changes to support a whole new platform. This is cool, but let's talk agents. So, here's a simple agent I built using the AI SDK. And agents need streaming. With the chat SDK, streaming is trivial. I create a stream and post it to the thread. That's it. I didn't have to look up how Slack handles streaming or how Discord handles partial updates. I used one API. And back in Slack, if I mention the bot, we'll see it stream back its response to us natively.</p>
+<p>But why stop there? What if I want to send direct messages to my agent on platforms like WhatsApp or Telegram?</p>
+<p>With the chat SDK, it's easy. I add a onirect message listener and the adapter needed.</p>
+<p>Now, anyone who DMs the agent gets the same experience.</p>
+<p>If I open WhatsApp on the web and say, &quot;Hi, how are you doing?&quot;</p>
+<p>We'll see the agent respond to our direct message using the agent we built.</p>
+<p>Now that we've built an agent, why don't we open up a pull request? But before we do that, what if the same agent I chatted with on WhatsApp could review my code? All it takes is the GitHub adapter. I come here, I add the GitHub adapter, and I've brought my agent to a whole new platform. If I open up GitHub and I look at this pull request, I can mention the agent in the comments and it will respond with the same direct message listener we built before. Slack, Discord, WhatsApp, Telegram, GitHub.</p>
+<p>Take a second to think about how different these APIs are. But with one file and a few lines of code, we brought our agent to all of them. With the chat SDK, you build aic experiences once and deploy them everywhere with a single API. Head to chat-d.dev to check out the docs and templates.</p>
+<p>Thanks for listening and I'm excited to see what you build.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
