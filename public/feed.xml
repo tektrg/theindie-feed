@@ -7,8 +7,47 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 06:23:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 06:24:15 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</title>
+      <link>https://myfeed.theindie.app/articles/20260326-132339-www.youtube.com-watch-v-efUt__S_AjY.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260326-132339-www.youtube.com-watch-v-efUt__S_AjY.html</guid>
+      <pubDate>Thu, 26 Mar 2026 06:24:14 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: The AI Code Slop: Risk or Opportunity?
+
+---
+
+
+
+There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world whe...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=efUt__S_AjY">The AI Code Slop: Risk or Opportunity?</a></p>
+<hr>
+<h2>The State of Software: Navigating the &quot;SaaS-pocalypse&quot;</h2>
+<p>There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world where AI agents can simply &quot;vibe code&quot; everything. While recent market reactions have been frantic, it is important to distinguish between short-term noise and long-term structural shifts.</p>
+<p>While AI is undoubtedly &quot;eating the world,&quot; the idea that every enterprise will abandon their robust software stacks to build bespoke internal tools is likely an overstatement.</p>
+<h3>The Myth of Vibe Coding in the Enterprise</h3>
+<p>Much of the current anxiety stems from projecting the behavior of five-person technical startups onto Fortune 100 companies. While it is impressive that a small team can use AI to build a CRM over a weekend, large enterprises face entirely different challenges.</p>
+<p>Change management at a massive, regulated institution like Bank of America—dealing with security, compliance, and competing internal workflows—is not something that can be replaced by a quickly coded application. Furthermore, there is a fundamental difference between engineers who prioritize &quot;artisanal&quot; code craftsmanship and those who view code merely as a utility to ship products. As AI accelerates, the latter group will likely feel empowered, while the former may find themselves increasingly unhappy in large-scale corporate environments.</p>
+<h3>The Realities of AI-Driven Growth</h3>
+<p>Despite the hype, two key metrics suggest that the AI revolution is not just noise:</p>
+<ul>
+<li><strong>Revenue Velocity:</strong> We are seeing unprecedented speed to massive revenue. While companies like Adobe or SAP took decades to reach $10 billion in revenue, modern AI labs are scaling at a pace never before seen in the history of software.</li>
+<li><strong>The Token Cost Collapse:</strong> The cost of running high-level models has plummeted. In just 11 months, the cost of a million tokens for top-tier models dropped by nearly 90x. This massive decrease in cost, coupled with skyrocketing usage, indicates that AI is delivering genuine, compounding business value.</li>
+</ul>
+<h3>Market Cap and the Future of Tech</h3>
+<p>Tech’s share of the global economy is expanding. In 2005, tech represented roughly 4% of GDP; today, that figure is closer to 12%. As AI transforms various services and roles into software-driven processes, some projections suggest tech could account for 15% to 30% of GDP by 2035.</p>
+<p>This shift has profound implications for market valuation. The &quot;head and torso&quot; of the market continue to aggregate the vast majority of value. While there is a belief that more startups will reach $100 billion valuations due to the increased surface area of technology, the power law remains in effect: the winners will become increasingly massive.</p>
+<h3>Strategic Advice for Founders: Durability and Exits</h3>
+<p>The current pace of technological change is compressing what would typically be a decade-long displacement cycle into a year or two. This volatility creates a unique challenge for founders regarding the durability of their business.</p>
+<ul>
+<li><strong>Build Bundles:</strong> One of the best ways to defend a business is to transition from a single-product tool to a <strong>multi-product bundle</strong>. By cross-selling multiple aspects of a workflow into an organization, a company becomes a default part of the infrastructure rather than a modular, easily replaceable feature.</li>
+<li><strong>Logical Exit Planning:</strong> Many companies hit a &quot;high-water mark&quot; of value before inevitably crashing as competitive landscapes shift. Founders should normalize the conversation around exits. Prescheduling board meetings once or twice a year to discuss exit strategy removes the emotion from the process, allowing leadership to make objective decisions about whether to sell or stay the course.</li>
+</ul>
+<p>As we move forward, the most successful companies will be those that identify their specific <strong>control points</strong>—whether through networks, ecosystems, or non-trivial hardware integration—rather than relying on a narrow feature set that could be rendered obsolete by the next wave of model improvements. While the market is currently experiencing a &quot;month of hype,&quot; the underlying transformation of software remains one of the most exciting developments in the history of the industry.</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</title>
       <link>https://myfeed.theindie.app/articles/20260326-132247-www.youtube.com-watch-v-WHWAYiY_RnQ.html</link>
