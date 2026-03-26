@@ -7,8 +7,54 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:00:34 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 06:23:22 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</title>
+      <link>https://myfeed.theindie.app/articles/20260326-132247-www.youtube.com-watch-v-WHWAYiY_RnQ.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260326-132247-www.youtube.com-watch-v-WHWAYiY_RnQ.html</guid>
+      <pubDate>Thu, 26 Mar 2026 06:23:20 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski
+
+---
+
+This article summarizes a conversation between Mati Staniszewski, co-founder and CEO of 11 Labs, and the hos...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=WHWAYiY_RnQ">No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</a></p>
+<hr>
+<p>This article summarizes a conversation between Mati Staniszewski, co-founder and CEO of <strong>11 Labs</strong>, and the hosts of the <em>No Priors</em> podcast regarding the evolution of voice technology, the company’s rapid growth, and the future of human-computer interaction.</p>
+<hr>
+<h2>11 Labs: Growth and Scale</h2>
+<p>Founded in 2022, 11 Labs has achieved significant scale in just three years, reaching a $300 million run rate. The company operates as a &quot;remote-first&quot; organization with 350 employees distributed across global hubs, including London, New York, Warsaw, San Francisco, Tokyo, and Brazil.</p>
+<p>The company’s revenue is split roughly 50/50 between its self-serve creative platform—which boasts over 5 million monthly active users—and its enterprise-grade agent platform. Currently, 11 Labs serves thousands of enterprise clients, ranging from Fortune 500 companies to high-growth AI startups.</p>
+<h2>Foundational Vision: The Future of Voice</h2>
+<p>The inspiration for 11 Labs stemmed from the founders' upbringing in Poland, where foreign films were historically dubbed by a single, flat-toned narrator regardless of the character's gender or emotion. Recognizing this as a broken experience, the founders sought to use technology to enable high-quality, emotionally resonant, and multilingual content delivery.</p>
+<p>11 Labs defines its mission as solving the way humans interact with technology. The company builds <strong>foundational audio models</strong> that allow for human-like speech synthesis, advanced speech understanding, and complex orchestration. Their vision extends beyond static content creation to interactive, real-time voice interfaces that could eventually replace traditional keyboard-and-screen interactions.</p>
+<h2>Research and Product Sequencing</h2>
+<p>11 Labs structures its development by creating &quot;labs&quot; around specific problems, combining research, engineering, and operations. This approach allows them to sequence development effectively:</p>
+<ul>
+<li><strong>The Voice Lab:</strong> Focused on high-quality narration and dubbing.</li>
+<li><strong>The Agent Lab:</strong> Focused on combining Large Language Models (LLMs), speech-to-text, and text-to-speech to create functional, low-latency agents.</li>
+</ul>
+<p>Mati emphasizes that while many companies struggle to balance research and product, 11 Labs treats research as a &quot;head start&quot; (typically a 6–12 month advantage) while focusing simultaneously on building a robust product layer. They prioritize internal research to ensure they remain ahead of competitors, noting that architectural breakthroughs—not just scale—are the primary driver of quality in the audio space.</p>
+<h2>Enterprise Applications and Agent Platforms</h2>
+<p>Beyond creative tools, 11 Labs is seeing massive traction in &quot;agentic&quot; customer support. Use cases are shifting from reactive, problem-solving bots to proactive assistants that guide users through e-commerce journeys or government services.</p>
+<p>Key high-impact areas include:</p>
+<ul>
+<li><strong>Immersive Media:</strong> Integrating voices into gaming (e.g., bringing Darth Vader into <em>Fortnite</em>) and interactive storytelling.</li>
+<li><strong>Education:</strong> Personal tutors capable of providing on-demand instruction. 11 Labs has partnered with organizations like <em>chess.com</em> and <em>Masterclass</em> to allow users to interact with expert voices in training environments.</li>
+<li><strong>Government Transformation:</strong> Working with ministries to create &quot;agentic governments&quot; that automate public services and information distribution for citizens.</li>
+</ul>
+<h2>The Future of Voice Technology</h2>
+<p>Mati believes the industry is moving toward a world where voice is the primary interface for technology. While he acknowledges the rise of &quot;AI companions,&quot; he is more personally excited about &quot;super-assistant&quot; models—systems that manage daily logistics, environment control, and information, acting as a &quot;Jarvis-like&quot; utility.</p>
+<p>However, he highlights that the future of education and communication will likely remain a hybrid model:</p>
+<ul>
+<li><strong>AI Tutoring:</strong> Useful for personalized, on-demand knowledge acquisition.</li>
+<li><strong>Human-to-Human Interaction:</strong> Essential for social development, coaching, and emotional guidance.</li>
+</ul>
+<p>As the industry matures, Mati expects open-source models to improve, potentially commoditizing base-level audio quality. In response, 11 Labs is doubling down on &quot;controllability,&quot; orchestration, and the integration of emotional context to maintain its edge in the ecosystem.</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</title>
       <link>https://myfeed.theindie.app/articles/20260326-050014-www.youtube.com-watch-v-9wfFH4TLIcQ.html</link>
