@@ -7,8 +7,56 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 06:24:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 06:25:09 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</title>
+      <link>https://myfeed.theindie.app/articles/20260326-132439-www.youtube.com-watch-v-qQAhK2EWw4I.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260326-132439-www.youtube.com-watch-v-qQAhK2EWw4I.html</guid>
+      <pubDate>Thu, 26 Mar 2026 06:25:08 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: No Priors Live: Is the SaaS "Bear Thesis" Overblown? MongoDB CEO Answers
+
+---
+
+
+
+The software industry is currently navigating a pivotal moment. Since 2022, investors and customer...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=qQAhK2EWw4I">No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</a></p>
+<hr>
+<h2>The Future of the Software Stack</h2>
+<p>The software industry is currently navigating a pivotal moment. Since 2022, investors and customers alike have questioned the future of the traditional software stack. As technology cycles—from mainframes to the internet, mobile, and now AI—evolve, the core question remains: what gives a company a lasting <strong>moat</strong>?</p>
+<p>While many focus on customer relationships or distribution as their competitive advantage, true durability comes from being a <strong>platform</strong>. Because products can be easily replaced, platforms that integrate multiple offerings and embed themselves into the fabric of enterprise infrastructure are the ones that survive and scale to over $10 billion in revenue.</p>
+<h2>Why Platforms, Not Products, Are Sticky</h2>
+<p>In the enterprise world, &quot;tools are for fools.&quot; When a company positions itself as a mere product, it remains vulnerable to disruption and replacement. Conversely, platforms are sticky because they represent a thoughtful, architectural decision by the customer.</p>
+<h3>The Platform Advantage</h3>
+<ul>
+<li><strong>Unified Ecosystems:</strong> A platform offers multiple products that work in unison, increasing the difficulty of replacement.</li>
+<li><strong>Deep Integration:</strong> Large institutions (banks, healthcare providers, manufacturers) rely on complex integrations with existing legacy systems. A platform becomes the foundational fabric for these organizations, making it impractical to rip out.</li>
+<li><strong>The &quot;Denominator&quot; Effect:</strong> Selling into a massive enterprise, such as a bank with 9,000 applications, creates a long-term growth opportunity. Once a platform supports even a fraction of those applications, the level of integration and trust makes the relationship highly durable.</li>
+</ul>
+<h2>Vibe Coding and the Reality of Enterprise Demand</h2>
+<p>While &quot;vibe coding&quot; and AI-assisted development have increased application velocity, they do not automatically solve for the requirements of large-scale enterprises. Fortune 500 companies still demand:</p>
+<ul>
+<li><strong>Regulatory Compliance:</strong> Meeting strict security, governance, and audit requirements.</li>
+<li><strong>Resiliency:</strong> Ensuring applications can run across multiple clouds or within &quot;air-gapped&quot; networks.</li>
+<li><strong>Go-to-Market Maturity:</strong> Beyond just building an app, a company must have the sales and support infrastructure to navigate complex institutional buying cycles.</li>
+</ul>
+<h2>Strategies for Incumbents</h2>
+<p>For established software vendors, the path to success in the next decade involves strengthening their existing moats through AI.</p>
+<ul>
+<li><strong>Disrupt Within:</strong> Incumbents must use AI to innovate faster than startups, integrating more systems and solving new use cases for existing clients.</li>
+<li><strong>Accelerate Growth:</strong> If a company claims to be innovating with AI but fails to see a reacceleration of revenue growth, their long-term relevance will be challenged by investors.</li>
+<li><strong>Protect the Core:</strong> Success in the AI era is an &quot;and,&quot; not an &quot;or.&quot; Core business growth remains the primary indicator of health, even as companies layer AI-native capabilities on top.</li>
+</ul>
+<h2>Insights from MongoDB: Building for the Long Term</h2>
+<p>When evaluating the sector, it is clear that data infrastructure is a &quot;must-have&quot; layer. MongoDB has successfully positioned itself as a disruptive force in a market dominated by 50-year-old database technologies.</p>
+<p>By speaking to at least ten customers a week, leaders can &quot;see around the corner.&quot; This customer intimacy is essential for product managers and CEOs alike. It reveals that while AI-native startups are growing, the largest opportunities for long-term value lie in replacing legacy systems of record that are no longer keeping pace with the need for high-velocity, unstructured data management.</p>
+<h2>Leadership and Change Management</h2>
+<p>Navigating a major technology transition, such as the shift to AI, is fundamentally a challenge of <strong>change management</strong>. Organizations often struggle when they become comfortable with their previous success. The ability to pivot is not about abandoning the core business, but about maintaining the intellectual honesty to realize that not leaning into new technology is not an option.</p>
+<p>Ultimately, the best way to prove the skeptics wrong—especially those holding &quot;bearish&quot; views on SaaS—is to focus on core value delivery while simultaneously building the AI-native features that the next generation of applications will require.</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</title>
       <link>https://myfeed.theindie.app/articles/20260326-132339-www.youtube.com-watch-v-efUt__S_AjY.html</link>
