@@ -7,8 +7,54 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2026 08:22:09 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 08:22:43 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vercel - Introducing Chat SDK</title>
+      <link>https://myfeed.theindie.app/articles/20260328-152216-www.youtube.com-watch-v-7-zJPwJC11Q.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260328-152216-www.youtube.com-watch-v-7-zJPwJC11Q.html</guid>
+      <pubDate>Sat, 28 Mar 2026 08:22:42 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: Introducing Chat SDK
+
+---
+
+0:14 Hey everyone, my name is Malta. I'm the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.
+
+...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=7-zJPwJC11Q">Introducing Chat SDK</a></p>
+<hr>
+<p><strong>0:14</strong> Hey everyone, my name is Malta. I'm the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.</p>
+<p><strong>0:21</strong> Figure out how to multiply your output.</p>
+<p><strong>0:24</strong> Seeing what people have built continues to blow us away. Almost every team built an agent to handle complex work, and most of them are Slack bots that anyone can use. But we ran into a problem: everyone was doing the same integration work over and over again.</p>
+<p><strong>0:40</strong> Someone would build an agent, then they had to figure out the complexity of Slack, and that's harder than it seems.</p>
+<p><strong>0:45</strong> You need to understand threats and reactions, how to post matches, and how to handle state. Then someone would ask, &quot;Hey, can you wire up that agent's GitHub?&quot; and the process would start all over again with GitHub's APIs, with the same logic but different platform code.</p>
+<p><strong>0:59</strong> We quickly learned that chat APIs seem similar on the surface but are completely different under the hood.</p>
+<p><strong>1:05</strong> Slack supports native streaming; you can stream tokens directly into a message as the LLM generates them. Discord requires you to post edit, post edit. GitHub has no streaming at all. Modals in Discord don't work the same way. Microsoft Teams gives you read-only reactions. These aren't quirks; they are fundamental differences in how each platform works. So even for a single, simple agent, you end up with a huge amount of logic just to make it usable in different tools. It's a nightmare, and it isn't just a Vercel problem. Every company is going to have to figure out how to deliver their agents across the surfaces where work already happens. That means chat, code review, issue tracking, and more. <strong>AI SDK</strong> solves a similar problem for model providers; you write the code once, and it handles all the API differences, whether you're calling GPT, Claude, or Gemini.</p>
+<p><strong>1:54</strong> <strong>Chat SDK</strong> does the same thing for interactive agents. It's a single API for agent interactions across platforms like Slack, GitHub, Linear, Discord, Telegram, WhatsApp, and more. You build the agent, and Chat SDK will deliver it to users in the apps they already use.</p>
+<p><strong>2:11</strong> Fernando has been building VZero background agents for the last few weeks, and he's going to tell you why Chat SDK was critical for that stack.</p>
+<p><strong>2:31</strong> When I started building VZR background agents, my goal was to let you tag VZR from Slack to open pull requests. I wanted a general-purpose coding agent that could run in the background in any codebase with any language. So I started building and sent the first version of the Vzero Slack app to my friends. The first thing they asked was, &quot;Can I also use this in Linear issues?&quot; and &quot;Can I tag it from a GitHub PR comment?&quot; It reminded me of the first time I shipped a mobile app when people started asking if they could also use it on the web. It became clear that Vzero has to work everywhere. Expectations have changed.</p>
+<p><strong>3:12</strong> So I had to make a choice: Do we build VZO background agents platform by platform, or could we build it once with a unified API across every platform, like a React Native for chat agents?</p>
+<p><strong>3:28</strong> It turns out that I've spent years building cross-platform apps with React Native. This problem is nothing new to me, and that's where the Chat SDK came in. With the Chat SDK, I can focus on building Vzero background agents and spend less time worrying about each platform's unique APIs. So, how does this look under the hood? Here's Matt to show you more.</p>
+<p><strong>4:10</strong> Hi everyone. Just like Fernando, let's start with Slack. I mention my bot, and I get a very simple hello world response.</p>
+<p><strong>4:21</strong> Game-changing, I know. If you look at the code, you can see how easy it was for me to create this bot. All I had to do was create a new chat instance and add an on-mention listener to post &quot;hello world&quot; back to the thread. That's it. But we don't want developers building plain text bots; we want rich, native experiences that take full advantage of each platform. Developers love JSX.</p>
+<p><strong>4:51</strong> So, we brought JSX to the Chat SDK. Now, you build with components just like you're used to. Let's add two buttons.</p>
+<p><strong>5:00</strong> Down here, you can see I'm going to change our &quot;hello world&quot; message to a &quot;hello world&quot; card with a continue button and a cancel button. We're also going to add an action listener that will say the user's full name clicked continue when we click it.</p>
+<p><strong>5:21</strong> Back in Slack, I'm going to mention my bot again.</p>
+<p><strong>5:25</strong> As you can expect, we get exactly what we built. The components render natively. I click continue, and the bot handles the action instantly.</p>
+<p><strong>5:37</strong> Now, here's where things get interesting. What if I want the same exact experience on Discord?</p>
+<p><strong>5:45</strong> I add the Discord adapter. That's it.</p>
+<p><strong>5:51</strong> If I go back to my Discord channel, I can mention my bot, and the same exact UI renders natively in Discord. Zero code changes to support a whole new platform. This is cool, but let's talk agents. Here's a simple agent I built using the AI SDK. Agents need streaming. With the Chat SDK, streaming is trivial. I create a stream and post it to the thread. That's it. I didn't have to look up how Slack handles streaming or how Discord handles partial updates; I used one API. Back in Slack, if I mention the bot, we'll see it stream its response back to us natively.</p>
+<p><strong>6:41</strong> Why stop there? What if I want to send direct messages to my agent on platforms like WhatsApp or Telegram?</p>
+<p><strong>6:49</strong> With the Chat SDK, it's easy. I add a direct message listener and the adapter needed.</p>
+<p><strong>6:58</strong> Now, anyone who DMs the agent gets the same experience.</p>
+<p><strong>7:03</strong> If I open WhatsApp on the web and say, &quot;Hi, how are you doing?&quot;</p>
+<p><strong>7:09</strong> We'll see the agent respond to our direct message using the agent we built.</p>
+<p><strong>7:14</strong> Now that we've built an agent, why don't we open up a pull request? Before we do that, what if the same agent I chatted with on WhatsApp could review my code? All it takes is the GitHub adapter. I come here, I add the GitHub adapter, and I've brought my agent to a whole new platform. If I open up GitHub and look at this pull request, I can mention the agent in the comments, and it will respond with the same direct message listener we built before. Slack, Discord, WhatsApp, Telegram, GitHub.</p>
+<p><strong>7:52</strong> Take a second to think about how different these APIs are. But with one file and a few lines of code, we brought our agent to all of them. With the Chat SDK, you build AI experiences once and deploy them everywhere with a single API. Head to chat-sdk.dev to check out the docs and templates.</p>
+<p><strong>8:14</strong> Thanks for listening, and I'm excited to see what you build.</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race</title>
       <link>https://myfeed.theindie.app/articles/20260328-152114-www.youtube.com-watch-v-Hr7HrauSwlM.html</link>
@@ -7098,56 +7144,6 @@ We are not new to love; we both ...]]></description>
 </ul>
 <h2>A Shared History</h2>
 <p>We have known each other for so long. Your heart has been aching, but you have been too shy to express it. Internally, we both are aware of what has been going on between us. We know the game, and we are going to play it. This core promise is repeated multiple times to emphasize its sincerity and importance.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>The Powerful Alternative To Fine-Tuning</title>
-      <link>https://myfeed.theindie.app/articles/20260315-001322-www.youtube.com-watch-v-UPGB-hsAoVY.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260315-001322-www.youtube.com-watch-v-UPGB-hsAoVY.html</guid>
-      <pubDate>Sat, 14 Mar 2026 17:14:22 GMT</pubDate>
-      <description><![CDATA[The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment consta...]]></description>
-      <content:encoded><![CDATA[<h2>The AI &quot;Stilts&quot; That Outperform Frontier Models</h2>
-<p>The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment constantly. &quot;Every day, do something with AI,&quot; he advises. &quot;Don't limit yourself. Anything that you imagine, you should just try to use AI and see how far you can get with it.&quot;</p>
-<p>Fischer speaks from experience. After a decade at Google DeepMind and founding a YC startup, he is now tackling one of the biggest challenges in the field: creating AI that can improve itself. His company, <strong>Poetiq</strong>, is building what he calls &quot;stilts&quot; for large language models (LLMs), enabling them to perform better than their base capabilities.</p>
-<h2>What Is Poetiq?</h2>
-<p>Poetiq is building a <strong>recursively self-improving</strong> system for LLMs. This concept is often described as the &quot;holy grail of AI,&quot; where the model actively makes itself smarter. Fischer explains that Poetiq’s core insight was finding a way to achieve this far more quickly and cheaply than other methods.</p>
-<p>Most approaches to self-improvement require training a new LLM from scratch, a process that costs hundreds of millions of dollars and takes months. This leaves developers vulnerable to being outpaced by the next major model release from labs like OpenAI, Anthropic, or Google.</p>
-<h2>The Fine-Tuning Trap</h2>
-<p>For startups, the cycle of model releases creates a significant challenge. Committing to a fine-tuning process involves a massive investment that can be rendered obsolete overnight. As the podcast host noted, &quot;The second you're in fine-tuning land, I'm spending millions to hundreds of millions of dollars, and then... I just lit it on fire because the next version of the frontier model comes out, and I'll never catch up.&quot;</p>
-<p>Poetiq aims to solve this problem. Instead of competing with frontier models, Poetiq builds on top of them. &quot;They're the ones that we're using the stilts, you know, building stilts to stand on top of,&quot; Fischer says. This approach ensures that as foundation models improve, so do the systems built with Poetiq.</p>
-<h2>“Stilts” and Harnesses for LLMs</h2>
-<p>Poetiq provides what are often called <strong>harnesses</strong> or agentic systems. These systems are automatically generated for a specific problem and sit on top of one or more language models to consistently outperform them.</p>
-<p>The process for a company without Poetiq would typically be:</p>
-<ol>
-<li>Collect a large dataset with tens of thousands of examples.</li>
-<li>Spend a significant amount of money fine-tuning the best available model.</li>
-<li>End up with a system that is soon outperformed by a newer, better foundation model.</li>
-</ol>
-<p>With Poetiq, a user gets a harness that is compatible with new models as they are released. This allows them to get a performance bump without starting over, effectively vaccinating them against &quot;the bitter lesson&quot; of being outpaced by larger players.</p>
-<h2>Taking the Top Spot on Benchmarks</h2>
-<p>Poetiq has demonstrated its capabilities on several challenging AI benchmarks.</p>
-<h3>Beating the Best on ARC-AGI</h3>
-<p>When Poetiq first emerged from stealth, it targeted the <strong>ARC-AGI</strong> V2 benchmark, a difficult reasoning challenge. At the time, Google's Gemini 3 DeepThink held the top spot on the leaderboard with 45%. Just two days later, Poetiq released its results, achieving 54%—a nine-percentage-point improvement.</p>
-<p>Notably, Poetiq achieved this by building on top of Gemini 3 Pro, a cheaper model. Their solution cost only $32 per problem, compared to the over $70 cost of the DeepThink system. &quot;That's what it's like to have stilts,&quot; the host remarked. &quot;Whatever model comes out, you can be taller than that one with Poetiq.&quot;</p>
-<h3>Conquering Humanity’s Last Exam</h3>
-<p>More recently, Poetiq announced state-of-the-art results on <strong>Humanity's Last Exam</strong>, a set of 2,500 extremely difficult questions designed by experts to be challenging even for PhDs in their respective fields.</p>
-<p>Poetiq achieved a score of 55%, surpassing the previous record of 53.1% set by Anthropic's Claude Opus 4.6. Fischer confirmed that the optimization cost for this achievement was less than $100,000—a fraction of the hundreds of millions required for training a foundation model. This result was delivered by a team of just seven people.</p>
-<h2>How the Meta-System Works</h2>
-<p>The core technology behind these results is the <strong>Poetiq meta-system</strong>, a recursively self-improving system that generates other systems to solve hard problems. These generated systems, or harnesses, are a combination of code, prompts, and data built on top of one or more LLMs.</p>
-<p>While a person could theoretically build these harnesses by hand, it requires immense effort and insight. The Poetiq meta-system automates this optimization process, making it faster and cheaper. It can even take an existing agent built by a startup and optimize its prompts, reasoning strategies, or other components to improve performance.</p>
-<h3>A New Paradigm Beyond RL</h3>
-<p>This approach represents a different paradigm from reinforcement learning (RL). Each new foundation model has its own performance S-curve, and the Poetiq meta-system has its own as well. As both the underlying models and the meta-system improve, the performance ceiling keeps rising, pushing closer to AGI.</p>
-<h3>Automating Prompt and Context Engineering</h3>
-<p>Many developers spend countless hours on prompt and context engineering. Poetiq's system automates this by letting the meta-system analyze the data and determine the best strategy.</p>
-<p>&quot;We're kind of outsourcing that to the AI itself,&quot; Fischer explains. &quot;It's the AI's job to understand the dataset and figure out where are the failure modes and where are the kind of robust reasoning strategies that the agent could use.&quot;</p>
-<p>The results can be surprising. For the ARC-AGI benchmark, the system generated simple, non-human-like examples, one of which was technically incorrect. However, the team left it as is, trusting the process. Fischer notes that while automated prompt optimization offers some gains, the biggest improvements come from reasoning strategies written in code, which can take performance from 5% to 95% on hard problems.</p>
-<h2>From YC Founder to AI Researcher</h2>
-<p>Fischer's journey into AI was not a direct one. His first YC startup, which ported mobile apps across platforms, was acquired by Google over a decade ago. The acquisition gave him an opportunity to reflect on his next steps.</p>
-<p>&quot;I realized that the problems that I was most excited about were really actually AI and robotics,&quot; he says. He joined a new AI robotics team in Google Research, despite his background being in computer security and systems building. He quickly discovered that &quot;hardware is hard&quot; and pivoted his focus entirely to machine learning research, which he pursued for a decade at Google and then DeepMind.</p>
-<h2>How to Get Started with Poetiq</h2>
-<p>Poetiq is currently offering early access to its platform. Startups and companies with difficult problems that they haven't been able to solve with existing methods are encouraged to sign up at <strong>poetiq.ai</strong>.</p>
-<p>&quot;If you're at the top of humanity's last exam, then that's pretty big,&quot; the host concluded. &quot;The stilts basically let any agentic company become state-of-the-art.&quot;</p>
 ]]></content:encoded>
       
     </item>

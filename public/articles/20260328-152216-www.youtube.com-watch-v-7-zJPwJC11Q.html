@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vercel - Introducing Chat SDK - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: Introducing Chat SDK
+
+---
+
+0:14 Hey everyone, my name is Malta. I&#039;m the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.
+
+...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Vercel - Introducing Chat SDK</h1>
+      <time datetime="2026-03-28T08:22:42.006Z">
+        March 28, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=7-zJPwJC11Q">Introducing Chat SDK</a></p>
+<hr>
+<p><strong>0:14</strong> Hey everyone, my name is Malta. I'm the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.</p>
+<p><strong>0:21</strong> Figure out how to multiply your output.</p>
+<p><strong>0:24</strong> Seeing what people have built continues to blow us away. Almost every team built an agent to handle complex work, and most of them are Slack bots that anyone can use. But we ran into a problem: everyone was doing the same integration work over and over again.</p>
+<p><strong>0:40</strong> Someone would build an agent, then they had to figure out the complexity of Slack, and that's harder than it seems.</p>
+<p><strong>0:45</strong> You need to understand threats and reactions, how to post matches, and how to handle state. Then someone would ask, &quot;Hey, can you wire up that agent's GitHub?&quot; and the process would start all over again with GitHub's APIs, with the same logic but different platform code.</p>
+<p><strong>0:59</strong> We quickly learned that chat APIs seem similar on the surface but are completely different under the hood.</p>
+<p><strong>1:05</strong> Slack supports native streaming; you can stream tokens directly into a message as the LLM generates them. Discord requires you to post edit, post edit. GitHub has no streaming at all. Modals in Discord don't work the same way. Microsoft Teams gives you read-only reactions. These aren't quirks; they are fundamental differences in how each platform works. So even for a single, simple agent, you end up with a huge amount of logic just to make it usable in different tools. It's a nightmare, and it isn't just a Vercel problem. Every company is going to have to figure out how to deliver their agents across the surfaces where work already happens. That means chat, code review, issue tracking, and more. <strong>AI SDK</strong> solves a similar problem for model providers; you write the code once, and it handles all the API differences, whether you're calling GPT, Claude, or Gemini.</p>
+<p><strong>1:54</strong> <strong>Chat SDK</strong> does the same thing for interactive agents. It's a single API for agent interactions across platforms like Slack, GitHub, Linear, Discord, Telegram, WhatsApp, and more. You build the agent, and Chat SDK will deliver it to users in the apps they already use.</p>
+<p><strong>2:11</strong> Fernando has been building VZero background agents for the last few weeks, and he's going to tell you why Chat SDK was critical for that stack.</p>
+<p><strong>2:31</strong> When I started building VZR background agents, my goal was to let you tag VZR from Slack to open pull requests. I wanted a general-purpose coding agent that could run in the background in any codebase with any language. So I started building and sent the first version of the Vzero Slack app to my friends. The first thing they asked was, &quot;Can I also use this in Linear issues?&quot; and &quot;Can I tag it from a GitHub PR comment?&quot; It reminded me of the first time I shipped a mobile app when people started asking if they could also use it on the web. It became clear that Vzero has to work everywhere. Expectations have changed.</p>
+<p><strong>3:12</strong> So I had to make a choice: Do we build VZO background agents platform by platform, or could we build it once with a unified API across every platform, like a React Native for chat agents?</p>
+<p><strong>3:28</strong> It turns out that I've spent years building cross-platform apps with React Native. This problem is nothing new to me, and that's where the Chat SDK came in. With the Chat SDK, I can focus on building Vzero background agents and spend less time worrying about each platform's unique APIs. So, how does this look under the hood? Here's Matt to show you more.</p>
+<p><strong>4:10</strong> Hi everyone. Just like Fernando, let's start with Slack. I mention my bot, and I get a very simple hello world response.</p>
+<p><strong>4:21</strong> Game-changing, I know. If you look at the code, you can see how easy it was for me to create this bot. All I had to do was create a new chat instance and add an on-mention listener to post &quot;hello world&quot; back to the thread. That's it. But we don't want developers building plain text bots; we want rich, native experiences that take full advantage of each platform. Developers love JSX.</p>
+<p><strong>4:51</strong> So, we brought JSX to the Chat SDK. Now, you build with components just like you're used to. Let's add two buttons.</p>
+<p><strong>5:00</strong> Down here, you can see I'm going to change our &quot;hello world&quot; message to a &quot;hello world&quot; card with a continue button and a cancel button. We're also going to add an action listener that will say the user's full name clicked continue when we click it.</p>
+<p><strong>5:21</strong> Back in Slack, I'm going to mention my bot again.</p>
+<p><strong>5:25</strong> As you can expect, we get exactly what we built. The components render natively. I click continue, and the bot handles the action instantly.</p>
+<p><strong>5:37</strong> Now, here's where things get interesting. What if I want the same exact experience on Discord?</p>
+<p><strong>5:45</strong> I add the Discord adapter. That's it.</p>
+<p><strong>5:51</strong> If I go back to my Discord channel, I can mention my bot, and the same exact UI renders natively in Discord. Zero code changes to support a whole new platform. This is cool, but let's talk agents. Here's a simple agent I built using the AI SDK. Agents need streaming. With the Chat SDK, streaming is trivial. I create a stream and post it to the thread. That's it. I didn't have to look up how Slack handles streaming or how Discord handles partial updates; I used one API. Back in Slack, if I mention the bot, we'll see it stream its response back to us natively.</p>
+<p><strong>6:41</strong> Why stop there? What if I want to send direct messages to my agent on platforms like WhatsApp or Telegram?</p>
+<p><strong>6:49</strong> With the Chat SDK, it's easy. I add a direct message listener and the adapter needed.</p>
+<p><strong>6:58</strong> Now, anyone who DMs the agent gets the same experience.</p>
+<p><strong>7:03</strong> If I open WhatsApp on the web and say, &quot;Hi, how are you doing?&quot;</p>
+<p><strong>7:09</strong> We'll see the agent respond to our direct message using the agent we built.</p>
+<p><strong>7:14</strong> Now that we've built an agent, why don't we open up a pull request? Before we do that, what if the same agent I chatted with on WhatsApp could review my code? All it takes is the GitHub adapter. I come here, I add the GitHub adapter, and I've brought my agent to a whole new platform. If I open up GitHub and look at this pull request, I can mention the agent in the comments, and it will respond with the same direct message listener we built before. Slack, Discord, WhatsApp, Telegram, GitHub.</p>
+<p><strong>7:52</strong> Take a second to think about how different these APIs are. But with one file and a few lines of code, we brought our agent to all of them. With the Chat SDK, you build AI experiences once and deploy them everywhere with a single API. Head to chat-sdk.dev to check out the docs and templates.</p>
+<p><strong>8:14</strong> Thanks for listening, and I'm excited to see what you build.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
