@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 16:51:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 16:51:48 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</title>
@@ -417,6 +417,100 @@ Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the 
 <p>He uses the example of hiring, where AI might generalize based on technical skills, but human recruiters are needed to identify &quot;spikiness&quot; and individuals driven by a &quot;love for the game,&quot; a pure passion for their craft. This human discernment is what imbues a company with its unique character, ensuring that AI serves as a powerful tool rather than a homogenizing force.</p>
 <h2>Reflections on a Remarkable Journey</h2>
 <p>Pedro's life has been a whirlwind of innovation, resilience, and profound experiences. From his early coding days and navigating personal loss to leading a multi-billion dollar company and now pioneering the use of AI agents, his journey is a testament to the power of curiosity, hard work, and a willingness to embrace the unconventional. His insights into the future of finance and the transformative potential of AI offer a compelling glimpse into the evolving landscape of technology and business.</p>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>Mastra - I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)</title>
+      <link>https://myfeed.theindie.app/articles/20260407-235107-www.youtube.com-watch-v-Dli5slNaJu0.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260407-235107-www.youtube.com-watch-v-Dli5slNaJu0.html</guid>
+      <pubDate>Tue, 31 Mar 2026 13:10:07 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)
+
+---
+
+
+
+The landscape of AI-powered coding assistants has evolved at a breakneck pace. What began with simple co...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Dli5slNaJu0">I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)</a></p>
+<hr>
+<h1>The Future of Coding Agents: From Spaceships to Minimalist Tools</h1>
+<p>The landscape of AI-powered coding assistants has evolved at a breakneck pace. What began with simple copy-pasting from chatbots has transformed into sophisticated tools that can write, debug, and refactor code. However, as these tools have grown in complexity, so too have the challenges of managing them, understanding their inner workings, and integrating them seamlessly into existing workflows. This article explores the journey of coding agents, highlights the pitfalls of overly complex systems, and introduces a new philosophy for building more adaptable and user-centric AI coding partners.</p>
+<h2>The Evolution of Coding Agents: From Copy-Paste to Copilot and Beyond</h2>
+<p>The early days of AI-assisted coding in 2023 were marked by a reliance on copy-pasting code snippets from tools like ChatGPT. While functional for single functions or small tasks, this approach was often error-prone and required significant manual oversight.</p>
+<p>The introduction of GitHub Copilot in 2025 marked a significant step forward, integrating AI code suggestions directly into the Integrated Development Environment (IDE). However, Copilot wasn't without its issues, sometimes generating incorrect code or even verbatimly reciting licensed code, leading to potential legal and functional problems.</p>
+<p>Following Copilot, various other tools emerged, each attempting to push the boundaries of what AI could do for developers. Tools like Aider and AutoGPT explored more agentic approaches, but it was Cloud Code that truly popularized the concept of AI agents actively exploring and modifying codebases. Cloud Code's innovative approach of using reinforcement learning to train models to interact with file systems and bash commands allowed for a more dynamic and powerful code generation experience. This led to a surge in productivity, with many developers finding themselves working on code at an unprecedented rate.</p>
+<h2>The &quot;Spaceship&quot; Trap: When More Features Lead to Less Usability</h2>
+<p>The success of early, more focused coding agents led many to believe that more features equated to better tools. This philosophy, however, can lead to what the speaker terms the &quot;spaceship&quot; problem, exemplified by Cloud Code's evolution. As more and more features were added, the tool became incredibly powerful but also overwhelmingly complex.</p>
+<p>This complexity resulted in several drawbacks:</p>
+<ul>
+<li><strong>Lack of Observability:</strong> Users often struggled to understand what the agent was doing, leading to a loss of trust and control. The &quot;dark matter of AI agents&quot; became a significant concern, with 90% of features remaining unknown or unused by most users.</li>
+<li><strong>Unpredictable Workflows:</strong> Frequent, unannounced changes to the underlying architecture or model behavior by the vendor could break existing, carefully crafted workflows. This lack of stability made it difficult for developers to rely on the tool for consistent results.</li>
+<li><strong>Limited Customization:</strong> Cloud Code, being an Anthropic-native tool, offered little in terms of model choice or deep extensibility. While its hook system existed, it lacked the deep integration and flexibility found in other platforms.</li>
+<li><strong>UI Overload:</strong> The user interface, while functional, was perceived by some as overly complex and not always aligned with developer needs, particularly when compared to the raw power of a terminal.</li>
+</ul>
+<h2>Exploring Alternatives: Codex CLI, Amp, and Open Code</h2>
+<p>In response to these challenges, developers began exploring alternative coding harnesses.</p>
+<ul>
+<li><strong>Codex CLI:</strong> Initially met with skepticism regarding its user interface and model, Codex CLI has since improved significantly, particularly with its model performance.</li>
+<li><strong>Amp:</strong> Developed by a team with a strong background from Sourcegraph, Amp focuses on a pragmatic approach, often removing features rather than adding them. This deliberate design choice makes it a compelling option for those seeking a streamlined commercial coding harness.</li>
+<li><strong>Troy:</strong> Similar to Amp, Troy offers a good user experience, though it was not as experimental as Amp when initially evaluated.</li>
+<li><strong>Open Code:</strong> As an open-source alternative, Open Code appeals to those with a history in open-source development. Its team is known for its grounded approach, avoiding feature bloat and focusing on a stable, happy path for users. However, Open Code also faced its own set of challenges.</li>
+</ul>
+<h2>Open Code's Challenges: Compaction, Prompt Caching, and LSP Issues</h2>
+<p>Despite its strengths, Open Code presented several issues that hindered its adoption for some users:</p>
+<ul>
+<li><strong>Session Compaction and Prompt Cache Busting:</strong> A core feature of Open Code involved session compaction, which pruned tool results from the conversation history. However, the implementation of pruning all tool results before the last 40,000 tokens effectively destroyed the prompt cache, a critical component for efficient agent operation. This led to a situation where Anthropic, the provider of the underlying models, reportedly banned Open Code due to its abuse of their infrastructure.</li>
+<li><strong>LSP Feedback Mid-Edit:</strong> Open Code's integration with the Language Server Protocol (LSP) proved problematic. By providing LSP feedback mid-edit, the system would report errors on code that was still in the process of being modified. This constant stream of &quot;errors&quot; would confuse the AI model, leading it to abandon tasks or produce suboptimal results. The speaker argues that linting and type checking should only occur at natural synchronization points, such as when the agent believes it has completed a task.</li>
+<li><strong>Architectural Decisions and Security:</strong> The architecture of Open Code, with each message becoming a separate JSON file, suggested a lack of deep architectural thought. More critically, the default inclusion of a server with remote code execution vulnerabilities, which remained unaddressed for an extended period, raised significant security concerns.</li>
+</ul>
+<h2>The Power of Minimalism: Introducing Pi</h2>
+<p>The speaker's dissatisfaction with existing solutions, coupled with insights from benchmarks like Terminal Bench, led to the development of &quot;Pi.&quot; The core philosophy behind Pi is to strip away all unnecessary complexity and build a minimal, extensible core.</p>
+<p>Pi is built on two key theses:</p>
+<ol>
+<li><strong>The &quot;Messing Around and Finding Out&quot; Stage:</strong> The perfect coding agent or harness has not yet been defined. We are in an experimental phase, exploring various approaches from minimalism to complex multi-agent systems.</li>
+<li><strong>The Need for Malleability:</strong> To accelerate this experimentation, coding agents need to be self-modifying and malleable, allowing users to quickly test new ideas and workflows.</li>
+</ol>
+<p>Pi embodies this philosophy by offering:</p>
+<ul>
+<li><strong>A Minimalist Core:</strong> It strips away features that are often unnecessary or problematic in other harnesses.</li>
+<li><strong>Extensibility:</strong> Pi is designed to be highly extensible, allowing users to adapt it to their specific needs.</li>
+<li><strong>User-Centric Design:</strong> The motto is to adapt the coding agent to your needs, not the other way around.</li>
+</ul>
+<h3>Key Features of Pi:</h3>
+<ul>
+<li><strong>AI Package:</strong> A simple abstraction layer for interacting with multiple AI providers and their different transport protocols.</li>
+<li><strong>Agent Core:</strong> A generalized agent loop that handles tool invocations and verification.</li>
+<li><strong>Streaming TUI:</strong> A surprisingly effective and concise terminal user interface.</li>
+<li><strong>Coding Agent:</strong> Available as an SDK for headless use or a full terminal user interface.</li>
+<li><strong>Minimal System Prompt:</strong> Frontier models are already well-trained for coding tasks, so extensive system prompts are unnecessary.</li>
+<li><strong>&quot;YOLO by Default&quot;:</strong> Instead of intrusive approval prompts that lead to fatigue, Pi defaults to a &quot;you only live once&quot; mode, relying on containerization for security.</li>
+<li><strong>Four Core Tools:</strong> Read file, write file, edit file, and bash. All other functionalities can be built upon these.</li>
+<li><strong>No MCP, Sub-Agents, Plan Load, Background Bash, or Built-in To-Dos:</strong> These are either unnecessary or can be implemented more effectively through other means (e.g., using CLI tools, spawning new agent instances in tmux, or writing plain markdown files).</li>
+</ul>
+<h3>Extensions and Community Contributions</h3>
+<p>Pi's true power lies in its extensibility through extensions. Users can:</p>
+<ul>
+<li><strong>Extend Tools:</strong> Define custom tools for the LLM.</li>
+<li><strong>Custom UI:</strong> Build entirely custom user interfaces.</li>
+<li><strong>Skills and Prompt Templates:</strong> Develop custom skills and prompt templates.</li>
+<li><strong>Themes:</strong> Customize the visual appearance.</li>
+<li><strong>Hot Reloading:</strong> Extensions automatically reload, allowing for rapid development and iteration.</li>
+</ul>
+<p>This extensibility enables a wide range of custom functionalities, such as:</p>
+<ul>
+<li><strong>Custom Compaction:</strong> Implementing more effective session compaction strategies.</li>
+<li><strong>Permission Gates:</strong> Easily enforcing custom access controls.</li>
+<li><strong>Custom Providers:</strong> Registering proxies or self-hosted models.</li>
+<li><strong>Overriding Built-in Tools:</strong> Modifying the behavior of core tools like read, write, and edit, even for remote SSH access.</li>
+<li><strong>Community Extensions:</strong> A vibrant community has already developed extensions for features like multi-agent chat rooms (Pi Messenger), games (Pi Mess), in-line website annotation (Pi Annotate), and file switching (File Switch).</li>
+</ul>
+<h3>Tree-Structured Sessions and Cost Tracking</h3>
+<p>Pi also introduces a tree-structured session format, moving away from linear chat logs. This allows for more sophisticated workflows, such as creating sub-agents by summarizing directory contents and then performing actions based on that summary. The system also offers full cost tracking for AI usage and supports various export formats, including HTML and JSON.</p>
+<h2>Open Source Under Siege and the Importance of Human Verification</h2>
+<p>The speaker also touched upon the challenges facing open-source projects in the current AI landscape. The influx of AI-generated &quot;clanker filth and slop&quot; into repositories has led to the need for new measures to protect the integrity of open-source projects. This includes implementing &quot;OSS vacations&quot; to temporarily close issues and PRs, and introducing custom access schemes that require human verification before contributions are accepted. Projects like &quot;Vouch&quot; have emerged to help developers implement these verification processes.</p>
+<h2>Conclusion</h2>
+<p>The journey of coding agents has been a rapid and transformative one. While early tools offered basic assistance, and later tools provided powerful but complex solutions, the future likely lies in a more minimalist, extensible, and user-centric approach. Pi, with its focus on core functionality and a robust extension system, represents a significant step in this direction, empowering developers to build AI coding partners that truly adapt to their individual needs and workflows. The emphasis on human verification in open-source development also highlights the ongoing need for human oversight and control in the age of AI.</p>
 ]]></content:encoded>
       
     </item>
