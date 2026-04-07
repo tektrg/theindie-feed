@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models! - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!
+
+---
+
+
+
+Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for develop...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      <a href="https://www.youtube.com/watch?v=BjqjvfAzSQ4" target="_blank">🎥 Watch on YouTube</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</h1>
+      <time datetime="2026-04-03T00:06:59.000Z">
+        April 3, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=BjqjvfAzSQ4">Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</a></p>
+<hr>
+<h1>Gemma 4: Google's New Open Models Put to the Test</h1>
+<p>Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for developers and enthusiasts. This release is particularly exciting for the open-source community, and this article dives into the two largest and most performant models: a 31 billion parameter dense model and a 26 billion parameter mixture of experts (MoE) model. These models promise impressive capabilities, with benchmarks suggesting they can compete with significantly larger models while being more efficient.</p>
+<h2>First Look at the Gemma 4 Family</h2>
+<p>The Gemma 4 family includes models ranging in size from 2.3 billion to 31 billion parameters. The two smaller models, Gemma 4 E2B (2.3B effective parameters) and Gemma 4 E4B (4.5B effective parameters), boast a context window of 128K and come with both base and instruction-tuned checkpoints.</p>
+<p>The main focus of this analysis is on the larger models:</p>
+<ul>
+<li><strong>Gemma 4 31B Dense Model:</strong> A 31 billion parameter dense model with a substantial 256K context window.</li>
+<li><strong>Gemma 4 26B MoE Model:</strong> A 26 billion parameter mixture of experts model with 4 billion active parameters and a 256K context window.</li>
+</ul>
+<p>Both of these larger models also offer base and instruction-tuned versions.</p>
+<p>What's particularly striking is the claim that these models achieve LM Arena scores comparable to much larger models like GPT-4 or Claude 3 Opus, but with a fraction of the parameters. Furthermore, both the 31B dense and 26B MoE models are multimodal, capable of processing images, which opens up a new realm of possibilities.</p>
+<h2>Technical Deep Dive and Testing Methodology</h2>
+<p>The technical specifications are intriguing, but the true test lies in practical application. Google's release notes hint at potential capabilities for agentic control of computers and mobile devices, a feature that warrants further exploration. The models are also released under the permissive Apache 2.0 license, a significant boon for open-source development.</p>
+<p>For testing, a dual approach was adopted due to initial challenges with local deployment of the 31B model. The 26B MoE model was run locally on a DGX Spark with Q8 quantization, while the 31B dense model was tested via Open Router and Nvidia's NIM APIs to leverage their cloud-based infrastructure. This methodology aims to provide a comprehensive comparison across different deployment scenarios.</p>
+<h2>Testing the 26B MoE Model: Browser OS and Improvements</h2>
+<p>The initial test involved the 26B MoE model generating a functional operating system interface. While the first iteration was minimalistic, it demonstrated core functionality. Subsequent feedback led to a significantly improved version, showcasing enhanced visual appeal with polished app icons, hover effects, and a more refined start menu. The model also proved adept at restyling applications and implementing a theme engine, responding well to constructive criticism.</p>
+<p><strong>Key observations from the 26B Browser OS tests:</strong></p>
+<ul>
+<li><strong>Initial Output:</strong> Basic functionality, lacking visual polish.</li>
+<li><strong>Improved Output:</strong> Significant aesthetic enhancements, including better app icons, a refined start menu, and functional theme options.</li>
+<li><strong>Responsiveness to Feedback:</strong> The model demonstrated a strong ability to incorporate user feedback for improvement.</li>
+</ul>
+<h2>Testing the 31B Dense Model: Local Issues and Online Performance</h2>
+<p>Local testing of the 31B dense model proved challenging, with issues ranging from corrupted outputs to responses in different languages across various quantization providers. This led to the decision to focus online testing for this model.</p>
+<p>When tested online via Nvidia's NIM APIs, the 31B model generated a &quot;Nova OS&quot; interface. While functional, the initial impression was that it was not significantly more impressive than the improved output from the locally run 26B model. The speed was also a notable limitation, with generation speeds around 7.5 tokens per second across various providers.</p>
+<p><strong>Key observations from the 31B Browser OS tests:</strong></p>
+<ul>
+<li><strong>Local Deployment Issues:</strong> Significant problems with quantization and output quality.</li>
+<li><strong>Online Performance:</strong> Functional but not overwhelmingly impressive compared to the 26B model.</li>
+<li><strong>Speed Limitations:</strong> Noticeably slower generation speeds compared to expectations.</li>
+</ul>
+<h2>Static Subway Scene Generation</h2>
+<p>A test involving the generation of a static subway scene with JavaScript revealed the models' capabilities in creating interactive environments.</p>
+<p>The 26B model produced a simple yet functional scene, allowing for movement within the environment and a brightness slider. The output was considered a good starting point, especially given the model's size and quantization.</p>
+<p>The 31B model generated a scene with more advanced lighting and material properties, offering a more visually refined experience. Both models produced clean scenes with minimal detail, but the 31B model showed a slight edge in visual fidelity.</p>
+<h2>Impromptu FPS Game Test</h2>
+<p>Inspired by the subway scene generation, an impromptu test was conducted to see if the models could transform the scene into a first-person shooter (FPS) game.</p>
+<p>The 26B model successfully created a basic FPS experience, complete with a weapon, recoil, and enemy spawning. The 31B model also generated an FPS game, featuring a cooler weapon design and more pronounced recoil. Both models produced infinite enemy spawns and lacked damage logic, but the results were impressive given the spontaneous nature of the request.</p>
+<h2>Flight Combat Simulator Test</h2>
+<p>The flight combat simulator test aimed to assess the models' ability to generate more complex game logic, including plane models, enemy AI, and flight mechanics.</p>
+<p>The 31B model generated a functional flight simulator with selectable planes, ammunition tracers, and a health metric. While lacking robust combat logic, the plane models were well-rendered, and the overall result was a solid foundation.</p>
+<p>The 26B model, when run locally, also produced a functional simulator after fixing initial errors. While less polished than the 31B model's output, it demonstrated impressive capabilities for a local, quantized model, including more detailed terrain and functional respawn logic.</p>
+<h2>Multimodal Wireframe to Website Conversion</h2>
+<p>A significant test involved converting a hand-drawn wireframe of a portfolio into a functional website.</p>
+<p>The 26B model delivered an impressive result, generating a well-structured portfolio website with a live inference simulation, showcasing its front-end design capabilities. The model accurately captured the essence of the wireframe, including technical stacks and even a functional animation.</p>
+<p>The 31B model's output was also good, featuring a hero image and correctly identifying names and titles. However, it suffered from a broken image link for a chart, making the 26B model's output slightly superior in this instance.</p>
+<h2>Creative Writing and Component Identification</h2>
+<p>Further tests explored the models' creative writing and technical understanding.</p>
+<p>In a creative writing task based on a historical photo, the 26B model generated a compelling psychological drama/suspense novel outline. The 31B model produced a contemporary literary fiction piece, with both models demonstrating strong narrative capabilities. Interestingly, both models independently chose a similar chapter title, &quot;Cracks in the Porcelain.&quot;</p>
+<p>A wiring diagram component identification test revealed some limitations. The 26B model correctly identified the Arduino Uno but struggled with specific motor driver and motor names, and missed two sensors entirely. The 31B model was slightly better, referencing the sensors but misidentifying them as buzzers, and also failed to correctly name the motor driver and motor.</p>
+<h2>Image to Website Design Reference</h2>
+<p>The final test involved generating a website based on a detailed design reference photo.</p>
+<p>The 26B model produced a functional website that closely matched the reference, including hover effects and a unique interpretation of a chart graphic. It accurately captured names and titles, demonstrating a good understanding of information density.</p>
+<p>The 31B model also generated a strong website, featuring a hero image and correctly identifying names and titles. However, a broken image link for a chart detracted from its overall performance, making the 26B model's output marginally better in this specific test.</p>
+<h2>Results Overview and Closing Thoughts</h2>
+<p>Across a wide array of tests, both the Gemma 4 31B dense and 26B MoE models demonstrated remarkable capabilities. The 26B model, in particular, stood out for its impressive performance, speed, and availability for local deployment on a variety of hardware, especially at Q8 quantization. Its ability to generate functional and aesthetically pleasing interfaces, games, and websites was highly commendable.</p>
+<p>While the 31B model showed promise, its online performance was often slower, and local deployment issues hindered its full potential. However, its outputs in areas like the flight simulator and website design were slightly more refined in certain aspects.</p>
+<p>The Gemma 4 models represent a significant advancement in open-source AI, offering powerful tools for developers and researchers. The two smaller models are slated for a separate deep dive, promising further insights into Google's latest AI offerings.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Google's Gemma 4 models, particularly the 31B dense and 26B MoE variants, offer competitive performance against much larger proprietary models.</li>
+<li>The 26B MoE model excels in local deployment, offering speed and impressive results across various tasks, including UI generation, game development, and website creation.</li>
+<li>The 31B dense model shows strong potential but is currently hampered by slower speeds and local deployment challenges.</li>
+<li>Both models are multimodal, capable of processing images, opening up new avenues for creative and functional applications.</li>
+<li>The Apache 2.0 license makes these models highly accessible for open-source development and innovation.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
