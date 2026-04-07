@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 18:31:25 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 18:33:13 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>YouTube Music - nơi nào cho con tim nguôi ngoai ?</title>
@@ -250,6 +250,54 @@ We are living through an unprecedented era of information overload, where the ve
 <li>AI cannot replicate the authentic point of view and lived experience that form the basis of meaningful essays.</li>
 <li>The &quot;meaning economy&quot; values individuals who can make sense of their own minds and share that journey publicly.</li>
 <li>Thinking in public through essay writing is a powerful skill that can lead to personal fulfillment and societal impact.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</title>
+      <link>https://myfeed.theindie.app/articles/20260408-013249-www.youtube.com-watch-v-S0oxWHGtg2w.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260408-013249-www.youtube.com-watch-v-S0oxWHGtg2w.html</guid>
+      <pubDate>Fri, 03 Apr 2026 23:06:37 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐
+
+---
+
+
+
+Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecesso...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=S0oxWHGtg2w">Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</a></p>
+<hr>
+<h1>Gemma 4: Google's Multimodal Leap in Openweight AI</h1>
+<p>Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecessors. While previous versions like Gemma 3 were lauded for their density and performance, Gemma 4 significantly ups the ante by introducing multimodal capabilities to even its smaller models. This new iteration can process images, video, and audio, alongside an impressive context window of a quarter of a million tokens.</p>
+<h2>Enhanced Capabilities and Architecture</h2>
+<p>Gemma 4 boasts a range of improvements, including enhanced reasoning, diverse and efficient architectures, and robust coding and semantic abilities. The models come in three dense variants, optimized for smaller devices and capable of handling audio and video inference. Additionally, a Mixture of Experts (MoE) model is available, promising super-fast inferencing speeds.</p>
+<p>Google's internal benchmarks show a dramatic improvement over previous versions. For instance, performance on the Big Bench Hard benchmark has surged from around 20% to 89% with the new models. Even the smaller 2 billion parameter text model, when enhanced with image embeddings, shows performance exceeding that of Gemma 3. The models also support function calling and multilingual capabilities across 35 languages.</p>
+<h2>Multimodal Performance: Image and Audio Analysis</h2>
+<p>The true innovation of Gemma 4 lies in its multimodal prowess. Testing with a CT scan of a brain tumor demonstrated remarkable accuracy. The largest model correctly identified the serious finding, stating it was a &quot;ring like lesion surrounding edema of serious finding that requires urgent medical attention.&quot; Even when switched to the MoE edition, the model accurately identified a &quot;metastatic tumor,&quot; with token inspector data revealing high confidence scores for brain abscess and high-grade glioma.</p>
+<p>The smaller 4 billion parameter model also showed promise, identifying &quot;acute subacute hemorrhage bleeding&quot; in the brain. Even the 2 billion parameter model, which quadruples to 4 billion with embeddings, managed to suggest the presence of a tumor in a brain scan, showcasing its ability to process visual information effectively.</p>
+<p>Beyond medical imaging, Gemma 4 excels at general image analysis. When presented with an image containing text like &quot;local AI bot turbo quant open claw 100% working,&quot; the 2 billion parameter model accurately extracted all the text, demonstrating its OCR capabilities.</p>
+<p>The smaller models also unlock audio analysis, a feature not typically available in larger models of this class. When fed an audio clip, Gemma 4 could accurately identify the speaker's gender with 100% certainty. Furthermore, it could transcribe speech and even follow commands embedded within the audio. For example, when asked &quot;What is the meaning of life?&quot; via audio, the model provided a response, though the initial smaller version did not incorporate the requested LaTeX formatting. The larger MoE model, however, successfully generated a response with LaTeX.</p>
+<h2>Code Generation and Application Replication</h2>
+<p>Gemma 4's coding and generative capabilities are equally impressive. When presented with a screenshot of an application, the model could generate Swift code to replicate its functionality. The 31 billion parameter model produced a comprehensive Swift UI implementation, including a sidebar, chat scroll view, and message sending functionality, even identifying the model used (Gemma 4 1B at 9 bits).</p>
+<p>Switching to HTML generation for web browser compatibility, the faster MoE model generated a complete web application structure, including a sidebar and chat interface, in just over 3,000 tokens. While the generated HTML included a placeholder image that was not part of the original application, the overall structure and UI elements were remarkably well-recreated.</p>
+<h2>Logical Reasoning and Problem Solving</h2>
+<p>Gemma 4 demonstrates strong logical reasoning abilities. When asked whether to drive or walk 50 meters to a car wash, the model correctly deduced that driving would be the appropriate action. Even the smaller models showed a good grasp of this simple logic, though the very smallest model suggested walking might be more efficient for that distance, indicating a slight loss of nuance at the lowest tier.</p>
+<p>The models also tackled traditional riddles with impressive accuracy. When presented with a modified trolley problem where five people were already dead, the model correctly advised against pulling the lever, showcasing its ability to understand contextual nuances.</p>
+<h2>Tool Use and Web Interaction</h2>
+<p>The ability to interact with external tools is another significant advancement. Gemma 4 successfully made tool calls to an AI image generator. When asked to retrieve information from a Google Wikipedia article, the larger model effectively used a &quot;get web page content&quot; tool, paginating through results to find the answer. The smaller model, however, required a more specific article title to initiate the tool call, highlighting the difference in capabilities between model sizes.</p>
+<h2>Coding Prowess: Web Page Generation</h2>
+<p>In a final coding challenge, Gemma 4 was tasked with creating a high-fidelity interactive web page. Both the dense and MoE versions produced substantial code. The smaller, faster MoE model generated a visually appealing solar system simulation, complete with interactive elements like a controllable asteroid that could form a ring or a moon. The larger dense model, after an initial runtime error, was able to fix its own code and render a similar simulation, even adding a controllable spaceship with fluid movement and a follow-on camera. This self-correction capability is particularly noteworthy.</p>
+<h2>Conclusion: A Powerful Openweight Contender</h2>
+<p>Gemma 4 represents a significant step forward for Google in the openweight AI landscape. The integration of multimodal capabilities across various model sizes, coupled with enhanced reasoning, coding, and tool-use abilities, makes it a formidable contender. While the release of larger models is still anticipated, the current offerings provide a compelling glimpse into the future of accessible, powerful AI. The team's commitment to open releases is commendable, and the ongoing development promises even more exciting advancements.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Gemma 4 introduces multimodal capabilities (image, video, audio) to even smaller openweight models.</li>
+<li>Significant performance improvements are seen across benchmarks compared to previous Gemma versions.</li>
+<li>The models demonstrate strong capabilities in image and audio analysis, including medical imaging and transcription.</li>
+<li>Gemma 4 can generate code for applications and web pages, and even self-correct errors.</li>
+<li>Logical reasoning and tool use are well-supported, with larger models showing more advanced capabilities.</li>
+<li>The openweight nature of Gemma 4 fosters accessibility and further development in the AI community.</li>
 </ul>
 ]]></content:encoded>
       
