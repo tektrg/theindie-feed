@@ -7,8 +7,85 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2026 04:47:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 04:47:43 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</title>
+      <link>https://myfeed.theindie.app/articles/20260413-114705-www.youtube.com-watch-v-Hr7HrauSwlM.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260413-114705-www.youtube.com-watch-v-Hr7HrauSwlM.html</guid>
+      <pubDate>Mon, 13 Apr 2026 04:47:42 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: Ep. 206: What NOT to Automate, Human-First AI Training & Amazon’s AI Slowdown
+
+---
+
+
+
+In this edition of AI Answers, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM">Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</a></p>
+<hr>
+<h1>Navigating the AI Transition: Strategies for Leadership, Adoption, and the Future of Work</h1>
+<p>In this edition of <em>AI Answers</em>, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Chief Marketing Officer Kathy McPhillips to address the most pressing questions from business leaders navigating the rapid evolution of artificial intelligence. Drawing from their experience teaching thousands of professionals through the &quot;Intro to AI&quot; and &quot;Scaling AI&quot; series, they explore the structural challenges of the enterprise, the reality of the &quot;AI divide,&quot; and the practical steps required to build a resilient, AI-forward organization.</p>
+<h2>The Enterprise Struggle: Maturity vs. Growing Pains</h2>
+<p>As major tech players like Amazon and Meta experience public setbacks with AI agents—ranging from &quot;rogue&quot; behavior to quality control issues—some observers wonder if these pauses signal a newfound maturity in the industry. Paul Roetzer views it differently.</p>
+<p>[Paul Roetzer]: &quot;I think it’s probably more likely a sign of everyone moving really fast and trying to keep up with the competition... The tech is advancing so quickly—the ability to build these agents and agent swarms, give them access to files, and the ability to make decisions and take actions—and it’s really messy.&quot;</p>
+<p>Roetzer emphasizes that while experimentation is necessary, enterprises must lean on technical partners to ensure that testing the &quot;latest and greatest&quot; doesn't compromise data security or corporate reputation.</p>
+<h3>Structural Disadvantages in the AI Era</h3>
+<p>The business world is currently bifurcating into three categories: <strong>AI Native</strong>, <strong>AI Emergent</strong>, and <strong>Obsolete</strong>.</p>
+<ul>
+<li><strong>AI Natives</strong> are built from the ground up without legacy systems, talent hurdles, or outdated pricing models. They can operate with fewer people and higher efficiency from day one.</li>
+<li><strong>AI Emergent</strong> companies are existing organizations trying to adapt. They face the &quot;innovator's dilemma&quot;—struggling to shift away from billable-hour models or legacy software stacks.</li>
+<li><strong>Obsolete</strong> companies are those failing to move with a high enough sense of urgency.</li>
+</ul>
+<p>[Paul Roetzer]: &quot;If you have legacy tech that’s hard to move people off of, or it’s not AI native and you’re trying to force-fit AI capabilities into an existing software stack, it's really hard to do... I think you’re going to see a lot of leadership in the C-suite in particular that just aren’t getting it, aren’t moving fast enough, and I think it’s going to cause a lot of shifts.&quot;</p>
+<h2>Solving the Adoption and Data Bottleneck</h2>
+<p>A common point of failure in large organizations is the &quot;ownership&quot; of AI. When generative AI became a mainstream concern, many C-suites reflexively handed the responsibility to the IT department, treating it as a pure technology problem.</p>
+<p>Roetzer argues this is a mistake. AI adoption belongs to the leaders of business units—CMOs, heads of sales, and CROs. If these leaders aren't personally competent in the tools, they cannot effectively lead the transformation of their departments.</p>
+<p>Furthermore, the &quot;data readiness&quot; argument is often used as a reason to delay.</p>
+<p>[Paul Roetzer]: &quot;The data readiness is a separate but related issue... It’s often like a red herring in terms of why adoption slows. The IT department will say, 'Well, we’re just not ready. We got to get the data.' In reality, 90% of the use cases a marketing team would tackle in the first 12 months have nothing to do with the data. You don’t even need data access.&quot;</p>
+<h2>The AI Divide and the Future of Employment</h2>
+<p>One of the most significant internal challenges for companies is the growing gap between &quot;power users&quot; and the rest of the workforce. In any given team, a small percentage of employees will embrace AI, becoming infinitely more productive, while others resist it due to fear, skepticism, or lack of interest.</p>
+<p>Roetzer is blunt about the consequences for those who refuse to adapt.</p>
+<blockquote>
+<p>[Paul Roetzer]: &quot;The people who don’t [keep up] won’t have jobs. It is one of the hardest realities... If you run a company and you know that a tool enables that company to grow more efficiently, and you have people who refuse to use it, they won’t be employed at your company anymore.&quot;</p>
+</blockquote>
+<p>To handle this humanely, Roetzer suggests a &quot;runway&quot; approach:</p>
+<ol>
+<li><strong>Transparency:</strong> Clearly state that the company is becoming AI-forward.</li>
+<li><strong>Resources:</strong> Provide the tools and the training (literacy and competency).</li>
+<li><strong>Expectations:</strong> Integrate AI usage into annual performance reviews.</li>
+<li><strong>Transition:</strong> If an employee still refuses after being empowered, help them transition to a different environment.</li>
+</ol>
+<h3>The Shift in Knowledge Work</h3>
+<p>In the next three years, the distinction between senior-level and entry-level work will blur. Roetzer posits that senior leaders, empowered by AI agents, will be able to perform tactical tasks that previously required a team of associates.</p>
+<p>[Paul Roetzer]: &quot;If I’m the CEO and I want to launch a new product, I can build the product myself in Claude... I don’t need to hire designers and developers; I can actually go in and just do the thing in 20 minutes. Then, rather than turning it over to the marketing team to build the landing page and write the emails, I’ll just tell Claude to do it.&quot;</p>
+<p>This creates a fundamental problem for the economy: how do we create entry-level employment when senior leaders can do the tactical work themselves? While Roetzer believes AI is a net positive for the economy long-term, he predicts a challenging period of unemployment and &quot;underemployment,&quot; where highly qualified graduates take roles far below their skill level because traditional entry-level knowledge work has been automated.</p>
+<h2>Building a Strategy: Literacy First</h2>
+<p>The most common mistake in AI strategy is the lack of one, usually caused by a lack of literacy. You cannot build a strategy for a technology you do not understand.</p>
+<p>[Paul Roetzer]: &quot;How in the world are they ever going to build an optimal AI strategy of the people they need, the technology they need, how to reimagine workflows, what the future of the org chart looks like? The way everyone gets AI strategy wrong is that they don’t start with AI literacy.&quot;</p>
+<h3>AI Councils and Governance</h3>
+<p>To drive progress without getting bogged down in &quot;bloated&quot; corporate politics, Roetzer suggests:</p>
+<ul>
+<li><strong>AI Councils:</strong> Must have a clear mission and charter. If the main council is too slow, spin off a &quot;Center of Excellence&quot; or a subcommittee allowed to take more risks in a sandbox environment.</li>
+<li><strong>Governance:</strong> Focus governance where it matters most—anywhere that touches sensitive data or involves autonomous agents making decisions that affect stakeholders.</li>
+</ul>
+<h2>Practical Implementation: The &quot;Cheat Code&quot;</h2>
+<p>For leaders looking for a &quot;no-brainer&quot; use case, Roetzer points to <strong>reasoning models</strong> (such as GPT-4, Claude 3 Opus, or Gemini Pro) as strategic thought partners.</p>
+<p>[Paul Roetzer]: &quot;If you’re not using the reasoning models, you’re just leaving so much intelligence on the table... It is a cheat code. Using it as a thought partner to help you with decision-making, problem-solving, and strategy building is an absolute game-changer.&quot;</p>
+<p>Roetzer describes his own workflow of &quot;triangulating&quot; answers across multiple models, using one as a primary creator and others as critics to stress-test the strategy. While this might take a few hours, it replaces what used to be 50 hours of manual work.</p>
+<h3>Changing Behavior Through Value</h3>
+<p>Finally, to move employees from &quot;waiting to be told&quot; to &quot;experimenting,&quot; leaders must find the &quot;pain point&quot; use case.</p>
+<p>[Paul Roetzer]: &quot;The only way I’ve found to change behavior is to show them a use case that changes their life in a positive way—solves a pain point they didn’t know how to solve or gives them the ability to do something creatively they couldn’t do before... No one wants to spend their Sunday night away from their family for two hours writing a report. What if that’s the thing you can take off someone’s plate?&quot;</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Prioritize Literacy:</strong> Strategy cannot exist without a deep understanding of the technology. Literacy must precede implementation.</li>
+<li><strong>The &quot;AI Native&quot; Threat:</strong> Existing companies must move with urgency to overcome legacy systems and pricing models before AI-native competitors disrupt their industry.</li>
+<li><strong>Augmentation vs. Automation:</strong> Senior roles will be augmented by AI for strategy, while entry-to-mid-level tactical work is at the highest risk of total automation.</li>
+<li><strong>Human-Centered Transition:</strong> Be transparent with employees about AI expectations, provide ample training, and use AI to &quot;give them their Sunday nights back&quot; to encourage adoption.</li>
+<li><strong>Use Reasoning Models:</strong> Don't just use AI as a chatbot; use the latest reasoning models as strategic thought partners for complex problem-solving.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</title>
       <link>https://myfeed.theindie.app/articles/20260413-114631-www.youtube.com-watch-v-9wfFH4TLIcQ.html</link>
@@ -167,85 +244,6 @@ Kaput has been using <strong>Claude Code</strong> to automate the creation of hu
 <li><strong>The Employment Gap:</strong> Executives are becoming more public about the reality of job displacement, particularly for those who refuse to adopt AI or for those in entry-level tactical roles.</li>
 <li><strong>Agentic Risk:</strong> The shift toward autonomous AI agents introduces massive security vulnerabilities, as seen in the recent poisoning of major open-source software packages.</li>
 <li><strong>Political Acceleration:</strong> Hundreds of millions of dollars are flowing into pro-AI PACs to ensure a deregulation agenda, making federal AI legislation unlikely in the near term.</li>
-</ul>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</title>
-      <link>https://myfeed.theindie.app/articles/20260413-114547-www.youtube.com-watch-v-Hr7HrauSwlM.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260413-114547-www.youtube.com-watch-v-Hr7HrauSwlM.html</guid>
-      <pubDate>Mon, 13 Apr 2026 04:46:28 GMT</pubDate>
-      <description><![CDATA[🎥 Watch on YouTube: Ep. 206: What NOT to Automate, Human-First AI Training & Amazon’s AI Slowdown
-
----
-
-
-
-In this edition of AI Answers, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM">Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</a></p>
-<hr>
-<h1>Navigating the AI Transition: Strategies for Leadership, Adoption, and the Future of Work</h1>
-<p>In this edition of <em>AI Answers</em>, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Kathy McFillips, Chief Marketing Officer at SmarterX, to address critical questions from business leaders navigating the rapidly shifting landscape of artificial intelligence. Drawing from their experience teaching thousands of professionals through their &quot;Intro to AI&quot; and &quot;Scaling AI&quot; courses, they dive deep into the structural, cultural, and strategic challenges facing modern enterprises.</p>
-<h2>The Growing Pains of Big Tech and the Enterprise</h2>
-<p>The conversation begins with a look at the current state of AI rollouts among major players like Amazon and Meta. Recently, reports have surfaced regarding Amazon slowing parts of its AI deployment due to quality issues and agents &quot;going rogue.&quot;</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;I think there’s just growing pains for everyone right now. Not just on the brand side... but even the tech companies themselves. They’re all trying to move really fast. The tech is advancing so quickly... and it’s really messy. I do think that it could be a sign of maturity, but I think it’s probably more likely a sign of everyone moving really fast and trying to keep up with the competition.&quot;</p>
-<p>Roetzer emphasizes that while the pressure to innovate is immense, the risks associated with autonomous agents—which have access to files and the ability to make decisions—create a new &quot;surface area of risk.&quot; For most enterprises, the path forward requires a balance between aggressive experimentation and responsible safety protocols, often leaning on technical partners to ensure data isn't compromised.</p>
-<h2>AI Native vs. AI Emergent: The Structural Divide</h2>
-<p>A recurring theme in the discussion is the structural disadvantage faced by legacy companies compared to &quot;AI Native&quot; startups. Roetzer categorizes the future business landscape into three types: AI Native, AI Emergent, and Obsolete.</p>
-<ul>
-<li><strong>AI Natives:</strong> Built from the ground up with AI at the core. They lack legacy systems, legacy talent, and outdated pricing models. They can operate with fewer people and higher efficiency from day one.</li>
-<li><strong>AI Emergent:</strong> Existing companies attempting to adapt. These organizations struggle with &quot;legacy debt&quot;—pricing models (like hourly billing) that AI disrupts, and a workforce that may be resistant to change.</li>
-<li><strong>Obsolete:</strong> Companies that fail to move with sufficient urgency.</li>
-</ul>
-<p><strong>[Paul Roetzer]:</strong> &quot;If you’re in a services industry and you’re charging by the hour, it doesn’t work. You’re just going to completely undercut yourself and destroy your financial model... The AI emergence [companies] have talent, they have a customer base, they have financial strength. If they can move fast enough through a combination of vision from leadership and strategic change management, they can push off the AI native competitors. But it’s hard.&quot;</p>
-<h2>The Literacy Bottleneck: Who Owns AI?</h2>
-<p>One of the primary reasons AI adoption stalls in large organizations is a lack of clear ownership. Many CEOs mistakenly view AI as a &quot;technology problem&quot; and hand it off to the IT department or the CIO.</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;It was treated as a pure technology problem. What then happens is they didn’t take the initiative to educate and empower the leaders of each of the different business units... If [CMOs and Heads of Sales] don’t understand AI deeply and aren’t using it themselves, then they can’t own the diffusion of it across their departments.&quot;</p>
-<p>Roetzer notes that &quot;data readiness&quot; is often used as a red herring to slow down adoption. While clean data is vital for high-value use cases, he argues that 90% of marketing use cases in the first year don't require deep data access. Literacy and competency should be the priority, happening in parallel with data infrastructure projects.</p>
-<h2>The AI Divide and the Future of Employment</h2>
-<p>A significant concern for leaders is the emerging &quot;AI divide&quot; within their own teams—the gap between power users and those who resist the technology.</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;The people who don’t [keep up] won’t have jobs. It is one of the hardest realities... I don’t want to say it in that way to seem crude or inhumane. The reality is if you run a company and you know that a tool enables that company to grow more efficiently... and you have people who refuse to use it, they won’t be employed at your company anymore.&quot;</p>
-<p>Roetzer advocates for a human-centered approach: giving employees a &quot;runway&quot; by being transparent about expectations, providing training resources (like the AI Academy), and integrating AI competency into performance reviews.</p>
-<p>Beyond individual displacement, Roetzer remains concerned about the macro-economic impact, specifically regarding &quot;underemployment.&quot;</p>
-<blockquote>
-<p>&quot;I think we’re going to go through a very challenging period from an employment perspective—both unemployment and underemployment. I’m actually more concerned about underemployment... based on all the conversations I have had with leaders of major companies, I have yet to find one that’s prepared for it, and that worries me a lot.&quot;</p>
-</blockquote>
-<h2>Augmentation vs. Automation</h2>
-<p>The impact of AI varies significantly by seniority and role. Roetzer suggests that the spectrum of augmentation versus automation is not evenly distributed.</p>
-<ul>
-<li><strong>Senior Leadership:</strong> Primarily augmentation. AI acts as an &quot;enhanced strategic partner,&quot; helping with reasoning, decision-making, and broad implications.</li>
-<li><strong>Entry to Mid-Level:</strong> Primarily automation. Tactical work—the &quot;doing&quot; of tasks within a strategy—is increasingly being handled by AI with minimal human intervention.</li>
-</ul>
-<p>This shift creates a fundamental problem for the future of work: if senior leaders can use AI to perform the tactical tasks previously assigned to junior staff, how does the next generation gain experience?</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;I have a working hypothesis... you’re going to have leaders with extensive experience who oversee a swarm of agents and a team of people. Those leaders can do most of the work that their lower-level employees used to do. If I’m the CEO and I want to launch a new product, I can build the product myself in Claude Code... I don't need to hire designers and developers.&quot;</p>
-<h2>Building a Robust AI Strategy</h2>
-<p>When it comes to strategy, many companies are still missing the mark. Roetzer identifies the lack of a foundational understanding as the primary culprit.</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;The way everyone gets AI strategy wrong is that they don’t start with AI literacy. I can just stop talking there. It is literally the answer to almost every flawed AI strategy.&quot;</p>
-<p>For those looking to implement AI effectively, Roetzer and McFillips offer several practical insights:</p>
-<h3>1. AI Councils and Governance</h3>
-<p>An AI council should drive progress, not hinder it. If a council becomes too bloated or political, Roetzer suggests spinning off a &quot;Center of Excellence&quot; or a subcommittee that can experiment in a sandbox environment. Governance is most necessary where AI touches sensitive data or where autonomous agents are making decisions that affect stakeholders.</p>
-<h3>2. Showing Results to Leadership</h3>
-<p>When presenting AI to the C-suite, the approach should be tailored to the individual leader. However, as a general rule, results trump the &quot;how.&quot;</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;Show the results. If you say, 'We took this thing that used to be 50 hours a week and condensed it down to seven minutes, and the deliverable is better value,' I don't even care which tool you're using... If they love the tech, then show them the AI. You just got to know who they are and what moves them.&quot;</p>
-<h3>3. The &quot;No-Brainer&quot; Use Case: Reasoning Models</h3>
-<p>The most underutilized &quot;cheat code&quot; in business today is using advanced reasoning models (like GPT-4, Gemini Pro, or Claude Opus) as strategic thought partners.</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;If you’re not using the reasoning models, you’re just leaving so much intelligence on the table. I work across three models every day. I will put the same starter prompt into ChatGPT, Gemini, and Claude... I’ll use the other models as a critic to test the outputs of the primary model. It might take me four or five hours to do it that way instead of 50 hours.&quot;</p>
-<h2>Overcoming Human Nature</h2>
-<p>The session concludes with a reflection on why people wait to be told how to use AI rather than experimenting. Roetzer attributes this to human nature—the same tendency that saw people resist using search engines decades ago.</p>
-<p>The solution, he argues, is to find the &quot;pain point&quot; and solve it.</p>
-<p><strong>[Paul Roetzer]:</strong> &quot;The only way I found to change behavior is to show them a use case that changes their life in a positive way. Solves a pain point they didn't know how to solve... What if that's the thing you can take off someone's plate? 'I'm going to give you your Sunday night back. We're going to build a GPT that's actually going to do this report.' Do that five times for somebody, and there's no way they don't start to experiment themselves.&quot;</p>
-<p>However, as companies automate, they must remain mindful of the human element and brand trust.</p>
-<blockquote>
-<p>&quot;A brand takes a lifetime to build and a moment to lose. That could be a personal brand or a business brand... To the AI, [customers] are just data points. You could start to chip away at that brand equity and trust. That terrifies people like you and me... If you ruin it, what do you have left?&quot;</p>
-</blockquote>
-<h2>Key Takeaways</h2>
-<ul>
-<li><strong>Literacy is the Foundation:</strong> You cannot build an AI strategy without first understanding the technology's capabilities and reasoning models.</li>
-<li><strong>The Seniority Shift:</strong> AI is currently augmenting senior leaders by allowing them to perform tactical tasks, which poses a significant challenge for entry-level career paths.</li>
-<li><strong>Transparency is Essential:</strong> Leaders must be clear with their teams about the transition to an AI-forward culture, providing both the tools and the &quot;runway&quot; for education.</li>
-<li><strong>Reasoning over Chat:</strong> Move beyond using AI as a simple chatbot. Use multiple models to cross-reference, critique, and refine strategic work.</li>
-<li><strong>Focus on Pain Points:</strong> Adoption happens when AI solves a real problem, such as giving an employee their weekend back by automating a tedious reporting task.</li>
 </ul>
 ]]></content:encoded>
       
