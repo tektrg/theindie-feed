@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 11:23:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 11:23:52 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ali Abdaal - Claude&apos;s new features are insane #ad</title>
@@ -7300,6 +7300,478 @@ The anxiety that I see is if you can generate an enormous amount of code and no 
 <p><strong>1:18:45</strong> · Yeah. So, I'm uh online on on Twitter on X. I'm just Sherwin Woo and uh yeah, I mostly just tweet about uh OpenAI and the API and some of the products that we're launching. Uh and then how folks can be uh can be useful to me. Uh I love hearing about things that people are building and so if you're working on a startup, if you're hacking on an idea, you know, would love to uh just reach out to me on X. Um I would love to hear about uh what you're building and and learn about how open I can help support you.</p>
 <p><strong>1:19:11</strong> · Amazing. Sherwin, thank you so much for being here. Yeah. Thank you, Lenny.</p>
 <p><strong>1:19:15</strong> · Bye, everyone. Thank you so much for listening. If you found this valuable, you can subscribe to the show on Apple Podcasts, Spotify, or your favorite podcast app. Also, please consider giving us a rating or leaving a review as that really helps other listeners find the podcast. You can find all past episodes or learn more about the show at lennispodcast.com. See you in the next episode.</p>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>Veritasium - You&apos;ve (Likely) Been Playing The Game of Life Wrong</title>
+      <link>https://myfeed.theindie.app/articles/20260415-182327-www.youtube.com-watch-v-HBluLfX2F_k.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260415-182327-www.youtube.com-watch-v-HBluLfX2F_k.html</guid>
+      <pubDate>Wed, 26 Nov 2025 21:45:00 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: You've (Likely) Been Playing The Game of Life Wrong
+
+---
+
+![](https://www.youtube.com/watch?v=HBluLfX2Fk)
+
+
+
+
+
+ · - Some things are not normal.
+
+ · By that if you go out in the wo...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=HBluLfX2F_k">You've (Likely) Been Playing The Game of Life Wrong</a></p>
+<hr>
+<p><img src="https://www.youtube.com/watch?v=HBluLfX2F_k" alt=""></p>
+<h2>Transcript</h2>
+<h3>What is a power law?</h3>
+<p>**** · - Some things are not normal.</p>
+<p>**** · By that if you go out in the world and start measuring things human height, IQ, or the size of apples on a tree.</p>
+<p>**** · You will find that for each of these things, most of the data clusters around some average value.</p>
+<p>**** · This is so common that we call it the normal distribution, but some things in life are not this.</p>
+<p>**** · - Nature shows power laws all over the place.</p>
+<p>**** · That seems weird.</p>
+<p>**** · is nature tuning itself to criticality?</p>
+<p>**** · - If you make a crude measure of how big is the world war by how many people it kills, you find that it follows a power law.</p>
+<p>**** · The outcome will vary in size over 10 million, 100 million.</p>
+<p>**** · - It's much more likelihood of really big events than you would expect from a normal distribution, and they will totally skew the average.</p>
+<p>**** · - The system you're looking at doesn't have any inherent physical scale.</p>
+<p>**** · It's really hard to know what's gonna happen next.</p>
+<p>**** · - The more you measure, the bigger the average is, which is really weird, it sounds impossible.</p>
+<p>**** · - It's very important to try to understand which game you're playing and what are the payoffs going to be in the long run.</p>
+<p>**** · - In the late 1800s, Italian engineer Vilfredo Pareto stumbled upon something no one had seen before.</p>
+<p>**** · See, he suspected there might be a hidden pattern in how much money people make.</p>
+<p>**** · So he gathered income tax records from Italy, England, France, and other European countries, and for each country he plotted the distribution of income.</p>
+<p>**** · Each country he looked at, he saw the same pattern, a pattern which still holds in most countries to this day, and it's not a normal distribution.</p>
+<p>**** · If you think about a normal distribution height, there's a clearly defined average and extreme outliers never happen.</p>
+<p>**** · you are never going to find someone who is, say, five times the average height, that would be physically impossible, but Pareto's income distributions were different.</p>
+<p>**** · Take this curve for England, it shows the number of people who earn more than a certain income.</p>
+<p>**** · The curve starts off declining steeply, most people earn relatively little, but then it falls away gradually, much more slowly than a normal distribution would, and it spans several orders of magnitude.</p>
+<p>**** · There were people who earned 5 times, 10 times, even 100 times more than others.</p>
+<p>**** · That spread just wouldn't happen if income were normally distributed.</p>
+<p>**** · Now to shrink this huge spread of data, Pareto calculated the logarithms of all the values and plotted those instead.</p>
+<p>**** · In other words, he used a log-log plot, and when he did that, the broad curve transformed into a straight line.</p>
+<p>**** · The gradient was around negative 1.5.</p>
+<p>**** · That means each time you double the income, say, from 200 pounds to 400 pounds, the number of people earning at least that amount drops off by a factor of two to the power of 1.5, which is around 2.8.</p>
+<p>**** · And this pattern holds for every doubling of income.</p>
+<p>**** · So Pareto could describe the distribution of incomes with one simple equation.</p>
+<p>**** · The number of people who earn an income greater than or equal to X is proportional to one over X to the power of 1.5.</p>
+<p>**** · Now, that's what Pareto saw for England, but he performed the same analysis on data from Italy, France, Prussia, and a bunch of other countries, and he saw the same thing again and again.</p>
+<p>**** · Each time the data transformed into a straight line and the gradients were remarkably similar.</p>
+<p>**** · That meant Pareto could describe the income distribution in each country with the same equation, one over the income to some power, where that power is just the absolute gradient of the logarithmic graph.</p>
+<p>**** · This type of relationship is called a power law.</p>
+<p>**** · When you move from the world of normal distributions to the world of power laws, things change dramatically.</p>
+<p>**** · So to illustrate this, let's take a trip to the casino to play three different games.</p>
+<p>**** · At table number one, you get 100 tosses of a coin.</p>
+<p>**** · Each time you flip and it lands on heads, you win $1.</p>
+<p>**** · So the question is, how much would you be prepared to pay to play this game?</p>
+<p>**** · Well, we need to work out how much you'd expect to win in this game and then pay less than that expected value.</p>
+<p>**** · So the probability of throwing a head is 1/2.</p>
+<p>**** · Multiply that by $1 and multiply that by 100 tosses, that gives you an expected payout of $50.</p>
+<p>**** · So you should be willing to pay anything less than $50 to play this game.</p>
+<p>**** · Sure, you might not win every time, but if you play the game hundreds of times, the small variations either side of the average will cancel out and you can expect to turn a profit.</p>
+<h3>Expected Values</h3>
+<p>**** · One of the first people to study this problem was Abraham de Moivre in the early 1700s.</p>
+<p>**** · He showed that if you plot the probability of each outcome, you get a bell-shaped curve, which was later coined the normal distribution.</p>
+<p>**** · - Normal distributions, the traditional explanation is that when there are a lot of effects that are random that are adding up, that's when you expect normals.</p>
+<p>**** · So how tall I am depends on a lot of random things, about my nutrition, about my parents' genetics, all kinds of things, but if these random effects are additive, that is what tends to lead to normals.</p>
+<p>**** · - At table number two, there's a slightly different game.</p>
+<p>**** · You still get 100 tosses of the coin, but this time, instead of potentially winning a dollar on each flip, your winnings are multiplied by some factor.</p>
+<p>**** · So you start out with $1, and then every time you toss a head, you multiply your winnings by 1.1.</p>
+<p>**** · If instead the coin lands on tails, you multiply your winnings by 0.9.</p>
+<p>**** · And after 100 tosses, you take home the total, that is the dollar you started with times the string of 1.1s and 0.9s.</p>
+<p>**** · So, how much should you pay to play this game?</p>
+<p>**** · Well, on each flip, your payout can either grow or shrink, and each is equally likely each time you toss the coin, so the expected factor each turn is just 1.1 plus 0.9 divided by two, which is one.</p>
+<p>**** · So if you start out with $1, then your expected payout is just $1.</p>
+<p>**** · That means you should be willing to pay anything less than a dollar to play this game, **** · Well, if you look at the distribution of payouts, you can see that you could win big.</p>
+<p>**** · If you tossed 100 heads, you'd win 1.1 to the power of 100.</p>
+<p>**** · That's almost $14,000, although the chance of that happening is around 1 in 10 to the power of 30.</p>
+<p>**** · You'd be more likely to win the lottery three times in a row.</p>
+<p>**** · On the other hand, the median payout is around 61 cents.</p>
+<p>**** · So if you're only playing the game one time and you want even odds of turning a profit, well, then you should pay less than 61 cents.</p>
+<p>**** · Though either way, if you played the game hundreds of times, your payout would average out to $1.</p>
+<p>**** · Now, watch what happens if we switch the x-axis from a linear scale to a logarithmic scale.</p>
+<p>**** · Well, then you see the curve transforms into a normal distribution.</p>
+<p>**** · That's why this type of distribution is called a log normal distribution.</p>
+<p>**** · - When random effects multiply, if I have a certain wealth and then my wealth goes up by a certain percentage next year because of my investments, and then the year after that, it changes by another random factor, as opposed to adding, I'm multiplying year after year.</p>
+<p>**** · If you have a big product of random numbers, when you take the log of a product, that's the sum of the logs.</p>
+<p>**** · So what was a product of random numbers then gets translated into sums of logs of random numbers, and that's what leads to this so-called log normal distribution.</p>
+<p>**** · And log normal distributions produce big inequalities.</p>
+<p>**** · You don't just see a mean, you see a mean with a big long tail.</p>
+<p>**** · It's much more likelihood of really big events, in this case, tremendous wealth being obtained, than you would expect from a normal distribution.</p>
+<p>**** · - The reason this curve is so asymmetric is because the downside is capped at zero, so at most, you could lose $1, but the upside can keep growing up to nearly $14,000.</p>
+<p>**** · Now let's go on to table three.</p>
+<p>**** · Again, you'll be tossing a coin, but this time you start out with a dollar and the payout doubles each time you toss the coin and you keep tossing until you get a heads, then the game ends.</p>
+<p>**** · So if you get heads on your first toss, you get $2.</p>
+<p>**** · If you get a tails first and then hit a heads on your second toss, you get $4.</p>
+<p>**** · If you flipped two tails and then a head, on your third toss, you'd get $8, and so on.</p>
+<p>**** · If it took you to the nth toss to get a heads, you would get two to the n dollars.</p>
+<p>**** · So, how much should you pay to play this game?</p>
+<p>**** · Well, as in our previous example, we need to work out the expected value.</p>
+<p>**** · So suppose you throw a head on your first try, the payout is $2 and the probability of that outcome is a half, so the expected value of that toss is a dollar.</p>
+<h3>The St. Petersburg Paradox</h3>
+<p>**** · If it takes you two tosses to get a heads, then the payout is $4 and the probability of that happening is one over four, so again, the expected value is $1.</p>
+<p>**** · We also need to add in the chance that you flip heads on your third try, in that case, the payout is $8 and the probability of that happening is one over eight, so again, the expected value is $1.</p>
+<p>**** · And we have to keep repeating this calculation over all possible outcomes.</p>
+<p>**** · We have to keep adding $1 for each of the different options for flipping the coin, say, 10 times until it lands on heads or 100 times before you get heads.</p>
+<p>**** · I know it's extremely unlikely, but the payout is so huge that the expected value of that outcome is still a dollar, so it still increases the expected value of the whole game.</p>
+<p>**** · This means that, theoretically, the total expected value of this game is infinite.</p>
+<p>**** · This is known as the St. Petersburg paradox.</p>
+<p>**** · If you look at the distribution of payouts, you can see it's uncapped, it spans across all orders of magnitude.</p>
+<p>**** · You could get a payout of $1,000, $100,000, or even a million dollars or more.</p>
+<p>**** · And while a million dollar payout is unlikely, it's not that unlikely, it's around one in a million.</p>
+<p>**** · Now, if you transform both axes to a log scale, you see a straight line with a gradient of negative one.</p>
+<p>**** · The payout of the St. Petersburg paradox follows a power law.</p>
+<p>**** · The specific power law in this case is that the probability of a payout x is equal to x to the power of negative one or one over x.</p>
+<p>**** · In the previous games when you have a normal distribution or even a log normal distribution, you can measure the width of that distribution, its standard deviation.</p>
+<p>**** · And in a normal distribution, 95% of the data fall within two standard deviations from the mean.</p>
+<p>**** · But with a power law, in the St. Petersburg paradox, there is no measurable width, the standard deviation is infinite.</p>
+<p>**** · This makes power laws a fundamentally different beast with some very weird properties.</p>
+<p>**** · - Imagine you take a bunch of random samples and then average them and then take more random samples and average them, you'll find that the average keeps going up, it doesn't converge.</p>
+<p>**** · And the more you measure, the bigger the average is, which is really weird, it sounds impossible, but it's because it has such a heavy tail, meaning the probability of really whopping big events is so significant that if you keep measuring, occasionally you're gonna measure one of those extreme outliers and they will totally skew the average.</p>
+<p>**** · It's saying, if you're standing in a room with Bill Gates or Elon Musk, the average wealth in that room is gonna be 100 billion dollars or something (laughs) because the average is dominated by one outlier.</p>
+<h3>Outliers Dominate Averages</h3>
+<p>**** · - And that same idea, one outlier can dominate the average, shows up online too.</p>
+<p>**** · A handful of companies, servers, and data centers hold the personal information of millions of people, so when one of them gets hacked, it can have ripple effects across the whole network.</p>
+<p>**** · We've had scammers get a hold of email addresses and phone numbers of writers on our team and then send them messages pretending to be me.</p>
+<p>**** · That is where today's sponsor, NordVPN, comes in.</p>
+<p>**** · NordVPN encrypts your internet traffic so your personal data stays private, even when the wider system isn't.</p>
+<p>**** · It protects you from hackers, trackers, and malware with threat protection, even when you're not connected to a VPN.</p>
+<p>**** · Within just 15 minutes of registering a new email, we saw that five leaks had already been detected.</p>
+<p>**** · NordVPN lets you browse securely from anywhere in the world by routing your connection through encrypted servers in over 60 countries.</p>
+<p>**** · You can try it completely risk-free with a 30-day money-back guarantee.</p>
+<p>**** · Just scan this QR code or go to NordVPN.com/veritasium to get a huge discount on a two-year plan plus four extra months free.</p>
+<p>**** · That's NordVPN.com/veritasium for a huge discount.</p>
+<p>**** · I'll put the link down in the description.</p>
+<p>**** · I'd to thank NordVPN for sponsoring this video.</p>
+<p>**** · And now, back to power laws.</p>
+<p>**** · So, why do you get a power law from the simple St. Petersburg setup?</p>
+<p>**** · If you look at the payout x, you can see it grows exponentially with each toss of the coin, x equals two to the n.</p>
+<p>**** · But if you look at the probability of tossing the coin that many times to get a heads, you can see that this probability shrinks exponentially.</p>
+<p>**** · So the probability of flipping a coin n times is 1/2 to the power of n.</p>
+<p>**** · But we're not really interested in the number of tosses, we're interested in the payout.</p>
+<p>**** · Now we know that x equals two to the n, so instead of writing two to the n in our probability equation, we can just write x.</p>
+<p>**** · So we end up with this, the probability of a payout of x dollars is equal to one over x, or in other words, x to the power of negative one.</p>
+<p>**** · - You put them together, the exponentials conspire to make a power law.</p>
+<p>**** · And that's a very common thing in nature, that a lot of times when we see power laws, there are two underlying exponentials that are dancing together to make a power law.</p>
+<p>**** · - One example of this is earthquakes.</p>
+<p>**** · If you look at data on earthquakes, you find that small earthquakes are very common, but earthquakes of increasing magnitudes become exponentially rarer.</p>
+<p>**** · But the destruction that earthquakes cause is not proportional to their magnitude, it's proportional to the energy they release.</p>
+<p>**** · And as earthquakes grow in magnitude, that energy grows exponentially.</p>
+<p>**** · - So there's this exponential decay in frequency of earthquakes of a given magnitude and an exponential increase in the amount of energy released by earthquakes of a certain magnitude.</p>
+<p>**** · So when you combine those two exponentials to eliminate the magnitude, what you find is a power law.</p>
+<p>**** · - But power laws also reveal something deeper about the underlying structure of a system.</p>
+<p>**** · To see this in action, let's go back to the third coin game and the St. Petersburg paradox.</p>
+<p>**** · Now, you can draw all the different outcomes as a tree diagram where the length of each branch is equal to its probability.</p>
+<p>**** · So starting with a single line of length one and then 1/2 for the first two branches, 1/4 for the next four, and so on.</p>
+<p>**** · Now, when you zoom in, you keep seeing the same structure repeating at smaller and smaller scales.</p>
+<p>**** · It's self-similar a fractal, and that's no coincidence.</p>
+<p>**** · We see the same fractal-pattern in the veins on a leaf, river networks, the blood vessels in our lungs, even lightning, and in all of these cases, we can describe the pattern with a power law.</p>
+<h3>Fractals and Power Laws</h3>
+<p>**** · Power laws and fractals are intrinsically linked.</p>
+<p>**** · That's because power laws reveal something fundamental about a system's structure.</p>
+<p>**** · - So I've got a magnet and I've got a screw, and you'll notice if I bring them close together, then the screw gets attracted to the magnet, and that's because there's a lot of iron it, which is ferromagnetic.</p>
+<p>**** · But watch what happens if I start heating this up.</p>
+<p>**** · Trying to...</p>
+<p>**** · Oh!</p>
+<p>**** · You see that?</p>
+<p>**** · there it went!</p>
+<p>**** · There it went!</p>
+<p>**** · You see, you heat it up and suddenly it becomes nonmagnetic.</p>
+<p>**** · To find out what happened, let's zoom in on this magnet.</p>
+<p>**** · - Inside a magnet, each atom has its own magnetic moment, which means you can think of it its own little magnet or compass.</p>
+<p>**** · If one atom's moment points up, its neighbors tend to point that way too since this lowers the system's overall potential energy.</p>
+<p>**** · Therefore at low temperatures, you get large regions called domains where all the moments align.</p>
+<p>**** · And when many of these domains also align, their individual magnetic fields reinforce to create an overall field around the magnet.</p>
+<p>**** · But if you heat up the magnet, each atom starts vibrating vigorously.</p>
+<p>**** · The moments flip up and down and so the alignment can break down.</p>
+<p>**** · And when all the moments cancel out, then there's no longer a net magnetic field.</p>
+<p>**** · Now, if you have the equipment, you can balance any magnetic material on that transition point, between magnetic and nonmagnetic.</p>
+<p>**** · This is called the critical point and it occurs at a specific temperature called the Curie temperature.</p>
+<p>**** · I asked Casper and the team to build a simulation to show what's going on inside the magnet at this critical point.</p>
+<p>**** · - Each pixel represents the magnetic moment of an individual atom.</p>
+<p>**** · Let's say red is up and blue is down.</p>
+<p>**** · Now, when the temperature is low, we get these big domains where the magnetic moments are all aligned and you get an overall magnetic field.</p>
+<p>**** · But if we really crank up the temperature, then all of these moments start flipping up and down and so they cancel out and the magnet loses its magnetism, so that's exactly what happened in our demo.</p>
+<p>**** · But if we tune the temperature just to that Curie temperature, then the pattern becomes way more interesting.</p>
+<p>**** · - This looks a map.</p>
+<p>**** · - a map?</p>
+<p>**** · - Yeah, it almost looks the Mediterranean or something.</p>
+<p>**** · It's almost stable, atoms that are pointing one way tend to point that way for a while, but there is clearly fluctuations as well, so domains are constantly coming and going.</p>
+<p>**** · It's both got some elements of stability and some persistence over time, some features which are consistent, but it's also not locked in place because you notice changes over time.</p>
+<p>**** · - [Casper] If you zoom in, you find that the same kinds of patterns repeat at all scales.</p>
+<p>**** · You've got domains of tens of atoms, hundreds, thousands, even millions.</p>
+<p>**** · There's just no inherent scale to the system, that is, it's scale-free, it's just a fractal.</p>
+<p>**** · And if you plot the size distribution of the domains, you get a power law.</p>
+<p>**** · - The underlying geometry suddenly shows a fractal character that it doesn't have on either side of the phase transition.</p>
+<p>**** · at the phase transition, you get fractal behavior and that pops out as a power law.</p>
+<p>**** · - In fact, whenever you find a power law, that indicates you're dealing with a system that has no intrinsic scale, and that is a signature of a system in a critical state, which turns out has huge consequences.</p>
+<p>**** · - See, normally in a magnet below the Curie temperature, each atom influences only its neighbors.</p>
+<p>**** · If one atom's magnetic moment flips up, then that means that its neighbors are slightly more likely to point up too.</p>
+<p>**** · But that influence is local, it dies out just a few atoms away.</p>
+<p>**** · But as the magnet approaches its critical temperature, those local influences start to chain together.</p>
+<p>**** · One spin nudges its neighbor and that neighbor nudges the next and so on, a rumor spreading through a crowd.</p>
+<p>**** · And the result is that the effective range of influence keeps expanding, and at the critical point, it becomes effectively infinite.</p>
+<h3>Self-Organized Criticality</h3>
+<p>**** · A flip on one side can cascade throughout the entire material.</p>
+<p>**** · So you get these small causes, just a single flip, to reverberate throughout the entire system.</p>
+<p>**** · - And it gets into that point where the system is maximally unstable, anything can happen.</p>
+<p>**** · It's also maximally interesting in a way.</p>
+<p>**** · It means the system is most unpredictable, most uncertain, it's really hard to know what's gonna happen next, and that seems to be a natural procedure that happens in many different systems in the world.</p>
+<p>**** · - One such system is forest fires.</p>
+<p>**** · In June, 1988, a lightning strike started a small fire near Yellowstone National Park.</p>
+<p>**** · This was nothing out of the ordinary.</p>
+<p>**** · Each year, Yellowstone experiences thousands of lightning strikes.</p>
+<p>**** · Most don't cause fires and those that do tend to burn a few trees, maybe even a few acres before they fizzle out.</p>
+<p>**** · 3/4 of fires burn less than 1/4 of an acre.</p>
+<p>**** · The largest fire in the park's recent history occurred in 1931.</p>
+<p>**** · That burned through 18,000 acres, an area slightly larger than Manhattan.</p>
+<p>**** · But the 1988 fire was different, that initial spark spread slowly at first covering several thousand acres.</p>
+<p>**** · Then over the next couple of months, it merged with other small fires to create an enormous complex of megafires that blazed across 1.4 million acres of land.</p>
+<p>**** · That's around the size of the entire state of Delaware.</p>
+<p>**** · That's 70 times bigger than the previous record, and 50 times the area of all the fires over the previous 15 years combined.</p>
+<p>**** · So, what was so special about the 1988 fires?</p>
+<p>**** · Well, to find out, we made a forest fire simulator.</p>
+<p>**** · - We've got a grid of squares, and on each square, either a tree could be there, it could grow, or it could not be there.</p>
+<p>**** · There's gonna be some probability for lightning strikes.</p>
+<p>**** · So the higher that probability, the more fires we're gonna have.</p>
+<p>**** · We can run this.</p>
+<p>**** · - So trees are growing.</p>
+<p>**** · - [Casper] Trees are growing, - Forest is filling in.</p>
+<p>**** · Nice.</p>
+<p>**** · Getting pretty dense.</p>
+<p>**** · - What do you expect is gonna happen?</p>
+<p>**** · - I expect to see some fires.</p>
+<p>**** · Probably, now that...</p>
+<p>**** · Oh!</p>
+<p>**** · That was good, that was a good little fire.</p>
+<p>**** · Whoa!</p>
+<p>**** · Whoa!</p>
+<p>**** · No way!</p>
+<p>**** · Well, that's crazy.</p>
+<p>**** · You haven't adjusted the parameters, **** · It's just - - Not yet, not yet.</p>
+<p>**** · - This seems a very critical situation just by itself.</p>
+<p>**** · I say that because of how big that fire was.</p>
+<p>**** · - This system will tune itself to criticality, and you can see it start to happen.</p>
+<p>**** · So now, I think it's a good moment where you have domains of a lot of different sizes.</p>
+<p>**** · And then one way to think about it is if some of these domains become too big, then you get a single fire that one, perfectly timed.</p>
+<p>**** · - Burns them all out. - It's just gonna propagate throughout the whole thing and burn it back down a little.</p>
+<p>**** · But then if it goes too hard, then now you've got all these domains where there are no trees and so it's gonna grow again to bring it back to that critical state.</p>
+<p>**** · - I can see how it's the feedback mechanism, that the fire gets rid of all the trees and there's nothing left to burn, and then that has to fill in again.</p>
+<p>**** · - [Casper] Yeah. - Yeah.</p>
+<p>**** · But if there hasn't been a fire, then the forest gets too thick and then it's ripe for this massive fire.</p>
+<p>**** · - For a magnet, you have to painstakingly tune it to the critical point, but the forest naturally drives itself there.</p>
+<p>**** · This phenomenon is called self-organized criticality.</p>
+<p>**** · Yeah, and if you let it run, what you get is, again, a power law distribution.</p>
+<p>**** · So this is log-log, so it should be a straight line.</p>
+<p>**** · - That stuff seems so totally random and unpredictable, and it is in one way, and yet it follows a pattern.</p>
+<p>**** · There's a consistent mathematical pattern to all these disasters.</p>
+<p>**** · It's shocking.</p>
+<p>**** · - Is there something fractal about this?</p>
+<p>**** · - Mostly in terms of the, I guess, domains of the trees when you're at that critical state.</p>
+<p>**** · So you get very dense areas, you get non-dense areas.</p>
+<p>**** · And as a result, when a single lightning bolt strikes, you can get fires of all sizes.</p>
+<p>**** · Most often you get small fires of 10 or fewer trees burning.</p>
+<p>**** · A little less frequently, you get fires of less than 100 trees.</p>
+<p>**** · And then every once in a while, you get these massive fires that reverberate throughout the entire system.</p>
+<p>**** · Now, you might expect that because the fire is so large, there has to be a significant event causing it, but that's not the case because the cause for each fire is the exact same, it's a single lightning strike.</p>
+<h3>Why do we light controlled forest fires?</h3>
+<p>**** · The only difference is where it strikes and the exact makeup of the forest at that time.</p>
+<p>**** · So in some very real way, the large fires are nothing more than magnified versions of the small ones, and even worse, they're inevitable.</p>
+<p>**** · So what we've learned is that for systems in a critical state, there are no special events causing the massive fires.</p>
+<p>**** · There was nothing special about the Yellowstone fire.</p>
+<p>**** · - In 1935, the US Forest Service established the so-called AM policy.</p>
+<p>**** · The plan was to suppress every single fire by AM on the day following its initial report.</p>
+<p>**** · Now, naively, this strategy makes sense.</p>
+<p>**** · if you keep all fires under strict control, then none can ever get out of hand.</p>
+<p>**** · But it turns out this strategy is extremely risky.</p>
+<p>**** · - So let's say we're gonna bring down the lightning probability, so it's very small, only one in a million now, and we're also gonna crank up the tree growth a little bit.</p>
+<p>**** · Now what do you think is gonna happen?</p>
+<p>**** · - We're gonna get some big fires, I would imagine, a lot of not fire and then some huge fires.</p>
+<p>**** · Yeah.</p>
+<p>**** · (Derek laughs) - [Casper] Yep.</p>
+<p>**** · - Oh boy.</p>
+<p>**** · - [Casper] So nowadays, the fire service has a very different approach.</p>
+<p>**** · They acknowledge that some fires are essential to make the megafires less likely.</p>
+<p>**** · So they let most small fires burn and only intervene when necessary.</p>
+<p>**** · In some cases, they even intentionally create small fires to burn through some of the buildup, though it could take years to return the forest to its natural state after a century of fire suppression.</p>
+<p>**** · But it's more than just the Earth's forests that are balanced in this critical state.</p>
+<p>**** · Every day, the Earth's crust is moving and rearranging itself.</p>
+<p>**** · Stresses build up slowly as tectonic plates rub against each other.</p>
+<p>**** · Most of the time, you get a few rocks crumbling, the ground might move just a fraction of a millimeter, but the stresses dissipate in many earthquakes that you wouldn't even feel.</p>
+<p>**** · - There are really tiny earthquakes that are happening now beneath your feet, you just can't feel 'em because they're very small.</p>
+<p>**** · But they are earthquakes, they're driven by small slipping movements in the Earth's crust.</p>
+<p>**** · - [Casper] But sometimes those random movements can trigger a powerful chain reaction.</p>
+<p>**** · - [Derek] In Kobe, Japan, the morning of January 17, 1995 seemed just any other.</p>
+<p>**** · This was a peaceful city, and although Japan as a country is no stranger to earthquakes, Kobe hadn't suffered a major quake for centuries.</p>
+<h3>How We Can Predict Earthquakes</h3>
+<p>**** · Generations grew up believing the ground beneath them was stable, but that morning, deep underground, a stress released nearby the Nojima fault line.</p>
+<p>**** · The stress propagated to the next section of the fault and the next.</p>
+<p>**** · Within seconds, the ruptured cascaded along 40 kilometers of crust, shifting the ground by up to two meters and releasing the energy equivalent of numerous atomic bombs.</p>
+<p>**** · The resulting quake destroyed thousands of homes along with most major roads and railways leading into the city.</p>
+<p>**** · It killed over 6,000 people and forced 300,000 from their homes.</p>
+<p>**** · - How far it goes depends a lot on chance and the organization of all that stress field in the Earth's crust.</p>
+<p>**** · And it just seems to be organized in such a way that it is possible oftentimes for the earthquake to trickle along an avalanche along a long way and produce a very large unusual earthquake.</p>
+<p>**** · But if you look at the process behind that earthquake, it is exactly the same physical process.</p>
+<p>**** · It's just that the earthquake-generating process naturally produces events that range over an enormous range of scale, and we're not really used to thinking about that.</p>
+<p>**** · - We have this ingrained assumption that we can use the past to predict the future, but when it comes to earthquakes or any system that's in a critical state, that assumption can be catastrophic because they're famously unpredictable.</p>
+<p>**** · So, how can you even begin to model something the behavior of earthquakes?</p>
+<p>**** · - [Derek] In 1987, Danish physicist Per Bak and his colleagues considered a simple thought experiment.</p>
+<p>**** · Take a grain of sand and drop it on a grid, then keep dropping grains on top until at some point the sandpile gets so steep that the grains tumble down onto different squares.</p>
+<p>**** · - What they looked at was the size of these, what they were calling avalanches, these reorganizations of numbers of grains of sand.</p>
+<p>**** · They asked for how often do you see avalanches of a certain size.</p>
+<p>**** · - This is the most simple version of a sandpile simulator that you could almost imagine.</p>
+<p>**** · We're gonna drop a little grain of sand at first always in the center, and then it's just gonna keep going up.</p>
+<p>**** · For one grain, it'll be fine.</p>
+<p>**** · For two grains, it'll be fine.</p>
+<p>**** · Three grains, it'll be fine, but it's on the edge of toppling.</p>
+<p>**** · And then when it reaches four or more, it's gonna go.</p>
+<p>**** · It feels a bit a, I don't know, pulsing thing, something's trying to escape or something, very video game-**** · That seemed pretty crazy.</p>
+<p>**** · And it is symmetrical.</p>
+<p>**** · - Yeah, nice geometric features.</p>
+<p>**** · - So this might be interesting because now we passed it at a point where this middle one is gonna go, and then you look around it and you see, essentially you can think of these brown or these three tall grain stacks as being maximally unstable.</p>
+<p>**** · They're about to go, and so you could think of them as these fingers of instability.</p>
+<p>**** · If anything touches them, they're just gonna go.</p>
+<p>**** · (lively music) - I see it propagating out.</p>
+<p>**** · - It's cool seeing it slower.</p>
+<p>**** · I feel you can see several waves propagating at the same time.</p>
+<p>**** · - Some people have reasoned that the Earth's crust becomes riddled with similar fingers of instability where you get stresses building up, and then when one rock crumbles, it can propagate along these fingers, potentially triggering massive earthquakes.</p>
+<p>**** · If you look at the data, there's some even more compelling evidence that links the sandpile simulation to earthquakes.</p>
+<p>**** · - Let's say instead of dropping it at the center, pretty unrealistic to have it drop in the center, I'm gonna drop at random.</p>
+<p>**** · - Hah!</p>
+<p>**** · That's crazy.</p>
+<p>**** · - You can see it tune itself to the critical state.</p>
+<p>**** · at the start, you only see these super tiny avalanches and then now it's everything.</p>
+<p>**** · - It has to build up.</p>
+<p>**** · - We can slow down a little.</p>
+<p>**** · Oh, and that's a super clean power law.</p>
+<p>**** · There are events of all sizes.</p>
+<p>**** · One grain of sand might knock over just a few others or it could trigger an avalanche of millions of grains that cascade throughout the entire system.</p>
+<p>**** · And if you look at the power law you get from the sandpile simulation, it closely resembles the power law of the energy released by real earthquakes.</p>
+<p>**** · But if you look at the sandpile experiment more closely, it doesn't just resemble earthquakes.</p>
+<p>**** · What does it remind you of?</p>
+<p>**** · - Forest fires. - [Casper] **** · It feels it's the exact same behavior.</p>
+<p>**** · - That's the really surprising thing, and that's why this little paper with a sandpile was published in the world's top journal because it did something that people just didn't really think was possible.</p>
+<p>**** · - Now, what's ironic is if you look at real sandpiles, they don't behave this.</p>
+<p>**** · - Okay, you said sand, I'm gonna do an experiment on a real sandpile.</p>
+<p>**** · And of course, it doesn't follow a power law distribution of avalanches at all.</p>
+<p>**** · It's totally wrong.</p>
+<p>**** · (Steven and Derek laugh) Per Bak, naturally, gets a chance to reply to the criticism, and he says, I'm pretty close to quoting, he says, &quot;Self-organized criticality only applies to the systems it applies to.&quot;</p>
+<p>**** · (Steven laughs) So he doesn't care, the fact that his theory is not relevant to real sandpiles.</p>
+<p>**** · So what?</p>
+<p>**** · Get out of my face.</p>
+<p>**** · He's interested in bigger fish to fry than sandpiles.</p>
+<p>**** · It's you're taking me too ### Critical Systems and Universality</p>
+<p>**** · I'm talking about a universal mechanism for generating power laws.</p>
+<p>**** · And the fact that it doesn't work in real sand is uninteresting to him.</p>
+<p>**** · I thought that took some real nerve.</p>
+<p>**** · - You could think about the Earth and the Earth going around the Sun.</p>
+<p>**** · That's a very complex system.</p>
+<p>**** · You've got the molten core, everything sloshing around, and you've got oceans, and you've even got the moon going around the Earth, which in theory, all should affect the exact motion of the Earth around the Sun.</p>
+<p>**** · But Newton ignored all of that, all he looked at was just a single parameter, essentially, the mass of the Earth.</p>
+<p>**** · And with that, he could correctly, for the most part, predict how the Earth was gonna go around the Sun.</p>
+<p>**** · Similarly here, there are people that have looked at these phenomena that go to the critical state, in this case it's self-organized criticality, is it brings itself there, and what they find is that there's this universal behavior where it doesn't even really matter what the subparts are, you just get the behavior that's the exact same.</p>
+<p>**** · - At that critical point when all the forces are poised and the system is on that delicate balance between being organized, highly organized, or being totally disorganized, it turns out that almost none of the physical details about that system matter to how it behaves.</p>
+<p>**** · There's just a universal behavior that is irrespective of what physical system you're talking about.</p>
+<p>**** · The term that was used is called universality, and it's a miracle, it means you can make extremely powerful theories without involving any technical details, any real details of the material.</p>
+<p>**** · - What this means is that you could have these systems that on the surface seem totally different, but when you get to the critical point, they all behave in the exact same way.</p>
+<p>**** · The other thing you could do is instead of this being trees, you could imagine it being people and the thing that's spreading- - Is disease.</p>
+<p>**** · - Is disease, yeah.</p>
+<p>**** · - You almost get something for nothing at these critical points.</p>
+<p>**** · - See, many of these systems fall into what's known as universality classes.</p>
+<p>**** · Some of them you need to tune to get there, magnets at their Curie temperature or fluids water or carbon dioxide at their critical point, but some other systems seem to organize themselves to criticality, the forest fires or sandpiles or earthquakes.</p>
+<p>**** · But what's crazy is that if you succeed in understanding just one system from a class, then how all the systems in that class behave, and that includes even the crudest simplest toy models, the simulations we've looked at.</p>
+<p>**** · So you can model incredibly complex systems with the most basic of models.</p>
+<p>**** · And some people think this critical thinking applies even further.</p>
+<p>**** · When we look around the world, there are lots of systems that show the same power law behavior that we see in this critical systems.</p>
+<p>**** · It's in everything from DNA sequencing to the distribution of species in an ecosystem to the size of mass extinctions throughout history.</p>
+<p>**** · We even see the same behavior in human systems, the populations of cities, fluctuations in stock prices, citations of scientific papers, and even the number of deaths in wars.</p>
+<p>**** · So some people argue that these systems and perhaps many parts of our world also organize themselves to this critical point.</p>
+<p>**** · - So the fact that all these natural hazards, as they call them, floods, wildfires, and earthquakes, they all follow power law distributions means that these extreme events are much more common than you would think based on normal distribution thinking.</p>
+<p>**** · - If you find yourself in a situation or an environment that is governed by a power law, how should you change your behavior?</p>
+<p>**** · - If you have events with one of these power distributions, what you're seeing most of the time is small events.</p>
+<p>**** · And this can lull you into a false sense of security, you think you understand how things are going.</p>
+<p>**** · floods for example, there are a lot of small floods, and then every once in a while, there's a huge one.</p>
+<p>**** · One response to this is insurance, that insurance is designed precisely to protect you against the large rare events that would otherwise be very bad.</p>
+<p>**** · But then there's the other side of that picture, which is you are the insurance company that needs to insure people and they have a particularly difficult job because they have to be able to say how much to charge so that they have enough money to pay out when the big bad thing comes along.</p>
+<h3>How Some Businesses Are Built On Power Laws</h3>
+<p>**** · - [Derek] In 2018, a forest fire tore through Paradise, California, it became the deadliest and most destructive fire in the state's history, but the insurance company, Merced Property &amp; Casualty, hadn't planned for something that huge, and when the claims came in, they just didn't have the reserves to pay out.</p>
+<p>**** · So just that, the company went bust.</p>
+<p>**** · - But while extreme events can cripple some companies, there are entire industries that are built on power law distributions.</p>
+<p>**** · Between 1985 and 2014, private equity firm Horsley Bridge invested in 7,000 different startups and over half of their investments lost money, but the top 6% more than 10xed in value and generated 60% of the firm's overall profit.</p>
+<p>**** · In fact, the best venture capital firms often have more investments that lose money, they just have a few crazy outliers that show extraordinary growth, a few outliers that carry the entire performance.</p>
+<p>**** · In 2012, Y Combinator calculated that 75% of their returns came from just two out of the 280 startups they invested in.</p>
+<p>**** · So venture capital is a world that depends on taking risks in the hope that you'll get a few of these extreme outliers which outperform all of the rest of the investments combined.</p>
+<p>**** · - [Derek] Book publishers operate in a similar fashion, most titles flop, but in 1997, a small independent UK publisher called Bloomsbury took a chance on a story about a boy wizard.</p>
+<p>**** · The boy's name, of course, was Harry Potter, and now Bloomsbury is a globally recognized brand.</p>
+<p>**** · We see a similar pattern play out on streaming platforms.</p>
+<p>**** · On Netflix, the top 6% of shows account for over half of all viewing hours on the platform.</p>
+<p>**** · On YouTube, less than 4% of videos ever reach 10,000 views, but those videos account for over 93% of all views.</p>
+<p>**** · - All these domains follow the same principle that Pareto identified over 100 years ago where the majority of the wealth goes to the richest few.</p>
+<p>**** · The entire game is defined by the rare runaway hits.</p>
+<p>**** · - But not every industry can play this game.</p>
+<p>**** · if you're running a restaurant, you need to fill tables night after night.</p>
+<p>**** · You can't have one particularly busy summer evening that brings in millions of customers to make up for a bunch of quiet nights.</p>
+<p>**** · Over a year, the busy nights and quiet ones balance out and you're left with the average.</p>
+<p>**** · Airlines are similar, an airline needs to fill seats on each flight.</p>
+<p>**** · You can't squeeze a million passengers onto one plane, so it's the average number of passengers over the year that defines an airline's success.</p>
+<p>**** · - We're used to living in this world of normal distributions and you act a certain way, but as soon as you switch to this realm that is governed by a power law, you need to start acting vastly different.</p>
+<p>**** · It really pays to know what world or what game you're playing.</p>
+<h3>What game are you playing? Normal or power?</h3>
+<p>**** · - That is good.</p>
+<p>**** · That's good, yes.</p>
+<p>**** · You should come on camera and just say that just that.</p>
+<p>**** · You were on camera, you just did do it.</p>
+<p>**** · (Steven laughs) - If you are in a world where random additive variations cancel out over time, then you get a normal distribution.</p>
+<p>**** · And in this case, it's the average performance, so consistency, which is important.</p>
+<p>**** · But if you are in a world that's governed by a power law where your returns can multiply and they can grow over many orders of magnitude, then it might make sense to take some riskier bets in the hope that one of them pays off huge.</p>
+<p>**** · In other words, it becomes more important to be persistent than consistent.</p>
+<p>**** · - [Derek] Though as we saw in the second coin game, totally random multiplicative returns give you a log normal distribution, not a power law.</p>
+<p>**** · To get a power law, there must be some other mechanism at play.</p>
+<p>**** · In the early 2000s, Albert-László Barabási was studying the internet, and to his surprise, he found that there was no normal webpage with some average number of links.</p>
+<p>**** · Instead, the distribution followed a power law.</p>
+<p>**** · A few sites Yahoo had thousands of times more connections than most of the others.</p>
+<p>**** · Barabasi wondered what could be causing this power law of the internet, so he made a simple prediction.</p>
+<p>**** · As new sites were added to the internet, they were more likely to link to well-known pages.</p>
+<p>**** · To test this prediction, he and his colleague Réka Albert ran a simulation.</p>
+<p>**** · They started with a network of just a few nodes and gradually they added new nodes to the network with each new node more likely to connect to those with the most links.</p>
+<p>**** · As the network grew, a power law emerged.</p>
+<p>**** · The power was around negative two, which almost exactly matched the real data of the internet.</p>
+<p>**** · - [Casper] Look at that. - [Derek] That's fun.</p>
+<p>**** · - It's still so satisfying.</p>
+<p>**** · This will also distribute a power law.</p>
+<p>**** · One of the ideas here is that this could be individuals or even companies, and so if you're more likely to become more successful or more well known or successful you already are, you're gonna get this runaway effect where you get a few that dominate the distributions.</p>
+<p>**** · I wonder if part of the takeaway is if you're playing some game that is dominated by a power law, then you better do the work as much of it as early as possible so you get to benefit from the snowball effect, essentially.</p>
+<p>**** · - Yeah, I guess that's a good idea.</p>
+<p>**** · I'm not sure whether you can control it, though.</p>
+<p>**** · Human beings to think of ourselves as being a bit special, and that maybe somehow because we're intelligent and have free will.</p>
+<p>**** · We will escape the provenance of the laws of physics in order and organization, but I think that's probably not the case.</p>
+<p>**** · So if you look at the number of world wars, and if you make a crude measure of how big is the world war by how many people it kills, which is a bit macabre, but still, you find that, again, it follows a power law virtually identical to the power law you find in stock market crashes.</p>
+<p>**** · - So if the world is shaped by power laws, then it feels we're poised in this critical state where two identical grains of sand, two identical actions can have wildly different effects.</p>
+<p>**** · Most things barely move the needle, but a few rare events totally dwarf the rest, and that, I think, is the most important lesson.</p>
+<p>**** · If you choose to pursue areas governed by the normal distribution, you can pretty much guarantee average results.</p>
+<p>**** · But if you select pursuits ruled by power laws, the goal isn't to avoid risk, it's to make repeated intelligent bets.</p>
+<p>**** · Most of them will fail, but you only need one wild success to pay for all the rest.</p>
+<p>**** · - And the thing is that beforehand you cannot know which bet is going to be because the system is maximally unpredictable.</p>
+<p>**** · It could be that your next bet does nothing, it could do a little bit, or it could change your entire life.</p>
+<p>**** · In fact, around three years ago, I was reading this little book, and in the book there was this little line saying something &quot;One idea could transform your entire life.&quot;</p>
+<p>**** · So underneath that, I wrote, &quot;Send an email to Veritasium.&quot;</p>
+<p>**** · A couple days later, I wrote an email to Derek, saying, &quot;Hey, Derek, I'm Casper.</p>
+<p>**** · I study physics and I can help you research videos.&quot;</p>
+<p>**** · I didn't hear back for four weeks, so I was getting pretty sad and just wanted to forget about it and move on, but then a couple days later I got an email back saying, &quot;Hey, Casper, we can't do an internship now, but how would you to research, write, and produce a video as a freelancer?&quot;</p>
+<p>**** · So I did, and that's how I get started at Veritasium.</p>
+<p>**** · Hey, just a few quick final things.</p>
+<p>**** · All the simulations that we used in this video we'll make available for free for you to use in the link in the description.</p>
+<p>**** · And the other thing is that we just launched the official Veritasium game.</p>
+<p>**** · It's called Elements of Truth and it's a tabletop game with over 800 questions.</p>
+<p>**** · It's the perfect way to challenge your friends and see who comes out on top.</p>
+<p>**** · Now, at Veritasium, we're all quite competitive, so every time we play, things get a little bit heated, but that's honestly a big part of the fun.</p>
+<p>**** · Now, when we launched on Kickstarter, we got a lot of questions asking if we could ship to specific countries.</p>
+<p>**** · And originally we didn't enable this, and this is our mistake, this is on us and we totally hear you, but I'm glad to say that now we have enabled worldwide shipping.</p>
+<p>**** · So no matter where you are in the world, you can get your very own copy.</p>
+<p>**** · To reserve your copy and get involved, scan this QR code or click the link in the description.</p>
+<p>**** · I wanna thank you for all your support, and most of all, thank you for watching.</p>
 ]]></content:encoded>
       
     </item>
