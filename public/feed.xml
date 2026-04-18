@@ -7,8 +7,175 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2026 18:03:36 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 15:22:59 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TED - How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED</title>
+      <link>https://myfeed.theindie.app/articles/20260418-222218-www.youtube.com-watch-v-7rzYDM6vMtI.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260418-222218-www.youtube.com-watch-v-7rzYDM6vMtI.html</guid>
+      <pubDate>Sat, 18 Apr 2026 15:22:55 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED
+
+---
+
+![](https://www.youtube.com/watch?v=7rzYDM6vMtI)
+
+
+
+ · What's OpenClaw?
+
+ · I've been programming...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=7rzYDM6vMtI">How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED</a></p>
+<hr>
+<p><img src="https://www.youtube.com/watch?v=7rzYDM6vMtI" alt=""></p>
+<h2>Transcript</h2>
+<p>**** · What's OpenClaw?</p>
+<p>**** · I've been programming since I was 14.</p>
+<p>**** · Building software felt playing a video game.</p>
+<p>**** · I couldn't stop until I did.</p>
+<p>**** · I created a company.</p>
+<p>**** · I poured a decade of my life into it.</p>
+<p>**** · No venture capital.</p>
+<p>**** · Every weekend.</p>
+<p>**** · And then I sold the dream.</p>
+<p>**** · And I felt absolutely nothing.</p>
+<p>**** · For 3 years I was wondering did therapy traveled I changed countries twice.</p>
+<p>**** · Nothing clicked.</p>
+<p>**** · I wake up every morning with everything I was supposed to want and no reason no reason to get out of bed.</p>
+<p>**** · And then in early 2025 I tried an experiment. I wanted to see what these new AI coding agents are all about.</p>
+<p>**** · And I had what I can only describe as a holy moment.</p>
+<p>**** · The boiler plates, the plumbing, all the boring parts that was software development, AI could do all of it.</p>
+<p>**** · The bottleneck is no longer typing.</p>
+<p>**** · It's thinking.</p>
+<p>**** · And thinking was the part I did 25 years.</p>
+<p>**** · Building software felt playing a video game again.</p>
+<p>**** · I was back.</p>
+<p>**** · I built 44 projects in just a few months.</p>
+<p>**** · And the latest one was a WhatsApp bot.</p>
+<p>**** · I put it on my computer.</p>
+<p>**** · It talks through the apps that you already know.</p>
+<p>**** · And then I took it on a trip to Marrakech.</p>
+<p>**** · just to navigate around, to find restaurants do translations.</p>
+<p>**** · And at first it didn't really feel It it felt too much a tool.</p>
+<p>**** · Not a friend.</p>
+<p>**** · too many bullet points, too many tables.</p>
+<p>**** · So I told it cuz those modern models, they are so smart. They know what WhatsApp is. They know how people talk. I just had to tell it.</p>
+<p>**** · And then it felt **** · And how you talk to friends at some point I was walking around and I was sending it a voice message.</p>
+<p>**** · And then I sta- I froze because I I didn't build voice in there. I had a support for images, yeah, but even that took hours.</p>
+<p>**** · So I was looking at the typing indicator and then the agent responded.</p>
+<p>**** · And I very vividly remember this situation. I was standing there and I was how did you do that?</p>
+<p>**** · And the agent replied, I'm not kidding you, the mad lad figured it out on its own.</p>
+<p>**** · And then it walked me through every single step. How it got a message from me, but there was no file ending, so it inspected the file, it found that it was audio, but a weird format, so it converted it, and then it was looking for something to translate the audio, but I didn't had it installed, but then it found an OpenAI key, it sent the whole thing to the server, it got it back, and then it replied.</p>
+<p>**** · All of that in 9 seconds.</p>
+<p>**** · Can you imagine? I didn't build any of that.</p>
+<p>**** · For me this was the moment where I thought this is something new. This is not a chatbot. Chatbots give up.</p>
+<p>**** · Agents improvise.</p>
+<p>**** · And I was sold. I wanted to share this. I wanted to tell people on Twitter.</p>
+<p>**** · And nobody really got it. It's it's almost you have to experience an agent. It's it's it's hard to explain.</p>
+<p>**** · Took me a few weeks.</p>
+<p>**** · And then I did something stupid.</p>
+<p>**** · And you remember this agent by default can do anything that you can do on your computer.</p>
+<p>**** · So obviously I put it in a public Discord and I invited random people.</p>
+<p>**** · And I was looking at it the whole night.</p>
+<p>**** · People were talking with it. People were having fun with it. People tried to hack it.</p>
+<p>**** · And then my eyes were falling off almost.</p>
+<p>**** · I exited the process and I went to bed.</p>
+<p>**** · Though I forgot I built a system to be resilient.</p>
+<p>**** · So while I was walking to the bedroom, the agent happily booted up again and talked to everyone in the world.</p>
+<p>**** · The next morning I woke up over 800 messages.</p>
+<p>**** · I panicked.</p>
+<p>**** · I pulled the plug. I read every single message just to see if the agent leaked my private life.</p>
+<p>**** · Nothing happened.</p>
+<p>**** · But it could have.</p>
+<p>**** · But that was the moment where it went viral.</p>
+<p>**** · Today the project is called OpenClaw.</p>
+<p>**** · It's pretty much the fastest growing open source project.</p>
+<p>**** · Its mascot is a lobster.</p>
+<p>**** · It claws into your machine.</p>
+<p>**** · Jensen Huang calls it the operating system for personal AI.</p>
+<p>**** · But by far my favorite quote is from a friend who looked at the statistic and said, Peter this is not hockey stick growth.</p>
+<p>**** · This is stripper pole.</p>
+<p>**** · And I was not ready. when something blows up this everything explodes.</p>
+<p>**** · Hundreds of messages.</p>
+<p>**** · Reporters calling me in the middle of the night.</p>
+<p>**** · Security vulnerabilities.</p>
+<p>**** · And then the AI company whose model most of my users loved sent me a trademark claim. I had to rename the whole thing while it was taking off.</p>
+<p>**** · they even tried to push me away from the lobster.</p>
+<p>**** · I was staring at the message. I was it's not even the same animal.</p>
+<p>**** · And then they also cut off the model most of my users loved.</p>
+<p>**** · first the name then the lobster then the model.</p>
+<p>**** · I was that close of just deleting the whole thing.</p>
+<p>**** · But then I learned what people are building with it.</p>
+<p>**** · So at ClawCon in Vienna, because yes, we have conferences already and people wear lobster headbands I met Stefan and his 60-year old dad Gerhard a beer sommelier who never wrote a single line of code.</p>
+<p>**** · They connected OpenClaw via Bluetooth sent it one prompt and the agent did the whole 90-minute brew. Temperature ramps, hop additions, everything.</p>
+<p>**** · And then they were what are we doing with all this beer?</p>
+<p>**** · And the agent was let's make a website.</p>
+<p>**** · So they built a website and then they added payments and now they have a real product.</p>
+<p>**** · And almost all of it was just done via the phone.</p>
+<p>**** · In China installing OpenClaw is called raising lobsters.</p>
+<p>**** · Thousands of people were lining up at the Tencent office in Shenzhen to get their lobster installed.</p>
+<p>**** · Shenzhen even gives out subsidies for people running businesses on OpenClaw.</p>
+<p>**** · Now if you install OpenClaw on your work machine at least with the default settings, you might get fired.</p>
+<p>**** · And then I met an entrepreneur in China who showed me a spreadsheet.</p>
+<p>**** · Every employee every day one task automated by OpenClaw.</p>
+<p>**** · If you miss too many days, you're fired.</p>
+<p>**** · So fired for using it.</p>
+<p>**** · Fired for not using it.</p>
+<p>**** · After Marrakech I thought this is incredible.</p>
+<p>**** · And it's also a little bit scary.</p>
+<p>**** · How can we make it more scary?</p>
+<p>**** · So I added a new feature, a heartbeat.</p>
+<p>**** · by default the agent would only wake up when you send it a prompt.</p>
+<p>**** · With the heartbeat, the agent would just wake up periodically, check your emails, check your calendar, follow up on loose ends.</p>
+<p>**** · My initial prompt was simply, &quot;Surprise me.&quot;</p>
+<p>**** · And yes, that's as scary as it sounds.</p>
+<p>**** · So, no large company would ship something that.</p>
+<p>**** · But I'm a random builder from Austria. I don't have a legal department.</p>
+<p>**** · I built this sandbox, this sandcastle, for me, and I made it open source, so other people could play with it, and other people could raise their imagination.</p>
+<p>**** · Imagine putting an agent into a meeting. Not for notes. We figured that out.</p>
+<p>**** · A bidirectional model that can listen and hear at the same time.</p>
+<p>**** · Somebody mentions a statistic, a sub agent can spin off and check it for you.</p>
+<p>**** · A decision is made, the agent can send a follow-up before the meeting even ends.</p>
+<p>**** · In the future, we're not just going to have one agent.</p>
+<p>**** · You might have your work agent, your personal claw, maybe one for health, maybe one for relationship.</p>
+<p>**** · And they all should work together in a secure way.</p>
+<p>**** · Because how did humanity level up? By specializing and collaborating. And agents are about to do the same.</p>
+<p>**** · Imagine a company, a small business, that has 10 agents that all specialized taking over various parts of the business.</p>
+<p>**** · We don't even have a name for what it might become, but we're about to find out.</p>
+<p>**** · So, I created the Open Claw Foundation. A non-profit, open source, forever.</p>
+<p>**** · Because what Open Claw did for many people was it moved AI from this scary, nebulous thing into something that is that is fun and useful, and maybe a bit weird, lobsters and headbands and beer businesses.</p>
+<p>**** · Because what we need in the future is more people spending more time with the AI to better understand how powerful and transformative this technology really is.</p>
+<p>**** · In New York, at ClawCon, yes, they're everywhere now.</p>
+<p>**** · There were thousands of people that were discussing what their lobster did this week.</p>
+<p>**** · A vet in Shenzhen who automated their groceries.</p>
+<p>**** · A teenager in São Paulo who built a tutoring business on Open Claw.</p>
+<p>**** · Gerhard and his beer machine.</p>
+<p>**** · None of them are programmers.</p>
+<p>**** · All of them are builders.</p>
+<p>**** · Because that's the real transformation. It's not the technology, it's the access. Agents change who can build things, and that door is not closing again.</p>
+<p>**** · Because when you can prompt a prototype into existence into one in 1 hour, anything is possible.</p>
+<p>**** · The next breakthrough can come from anyone, any country, any cafe.</p>
+<p>**** · When even a burnt-out founder staring at the screen, wondering if his spark is gone, can do something that.</p>
+<p>**** · It's not gone.</p>
+<p>**** · It's just waiting.</p>
+<p>**** · The lobster is loose, and it's not going back into the tank.</p>
+<p>**** · Thank you very much.</p>
+<p>**** · [applause] [applause] Come here. I think I want to say something personal to you. With love, but truth. You really terrify me. I'm I'm I'm serious. If Hollywood was to ever make a movie in which humanity opened Pandora's Box and everything went crazy, but you seriously could be cast as the star character.</p>
+<p>**** · [laughter] Because because the story we're told is that AI researchers are doing all this great stuff, but they, they're taking all these great efforts to ensure safety and make sure nothing bad could happen. You take glee in seeing what might happen if you just put it out there. is any part of you feeling that's that's a little bit reckless?</p>
+<p>**** · I wouldn't I wouldn't say so. I see my work as a I see it as a window to the future. in the very beginning, there were all these scary moments.</p>
+<p>**** · Now we have proper security layers. You can have your sandbox, you can you can put your lobster into a very small, tiny box and really control what it can do. there's still some issues that we need to figure out, but the fact that so many people want this now will help to figure this out much faster.</p>
+<p>**** · So, I'm I'm glad you mentioned the security less. The you're making a huge bet on human ingenuity using the this incredible tool that suddenly can maximize the power of what any human can do.</p>
+<p>**** · Is that How many people in your community are taking the safety issue seriously and want to use Open Claw, for example, to find smarter ways than just checking whether anything might be going wrong and giving an early alarm to someone or something that?</p>
+<p>**** · people are not as reckless of number one, putting it into a public discord.</p>
+<p>**** · Strongly don't recommend.</p>
+<p>**** · Number two, I think I single-handedly increased Mac mini sales by multiple percent. So, most people give it give it their own little Mac mini. Mine's a little princess. Mine got a Mac Studio. Calls it the castle. And that greatly reduces the actual risk, because it can only access what's on that computer, and maybe all your pictures are not there.</p>
+<p>**** · Well, definitely if humanity goes down, I'll be very grateful for at least the rise in Mac mini sales.</p>
+<p>**** · [laughter] A very tall You are amazing. You are amazing, and I think I think I think you're at the cutting edge of whether AI is going to be the biggest boon ever or possibly a serious problem. And I hope you continue conversations with people here, and just help us get smarter on how to do this the way. Cuz it is absolutely incredible what you've built.</p>
+<p>**** · Thank you for sharing so honestly. Thank you.</p>
+<p>**** · [applause]</p>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>Dwarkesh Patel - Jensen Huang – Will Nvidia’s moat persist?</title>
       <link>https://myfeed.theindie.app/articles/20260417-010325-www.youtube.com-watch-v-Hrbq66XqtCo.html</link>
@@ -6618,667 +6785,6 @@ The world is changing so quickly. This is probably a little bit obvious, but you
 <h3>Advice for Engineers in the AI Era</h3>
 <p>It is so fast and so easy. That was an age ago, or eight months ago. Now it is even faster and easier.</p>
 <p>Do not limit yourself. Anything that you imagine, you should just try to use AI and see how far you can get with it, and you will be making the world better. That is all we have time for today, but Ian, thank you so much for giving us all stilts. We cannot wait to use it at YC. I cannot wait to use it for Gary's list. There is just so much to do. Thank you for having me. This was a lot of fun.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Veritasium - The Internet Was Weeks Away From Disaster and No One Knew</title>
-      <link>https://myfeed.theindie.app/articles/20260324-095452-www.youtube.com-watch-v-aoag03mSuXQ.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260324-095452-www.youtube.com-watch-v-aoag03mSuXQ.html</guid>
-      <pubDate>Wed, 25 Feb 2026 20:28:23 GMT</pubDate>
-      <description><![CDATA[🎥 Watch on YouTube: The Internet Was Weeks Away From Disaster and No One Knew
-
----
-
-![](https://www.youtube.com/watch?v=aoag03mSuXQ)
-
-
-
-
-
-0:00 · (suspenseful music) - \[Derek\] In 2021, a hacker unco...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=aoag03mSuXQ">The Internet Was Weeks Away From Disaster and No One Knew</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=aoag03mSuXQ" alt=""></p>
-<h2>Transcript</h2>
-<h3>Quỹ Phần mềm Tự do</h3>
-<p><strong>0:00</strong> · (suspenseful music) - [Derek] In 2021, a hacker uncovered a fatal weakness in the world's most important operating system.</p>
-<p><strong>0:07</strong> · - What would you do with a key that gets you into any server on the internet?</p>
-<p><strong>0:12</strong> · - Is this live to the public right now?</p>
-<p><strong>0:14</strong> · - Yeah, it's live on the server.</p>
-<p><strong>0:15</strong> · - Look, I'm not pleased.</p>
-<p><strong>0:16</strong> · I would like you to change it back.</p>
-<p><strong>0:19</strong> · - [Narrator] At the time, just about everyone believed that hacking this system was impossible, but they were wrong.</p>
-<p><strong>0:24</strong> · - Well, I can tell you how many systems would have been compromised, which would have been millions.</p>
-<p><strong>0:28</strong> · Actually, I'm still surprised the mainstream news outlets haven't really covered this very much.</p>
-<p><strong>0:33</strong> · - How close did we come?</p>
-<p><strong>0:34</strong> · - We were weeks away from millions of internet servers being accessible to whoever crafted the backdoor.</p>
-<p><strong>0:41</strong> · Anything from spying, to ransom, to taking down entire countries, you could have done it with this backdoor.</p>
-<p><strong>0:49</strong> · - This hacker had realized the entire operating system rested on a single part, maintained by a single person, and that by compromising that one part, they could infect almost any server on the internet.</p>
-<p><strong>1:02</strong> · So, how could we ever let ourselves get this vulnerable?</p>
-<p><strong>1:07</strong> · Well, the story begins with a jammed printer.</p>
-<p><strong>1:11</strong> · (suspenseful music) (upbeat music) - [Narrator] The AI lab was buzzing.</p>
-<p><strong>1:21</strong> · They had just installed the Xerox 9700.</p>
-<p><strong>1:24</strong> · It was one of the first ever commercial laser printers.</p>
-<p><strong>1:27</strong> · It was a pretty big deal.</p>
-<p><strong>1:29</strong> · The only problem was it kept jamming.</p>
-<p><strong>1:34</strong> · - [Stallman] You'd wait an hour figuring, I know it's gonna be jammed, I'll wait an hour and go collect my printout, and then you'd see that it'd been jammed the whole time.</p>
-<p><strong>1:42</strong> · Frustration up the wazoo.</p>
-<p><strong>1:46</strong> · - Richard Stallman, a researcher at the lab, thought that he had a solution.</p>
-<p><strong>1:50</strong> · Years earlier, he had solved a similar problem by coding a simple program that sent an alert whenever there was a jam.</p>
-<p><strong>1:55</strong> · Now, it didn't fix the problem mechanically, but it did make sure that a jam wouldn't go unnoticed.</p>
-<p><strong>2:00</strong> · He thought he could do a similar thing now.</p>
-<p><strong>2:02</strong> · The only problem was that Xerox hadn't provided them the source code for the printer, and without it, Stallman couldn't write his code.</p>
-<p><strong>2:08</strong> · So he tracked down the original developer.</p>
-<p><strong>2:11</strong> · - [Stallman] And I said, &quot;Hi, I'm from MIT.</p>
-<p><strong>2:12</strong> · Could I have a copy of the printer source code?&quot;</p>
-<p><strong>2:16</strong> · And he said, &quot;No, I promised not to give you a copy.&quot;</p>
-<p><strong>2:20</strong> · I was stunned.</p>
-<p><strong>2:21</strong> · I was angry.</p>
-<p><strong>2:23</strong> · All I could think of was to turn around on my heel and walk out of his room.</p>
-<p><strong>2:30</strong> · Maybe I slammed the door.</p>
-<p><strong>2:33</strong> · And I thought about it later on because I realized that I was seeing not just an isolated jerk but a social phenomenon that was important and affected a lot of people.</p>
-<p><strong>2:45</strong> · - [Henry] This social phenomenon had slowly invaded the world of computer research.</p>
-<p><strong>2:50</strong> · In the late 60s, engineers at AT&amp;T's Bell Labs invented an operating system called Unix, which they shared widely across universities and research labs.</p>
-<p><strong>2:59</strong> · This was a time of freedom.</p>
-<p><strong>3:01</strong> · But by the 80s, AT&amp;T started going after Unix clone developers for copyright infringement.</p>
-<p><strong>3:07</strong> · Later, they even sued the University of California at Berkeley.</p>
-<p><strong>3:10</strong> · The tech landscape had shifted.</p>
-<p><strong>3:12</strong> · They wanted to close off software development.</p>
-<p><strong>3:15</strong> · Companies were now making their employees sign non-disclosure agreements, prohibiting them from ever sharing their code with other programmers.</p>
-<p><strong>3:22</strong> · - [Stallman] See, this was my first encounter with a non-disclosure agreement, and I was the victim.</p>
-<p><strong>3:28</strong> · And the lesson it taught me was that non-disclosure agreements have victims.</p>
-<p><strong>3:32</strong> · They're not innocent, they're not harmless.</p>
-<p><strong>3:36</strong> · - [Henry] Stallman wondered, maybe he could adapt to this new world.</p>
-<p><strong>3:39</strong> · - [Stallman] But I realized that that way I could have fun coding and I could make money.</p>
-<p><strong>3:44</strong> · But at the end, I'd have to look back at my career and say, &quot;I have spent my life building walls to divide people.&quot;</p>
-<p><strong>3:53</strong> · and I would've been ashamed of my life.</p>
-<p><strong>3:56</strong> · - So Stallman chose a different path.</p>
-<p><strong>3:58</strong> · He quit his job at MIT and in 1985 established the Free Software Foundation, and it worked to promote four basic freedoms.</p>
-<p><strong>4:06</strong> · You should be free to run software for any purpose, free to study it, free to change it, and free to share it.</p>
-<p><strong>4:12</strong> · Now, to ensure those freedoms, he created a legal license that developers could attach to their code called the General Public License.</p>
-<p><strong>4:19</strong> · And to stick it to AT&amp;T, he started to work on a project based on Unix but built from the ground up, so AT&amp;T couldn't sue.</p>
-<p><strong>4:27</strong> · He called the project GNU, a recursive acronym for GNU is Not Unix.</p>
-<p><strong>4:33</strong> · Now, to replicate a Unix system, the GNU Project had to recreate three layers of functionality.</p>
-<p><strong>4:38</strong> · They needed the utilities, which were the everyday tools and commands, the shell, which is the terminal that people use to interact with the machine, and finally, the kernel, which is the core that talks to the hardware and manages memory.</p>
-<p><strong>4:50</strong> · Now, over the next seven years, the GNU Project made much of that from scratch.</p>
-<p><strong>4:54</strong> · They created the GCC code compiler, the Bash shell, and a host of other core utilities.</p>
-<p><strong>4:59</strong> · But they were always missing one key component.</p>
-<p><strong>5:02</strong> · The kernel.</p>
-<h3>Vì sao Linux lại phổ biến?</h3>
-<p><strong>5:05</strong> · That changed in the fall of 1991 when Stallman visited the University of Helsinki to give a talk promoting the project.</p>
-<p><strong>5:12</strong> · In the audience was a young computer science student who just happened to be building his own kernel from scratch.</p>
-<p><strong>5:19</strong> · His version wasn't free, but after hearing Stallman speak, the student changed his mind and adopted the General Public License.</p>
-<p><strong>5:27</strong> · At first, he wanted to call it Free Unix, or Freax, but his friend thought that sounded terrible, so he renamed it after the student himself, Linus Torvalds.</p>
-<p><strong>5:37</strong> · Linus, Unix.</p>
-<p><strong>5:39</strong> · Well, that's how he got Linux.</p>
-<p><strong>5:43</strong> · That kernel, combined with the other components from the GNU Project, became a full operating system.</p>
-<p><strong>5:48</strong> · Now, technically, Linux only refers to that kernel, but a lot of people use it to refer to the whole operating system, so GNU and Linux and whatever else.</p>
-<p><strong>5:57</strong> · Because the code was open and free and the projects built on it were too, a new model of software development took hold.</p>
-<p><strong>6:03</strong> · Anyone could inspect the code, improve it, fix flaws, and generally just push development forward for everyone.</p>
-<p><strong>6:09</strong> · So, software split into two competing ideologies.</p>
-<p><strong>6:13</strong> · Proprietary closed source systems controlled by companies, and open source projects where the code was free.</p>
-<p><strong>6:19</strong> · - It's free in two ways.</p>
-<p><strong>6:21</strong> · It's free as in you don't have to pay for it, but it's all free to change it in any way you want, and that seems to be the much more important aspect.</p>
-<p><strong>6:29</strong> · People are happy to pay for technology, but so often do they run into some roadblocks where you have to file a support ticket with some large company, they may or may not get the help they need, and engineers are just itching to just fix it themselves.</p>
-<p><strong>6:45</strong> · - Developers could take that basic code which was freely available and then add on their own features relevant to their specific device.</p>
-<p><strong>6:52</strong> · They didn't have to reinvent the wheel every time.</p>
-<p><strong>6:55</strong> · So that's why Linux spread into all sorts of different applications.</p>
-<p><strong>6:58</strong> · - Hello, I'm a Mac.</p>
-<p><strong>7:00</strong> · - And I'm a PC.</p>
-<p><strong>7:01</strong> · No one else.</p>
-<p><strong>7:02</strong> · - No one. (woman clears throat) - Hi, I'm Linux.</p>
-<p><strong>7:05</strong> · There are an estimated 30 million Linux users out there.</p>
-<p><strong>7:08</strong> · - How long you been standing there?</p>
-<p><strong>7:10</strong> · - A long time.</p>
-<p><strong>7:12</strong> · - And it's not even just limited to computers.</p>
-<p><strong>7:15</strong> · Your electronic vacuum is definitely Linux.</p>
-<p><strong>7:18</strong> · Your camera is definitely Linux.</p>
-<p><strong>7:20</strong> · Most TVs, most electronics are Linux.</p>
-<p><strong>7:23</strong> · - Linux even runs some of the most sensitive machines on the planet.</p>
-<p><strong>7:27</strong> · - You can assume that Linux is pretty much used in anything of high-security need, not necessarily because Microsoft, for instance, couldn't build something equally secure, but because usually there's secrecy involved in building, let's say, a new weapon system, and you don't necessarily want to have to work with some tech company.</p>
-<p><strong>7:47</strong> · You don't want to involve more people than absolutely necessary.</p>
-<p><strong>7:51</strong> · - [Henry] Of the top 500 supercomputers in the world, every single one runs Linux.</p>
-<p><strong>7:56</strong> · It's used in the Pentagon and on US nuclear submarines.</p>
-<p><strong>8:00</strong> · - Every bank you can think of really, manufacturers, hospitals, governments, defense organizations and things like that, they're all running Linux servers.</p>
-<p><strong>8:11</strong> · - Today, Linux is everywhere, and most people are familiar with Windows and macOS, but they are not the most popular operating systems in the world.</p>
-<p><strong>8:18</strong> · No, they are dwarfed by systems running a Linux kernel.</p>
-<p><strong>8:22</strong> · Android, with over 3 billion devices, is built on Linux.</p>
-<p><strong>8:26</strong> · And it also powers the majority of internet servers in the world.</p>
-<p><strong>8:30</strong> · - There is no one company that could have imagined all the different cases where computers are used these days, and Linux, thanks to its adaptability where everyone can just tweak it in little ways to make it fit their use case, now covers all the use cases.</p>
-<p><strong>8:47</strong> · - But all of this, it all relies on one key assumption.</p>
-<p><strong>8:52</strong> · That the code is secure.</p>
-<p><strong>8:53</strong> · Now, there's a good reason to feel this way.</p>
-<p><strong>8:56</strong> · Because there are so many people looking at the code, there's this idea that bugs, either intentional or unintentional, won't be too deep to catch.</p>
-<p><strong>9:04</strong> · It's known simply as Linus's Law.</p>
-<p><strong>9:06</strong> · That with enough eyeballs, all bugs are shallow.</p>
-<p><strong>9:09</strong> · But there's a big problem with this assumption.</p>
-<p><strong>9:12</strong> · The open source movement isn't one big project.</p>
-<p><strong>9:15</strong> · It's an ecosystem.</p>
-<p><strong>9:16</strong> · You need thousands of small tools and libraries each doing a different job, like networking, security, or compression.</p>
-<p><strong>9:23</strong> · Now, a lot of these projects start because one person wants to fix a specific problem, so they build it themselves.</p>
-<p><strong>9:29</strong> · They're often unpaid, coding on nights and weekends just to make the tool work.</p>
-<p><strong>9:33</strong> · If it's useful, one open source project adopts it, then another, and suddenly you have millions of machines all relying on one person's passion project.</p>
-<p><strong>9:42</strong> · That's how the entire ecosystem can end up quietly resting on a project maintained by a single volunteer.</p>
-<p><strong>9:48</strong> · There's a famous XKCD comic that captures this idea perfectly.</p>
-<p><strong>9:53</strong> · But what happens when that block is compromised?</p>
-<h3>Lỗ hổng XZ</h3>
-<p><strong>9:58</strong> · In our story, our person isn't from Nebraska.</p>
-<p><strong>10:01</strong> · No, Lasse Collin is from Finland, and he's been working on a small data compression tool called XZ since 2005.</p>
-<p><strong>10:08</strong> · XZ is so good at compression that it's now used in almost every major Linux distribution.</p>
-<p><strong>10:14</strong> · For the past 20 years, almost all of the work of keeping the tool compatible with ever-evolving hardware, it's all fallen on Lasse.</p>
-<p><strong>10:22</strong> · He's never been paid for it, but up till now, he's been okay with that.</p>
-<p><strong>10:26</strong> · Recently, though, he's been under more and more pressure.</p>
-<p><strong>10:30</strong> · &quot;Over one month and no closer to being merged.</p>
-<p><strong>10:33</strong> · Not a surprise.&quot;</p>
-<p><strong>10:34</strong> · &quot;Progress will not happen until there is a new maintainer.</p>
-<p><strong>10:37</strong> · Submitting patches here has no purpose these days.</p>
-<p><strong>10:40</strong> · The current maintainer lost interest or doesn't care to maintain anymore.&quot;</p>
-<p><strong>10:45</strong> · Lasse responds, &quot;I haven't lost interest, but my ability to care has been fairly limited, mostly due to long-term mental health issues, but also due to some other things.</p>
-<p><strong>10:54</strong> · It's also good to keep in mind that this is an unpaid hobby project.&quot;</p>
-<p><strong>10:59</strong> · But it's not enough.</p>
-<p><strong>11:00</strong> · &quot;I'm sorry about your mental health issues, but it's important to be aware of your own limits.</p>
-<p><strong>11:05</strong> · The community desires more.</p>
-<p><strong>11:07</strong> · You ignore the many patches bit rotting away on this mailing list.</p>
-<p><strong>11:10</strong> · Right now, you choke your repo.&quot;</p>
-<p><strong>11:13</strong> · Lasse is burning out.</p>
-<p><strong>11:15</strong> · But just when he thinks he can't handle it anymore...</p>
-<p><strong>11:19</strong> · &quot;Nice job to both of you for getting this feature as far as it is already.</p>
-<p><strong>11:22</strong> · Just trying to do my part as a helper elf.&quot;</p>
-<p><strong>11:25</strong> · Signed, Jia Tan.</p>
-<p><strong>11:27</strong> · For months, Jia has been taking some of the load off Lasse.</p>
-<p><strong>11:30</strong> · He's been incredibly helpful.</p>
-<p><strong>11:32</strong> · Now he offers to step up and take over as maintainer of the project.</p>
-<p><strong>11:36</strong> · To Lasse, it sounds almost too good to be true.</p>
-<p><strong>11:39</strong> · &quot;As I've hinted in earlier emails, Jia Tan may have a bigger role in the project in the future.&quot;</p>
-<p><strong>11:44</strong> · Finally, Lasse can step back and breathe after 20 years of hard work.</p>
-<p><strong>11:49</strong> · But Jia is not who he appears to be.</p>
-<p><strong>11:53</strong> · And he's identified Lasse Collin's XZ project as a weak link in the Linux ecosystem, one that could give him access to almost every computer on the internet.</p>
-<p><strong>12:02</strong> · (suspenseful music) Today we take secure remote logins for granted.</p>
-<h3>Mã hóa đầu cuối — SSH</h3>
-<p><strong>12:11</strong> · I mean, they've worked reliably for over 30 years.</p>
-<p><strong>12:14</strong> · But it all started in 1995 at the Helsinki University of Technology when a hacker captured thousands of usernames and passwords sent over the campus network in a sniffing attack.</p>
-<p><strong>12:25</strong> · In hindsight, the problem's obvious.</p>
-<p><strong>12:27</strong> · These login requests were being sent totally in plain text, so anyone who intercepted the data could just read it.</p>
-<p><strong>12:34</strong> · (suspenseful music) When Tatu Ylonen, a computer researcher at the university, learned of the attack, he made it his mission to ensure that it would never happen again.</p>
-<p><strong>12:44</strong> · - [Tatu] Password sniffing was perhaps the most serious security issue on the internet back then.</p>
-<p><strong>12:51</strong> · - To do this, his solution needed to ensure two things.</p>
-<p><strong>12:55</strong> · First, machines had to establish a secure connection.</p>
-<p><strong>12:58</strong> · If both computers could agree on a shared secret code that they would use to scramble their data, then even if they were overheard, anyone without that secret code would just get gibberish.</p>
-<p><strong>13:07</strong> · Now, you could agree on that shared secret ahead of time in person.</p>
-<p><strong>13:10</strong> · - Password.</p>
-<p><strong>13:11</strong> · - But on the internet, that's rarely practical.</p>
-<p><strong>13:14</strong> · No, you have to agree on that shared secret ahead of time without ever having met and also with someone listening in the entire time.</p>
-<p><strong>13:21</strong> · It sounds really tricky, but there is a way to do it, and I can show you how using this jar of paint.</p>
-<p><strong>13:27</strong> · Say I'm trying to send a message to Gregor over there.</p>
-<p><strong>13:30</strong> · First step is we agree on a shared public color.</p>
-<p><strong>13:33</strong> · Let's pick this red.</p>
-<p><strong>13:35</strong> · This is no secret, anyone can see this.</p>
-<p><strong>13:38</strong> · Now we each pick our own private color.</p>
-<p><strong>13:40</strong> · I'm gonna pick yellow, and he can pick whatever he wants.</p>
-<p><strong>13:44</strong> · So we take our private color, and then I'm gonna mix that with the public color.</p>
-<p><strong>13:51</strong> · It's worth saying now that these mixtures are assumed to be impossible to unmix, so even if you know this orange and you know this red, you can't exactly deduce the exact shade of yellow we used to create it, and this is important for the actual computer example later.</p>
-<p><strong>14:03</strong> · Okay, so I'm gonna send this over to Gregor.</p>
-<p><strong>14:05</strong> · - So, I mixed in my secret color with the public, and I'm gonna pass this to Henry.</p>
-<p><strong>14:10</strong> · - So, Gregor sent me this, which looks like a sort of dark green sort of color.</p>
-<p><strong>14:15</strong> · And what we're gonna do now is we're gonna mix it with my original private color.</p>
-<p><strong>14:21</strong> · - Okay, now that I have Henry's secret color mixed in with the public, I'm gonna add some of my own.</p>
-<p><strong>14:28</strong> · - So we end up with this sort of distinct olive color.</p>
-<p><strong>14:33</strong> · There's my yellow in there, I can see, and whatever Gregor had in his side.</p>
-<p><strong>14:37</strong> · And the thing is because each set of paints went through the same process, they both end up with this same olive green, even though we never shared our secret colors.</p>
-<p><strong>14:46</strong> · So we end up with this shared secret color at the end that no one else can get, and that means that we can use it as our secret code when sending information.</p>
-<p><strong>14:54</strong> · Now, in the real exchange, we use big public numbers instead of colors, but the idea is the exact same.</p>
-<p><strong>14:59</strong> · Each side mixes in their own private number using some math that, when you try to reverse it, leads to a discreet log problem, which makes it practically impossible to unmix them.</p>
-<p><strong>15:08</strong> · That way, we solve the first problem.</p>
-<p><strong>15:11</strong> · But there is another threat that's unaccounted for.</p>
-<p><strong>15:14</strong> · Say a hacker, like Casper here, tries to sit in between us.</p>
-<p><strong>15:18</strong> · Now we can create a legitimate connection, so we end up with a shared secret code, and Casper could do the exact same thing with Gregor.</p>
-<p><strong>15:27</strong> · Now, whenever I send a message, he can relay that to Gregor, he can change and modify it and send his response back.</p>
-<p><strong>15:33</strong> · And to each of us, the connection looks legitimate, but Casper's sitting between us the whole time.</p>
-<p><strong>15:38</strong> · He's a man in the middle.</p>
-<p><strong>15:40</strong> · So, I need a way of authenticating that Gregor is really who he says he is.</p>
-<p><strong>15:44</strong> · Now, we could do this again by agreeing on a password ahead of time in person, but we need a practical way to do it over the internet.</p>
-<p><strong>15:50</strong> · This was the second problem that Tatu had to solve.</p>
-<p><strong>15:53</strong> · To make that happen, Gregor can take two really big prime numbers, which he keeps secret.</p>
-<p><strong>15:58</strong> · He then multiplies them together to get an even bigger number, which he then makes public.</p>
-<p><strong>16:03</strong> · Now, when I want to send Gregor a message, I just take that big public number and I scramble it in a way that only Gregor, who knows the two prime factors that make up that big public number, can successfully unscramble.</p>
-<p><strong>16:14</strong> · For anyone else, getting those two prime factors is practically impossible.</p>
-<p><strong>16:17</strong> · So, as long as I know that that big public number actually belongs to Gregor, I know that anything encrypted to that key can only be read by him.</p>
-<p><strong>16:24</strong> · This is called RSA encryption, and it means that if I know the certificate is valid, then I accept the connection.</p>
-<p><strong>16:30</strong> · And by authenticating Gregor, it foils our man in the middle, Casper Devious.</p>
-<p><strong>16:36</strong> · All right.</p>
-<p><strong>16:38</strong> · Tatu Ylonen combined these two steps, securing the channel and authenticating the user, into a protocol for remote logins between machines.</p>
-<p><strong>16:46</strong> · It gave you the same simple text shell people were used to, a plain terminal where you type commands, but now the connection was encrypted.</p>
-<p><strong>16:53</strong> · He called it Secure Shell, or SSH.</p>
-<p><strong>16:57</strong> · And it was immediately useful.</p>
-<p><strong>16:59</strong> · Many Linux machines don't even have keyboards or monitors, especially not servers, so you wanna be able to log in and control them remotely.</p>
-<p><strong>17:06</strong> · So SSH was soon adopted on almost every machine that ran Linux.</p>
-<p><strong>17:11</strong> · And as Linux spread, so too did SSH.</p>
-<p><strong>17:14</strong> · Today, when you control a machine remotely, there's a good chance you're using SSH.</p>
-<p><strong>17:18</strong> · - SSH is literally the maintenance backbone of the entire internet.</p>
-<p><strong>17:23</strong> · - And the most widely used open source SSH implementation is called OpenSSH.</p>
-<p><strong>17:29</strong> · And because it's so popular, it's heavily protected.</p>
-<p><strong>17:33</strong> · - I mean, OpenSSH is probably one of the most closely examined projects out there because it's just so vitally important to the security of servers everywhere.</p>
-<p><strong>17:44</strong> · Having a way to bypass the authentication in secure shell is like having the master key to the hotel.</p>
-<p><strong>17:51</strong> · It lets you into every room.</p>
-<p><strong>17:54</strong> · (suspenseful music) - [Henry] This is why Jia Tan wants a way into OpenSSH, but trying to hack it directly would be almost impossible.</p>
-<p><strong>18:03</strong> · Lucky for Jia, the open source model doesn't just mean that operating systems are stitched together from many programs, but that each of those programs is itself stitched together from other programs.</p>
-<p><strong>18:14</strong> · Those are called dependencies.</p>
-<p><strong>18:16</strong> · - OpenSSH is one of the most scrutinized software packages, but that doesn't extend to all of its dependencies.</p>
-<p><strong>18:24</strong> · - Jia believes that if he can compromise a dependency of OpenSSH, he can sneak an exploit into the main project.</p>
-<p><strong>18:30</strong> · And it just so happens that Lasse Collin's compression tool XZ is linked through a chain of these dependencies.</p>
-<p><strong>18:38</strong> · (suspenseful music) Now, Lasse's original goal with XZ was to find a better way to compress data on Linux.</p>
-<h3>Cách nén dữ liệu</h3>
-<p><strong>18:48</strong> · That data could be anything.</p>
-<p><strong>18:49</strong> · Code, an image, text.</p>
-<p><strong>18:51</strong> · But what was important to Lasse was that once you compressed and decompressed it, it had to come back exactly the same.</p>
-<p><strong>18:58</strong> · The method had to be lossless.</p>
-<p><strong>19:00</strong> · Let me give you an example.</p>
-<p><strong>19:01</strong> · We're gonna take the lyrics to Rick Astley's hit &quot;Never Gonna Give You Up&quot; and we're gonna try to compress it.</p>
-<p><strong>19:07</strong> · Now, say we take this and we represent it as a stream of characters, and each one gets a fixed-width 8-bit code.</p>
-<p><strong>19:14</strong> · Now, that works, but it's inefficient.</p>
-<p><strong>19:17</strong> · If we go through this stream and just count up how often each symbol appears, you'll notice there's a pattern.</p>
-<p><strong>19:22</strong> · Some appear more frequently, like N with 430 uses, and some, barely at all, like J with one use.</p>
-<p><strong>19:30</strong> · To save space, why don't we give the ones that appear more frequently shorter codes, and the rarer ones, well, they can afford to be long.</p>
-<p><strong>19:37</strong> · But how do we do that?</p>
-<p><strong>19:38</strong> · So, let's start by counting up how often each symbol appears and sorting that from most frequent to least frequent.</p>
-<p><strong>19:45</strong> · We take the two least frequent symbols and join them together into a pair.</p>
-<p><strong>19:48</strong> · We then treat that pair as a new combined symbol whose frequency is the sum of the two it represents.</p>
-<p><strong>19:54</strong> · We can then reinsert that back into the list.</p>
-<p><strong>19:57</strong> · Then we do it again.</p>
-<p><strong>19:58</strong> · We take the two least frequent items, combine them, and then reinsert them back into the list.</p>
-<p><strong>20:03</strong> · And we do that over and over again until we get this massive structure called a Huffman tree.</p>
-<p><strong>20:09</strong> · Now, to get our codes, we just walk the tree.</p>
-<p><strong>20:12</strong> · A step right is a 1, a step left is a 0.</p>
-<p><strong>20:15</strong> · So, for example, to get R, we just go right, left, left, right, so the code is 1001.</p>
-<p><strong>20:21</strong> · So what you'll notice is the more commonly occurring symbols naturally appear at the top of the tree, so they get shorter codes, while the ones that appear less frequently are at the bottom of the tree.</p>
-<p><strong>20:30</strong> · The system works well, but it also has a weakness.</p>
-<p><strong>20:33</strong> · In our &quot;Never Gonna Give You Up&quot; example, it always encodes N-E-V-E-R space.</p>
-<p><strong>20:39</strong> · It doesn't realize that this whole chunk repeats.</p>
-<p><strong>20:42</strong> · So, what if instead of looking at symbols, we looked at those chunks?</p>
-<p><strong>20:46</strong> · Now, they don't have to be words, they can be parts of words or even longer.</p>
-<p><strong>20:49</strong> · They just have to be patterns that repeat.</p>
-<p><strong>20:51</strong> · So let's scan through the text but keep a rolling dictionary of what we've just seen.</p>
-<p><strong>20:55</strong> · Then, as we move forward, we can check whether the next chunk has already appeared.</p>
-<p><strong>20:59</strong> · And if it has, we don't need to write that chunk again.</p>
-<p><strong>21:02</strong> · We just write a code with two numbers, how far back to look, and how many characters to copy.</p>
-<p><strong>21:07</strong> · Now, when we decompress, we can just read along and whenever we hit one of these codes, we jump back, copy the matching chunk, and paste it into place.</p>
-<p><strong>21:15</strong> · Two scientists, Lempel and Ziv, published this algorithm in 1977, so it became known as LZ77.</p>
-<p><strong>21:24</strong> · But some of these symbols and pointers show up more often than others.</p>
-<p><strong>21:28</strong> · They actually have their own frequencies.</p>
-<p><strong>21:30</strong> · So we can feed that whole stream into another Huffman tree to get a second layer of compression.</p>
-<p><strong>21:35</strong> · And in our demo, it actually gets the file down 85% smaller than the original.</p>
-<p><strong>21:40</strong> · This might look new, but you've almost certainly used it yourself.</p>
-<p><strong>21:43</strong> · It's called deflate, but it's better known for the files it creates, .zip.</p>
-<p><strong>21:49</strong> · If you ever clicked Close on this before, you've definitely used it.</p>
-<p><strong>21:52</strong> · But Huffman only uses the overall frequency of a chunk repeating.</p>
-<p><strong>21:58</strong> · Real data isn't just random chunks.</p>
-<p><strong>22:01</strong> · In our example, after &quot;Never gonna&quot;, you might get &quot;give you up&quot;, &quot;let you down&quot;, or &quot;run around and desert you&quot;.</p>
-<p><strong>22:08</strong> · You might get &quot;make you cry&quot;, you might get &quot;say goodbye&quot; or &quot;tell a lie and hurt you&quot;.</p>
-<p><strong>22:13</strong> · Each one has its own probability, and you can represent these probabilities with a mathematical tool called a Markov chain.</p>
-<p><strong>22:20</strong> · The algorithm can then encode the stream of data so that the more probable next chunks cost few bits and the less probable ones cost more.</p>
-<p><strong>22:30</strong> · If you combine that with a much bigger search window so it can point much further back in memory, then you get the Lempel Ziv Markov chain algorithm, or LZMA.</p>
-<p><strong>22:39</strong> · LZMA was developed by Igor Pavlov around 1998, and it often beats much more familiar methods.</p>
-<p><strong>22:45</strong> · In many cases, it can shrink files to about 70% of the size of a typical .zip.</p>
-<p><strong>22:50</strong> · Lasse took this elegant compression algorithm and made it work on Linux, and he called it XZ not because it stood for anything, but just because it sounded cool.</p>
-<p><strong>22:59</strong> · - I'm using XZ quite a lot.</p>
-<p><strong>23:01</strong> · I think XZ is a wonderful project.</p>
-<p><strong>23:03</strong> · There are lots of different ways of compressing data.</p>
-<p><strong>23:06</strong> · Some of them are fast but they don't compress very well, and some of them are slow but they get extremely good compression.</p>
-<p><strong>23:15</strong> · - But across Linux, projects are constantly shipping the same files and updates to millions of machines, so XZ is perfect.</p>
-<p><strong>23:22</strong> · You compress something once, then you get a smaller file to download forever.</p>
-<p><strong>23:26</strong> · Lasse released XZ in 2009, and over the next decade and a half, it went from a niche tool to the common choice whenever a project needed effective lossless compression.</p>
-<p><strong>23:35</strong> · So, XZ quietly spread everywhere, eventually becoming a dependency of OpenSSH.</p>
-<p><strong>23:41</strong> · (suspenseful music) - So, it was at some point in about February 2024 and Jia Tan, he emails me.</p>
-<h3>Vụ hack .XZ hoạt động như thế nào</h3>
-<p><strong>23:53</strong> · He's got all these new features in the new version of XZ.</p>
-<p><strong>23:57</strong> · - [Henry] He wins Rich over almost immediately.</p>
-<p><strong>24:00</strong> · - So I get to talk to hundreds of contributors all the time, and I do get a feel for them.</p>
-<p><strong>24:06</strong> · I feel, you know, are they good coders, which is what I really care about.</p>
-<p><strong>24:11</strong> · Are they conscientious people, are they helpful?</p>
-<p><strong>24:14</strong> · Do they respond to bug reports quickly?</p>
-<p><strong>24:18</strong> · And in all of the dimensions, Jia Tan would be a very good contributor because he's obviously a good coder.</p>
-<p><strong>24:26</strong> · He's very responsive, he's very keen, and I love all that.</p>
-<p><strong>24:30</strong> · - All indications are that Jia is a great contributor, and this puts Rich at ease, so he lets his guard down.</p>
-<p><strong>24:37</strong> · And that's often where the problems start on the internet.</p>
-<p><strong>24:39</strong> · You can't keep your guard up forever.</p>
-<p><strong>24:41</strong> · But lucky for us, with today's sponsor, NordVPN, you don't have to.</p>
-<p><strong>24:45</strong> · NordVPN's Threat Protection Pro blocks dangerous websites before they load.</p>
-<p><strong>24:49</strong> · It stops malicious downloads and it strips out trackers and intrusive ads automatically.</p>
-<p><strong>24:54</strong> · And it works even when you're not connected to the VPN, so a lot of these attacks never get the chance to start in the first place.</p>
-<p><strong>25:00</strong> · I use NordVPN whenever I'm traveling or working on public wifi because it means that I don't have to think about who's running the network.</p>
-<p><strong>25:07</strong> · It's just one click and it's so fast that I often forget that it's on.</p>
-<p><strong>25:10</strong> · Not just that, if there's a show that's no longer available in my region or a sports team that's blacked out, like I'm often watching international football and they don't quite have it where I'm going, well, in that case, I can just switch my server location with one click to unlock the content.</p>
-<p><strong>25:25</strong> · Apparently you can even use it to find better deals on plane tickets by changing your IP address to another country.</p>
-<p><strong>25:31</strong> · I haven't tried it yet, but that sounds fascinating.</p>
-<p><strong>25:33</strong> · So, if you wanna try it, you can get the best deal by going to nordvpn.com/veritasium.</p>
-<p><strong>25:39</strong> · When you use that link or this QR code, you'll get a huge discount.</p>
-<p><strong>25:43</strong> · Also, you get a 30-day money back guarantee through Nord.</p>
-<p><strong>25:47</strong> · It's a no brainer.</p>
-<p><strong>25:47</strong> · So again, that's nordvpn.com/veritasium or you can click the link in the description below.</p>
-<p><strong>25:54</strong> · Thanks so much to Nord, and let's get back to Jia and the prize he's got his eyes on.</p>
-<p><strong>26:00</strong> · - At this point, we were preparing RHEL 10.</p>
-<p><strong>26:04</strong> · - [Henry] See, Red Hat ships two major flavors of Linux.</p>
-<p><strong>26:07</strong> · Fedora, which is free and publicly available, and Red Hat Enterprise Linux, or RHEL, which is available through a paid subscription.</p>
-<p><strong>26:15</strong> · This one has to be stable and secure because it's widely used on the most important machines, like in governments and hospitals.</p>
-<p><strong>26:22</strong> · Jia wants his code in RHEL, but RHEL only has a new major release about once every three years.</p>
-<p><strong>26:28</strong> · - So, there's definitely a deadline, and that deadline was around sort of March, April in 2024.</p>
-<p><strong>26:35</strong> · - Jia has to act fast.</p>
-<p><strong>26:36</strong> · He wants complete control of any compromised machine.</p>
-<p><strong>26:39</strong> · And to pull it off, he has three steps in his plan.</p>
-<p><strong>26:42</strong> · Step one, the Trojan horse.</p>
-<p><strong>26:47</strong> · The code for XZ lives on a website called GitHub, which tracks all edits to XZ's code using a tool called Git, which was also developed by Linus Torvalds.</p>
-<p><strong>26:56</strong> · So, Jia starts by making small changes.</p>
-<p><strong>26:58</strong> · He changes the primary contact for bug reports to his own email.</p>
-<p><strong>27:02</strong> · He tweaks small tools that will help him later.</p>
-<p><strong>27:04</strong> · But he can't sneak in the payload this way.</p>
-<p><strong>27:07</strong> · I mean, it'd be too obvious.</p>
-<p><strong>27:08</strong> · So he needs a way to sneak it in without it ever appearing as normal source code on GitHub.</p>
-<p><strong>27:14</strong> · - So, when you're writing compression software, it's very often the case that your software is full of these binary blobs, as we call them, so just lumps of binary which are used to test the compression or the decompression is still working.</p>
-<p><strong>27:28</strong> · - Nobody reads these test blobs.</p>
-<p><strong>27:30</strong> · They're included without ever appearing in the human readable source code.</p>
-<p><strong>27:33</strong> · They're assumed to be garbage data.</p>
-<p><strong>27:36</strong> · But for Jia, this is the perfect place to hide his payload, inside something that at first glance looks harmless.</p>
-<p><strong>27:44</strong> · But in reality, it's a Trojan horse.</p>
-<p><strong>27:48</strong> · But with a Trojan horse inside of XZ, it's still just a lump of data in a binary blob.</p>
-<p><strong>27:54</strong> · He has to unpack it.</p>
-<p><strong>27:56</strong> · So, in the code that builds the project, he slips in a small easy-to-miss change.</p>
-<p><strong>28:00</strong> · It hides among all the automatically generated code and quietly unpacks his payload, inserting it into the XZ library.</p>
-<p><strong>28:08</strong> · But now that it's inside of XZ, it still has to pick the right time to act.</p>
-<p><strong>28:13</strong> · On to step two, Goldilocks.</p>
-<p><strong>28:18</strong> · Jia's end goal is to compromise a very specific part of the SSH connection process, the RSA authentication step.</p>
-<p><strong>28:25</strong> · He realizes that if he can slip a small malicious component in there, let's call it the payload, then every time SSH checks for a key, his code will run first.</p>
-<p><strong>28:34</strong> · It will quietly look for a special master key that only he knows, and if it sees that key, it'll let him straight in.</p>
-<p><strong>28:40</strong> · If it doesn't, it'll call the real code and no one's the wiser.</p>
-<p><strong>28:44</strong> · So, he will have his backdoor entrance to OpenSSH.</p>
-<p><strong>28:47</strong> · But he can't just go in and rewrite RSA Decrypt, the function that verifies the client's identity during the login.</p>
-<p><strong>28:53</strong> · It's not that easy.</p>
-<p><strong>28:56</strong> · See, when you build an application, you could take all the code you need from different libraries and bundle it into your application.</p>
-<p><strong>29:02</strong> · But there's a big drawback to this approach.</p>
-<p><strong>29:05</strong> · If 10 different applications on a system all bundle the same library, you end up with 10 separate copies on your machine, so it's redundant.</p>
-<p><strong>29:13</strong> · That's why modern systems mostly use shared libraries.</p>
-<p><strong>29:17</strong> · When an application starts, the linker fills in a table of addresses.</p>
-<p><strong>29:20</strong> · These addresses point to the functions and variables it needs from the libraries it links to.</p>
-<p><strong>29:25</strong> · That table is called the Global Offset Table, or GOT.</p>
-<p><strong>29:30</strong> · Now, when it wants to use something from a shared library, it just checks the GOT and jumps to the right spot in memory.</p>
-<p><strong>29:36</strong> · RSA Decrypt doesn't belong to OpenSSH at all.</p>
-<p><strong>29:39</strong> · It comes from a shared crypto library.</p>
-<p><strong>29:41</strong> · So to hijack authentication, Jia can overwrite the GOT entry that tells SSH where it is.</p>
-<p><strong>29:48</strong> · And to do that, he can use a little known tool called an IFUNC resolver.</p>
-<p><strong>29:52</strong> · - The IFUNC is used where let's say you wanna optimize your code to run on Intel's hardware and AMD hardware.</p>
-<p><strong>30:00</strong> · Now, you could write the software just for Intel, and it would run very fast on Intel and it probably would run very badly on AMD hardware.</p>
-<p><strong>30:07</strong> · - [Henry] Instead, you keep multiple versions of the same function and the IFUNC resolver picks the right one for the hardware you're on.</p>
-<p><strong>30:13</strong> · At first glance, that sounds like a way for Jia to trick the system into thinking it's running hardware that needs his own compromised version of RSA Decrypt.</p>
-<p><strong>30:21</strong> · But there is a catch.</p>
-<p><strong>30:23</strong> · A library can only define IFUNC resolvers for its own functions.</p>
-<p><strong>30:26</strong> · And since RSA Decrypt doesn't belong to XZ, it can't use an IFUNC resolver to override it.</p>
-<p><strong>30:32</strong> · But IFUNC can still help him.</p>
-<p><strong>30:34</strong> · - So it will, very, very early on in the running of the program it will do this sort of determination of what hardware is available, and crucially, it does let you run your own code in the library very early on.</p>
-<p><strong>30:48</strong> · - Now, at this early stage, from within an IFUNC resolver, Jia could try to directly rewrite the GOT entry for RSA Decrypt.</p>
-<p><strong>30:56</strong> · But at this point, the system is still filling in the GOT, so even if Jia changes the RSA Decrypt slot, the loader will come along later and write the real address back in, wiping out his change.</p>
-<p><strong>31:07</strong> · And there's a limit on the other side as well.</p>
-<p><strong>31:09</strong> · To make this sort of hijacking harder, once every entry is filled on the GOT, the system marks the table Read Only.</p>
-<p><strong>31:16</strong> · That means that if Jia waits too long, the RSA Decrypt entry is frozen.</p>
-<p><strong>31:21</strong> · So he has to slip it in at a very precise moment.</p>
-<p><strong>31:24</strong> · After the RSA Decrypt entry is filled in legitimately, but before the table gets marked Read Only.</p>
-<p><strong>31:30</strong> · And that tiny window is the Goldilocks zone.</p>
-<p><strong>31:34</strong> · And to hit it, he's gonna need another tool.</p>
-<p><strong>31:37</strong> · So, linking shared libraries in the GOT often leads to bugs, so Linux has a special debugging feature that tracks what the system's doing.</p>
-<p><strong>31:45</strong> · It lets you run code whenever the linker writes a symbol's address into the GOT.</p>
-<p><strong>31:50</strong> · It's called a dynamic audit hook, and normally you'd use it to profile performance.</p>
-<p><strong>31:54</strong> · But crucially for Jia, there are no real guardrails.</p>
-<p><strong>31:58</strong> · The hook can run any code he wants.</p>
-<p><strong>32:00</strong> · And this is where IFUNC finally pays off.</p>
-<p><strong>32:03</strong> · Jia uses an IFUNC resolver to set the audit hook early.</p>
-<p><strong>32:06</strong> · Then, when the linker writes in the real RSA Decrypt address, the hook fires and swaps in his payload.</p>
-<p><strong>32:13</strong> · Right in the middle of the Goldilocks zone.</p>
-<p><strong>32:17</strong> · There is one final complication, though.</p>
-<p><strong>32:19</strong> · Audit hooks are normally configured by the system, not by libraries like XZ.</p>
-<p><strong>32:23</strong> · So when Jia is first looking for the audit hook variable that he's supposed to rewrite, it's actually hidden from him, so he first has to find it.</p>
-<p><strong>32:31</strong> · Within the IFUNC, he scans a small region of binary code, hunting for signs of the hook.</p>
-<p><strong>32:37</strong> · But it's just raw bites, so he writes a tiny decoder to turn them back into instructions that he can read.</p>
-<p><strong>32:43</strong> · Now Jia can find where the hook lives in memory and finally plant his code.</p>
-<p><strong>32:47</strong> · Then, when RSA Decrypt gets called legitimately, it triggers the payload and he's in.</p>
-<p><strong>32:52</strong> · But now that he's in, what does he do?</p>
-<p><strong>32:54</strong> · And how does he get out of there cleanly?</p>
-<p><strong>32:56</strong> · Step three, the cat burglar.</p>
-<p><strong>33:00</strong> · With Jia's exploit in place, SSH isn't just checking for a legitimate login anymore.</p>
-<p><strong>33:05</strong> · It's also listening for a hidden master key.</p>
-<p><strong>33:08</strong> · And Jia is careful, he doesn't want anyone else stumbling onto the backdoor, so that master key isn't just a simple password.</p>
-<p><strong>33:14</strong> · It's actually a mini cryptographic exchange of its own.</p>
-<p><strong>33:18</strong> · First, the backdoor code checks for a shared secret, and then, second, it authenticates the user.</p>
-<p><strong>33:23</strong> · And only if both checks pass does the payload run.</p>
-<p><strong>33:26</strong> · In effect, it's like the backdoor is running a miniature version of the encryption from SSH inside of SSH.</p>
-<p><strong>33:32</strong> · But in SSH, it uses that encryption to keep the attackers out.</p>
-<p><strong>33:36</strong> · In this case, the backdoor is using that encryption to make sure that it's only the attackers that can get in.</p>
-<p><strong>33:41</strong> · But he's still careful.</p>
-<p><strong>33:43</strong> · One of the main ways defenders catch intrusions is through SSH logging.</p>
-<p><strong>33:47</strong> · So, to cover his tracks, he wipes evidence of the backdoor ever firing.</p>
-<p><strong>33:51</strong> · And this is on top of the numerous safety checks that he's inserted throughout the process to make sure the system supports the backdoor and doesn't crash and draw attention.</p>
-<p><strong>34:00</strong> · And this is the genius of Jia's trap.</p>
-<p><strong>34:02</strong> · It's cautious and meticulous, designed to slip through only where it will run invisibly.</p>
-<p><strong>34:08</strong> · With all three of these steps complete, he can finally control the machine undetected.</p>
-<p><strong>34:13</strong> · All he needs to do now is get his updated XZ implemented in the next release.</p>
-<p><strong>34:18</strong> · But just as Jia is completing his backdoor, an open source developer requests to remove the dependency that links XZ to OpenSSH.</p>
-<h3>Lỗi trong mã của Jia</h3>
-<p><strong>34:26</strong> · This would spell disaster for Jia Tan.</p>
-<p><strong>34:29</strong> · He becomes frantic, pushing harder and harder to get his compromised XZ into major Linux releases.</p>
-<p><strong>34:35</strong> · He gets it into an early experimental build of Debian.</p>
-<p><strong>34:38</strong> · He files a request to have it added to Ubuntu.</p>
-<p><strong>34:40</strong> · He's trying to land the backdoor everywhere he can before anyone realizes what's going on.</p>
-<p><strong>34:45</strong> · And it's then that Rich gets his first message from Jia.</p>
-<p><strong>34:49</strong> · Over the next few weeks, he gets more and more insistent, urging Rich to add the updated XZ into the next release of Fedora.</p>
-<p><strong>34:55</strong> · - I'm always very keen to talk to keen upstream contributors, contributors who are really excited about new things in their software, who are really willing to help us get stuff into Fedora.</p>
-<p><strong>35:08</strong> · So, you know, that's great, love it.</p>
-<p><strong>35:10</strong> · That kind of makes my day, it's my happy place.</p>
-<p><strong>35:13</strong> · - Eventually, Jia gets what he wants.</p>
-<p><strong>35:15</strong> · Rich adds the updated XZ to a pre-release version of Fedora.</p>
-<p><strong>35:19</strong> · Jia has succeeded.</p>
-<p><strong>35:21</strong> · Except there's a bug.</p>
-<p><strong>35:24</strong> · In low-level code like the backdoor, things you normally take for granted, like memory management, are not done automatically.</p>
-<p><strong>35:31</strong> · If a function grabs a bit of memory, it also has to give that memory back when it's done.</p>
-<p><strong>35:36</strong> · And if it doesn't, then every time the function runs, it grabs more and more memory and then never releases it.</p>
-<p><strong>35:41</strong> · Over time, the program just keeps growing.</p>
-<p><strong>35:44</strong> · That's called a memory leak.</p>
-<p><strong>35:45</strong> · And to catch problems like this, developers use a tool called Valgrind.</p>
-<p><strong>35:49</strong> · It runs the program more slowly but watches every memory operation for anything suspicious.</p>
-<p><strong>35:55</strong> · Valgrind is raising hell on Jia's code.</p>
-<p><strong>35:58</strong> · - We put XZ, this version, 560, into Fedora 40.</p>
-<p><strong>36:04</strong> · We get a bug report initially.</p>
-<p><strong>36:07</strong> · - And the backdoor in XZ specifically is generating invalid writes errors.</p>
-<p><strong>36:12</strong> · Well, the logic was written by hand, bypassing the compiler's safety checks, and so they accidentally wrote outside the memory stack.</p>
-<p><strong>36:19</strong> · Now, lucky for Jia, all this isn't immediately obvious.</p>
-<p><strong>36:22</strong> · Rich still hasn't noticed what's happening.</p>
-<p><strong>36:24</strong> · - New software has bugs, right?</p>
-<p><strong>36:26</strong> · It's the state of nature of software.</p>
-<p><strong>36:28</strong> · Software is absolutely full of bugs all the time.</p>
-<p><strong>36:31</strong> · - [Henry] Now, the real problem is inside the malicious code in the test file.</p>
-<p><strong>36:35</strong> · But Jia can't just go and fix that, that would completely expose the backdoor.</p>
-<p><strong>36:39</strong> · So he invents a cover story.</p>
-<p><strong>36:41</strong> · He claims that the random data he used to generate the original test files, well, it's not reproducible, so he's replacing it.</p>
-<p><strong>36:47</strong> · And in this updated code, he fixes the memory error.</p>
-<p><strong>36:50</strong> · - It's a very convincing and plausible explanation for why this test blob has to be updated.</p>
-<p><strong>36:56</strong> · But of course, it's not the real reason.</p>
-<p><strong>36:59</strong> · - All right, so now the real fix is in, but if the bug just magically went away, it would look a bit suspicious.</p>
-<p><strong>37:04</strong> · So he has to find a way to cover it up.</p>
-<p><strong>37:06</strong> · - So what he then does is he changes the IFUNC code in a way where he adds like a whole bunch of comments and changes to the code around it that doesn't actually change the code but is plausible enough to look like he's changing how the IFUNC works to fix the Valgrind bug.</p>
-<p><strong>37:26</strong> · - It does, listening to it and I'm like I know that this is the evil hacker Jia Tan, but I'm like, ooh, that's clever.</p>
-<p><strong>37:32</strong> · You know? - Yeah, I mean, look, the guy is obviously not an idiot, right?</p>
-<p><strong>37:37</strong> · But none of this is suspicious.</p>
-<p><strong>37:41</strong> · This is what we expect from compression software.</p>
-<p><strong>37:44</strong> · And as a packager, it's not really my job to fix every bug in upstream software.</p>
-<p><strong>37:51</strong> · As soon as it gets to a certain level of difficulty, my thought here is, well, Jia Tan has actually been writing this software, right?</p>
-<p><strong>37:59</strong> · So he's got it all in his head, he knows how it works.</p>
-<p><strong>38:02</strong> · It's easier for me to just give him the problem.</p>
-<p><strong>38:05</strong> · And I send the bug over to him and like a day later he sends the fix back.</p>
-<p><strong>38:09</strong> · From my point of view, it's problem solved.</p>
-<p><strong>38:11</strong> · It worked, system worked, right?</p>
-<p><strong>38:13</strong> · I made the right call.</p>
-<p><strong>38:14</strong> · I don't see, at that point, knowing what I know then, I don't see that there's any problem.</p>
-<p><strong>38:21</strong> · - So we downloaded Jia Tan's version of XZ, which was available on Fedora publicly, but we made a slight modification.</p>
-<h3>Henry hack Derek</h3>
-<p><strong>38:29</strong> · Instead of using Jia's secret code, we're using our own, and that means that we can take advantage of Jia's backdoor.</p>
-<p><strong>38:35</strong> · In this case, we're targeting the veritasium.com website.</p>
-<p><strong>38:39</strong> · And once we get control of it, I got a little trick in store for Derek.</p>
-<p><strong>38:43</strong> · Now, to make sure I don't mess with any real traffic too bad and lose my job, we actually cloned the Veritasium website and put it on a very similar URL, but it will work the same.</p>
-<p><strong>38:52</strong> · Of course, Derek doesn't know that I've covered my bases.</p>
-<p><strong>38:56</strong> · - Oh no.</p>
-<p><strong>38:58</strong> · Man, when you guys do these things, I just, I start to get more and more scared now.</p>
-<p><strong>39:03</strong> · I want it to work for the video, but I also don't want it to work 'cause I don't wanna screw stuff up, so.</p>
-<p><strong>39:08</strong> · - Yeah, it's the risk you take, I guess, letting us run rampant.</p>
-<p><strong>39:11</strong> · - It is a concern.</p>
-<p><strong>39:13</strong> · - I'm gonna execute a script here, which is gonna open up.</p>
-<p><strong>39:16</strong> · It's opening up a port on the Veritasium server.</p>
-<p><strong>39:20</strong> · And then on this side I'm gonna execute a little script.</p>
-<p><strong>39:26</strong> · - Uh-oh. (Henry laughs) Henrytasium.</p>
-<p><strong>39:30</strong> · Who is this goof?</p>
-<p><strong>39:32</strong> · On the main photo, you spent time getting all suited up there.</p>
-<p><strong>39:37</strong> · - Of course.</p>
-<p><strong>39:38</strong> · - Looking sharp, sir. - Thank you, thank you.</p>
-<p><strong>39:41</strong> · - [Derek] &quot;Videos Derek would never approve of.&quot;</p>
-<p><strong>39:43</strong> · Uh-oh. - The concept was over the years that we've worked together, you've said no to a bunch of my ideas, and I figured now with control of the website it's about time the world saw it.</p>
-<p><strong>39:53</strong> · - &quot;Surviving 7 days living underwater.</p>
-<p><strong>39:56</strong> · How do saturation divers live at -1,000 feet?&quot;</p>
-<p><strong>40:00</strong> · I mean, you wouldn't be outside, right?</p>
-<p><strong>40:02</strong> · So I don't know why you need goggles there and like a respirator but you're not underwater.</p>
-<p><strong>40:08</strong> · &quot;Why it's almost impossible to shoot 4,000 meters.&quot;</p>
-<p><strong>40:12</strong> · It's a sniper video.</p>
-<p><strong>40:14</strong> · Yeah.</p>
-<p><strong>40:15</strong> · &quot;The CIA lied: exposing how the CIA lied about torture.&quot;</p>
-<p><strong>40:19</strong> · I feel like that still goes into a tough territory for us.</p>
-<p><strong>40:22</strong> · &quot;How xenon gas replaced oxygen.</p>
-<p><strong>40:25</strong> · I attempted to climb Mount Everest on xenon gas.&quot;</p>
-<p><strong>40:28</strong> · That sounds like a terrible idea.</p>
-<p><strong>40:30</strong> · This is what this whole video is about, this whole video is just about trying to get me to green light your projects.</p>
-<p><strong>40:37</strong> · You know, if people like these video ideas, they can feel free to let us know in the comments and we can actually make them.</p>
-<p><strong>40:43</strong> · The top upvoted comment one, I will green light happily.</p>
-<p><strong>40:47</strong> · - Let's go!</p>
-<p><strong>40:49</strong> · - Is this live to the public right now?</p>
-<p><strong>40:50</strong> · - It is live, yeah, it's live on the server, yeah.</p>
-<p><strong>40:53</strong> · - If anyone's on the website right now, that would be very strange for them.</p>
-<p><strong>40:57</strong> · Look, I'm not pleased, I would like you to change it back.</p>
-<p><strong>41:02</strong> · It doesn't seem like this should be possible on a Linux server.</p>
-<p><strong>41:06</strong> · So the big question is, how did you do it?</p>
-<p><strong>41:09</strong> · - The address is the server, the seed is our code to get in, and then the command is what we're doing to essentially open up, in this case nc, which is like opening up a port on the machine that we can then access from this second terminal.</p>
-<p><strong>41:21</strong> · Then what we're doing is on this side we're running a script that's connecting to that port that's just been opened up, copying our files and then by the end we're gonna have root access on the server.</p>
-<p><strong>41:33</strong> · That means that it thinks that we own the thing.</p>
-<p><strong>41:36</strong> · - That's so crazy.</p>
-<p><strong>41:37</strong> · This is a very scary hack.</p>
-<p><strong>41:40</strong> · I do not like it.</p>
-<p><strong>41:42</strong> · - Another thing is that this is a very obvious way of demonstrating this attack.</p>
-<p><strong>41:47</strong> · Like I've changed everything on the website, you immediately know that I've gone in and hacked the server.</p>
-<p><strong>41:51</strong> · If we were doing this for real, we would do it a lot sneakier.</p>
-<p><strong>41:54</strong> · - I mean, as you say, right?</p>
-<p><strong>41:56</strong> · The thing to do would not be to totally rework someone's website so everyone notices, but to change it subtly so nobody notices so you can skim data or, yeah, like get credit card details or take payments to a different location, stuff like that.</p>
-<p><strong>42:11</strong> · - So you can copy anything you want, you can change anything you want, you can delete anything you want.</p>
-<p><strong>42:15</strong> · So if there's any interesting documents or crypto tokens, any files you're interested in, those are yours now.</p>
-<p><strong>42:22</strong> · If there's secret communications going across these, and let's keep in mind all of our communication networks are also built around Linux, those communication streams are yours now.</p>
-<p><strong>42:33</strong> · If you wanted to encrypt something and ask for ransom, that's possible now.</p>
-<p><strong>42:38</strong> · - [Henry] The possibilities really are endless.</p>
-<p><strong>42:40</strong> · After two and a half years of hard work, slowly infiltrating the XZ Project and weaving in this ingenious backdoor, Jia's done it.</p>
-<p><strong>42:49</strong> · He now has free rein on any machine that installs the new Fedora pre-release.</p>
-<p><strong>42:53</strong> · And he also gets the same access on Debian testing and Ubuntu's pre-release environments.</p>
-<p><strong>42:58</strong> · And with RHEL 10 coming up, his code could infect some of the most important computers in the world.</p>
-<p><strong>43:02</strong> · Now he should be able to relax, wait for the release, and he's got his backdoor key.</p>
-<p><strong>43:07</strong> · But just when he thinks everything's going right...</p>
-<p><strong>43:11</strong> · (suspenseful music) Andres Freund is a German programmer.</p>
-<h3>Cửa hậu bị phơi bày</h3>
-<p><strong>43:19</strong> · He's not a security researcher, he's not a hacker.</p>
-<p><strong>43:23</strong> · He's just an employee at Microsoft working on an open source project called Postgres.</p>
-<p><strong>43:28</strong> · One day in March 2024, he tries out the unstable release of Debian to make sure that Postgres will run smoothly.</p>
-<p><strong>43:34</strong> · But while checking the server connection times, he notices something odd.</p>
-<p><strong>43:38</strong> · A slowdown.</p>
-<p><strong>43:40</strong> · It's not much.</p>
-<p><strong>43:40</strong> · In the worst case, it's only half a second, but it's enough to make Andres suspicious.</p>
-<p><strong>43:45</strong> · We tested the connection times ourselves on our own version of the XZ hack and we found the exact same thing.</p>
-<p><strong>43:50</strong> · Consistent slowdowns of about 400 to 500 milliseconds.</p>
-<p><strong>43:54</strong> · Andres had already seen the problems with XZ and Valgrind weeks earlier and this only makes him more suspicious, so he digs in deeper.</p>
-<p><strong>44:01</strong> · He looks at recent additions to OpenSSH and traces the delay back to an update in XZ.</p>
-<p><strong>44:07</strong> · He sees the binary test files but notices that they were never used in a test.</p>
-<p><strong>44:11</strong> · It's even stranger.</p>
-<p><strong>44:12</strong> · Andres tries to get back to work, but he can't stop thinking about it.</p>
-<p><strong>44:15</strong> · - [Andres] I remember sitting in a bunch of meetings and like not really being able to concentrate because it feels like, I need to continue looking into this.</p>
-<p><strong>44:25</strong> · - Eventually, Andres sees it.</p>
-<p><strong>44:26</strong> · This isn't some bug, this is a backdoor.</p>
-<p><strong>44:30</strong> · And this backdoor is meticulous.</p>
-<p><strong>44:32</strong> · It hunts through memory to find the audit hook, it implements a decoder to read those raw bites, and then it wraps everything in custom encryption and safety checks so that it only triggers on the right kind of connection.</p>
-<p><strong>44:44</strong> · I mean, it even garble its own strings so that it won't be detected.</p>
-<p><strong>44:48</strong> · It's incredibly cautious.</p>
-<p><strong>44:50</strong> · But all of that takes time, and in the end, that's what grabs Andres's attention.</p>
-<p><strong>44:55</strong> · - If they had done less obfuscation, I probably would not have noticed that anything was wrong.</p>
-<p><strong>44:59</strong> · - [Henry] Now, XZ's security contact is Jia Tan, so Andres can't exactly report it through the usual channels.</p>
-<p><strong>45:06</strong> · Instead, he emails the Debian security team directly and posts a detailed report to a public security mailing list.</p>
-<p><strong>45:13</strong> · Then, all hell breaks loose.</p>
-<p><strong>45:16</strong> · - I'm called up on I think it was a Friday evening, in fact, I'm sure it was a Friday evening, to join a internal Red Hat meeting.</p>
-<p><strong>45:28</strong> · It's immediately obvious that this is not a normal meeting because like our head of security is there.</p>
-<p><strong>45:35</strong> · It's explained to me that it's been found by somebody in the community that XZ has a backdoor, and immediately I'm like, WTF?</p>
-<p><strong>45:45</strong> · How did this happen?</p>
-<p><strong>45:47</strong> · - To cover their bases, Red Hat quickly rolls Fedora back and tells all their users to revert, and the whole open source community starts digging into the project to understand what went wrong.</p>
-<p><strong>45:58</strong> · One thing is clear, though.</p>
-<p><strong>46:00</strong> · Andres is a hero.</p>
-<p><strong>46:01</strong> · - Now, the fact that this was discovered in a different test at all, that was lucky.</p>
-<p><strong>46:06</strong> · But then what are the chances that someone who isn't looking for a security bug spends days investigating this?</p>
-<p><strong>46:13</strong> · So, big kudos to the researcher, and yeah, saved us all from possibly a doomsday on the internet.</p>
-<p><strong>46:22</strong> · - I think that Andres did a brilliant job because he did what I should have done, actually, which is I should have looked at the, you know, I should have looked at the bug when I saw it and I should have gone there, you know, like a crazy hound sort of sniffing around trying to find out what's going on.</p>
-<p><strong>46:40</strong> · - [Henry] Andres even gets a shout out from the CEO of Microsoft.</p>
-<p><strong>46:43</strong> · But when the story breaks, the mainstream response is surprisingly muted.</p>
-<p><strong>46:48</strong> · - Actually, I'm still surprised now that the mainstream news outlets haven't really covered this very much.</p>
-<p><strong>46:55</strong> · Well, I can tell you how many systems would have been compromised, which would have been millions, - Anything from spying, to ransom, to just taking down entire countries, you could have done it with this backdoor.</p>
-<p><strong>47:10</strong> · - [Henry] I guess the big question is, who is Jia Tan?</p>
-<p><strong>47:13</strong> · - That's the question, isn't it?</p>
-<p><strong>47:15</strong> · Okay, so my feeling is that Jia Tan, the person that I talked to I believe is one person, but I also believe that behind him must be a group of people.</p>
-<h3>Jia Tan là ai?</h3>
-<p><strong>47:27</strong> · And they worked for quite a while.</p>
-<p><strong>47:30</strong> · I mean, they were at this for perhaps two and a half years that we know about.</p>
-<p><strong>47:34</strong> · - If you look back at the accounts pressuring Lasse, they share some similarities.</p>
-<p><strong>47:39</strong> · They use free email addresses and they have almost no footprint outside of the XZ threads.</p>
-<p><strong>47:45</strong> · These were very likely sock puppet accounts, identities manufactured to apply pressure as part of a multi-stage social engineering campaign.</p>
-<p><strong>47:53</strong> · - Now, who spends a million dollars and takes two and a half years to attempt to break into every hotel room on the internet with a master key?</p>
-<p><strong>48:02</strong> · (suspenseful music) I think it's not a criminal organization because I don't think a criminal organization would have that patience to spend that time without any real return.</p>
-<p><strong>48:13</strong> · So I think it has to be a nation state actor, here.</p>
-<p><strong>48:20</strong> · - A lot of the aliases, like Jia Tan, they sound like Asian names, and the published changes are all timestamped in UTC+8, Beijing time.</p>
-<p><strong>48:29</strong> · So the signs point to China.</p>
-<p><strong>48:32</strong> · And that's why it's probably not China.</p>
-<p><strong>48:35</strong> · I mean, why would they make it that obvious?</p>
-<p><strong>48:37</strong> · Every other part of the operation has been so meticulous, so cautious.</p>
-<p><strong>48:41</strong> · And they also worked on Chinese New Year, but not on Christmas.</p>
-<p><strong>48:45</strong> · And over the years, there were nine changes that fall outside of the Beijing time into UTC+2, which is a time zone that includes Israel and parts of Western Russia.</p>
-<p><strong>48:56</strong> · That's why some experts have speculated that this could be the work of APT29, a Russian-state-backed hacker group also known as Cozy Bear.</p>
-<p><strong>49:05</strong> · - But again, do we know?</p>
-<p><strong>49:07</strong> · No, of course we don't know who it is, and we likely will never know.</p>
-<p><strong>49:10</strong> · Jia Tan himself just disappeared as soon as this exploit became publicly known and never heard from again.</p>
-<p><strong>49:18</strong> · - In a sense it doesn't matter whether this was Russian or Chinese or Iranian.</p>
-<p><strong>49:22</strong> · We need to protect from these types of backdoors no matter where they're coming from.</p>
-<p><strong>49:26</strong> · - I see this as like, you know, the canary in the coal mine of what's gonna be happening as attackers get more sophisticated, they make fewer mistakes.</p>
-<p><strong>49:37</strong> · You know, the gloves are off in a way.</p>
-<p><strong>49:39</strong> · I don't think that the Linux community is fully, you know, is fully ready for this yet.</p>
-<p><strong>49:48</strong> · - In the aftermath of XZ, the open source community poured over countless small similar projects looking for similar campaigns, but they found almost nothing.</p>
-<p><strong>49:58</strong> · - I'm worried that we didn't find other backdoors.</p>
-<p><strong>50:00</strong> · The incentives are just too clear.</p>
-<p><strong>50:02</strong> · There are state-sponsored parts of either governments, militaries or even private contractors working for states that are all preparing for the next cyber escalation, some kind of a war, some kind of a geopolitical conflict, and where are all of those backdoors?</p>
-<p><strong>50:20</strong> · There's just too many people incentivized to put backdoors for the few backdoors that we're actually discovering.</p>
-<p><strong>50:26</strong> · - Now, some experts have argued this reveals a fundamental flaw in the open source model, but not everyone agrees.</p>
-<h3>Mã nguồn mở vs mã nguồn đóng</h3>
-<p><strong>50:33</strong> · - Closed source software would be no better here.</p>
-<p><strong>50:35</strong> · In fact, who's to say that there aren't already state spies working as paid software engineers at some of the larger companies putting in exactly backdoors like this?</p>
-<p><strong>50:46</strong> · But then there would be no community member running free testing and detecting this by chance.</p>
-<p><strong>50:52</strong> · This backdoor, if anything, underlines the ethos of open source.</p>
-<p><strong>50:57</strong> · - I mean, just think of what it took to get this done in public.</p>
-<p><strong>51:01</strong> · There was a multiple-year social engineering campaign, there were all these layers of misdirection, and then there was code that was designed to withstand constant scrutiny.</p>
-<p><strong>51:09</strong> · Compare that now with a closed source hack.</p>
-<p><strong>51:12</strong> · Sometimes all it takes to get a backdoor installed there is a court order, or you have a public company that can just brush a breach under the rug.</p>
-<p><strong>51:21</strong> · I actually used to work as an open source researcher myself at the Japanese telecom giant NTT, and my perspective is that it's only because this is an open source project that it's been picked apart, analyzed, and turned into a conversation about security at all.</p>
-<p><strong>51:35</strong> · One that focuses on the fundamental vulnerability.</p>
-<p><strong>51:39</strong> · It's not the code, it's the people.</p>
-<p><strong>51:42</strong> · Now, the system has not supported them enough.</p>
-<p><strong>51:45</strong> · - I feel for Lasse that he's given this beautiful gift to the whole world and, you know, what have we, what has humanity done back to him, right?</p>
-<p><strong>52:00</strong> · We've poisoned his gift.</p>
-<p><strong>52:02</strong> · And then I think implicitly a little bit, not everyone's saying this, but implicitly we're blaming him for not being there to maintain this stuff for free forever.</p>
-<p><strong>52:17</strong> · But why are we demanding that Lasse do anything when he's not being paid for this stuff?</p>
-<p><strong>52:24</strong> · And that's, in my opinion, quite unfair.</p>
-<p><strong>52:28</strong> · On this Saturday evening, we were working together on a workaround for this bug in RHEL 9 that he's added to XZ, and he absolutely could have told us to get lost, and didn't.</p>
-<p><strong>52:43</strong> · What a brilliant guy.</p>
-<p><strong>52:48</strong> · (electronic beeping) (music fades out)</p>
 ]]></content:encoded>
       
     </item>
