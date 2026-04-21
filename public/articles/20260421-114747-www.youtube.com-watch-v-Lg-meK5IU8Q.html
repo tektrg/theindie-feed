@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBM Technology - What AI Agent Skills Are and How They Work - The Indie App</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🎥 Watch on YouTube: What AI Agent Skills Are and How They Work
+
+---
+
+![](https://www.youtube.com/watch?v=Lg-meK5IU8Q)
+
+
+
+ · What are AI agent skills and  why have they become an open standard adopted...">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Back to Feed</a>
+      <a href="https://www.youtube.com/watch?v=Lg-meK5IU8Q" target="_blank">🎥 Watch on YouTube</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>IBM Technology - What AI Agent Skills Are and How They Work</h1>
+      <time datetime="2026-04-20T11:00:36.000Z">
+        April 20, 2026
+      </time>
+      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Lg-meK5IU8Q">What AI Agent Skills Are and How They Work</a></p>
+<hr>
+<p><img src="https://www.youtube.com/watch?v=Lg-meK5IU8Q" alt=""></p>
+<h2>Transcript</h2>
+<p>**** · What are AI agent skills and  why have they become an open standard adopted by practically  every major AI coding platform?</p>
+<p>**** · Well, because skills address a  specific problem with agents.</p>
+<p>**** · Now AI agents, they're pretty good reasoners and LLMs or large language models  already know a lot of facts.</p>
+<p>**** · They can tell you about Kubernetes  architecture or the history of SQL or the airspeed velocity of an unladen swallow,  that part is covered but they lack something.</p>
+<p>**** · They lack procedural knowledge.</p>
+<p>**** · The stuff that's specific to  how work gets done, let's say a 47-step workflow for  generating a compliant financial report.</p>
+<p>**** · Yeah, that would be fun.</p>
+<p>**** · An AI agent that is running a  large language model when it encounters a task generating this  report, it has two options.</p>
+<p>**** · Either somebody needs to prompt it with every  single step, all 47 of them, and they need to do that every time, or worse still, the  agent is just going to take a guess at it.</p>
+<p>**** · Now a skill is how you add in that procedural knowledge into the agent and the format of a  skill is almost comically simple.</p>
+<p>**** · It's simply a skill.md file.</p>
+<p>**** · That's a markdown file in a folder.</p>
+<p>**** · So let me draw out what a  skill looks **** · So at the top.</p>
+<p>**** · Skill.md file is some YAML front letter.</p>
+<p>**** · So let's have a look at what  is defined in the front letter?</p>
+<p>**** · Well, at a minimum, there are two things.</p>
+<p>**** · So there is a name and there is description.</p>
+<p>**** · These are the two mandatory fields.</p>
+<p>**** · Now the name identifies the skill, the description that tells the agent what  this skill does and when it should be used.</p>
+<p>**** · Now this description is pretty important  because it's the trigger condition that tells agent exactly when this skill applies,  so maybe the skill name is PDF Builder.</p>
+<p>**** · And the description here that says something use this when the user asks to extract a PDF.</p>
+<p>**** · Now there are some other fields you can put  into the front matter author and version, but it's name and description that are mandatory.</p>
+<p>**** · Now below the front mater, we also have a field.</p>
+<p>**** · Now these are the actual instructions.</p>
+<p>**** · These are the step-by-step workflows, the  rules, the examples of input and output, whatever the agent needs to know to do the job.</p>
+<p>**** · And it's just written in plain markdown.</p>
+<p>**** · And then the skill folder can contain  some optional folders as well.</p>
+<p>**** · So you don't have to have  these, but you can add them.</p>
+<p>**** · One of those optional folders is the scripts.</p>
+<p>**** · And this has executable JavaScript or Python  or bash that the agent can run.</p>
+<p>**** · There's also a references directory that  contains additional documentation that gets loaded if the agent determines it needs it.</p>
+<p>**** · And finally, the other optional  directory is the assets directory that contains static resources  templates and data files.</p>
+<p>**** · That's what an agent skill looks but  agents can have lots of skills defined for them.</p>
+<p>**** · So what happens when there are  hundreds of these skills?</p>
+<p>**** · Loading all of them into the LLM  context window at startup would blow through the token budget before  anyone even gets to ask a question.</p>
+<p>**** · So skills use something  called progressive disclosure.</p>
+<p>**** · And progressive disclosure works in three tiers.</p>
+<p>**** · So tier one is metadata only, and that applies.</p>
+<p>**** · So at startup, the agent loads just the  name and description from each skill.</p>
+<p>**** · So that's just a handful of tokens per skill.</p>
+<p>**** · So even if there are a hundred skills installed,  the overhead isn't gonna fill the context window.</p>
+<p>**** · And this is essentially  akin to a skills table of contents.</p>
+<p>**** · Now tier two, this relates  to the full instructions.</p>
+<p>**** · When the agent sees a request that  matches this skill's description, it reads the complete skill.md body into context.</p>
+<p>**** · And this tells the agent what to  do, the skill we are teaching it.</p>
+<p>**** · And that identification, the matching  of a given requirement for a task to the skill available is something that  happens through the LLM's own reasoning.</p>
+<p>**** · The model decides when it  can make use of the skill, which is why a good skill  description is so important.</p>
+<p>**** · Then tier three, that's  these optional folders here.</p>
+<p>**** · So these are the resources that maps to the  scripts and references and the assets folders.</p>
+<p>**** · And they only get loaded when a  specific task needs them.</p>
+<p>**** · So the agent starts with a lightweight  index of everything it can do.</p>
+<p>**** · That's the name and description.</p>
+<p>**** · It pulls in the detailed instructions  when they're relevant, the body, based on matching the trigger condition.</p>
+<p>**** · And it grabs resources only at the point of need.</p>
+<p>**** · Now skills bring a type of knowledge to agents.</p>
+<p>**** · There are several ways to  incorporate knowledge into an agent.</p>
+<p>**** · So let's just briefly compare them  because they handle different things.</p>
+<p>**** · And the first one I just want to mention is MCP.</p>
+<p>**** · That's Model Context Protocol.</p>
+<p>**** · What knowledge does MCP give you?</p>
+<p>**** · Gives you tool access.</p>
+<p>**** · It gives agents the ability to call out to  external APIs and to interact with services.</p>
+<p>**** · MCP is about what the agent can reach, but it doesn't tell the agent when to  reach for it or what to do once it has.</p>
+<p>**** · So that's MCP.</p>
+<p>**** · Another one is RAG, Retrieval  Augmented Generation, and RAG that handles factual  knowledge, so it pulls in...</p>
+<p>**** · Relevant chunks from our  knowledge database at run time, which is pretty handy when the  agent needs to look something up.</p>
+<p>**** · But RAG doesn't teach an  agent how to do something.</p>
+<p>**** · It's reference material.</p>
+<p>**** · What about another one?</p>
+<p>**** · How about fine tuning?</p>
+<p>**** · What can that do for us?</p>
+<p>**** · Well, fine tuning bakes knowledge  directly into the model's weights.</p>
+<p>**** · Now that's something that's  permanent, but it's expensive.</p>
+<p>**** · And if the model changes the  fine-tuning has to be redone.</p>
+<p>**** · Now skills don't really do any of this so  what knowledge do skills bring to agents?</p>
+<p>**** · Well skills handle as I mentioned  up front procedural knowledge.</p>
+<p>**** · It's how to do things in what  order and with what judgment, and because they just files Well,  they can be version control, they could be easily updated and you  can easily move them between platforms.</p>
+<p>**** · Now, in practice, skills will  often use some of these other forms of knowledge well, MCP for example.</p>
+<p>**** · So MCP provides the capability to invoke something externally and the skill provides the  judgment for when and how to do that.</p>
+<p>**** · Now, one more thing to say about skills.</p>
+<p>**** · Is that the skill.md format is an open standard, and it's published at agent skills.io  and that's an Apache 2.0 license project, and it was adopted across a bunch of AI platforms Claude Code and OpenAI  Codex and many other tools.</p>
+<p>**** · So a skill built for one platform works  on any platform that supports this spec.</p>
+<p>**** · Now there's a useful way to think about  skills and it comes from cognitive science.</p>
+<p>**** · Now humans have distinct types of memory.</p>
+<p>**** · There's semantic memory, which are facts.</p>
+<p>**** · So Rome is the capital of Italy.</p>
+<p>**** · There's episodic memory, which are experiences.</p>
+<p>**** · So, I went to Rome last summer.</p>
+<p>**** · I did, and it was lovely.</p>
+<p>**** · and then there's procedural memory, which  are skills how to ride a scooter on the streets of Rome and live to tell  the tale, which I also did barely.</p>
+<p>**** · Now agent architectures are  starting to mirror this.</p>
+<p>**** · So semantic memory, that maps  pretty closely to retrieval, augmented generation and knowledge bases.</p>
+<p>**** · Episodic memory.</p>
+<p>**** · Well, that really maps to conversational.</p>
+<p>**** · Logs and interaction history  and procedural memory.</p>
+<p>**** · Well, yep, that maps quite nicely to skill files.</p>
+<p>**** · Now, one thing that does need mentioning  is that skills can include executable scripts with access to file systems  and environment variables and API keys.</p>
+<p>**** · That's what makes them powerful, but  it's also what makes trust so important.</p>
+<p>**** · Because when an agent runs one of these scripts, it's typically executing  commands locally on your machine and audits have found publicly  available skills frequently contain bad stuff prompt injection, bad stuff tool poisoning, bad  stuff hidden malware.</p>
+<p>**** · the usual suspects  for any open ecosystem.</p>
+<p>**** · So, so treat skill installation  the way that any responsible team treats installing any software dependency, which is to say, review it and understand what  it does before using it on your local machine.</p>
+<p>**** · So, So where does this leave us?</p>
+<p>**** · Well, skills are procedural memory for AI agents.</p>
+<p>**** · They're defined in a markdown  file that lives in a folder that teaches an agent how to do a specific job.</p>
+<p>**** · Skills are conditionally triggered  and they load efficiently through progressive disclosure and the  format is an open standard.</p>
+<p>**** · So an agent that already  knows the airspeed velocity of an unlaid and swallow, African and European, can now also learn how to perform any  repeatable task you define for it.</p>
+<p>**** · So that's AI agent skills.</p>
+<p>**** · If you're using them, let me know in the comments.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>Generated from YouTube video notes</p>
+  </footer>
+</body>
+</html>
