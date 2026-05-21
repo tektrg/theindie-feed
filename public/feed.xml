@@ -7,8 +7,124 @@
     <link>https://myfeed.theindie.app</link>
     <description>Curated notes and insights from YouTube videos</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 22:20:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 06:54:02 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pragmatic Engineer - Why Rust is different, with Alice Ryhl</title>
+      <link>https://myfeed.theindie.app/articles/20260521-135315-www.youtube.com-watch-v-q9xD36NCtZ8.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260521-135315-www.youtube.com-watch-v-q9xD36NCtZ8.html</guid>
+      <pubDate>Wed, 20 May 2026 15:49:25 GMT</pubDate>
+      <description><![CDATA[🎥 Watch on YouTube: Why Rust is different, with Alice Ryhl
+
+---
+
+
+
+Rust is quietly spreading as a language of choice for building reliable and performant applications. But what makes it different? El...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=q9xD36NCtZ8">Why Rust is different, with Alice Ryhl</a></p>
+<hr>
+<h1>Rust: Building Reliable and Performant Software</h1>
+<p>Rust is quietly spreading as a language of choice for building reliable and performant applications. But what makes it different? Ellis Real, a software engineer on Google's Android Rust team, a core maintainer of Tokio (the de facto async runtime for Rust), and a Rust language team advisor, joins us to discuss the compelling reasons to consider Rust, whether you're coming from TypeScript or C++.</p>
+<p>In this conversation, we delve into concepts like ownership, the borrow checker, and the <code>unsafe</code> keyword. We also explore what trips up newcomers to Rust, how the language is governed without a benevolent dictator, and the mechanics of RFCs and &quot;editions.&quot; If you want to understand what sets Rust apart and why so many engineers attest that &quot;once it compiles, it works,&quot; this episode is for you.</p>
+<h2>Tokio: An Asynchronous Runtime</h2>
+<p>Tokio is an asynchronous runtime for Rust, essentially serving as the standard library for asynchronous programming in the language. Similar to how JavaScript in a browser uses an event loop to manage tasks, Tokio manages a queue of runnable items. When using <code>async/await</code>, tasks can pause, allowing other tasks to run on the same thread. Tokio extends this by being multi-threaded, enabling multiple queues to run in parallel.</p>
+<h2>What Makes Rust Appealing</h2>
+<p>A significant draw of Rust is the strong feeling that &quot;when it compiles, it works.&quot; While not literally bug-free, this sentiment stems from Rust's robust type system. Compared to other languages with type systems, Rust excels in preventing common pitfalls. For instance, Java's <code>null</code> reference, famously dubbed a &quot;billion-dollar mistake,&quot; can lead to frequent crashes. Rust, however, forces explicit handling of potential nullability, preventing such errors at compile time.</p>
+<p>Rust also eschews exceptions for error handling, instead returning errors as values. This is managed through an enum that can be either a <code>Result</code> or an <code>error</code>. The <code>?</code> operator simplifies error propagation: if a function returns an error, the <code>?</code> operator automatically returns that error from the current function. This makes error handling explicit and less prone to being overlooked, unlike exceptions which can be implicitly handled.</p>
+<p>Documentation in Rust is also a standout feature. Comments marked with three slashes (<code>///</code>) become documentation comments. Crucially, examples embedded within these comments are automatically compiled and run as tests. This ensures that documentation examples remain synchronized with the actual code, preventing outdated or broken examples.</p>
+<p>Furthermore, Rust prevents uninitialized variables, requiring them to be assigned a value before use. Libraries like <code>Serde</code> leverage macros to generate efficient code for deserializing data, such as JSON, ensuring that incoming data conforms to the expected structure and types. The <code>match</code> statement, similar to switch statements in other languages, is exhaustive for enums. If a variant is missed, the compiler will flag it as an error, forcing developers to handle all possibilities or explicitly include a catch-all case. This design philosophy extends to refactoring, where the compiler guides developers to update all necessary code locations after changes.</p>
+<h2>Rust for TypeScript Engineers</h2>
+<p>For developers coming from TypeScript, Rust is an excellent fit for backend development, API servers, and other server-side applications. The primary pitch is reliability: Rust aims to minimize bugs, preventing the kind of issues that might cause developers to be woken up in the middle of the night. Beyond the absence of null pointer exceptions and robust error handling, Rust's type system and explicit error management contribute significantly to this reliability.</p>
+<h2>Moving from C++ to Rust</h2>
+<p>The pitch for C++ developers is even stronger, primarily due to Rust's memory safety. In C++, small mistakes like off-by-one errors in array indexing can easily become security vulnerabilities. Rust eliminates this entire class of bugs.</p>
+<h3>Memory Safety</h3>
+<p>Memory safety ensures that code, no matter how flawed, won't suffer from a specific set of bugs that often lead to security vulnerabilities. These include reading past the bounds of an array or using memory after an object has been deallocated. In the Linux kernel, for example, a vulnerability could arise if an attacker manages to overwrite a <code>task_struct</code> (representing a process) with a crafted object, potentially setting the user ID to zero and gaining root privileges. Rust's memory safety guarantees prevent such exploits.</p>
+<h2>Garbage Collection Tradeoffs</h2>
+<p>Rust does not have a garbage collector. Instead, memory is managed through an ownership model where variables are cleaned up when they go out of scope. This contrasts with languages like Java or C#, which use garbage collectors to periodically reclaim unused memory.</p>
+<p>The absence of a garbage collector offers several advantages:</p>
+<ul>
+<li><strong>Predictable Performance:</strong> Garbage collection can introduce latency spikes, which are unacceptable in real-time systems or embedded environments. Rust's deterministic memory management avoids these unpredictable pauses.</li>
+<li><strong>Low-Level Control:</strong> For embedded systems or operating system development, direct control over memory is crucial, which Rust provides.</li>
+<li><strong>Backend Efficiency:</strong> Even in backend services, avoiding garbage collection can lead to more consistent response times and reduced latency.</li>
+</ul>
+<h2>Ownership, References, and Borrowing</h2>
+<p>Rust's ownership model is a core concept. Each value in Rust has a variable that's its <em>owner</em>. There can only be one owner at a time. When the owner goes out of scope, the value is dropped.</p>
+<ul>
+<li><strong>Move Semantics:</strong> When you assign a variable to another (e.g., <code>let b = a;</code>), ownership is <em>moved</em>. The original variable <code>a</code> becomes invalid and cannot be used afterward. This prevents double-free errors that can occur in languages without garbage collection.</li>
+<li><strong>Reference Counting (<code>Arc</code>):</strong> For scenarios where multiple parts of the program need to share ownership of data, Rust provides <code>Arc</code> (Atomically Reference Counted). Cloning an <code>Arc</code> increments a counter. When an <code>Arc</code> goes out of scope, the counter is decremented. When the counter reaches zero, the data is deallocated. This allows for shared ownership without a garbage collector.</li>
+<li><strong>Borrowing and the Borrow Checker:</strong> Rust also allows you to <em>borrow</em> data without taking ownership. This is done through references. The borrow checker enforces strict rules at compile time to ensure memory safety:
+<ul>
+<li>You can have multiple immutable references (readers) to a piece of data.</li>
+<li>You can have only one mutable reference (writer) at a time.</li>
+<li>Mutable borrows cannot coexist with immutable borrows.</li>
+<li>References must not outlive the data they point to.</li>
+</ul>
+</li>
+</ul>
+<p>&quot;Fighting the borrow checker&quot; is a common experience for newcomers. Often, the solution involves rethinking data structures rather than just tweaking the code. For example, trying to create cyclic data structures (like a book referencing its pages, and pages referencing the book) without proper reference counting can lead to borrow checker errors.</p>
+<h2>Unsafe in Rust</h2>
+<p>The <code>unsafe</code> keyword in Rust acts as an &quot;escape hatch.&quot; While Rust guarantees memory safety without <code>unsafe</code>, using it allows for operations that the compiler cannot statically verify. Each <code>unsafe</code> operation has a set of rules that the programmer must adhere to.</p>
+<p>Common uses of <code>unsafe</code> include:</p>
+<ul>
+<li><strong>Performance Optimizations:</strong> Bypassing bounds checks on array accesses (e.g., using <code>get_unchecked</code>) for performance-critical code.</li>
+<li><strong>Interfacing with C Libraries:</strong> Calling functions from C libraries that may not be memory-safe.</li>
+<li><strong>Implementing Low-Level Abstractions:</strong> Building new data structures or abstractions (like a custom <code>Vec</code> type) that rely on raw memory manipulation.</li>
+</ul>
+<p>When <code>unsafe</code> code is properly encapsulated within safe APIs, it can provide the benefits of low-level control and performance without exposing the underlying unsafety to the rest of the program.</p>
+<h2>Crates and Cargo</h2>
+<p>The Rust ecosystem revolves around <code>crates</code>, which are Rust's term for packages. The build tool and package manager for Rust is <code>Cargo</code>. Cargo handles:</p>
+<ul>
+<li><strong>Building Code:</strong> Compiling your project with <code>cargo build</code> or running it with <code>cargo run</code>.</li>
+<li><strong>Dependency Management:</strong> Declaring dependencies in <code>Cargo.toml</code> and downloading them from a central registry.</li>
+<li><strong>Testing:</strong> Running unit tests and documentation tests with <code>cargo test</code>.</li>
+<li><strong>Documentation Generation:</strong> Creating API documentation with <code>cargo doc</code>.</li>
+</ul>
+<p>Unlike package managers like <code>pip</code> which install packages globally or in virtual environments, Cargo's dependencies are typically local to the project. This isolation helps prevent conflicts between different projects.</p>
+<p>Linus Torvalds has expressed reservations about Cargo downloading and running code from the internet, preferring the security guarantees of distribution-specific package managers. While the Rust ecosystem has not seen the same level of supply chain attacks as some others (like npm), the risk of malicious crates exists for any internet-connected package manager.</p>
+<h2>Ecosystem Maturity</h2>
+<p>The Rust ecosystem is most mature for backend services and command-line tools. While efforts are underway to use Rust for front-end development via WebAssembly, it's generally recommended to pair Rust backends with TypeScript frontends. Rust is also seeing significant adoption in embedded systems and operating system components, including the Linux kernel.</p>
+<h2>Language Design and Governance</h2>
+<p>The Rust project is governed by various teams, including the Language Team, Library API Team, and Dev Tools Team. Unlike languages with a single benevolent dictator, Rust's decisions are made through consensus among these teams.</p>
+<ul>
+<li><strong>RFC Process:</strong> For significant language changes, Rust uses a Request for Comments (RFC) process. An RFC document outlines the motivation, design, alternatives, and rationale for a proposed feature. This process encourages broad discussion and feedback.</li>
+<li><strong>Final Comment Period (FCP):</strong> Once an RFC is approved by the relevant team, it enters a Final Comment Period (FCP), typically two weeks, allowing for final review and objections before acceptance.</li>
+<li><strong>Editions:</strong> Rust uses &quot;editions&quot; (e.g., 2015, 2018, 2021, 2024) to introduce breaking changes without breaking existing code. Crates can opt into new editions, allowing them to use new syntax or features while still being compatible with older codebases. This is a key difference from versioning in languages like Python, where migrating from Python 2 to 3 was a significant undertaking.</li>
+</ul>
+<h2>Getting Paid to Work on Rust</h2>
+<p>While the Linux kernel has a large number of contributors paid by companies to work on it, the Rust project also sees significant corporate support. Many developers are employed by companies to work on Rust, and the Rust Foundation offers grants to support full-time work, particularly for students and those new to open-source contributions.</p>
+<h2>Contributing to Rust</h2>
+<p>For those interested in contributing to Rust, resources include:</p>
+<ul>
+<li><strong>Issue Trackers:</strong> Identifying issues on project repositories.</li>
+<li><strong>Rust for Linux Project:</strong> A dedicated page with contributing guidelines and links to relevant issue trackers.</li>
+<li><strong>Rustlings:</strong> A project that provides small, unfinished Rust code snippets that learners need to complete, offering hands-on practice.</li>
+</ul>
+<h2>Rust in the Linux Kernel</h2>
+<p>The integration of Rust into the Linux kernel has evolved significantly. Initially met with skepticism, Rust is now officially recognized as a supported language within the kernel, no longer considered experimental. This shift reflects the growing confidence in Rust's ability to provide memory safety and reliability for critical system components. Government regulations, such as those from the US Department of Defense, are also pushing for the adoption of memory-safe languages, further bolstering Rust's appeal.</p>
+<h2>AI Use Cases for Rust</h2>
+<p>AI tools are beginning to find their place in the Rust ecosystem. While still learning how to best leverage them, developers are finding them useful for tasks like generating code snippets, writing benchmarks, and even assisting with code reviews. The strong compile-time guarantees of Rust make it a promising candidate for AI agents, as they can receive more immediate feedback on correctness. The Linux kernel community, for instance, is exploring AI for code reviews, seeing it as an additional safety net rather than a replacement for human oversight.</p>
+<h2>Learning Rust</h2>
+<p>The official Rust book is an excellent starting point for learning the language. For more intermediate developers, John Gant's book offers deeper insights. Practical projects are also crucial for proficiency. While AI can help generate code, it's essential to understand the underlying concepts, especially Rust's ownership model and the reasons behind compiler errors, to avoid a false sense of comprehension.</p>
+<h2>Favorite Rust Features</h2>
+<p>A particularly exciting feature currently being developed for Rust is &quot;in-place initialization.&quot; This allows for constructing values directly where they are needed, preventing them from being moved afterwards, which is crucial for certain low-level programming scenarios like in the Linux kernel.</p>
+<h2>Book Recommendations</h2>
+<ul>
+<li><strong>The Rust Programming Language (The Rust Book):</strong> The official and comprehensive guide.</li>
+<li><strong>Programming Rust, 2nd Edition by Jim Blandy, Jason Orendorff, and Leonora Tindall:</strong> A highly regarded book for intermediate Rust developers.</li>
+<li><strong>Rustlings:</strong> An interactive project for hands-on learning.</li>
+</ul>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Rust prioritizes reliability and performance through its ownership model, borrow checker, and strong type system, aiming to eliminate common programming errors at compile time.</li>
+<li>Memory safety is a core tenet of Rust, preventing entire classes of bugs that often lead to security vulnerabilities, making it a compelling alternative to C++.</li>
+<li>The absence of a garbage collector provides predictable performance and low-level control, suitable for embedded systems, kernels, and high-performance backends.</li>
+<li>Rust's governance model emphasizes consensus through teams and an RFC process, while &quot;editions&quot; allow for language evolution without breaking backward compatibility.</li>
+<li>The ecosystem is mature for backend services and command-line tools, with growing adoption in embedded systems and the Linux kernel.</li>
+<li>AI tools are emerging as helpful aids for Rust development, particularly in code generation, testing, and review, complementing Rust's inherent safety features.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep. 215: Musk v. OpenAI Round 3, AI&apos;s Hot New Job, The AI Jobs Apocalypse Debate</title>
       <link>https://myfeed.theindie.app/articles/20260521-052015-www.youtube.com-watch-v-UNpg6rv65nU.html</link>
@@ -6658,39 +6774,6 @@ Here is the cleaned YouTube transcript, processed line by line:
 <p><strong>41:14</strong> · It's a great note to end on. Thanks for doing this, Motti.</p>
 <p><strong>41:16</strong> · Thanks so much.</p>
 <p><strong>41:20</strong> · Find us on Twitter at No Prior Pod. Subscribe to our YouTube channel if you want to see our faces. Follow the show on Apple Podcasts, Spotify, or wherever you listen. That way, you get a new episode every week. And sign up for emails or find transcripts for every episode at no-briers.com.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI!</title>
-      <link>https://myfeed.theindie.app/articles/20260328-144150-www.youtube.com-watch-v-Cn8HBj8QAbk.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260328-144150-www.youtube.com-watch-v-Cn8HBj8QAbk.html</guid>
-      <pubDate>Thu, 26 Mar 2026 08:00:10 GMT</pubDate>
-      <description><![CDATA[So much of what is happening today in the AI industry is extremely inhumane. While some might play devil's advocate and argue that the civilization that accelerates its research with artificial intell...]]></description>
-      <content:encoded><![CDATA[<h2>The Rise of the AI Empire</h2>
-<p>So much of what is happening today in the <strong>AI industry</strong> is extremely inhumane. While some might play devil's advocate and argue that the civilization that accelerates its research with artificial intelligence will logically become the superior civilization, that is a flawed premise. This is a specific prediction being made by figures like <strong>Sam Altman</strong> and <strong>Mark Zuckerberg</strong>, and they all share a common feature: they profit enormously from this myth. Internal documents show that these companies are purposely trying to create a specific feeling within the public so they can extract and exploit resources. To address this, we need to break up the empires of AI.</p>
-<p>The tech industry has been under scrutiny for over eight years, involving interviews with over 250 people, including former and current <strong>OpenAI</strong> employees and executives. There are many parallels between the modern empires of AI and the empires of old. These companies lay claim to the <strong>intellectual property</strong> of artists, writers, and creators in the pursuit of training their models. Furthermore, they exploit an extraordinary amount of labor, which effectively breaks the career ladder. Someone might get laid off and then find themselves working to train a model on the very job they were just replaced in, which only perpetuates more layoffs.</p>
-<p>While tech leaders promise that new, unimaginable jobs will be created, many of the jobs currently being generated are far worse than the ones they replaced. Beyond labor, there is an environmental and public health crisis created by these companies. They spend hundreds of millions of dollars to kill any legislation that stands in their way and frequently censor researchers whose findings are inconvenient to the corporate agenda. This is not to say that these technologies don't have utility, but the current production methods are exacting a great deal of harm on people. Research shows that the same capabilities could be developed in a way that avoids these unintended consequences.</p>
-<h2>The Ambiguity of Artificial General Intelligence</h2>
-<p>To understand where we are, we have to look back at when AI started as a field in 1956. A group of scientists gathered at Dartmouth University to chase a new scientific ambition, and an assistant professor named <strong>John McCarthy</strong> decided to name the discipline &quot;artificial intelligence.&quot; He had previously tried to call it &quot;Automata Studies,&quot; but his colleagues were concerned that the new name pegged the discipline to recreating human intelligence. The problem then, as it is now, is that there is no scientific consensus on what human intelligence actually is. There is no singular definition from psychology, biology, or neurology.</p>
-<p>Historically, every attempt to quantify and rank human intelligence has been driven by a desire to prove that certain groups of people are inferior to others. Because there are no goalposts for the field, companies can use the term <strong>Artificial General Intelligence</strong> (AGI) however they want. They define and redefine the term based on what is convenient for their current audience. For OpenAI, AGI is a system that cures cancer or solves poverty when talking to Congress. When talking to consumers, it is the world's best digital assistant. When dealing with Microsoft, it was defined as a system that would generate $100 billion in revenue.</p>
-<p>OpenAI’s own website defines AGI as highly autonomous systems that outperform humans at most economically valuable work. This is not a coherent vision of a single technology; these are different definitions spoken to mobilize audiences, ward off regulation, or secure capital. Back in 2015, Sam Altman explicitly outlined the existential risk of AI, calling superhuman machine intelligence the greatest threat to human existence. However, he was often mirroring the language of <strong>Elon Musk</strong> at the time to convince him to co-found OpenAI. Altman pivoted his stated fears to match Musk’s central concerns to build trust.</p>
-<h2>Power Struggles and the Firing of Sam Altman</h2>
-<p>Elon Musk ultimately co-founded OpenAI with Altman, but he now feels manipulated, believing Altman engineered his language to gain Musk's trust. During the subsequent years, documents from the legal battle between Musk and Altman revealed that Musk was essentially muscled out of the company. Originally, <strong>Ilya Sutskever</strong> and <strong>Greg Brockman</strong> had to decide who should lead the new for-profit entity they were creating. They initially chose Musk to be the CEO, but Altman appealed personally to Brockman, a long-time friend.</p>
-<p>Altman convinced Brockman that having someone as erratic and unpredictable as Musk in charge of a powerful future technology would be dangerous. Brockman then convinced Sutskever, and the two switched their allegiances to Altman. This led to Musk's departure because he refused to stay if he wasn't the CEO. This highlights the polarization surrounding Sam Altman; people either view him as the <strong>Steve Jobs</strong> of this generation or as a manipulative liar. It usually depends on whether that person's vision of the future aligns with Altman's goals.</p>
-<p>The internal tension eventually led to the board firing Sam Altman. Ilya Sutskever, the chief scientist, had become deeply concerned about Altman's behavior and how it led to poor research outcomes and instability. He eventually approached an independent board member, <strong>Helen Toner</strong>, to discuss these concerns. Sutskever felt that Altman was creating a chaotic environment by pitting teams against each other and being dishonest. While some might view this as just a fast-paced startup culture, the board felt that for a company building potentially world-breaking technology, this level of instability was unacceptable.</p>
-<h2>The Myth of the Statistical Brain</h2>
-<p>A major point of contention in the AI world is the hypothesis regarding how the human brain works. Ilya Sutskever and his mentor, <strong>Geoffrey Hinton</strong>, believe that the human brain is essentially a giant <strong>statistical model</strong>. This is a hypothesis, not a proven scientific fact, yet it drives the entire industry's strategy. They believe that if they just build bigger and bigger statistical engines, they will eventually reach and exceed human intelligence. Sutskever has even used charts showing a linear relationship between brain size and species intelligence to justify this &quot;brute force&quot; approach.</p>
-<p>Critics argue that this is a very reductive way to view human consciousness. However, because these companies believe the hypothesis is true, they are hoovering up massive amounts of data and building gargantuan <strong>data centers</strong>. We have to ask why we are trying to build systems that are merely duplicative of humans. The purpose of technology throughout history has been to improve human flourishing, not to replace people entirely. Instead of building &quot;everything machines,&quot; we could be focusing on specific AI systems that accelerate drug discovery or improve healthcare without the unintended consequences of trying to mimic a digital brain.</p>
-<p>The &quot;empire&quot; metaphor is the only one that truly encapsulates the scale of these companies. They lay claim to resources that aren't theirs, such as personal data and the creative works of artists. They also exploit global labor, contracting hundreds of thousands of workers to label data in grueling conditions. Furthermore, they monopolize knowledge by bankrolling the majority of the world's AI researchers. If most climate scientists were funded by fossil fuel companies, we wouldn't trust their findings; similarly, the AI industry often censors researchers, like <strong>Dr. Timnit Gebru</strong>, whose work is inconvenient to their agenda.</p>
-<h2>Labor Exploitation and Data Annotation</h2>
-<p>The reality of AI development is far less &quot;magic&quot; and far more labor-intensive than the public realizes. Much of the progress depends on <strong>data annotation</strong>, where human workers teach models how to respond. For example, before <strong>ChatGPT</strong> could function as a chatbot, thousands of people had to manually type responses to show the model how to hold a dialogue. This work is often outsourced to third-party firms that pit workers against each other to get the tasks done as cheaply as possible.</p>
-<p>Many highly educated professionals, including lawyers, doctors, and award-winning directors, are now doing this work secretly to put food on the table after being laid off. This creates a &quot;monster&quot; of an industry where workers feel mechanized and atomized. One worker recounted how the pressure to complete tasks was so high that she found herself screaming at her child for a distraction, feeling that her humanity was being squeezed out by the machine she was helping to build. This breaks the career ladder because entry-level and mid-tier jobs are being gouged out, leaving only high-order orchestrators and low-order manual laborers.</p>
-<p>When companies like <strong>Klarna</strong> announce that they have reduced their workforce from 7,000 to 3,000 through the use of AI, they often claim &quot;natural attrition.&quot; However, the CEO of Klarna, <strong>Sebastian Siemiatkowski</strong>, noted that while AI handles 70% of customer service, they still see a future where human interaction is regarded as a premium VIP service. While he remains optimistic about a richer society, the short-term reality is that many people are losing their livelihoods and sense of dignity as their expertise is harvested to train the models that replace them.</p>
-<h2>Environmental Costs and the Path Forward</h2>
-<p>The physical infrastructure of AI is creating a public health crisis. Companies are building colossal supercomputer facilities, like the <strong>Stargate initiative</strong>, which require massive amounts of power and water. A single facility in Abilene, Texas, could consume more than 20% of the power required by a city the size of New York. In Memphis, Elon Musk built the <strong>Colossus</strong> supercomputer using 35 methane gas turbines, which pumped toxins into a working-class community that wasn't even notified of the project. These communities now face increased utility bills, decreased grid reliability, and worsening respiratory illnesses.</p>
-<p>We should think of AI like we think of transportation. Currently, we are building &quot;rockets&quot;—resource-heavy models that exact an extraordinary cost. Instead, we should be building &quot;bicycles of AI.&quot; An example of this is <strong>AlphaFold</strong>, which uses small, curated datasets to predict protein folding. It provides enormous scientific benefits without the massive environmental footprint or the need for exploitative labor. We don't need a &quot;rocket&quot; to solve every problem; we need efficient, specialized tools that serve the public good.</p>
-<p>The goal is not to get rid of AI entirely, but to stop companies from operating as empires. An empire is predicated on the idea of extraction without fair exchange. We see grassroots movements already pushing back, with people protesting data centers and artists suing for their <strong>intellectual property</strong>. We need to break up these monopolies and forge new paths for AI development that are broadly beneficial. While AI can be an incredible tool for entrepreneurs, we must be intentional about its social and environmental impact to ensure it actually improves the human condition rather than diminishing it.</p>
 ]]></content:encoded>
       
     </item>
