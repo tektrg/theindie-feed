@@ -1,5 +1,5 @@
 #!/bin/bash
-# Auto-update RSS feed and deploy to GitHub
+# Auto-update RSS feed, commit the generated output, and deploy to Cloudflare Pages
 
 set -e
 
@@ -30,6 +30,10 @@ echo "🚀 Pushing to GitHub..."
 git push
 
 echo ""
-echo "✅ Done! Cloudflare will auto-deploy in ~1 minute."
+echo "☁️  Deploying to Cloudflare Pages..."
+npx wrangler pages deploy public --project-name "${CLOUDFLARE_PAGES_PROJECT:-theindie-feed}" --branch "${CLOUDFLARE_PAGES_BRANCH:-main}"
+
+echo ""
+echo "✅ Done! Feed has been pushed and deployed."
 echo "   Feed: https://myfeed.theindie.app/feed.xml"
 echo "   Site: https://myfeed.theindie.app"
