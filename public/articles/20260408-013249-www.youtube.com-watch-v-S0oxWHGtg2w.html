@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐 - The Indie App</title>
+  <title>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐 - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐
-
----
-
-
-
-Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecesso...">
+  <meta name="description" content="Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecessors. While previous versions like Gemma 3 were lauded for their density and performance...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=S0oxWHGtg2w" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=S0oxWHGtg2w" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</h1>
       <time datetime="2026-04-03T23:06:37.000Z">
-        April 4, 2026
+        Saturday, April 4, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=S0oxWHGtg2w">Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</a></p>
-<hr>
-<h1>Gemma 4: Google's Multimodal Leap in Openweight AI</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Gemma 4: Google's Multimodal Leap in Openweight AI</h1>
 <p>Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecessors. While previous versions like Gemma 3 were lauded for their density and performance, Gemma 4 significantly ups the ante by introducing multimodal capabilities to even its smaller models. This new iteration can process images, video, and audio, alongside an impressive context window of a quarter of a million tokens.</p>
 <h2>Enhanced Capabilities and Architecture</h2>
 <p>Gemma 4 boasts a range of improvements, including enhanced reasoning, diverse and efficient architectures, and robust coding and semantic abilities. The models come in three dense variants, optimized for smaller devices and capable of handling audio and video inference. Additionally, a Mixture of Experts (MoE) model is available, promising super-fast inferencing speeds.</p>
@@ -63,7 +77,44 @@ Google has once again entered the openweight model arena with Gemma 4, building 
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

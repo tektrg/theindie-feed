@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> - DHH’s new way of writing code - The Indie App</title>
+  <title> - DHH’s new way of writing code - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: DHH’s new way of writing code
-
----
-
-
-
-David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a notable shift in h...">
+  <meta name="description" content="David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a notable shift in his perspective on Artificial Intelligence. While previously...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=JiWgKRgdgpI" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=JiWgKRgdgpI" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1> - DHH’s new way of writing code</h1>
       <time datetime="2026-04-08T17:14:35.000Z">
-        April 9, 2026
+        Thursday, April 9, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=JiWgKRgdgpI">DHH’s new way of writing code</a></p>
-<hr>
-<h1>The Craft of Software and the AI Revolution: A Conversation with DHH</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Craft of Software and the AI Revolution: A Conversation with DHH</h1>
 <p>David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a notable shift in his perspective on Artificial Intelligence. While previously expressing skepticism, DHH has recently embraced an &quot;AI-first&quot; approach to software development. This article delves into how DHH and his team at 37signals are now building software, the impact of AI agents on their ambition, why Ruby on Rails and Omachi are well-suited for AI workflows, the increasing importance of taste and beautiful software, and why skilled designers and engineers who value craft are poised to become even more in demand.</p>
 <h2>Omachi and Ruby on Rails: Building from the Ground Up</h2>
 <p>DHH's journey in building software spans three decades, beginning in 1994. His recent endeavors include the creation of Omachi, a new Linux distribution. This project, born from a summer project between endurance races, highlights DHH's philosophy of &quot;scratching his own itch.&quot; He found that when he builds something that perfectly suits his needs, thousands of others with similar preferences discover and appreciate it. This has been a recurring theme throughout his career, from Ruby on Rails and Kamal to his recent push to move away from cloud infrastructure.</p>
@@ -75,7 +89,44 @@ David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails an
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

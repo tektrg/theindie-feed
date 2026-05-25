@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski - The Indie App</title>
+  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski
-
----
-
-Here is the cleaned YouTube transcript, processed line by line:
-
-0:05 · Hi listeners, welcome back to No Pri...">
+  <meta name="description" content="Here is the cleaned YouTube transcript, processed line by line: 0:05 · Hi listeners, welcome back to No Priors. 0:08 · Today I&#039;m here with Motti Staniszewski, the co-founder and CEO of 11 Labs, which...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=WHWAYiY_RnQ" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=WHWAYiY_RnQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</h1>
       <time datetime="2026-03-28T08:17:26.213Z">
-        March 28, 2026
+        Saturday, March 28, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=WHWAYiY_RnQ">No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</a></p>
-<hr>
-<p>Here is the cleaned YouTube transcript, processed line by line:</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>Here is the cleaned YouTube transcript, processed line by line:</p>
 <p><strong>0:05</strong> · Hi listeners, welcome back to No Priors.</p>
 <p><strong>0:08</strong> · Today I'm here with Motti Staniszewski, the co-founder and CEO of 11 Labs, which was founded to change the way we interact with each other and with computers with voice. Over three short years, they've skyrocketed to more than 300 million in run rate. Motti and I talk about the future of voice education, customer experience, and other applications of this voice, as well as how to build a multi-segment company from self-serve to enterprise, and combine research and product.</p>
 <p><strong>0:35</strong> · Welcome, Motti.</p>
@@ -115,7 +129,44 @@ Here is the cleaned YouTube transcript, processed line by line:
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

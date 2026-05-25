@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann - The Indie App</title>
+  <title>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Designing Data-intensive Applications with Martin Kleppmann
-
----![](https://www.youtube.com/watch?v=SVOrURyOuU)
-
-
-
-
-
- · Should I consider multiszone, multi-reion or even a multi- ...">
+  <meta name="description" content="--- · Should I consider multiszone, multi-reion or even a multi- cloud setup? How much availability risk are you willing to take on versus the computational overheads, but also the human overheads des...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=SVOrURyOu_U" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=SVOrURyOu_U" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann</h1>
       <time datetime="2026-04-22T16:16:18.000Z">
-        April 22, 2026
+        Wednesday, April 22, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=SVOrURyOu_U">Designing Data-intensive Applications with Martin Kleppmann</a></p>
-<p>---<img src="https://www.youtube.com/watch?v=SVOrURyOu_U" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>---<img src="https://www.youtube.com/watch?v=SVOrURyOu_U" alt=""></p>
 <h2>Transcript</h2>
 <h3>Early career</h3>
 <p>**** · Should I consider multiszone, multi-reion or even a multi- cloud setup? How much availability risk are you willing to take on versus the computational overheads, but also the human overheads designing and operating the system? Macro produce is dead. Nobody uses it anymore. But other areas where we've increased the coverage are systems in support of AI vector indexes. Is there any risk as a software engineer that you're no longer incentivized to understand the underlying layer? If you rely on a higher level abstraction, you're no longer thinking about the lower level details. If you're building higher level business logic, I think it's just fine. LLMs increase the need for these formal proofs because we're vip coding a bunch of stuff. The reason I think that formal verification could become more important in the future. One is that designing data intensive applications has been the go-to book for anyone building large backend systems. 9 years after publishing this book, the second edition is here. Martin Klutman is the author of this generational book. I sat down with him and today we cover how working on CFKA at LinkedIn directly shaped ideas that became the first edition of the book, what's new in the second edition, and why things map produce got removed from this updated version. Formal methods, local first software, decentralized access, and many more. If you care about how large systems work, where they're heading, and what the fundamentals are that don't change, this episode is for you. This episode is presented by SATSIC, the Unifi platform for flags, analytics, experiments, and more. This episode is brought to you by Sonar. Sonar, the makers of Sonar Cube, understands that code quality is about more than just avoiding syntax errors. It's about long-term maintainability by protecting the structural integrity of the system.</p>
@@ -193,7 +206,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

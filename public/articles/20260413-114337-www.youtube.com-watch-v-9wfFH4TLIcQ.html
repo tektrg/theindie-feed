@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent
-
----
-
-
-
-In the rapidly evolving landscape of artificial intelligence, the industr...">
+  <meta name="description" content="In the rapidly evolving landscape of artificial intelligence, the industry has reached a critical juncture. What began as a race to build the most conversational chatbot has transformed into a high-st...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=9wfFH4TLIcQ" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=9wfFH4TLIcQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h1>
       <time datetime="2026-04-13T04:44:26.768Z">
-        April 13, 2026
+        Monday, April 13, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=9wfFH4TLIcQ">Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</a></p>
-<hr>
-<h1>The Great Agentic Shift: Inside the Race to Automate the Enterprise</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Great Agentic Shift: Inside the Race to Automate the Enterprise</h1>
 <p>In the rapidly evolving landscape of artificial intelligence, the industry has reached a critical juncture. What began as a race to build the most conversational chatbot has transformed into a high-stakes sprint toward autonomous agents, enterprise dominance, and the fundamental restructuring of how businesses operate. In Episode 205 of the Artificial Intelligence Show, Paul Roetzer and Mike Kaput dive deep into the strategic pivots of major labs, the shifting political tides surrounding AI regulation, and the practical realities of transforming a company into an AI-native organization.</p>
 <h2>The Strategic Pivot: AI Labs Refocus on Agents and Enterprise</h2>
 <p>The AI industry is currently witnessing what may be the most significant strategic realignment since the release of ChatGPT. The major frontier labs—OpenAI, Anthropic, Google, and Meta—are simultaneously narrowing their focus and expanding their commercial reach.</p>
@@ -121,7 +135,44 @@ In the rapidly evolving landscape of artificial intelligence, the industr...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,25 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everything I built with Claude Artifacts this week - The Indie App</title>
+  <title>Everything I built with Claude Artifacts this week - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="21st October 2024
-
-I’m a huge fan of Claude’s Artifacts feature, which lets you prompt Claude to create an interactive Single Page App (using HTML, CSS and JavaScript) and then view the result directl...">
+  <meta name="description" content="21st October 2024 I’m a huge fan of Claude’s Artifacts feature, which lets you prompt Claude to create an interactive Single Page App (using HTML, CSS and JavaScript) and then view the result directly...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://simonwillison.net/2024/Oct/21/claude-artifacts/" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://simonwillison.net/2024/Oct/21/claude-artifacts/" target="_blank" rel="noopener">Read at simonwillison.net</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Everything I built with Claude Artifacts this week</h1>
       <time datetime="2026-03-14T16:45:24.775Z">
-        March 14, 2026
+        Saturday, March 14, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <p>21st October 2024</p>
 <p>I’m a huge fan of Claude’s <strong>Artifacts</strong> feature, which lets you prompt <a href="https://claude.ai/">Claude</a> to create an interactive Single Page App (using HTML, CSS and JavaScript) and then view the result directly in the Claude interface, iterating on it further with the bot and then, if you like, copying out the resulting code.</p>
 <p>I was digging around in my <a href="https://support.anthropic.com/en/articles/9450526-how-can-i-export-my-claude-ai-data">Claude activity export</a> (I built a <a href="https://github.com/simonw/claude-to-sqlite">claude-to-sqlite</a> tool to convert it to SQLite I could explore it in <a href="https://datasette.io/">Datasette</a>) and decided to see how much I’d used artifacts <a href="https://github.com/simonw/claude-to-sqlite/issues/2#issuecomment-2425658909">in the past week</a>. It was more than I expected!</p>
@@ -159,7 +179,44 @@ I’m a huge fan of Claude’s Artifacts feature, which lets you prompt Claude t
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

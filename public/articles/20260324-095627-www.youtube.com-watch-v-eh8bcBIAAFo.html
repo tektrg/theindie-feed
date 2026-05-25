@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenny&#039;s Podcast - The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude) - The Indie App</title>
+  <title>Lenny&#039;s Podcast - The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)
-
----
-
-![](https://www.youtube.com/watch?v=eh8bcBIAAFo)
-
-
-
-
-
-0:00 · This design proce...">
+  <meta name="description" content="0:00 · This design process that designers have been taught, we sort of treat it as gospel. That&#039;s basically dead. You as a designer actually like do not have the time to make these beautiful mocks any...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=eh8bcBIAAFo" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=eh8bcBIAAFo" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Lenny&#039;s Podcast - The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)</h1>
       <time datetime="2026-03-01T13:30:39.000Z">
-        March 1, 2026
+        Sunday, March 1, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=eh8bcBIAAFo">The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=eh8bcBIAAFo" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=eh8bcBIAAFo" alt=""></p>
 <h2>Transcript</h2>
 <h3>Introduction to Jenny Wen</h3>
 <p><strong>0:00</strong> · This design process that designers have been taught, we sort of treat it as gospel. That's basically dead. You as a designer actually like do not have the time to make these beautiful mocks anymore.</p>
@@ -295,7 +305,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

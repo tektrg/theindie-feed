@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latent Space - Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot; - The Indie App</title>
+  <title>Latent Space - Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot; - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;
-
----
-
-
-
-The current explosion of AI capabilities, exemplified by tools like Ch...">
+  <meta name="description" content="The current explosion of AI capabilities, exemplified by tools like ChatGPT, is not a sudden phenomenon but rather the culmination of decades of research and development. This perspective, shared by v...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=knx2wrILP1M" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=knx2wrILP1M" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Latent Space - Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;</h1>
       <time datetime="2026-04-03T16:56:23.000Z">
-        April 3, 2026
+        Friday, April 3, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=knx2wrILP1M">Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;</a></p>
-<hr>
-<h1>The 80-Year Overnight Success: Marc Andreessen on AI's Past, Present, and Future</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The 80-Year Overnight Success: Marc Andreessen on AI's Past, Present, and Future</h1>
 <p>The current explosion of AI capabilities, exemplified by tools like ChatGPT, is not a sudden phenomenon but rather the culmination of decades of research and development. This perspective, shared by venture capitalist and entrepreneur Marc Andreessen, frames the current AI boom as an &quot;80-year overnight success.&quot; While recent breakthroughs feel instantaneous, they are built upon a deep wellspring of ideas and rigorous scientific work that has been building for generations.</p>
 <h2>The Truth About a16z’s AI Pivot</h2>
 <p>Andreessen, a long-time investor in technology, clarifies that a16z (Andreessen Horowitz) has consistently been involved in AI, machine learning, and deep learning since its inception. He dismisses the notion of a sudden pivot, stating, &quot;We've been doing AI our entire existence.&quot; He notes that he and his partner Ben Horowitz are old enough to remember the AI boom of the 1980s, which focused on expert systems and Lisp machines. Andreessen himself coded in Lisp in 1989, a language then considered the future of AI.</p>
@@ -101,7 +115,44 @@ The current explosion of AI capabilities, exemplified by tools like Ch...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

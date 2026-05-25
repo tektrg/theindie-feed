@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown
-
----
-
-
-
-Paul Ritzer: Based on all the conversations I have had with leaders of major companies, I hav...">
+  <meta name="description" content="Paul Ritzer: Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A s...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h1>
       <time datetime="2026-04-13T07:03:59.054Z">
-        April 13, 2026
+        Monday, April 13, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM">Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</a></p>
-<hr>
-<h1>Scaling AI: Navigating the Divide Between Adoption and Obsolescence</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Scaling AI: Navigating the Divide Between Adoption and Obsolescence</h1>
 <p><strong>Paul Ritzer:</strong> Based on all the conversations I have had with leaders of major companies, I have yet to find one that's prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A series from the Artificial Intelligence Show. I'm Paul Ritzer, founder and CEO of SmarterX and Marketing AI Institute. Every time we host our live virtual events and online classes, we get dozens of great questions from business leaders and practitioners who are navigating this fast-moving world of AI. But we never have enough time to get to all of them. So we created the AI Answers series to address more of these questions and share real-time insights into the topics and challenges professionals like you are facing. Whether you're just starting your AI journey or already putting it to work in your organization, these are the practical insights, use cases, and strategies you need to grow smarter. Let's explore AI together.</p>
 <p>Welcome to episode 206 of the Artificial Intelligence Show. I'm your host Paul Ritzer along with my co-host today, Kathy McFillips, our chief marketing officer at SmarterX. Welcome back, Kathy.</p>
 <p><strong>Kathy McFillips:</strong> Thank you.</p>
@@ -172,7 +186,44 @@ Paul Ritzer: Based on all the conversations I have had with leaders of major com
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity? - The Indie App</title>
+  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity? - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The AI Code Slop: Risk or Opportunity?
-
----
-
-The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don&#039;t know the quality of the c...">
+  <meta name="description" content="The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don&#039;t know the quality of the code, nobody deeply understands the codebase, and there is more fra...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=efUt__S_AjY" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=efUt__S_AjY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h1>
       <time datetime="2026-02-19T11:01:09.000Z">
-        February 19, 2026
+        Thursday, February 19, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=efUt__S_AjY">The AI Code Slop: Risk or Opportunity?</a></p>
-<hr>
-<p>The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don't know the quality of the code, nobody deeply understands the codebase, and there is more fragility. It is like the slop problem, coding slop in my actual production codebase. I think the broader problem that a new company could solve is that nobody knows how to manage the issue of human attention to engineering. I think it is open season around this really big problem.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don't know the quality of the code, nobody deeply understands the codebase, and there is more fragility. It is like the slop problem, coding slop in my actual production codebase. I think the broader problem that a new company could solve is that nobody knows how to manage the issue of human attention to engineering. I think it is open season around this really big problem.</p>
 <h2>The SaaS-polcalypse Discussion</h2>
 <p>Hi listeners, welcome back to No Priors. Markets are melting down about the end of software.</p>
 <p>Today, Alotad and I are hanging out and asking: Is SaaS actually dying, or are people just projecting five-person startup behavior onto the Fortune 100?</p>
@@ -142,7 +158,44 @@ The anxiety that I see is if you can generate an enormous amount of code and no 
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

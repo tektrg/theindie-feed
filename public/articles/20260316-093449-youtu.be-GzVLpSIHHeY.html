@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TBPN - FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup - The Indie App</title>
+  <title>TBPN - FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup
-
----
-
-
-
-After nearly eight years of building in secret, Travis Kalanick, the founder of Uber, has offici...">
+  <meta name="description" content="After nearly eight years of building in secret, Travis Kalanick, the founder of Uber, has officially come out of &quot;stealth mode.&quot; In a recent interview, he revealed the work he&#039;s been doing since 2018...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://youtu.be/GzVLpSIHHeY" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://youtu.be/GzVLpSIHHeY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>TBPN - FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup</h1>
       <time datetime="2026-03-13T20:28:35.000Z">
-        March 14, 2026
+        Saturday, March 14, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://youtu.be/GzVLpSIHHeY">FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup</a></p>
-<hr>
-<h2>Travis Kalanick Emerges from Stealth with New Venture: Atoms</h2>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h2>Travis Kalanick Emerges from Stealth with New Venture: Atoms</h2>
 <p>After nearly eight years of building in secret, Travis Kalanick, the founder of Uber, has officially come out of &quot;stealth mode.&quot; In a recent interview, he revealed the work he's been doing since 2018 and announced the launch of his new parent company, <strong>Atoms</strong>.</p>
 <p>Kalanick explained that he had been running a company named <strong>City Storage Systems</strong>, a deliberately generic name chosen to keep the operation underground. The decision to stay out of the public eye was a direct response to his time at Uber. &quot;After the intensity of Uber, being in the public sphere, dealing with a hundred headlines every day... I was like, I got to wake up every day and sort of just get to work and build,&quot; he stated.</p>
 <h2>The Mission: Reshaping the Food Industry</h2>
@@ -75,7 +89,44 @@ After nearly eight years of building in secret, Travis Kalanick, the founder of 
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

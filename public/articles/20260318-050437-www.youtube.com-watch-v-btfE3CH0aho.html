@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs
-
----
-
-This is a transcript of the Artificial Intelligence Show podcast, hosted by...">
+  <meta name="description" content="This is a transcript of the Artificial Intelligence Show podcast, hosted by Paul Ritzer and Mike Kaput. &quot;This BS stuff that&#039;s coming from leaders of the labs and politicians... it is disingenuous and...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=btfE3CH0aho" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=btfE3CH0aho" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs</h1>
       <time datetime="2026-03-17T12:01:06.000Z">
-        March 17, 2026
+        Tuesday, March 17, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=btfE3CH0aho">Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs</a></p>
-<hr>
-<p>This is a transcript of the Artificial Intelligence Show podcast, hosted by Paul Ritzer and Mike Kaput.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>This is a transcript of the Artificial Intelligence Show podcast, hosted by Paul Ritzer and Mike Kaput.</p>
 <h2>Introduction</h2>
 <blockquote>
 <p>&quot;This BS stuff that's coming from leaders of the labs and politicians... it is disingenuous and it is harmful to take this highly confident belief that it'll just work out. You do not know that. No one knows that. So at minimum we should be doing contingency planning for worst case scenario outcomes... You cannot pretend like you understand the future because you're an economist or you're an AI leader or whatever it is and that like it just works out. You don't know that.&quot;</p>
@@ -128,7 +144,44 @@ This is a transcript of the Artificial Intelligence Show podcast, hosted by...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

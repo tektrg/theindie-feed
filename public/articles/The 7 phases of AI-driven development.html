@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The 7 phases of AI-driven development - The Indie App</title>
+  <title>The 7 phases of AI-driven development - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="As you work with an AI coding assistant—in this case, Claude Code—there are seven specific phases of development you should follow to ship high-quality work. While the specific implementation might va...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=Ah9p7v7nJWg" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="YouTube" target="_blank" rel="noopener">Original source</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The 7 phases of AI-driven development</h1>
       <time datetime="2026-03-12T10:58:44.777Z">
-        March 12, 2026
+        Thursday, March 12, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h1>The Seven Phases of AI-Assisted Development</h1>
 <p>As you work with an AI coding assistant—in this case, <strong>Claude Code</strong>—there are <strong>seven</strong> specific phases of development you should follow to ship high-quality work. While the specific implementation might vary depending on whether you are using <strong>Ralph loops</strong>, <strong>GSD</strong>, or <strong>SpecKit</strong>, these phases represent a common foundation for successful AI engineering.</p>
 <p>Engineering fundamentals remain critical even in the age of artificial intelligence. Building applications that are built to last requires moving beyond &quot;vibe coding&quot; and adopting a serious, structured approach to development. These <strong>seven</strong> phases provide that structure, ensuring that your projects are robust and well-executed.</p>
@@ -62,7 +84,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

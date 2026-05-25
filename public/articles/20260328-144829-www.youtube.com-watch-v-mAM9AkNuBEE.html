@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie App</title>
+  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)
-
----
-
-
-
-
-
-We had those two options. Either we see a competitor, an AI-native CMS, being creat...">
+  <meta name="description" content="We had those two options. Either we see a competitor, an AI-native CMS, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly buil...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=mAM9AkNuBEE" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h1>
       <time datetime="2026-03-28T07:52:08.106Z">
-        March 28, 2026
+        Saturday, March 28, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=mAM9AkNuBEE">The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</a></p>
-<hr>
-<h2>Transcript</h2>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h2>Transcript</h2>
 <h3>Intro</h3>
 <p>We had those two options. Either we see a competitor, an <strong>AI-native CMS</strong>, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly built by humans for humans. The web, I think, is going to be built by agents mostly for agents and humans. And I think that's the big shift.</p>
 <p>90% of the code is being AI-coded compared to what we used to do with Strapi. What used to take two weeks now takes two minutes. I think it's great for the role, actually, because I don't like to see PMs spending their time doing tasks that can be done by AI, where their real value is about making the right decisions. The market window is right now; it's not tomorrow, it's not in two or three years. That was Aurélien. He co-founded Strapi in 2013 as a student project.</p>
@@ -175,7 +187,44 @@ We had those two options. Either we see a competitor, an AI-native CMS, being cr
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

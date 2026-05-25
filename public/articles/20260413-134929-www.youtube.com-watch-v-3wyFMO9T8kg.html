@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium
-
----
-
-
-
-[Paul Ritzer]: It is just this completely wild unknown world we&#039;re hea...">
+  <meta name="description" content="[Paul Ritzer]: It is just this completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, and geopolit...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=3wyFMO9T8kg" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=3wyFMO9T8kg" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h1>
       <time datetime="2026-04-13T06:53:32.804Z">
-        April 13, 2026
+        Monday, April 13, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=3wyFMO9T8kg">Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</a></p>
-<hr>
-<h1>The Future of AGI: Rivalries, Risks, and the New Economic Reality</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Future of AGI: Rivalries, Risks, and the New Economic Reality</h1>
 <p>[Paul Ritzer]: It is just this completely wild unknown world we're heading into where basically these five companies are going to decide everything when it comes to the economy, business, and geopolitics.</p>
 <p>Welcome to the Artificial Intelligence Show, the podcast that helps your business grow smarter by making AI approachable and actionable. My name is Paul Ritzer. I'm the founder and CEO of Smarter X and Marketing AI Institute, and I'm your host. Each week, I'm joined by my co-host and Smarter X Chief Content Officer, Mike Kaput, as we break down all the AI news that matters and give you insights and perspectives that you can use to advance your company and your career. Join us as we accelerate AI literacy for all.</p>
 <p>Welcome to episode 207 of the Artificial Intelligence Show. I'm your host, Paul Ritzer, along with my co-host, Mike Kaput. We're recording on Monday, March 30th, 2026, right before 10 a.m. Eastern time. I don't know if we're getting new models this week, but there is a lot of chatter going on about what's coming up from all the labs. This episode, we're going to be setting the stage for what I think is going to be a pretty busy spring. In some ways, we might see some pretty rapid advancements from the models, and these labs are pushing out a lot of stuff. We're going to try and provide the context to what's going on and help people frame it into what it means for their careers and their businesses.</p>
@@ -134,7 +148,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

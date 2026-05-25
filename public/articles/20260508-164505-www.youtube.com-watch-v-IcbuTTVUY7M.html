@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The MAD Podcast with Matt Turck - How to Build a Beloved AI Product - Granola CEO Chris Pedregal - The Indie App</title>
+  <title>The MAD Podcast with Matt Turck - How to Build a Beloved AI Product - Granola CEO Chris Pedregal - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: How to Build a Beloved AI Product - Granola CEO Chris Pedregal
-
----
-
-
-
-AI is poised to fundamentally alter how humans work and think. Granola, an AI-powered workspace, aims to be ...">
+  <meta name="description" content="AI is poised to fundamentally alter how humans work and think. Granola, an AI-powered workspace, aims to be the tool that supports this transformation, emerging as a darling in Silicon Valley for its...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=IcbuTTVUY7M" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=IcbuTTVUY7M" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The MAD Podcast with Matt Turck - How to Build a Beloved AI Product - Granola CEO Chris Pedregal</h1>
       <time datetime="2026-05-08T09:46:06.746Z">
-        May 8, 2026
+        Friday, May 8, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=IcbuTTVUY7M">How to Build a Beloved AI Product - Granola CEO Chris Pedregal</a></p>
-<hr>
-<h1>Granola: Building a &quot;Life-Changing&quot; AI Workspace</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Granola: Building a &quot;Life-Changing&quot; AI Workspace</h1>
 <p>AI is poised to fundamentally alter how humans work and think. Granola, an AI-powered workspace, aims to be the tool that supports this transformation, emerging as a darling in Silicon Valley for its ability to become an indispensable daily tool for many in the tech industry. This article delves into the philosophy, design choices, and growth strategies behind Granola, offering insights into building a beloved product in the age of AI.</p>
 <h2>The &quot;Second Brain&quot; Vision</h2>
 <p>The core idea behind Granola is to act as a &quot;second brain,&quot; an AI-powered workspace that provides contextually aware support. This vision stems from the understanding that as AI capabilities advance, humans will increasingly outsource lower-level tasks, freeing up cognitive capacity for higher-level thinking.</p>
@@ -95,7 +109,44 @@ AI is poised to fundamentally alter how humans work and think. Granola, an AI-po
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

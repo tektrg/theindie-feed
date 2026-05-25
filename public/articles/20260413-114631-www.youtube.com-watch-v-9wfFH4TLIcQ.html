@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent
-
----
-
-
-
-In a week marked by rapid strategic shifts and high-stakes corporate rest...">
+  <meta name="description" content="In a week marked by rapid strategic shifts and high-stakes corporate restructuring, the landscape of artificial intelligence has entered a new phase. The leading labs—OpenAI, Anthropic, Google, and Mi...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=9wfFH4TLIcQ" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=9wfFH4TLIcQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h1>
       <time datetime="2026-04-13T04:47:08.921Z">
-        April 13, 2026
+        Monday, April 13, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=9wfFH4TLIcQ">Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</a></p>
-<hr>
-<h1>The Great AI Pivot: Agents, Enterprise, and the Race for Super Intelligence</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Great AI Pivot: Agents, Enterprise, and the Race for Super Intelligence</h1>
 <p>In a week marked by rapid strategic shifts and high-stakes corporate restructuring, the landscape of artificial intelligence has entered a new phase. The leading labs—OpenAI, Anthropic, Google, and Microsoft—are no longer just racing to build better chatbots; they are pivoting toward autonomous agents, enterprise dominance, and the automation of AI research itself.</p>
 <p>In this deep dive, Paul Roetzer (Founder and CEO of SmarterX and Marketing AI Institute) and Mike Kaput (Chief Content Officer at SmarterX) break down the most significant developments in the AI industry, from OpenAI’s multi-billion dollar private equity plays to the &quot;vibe coding&quot; revolution and the political battle for the future of American innovation.</p>
 <h2>The Strategic Pivot: OpenAI and the Enterprise Super App</h2>
@@ -92,7 +106,44 @@ In a week marked by rapid strategic shifts and high-stakes corporate rest...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo - The Indie App</title>
+  <title>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: From skeptic to true believer: How OpenClaw changed my life | Claire Vo
-
----
-
-
-
-Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of an AI startup, onc...">
+  <meta name="description" content="Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of an AI startup, once stood as a prominent skeptic of OpenClaw. Her initial experience was a grueling eight-hour setup th...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=DIa0MYJzM5I" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=DIa0MYJzM5I" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo</h1>
       <time datetime="2026-03-29T12:30:20.000Z">
-        March 29, 2026
+        Sunday, March 29, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=DIa0MYJzM5I">From skeptic to true believer: How OpenClaw changed my life | Claire Vo</a></p>
-<hr>
-<h1>From Skeptic to Super User: Unlocking the Power of OpenClaw</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>From Skeptic to Super User: Unlocking the Power of OpenClaw</h1>
 <p>Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of an AI startup, once stood as a prominent skeptic of OpenClaw. Her initial experience was a grueling eight-hour setup that resulted in her family calendar being deleted. Yet, today, she's a fervent advocate, running eight different agents on OpenClaw, describing it as a life-changing AI experience, second only to ChatGPT. This transformation highlights a crucial aspect of emerging AI tools: the need to &quot;pull the thread&quot; and spend time with them to understand their true potential beyond the initial hype.</p>
 <h2>The Journey from OpenClaw Skeptic to Believer</h2>
 <p>Claire's initial skepticism stemmed from a technically challenging setup and a disastrous first encounter where OpenClaw deleted her personal calendar. However, amidst the frustration, she recognized a profound sense of &quot;product-market fit.&quot; The moments when OpenClaw wasn't deleting her calendar were filled with &quot;joy and utility,&quot; signaling something significant beneath the surface. This experience led her to a key realization: the true value of tools like OpenClaw lies not in their current state but in their potential evolution over weeks and months.</p>
@@ -94,7 +108,44 @@ Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>20VC with Harry Stebbings - Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI - The Indie App</title>
+  <title>20VC with Harry Stebbings - Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI
-
----
-
-![](https://www.youtube.com/watch?v=SSya123u9Yk)
-
-
-
-
-
- · I would say about...">
+  <meta name="description" content="· I would say about 90% of the breakthroughs that underpin the modern AI industry were done either by Google brain or Google research or deep mind. · So one of our groups the returns are still very su...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=SSya123u9Yk&amp;pp=ugUHEgVlbi1VUw%3D%3D" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=SSya123u9Yk&amp;pp=ugUHEgVlbi1VUw%3D%3D" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>20VC with Harry Stebbings - Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI</h1>
       <time datetime="2026-04-07T14:04:57.000Z">
-        April 7, 2026
+        Tuesday, April 7, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=SSya123u9Yk&amp;pp=ugUHEgVlbi1VUw%3D%3D">Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=SSya123u9Yk" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=SSya123u9Yk" alt=""></p>
 <h2>Transcript</h2>
 <h3>Intro</h3>
 <p>**** · I would say about 90% of the breakthroughs that underpin the modern AI industry were done either by Google brain or Google research or deep mind.</p>
@@ -174,7 +184,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

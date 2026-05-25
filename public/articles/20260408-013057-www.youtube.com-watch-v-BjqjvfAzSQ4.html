@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models! - The Indie App</title>
+  <title>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models! - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!
-
----
-
-
-
-Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for develop...">
+  <meta name="description" content="Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for developers and enthusiasts. This release is particularly exciting for the open-source community, a...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=BjqjvfAzSQ4" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=BjqjvfAzSQ4" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</h1>
       <time datetime="2026-04-03T00:06:59.000Z">
-        April 3, 2026
+        Friday, April 3, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=BjqjvfAzSQ4">Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</a></p>
-<hr>
-<h1>Gemma 4: Google's New Open Models Put to the Test</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Gemma 4: Google's New Open Models Put to the Test</h1>
 <p>Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for developers and enthusiasts. This release is particularly exciting for the open-source community, and this article dives into the two largest and most performant models: a 31 billion parameter dense model and a 26 billion parameter mixture of experts (MoE) model. These models promise impressive capabilities, with benchmarks suggesting they can compete with significantly larger models while being more efficient.</p>
 <h2>First Look at the Gemma 4 Family</h2>
 <p>The Gemma 4 family includes models ranging in size from 2.3 billion to 31 billion parameters. The two smaller models, Gemma 4 E2B (2.3B effective parameters) and Gemma 4 E4B (4.5B effective parameters), boast a context window of 128K and come with both base and instruction-tuned checkpoints.</p>
@@ -98,7 +112,44 @@ Google has unveiled its highly anticipated Gemma 4 family of models, offering fo
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

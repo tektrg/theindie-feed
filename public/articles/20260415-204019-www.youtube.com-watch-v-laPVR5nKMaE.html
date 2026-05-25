@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yinfi - How China Built Tech Power Without Critical Thinking - The Indie App</title>
+  <title>Yinfi - How China Built Tech Power Without Critical Thinking - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: How China Built Tech Power Without Critical Thinking
-
----
-
-![](https://www.youtube.com/watch?v=laPVR5nKMaE)
-
-
-
-
-
- · I was raised in China&#039;s matrix. I was conditioned  from childho...">
+  <meta name="description" content="· I was raised in China&#039;s matrix. I was conditioned from childhood to solve complex problems, memorise information efficiently, and perform at the top of my class. But I was also conditioned to do the...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=laPVR5nKMaE" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=laPVR5nKMaE" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Yinfi - How China Built Tech Power Without Critical Thinking</h1>
       <time datetime="2026-04-15T13:40:36.289Z">
-        April 15, 2026
+        Wednesday, April 15, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=laPVR5nKMaE">How China Built Tech Power Without Critical Thinking</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=laPVR5nKMaE" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=laPVR5nKMaE" alt=""></p>
 <h2>Transcript</h2>
 <h3>China’s matrix</h3>
 <p>**** · I was raised in China's matrix. I was conditioned  from childhood to solve complex problems, memorise information efficiently, and perform at the top  of my class. But I was also conditioned to do the exact opposite. My mind was wired to reflexively  stop thinking entirely at given moments. Here's a paradox. Millions of students me go  through the same system that seems to severely restrict the very critical thinking so crucial for  innovation. And yet, China has built one of the most powerful tech industries in the world. Even  now, amidst reports of top AI engineers in China facing exit bans, such as the recent Manus case,  the system continues to accelerate. Every year, China produces four times as many STEM graduates  as the United States. Almost half of the world's top AI experts were trained in China. If critical  thinking is so important to innovation, how does a system that actively discourages it still  function so well? The truth is from the inside it doesn't even feel anything is missing.  And this is not merely theoretical. We saw it play out at a UK university recently. Associate  Professor Michelle Shipworth at University College London had been teaching her data detectives  module for over a decade. The course featured a long-standing critical thinking exercise,  which included asking why China ranked second globally in modern slavery numbers according to  the global slavery index. However, in March 2024, in a class where a quarter of the students were  Chinese, many complained to the college, calling the course provocative and biased against Chinese  students. Instead of defending academic rigour, the head of the department chose to cater to  this group of Chinese students and removed Professor Shipworth from her course entirely.  The official justification was that courses must remain commercially viable and retain a strong  reputation among future Chinese applicants, who bring massive fee income to UCL. And this is  where it gets interesting. Instead of applying critical thought to the question, these students  collectively treated the exercise itself as fundamentally unacceptable. How does this happen?  At first glance, it looks a straightforward intellectual failure. But here's the uncomfortable  truth. This reaction makes perfect sense inside the system we were trained in. We were never  taught to question everything. Instead, we learn to distinguish between questions that fall under  the critical thinking category, and those that do not. This conditioning is not simply a matter of  being brainwashed. It involves far more push and pull. When I was growing up, China's information  environment was far more open than it is today.</p>
@@ -65,7 +75,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

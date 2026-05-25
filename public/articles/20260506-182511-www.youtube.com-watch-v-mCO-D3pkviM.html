@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenny&#039;s Podcast - AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion) - The Indie App</title>
+  <title>Lenny&#039;s Podcast - AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)
-
----
-
-
-
-The landscape of software development is undergoing a seismic shift, driven by ...">
+  <meta name="description" content="The landscape of software development is undergoing a seismic shift, driven by the rapid advancement of AI. This transformation is not just about new tools but a fundamental redefinition of roles, wor...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=mCO-D3pkviM" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=mCO-D3pkviM" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Lenny&#039;s Podcast - AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)</h1>
       <time datetime="2026-05-02T15:01:17.000Z">
-        May 2, 2026
+        Saturday, May 2, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=mCO-D3pkviM">AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)</a></p>
-<hr>
-<h1>The Malleable Future of Software: Agency, Craft, and the AI Revolution with Max Schoening</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Malleable Future of Software: Agency, Craft, and the AI Revolution with Max Schoening</h1>
 <p>The landscape of software development is undergoing a seismic shift, driven by the rapid advancement of AI. This transformation is not just about new tools but a fundamental redefinition of roles, workflows, and what it means to build and use software. Max Schoening, Head of Product at Notion and a prominent AI-forward product leader, offers profound insights into this evolving world, emphasizing the critical role of &quot;agency&quot; and the emergence of &quot;malleable software.&quot;</p>
 <h2>The Origin Story of Designers Coding at Notion</h2>
 <p>The idea of roles blurring, with designers and product managers increasingly contributing to code, is not new. Max Schoening has been a proponent of this for a long time, having led design and product at GitHub where designers were significant contributors. The shift at Notion, where designers and PMs are now shipping code, has a specific origin story.</p>
@@ -117,7 +131,44 @@ The landscape of software development is undergoing a seismic shift, driven by .
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

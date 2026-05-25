@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI! - The Indie App</title>
+  <title>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI! - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="So much of what is happening today in the AI industry is extremely inhumane. While some might play devil&#039;s advocate and argue that the civilization that accelerates its research with artificial intell...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=Cn8HBj8QAbk" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=Cn8HBj8QAbk" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI!</h1>
       <time datetime="2026-03-26T08:00:10.000Z">
-        March 26, 2026
+        Thursday, March 26, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h2>The Rise of the AI Empire</h2>
 <p>So much of what is happening today in the <strong>AI industry</strong> is extremely inhumane. While some might play devil's advocate and argue that the civilization that accelerates its research with artificial intelligence will logically become the superior civilization, that is a flawed premise. This is a specific prediction being made by figures like <strong>Sam Altman</strong> and <strong>Mark Zuckerberg</strong>, and they all share a common feature: they profit enormously from this myth. Internal documents show that these companies are purposely trying to create a specific feeling within the public so they can extract and exploit resources. To address this, we need to break up the empires of AI.</p>
 <p>The tech industry has been under scrutiny for over eight years, involving interviews with over 250 people, including former and current <strong>OpenAI</strong> employees and executives. There are many parallels between the modern empires of AI and the empires of old. These companies lay claim to the <strong>intellectual property</strong> of artists, writers, and creators in the pursuit of training their models. Furthermore, they exploit an extraordinary amount of labor, which effectively breaks the career ladder. Someone might get laid off and then find themselves working to train a model on the very job they were just replaced in, which only perpetuates more layoffs.</p>
@@ -48,7 +70,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

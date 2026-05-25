@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Jonathan Tam - Why Korea Has the Highest Suicide Rate in the World - The Indie App</title>
+  <title>Dr. Jonathan Tam - Why Korea Has the Highest Suicide Rate in the World - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Why Korea Has the Highest Suicide Rate in the World
-
----
-
-![](https://www.youtube.com/watch?v=ToV2wDsAyww)
-
-
-
-
-
- · Why is South Korea the world&#039;s suicide capital? In February of 2...">
+  <meta name="description" content="· Why is South Korea the world&#039;s suicide capital? In February of 2025, actress Kim Seron died by suicide. Another reminder that suicide in the country isn&#039;t random, it&#039;s a pattern. I&#039;m John, a PhD soc...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=ToV2wDsAyww" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=ToV2wDsAyww" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Dr. Jonathan Tam - Why Korea Has the Highest Suicide Rate in the World</h1>
       <time datetime="2026-01-31T00:05:00.000Z">
-        January 31, 2026
+        Saturday, January 31, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=ToV2wDsAyww">Why Korea Has the Highest Suicide Rate in the World</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=ToV2wDsAyww" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=ToV2wDsAyww" alt=""></p>
 <h2>Transcript</h2>
 <h3>Introduction</h3>
 <p>**** · Why is South Korea the world's suicide capital? In February of 2025, actress Kim Seron died by suicide. Another reminder that suicide in the country isn't random, it's a pattern. I'm John, a PhD sociologist who taught 5 years in Korea. And in this video, I'll show why a nation famous for K-pop, Kdrama, and tech leads the developed world in suicides, and what's underneath. It isn't only student stress. Stay with me because in a minute you'll see the one social shift that almost no one talks about. I'll connect the data, the history, and the human stories so the headlines finally make sense. Now, I want to be upfront about this video's topic. It's hard to talk about. As a sociologist, my job here is to unpack what's driving this crisis as clearly and as honestly as I can so we can all understand it a little better.</p>
@@ -98,7 +108,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

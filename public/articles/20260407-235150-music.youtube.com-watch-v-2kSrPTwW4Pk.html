@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Music - nơi nào cho con tim nguôi ngoai ? - The Indie App</title>
+  <title>YouTube Music - nơi nào cho con tim nguôi ngoai ? - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: nơi nào cho con tim nguôi ngoai ?
-
----
-
-
-
-The melancholic melody paints a picture of a love that has faded, leaving behind a profound sense of loss. The lyrics express the pain of...">
+  <meta name="description" content="The melancholic melody paints a picture of a love that has faded, leaving behind a profound sense of loss. The lyrics express the pain of separation and the haunting memories of a once-vibrant connect...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://music.youtube.com/watch?v=2kSrPTwW4Pk" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://music.youtube.com/watch?v=2kSrPTwW4Pk" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>YouTube Music - nơi nào cho con tim nguôi ngoai ?</h1>
       <time datetime="2026-04-07T16:52:11.166Z">
-        April 7, 2026
+        Tuesday, April 7, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://music.youtube.com/watch?v=2kSrPTwW4Pk">nơi nào cho con tim nguôi ngoai ?</a></p>
-<hr>
-<h1>The Lingering Echoes of Lost Love</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Lingering Echoes of Lost Love</h1>
 <p>The melancholic melody paints a picture of a love that has faded, leaving behind a profound sense of loss. The lyrics express the pain of separation and the haunting memories of a once-vibrant connection.</p>
 <p>The speaker reflects on a time when hands were held, and kisses were exchanged, a stark contrast to the present loneliness. The question arises: does the other person remember these moments as vividly? The current reality is one of distance and unspoken sorrow, a love that once burned brightly now reduced to embers.</p>
 <p>There's a desire to shield this pain from the world, to hide the remnants of a love story that feels destined to continue its painful trajectory. The heart yearns for an escape, a sanctuary from the thorns of a complicated relationship. One person's longing is met with the other's feigned indifference, a pretense of moving on.</p>
@@ -49,7 +63,44 @@ The melancholic melody paints a picture of a love that has faded, leaving behind
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

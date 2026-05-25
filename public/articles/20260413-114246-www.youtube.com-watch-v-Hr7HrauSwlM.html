@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown
-
----
-
-
-
-Artificial intelligence is no longer a distant prospect or a niche tool for the tech-obsessed...">
+  <meta name="description" content="Artificial intelligence is no longer a distant prospect or a niche tool for the tech-obsessed; it has become the defining challenge and opportunity for modern business leaders. In this deep-dive explo...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h1>
       <time datetime="2026-04-13T04:43:33.433Z">
-        April 13, 2026
+        Monday, April 13, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM">Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</a></p>
-<hr>
-<h1>The AI Readiness Gap: Navigating the Future of Work, Strategy, and Enterprise Transformation</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The AI Readiness Gap: Navigating the Future of Work, Strategy, and Enterprise Transformation</h1>
 <p>Artificial intelligence is no longer a distant prospect or a niche tool for the tech-obsessed; it has become the defining challenge and opportunity for modern business leaders. In this deep-dive exploration, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Chief Marketing Officer Kathy McPhillips to address the most pressing questions facing organizations today.</p>
 <p>Drawing from years of experience—including Roetzer’s 57-month streak of teaching introductory AI courses to over 60,000 professionals—this discussion moves beyond the hype to examine the structural, cultural, and strategic shifts required to survive the &quot;AI era.&quot; From the &quot;AI divide&quot; within the workforce to the controversial future of entry-level employment, this is a comprehensive look at the state of AI adoption.</p>
 <h2>The Evolution of AI Literacy</h2>
@@ -124,7 +138,44 @@ Artificial intelligence is no longer a distant prospect or a niche tool for the 
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

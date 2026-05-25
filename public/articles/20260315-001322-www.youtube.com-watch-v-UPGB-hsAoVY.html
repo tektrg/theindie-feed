@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Powerful Alternative To Fine-Tuning - The Indie App</title>
+  <title>The Powerful Alternative To Fine-Tuning - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment consta...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=UPGB-hsAoVY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>The Powerful Alternative To Fine-Tuning</h1>
+      <time datetime="2026-02-27T15:00:55.000Z">
+        Friday, February 27, 2026
+      </time>
+    </div>
   </header>
   <main>
-    <article>
-      <h1>The Powerful Alternative To Fine-Tuning</h1>
-      <time datetime="2026-03-14T17:14:22.652Z">
-        March 15, 2026
-      </time>
+    <article class="article-body">
       <h2>The AI &quot;Stilts&quot; That Outperform Frontier Models</h2>
 <p>The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment constantly. &quot;Every day, do something with AI,&quot; he advises. &quot;Don't limit yourself. Anything that you imagine, you should just try to use AI and see how far you can get with it.&quot;</p>
 <p>Fischer speaks from experience. After a decade at Google DeepMind and founding a YC startup, he is now tackling one of the biggest challenges in the field: creating AI that can improve itself. His company, <strong>Poetiq</strong>, is building what he calls &quot;stilts&quot; for large language models (LLMs), enabling them to perform better than their base capabilities.</p>
@@ -65,7 +87,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

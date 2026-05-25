@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw - The Indie App</title>
+  <title>Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="Peter’s arrival at the OpenAI office marks a significant moment in a relationship that has existed online for many years but only recently transitioned to an in-person connection. The timing is notabl...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=9jgcT0Fqt7U" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="YouTube" target="_blank" rel="noopener">Original source</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw</h1>
       <time datetime="2026-02-25T11:05:00.253Z">
-        February 25, 2026
+        Wednesday, February 25, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h1>The Evolution of a Builder: From PSPDFKit to the OpenClaw Phenomenon</h1>
 <p>Peter’s arrival at the <strong>OpenAI</strong> office marks a significant moment in a relationship that has existed online for many years but only recently transitioned to an in-person connection. The timing is notable, coming after a whirlwind period of success that has seen Peter’s latest open-source work featured in the <em><strong>Wall Street Journal</strong></em>. Just a month ago, a formal introduction might have been necessary, but the rapid ascent of his recent projects has made him a recognizable figure in the tech landscape.</p>
 <p>Reflecting on the last few weeks, Peter describes a state of sensory overload. When he began experimenting with <strong>AI</strong> earlier this year, his primary goal was to inspire others. Seeing the current level of engagement feels like the &quot;final form&quot; of that ambition. This success is most visible in <strong>San Francisco</strong>, where Peter has spent the past week attending events like the <strong>Codex Hackathon</strong> and <strong>ClawCon</strong>, an event dedicated entirely to his project, <strong>OpenClaw</strong>.</p>
@@ -120,7 +142,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

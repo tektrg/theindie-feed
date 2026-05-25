@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie App</title>
+  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)
-
----
-
-
-
-The internet, once built by humans for humans, is on the cusp of a profound transform...">
+  <meta name="description" content="The internet, once built by humans for humans, is on the cusp of a profound transformation. Aurélien, co-founder of Strapi and now FIMO.ai, believes the web will soon be built by AI agents, primarily...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=mAM9AkNuBEE" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=mAM9AkNuBEE" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h1>
       <time datetime="2026-04-07T14:25:45.415Z">
-        April 7, 2026
+        Tuesday, April 7, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=mAM9AkNuBEE">The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</a></p>
-<hr>
-<h1>The Agentic Web: Building the Future with FIMO.ai</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Agentic Web: Building the Future with FIMO.ai</h1>
 <p>The internet, once built by humans for humans, is on the cusp of a profound transformation. Aurélien, co-founder of Strapi and now FIMO.ai, believes the web will soon be built by AI agents, primarily for other agents and humans. This shift, he argues, necessitates a new generation of AI-native tools, a gap he aims to fill with FIMO.</p>
 <h2>From Student Project to Global CMS: The Strapi Journey</h2>
 <p>Aurélien's journey into content management began as a student project in 2013. Alongside his co-founder, he started building websites as freelancers. The rise of mobile apps presented a challenge: managing the same content across both websites and mobile applications became cumbersome with existing tools like WordPress. This led to the creation of Strapi, initially named Wisti, as an internal solution for their clients.</p>
@@ -93,7 +107,44 @@ The internet, once built by humans for humans, is on the cusp of a profound tran
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

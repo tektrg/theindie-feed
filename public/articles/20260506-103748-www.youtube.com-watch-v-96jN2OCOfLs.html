@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sequoia Capital - Andrej Karpathy: From Vibe Coding to Agentic Engineering - The Indie App</title>
+  <title>Sequoia Capital - Andrej Karpathy: From Vibe Coding to Agentic Engineering - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Andrej Karpathy: From Vibe Coding to Agentic Engineering
-
----
-
-
-
-The landscape of software development is undergoing a seismic shift, moving beyond explicit rules and learned weig...">
+  <meta name="description" content="The landscape of software development is undergoing a seismic shift, moving beyond explicit rules and learned weights into a new paradigm driven by Large Language Models (LLMs) and intelligent agents....">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=96jN2OCOfLs" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=96jN2OCOfLs" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Sequoia Capital - Andrej Karpathy: From Vibe Coding to Agentic Engineering</h1>
       <time datetime="2026-04-29T15:21:18.000Z">
-        April 29, 2026
+        Wednesday, April 29, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=96jN2OCOfLs">Andrej Karpathy: From Vibe Coding to Agentic Engineering</a></p>
-<hr>
-<h1>The Dawn of Software 3.0: Navigating the Agentic Revolution</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Dawn of Software 3.0: Navigating the Agentic Revolution</h1>
 <p>The landscape of software development is undergoing a seismic shift, moving beyond explicit rules and learned weights into a new paradigm driven by Large Language Models (LLMs) and intelligent agents. This evolution, termed &quot;Software 3.0,&quot; redefines programming as prompting and context manipulation, fundamentally altering how we build, deploy, and interact with technology.</p>
 <h2>The Feeling of Being Left Behind</h2>
 <p>For seasoned programmers, this transition can be both exhilarating and unsettling. As Andrej Karpathy, a pivotal figure in the AI community, shared, he recently found himself feeling &quot;more behind as a programmer than ever before.&quot; This sentiment emerged not from a decline in his skills, but from the rapid advancement of AI tools. What began as helpful assistants for coding chunks evolved by December into systems that could generate fine code with minimal correction. This realization marked a stark transition, where the &quot;agentic coherent workflow&quot; began to truly function, leading to an explosion of side projects and a deep dive into the implications of this new era.</p>
@@ -68,7 +82,44 @@ The landscape of software development is undergoing a seismic shift, moving beyo
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

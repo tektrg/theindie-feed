@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ColdFusion - Yikes. - The Indie App</title>
+  <title>ColdFusion - Yikes. - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Yikes.
-
----
-
-Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings:
-
-
-
-The Wall Street Journal reports that the Pentagon used ...">
+  <meta name="description" content="Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings: The Wall Street Journal reports that the Pentagon used Anthropic&#039;s AI model Claude as part o...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=_Ux13UEqIYo" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=_Ux13UEqIYo" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>ColdFusion - Yikes.</h1>
       <time datetime="2026-03-09T14:05:34.000Z">
-        March 9, 2026
+        Monday, March 9, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=_Ux13UEqIYo">Yikes.</a></p>
-<hr>
-<p>Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings:</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings:</p>
 <h2>AI in Warfare: The Pentagon, Anthropic, and OpenAI</h2>
 <p>The Wall Street Journal reports that the Pentagon used Anthropic's AI model Claude as part of its operation to capture Venezuelan President Nicholas Maduro. For the first time ever, the Pentagon is using artificial intelligence to scope targets. Our allies are going to be studying how we're using it here. Data centers were just hit in the UAE.</p>
 <p>Hi, welcome to another episode of Cold Fusion. By now, there's no hiding it: we live in a world where AI's use in warfare is now a reality. AI was used in at least two high-profile instances by the US military: one to capture the Venezuelan President Maduro, and then in a war between Israel, Iran, and the United States. The AI company that supplied the underlying technology to the US military was Anthropic, but tensions began to grow between the two parties. The government wanted them to sign a contract that allowed for autonomous AI weapon control and mass surveillance of US citizens through data collection. While Anthropic did say no to this, they were completely kicked out of any government contracts.</p>
@@ -73,7 +85,44 @@ The Wall Street Journal reports that the Pentagon used ...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

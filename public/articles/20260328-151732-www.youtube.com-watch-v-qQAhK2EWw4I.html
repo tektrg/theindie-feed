@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers - The Indie App</title>
+  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers
-
----
-
-Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs wi...">
+  <meta name="description" content="Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings. Since 2022, the future of software is in question. This is from the investor community...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=qQAhK2EWw4I" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=qQAhK2EWw4I" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</h1>
       <time datetime="2026-03-28T08:18:12.384Z">
-        March 28, 2026
+        Saturday, March 28, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=qQAhK2EWw4I">No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</a></p>
-<hr>
-<p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings.</p>
 <h2>Transcript</h2>
 <h3>Cold Open</h3>
 <p>Since 2022, the future of software is in question. This is from the investor community but also from customers. It is a very pivotal moment on the software stack. Then you look at the software stack and you ask, &quot;What is the one thing that will always be there?&quot; How many companies today have more than $10 billion in just pure-play software revenue? It's single digits. Why is that? The software industry has been around for a long time, created by many, many smart people like yourself. Why are there only single-digit companies with more than $10 billion in revenue? Because platforms are rare.</p>
@@ -119,7 +135,44 @@ Here is the cleaned YouTube transcript, processed line by line and then formatte
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

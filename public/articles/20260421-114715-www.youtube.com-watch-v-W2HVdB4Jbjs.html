@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Engineer - Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB - The Indie App</title>
+  <title>AI Engineer - Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB
-
----
-
-![](https://www.youtube.com/watch?v=W2HVdB4Jbjs)
-
-
-
- · \[Music\] \[Music\] In t...">
+  <meta name="description" content="· \[Music\] \[Music\] In the next 10 to 15 minutes, here&#039;s I guess my promise to you. I&#039;m going to give you some information that will be high level. There will be some practical component to it. But...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=W2HVdB4Jbjs" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=W2HVdB4Jbjs" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>AI Engineer - Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB</h1>
       <time datetime="2025-06-27T09:56:46.000Z">
-        June 27, 2025
+        Friday, June 27, 2025
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=W2HVdB4Jbjs">Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=W2HVdB4Jbjs" alt=""></p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=W2HVdB4Jbjs" alt=""></p>
 <h2>Transcript</h2>
 <p>**** · [Music] [Music] In the next 10 to 15 minutes, here's I guess my promise to you. I'm going to give you some information that will be high level. There will be some practical component to it. But this information I'll give you within the next 6 months will be very relevant and it will put you in the best position to build the best AI applications to build the best agents that are believable, capable, and reliable.</p>
 <p>**** · I know we going to get there.</p>
@@ -79,7 +91,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

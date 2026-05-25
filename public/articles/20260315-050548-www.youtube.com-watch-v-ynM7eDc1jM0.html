@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator
-
----
-
-Welcome to a special edition of the Artificial Intelligence Show, where for ...">
+  <meta name="description" content="Welcome to a special edition of the Artificial Intelligence Show, where for episode 200, hosts Paul Ritzer and Mike Kaput record live with an audience of AI Academy Mastery members. This episode, reco...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=ynM7eDc1jM0" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=ynM7eDc1jM0" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator</h1>
       <time datetime="2026-03-03T13:01:42.000Z">
-        March 3, 2026
+        Tuesday, March 3, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=ynM7eDc1jM0">Ep. 200: Anthropic vs. the Pentagon, OpenAI's $110B Round &amp; Interview with Claude Code’s Creator</a></p>
-<hr>
-<p>Welcome to a special edition of the Artificial Intelligence Show, where for episode 200, hosts Paul Ritzer and Mike Kaput record live with an audience of AI Academy Mastery members. This episode, recorded on Monday, March 2nd, dives deep into a rapidly unfolding confrontation between Anthropic and the U.S. government.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>Welcome to a special edition of the Artificial Intelligence Show, where for episode 200, hosts Paul Ritzer and Mike Kaput record live with an audience of AI Academy Mastery members. This episode, recorded on Monday, March 2nd, dives deep into a rapidly unfolding confrontation between Anthropic and the U.S. government.</p>
 <h2>AI Pulse Survey Results</h2>
 <p>The episode kicks off with the previous week's AI pulse survey results:</p>
 <ul>
@@ -112,7 +128,44 @@ Welcome to a special edition of the Artificial Intelligence Show, where for ..."
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

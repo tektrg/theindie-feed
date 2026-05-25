@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator - The Indie App</title>
+  <title>Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="In the current political climate, government officials have made various comments despite their bluster and threats. They are essentially admitting they cannot live without Claude. Paul Ritzer agrees ...">
+  <meta name="description" content="In the current political climate, government officials have made various comments despite their bluster and threats. They are essentially admitting they cannot live without Claude. Paul Ritzer agrees...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://youtu.be/ynM7eDc1jM0" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="YouTube" target="_blank" rel="noopener">Original source</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator</h1>
       <time datetime="2026-03-12T14:13:46.978Z">
-        March 12, 2026
+        Thursday, March 12, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h1>The Artificial Intelligence Show: Episode 200</h1>
 <p>In the current political climate, government officials have made various comments despite their bluster and threats. They are essentially admitting they cannot live without <em>Claude</em>. Paul Ritzer agrees with this sentiment, stating that he would not give up the AI assistant voluntarily.</p>
 <h2>A Special Milestone for the Podcast</h2>
@@ -274,7 +296,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

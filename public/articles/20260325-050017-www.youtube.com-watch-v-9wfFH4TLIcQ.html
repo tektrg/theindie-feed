@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent
-
----
-
-![](https://www.youtube.com/watch?v=9wfFH4TLIcQ)
-
-
-
-
-
-0:00 · All the labs r...">
+  <meta name="description" content="0:00 · All the labs realized what Claude code unlocked and it wasn&#039;t like it was the first coding agent. It it was just the best. They did something different with the harness like how they enabled it...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=9wfFH4TLIcQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h1>
+      <time datetime="2026-03-24T11:00:14.000Z">
+        Tuesday, March 24, 2026
+      </time>
+    </div>
   </header>
   <main>
-    <article>
-      <h1>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h1>
-      <time datetime="2026-03-24T22:00:27.219Z">
-        March 25, 2026
-      </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=9wfFH4TLIcQ">Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=9wfFH4TLIcQ" alt=""></p>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=9wfFH4TLIcQ" alt=""></p>
 <h2>Transcript</h2>
 <h3>Intro</h3>
 <p><strong>0:00</strong> · All the labs realized what Claude code unlocked and it wasn't like it was the first coding agent. It it was just the best. They did something different with the harness like how they enabled it to do what it does. All these labs see not the finish line but like the next mile marker I'll say of agentic capability and their ability to automate AI research and their ability to then as Logan Kilpatrick's deleted tweet said to start disrupting everything.</p>
@@ -241,7 +251,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jean Lee - The New Bar for Engineers in the Age of AI - The Indie App</title>
+  <title>Jean Lee - The New Bar for Engineers in the Age of AI - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The New Bar for Engineers in the Age of AI
-
----
-
-
-
-The world of software engineering is in constant flux, shaped by rapid technological advancements and shifting industry paradigm...">
+  <meta name="description" content="The world of software engineering is in constant flux, shaped by rapid technological advancements and shifting industry paradigms. Gerge Oros, creator of The Pragmatic Engineer newsletter and podcast,...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=JOA5x89MjRc" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=JOA5x89MjRc" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Jean Lee - The New Bar for Engineers in the Age of AI</h1>
       <time datetime="2026-04-06T13:03:00.000Z">
-        April 6, 2026
+        Monday, April 6, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=JOA5x89MjRc">The New Bar for Engineers in the Age of AI</a></p>
-<hr>
-<h1>The Evolving Landscape of Software Engineering: From Uber Chaos to AI Augmentation</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Evolving Landscape of Software Engineering: From Uber Chaos to AI Augmentation</h1>
 <p>The world of software engineering is in constant flux, shaped by rapid technological advancements and shifting industry paradigms. Gerge Oros, creator of The Pragmatic Engineer newsletter and podcast, shares his unique perspective, forged through experiences at companies like Skype, Uber, and startups, on what it takes to succeed as a software engineer today and tomorrow. From navigating the &quot;duct tape and Google Sheets&quot; reality of hyper-growth companies to understanding the profound impact of AI, Oros offers a candid look at the good, the bad, and the weird of the tech industry.</p>
 <h2>Origin Story: From Theory to Practical Application</h2>
 <p>Oros's journey into tech began in high school with early explorations of PHP and JavaScript, which he initially considered &quot;hacking&quot; rather than formal programming. His university computer science degree took an unexpected turn, focusing heavily on theoretical mathematics and physics rather than the coding he anticipated. This rigorous theoretical foundation, however, proved invaluable later in his career, particularly when understanding the underlying principles of technologies like LLMs, which rely heavily on matrix transformations.</p>
@@ -86,7 +100,44 @@ The world of software engineering is in constant flux, shaped by rapid technolog
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

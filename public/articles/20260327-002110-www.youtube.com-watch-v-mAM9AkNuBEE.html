@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie App</title>
+  <title>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)
-
----
-
-This article explores the evolution of content management and the emergence of &quot;agentic...">
+  <meta name="description" content="This article explores the evolution of content management and the emergence of &quot;agentic&quot; web development, based on a conversation with Aurélien Georget, co-founder of the industry-standard headless CM...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=mAM9AkNuBEE" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h1>
       <time datetime="2026-03-26T17:23:04.774Z">
-        March 27, 2026
+        Friday, March 27, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=mAM9AkNuBEE">The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</a></p>
-<hr>
-<p>This article explores the evolution of content management and the emergence of &quot;agentic&quot; web development, based on a conversation with Aurélien Georget, co-founder of the industry-standard headless CMS, <strong>Strapi</strong>, and founder of the AI-native website builder, <strong>FIMO</strong>.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>This article explores the evolution of content management and the emergence of &quot;agentic&quot; web development, based on a conversation with Aurélien Georget, co-founder of the industry-standard headless CMS, <strong>Strapi</strong>, and founder of the AI-native website builder, <strong>FIMO</strong>.</p>
 <hr>
 <h2>How Strapi Was Born: From Student Project to Enterprise Standard</h2>
 <p>Aurélien Georget began his journey in 2013 as a student at a master’s degree program, where he met his co-founders. Initially working as freelancers building websites, they noticed a significant gap in the market: as mobile applications grew in popularity, the existing toolset—specifically <strong>WordPress</strong>—could no longer handle the complexity of managing content across both web and mobile platforms effectively.</p>
@@ -67,7 +83,44 @@ This article explores the evolution of content management and the emergence of &
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government
-
----
-
-
-
-In this special edition of the Artificial Intelligence Show, Paul Roetzer, ...">
+  <meta name="description" content="In this special edition of the Artificial Intelligence Show, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Mike Kaput, Chief Content Officer at SmarterX, for a deep-d...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=MXmR-_zB_dg" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=MXmR-_zB_dg" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h1>
       <time datetime="2026-04-07T11:00:39.000Z">
-        April 7, 2026
+        Tuesday, April 7, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=MXmR-_zB_dg">Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</a></p>
-<hr>
-<h1>The State of Artificial Intelligence: A Comprehensive Review of Q1 2026 Trends</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The State of Artificial Intelligence: A Comprehensive Review of Q1 2026 Trends</h1>
 <p>In this special edition of the Artificial Intelligence Show, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Mike Kaput, Chief Content Officer at SmarterX, for a deep-dive retrospective on the first quarter of 2026. This period has proven to be one of the most volatile and transformative stretches in the history of the industry, characterized by a relentless pace of model releases, shifting political landscapes, and a fundamental change in how enterprises and individuals perceive the future of work.</p>
 <p>Across twelve weekly episodes in Q1, the duo covered approximately 150 distinct topics, ranging from technical breakthroughs to macroeconomic shifts. To provide a cohesive narrative of this whirlwind quarter, Mike Kaput curated these topics into ten defining trends that illustrate where the AI industry stands today and where it is headed as we move into the spring and summer of 2026.</p>
 <h2>10. The Model Release Frenzy</h2>
@@ -115,7 +129,44 @@ In this special edition of the Artificial Intelligence Show, Paul Roetzer, ...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

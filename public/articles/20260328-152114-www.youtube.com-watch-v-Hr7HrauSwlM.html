@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race
-
----
-
-Here is the cleaned YouTube transcript, processed line by line and then formatted i...">
+  <meta name="description" content="Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings: Based on all the conversations I have had with leaders of major companies, I have yet t...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=Hr7HrauSwlM" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race</h1>
       <time datetime="2026-03-28T08:22:08.960Z">
-        March 28, 2026
+        Saturday, March 28, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Hr7HrauSwlM">Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race</a></p>
-<hr>
-<p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings:</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings:</p>
 <h2>Transcript</h2>
 <h3>Intro</h3>
 <p>Based on all the conversations I have had with leaders of major companies, I have yet to find one that's prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A series from the artificial intelligence show. I'm Paul Ritzer, founder and CEO of Smarter X and Marketing AI Institute. Every time we host our live virtual events and online classes, we get dozens of great questions from business leaders and practitioners who are navigating this fast-moving world of AI. But we never have enough time to get to all of them. So we created the AI Answers series to address more of these questions and share real-time insights into the topics and challenges professionals like you are facing. Whether you're just starting your AI journey or already putting it to work in your organization, these are the practical insights, use cases, and strategies you need to grow smarter. Let's explore AI together.</p>
@@ -132,7 +148,44 @@ Here is the cleaned YouTube transcript, processed line by line and then formatte
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

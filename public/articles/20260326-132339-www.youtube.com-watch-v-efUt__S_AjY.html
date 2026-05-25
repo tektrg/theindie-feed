@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity? - The Indie App</title>
+  <title>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity? - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: The AI Code Slop: Risk or Opportunity?
-
----
-
-
-
-There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world whe...">
+  <meta name="description" content="There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world where AI agents can simply &quot;vibe code&quot; everything. While recent market...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=efUt__S_AjY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h1>
+      <time datetime="2026-02-19T11:01:09.000Z">
+        Thursday, February 19, 2026
+      </time>
+    </div>
   </header>
   <main>
-    <article>
-      <h1>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h1>
-      <time datetime="2026-03-26T06:24:14.706Z">
-        March 26, 2026
-      </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=efUt__S_AjY">The AI Code Slop: Risk or Opportunity?</a></p>
-<hr>
-<h2>The State of Software: Navigating the &quot;SaaS-pocalypse&quot;</h2>
+    <article class="article-body">
+      <h2>The State of Software: Navigating the &quot;SaaS-pocalypse&quot;</h2>
 <p>There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world where AI agents can simply &quot;vibe code&quot; everything. While recent market reactions have been frantic, it is important to distinguish between short-term noise and long-term structural shifts.</p>
 <p>While AI is undoubtedly &quot;eating the world,&quot; the idea that every enterprise will abandon their robust software stacks to build bespoke internal tools is likely an overstatement.</p>
 <h3>The Myth of Vibe Coding in the Enterprise</h3>
@@ -54,7 +68,44 @@ There is a growing narrative in the market that the era of Software-as-a-Service
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

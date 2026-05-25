@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Pragmatic Engineer - Building WhatsApp with Jean Lee - The Indie App</title>
+  <title>The Pragmatic Engineer - Building WhatsApp with Jean Lee - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Building WhatsApp with Jean Lee
-
----
-
-This article is based on an interview with Gene Lee, employee #19 at WhatsApp.
-
-
-
-Gene Lee joined WhatsApp as the 19th engineer when the comp...">
+  <meta name="description" content="This article is based on an interview with Gene Lee, employee #19 at WhatsApp. Gene Lee joined WhatsApp as the 19th engineer when the company was largely unknown in the US. She witnessed its explosive...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=5Kn32cIWPSY" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=5Kn32cIWPSY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Pragmatic Engineer - Building WhatsApp with Jean Lee</h1>
       <time datetime="2026-03-18T17:17:37.000Z">
-        March 19, 2026
+        Thursday, March 19, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=5Kn32cIWPSY">Building WhatsApp with Jean Lee</a></p>
-<hr>
-<p>This article is based on an interview with Gene Lee, employee #19 at WhatsApp.</p>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p>This article is based on an interview with Gene Lee, employee #19 at WhatsApp.</p>
 <h2>Introduction</h2>
 <p>Gene Lee joined WhatsApp as the 19th engineer when the company was largely unknown in the US. She witnessed its explosive growth to 450 million users and its eventual acquisition by Facebook for $19 billion.</p>
 <p>In this conversation, she shares insights into how WhatsApp, with a lean team of just 30 engineers, successfully built and maintained a product across eight different platforms. Key topics include why the founders rejected almost every feature request for years and how the team operated effectively without code reviews, stand-ups, or sprint planning. This provides a look into how a small team with minimal process built one of history's most successful products.</p>
@@ -91,7 +103,44 @@ Gene Lee joined WhatsApp as the 19th engineer when the comp...">
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

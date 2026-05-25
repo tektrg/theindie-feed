@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu - The Indie App</title>
+  <title>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
   <meta name="description" content="[0:00:00] In the current engineering landscape, 95% of engineers are utilizing Codex, and 100% of pull requests are reviewed by Codex for the engineering team. It is difficult to identify a profession...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=B26CwKm5C1k" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="YouTube" target="_blank" rel="noopener">Original source</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h1>
       <time datetime="2026-03-14T17:36:35.344Z">
-        March 15, 2026
+        Sunday, March 15, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h1>Engineering in the AI Era: Insights from OpenAI</h1>
 <h2>The Changing Role of the Engineer</h2>
 <p>[0:00:00] In the current engineering landscape, <strong>95% of engineers</strong> are utilizing <strong>Codex</strong>, and <strong>100% of pull requests</strong> are reviewed by <strong>Codex</strong> for the engineering team. It is difficult to identify a profession that has undergone more significant changes in the past few years than software engineering. Engineers are increasingly transitioning into roles similar to tech leads, where they manage extensive fleets of agents. This shift creates a sensation akin to being a wizard casting spells that go out and perform tasks autonomously.</p>
@@ -263,7 +285,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

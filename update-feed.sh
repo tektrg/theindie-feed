@@ -10,14 +10,14 @@ npm run build
 
 echo ""
 echo "📝 Checking for changes..."
-if git diff --quiet public/; then
+if git diff --quiet -- generate-feed.js update-feed.sh public/; then
   echo "✅ No changes detected. Feed is up to date."
   exit 0
 fi
 
 echo ""
 echo "📦 Changes detected. Committing..."
-git add public/
+git add generate-feed.js update-feed.sh public/
 
 # Generate commit message based on changes
 ARTICLE_COUNT=$(find public/articles -name "*.html" | wc -l | xargs)

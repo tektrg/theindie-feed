@@ -3,30 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem! - The Indie App</title>
+  <title>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem! - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!
-
----
-
-Everyone knows that Anthropic models are incredible, especially when it comes to coding. But when ...">
+  <meta name="description" content="Everyone knows that Anthropic models are incredible, especially when it comes to coding. But when you&#039;re working with large codebases and long context, you might notice a problem. Even powerful models...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=srqWFT_TUec" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!</h1>
+      <time datetime="2026-03-16T07:30:55.000Z">
+        Monday, March 16, 2026
+      </time>
+    </div>
   </header>
   <main>
-    <article>
-      <h1>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!</h1>
-      <time datetime="2026-03-24T02:57:57.421Z">
-        March 24, 2026
-      </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=srqWFT_TUec">Claude Code + Obsidian = UNLIMITED Memory! Solves Claude's Memory Problem!</a></p>
-<hr>
-<p>Everyone knows that Anthropic models are incredible, especially when it comes to coding. But when you're working with large codebases and long context, you might notice a problem. Even powerful models like Opus 4.6 can lose focus over time and occasionally forget steps you previously gave them. When you're building a complex project, that can slow things down.</p>
+    <article class="article-body">
+      <p>Everyone knows that Anthropic models are incredible, especially when it comes to coding. But when you're working with large codebases and long context, you might notice a problem. Even powerful models like Opus 4.6 can lose focus over time and occasionally forget steps you previously gave them. When you're building a complex project, that can slow things down.</p>
 <p>This article showcases a simple solution using a free tool called <strong>Obsidian</strong>.</p>
 <h2>The Challenge: AI Forgetfulness in Large Projects</h2>
 <p>Large language models can struggle with maintaining focus over long and complex coding sessions. They might forget key architectural decisions, design choices, or specific instructions you provided earlier. This forces you to constantly re-explain the same context, which slows down development and leads to inconsistent results. The model's performance can degrade, and the very problem of &quot;forgetfulness&quot; can become a significant roadblock in large projects.</p>
@@ -90,7 +106,44 @@ Everyone knows that Anthropic models are incredible, especially when it comes to
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

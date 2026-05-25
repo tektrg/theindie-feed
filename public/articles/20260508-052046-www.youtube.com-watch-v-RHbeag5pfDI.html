@@ -3,23 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Artificial Intelligence Show Podcast - Ep. 212: Musk v. OpenAI Trial Begins, OpenAI-Microsoft Partnership, &amp; Big Tech Earnings - The Indie App</title>
+  <title>The Artificial Intelligence Show Podcast - Ep. 212: Musk v. OpenAI Trial Begins, OpenAI-Microsoft Partnership, &amp; Big Tech Earnings - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="The artificial intelligence world is in constant flux, with major legal battles, strategic partnership evolutions, and significant financial maneuvers shaping its trajectory. This week, we delve into ...">
+  <meta name="description" content="The artificial intelligence world is in constant flux, with major legal battles, strategic partnership evolutions, and significant financial maneuvers shaping its trajectory. This week, we delve into...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=RHbeag5pfDI" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=RHbeag5pfDI" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>The Artificial Intelligence Show Podcast - Ep. 212: Musk v. OpenAI Trial Begins, OpenAI-Microsoft Partnership, &amp; Big Tech Earnings</h1>
       <time datetime="2026-05-05T11:00:44.000Z">
-        May 5, 2026
+        Tuesday, May 5, 2026
       </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
       <h1>The AI Landscape: Musk's Lawsuit, OpenAI's Partnership Shift, and Big Tech's AI Bonanza</h1>
 <p>The artificial intelligence world is in constant flux, with major legal battles, strategic partnership evolutions, and significant financial maneuvers shaping its trajectory. This week, we delve into the high-stakes trial between Elon Musk and OpenAI, a surprising amendment to the OpenAI-Microsoft partnership, the robust earnings reports from Big Tech giants fueled by AI, and the burgeoning valuation of AI startups like Anthropic. We also explore the growing public backlash against AI, the critical importance of leadership in AI adoption, and the potential for government intervention in the AI space.</p>
 <h2>Elon Musk vs. OpenAI Trial Begins</h2>
@@ -131,7 +153,44 @@
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

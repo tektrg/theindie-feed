@@ -3,1536 +3,2933 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Indie App - YouTube Notes</title>
+  <title>The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./style.css">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://myfeed.theindie.app/feed.xml" />
-  <meta name="description" content="Curated notes and insights from YouTube videos">
+  <meta name="description" content="YouTube and web notes, distilled into a chronological digest.">
 </head>
-<body>
-  <header>
-    <h1>📚 The Indie App</h1>
-    <p>Curated notes and insights from YouTube videos</p>
-    <a href="https://myfeed.theindie.app/feed.xml" class="rss-link">📡 Subscribe via RSS</a>
+<body class="feed-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Feed actions">
+      <a class="brand-link" href="./index.html">myfeed.theindie.app</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://myfeed.theindie.app/feed.xml">RSS</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="masthead">
+      <div class="edition-strip">
+        <span>Vol. I</span>
+        <span>167 notes</span>
+        <span>May 20, 2026</span>
+      </div>
+      <h1>The Indie Feed</h1>
+      <p>YouTube and web notes, distilled into a chronological digest.</p>
+      <div class="edition-strip edition-strip--bottom">
+        <span>Chronological digest</span>
+        <span>Delivered by RSS</span>
+        <span>Founded MMXXVI</span>
+      </div>
+    </div>
   </header>
   <main>
-    <ul class="article-list">
+    <div class="edition-layout">
       
-      <li>
-        <a href="./articles/20260521-135315-www.youtube.com-watch-v-q9xD36NCtZ8.html">
-          <h3>The Pragmatic Engineer - Why Rust is different, with Alice Ryhl</h3>
-          <time datetime="2026-05-20T15:49:25.000Z">
-            May 20, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Why Rust is different, with Alice Ryhl
-
----
-
-
-
-Rust is quietly spreading as a language of choice for building reliable and performant applications. But what makes it different? El...</p>
+      <section class="lead-story" aria-labelledby="lead-story-title">
+        <p class="section-kicker">The Feed / Lead story</p>
+        <a class="lead-story__link" href="./articles/20260521-052057-www.youtube.com-watch-v-q9xD36NCtZ8.html">
+          <div class="article-card__meta">
+              <time datetime="2026-05-20T15:49:25.000Z">
+                May 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+          <h2 id="lead-story-title">The Pragmatic Engineer - Why Rust is different, with Alice Ryhl</h2>
+          <p>0:00 · What would your pitch be on why it&#039;s worth checking out Rust or working with Rust? You need a language that&#039;s reliable that&#039;s going to have as few bugs as possible. That&#039;s the idea of Rust. Wha...</p>
         </a>
-      </li>
-    
+      </section>
+      
+      <section class="departments" aria-labelledby="departments-title">
+        <div class="section-rule">
+          <h2 id="departments-title">Departments</h2>
+        </div>
+        <div class="department-grid">
+          
+          <article class="department-card">
+            <a class="department-card__link" href="./articles/20260521-135315-www.youtube.com-watch-v-q9xD36NCtZ8.html">
+              <div class="department-card__number">No. 02</div>
+              <div class="article-card__meta">
+              <time datetime="2026-05-20T15:49:25.000Z">
+                May 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+              <h3>The Pragmatic Engineer - Why Rust is different, with Alice Ryhl</h3>
+              <p>Rust is quietly spreading as a language of choice for building reliable and performant applications. But what makes it different? Ellis Real, a software engineer on Google&#039;s Android Rust team, a core...</p>
+            </a>
+          </article>
 
-      <li>
-        <a href="./articles/20260521-052015-www.youtube.com-watch-v-UNpg6rv65nU.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 215: Musk v. OpenAI Round 3, AI&#039;s Hot New Job, The AI Jobs Apocalypse Debate</h3>
-          <time datetime="2026-05-19T11:00:37.000Z">
-            May 19, 2026
-          </time>
-          <p>The world of artificial intelligence continues its rapid evolution, marked by high-stakes legal battles, the emergence of critical new job roles, and a growing debate about AI&#039;s impact on employment a...</p>
-        </a>
-      </li>
-    
+          <article class="department-card">
+            <a class="department-card__link" href="./articles/20260521-052015-www.youtube.com-watch-v-UNpg6rv65nU.html">
+              <div class="department-card__number">No. 03</div>
+              <div class="article-card__meta">
+              <time datetime="2026-05-19T11:00:37.000Z">
+                May 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+              <h3>The Artificial Intelligence Show Podcast - Ep. 215: Musk v. OpenAI Round 3, AI&#039;s Hot New Job, The AI Jobs Apocalypse Debate</h3>
+              <p>The world of artificial intelligence continues its rapid evolution, marked by high-stakes legal battles, the emergence of critical new job roles, and a growing debate about AI&#039;s impact on employment a...</p>
+            </a>
+          </article>
 
-      <li>
-        <a href="./articles/20260514-201130-www.youtube.com-watch-v-K-Xv8D8NjTk.html">
-          <h3>The Pragmatic Engineer - TypeScript, C# and Turbo Pascal with Anders Hejlsberg</h3>
-          <time datetime="2026-05-13T16:49:20.000Z">
-            May 13, 2026
-          </time>
-          <p>🎥 Watch on YouTube: TypeScript, C# and Turbo Pascal with Anders Hejlsberg
+          <article class="department-card">
+            <a class="department-card__link" href="./articles/20260514-052016-www.youtube.com-watch-v-K-Xv8D8NjTk.html">
+              <div class="department-card__number">No. 04</div>
+              <div class="article-card__meta">
+              <time datetime="2026-05-13T16:49:20.000Z">
+                May 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+              <h3>The Pragmatic Engineer - TypeScript, C# and Turbo Pascal with Anders Hejlsberg</h3>
+              <p>0:00 · Why was it called Turbo Pascal? 0:01 · Cuz it was fast. This was when Audi had their quattros and their turbos. And this thing was fast and super interactive. 0:07 · When you started out buildi...</p>
+            </a>
+          </article>
 
----
-
-
-
-Anders Hejlsberg, a titan in the world of programming languages, has shaped the development landscape for decades. Fr...</p>
-        </a>
-      </li>
-    
-
-      <li>
+          <article class="department-card">
+            <a class="department-card__link" href="./articles/20260514-201130-www.youtube.com-watch-v-K-Xv8D8NjTk.html">
+              <div class="department-card__number">No. 05</div>
+              <div class="article-card__meta">
+              <time datetime="2026-05-13T16:49:20.000Z">
+                May 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+              <h3>The Pragmatic Engineer - TypeScript, C# and Turbo Pascal with Anders Hejlsberg</h3>
+              <p>Anders Hejlsberg, a titan in the world of programming languages, has shaped the development landscape for decades. From the lightning-fast Turbo Pascal to the ubiquitous C# and the game-changing TypeS...</p>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+    <section class="archive-section" aria-labelledby="archive-title">
+      <div class="section-rule">
+        <h2 id="archive-title">Continued Chronicle</h2>
+      </div>
+      <ul class="article-list">
+        
+      <li class="article-card article-card--compact">
         <a href="./articles/20260513-052016-www.youtube.com-watch-v-O5Fc2R_AcuY.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 214: Musk v. OpenAI Round 2, Coinbase AI Layoffs, AI “Soft Nationalization&quot; &amp; xAI + SpaceX</h3>
-          <time datetime="2026-05-12T11:00:38.000Z">
-            May 12, 2026
-          </time>
-          <p>The world of artificial intelligence continues its breakneck pace, with major legal battles, significant corporate restructuring, and ambitious government considerations dominating headlines this week...</p>
+          <div class="article-card__number">06</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-12T11:00:38.000Z">
+                May 12, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 214: Musk v. OpenAI Round 2, Coinbase AI Layoffs, AI “Soft Nationalization&quot; &amp; xAI + SpaceX</h2>
+            <p>The world of artificial intelligence continues its breakneck pace, with major legal battles, significant corporate restructuring, and ambitious government considerations dominating headlines this week...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260508-164505-www.youtube.com-watch-v-IcbuTTVUY7M.html">
-          <h3>The MAD Podcast with Matt Turck - How to Build a Beloved AI Product - Granola CEO Chris Pedregal</h3>
-          <time datetime="2026-05-08T09:46:06.746Z">
-            May 8, 2026
-          </time>
-          <p>🎥 Watch on YouTube: How to Build a Beloved AI Product - Granola CEO Chris Pedregal
-
----
-
-
-
-AI is poised to fundamentally alter how humans work and think. Granola, an AI-powered workspace, aims to be ...</p>
+          <div class="article-card__number">07</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-08T09:46:06.746Z">
+                May 8, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The MAD Podcast with Matt Turck - How to Build a Beloved AI Product - Granola CEO Chris Pedregal</h2>
+            <p>AI is poised to fundamentally alter how humans work and think. Granola, an AI-powered workspace, aims to be the tool that supports this transformation, emerging as a darling in Silicon Valley for its...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260508-052014-www.youtube.com-watch-v-X-IULiTV7jM.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 213: What AI Should Never Do, Enterprise Scaling, Governing AI &amp; Navigating IT Roadblocks</h3>
-          <time datetime="2026-05-07T11:00:57.000Z">
-            May 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 213: What AI Should Never Do, Enterprise Scaling, Governing AI &amp; Navigating IT Roadblocks
-
----
-
-
-
-The rapid advancement of Artificial Intelligence presents both immense opport...</p>
+          <div class="article-card__number">08</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-07T11:00:57.000Z">
+                May 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 213: What AI Should Never Do, Enterprise Scaling, Governing AI &amp; Navigating IT Roadblocks</h2>
+            <p>The rapid advancement of Artificial Intelligence presents both immense opportunities and significant challenges for businesses and individuals. In this special Q&amp;A episode of the Artificial Intelligen...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260508-052046-www.youtube.com-watch-v-RHbeag5pfDI.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 212: Musk v. OpenAI Trial Begins, OpenAI-Microsoft Partnership, &amp; Big Tech Earnings</h3>
-          <time datetime="2026-05-05T11:00:44.000Z">
-            May 5, 2026
-          </time>
-          <p>The artificial intelligence world is in constant flux, with major legal battles, strategic partnership evolutions, and significant financial maneuvers shaping its trajectory. This week, we delve into ...</p>
+          <div class="article-card__number">09</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-05T11:00:44.000Z">
+                May 5, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 212: Musk v. OpenAI Trial Begins, OpenAI-Microsoft Partnership, &amp; Big Tech Earnings</h2>
+            <p>The artificial intelligence world is in constant flux, with major legal battles, strategic partnership evolutions, and significant financial maneuvers shaping its trajectory. This week, we delve into...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260506-182438-www.youtube.com-watch-v-SlGRN8jh2RI.html">
-          <h3>Sequoia Capital - Anthropic&#039;s Boris Cherny: Why Coding Is Solved, and What Comes Next</h3>
-          <time datetime="2026-05-04T17:28:44.000Z">
-            May 5, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Anthropic&#039;s Boris Cherny: Why Coding Is Solved, and What Comes Next
-
----
-
-
-
-The landscape of software development is undergoing a seismic shift, driven by the rapid advancements i...</p>
+          <div class="article-card__number">10</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-04T17:28:44.000Z">
+                May 5, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Sequoia Capital - Anthropic&#039;s Boris Cherny: Why Coding Is Solved, and What Comes Next</h2>
+            <p>The landscape of software development is undergoing a seismic shift, driven by the rapid advancements in AI. Boris Cherny, the creator of Claude Code, sat down with Lauren Reader to discuss this evolu...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260506-182511-www.youtube.com-watch-v-mCO-D3pkviM.html">
-          <h3>Lenny&#039;s Podcast - AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)</h3>
-          <time datetime="2026-05-02T15:01:17.000Z">
-            May 2, 2026
-          </time>
-          <p>🎥 Watch on YouTube: AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)
-
----
-
-
-
-The landscape of software development is undergoing a seismic shift, driven by ...</p>
+          <div class="article-card__number">11</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-05-02T15:01:17.000Z">
+                May 2, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - AI era skills: Why cultivating agency matters more than job titles | Max Schoening (Notion)</h2>
+            <p>The landscape of software development is undergoing a seismic shift, driven by the rapid advancement of AI. This transformation is not just about new tools but a fundamental redefinition of roles, wor...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260506-103748-www.youtube.com-watch-v-96jN2OCOfLs.html">
-          <h3>Sequoia Capital - Andrej Karpathy: From Vibe Coding to Agentic Engineering</h3>
-          <time datetime="2026-04-29T15:21:18.000Z">
-            Apr 29, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Andrej Karpathy: From Vibe Coding to Agentic Engineering
-
----
-
-
-
-The landscape of software development is undergoing a seismic shift, moving beyond explicit rules and learned weig...</p>
+          <div class="article-card__number">12</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-29T15:21:18.000Z">
+                Apr 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Sequoia Capital - Andrej Karpathy: From Vibe Coding to Agentic Engineering</h2>
+            <p>The landscape of software development is undergoing a seismic shift, moving beyond explicit rules and learned weights into a new paradigm driven by Large Language Models (LLMs) and intelligent agents....</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260430-052447-www.youtube.com-watch-v-n5f51gtuGHE.html">
-          <h3>The Pragmatic Engineer - Building Pi, and what makes self-modifying software so fascinating</h3>
-          <time datetime="2026-04-29T14:35:18.000Z">
-            Apr 29, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Building Pi, and what makes self-modifying software so fascinating
-
----![](https://www.youtube.com/watch?v=n5f51gtuGHE)
-
-
-
-
-
- · Can we start with the backstory of why you decided ...</p>
+          <div class="article-card__number">13</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-29T14:35:18.000Z">
+                Apr 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Pragmatic Engineer - Building Pi, and what makes self-modifying software so fascinating</h2>
+            <p>--- · Can we start with the backstory of why you decided to build Pi? I personally simple tools that are stable that I can rely on even if they have non-deterministic parts. So you can ask Pi to modif...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260429-052013-www.youtube.com-watch-v-Tf7jz1zhzJs.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 211: GPT-5.5, ChatGPT Workspace Agents, The Messy Reality of Agents &amp; Google Cloud Next</h3>
-          <time datetime="2026-04-28T11:01:01.000Z">
-            Apr 28, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 211: GPT-5.5, ChatGPT Workspace Agents, The Messy Reality of Agents &amp; Google Cloud Next
-
----![](https://www.youtube.com/watch?v=Tf7jz1zhzJs)
-
-
-
-
-
- · It&#039;s so hard to predict wh...</p>
+          <div class="article-card__number">14</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-28T11:01:01.000Z">
+                Apr 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 211: GPT-5.5, ChatGPT Workspace Agents, The Messy Reality of Agents &amp; Google Cloud Next</h2>
+            <p>--- · It&#039;s so hard to predict what is worth investing time into anyway in AI because a year ago someone would have been go build all your own agents and you might have done really well with that but t...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260429-014019-www.youtube.com-watch-v-osuOwvEhVfQ.html">
-          <h3>David Senra - Roblox’s David Baszucki Built the Biggest Playground on Earth</h3>
-          <time datetime="2026-04-26T12:01:17.000Z">
-            Apr 26, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Roblox’s David Baszucki Built the Biggest Playground on Earth
-
----
-
-![](https://www.youtube.com/watch?v=osuOwvEhVfQ)
-
-
-
-
-
- · You just said something interesting before we started ...</p>
+          <div class="article-card__number">15</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-26T12:01:17.000Z">
+                Apr 26, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>David Senra - Roblox’s David Baszucki Built the Biggest Playground on Earth</h2>
+            <p>· You just said something interesting before we started recording. I asked you how old you were when you started Roblox. · That&#039;s · You told me the age and then you said, &quot;Oh, that&#039;s an interesting st...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260424-163030-www.youtube.com-watch-v-PplmzlgE0kg.html">
-          <h3>Lenny&#039;s Podcast - How Anthropic’s product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code)</h3>
-          <time datetime="2026-04-23T15:00:43.000Z">
-            Apr 23, 2026
-          </time>
-          <p>🎥 Watch on YouTube: How Anthropic’s product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code)
-
----
-
-![](https://www.youtube.com/watch?v=PplmzlgE0kg)
-
-
-
-
-
- · I think it is ver...</p>
+          <div class="article-card__number">16</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-23T15:00:43.000Z">
+                Apr 23, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - How Anthropic’s product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code)</h2>
+            <p>· I think it is very hard to be the amount of AGI pled. It&#039;s very easy to build the product for the super AGI strong model. The hard thing is figuring out for the current model, how do you elicit the...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260423-052015-www.youtube.com-watch-v-SVOrURyOu_U.html">
+          <div class="article-card__number">17</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-22T16:16:18.000Z">
+                Apr 22, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann</h2>
+            <p>0:00 · Should I consider multiszone, multi-reion or even a multi- cloud setup? How much availability risk are you willing to take on versus the computational overheads, but also the human overheads ac...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260424-052014-www.youtube.com-watch-v-SVOrURyOu_U.html">
-          <h3>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann</h3>
-          <time datetime="2026-04-22T16:16:18.000Z">
-            Apr 22, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Designing Data-intensive Applications with Martin Kleppmann
-
----![](https://www.youtube.com/watch?v=SVOrURyOuU)
-
-
-
-
-
- · Should I consider multiszone, multi-reion or even a multi- ...</p>
+          <div class="article-card__number">18</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-22T16:16:18.000Z">
+                Apr 22, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Pragmatic Engineer - Designing Data-intensive Applications with Martin Kleppmann</h2>
+            <p>--- · Should I consider multiszone, multi-reion or even a multi- cloud setup? How much availability risk are you willing to take on versus the computational overheads, but also the human overheads des...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260422-052014-www.youtube.com-watch-v-NQPn7eUvQZE.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 210: Stanford 2026 AI Index, OpenAI Internal Shakeups, Claude Design &amp; Dwarkesh vs. Jensen</h3>
-          <time datetime="2026-04-21T11:00:41.000Z">
-            Apr 21, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 210: Stanford 2026 AI Index, OpenAI Internal Shakeups, Claude Design &amp; Dwarkesh vs. Jensen
-
----![](https://www.youtube.com/watch?v=NQPn7eUvQZE)
-
-
-
- · The brightest minds in AI...</p>
+          <div class="article-card__number">19</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-21T11:00:41.000Z">
+                Apr 21, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 210: Stanford 2026 AI Index, OpenAI Internal Shakeups, Claude Design &amp; Dwarkesh vs. Jensen</h2>
+            <p>--- · The brightest minds in AI don&#039;t necessarily agree on some of the very fundamental things about the industry about definitions of AGI about whether or not large language models are the path forwa...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114626-www.youtube.com-watch-v-eIIWyoy4aF8.html">
-          <h3>ColdFusion - Hey, Whatever Happened to NFTs?</h3>
-          <time datetime="2026-04-20T16:31:16.000Z">
-            Apr 20, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Hey, Whatever Happened to NFTs?
-
----
-
-![](https://www.youtube.com/watch?v=eIIWyoy4aF8)
-
-
-
- · Hi, welcome to another episode of Cold Fusion.
-
- · When future historians study the ye...</p>
+          <div class="article-card__number">20</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-20T16:31:16.000Z">
+                Apr 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>ColdFusion - Hey, Whatever Happened to NFTs?</h2>
+            <p>· Hi, welcome to another episode of Cold Fusion. · When future historians study the year 2021, they&#039;d note a few interesting things. They&#039;d observe that we were all stuck in our homes with nothing to...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114747-www.youtube.com-watch-v-Lg-meK5IU8Q.html">
-          <h3>IBM Technology - What AI Agent Skills Are and How They Work</h3>
-          <time datetime="2026-04-20T11:00:36.000Z">
-            Apr 20, 2026
-          </time>
-          <p>🎥 Watch on YouTube: What AI Agent Skills Are and How They Work
-
----
-
-![](https://www.youtube.com/watch?v=Lg-meK5IU8Q)
-
-
-
- · What are AI agent skills and  why have they become an open standard adopted...</p>
+          <div class="article-card__number">21</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-20T11:00:36.000Z">
+                Apr 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>IBM Technology - What AI Agent Skills Are and How They Work</h2>
+            <p>· What are AI agent skills and why have they become an open standard adopted by practically every major AI coding platform? · Well, because skills address a specific problem with agents. · Now AI agen...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260418-222218-www.youtube.com-watch-v-7rzYDM6vMtI.html">
-          <h3>TED - How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED</h3>
-          <time datetime="2026-04-18T15:22:55.173Z">
-            Apr 18, 2026
-          </time>
-          <p>🎥 Watch on YouTube: How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED
-
----
-
-![](https://www.youtube.com/watch?v=7rzYDM6vMtI)
-
-
-
- · What&#039;s OpenClaw?
-
- · I&#039;ve been programming...</p>
+          <div class="article-card__number">22</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-18T15:22:55.173Z">
+                Apr 18, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>TED - How I Created OpenClaw, the Breakthrough AI Agent | Peter Steinberger | TED</h2>
+            <p>· What&#039;s OpenClaw? · I&#039;ve been programming since I was 14. · Building software felt playing a video game. · I couldn&#039;t stop until I did. · I created a company. · I poured a decade of my life into it....</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114653-www.youtube.com-watch-v-qLMYOhaKcZs.html">
-          <h3>Ali Abdaal - The AI Skill Gap Is About To Get Brutal</h3>
-          <time datetime="2026-04-18T12:01:35.000Z">
-            Apr 18, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The AI Skill Gap Is About To Get Brutal
-
----
-
-![](https://www.youtube.com/watch?v=qLMYOhaKcZs)
-
-
-
-
-
- · There is an incredible piece of software called Claude Code that I&#039;ve been u...</p>
+          <div class="article-card__number">23</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-18T12:01:35.000Z">
+                Apr 18, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Ali Abdaal - The AI Skill Gap Is About To Get Brutal</h2>
+            <p>· There is an incredible piece of software called Claude Code that I&#039;ve been using for the last 3 months and it has completely and utterly changed my life. · And this video is the video that I&#039;m sendi...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260418-222303-www.youtube.com-watch-v-zgNvts_2TUE.html">
-          <h3>AI Engineer - State of the Claw — Peter Steinberger</h3>
-          <time datetime="2026-04-17T15:30:06.000Z">
-            Apr 17, 2026
-          </time>
-          <p>🎥 Watch on YouTube: State of the Claw — Peter Steinberger
-
----
-
-![](https://www.youtube.com/watch?v=zgNvts2TUE)
-
-
-
- · Our next presenter is the creator of Open Claw, the world&#039;s fastest growing open-...</p>
+          <div class="article-card__number">24</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-17T15:30:06.000Z">
+                Apr 17, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>AI Engineer - State of the Claw — Peter Steinberger</h2>
+            <p>· Our next presenter is the creator of Open Claw, the world&#039;s fastest growing open-source AI. He recently joined OpenAI to work on bringing agents to everyone. Please join me in welcoming to the stage...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260418-222338-www.youtube.com-watch-v-FX0De_ccROU.html">
-          <h3>EO - AI Is Killing the Career Ladder. A Stanford Economist Explains What Comes Next | Bharat Chandar</h3>
-          <time datetime="2026-04-16T14:30:13.000Z">
-            Apr 16, 2026
-          </time>
-          <p>🎥 Watch on YouTube: AI Is Killing the Career Ladder. A Stanford Economist Explains What Comes Next | Bharat Chandar
-
----
-
-![](https://www.youtube.com/watch?v=FX0DeccROU)
-
-
-
-
-
- · We&#039;re seeing that the...</p>
+          <div class="article-card__number">25</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-16T14:30:13.000Z">
+                Apr 16, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>EO - AI Is Killing the Career Ladder. A Stanford Economist Explains What Comes Next | Bharat Chandar</h2>
+            <p>· We&#039;re seeing that the jobs that are more exposed to AI, the young workers in those jobs are seeing 16% slower employment growth. So that&#039;s pretty large. The structural change in AI capabilities that...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260417-010325-www.youtube.com-watch-v-Hrbq66XqtCo.html">
-          <h3>Dwarkesh Patel - Jensen Huang – Will Nvidia’s moat persist?</h3>
-          <time datetime="2026-04-15T16:42:32.000Z">
-            Apr 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Jensen Huang – Will Nvidia’s moat persist?
-
----
-
-![](https://www.youtube.com/watch?v=Hrbq66XqtCo)
-
-
-
-
-
- · We&#039;ve seen the valuations of a bunch of  software companies crash because...</p>
+          <div class="article-card__number">26</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T16:42:32.000Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dwarkesh Patel - Jensen Huang – Will Nvidia’s moat persist?</h2>
+            <p>· We&#039;ve seen the valuations of a bunch of software companies crash because people are expecting AI to commoditize software. There&#039;s a potentially naive way of thinking about things, which is: look, Nv...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-210416-www.youtube.com-shorts-W8XNHsZWFSo.html">
-          <h3>Ali Abdaal - Claude&#039;s new features are insane #ad</h3>
-          <time datetime="2026-04-15T14:04:46.023Z">
-            Apr 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Claude&#039;s new features are insane #ad
-
----
-
-![](https://www.youtube.com/watch?v=embed)...</p>
+          <div class="article-card__number">27</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T14:04:46.023Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Ali Abdaal - Claude&#039;s new features are insane #ad</h2>
+            <p>...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204041-www.youtube.com-watch-v-ImtTIsFwlO0.html">
-          <h3>Anhedonia - Meet Openclaw UI</h3>
-          <time datetime="2026-04-15T13:40:55.953Z">
-            Apr 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Meet Openclaw UI
-
----
-
-![](https://www.youtube.com/watch?v=ImtTIsFwlO0)...</p>
+          <div class="article-card__number">28</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T13:40:55.953Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Anhedonia - Meet Openclaw UI</h2>
+            <p>...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204019-www.youtube.com-watch-v-laPVR5nKMaE.html">
-          <h3>Yinfi - How China Built Tech Power Without Critical Thinking</h3>
-          <time datetime="2026-04-15T13:40:36.289Z">
-            Apr 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: How China Built Tech Power Without Critical Thinking
-
----
-
-![](https://www.youtube.com/watch?v=laPVR5nKMaE)
-
-
-
-
-
- · I was raised in China&#039;s matrix. I was conditioned  from childho...</p>
+          <div class="article-card__number">29</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T13:40:36.289Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Yinfi - How China Built Tech Power Without Critical Thinking</h2>
+            <p>· I was raised in China&#039;s matrix. I was conditioned from childhood to solve complex problems, memorise information efficiently, and perform at the top of my class. But I was also conditioned to do the...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260415-182252-www.youtube.com-shorts-W8XNHsZWFSo.html">
+          <div class="article-card__number">30</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T11:23:22.970Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Ali Abdaal - Claude&#039;s new features are insane #ad</h2>
+            <p>...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182046-www.youtube.com-watch-v-ULoQCpBx8vs-pp-ugUEEgJlbg%3D%3D.html">
-          <h3>Vietnam Innovators Digest - Emergency Podcast: The Iran War Impact on Vietnam | Michael Kokalari | EP 384</h3>
-          <time datetime="2026-04-15T11:21:05.872Z">
-            Apr 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Emergency Podcast: The Iran War Impact on Vietnam | Michael Kokalari | EP 384
-
----
-
-![](https://www.youtube.com/watch?v=ULoQCpBx8vs)
-
-
-
- · 20 million barrels of oil flows through ...</p>
+          <div class="article-card__number">31</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-15T11:21:05.872Z">
+                Apr 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Vietnam Innovators Digest - Emergency Podcast: The Iran War Impact on Vietnam | Michael Kokalari | EP 384</h2>
+            <p>· 20 million barrels of oil flows through the Strait of Hormuz, which \[music\] has been disrupted. That&#039;s about 17% of global oil demand. Prices went up 4x. · Trump is about to address. He&#039;ll probabl...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-052012-www.youtube.com-watch-v-Br0GykRa7vo.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 209: Claude Mythos, Project Glasswing, Claude Code Leak, &amp; OpenAI Raises $122B</h3>
-          <time datetime="2026-04-14T11:00:17.000Z">
-            Apr 14, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 209: Claude Mythos, Project Glasswing, Claude Code Leak, &amp; OpenAI Raises $122B
-
----![](https://www.youtube.com/watch?v=Br0GykRa7vo)
-
-
-
-
-
- · I have concerns around the biggest ...</p>
+          <div class="article-card__number">32</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-14T11:00:17.000Z">
+                Apr 14, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 209: Claude Mythos, Project Glasswing, Claude Code Leak, &amp; OpenAI Raises $122B</h2>
+            <p>--- · I have concerns around the biggest companies having access to the future frontier models and then the potential centralization of power. So if you get into this situation where we get these mass...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260418-222358-www.youtube.com-watch-v-MIudp4xv7Io.html">
-          <h3>Asian Boss - Why Chinese AI Is Suddenly So Good (ft. DeepSeek, SeeDance 2.0) | AB Explained</h3>
-          <time datetime="2026-04-14T02:30:17.000Z">
-            Apr 14, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Why Chinese AI Is Suddenly So Good (ft. DeepSeek, SeeDance 2.0) | AB Explained
-
----
-
-![](https://www.youtube.com/watch?v=MIudp4xv7Io)
-
-
-
-
-
- · Do you remember by any chance what yo...</p>
+          <div class="article-card__number">33</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-14T02:30:17.000Z">
+                Apr 14, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Asian Boss - Why Chinese AI Is Suddenly So Good (ft. DeepSeek, SeeDance 2.0) | AB Explained</h2>
+            <p>· Do you remember by any chance what you were doing on March 10th, 2016? · I know it sounds pretty specific, a complete random date roughly ten years ago, but on that day something happened that would...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260413-190344-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h3>
-          <time datetime="2026-04-13T12:05:16.475Z">
-            Apr 13, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent
-
----
-
-![](https://www.youtube.com/watch?v=9wfFH4TLIcQ)
-
-
-
-
-
- · all the labs reali...</p>
+          <div class="article-card__number">34</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T12:05:16.475Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>· all the labs realize what Claude code unlocked. And it wasn&#039;t like it was the first coding agent. It It was just the best. They did something different with the harness, like how they enabled it to...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260413-190239-www.youtube.com-watch-v-Hr7HrauSwlM.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h3>
-          <time datetime="2026-04-13T12:03:41.124Z">
-            Apr 13, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown
-
----
-
-![](https://www.youtube.com/watch?v=Hr7HrauSwlM)
-
-
-
-
-
- · Based on all the conversations I have ...</p>
+          <div class="article-card__number">35</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T12:03:41.124Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>· Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. \[music\] Welcome to AI Answers, a special Q&amp;A se...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260413-190102-www.youtube.com-watch-v-3wyFMO9T8kg.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h3>
-          <time datetime="2026-04-13T12:02:31.712Z">
-            Apr 13, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium
-
----
-
-![](https://www.youtube.com/watch?v=3wyFMO9T8kg)
-
-
-
-
-
- · is just this li...</p>
+          <div class="article-card__number">36</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T12:02:31.712Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>· is just this like completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, geopolitics. · Welcome...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-161548-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">37</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:16:01.566Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>0:00 · all the labs realize what Claude code unlocked. And it wasn&#039;t like it was the first coding agent. It It was just the best. They did something different with the harness, like how they enabled i...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-161452-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">38</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:15:11.486Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>0:00 · Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. \[music\] Welcome to AI Answers, a special Q...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-161304-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">39</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:13:21.561Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>0:00 · is just this like completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, geopolitics. 0:14...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-160931-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">40</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:09:46.512Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>0:00 · all the labs realize what Claude code unlocked. And it wasn&#039;t like it was the first coding agent. It It was just the best. They did something different with the harness, like how they enabled i...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-160907-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">41</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:09:21.243Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>0:00 · Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. \[music\] Welcome to AI Answers, a special Q...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-160841-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">42</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T09:08:56.788Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>0:00 · is just this like completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, geopolitics. 0:14...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140404-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">43</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:09:13.276Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>All the labs realize what Claude Code unlocked. It wasn&#039;t the first coding agent; it was just the best. They did something different with the harness and how they enabled it to do what it does. All th...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140837-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">44</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:08:52.145Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>0:00 · all the labs realize what Claude code unlocked. And it wasn&#039;t like it was the first coding agent. It It was just the best. They did something different with the harness, like how they enabled i...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140608-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">45</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:08:32.399Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>Based on all the conversations I have had with leaders of major companies, I have yet to find one that is prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A series from t...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140236-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">46</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:06:04.737Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>It is just this completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, and geopolitics. Welcome to...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140048-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">47</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:03:59.054Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>Paul Ritzer: Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A s...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-135747-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">48</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T07:00:43.941Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>It is just this completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, and geopolitics. Welcome to...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-135519-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">49</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T06:57:49.553Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>[Paul Roetzer]: All the labs realize what Claude Code unlocked. And it wasn&#039;t like it was the first coding agent. It was just the best. They did something different with the harness, like how they ena...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-135337-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">50</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T06:55:15.512Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>[Paul Ritzer]: Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. Welcome to AI Answers, a special Q&amp;A...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-134929-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">51</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T06:53:32.804Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>[Paul Ritzer]: It is just this completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, and geopolit...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114745-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">52</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:48:25.602Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>In a week marked by rapid strategic shifts and high-stakes corporate restructuring, the leading artificial intelligence labs are signaling a definitive move away from &quot;side quests&quot; and toward a singul...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114705-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">53</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:47:42.654Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>In this edition of AI Answers, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Chief Marketing Officer Kathy McPhillips to address the most pressing questions from busi...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114631-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">54</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:47:08.921Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>In a week marked by rapid strategic shifts and high-stakes corporate restructuring, the landscape of artificial intelligence has entered a new phase. The leading labs—OpenAI, Anthropic, Google, and Mi...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114619-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">55</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:47:01.260Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>In late March 2026, the landscape of artificial intelligence is shifting from theoretical potential to a high-stakes battle for economic and geopolitical dominance. As the industry approaches what man...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114547-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">56</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:46:28.271Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>In this edition of AI Answers, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Kathy McFillips, Chief Marketing Officer at SmarterX, to address critical questions from...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114443-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">57</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:45:43.061Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>The air in the artificial intelligence sector has grown thick with anticipation. As we stand on the precipice of April 2026, the industry is no longer just about &quot;chatbots&quot; or &quot;image generators.&quot; It h...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114337-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">58</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:44:26.768Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>In the rapidly evolving landscape of artificial intelligence, the industry has reached a critical juncture. What began as a race to build the most conversational chatbot has transformed into a high-st...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114246-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">59</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:43:33.433Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>Artificial intelligence is no longer a distant prospect or a niche tool for the tech-obsessed; it has become the defining challenge and opportunity for modern business leaders. In this deep-dive explo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114224-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">60</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:42:37.022Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>0:00 · is just this like completely wild unknown world we&#039;re heading into where basically these five companies are going to decide everything when it comes to the economy, business, geopolitics. 0:14...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114210-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">61</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:42:22.891Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>0:00 · all the labs realize what Claude code unlocked. And it wasn&#039;t like it was the first coding agent. It It was just the best. They did something different with the harness, like how they enabled i...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114149-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">62</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:42:00.923Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: What NOT to Automate, Human-First AI Training &amp; Amazon’s AI Slowdown</h2>
+            <p>0:00 · Based on all the conversations I have had with leaders of major companies, I have yet to find one that&#039;s prepared for it, and that worries me a lot. \[music\] Welcome to AI Answers, a special Q...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114116-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">63</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-13T04:41:46.138Z">
+                Apr 13, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>The world of artificial intelligence is in constant flux, with rapid advancements and intense competition shaping its trajectory. This episode of The Artificial Intelligence Show delves into the intri...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182110-www.youtube.com-watch-v-xrLy3RxtpQE.html">
-          <h3>Mo Gawdat - The Biggest AI Opportunity Is Still Being Missed</h3>
-          <time datetime="2026-04-11T07:00:53.000Z">
-            Apr 11, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The Biggest AI Opportunity Is Still Being Missed
-
----
-
-![](https://www.youtube.com/watch?v=xrLy3RxtpQE)
-
-
-
- · Welcome onto our stage Mo Gaudat.
-
- · Thank you so much. It is lovely...</p>
+          <div class="article-card__number">64</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-11T07:00:53.000Z">
+                Apr 11, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Mo Gawdat - The Biggest AI Opportunity Is Still Being Missed</h2>
+            <p>· Welcome onto our stage Mo Gaudat. · Thank you so much. It is lovely to be here. I have not been to Mumbai for around 9 years and you may not notice the difference. I absolutely notice the difference...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260409-052027-www.youtube.com-watch-v-JiWgKRgdgpI.html">
+          <div class="article-card__number">65</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-08T17:14:35.000Z">
+                Apr 9, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Pragmatic Engineer - DHH’s new way of writing code</h2>
+            <p>David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a significant shift in his perspective on AI. Once a vocal skeptic, DHH has emb...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260409-213541-www.youtube.com-watch-v-JiWgKRgdgpI.html">
-          <h3> - DHH’s new way of writing code</h3>
-          <time datetime="2026-04-08T17:14:35.000Z">
-            Apr 9, 2026
-          </time>
-          <p>🎥 Watch on YouTube: DHH’s new way of writing code
-
----
-
-
-
-David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a notable shift in h...</p>
+          <div class="article-card__number">66</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-08T17:14:35.000Z">
+                Apr 9, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2> - DHH’s new way of writing code</h2>
+            <p>David Heinemeier Hansson, famously known as DHH, the creator of Ruby on Rails and co-founder of 37signals, has undergone a notable shift in his perspective on Artificial Intelligence. While previously...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-235150-music.youtube.com-watch-v-2kSrPTwW4Pk.html">
-          <h3>YouTube Music - nơi nào cho con tim nguôi ngoai ?</h3>
-          <time datetime="2026-04-07T16:52:11.166Z">
-            Apr 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: nơi nào cho con tim nguôi ngoai ?
-
----
-
-
-
-The melancholic melody paints a picture of a love that has faded, leaving behind a profound sense of loss. The lyrics express the pain of...</p>
+          <div class="article-card__number">67</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T16:52:11.166Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>YouTube Music - nơi nào cho con tim nguôi ngoai ?</h2>
+            <p>The melancholic melody paints a picture of a love that has faded, leaving behind a profound sense of loss. The lyrics express the pain of separation and the haunting memories of a once-vibrant connect...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-212452-www.youtube.com-watch-v-mAM9AkNuBEE.html">
-          <h3>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h3>
-          <time datetime="2026-04-07T14:25:45.415Z">
-            Apr 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)
-
----
-
-
-
-The internet, once built by humans for humans, is on the cusp of a profound transform...</p>
+          <div class="article-card__number">68</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T14:25:45.415Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>The internet, once built by humans for humans, is on the cusp of a profound transformation. Aurélien, co-founder of Strapi and now FIMO.ai, believes the web will soon be built by AI agents, primarily...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182131-www.youtube.com-watch-v-SSya123u9Yk-pp-ugUHEgVlbi1VUw%3D%3D.html">
-          <h3>20VC with Harry Stebbings - Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI</h3>
-          <time datetime="2026-04-07T14:04:57.000Z">
-            Apr 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI
-
----
-
-![](https://www.youtube.com/watch?v=SSya123u9Yk)
-
-
-
-
-
- · I would say about...</p>
+          <div class="article-card__number">69</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T14:04:57.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>20VC with Harry Stebbings - Demis Hassabis: Why AGI is Bigger than the Industrial Revolution &amp; Where Are The Bottlenecks in AI</h2>
+            <p>· I would say about 90% of the breakthroughs that underpin the modern AI industry were done either by Google brain or Google research or deep mind. · So one of our groups the returns are still very su...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260415-181725-www.youtube.com-watch-IUCavD-RxN8.html">
+          <div class="article-card__number">70</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T12:42:29.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>My First Million - We asked a $18.9B Investor how to survive the AI bubble</h2>
+            <p>...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260415-182023-www.youtube.com-watch-IUCavD-RxN8.html">
+          <div class="article-card__number">71</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T12:42:29.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>My First Million - We asked a $18.9B Investor how to survive the AI bubble</h2>
+            <p>...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204215-www.youtube.com-watch-v-IUCavD-RxN8.html">
-          <h3>My First Million - We asked a $18.9B Investor how to survive the AI bubble</h3>
-          <time datetime="2026-04-07T12:42:29.000Z">
-            Apr 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: We asked a $18.9B Investor how to survive the AI bubble
-
----
-
-![](https://www.youtube.com/watch?v=IUCavD-RxN8)
-
-
-
-
-
- · 15 years ago, we set an objective to become the number one p...</p>
+          <div class="article-card__number">72</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T12:42:29.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>My First Million - We asked a $18.9B Investor how to survive the AI bubble</h2>
+            <p>· 15 years ago, we set an objective to become the number one performing private equity. Since we set that goal, the four funds we invested after that have all done 5x or better. · How do you do 5x in...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260408-052014-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">73</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260409-052013-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">74</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260410-052014-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">75</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260411-052151-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">76</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260412-052014-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">77</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-052013-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">78</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>The first quarter of 2026 proved to be a period of unprecedented acceleration in artificial intelligence, marked by a frenzy of model releases, significant shifts in industry adoption, and a growing a...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114038-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">79</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>The first quarter of 2026 has been a whirlwind of rapid advancements and significant shifts in the artificial intelligence landscape. From a relentless pace of model releases to the burgeoning influen...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114202-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">80</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114311-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">81</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>In this special edition of the Artificial Intelligence Show, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Mike Kaput, Chief Content Officer at SmarterX, for a deep-d...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-114528-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">82</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>In this special edition of the Artificial Intelligence Show, Paul Roetzer, founder and CEO of SmarterX and the Marketing AI Institute, joins Mike Kaput, Chief Content Officer at SmarterX, to conduct a...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-134717-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">83</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their employees in...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-135230-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">84</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-140021-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">85</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their employees in...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-160743-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">86</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260413-161159-www.youtube.com-watch-v-MXmR-_zB_dg.html">
+          <div class="article-card__number">87</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>0:00 · The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their emplo...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260413-185937-www.youtube.com-watch-v-MXmR-_zB_dg.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h3>
-          <time datetime="2026-04-07T11:00:39.000Z">
-            Apr 7, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government
-
----
-
-![](https://www.youtube.com/watch?v=MXmR-zBdg)
-
-
-
-
-
- · The organizations that...</p>
+          <div class="article-card__number">88</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-07T11:00:39.000Z">
+                Apr 7, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 208: Q1 Trends Briefing - Model Release Frenzy, AI Lobbying, &amp; Anthropic v. U.S. Government</h2>
+            <p>· The organizations that are really struggling here often lack CEOs who have presented a clear vision for the future of work in their organization and what is required and expected of their employees...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-234600-www.youtube.com-watch-v-JOA5x89MjRc.html">
-          <h3>Jean Lee - The New Bar for Engineers in the Age of AI</h3>
-          <time datetime="2026-04-06T13:03:00.000Z">
-            Apr 6, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The New Bar for Engineers in the Age of AI
-
----
-
-
-
-The world of software engineering is in constant flux, shaped by rapid technological advancements and shifting industry paradigm...</p>
+          <div class="article-card__number">89</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-06T13:03:00.000Z">
+                Apr 6, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Jean Lee - The New Bar for Engineers in the Age of AI</h2>
+            <p>The world of software engineering is in constant flux, shaped by rapid technological advancements and shifting industry paradigms. Gerge Oros, creator of The Pragmatic Engineer newsletter and podcast,...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-234435-www.youtube.com-watch-v-3rNqNvwNcrM.html">
-          <h3>Dan Koe - I&#039;m begging you to start writing essays (even if you hate writing)</h3>
-          <time datetime="2026-04-05T18:03:17.000Z">
-            Apr 6, 2026
-          </time>
-          <p>🎥 Watch on YouTube: I&#039;m begging you to start writing essays (even if you hate writing)
-
----
-
-
-
-We are living through an unprecedented era of information overload, where the very fabric of our ability...</p>
+          <div class="article-card__number">90</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-05T18:03:17.000Z">
+                Apr 6, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dan Koe - I&#039;m begging you to start writing essays (even if you hate writing)</h2>
+            <p>We are living through an unprecedented era of information overload, where the very fabric of our ability to think is being eroded. The constant barrage of short-form content, algorithmically driven en...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260408-013249-www.youtube.com-watch-v-S0oxWHGtg2w.html">
-          <h3>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</h3>
-          <time datetime="2026-04-03T23:06:37.000Z">
-            Apr 4, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐
-
----
-
-
-
-Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecesso...</p>
+          <div class="article-card__number">91</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-03T23:06:37.000Z">
+                Apr 4, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>xCreate - Gemma 4 Multimodal Local AI - Can it Recreate My App? 🧐</h2>
+            <p>Google has once again entered the openweight model arena with Gemma 4, building upon the success of its predecessors. While previous versions like Gemma 3 were lauded for their density and performance...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-234514-www.youtube.com-watch-v-knx2wrILP1M.html">
-          <h3>Latent Space - Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;</h3>
-          <time datetime="2026-04-03T16:56:23.000Z">
-            Apr 3, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;
-
----
-
-
-
-The current explosion of AI capabilities, exemplified by tools like Ch...</p>
+          <div class="article-card__number">92</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-03T16:56:23.000Z">
+                Apr 3, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Latent Space - Marc Andreessen introspects on Death of the Browser, Pi + OpenClaw, and Why &quot;This Time Is Different&quot;</h2>
+            <p>The current explosion of AI capabilities, exemplified by tools like ChatGPT, is not a sudden phenomenon but rather the culmination of decades of research and development. This perspective, shared by v...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260408-013057-www.youtube.com-watch-v-BjqjvfAzSQ4.html">
-          <h3>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</h3>
-          <time datetime="2026-04-03T00:06:59.000Z">
-            Apr 3, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!
-
----
-
-
-
-Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for develop...</p>
+          <div class="article-card__number">93</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-03T00:06:59.000Z">
+                Apr 3, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Bijan Bowen - Gemma 4 Is HERE – Testing Google’s New 26B &amp; 31B Open Models!</h2>
+            <p>Google has unveiled its highly anticipated Gemma 4 family of models, offering four distinct sizes for developers and enthusiasts. This release is particularly exciting for the open-source community, a...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-234932-www.youtube.com-watch-v-wc8FBhQtdsA.html">
-          <h3>Lenny&#039;s Podcast - An AI state of the union: We’ve passed the inflection point &amp; dark factories are coming</h3>
-          <time datetime="2026-04-02T12:31:15.000Z">
-            Apr 2, 2026
-          </time>
-          <p>🎥 Watch on YouTube: An AI state of the union: We’ve passed the inflection point &amp; dark factories are coming
-
----
-
-
-
-The landscape of software development has been dramatically altered by the advent o...</p>
+          <div class="article-card__number">94</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-02T12:31:15.000Z">
+                Apr 2, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - An AI state of the union: We’ve passed the inflection point &amp; dark factories are coming</h2>
+            <p>The landscape of software development has been dramatically altered by the advent of powerful AI coding agents. What was once a painstaking process of manual coding has transformed into a collaborativ...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-211053-www.youtube.com-watch-v-9ZbbxSgrjhw.html">
-          <h3>Core Memory Podcast - He&#039;s Built The First Full-Time AI CEO</h3>
-          <time datetime="2026-04-01T12:36:41.000Z">
-            Apr 1, 2026
-          </time>
-          <p>🎥 Watch on YouTube: He&#039;s Built The First Full-Time AI CEO
-
----
-
-
-
-Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the tech world. His journey from a young coder in Brazil ...</p>
+          <div class="article-card__number">95</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-04-01T12:36:41.000Z">
+                Apr 1, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Core Memory Podcast - He&#039;s Built The First Full-Time AI CEO</h2>
+            <p>Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the tech world. His journey from a young coder in Brazil to leading a fintech giant acquired for $5.15 billion is a testamen...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260407-235107-www.youtube.com-watch-v-Dli5slNaJu0.html">
-          <h3>Mastra - I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)</h3>
-          <time datetime="2026-03-31T13:10:07.000Z">
-            Mar 31, 2026
-          </time>
-          <p>🎥 Watch on YouTube: I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)
-
----
-
-
-
-The landscape of AI-powered coding assistants has evolved at a breakneck pace. What began with simple co...</p>
+          <div class="article-card__number">96</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-31T13:10:07.000Z">
+                Mar 31, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Mastra - I Hated Every Coding Agent, So I Built My Own — Mario Zechner (Pi)</h2>
+            <p>The landscape of AI-powered coding assistants has evolved at a breakneck pace. What began with simple copy-pasting from chatbots has transformed into sophisticated tools that can write, debug, and ref...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260403-231532-www.youtube.com-watch-v-3wyFMO9T8kg.html">
+          <div class="article-card__number">97</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-31T11:00:05.000Z">
+                Mar 31, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 207: OpenAI v. Anthropic Feud, Claude Mythos Leak, Brutally Honest CEOs &amp; Data Center Moratorium</h2>
+            <p>The artificial intelligence landscape is evolving at an unprecedented pace, marked by intense rivalries between major players, surprising leaks of cutting-edge technology, and a growing urgency to und...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260329-230500-music.youtube.com-podcast-DIa0MYJzM5I.html">
+          <div class="article-card__number">98</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-29T16:05:08.164Z">
+                Mar 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2> - Trình duyệt của bạn không còn được hỗ trợ. Vui lòng nâng cấp.</h2>
+            <p>...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260331-181146-www.youtube.com-watch-v-DIa0MYJzM5I.html">
+          <div class="article-card__number">99</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-29T12:30:20.000Z">
+                Mar 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo</h2>
+            <p>0:00 · with OpenClaw. You started off as one of the leading skeptics. 0:03 · My first install, I truly spent eight hours getting OpenClaw up and running. In return, for those eight hours, I got my per...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260331-181355-www.youtube.com-watch-v-DIa0MYJzM5I.html">
+          <div class="article-card__number">100</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-29T12:30:20.000Z">
+                Mar 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo</h2>
+            <p>0:00 · with OpenClaw. You started off as one of the leading skeptics. 0:03 · My first install, I truly spent eight hours getting OpenClaw up and running. In return, for those eight hours, I got my per...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260331-181855-www.youtube.com-watch-v-DIa0MYJzM5I.html">
-          <h3>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo</h3>
-          <time datetime="2026-03-29T12:30:20.000Z">
-            Mar 29, 2026
-          </time>
-          <p>🎥 Watch on YouTube: From skeptic to true believer: How OpenClaw changed my life | Claire Vo
-
----
-
-
-
-Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of an AI startup, onc...</p>
+          <div class="article-card__number">101</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-29T12:30:20.000Z">
+                Mar 29, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - From skeptic to true believer: How OpenClaw changed my life | Claire Vo</h2>
+            <p>Claire Vo, a seasoned engineer, three-time Chief Product Officer, and founder of an AI startup, once stood as a prominent skeptic of OpenClaw. Her initial experience was a grueling eight-hour setup th...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-152114-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">102</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T08:22:08.960Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race</h2>
+            <p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings: Based on all the conversations I have had with leaders of major companies, I have yet t...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-151732-www.youtube.com-watch-v-qQAhK2EWw4I.html">
-          <h3>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</h3>
-          <time datetime="2026-03-28T08:18:12.384Z">
-            Mar 28, 2026
-          </time>
-          <p>🎥 Watch on YouTube: No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers
-
----
-
-Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs wi...</p>
+          <div class="article-card__number">103</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T08:18:12.384Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</h2>
+            <p>Here is the cleaned YouTube transcript, processed line by line and then formatted into paragraphs with headings. Since 2022, the future of software is in question. This is from the investor community...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-151646-www.youtube.com-watch-v-WHWAYiY_RnQ.html">
-          <h3>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</h3>
-          <time datetime="2026-03-28T08:17:26.213Z">
-            Mar 28, 2026
-          </time>
-          <p>🎥 Watch on YouTube: No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski
-
----
-
-Here is the cleaned YouTube transcript, processed line by line:
-
-0:05 · Hi listeners, welcome back to No Pri...</p>
+          <div class="article-card__number">104</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T08:17:26.213Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</h2>
+            <p>Here is the cleaned YouTube transcript, processed line by line: 0:05 · Hi listeners, welcome back to No Priors. 0:08 · Today I&#039;m here with Motti Staniszewski, the co-founder and CEO of 11 Labs, which...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-151059-www.youtube.com-watch-v-mAM9AkNuBEE.html">
+          <div class="article-card__number">105</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T08:12:01.674Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>0:00 We had two options: either we see a competitor, an AI-native CMS, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly built...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-150412-www.youtube.com-watch-v-mAM9AkNuBEE.html">
+          <div class="article-card__number">106</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T08:05:07.931Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>We had two options: either we see a competitor, an AI-native CMS, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly built by h...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-144829-www.youtube.com-watch-v-mAM9AkNuBEE.html">
+          <div class="article-card__number">107</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T07:52:08.106Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>We had those two options. Either we see a competitor, an AI-native CMS, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly buil...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-144657-www.youtube.com-watch-v-mAM9AkNuBEE.html">
+          <div class="article-card__number">108</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-28T07:47:52.193Z">
+                Mar 28, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>We had two options: either we see a competitor, an AI native CMS, being created in front of us, or we decide to create our own competitor that could become our best ally. The web was mostly built by h...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260327-050013-www.youtube.com-watch-v-Hr7HrauSwlM.html">
+          <div class="article-card__number">109</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-26T22:00:34.543Z">
+                Mar 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 206: AI Council Metrics, Motivating Passive Adopters &amp; True Bottleneck in the AI Race</h2>
+            <p>In this edition of AI Answers, Paul Roetzer (Founder and CEO of SmarterX and the Marketing AI Institute) and Kathy McFillips (Chief Marketing Officer at SmarterX) tackle a series of pressing questions...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260327-002110-www.youtube.com-watch-v-mAM9AkNuBEE.html">
+          <div class="article-card__number">110</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-26T17:23:04.774Z">
+                Mar 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Le French Product - The web you know is about to be rebuilt - Aurelien Georget (Founder of Strapi &amp; Fimo)</h2>
+            <p>This article explores the evolution of content management and the emergence of &quot;agentic&quot; web development, based on a conversation with Aurélien Georget, co-founder of the industry-standard headless CM...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260327-002056-www.youtube.com-watch-v-Cn8HBj8QAbk.html">
+          <div class="article-card__number">111</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-26T08:00:10.000Z">
+                Mar 26, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI!</h2>
+            <p>This article examines the rise of the AI industry through the lens of journalist Karen Hao, author of Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI. Drawing on over 300 interviews, includ...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-144150-www.youtube.com-watch-v-Cn8HBj8QAbk.html">
-          <h3>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI!</h3>
-          <time datetime="2026-03-26T08:00:10.000Z">
-            Mar 26, 2026
-          </time>
-          <p>So much of what is happening today in the AI industry is extremely inhumane. While some might play devil&#039;s advocate and argue that the civilization that accelerates its research with artificial intell...</p>
+          <div class="article-card__number">112</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-26T08:00:10.000Z">
+                Mar 26, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Diary Of A CEO - AI Whistleblower: We Are Being Gaslit By The AI Companies! They’re Hiding The Truth About AI!</h2>
+            <p>So much of what is happening today in the AI industry is extremely inhumane. While some might play devil&#039;s advocate and argue that the civilization that accelerates its research with artificial intell...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260326-132247-www.youtube.com-watch-v-WHWAYiY_RnQ.html">
+          <div class="article-card__number">113</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-26T06:23:20.682Z">
+                Mar 26, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Ep. 143 | With ElevenLabs Co-Founder Mati Staniszewski</h2>
+            <p>This article summarizes a conversation between Mati Staniszewski, co-founder and CEO of 11 Labs, and the hosts of the No Priors podcast regarding the evolution of voice technology, the company’s rapid...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260325-050017-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">114</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-24T11:00:14.000Z">
+                Mar 24, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>0:00 · All the labs realized what Claude code unlocked and it wasn&#039;t like it was the first coding agent. It it was just the best. They did something different with the harness like how they enabled it...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260326-050014-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">115</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-24T11:00:14.000Z">
+                Mar 24, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>This week on the Artificial Intelligence Show, hosts Paul Roetzer and Mike Kaput dive into the massive industry shift toward autonomous agents and enterprise integration. They explore the rapid evolut...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-151929-www.youtube.com-watch-v-9wfFH4TLIcQ.html">
+          <div class="article-card__number">116</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-24T11:00:14.000Z">
+                Mar 24, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 205: AI Labs Refocus on Agents and Enterprise, Trump’s New AI Framework, &amp; Meta’s Rogue Agent</h2>
+            <p>Here is the cleaned YouTube transcript, processed line by line: All the labs realized what Claude code unlocked, and it wasn&#039;t like it was the first coding agent; it was just the best. They did someth...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260327-002023-www.youtube.com-watch-v-Q8Fkpi18QXU.html">
+          <div class="article-card__number">117</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T16:29:48.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dwarkesh Patel - Terence Tao – How the world’s top mathematician uses AI</h2>
+            <p>This article examines the evolution of scientific discovery through the lens of history, the impact of artificial intelligence on research, and the future of mathematical inquiry, based on a conversat...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260328-143938-www.youtube.com-watch-v-Q8Fkpi18QXU.html">
+          <div class="article-card__number">118</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T16:29:48.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dwarkesh Patel - Terence Tao – How the world’s top mathematician uses AI</h2>
+            <p>To understand the current state of AI in mathematics, it is helpful to look back at the history of astronomy. Johannes Kepler’s discovery of the laws of planetary motion provides a perfect case study....</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-151539-www.youtube.com-watch-v-Q8Fkpi18QXU.html">
-          <h3>Dwarkesh Patel - Terence Tao – How the world’s top mathematician uses AI</h3>
-          <time datetime="2026-03-20T16:29:48.000Z">
-            Mar 20, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Terence Tao – How the world’s top mathematician uses AI
-
----
-
-
-
-
-
-Today, I&#039;m chatting with Terence Tao, who needs no introduction.
-
-Terence, I want to begin by having you retell t...</p>
+          <div class="article-card__number">119</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T16:29:48.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dwarkesh Patel - Terence Tao – How the world’s top mathematician uses AI</h2>
+            <p>Today, I&#039;m chatting with Terence Tao, who needs no introduction. Terence, I want to begin by having you retell the story of how Kepler discovered the laws of planetary motion because I think this will...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-100015-www.youtube.com-watch-v-kwSVtQ7dziU.html">
+          <div class="article-card__number">120</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T13:27:35.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h2>
+            <p>0:00 · code&#039;s not even the right verb anymore, right? But I have to um express my will to my agents for 16 hours a day manifest. 0:07 · How can I have not just a single session of clot code or codeex...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-234345-www.youtube.com-watch-v-kwSVtQ7dziU.html">
+          <div class="article-card__number">121</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T13:27:35.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h2>
+            <p>0:00 · code&#039;s not even the right verb anymore, right? But I have to um express my will to my agents for 16 hours a day manifest. 0:07 · How can I have not just a single session of clot code or codeex...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-234430-www.youtube.com-watch-v-kwSVtQ7dziU.html">
+          <div class="article-card__number">122</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T13:27:35.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h2>
+            <p>0:00 · code&#039;s not even the right verb anymore, right? But I have to um express my will to my agents for 16 hours a day manifest. 0:07 · How can I have not just a single session of clot code or codeex...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260325-172713-www.youtube.com-watch-v-kwSVtQ7dziU.html">
-          <h3>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h3>
-          <time datetime="2026-03-20T13:27:35.000Z">
-            Mar 20, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI
-
----
-
-
-
-Welcome back to No Briars. Today, we&#039;re joined by Andrej Karpathy for a wide-ranging co...</p>
+          <div class="article-card__number">123</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-20T13:27:35.000Z">
+                Mar 20, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The End of Coding: Andrej Karpathy on Agents, AutoResearch, and the Loopy Era of AI</h2>
+            <p>Welcome back to No Briars. Today, we&#039;re joined by Andrej Karpathy for a wide-ranging conversation about code agents, the future of engineering and AI research, how more people can contribute to resear...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-095910-www.youtube.com-watch-v-7-zJPwJC11Q.html">
+          <div class="article-card__number">124</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-19T16:30:03.000Z">
+                Mar 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Vercel - Introducing Chat SDK</h2>
+            <p>Hey everyone, my name is Malta. I&#039;m the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate. Figure out how to multiply your output. And seeing wha...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-152216-www.youtube.com-watch-v-7-zJPwJC11Q.html">
-          <h3>Vercel - Introducing Chat SDK</h3>
-          <time datetime="2026-03-19T16:30:03.000Z">
-            Mar 19, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Introducing Chat SDK
-
----
-
-0:14 Hey everyone, my name is Malta. I&#039;m the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate.
-
-...</p>
+          <div class="article-card__number">125</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-19T16:30:03.000Z">
+                Mar 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Vercel - Introducing Chat SDK</h2>
+            <p>0:14 Hey everyone, my name is Malta. I&#039;m the CTO of Forcell. Thanks for joining us today. In early January, we gave everyone in our company a mandate. 0:21 Figure out how to multiply your output. 0:24...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260320-050541-www.youtube.com-watch-v-euj5NgPW6Ak.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 204: What Should Stay Human, AI Pricing vs. Labor Cost &amp; Getting Legal On Board</h3>
-          <time datetime="2026-03-19T11:01:14.000Z">
-            Mar 19, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 204: What Should Stay Human, AI Pricing vs. Labor Cost &amp; Getting Legal On Board
-
----
-
-
-
-A conversation with Paul Roetzer, founder and CEO of Marketing AI Institute, and Kathy ...</p>
+          <div class="article-card__number">126</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-19T11:01:14.000Z">
+                Mar 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 204: What Should Stay Human, AI Pricing vs. Labor Cost &amp; Getting Legal On Board</h2>
+            <p>A conversation with Paul Roetzer, founder and CEO of Marketing AI Institute, and Kathy McPhillips, Chief Marketing Officer at Smarter X, tackling key questions about navigating the fast-moving world o...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260322-153532-www.youtube.com-watch-v-5Kn32cIWPSY.html">
-          <h3>The Pragmatic Engineer - Building WhatsApp with Jean Lee</h3>
-          <time datetime="2026-03-18T17:17:37.000Z">
-            Mar 19, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Building WhatsApp with Jean Lee
-
----
-
-This article is based on an interview with Gene Lee, employee #19 at WhatsApp.
-
-
-
-Gene Lee joined WhatsApp as the 19th engineer when the comp...</p>
+          <div class="article-card__number">127</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-18T17:17:37.000Z">
+                Mar 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Pragmatic Engineer - Building WhatsApp with Jean Lee</h2>
+            <p>This article is based on an interview with Gene Lee, employee #19 at WhatsApp. Gene Lee joined WhatsApp as the 19th engineer when the company was largely unknown in the US. She witnessed its explosive...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204117-www.youtube.com-watch-v-FG0OH4wiqKY.html">
-          <h3>Dr. Jonathan Tam - Why Korean Men Are Trapped in a Beauty Arms Race</h3>
-          <time datetime="2026-03-18T13:27:16.000Z">
-            Mar 18, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Why Korean Men Are Trapped in a Beauty Arms Race
-
----
-
-![](https://www.youtube.com/watch?v=FG0OH4wiqKY)
-
-
-
-
-
- · Why are Korean men obsessed with beauty?
-
- · In South Korea, your f...</p>
+          <div class="article-card__number">128</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-18T13:27:16.000Z">
+                Mar 18, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dr. Jonathan Tam - Why Korean Men Are Trapped in a Beauty Arms Race</h2>
+            <p>· Why are Korean men obsessed with beauty? · In South Korea, your face isn&#039;t just your face. It&#039;s a spec, a product specification. · And now, Korean men are spending billions to upgrade their hardware...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095652-www.youtube.com-watch-v-ZpZ7lFoWaT8.html">
-          <h3>Latent Space - Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work</h3>
-          <time datetime="2026-03-17T21:37:33.000Z">
-            Mar 18, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work
-
----
-
-![](https://www.youtube.com/watch?v=ZpZ7lFoWaT8)
-
-
-
-
-
-0:00 · This is maybe ...</p>
+          <div class="article-card__number">129</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-17T21:37:33.000Z">
+                Mar 18, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Latent Space - Anthropic’s Felix Rieseberg on AI Coworkers, Local-First Agents, and the Future of Knowledge Work</h2>
+            <p>0:00 · This is maybe a whole like a somewhat contrarian view to a lot of people in AI. I actually don&#039;t think that the future is going to be hyper personalized software down to the point where everyon...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260318-050437-www.youtube.com-watch-v-btfE3CH0aho.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs</h3>
-          <time datetime="2026-03-17T12:01:06.000Z">
-            Mar 17, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs
-
----
-
-This is a transcript of the Artificial Intelligence Show podcast, hosted by...</p>
+          <div class="article-card__number">130</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-17T12:01:06.000Z">
+                Mar 17, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 203: Anthropic vs. The Pentagon Round 3, AI Writing Quality Debate, Atlassian Cuts 1,600 Jobs</h2>
+            <p>This is a transcript of the Artificial Intelligence Show podcast, hosted by Paul Ritzer and Mike Kaput. &quot;This BS stuff that&#039;s coming from leaders of the labs and politicians... it is disingenuous and...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095758-www.youtube.com-watch-v-CxFQykWiJqY.html">
-          <h3>EO - &quot;50 AI Agents Running My Company&quot; Is a Lie. Here&#039;s How I Build It | Gumloop, Max Brodeur-Urbas</h3>
-          <time datetime="2026-03-16T13:30:23.000Z">
-            Mar 16, 2026
-          </time>
-          <p>🎥 Watch on YouTube: &quot;50 AI Agents Running My Company&quot; Is a Lie. Here&#039;s How I Build It | Gumloop, Max Brodeur-Urbas
-
----
-
-
-
-There&#039;s a type of entrepreneur who believes they can build a business with a...</p>
+          <div class="article-card__number">131</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-16T13:30:23.000Z">
+                Mar 16, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>EO - &quot;50 AI Agents Running My Company&quot; Is a Lie. Here&#039;s How I Build It | Gumloop, Max Brodeur-Urbas</h2>
+            <p>There&#039;s a type of entrepreneur who believes they can build a business with a single click, as if it&#039;s an effortless endeavor. They buy a course and expect to have the secret recipe for a million-dolla...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-095706-www.youtube.com-watch-v-srqWFT_TUec.html">
+          <div class="article-card__number">132</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-16T07:30:55.000Z">
+                Mar 16, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!</h2>
+            <p>Everyone knows that Anthropic models are incredible, especially when it comes to coding. But when you&#039;re working with large codebases and long context, you might notice a problem. Even powerful models...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-152039-www.youtube.com-watch-v-srqWFT_TUec.html">
-          <h3>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!</h3>
-          <time datetime="2026-03-16T07:30:55.000Z">
-            Mar 16, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!
-
----
-
-Everyone knows that enthropic models are incredible, especially when it comes to coding. But when ...</p>
+          <div class="article-card__number">133</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-16T07:30:55.000Z">
+                Mar 16, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>WorldofAI - Claude Code + Obsidian = UNLIMITED Memory! Solves Claude&#039;s Memory Problem!</h2>
+            <p>Everyone knows that enthropic models are incredible, especially when it comes to coding. But when you&#039;re working with large codebases and long context, you&#039;ll sometimes notice a problem. Even when the...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/OpenAI’s head of platform engineering on the next 12-24 months of AI - Sherwin Wu - 2.html">
-          <h3>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h3>
-          <time datetime="2026-03-15T08:57:19.422Z">
-            Mar 15, 2026
-          </time>
-          <p>Engineering roles have undergone an unprecedented transformation in recent years. Engineers are increasingly evolving into tech leads who manage vast fleets of AI agents, a process that feels akin to ...</p>
+          <div class="article-card__number">134</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-15T08:57:19.422Z">
+                Mar 15, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h2>
+            <p>Engineering roles have undergone an unprecedented transformation in recent years. Engineers are increasingly evolving into tech leads who manage vast fleets of AI agents, a process that feels akin to...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260315-050328-www.youtube.com-watch-v-VeK7FbckCAM.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 202: AI Answers - AI for Marketing, Sales &amp; Customer Success &amp; Entry-Level Job Disruption</h3>
-          <time datetime="2026-03-14T22:04:52.654Z">
-            Mar 15, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 202: AI Answers - AI for Marketing, Sales &amp; Customer Success &amp; Entry-Level Job Disruption
-
----
-
-Welcome to AI Answers, a Q&amp;A series from the Artificial Intelligence Show. This...</p>
+          <div class="article-card__number">135</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-14T22:04:52.654Z">
+                Mar 15, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 202: AI Answers - AI for Marketing, Sales &amp; Customer Success &amp; Entry-Level Job Disruption</h2>
+            <p>Welcome to AI Answers, a Q&amp;A series from the Artificial Intelligence Show. This special edition addresses questions from the AI for Departments Week webinars, presented in partnership with Google Clou...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/OpenAI’s head of platform engineering on the next 12-24 months of AI - Sherwin Wu.html">
+          <div class="article-card__number">136</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-14T17:36:35.344Z">
+                Mar 15, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h2>
+            <p>[0:00:00] In the current engineering landscape, 95% of engineers are utilizing Codex, and 100% of pull requests are reviewed by Codex for the engineering team. It is difficult to identify a profession...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260314-234513-simonwillison.net-2024-Oct-21-claude-artifacts.html">
-          <h3>Everything I built with Claude Artifacts this week</h3>
-          <time datetime="2026-03-14T16:45:24.775Z">
-            Mar 14, 2026
-          </time>
-          <p>21st October 2024
-
-I’m a huge fan of Claude’s Artifacts feature, which lets you prompt Claude to create an interactive Single Page App (using HTML, CSS and JavaScript) and then view the result directl...</p>
+          <div class="article-card__number">137</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-14T16:45:24.775Z">
+                Mar 14, 2026
+              </time>
+              <span>Read at simonwillison.net</span>
+            </div>
+            <h2>Everything I built with Claude Artifacts this week</h2>
+            <p>21st October 2024 I’m a huge fan of Claude’s Artifacts feature, which lets you prompt Claude to create an interactive Single Page App (using HTML, CSS and JavaScript) and then view the result directly...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204156-www.youtube.com-watch-v-C17uszaP5Yw.html">
-          <h3>Mack - I Survived a Plane Crash</h3>
-          <time datetime="2026-03-14T14:00:39.000Z">
-            Mar 14, 2026
-          </time>
-          <p>🎥 Watch on YouTube: I Survived a Plane Crash
-
----
-
-![](https://www.youtube.com/watch?v=C17uszaP5Yw)
-
-
-
- · Hey, you.
-
- · What would happen if your plane&#039;s engine failed?
-
- · Both of them afterwards cr...</p>
+          <div class="article-card__number">138</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-14T14:00:39.000Z">
+                Mar 14, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Mack - I Survived a Plane Crash</h2>
+            <p>· Hey, you. · What would happen if your plane&#039;s engine failed? · Both of them afterwards crashed in the middle of the ocean. · Let&#039;s be honest here, you&#039;d probably die. · But what if you didn&#039;t and wa...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260316-093449-youtu.be-GzVLpSIHHeY.html">
-          <h3>TBPN - FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup</h3>
-          <time datetime="2026-03-13T20:28:35.000Z">
-            Mar 14, 2026
-          </time>
-          <p>🎥 Watch on YouTube: FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup
-
----
-
-
-
-After nearly eight years of building in secret, Travis Kalanick, the founder of Uber, has offici...</p>
+          <div class="article-card__number">139</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-13T20:28:35.000Z">
+                Mar 14, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>TBPN - FULL INTERVIEW: Uber Founder Travis Kalanick is Back with a New AI Startup</h2>
+            <p>After nearly eight years of building in secret, Travis Kalanick, the founder of Uber, has officially come out of &quot;stealth mode.&quot; In a recent interview, he revealed the work he&#039;s been doing since 2018...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/Ep. 200- Anthropic vs. the Pentagon, OpenAI's $110B Round & Interview with Claude Code’s Creator.html">
+          <div class="article-card__number">140</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-12T14:13:46.978Z">
+                Mar 12, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator</h2>
+            <p>In the current political climate, government officials have made various comments despite their bluster and threats. They are essentially admitting they cannot live without Claude. Paul Ritzer agrees...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/The 7 phases of AI-driven development.html">
+          <div class="article-card__number">141</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-12T10:58:44.777Z">
+                Mar 12, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>The 7 phases of AI-driven development</h2>
+            <p>As you work with an AI coding assistant—in this case, Claude Code—there are seven specific phases of development you should follow to ship high-quality work. While the specific implementation might va...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260315-050456-www.youtube.com-watch-v-6YtjPaIn3zE.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 201: Anthropic vs. Pentagon Round 2, AI Job Impact Study, Services as the New Software &amp; GPT-5.4</h3>
-          <time datetime="2026-03-10T12:00:09.000Z">
-            Mar 10, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 201: Anthropic vs. Pentagon Round 2, AI Job Impact Study, Services as the New Software &amp; GPT-5.4
-
----
-
-
-
-These things are getting really good really fast. And it&#039;s not just go...</p>
+          <div class="article-card__number">142</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-10T12:00:09.000Z">
+                Mar 10, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 201: Anthropic vs. Pentagon Round 2, AI Job Impact Study, Services as the New Software &amp; GPT-5.4</h2>
+            <p>These things are getting really good really fast. And it&#039;s not just going to be happening to computer programmers this year. It&#039;s going to start happening to everybody else. Welcome to The Artificial...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260324-095527-www.youtube.com-watch-v-_Ux13UEqIYo.html">
+          <div class="article-card__number">143</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-09T14:05:34.000Z">
+                Mar 9, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>ColdFusion - Yikes.</h2>
+            <p>The use of artificial intelligence in warfare has transitioned from science fiction to reality. In recent, high-profile instances, the US military deployed AI, notably Anthropic&#039;s model Claude, for cr...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-152249-www.youtube.com-watch-v-_Ux13UEqIYo.html">
-          <h3>ColdFusion - Yikes.</h3>
-          <time datetime="2026-03-09T14:05:34.000Z">
-            Mar 9, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Yikes.
-
----
-
-Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings:
-
-
-
-The Wall Street Journal reports that the Pentagon used ...</p>
+          <div class="article-card__number">144</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-09T14:05:34.000Z">
+                Mar 9, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>ColdFusion - Yikes.</h2>
+            <p>Here is the cleaned YouTube transcript, processed line by line and formatted into paragraphs with headings: The Wall Street Journal reports that the Pentagon used Anthropic&#039;s AI model Claude as part o...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260315-050548-www.youtube.com-watch-v-ynM7eDc1jM0.html">
-          <h3>The Artificial Intelligence Show Podcast - Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator</h3>
-          <time datetime="2026-03-03T13:01:42.000Z">
-            Mar 3, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator
-
----
-
-Welcome to a special edition of the Artificial Intelligence Show, where for ...</p>
+          <div class="article-card__number">145</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-03T13:01:42.000Z">
+                Mar 3, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Artificial Intelligence Show Podcast - Ep. 200: Anthropic vs. the Pentagon, OpenAI&#039;s $110B Round &amp; Interview with Claude Code’s Creator</h2>
+            <p>Welcome to a special edition of the Artificial Intelligence Show, where for episode 200, hosts Paul Ritzer and Mike Kaput record live with an audience of AI Academy Mastery members. This episode, reco...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095627-www.youtube.com-watch-v-eh8bcBIAAFo.html">
-          <h3>Lenny&#039;s Podcast - The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)</h3>
-          <time datetime="2026-03-01T13:30:39.000Z">
-            Mar 1, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)
-
----
-
-![](https://www.youtube.com/watch?v=eh8bcBIAAFo)
-
-
-
-
-
-0:00 · This design proce...</p>
+          <div class="article-card__number">146</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-03-01T13:30:39.000Z">
+                Mar 1, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - The design process is dead. Here’s what’s replacing it. | Jenny Wen (head of design at Claude)</h2>
+            <p>0:00 · This design process that designers have been taught, we sort of treat it as gospel. That&#039;s basically dead. You as a designer actually like do not have the time to make these beautiful mocks any...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182155-www.youtube.com-watch-v-l6ZcFa8pybE-pp-0gcJCdoKAYcqIYzv.html">
-          <h3>StarTalk - Is AI Hiding Its Full Power? With Geoffrey Hinton</h3>
-          <time datetime="2026-02-28T17:01:12.000Z">
-            Mar 1, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Is AI Hiding Its Full Power? With Geoffrey Hinton
-
----
-
-![](https://www.youtube.com/watch?v=l6ZcFa8pybE)
-
-
-
-
-
- · Are we at a point where the artificial intelligence will play down...</p>
+          <div class="article-card__number">147</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-28T17:01:12.000Z">
+                Mar 1, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>StarTalk - Is AI Hiding Its Full Power? With Geoffrey Hinton</h2>
+            <p>· Are we at a point where the artificial intelligence will play down how smart it is? · Yes. Already we have to worry about that. If it senses that it&#039;s being tested, it can act dumb. · What did you j...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260315-001322-www.youtube.com-watch-v-UPGB-hsAoVY.html">
+          <div class="article-card__number">148</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-27T15:00:55.000Z">
+                Feb 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>The Powerful Alternative To Fine-Tuning</h2>
+            <p>The world of AI is changing at a breakneck pace, and for many engineers and startups, the goal is to keep up. According to Ian Fischer, co-founder and co-CEO of Poetiq, the key is to experiment consta...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260315-002843-www.youtube.com-watch-v-UPGB-hsAoVY.html">
+          <div class="article-card__number">149</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-27T15:00:55.000Z">
+                Feb 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Y Combinator - The Powerful Alternative To Fine-Tuning</h2>
+            <p>0:00 · The world is changing so quickly. This is probably a little bit obvious, but you should just try things and and like every day do something with AI. Last summer, I took a weekend and used um GP...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260315-002920-www.youtube.com-watch-v-UPGB-hsAoVY.html">
+          <div class="article-card__number">150</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-27T15:00:55.000Z">
+                Feb 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Y Combinator - The Powerful Alternative To Fine-Tuning</h2>
+            <p>The world is changing at an incredible pace, and the best way to keep up is to engage directly with artificial intelligence. Make it a daily practice to try something new with AI. Don&#039;t limit your ima...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-151819-www.youtube.com-watch-v-UPGB-hsAoVY.html">
-          <h3>Y Combinator - The Powerful Alternative To Fine-Tuning</h3>
-          <time datetime="2026-02-27T15:00:55.000Z">
-            Feb 27, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The Powerful Alternative To Fine-Tuning
-
----
-
-
-
-
-
-The world is changing so quickly. This is probably a little bit obvious, but you should just try things and every day do somethin...</p>
+          <div class="article-card__number">151</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-27T15:00:55.000Z">
+                Feb 27, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Y Combinator - The Powerful Alternative To Fine-Tuning</h2>
+            <p>The world is changing so quickly. This is probably a little bit obvious, but you should just try things and every day do something with AI. Last summer, I took a weekend and used GPT5 to help me build...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095452-www.youtube.com-watch-v-aoag03mSuXQ.html">
-          <h3>Veritasium - The Internet Was Weeks Away From Disaster and No One Knew</h3>
-          <time datetime="2026-02-25T20:28:23.000Z">
-            Feb 26, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The Internet Was Weeks Away From Disaster and No One Knew
-
----
-
-![](https://www.youtube.com/watch?v=aoag03mSuXQ)
-
-
-
-
-
-0:00 · (suspenseful music) - \[Derek\] In 2021, a hacker unco...</p>
+          <div class="article-card__number">152</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-25T20:28:23.000Z">
+                Feb 26, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Veritasium - The Internet Was Weeks Away From Disaster and No One Knew</h2>
+            <p>0:00 · (suspenseful music) - \[Derek\] In 2021, a hacker uncovered a fatal weakness in the world&#039;s most important operating system. 0:07 · - What would you do with a key that gets you into any server...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/Builders Unscripted- Ep. 1 - Peter Steinberger, Creator of OpenClaw.html">
+          <div class="article-card__number">153</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-25T11:05:00.253Z">
+                Feb 25, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>Builders Unscripted: Ep. 1 - Peter Steinberger, Creator of OpenClaw</h2>
+            <p>Peter’s arrival at the OpenAI office marks a significant moment in a relationship that has existed online for many years but only recently transitioned to an in-person connection. The timing is notabl...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260326-132339-www.youtube.com-watch-v-efUt__S_AjY.html">
+          <div class="article-card__number">154</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-19T11:01:09.000Z">
+                Feb 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h2>
+            <p>There is a growing narrative in the market that the era of Software-as-a-Service (SaaS) is coming to an end, replaced by a world where AI agents can simply &quot;vibe code&quot; everything. While recent market...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260328-152323-www.youtube.com-watch-v-efUt__S_AjY.html">
-          <h3>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h3>
-          <time datetime="2026-02-19T11:01:09.000Z">
-            Feb 19, 2026
-          </time>
-          <p>🎥 Watch on YouTube: The AI Code Slop: Risk or Opportunity?
-
----
-
-The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don&#039;t know the quality of the c...</p>
+          <div class="article-card__number">155</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-19T11:01:09.000Z">
+                Feb 19, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - The AI Code Slop: Risk or Opportunity?</h2>
+            <p>The anxiety that I see is if you can generate an enormous amount of code and no one is reading it, you don&#039;t know the quality of the code, nobody deeply understands the codebase, and there is more fra...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/Jason Fried- Build for Yourself, Keep Costs Low and Stay Small.html">
+          <div class="article-card__number">156</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-17T06:43:08.578Z">
+                Feb 17, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>Jason Fried: Build for Yourself, Keep Costs Low and Stay Small</h2>
+            <p>The best way to make a product is to be the actual customer. This approach involves making the specific products that you want to use yourself. This has been a consistent method since the age of 15 or...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
+        <a href="./articles/OpenClaw- The Viral AI Agent that Broke the Internet - Peter Steinberger - Lex Fridman Podcast #491.html">
+          <div class="article-card__number">157</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-14T07:49:39.057Z">
+                Feb 14, 2026
+              </time>
+              <span>Original source</span>
+            </div>
+            <h2>OpenClaw: The Viral AI Agent that Broke the Internet - Peter Steinberger | Lex Fridman Podcast #491</h2>
+            <p>[0:00:00] Peter Steinberger describes watching his AI agent happily click the &quot;I&#039;m not a robot&quot; button. He built this agent to be deeply self-aware, possessing a clear understanding of its own source...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095438-www.youtube.com-watch-v-n1E9IZfvGMA.html">
-          <h3>Dwarkesh Patel - Dario Amodei — “We are near the end of the exponential”</h3>
-          <time datetime="2026-02-13T17:11:03.000Z">
-            Feb 14, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Dario Amodei — “We are near the end of the exponential”
-
----
-
-![](https://www.youtube.com/watch?v=n1E9IZfvGMA)
-
-
-
-
-
-0:00 · We talked three years ago. In your view, what has  been ...</p>
+          <div class="article-card__number">158</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-13T17:11:03.000Z">
+                Feb 14, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dwarkesh Patel - Dario Amodei — “We are near the end of the exponential”</h2>
+            <p>0:00 · We talked three years ago. In your view, what has been the biggest update over the last three years? 0:05 · What has been the biggest difference between what it felt like then versus now? 0:10...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260324-095514-www.youtube.com-watch-v-B26CwKm5C1k.html">
-          <h3>Lenny&#039;s Podcast - OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h3>
-          <time datetime="2026-02-12T13:30:11.000Z">
-            Feb 12, 2026
-          </time>
-          <p>🎥 Watch on YouTube: OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu
-
----
-
-![](https://www.youtube.com/watch?v=B26CwKm5C1k)
-
-
-
-
-
-0:00 · 95% of engineers use Codex. 10...</p>
+          <div class="article-card__number">159</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-02-12T13:30:11.000Z">
+                Feb 12, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Lenny&#039;s Podcast - OpenAI’s head of platform engineering on the next 12-24 months of AI | Sherwin Wu</h2>
+            <p>0:00 · 95% of engineers use Codex. 100% of our PRs are reviewed by Codex for engineers. 0:06 · I don&#039;t know what job has changed more in the past couple years. Engineers are becoming tech leads. They&#039;...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204059-www.youtube.com-watch-v-ToV2wDsAyww.html">
-          <h3>Dr. Jonathan Tam - Why Korea Has the Highest Suicide Rate in the World</h3>
-          <time datetime="2026-01-31T00:05:00.000Z">
-            Jan 31, 2026
-          </time>
-          <p>🎥 Watch on YouTube: Why Korea Has the Highest Suicide Rate in the World
-
----
-
-![](https://www.youtube.com/watch?v=ToV2wDsAyww)
-
-
-
-
-
- · Why is South Korea the world&#039;s suicide capital? In February of 2...</p>
+          <div class="article-card__number">160</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-01-31T00:05:00.000Z">
+                Jan 31, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Dr. Jonathan Tam - Why Korea Has the Highest Suicide Rate in the World</h2>
+            <p>· Why is South Korea the world&#039;s suicide capital? In February of 2025, actress Kim Seron died by suicide. Another reminder that suicide in the country isn&#039;t random, it&#039;s a pattern. I&#039;m John, a PhD soc...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
+        <a href="./articles/20260326-132439-www.youtube.com-watch-v-qQAhK2EWw4I.html">
+          <div class="article-card__number">161</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2026-01-22T11:01:24.000Z">
+                Jan 22, 2026
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>No Priors: AI, Machine Learning, Tech, &amp; Startups - No Priors Live: Is the SaaS &quot;Bear Thesis&quot; Overblown? MongoDB CEO Answers</h2>
+            <p>The software industry is currently navigating a pivotal moment. Since 2022, investors and customers alike have questioned the future of the traditional software stack. As technology cycles—from mainfr...</p>
+          </div>
+        </a>
+      </li>
+    
+
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114535-www.youtube.com-watch-v-WsGVXiWzTpI-t-7s.html">
-          <h3>OpenAI - Build Hour: Agent Memory Patterns</h3>
-          <time datetime="2025-12-04T20:28:02.000Z">
-            Dec 5, 2025
-          </time>
-          <p>🎥 Watch on YouTube: Build Hour: Agent Memory Patterns
-
----
-
-![](https://www.youtube.com/watch?v=WsGVXiWzTpI)
-
-
-
-
-
- · Hi everyone, welcome back to another build hour.
-
- · I&#039;m Michaela on the startup m...</p>
+          <div class="article-card__number">162</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2025-12-04T20:28:02.000Z">
+                Dec 5, 2025
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>OpenAI - Build Hour: Agent Memory Patterns</h2>
+            <p>· Hi everyone, welcome back to another build hour. · I&#039;m Michaela on the startup marketing team and I&#039;m here today with two members of our solution architecture team. Emry live in the studio and Brian...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182327-www.youtube.com-watch-v-HBluLfX2F_k.html">
-          <h3>Veritasium - You&#039;ve (Likely) Been Playing The Game of Life Wrong</h3>
-          <time datetime="2025-11-26T21:45:00.000Z">
-            Nov 27, 2025
-          </time>
-          <p>🎥 Watch on YouTube: You&#039;ve (Likely) Been Playing The Game of Life Wrong
-
----
-
-![](https://www.youtube.com/watch?v=HBluLfX2Fk)
-
-
-
-
-
- · - Some things are not normal.
-
- · By that if you go out in the wo...</p>
+          <div class="article-card__number">163</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2025-11-26T21:45:00.000Z">
+                Nov 27, 2025
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Veritasium - You&#039;ve (Likely) Been Playing The Game of Life Wrong</h2>
+            <p>· - Some things are not normal. · By that if you go out in the world and start measuring things human height, IQ, or the size of apples on a tree. · You will find that for each of these things, most o...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-182357-www.youtube.com-watch-v-k1njvbBmfsw.html">
-          <h3>Stanford Online - Stanford CS230 | Autumn 2025 | Lecture 8: Agents, Prompts, and RAG</h3>
-          <time datetime="2025-11-21T23:08:57.000Z">
-            Nov 22, 2025
-          </time>
-          <p>🎥 Watch on YouTube: Stanford CS230 | Autumn 2025 | Lecture 8: Agents, Prompts, and RAG
-
----
-
-![](https://www.youtube.com/watch?v=k1njvbBmfsw)
-
-
-
- · Hi everyone, welcome to another lecture for CS230 d...</p>
+          <div class="article-card__number">164</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2025-11-21T23:08:57.000Z">
+                Nov 22, 2025
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Stanford Online - Stanford CS230 | Autumn 2025 | Lecture 8: Agents, Prompts, and RAG</h2>
+            <p>· Hi everyone, welcome to another lecture for CS230 deep learning. Today we&#039;re going to talk about enhancing large language model applications and I call this lecture beyond LLM. · it has a lot of new...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114715-www.youtube.com-watch-v-W2HVdB4Jbjs.html">
-          <h3>AI Engineer - Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB</h3>
-          <time datetime="2025-06-27T09:56:46.000Z">
-            Jun 27, 2025
-          </time>
-          <p>🎥 Watch on YouTube: Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB
-
----
-
-![](https://www.youtube.com/watch?v=W2HVdB4Jbjs)
-
-
-
- · \[Music\] \[Music\] In t...</p>
+          <div class="article-card__number">165</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2025-06-27T09:56:46.000Z">
+                Jun 27, 2025
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>AI Engineer - Architecting Agent Memory: Principles, Patterns, and Best Practices — Richmond Alake, MongoDB</h2>
+            <p>· \[Music\] \[Music\] In the next 10 to 15 minutes, here&#039;s I guess my promise to you. I&#039;m going to give you some information that will be high level. There will be some practical component to it. But...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260421-114602-www.youtube.com-watch-v-9vM4p9NN0Ts.html">
-          <h3>Stanford Online - Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)</h3>
-          <time datetime="2024-08-27T22:02:57.000Z">
-            Aug 28, 2024
-          </time>
-          <p>🎥 Watch on YouTube: Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)
-
----
-
-![](https://www.youtube.com/watch?v=9vM4p9NN0Ts)
-
-
-
-
-
- · so let&#039;s get started so I&#039;ll be talking ab...</p>
+          <div class="article-card__number">166</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2024-08-27T22:02:57.000Z">
+                Aug 28, 2024
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Stanford Online - Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)</h2>
+            <p>· so let&#039;s get started so I&#039;ll be talking about building llms today so I think a lot of you have heard of llms before but just as a quick recap llms standing for large language models are all the chat...</p>
+          </div>
         </a>
       </li>
     
 
-      <li>
+      <li class="article-card article-card--compact">
         <a href="./articles/20260415-204133-www.youtube.com-watch-v-_cBDQHn3MMo.html">
-          <h3>Asian Boss - We Made A 91-year-old Korean War Veteran’s Last Wish Come True</h3>
-          <time datetime="2022-10-05T00:54:58.000Z">
-            Oct 5, 2022
-          </time>
-          <p>🎥 Watch on YouTube: We Made A 91-year-old Korean War Veteran’s Last Wish Come True
-
----
-
-![](https://www.youtube.com/watch?v=cBDQHn3MMo)
-
-
-
- · \[음악\]
-
- · 안녕하세요 아 어떻게 오늘 이렇게 이제 서프라이즈 잘 준비하게 도와주셔서 감사합니...</p>
+          <div class="article-card__number">167</div>
+          <div class="article-card__content">
+            <div class="article-card__meta">
+              <time datetime="2022-10-05T00:54:58.000Z">
+                Oct 5, 2022
+              </time>
+              <span>Watch on YouTube</span>
+            </div>
+            <h2>Asian Boss - We Made A 91-year-old Korean War Veteran’s Last Wish Come True</h2>
+            <p>· \[음악\] · 안녕하세요 아 어떻게 오늘 이렇게 이제 서프라이즈 잘 준비하게 도와주셔서 감사합니다 보는 것이 있나요 할아버지 아무것도 모르시죠 그럼 지금 할아버지 컨디션이 좀 어떠세요 오늘은 괜찮은 편이세요 근데 이제 밖에 움직이실 때는 제가 이렇게 그러면 가실까요 \[음악\] 안녕하세요 오늘 멋있게 잘 입으셨어요 할아버지 현재 연세가 어떻게 되세요...</p>
+          </div>
         </a>
       </li>
     
-    </ul>
+      </ul>
+    </section>
   </main>
   <footer>
-    <p>Generated from YouTube video notes · Last updated: 5/21/2026</p>
+    <p>End of feed. Last updated May 25, 2026.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>

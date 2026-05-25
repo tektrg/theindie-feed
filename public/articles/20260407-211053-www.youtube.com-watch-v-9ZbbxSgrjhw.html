@@ -3,32 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Core Memory Podcast - He&#039;s Built The First Full-Time AI CEO - The Indie App</title>
+  <title>Core Memory Podcast - He&#039;s Built The First Full-Time AI CEO - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="stylesheet" href="../style.css">
-  <meta name="description" content="🎥 Watch on YouTube: He&#039;s Built The First Full-Time AI CEO
-
----
-
-
-
-Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the tech world. His journey from a young coder in Brazil ...">
+  <meta name="description" content="Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the tech world. His journey from a young coder in Brazil to leading a fintech giant acquired for $5.15 billion is a testamen...">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html">← Back to Feed</a>
-      <a href="https://www.youtube.com/watch?v=9ZbbxSgrjhw" target="_blank">🎥 Watch on YouTube</a>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=9ZbbxSgrjhw" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
     </nav>
-  </header>
-  <main>
-    <article>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
       <h1>Core Memory Podcast - He&#039;s Built The First Full-Time AI CEO</h1>
       <time datetime="2026-04-01T12:36:41.000Z">
-        April 1, 2026
+        Wednesday, April 1, 2026
       </time>
-      <p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=9ZbbxSgrjhw">He's Built The First Full-Time AI CEO</a></p>
-<hr>
-<h1>Pedro Franchesci: From Teenage Hacker to AI Pioneer and Brex Co-Founder</h1>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Pedro Franchesci: From Teenage Hacker to AI Pioneer and Brex Co-Founder</h1>
 <p>Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the tech world. His journey from a young coder in Brazil to leading a fintech giant acquired for $5.15 billion is a testament to his precocious talent and relentless drive. This article delves into his extraordinary childhood, the founding of Brex, his thoughts on the future of finance, and his current fascination with AI agents.</p>
 <h2>A Childhood of Code and Resilience</h2>
 <p>Pedro's fascination with computers began at a young age in Rio de Janeiro. Losing his father to cancer at eight years old profoundly impacted his childhood, leaving his mother to raise him and his younger brother. While his peers were enjoying the beaches of Rio, Pedro was immersed in the world of code. He taught himself to program at eight or nine, driven by an insatiable curiosity about how computers worked. The internet became his classroom, where he learned languages like C and C++ in English, a challenging endeavor for a young Brazilian.</p>
@@ -54,7 +68,44 @@ Pedro Franchesci, the CEO and co-founder of Brex, is a remarkable figure in the 
     </article>
   </main>
   <footer>
-    <p>Generated from YouTube video notes</p>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
 </body>
 </html>
