@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pragmatic Engineer - Building OpenCode with Dax Raad - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The rapid advancement of AI tools, particularly coding agents, has fundamentally altered the landscape of software development. While the promise of increased speed and efficiency is undeniable, the r...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=1VqKUrxR2C8" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>The Pragmatic Engineer - Building OpenCode with Dax Raad</h1>
+      <time datetime="2026-05-27T16:06:03.000Z">
+        Wednesday, May 27, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Unseen Bottlenecks: Navigating AI's Impact on Engineering with Dax Raad</h1>
+<p>The rapid advancement of AI tools, particularly coding agents, has fundamentally altered the landscape of software development. While the promise of increased speed and efficiency is undeniable, the reality for many engineering teams is more complex. Dax Raad, co-founder of Open Code, a leading open-source coding harness, shares his insights on why simply adopting AI tools isn't a silver bullet for better software and how companies can navigate this evolving paradigm.</p>
+<h2>The Illusion of Speed</h2>
+<p>Despite the proliferation of AI-powered coding tools, Raad observes a peculiar paradox: &quot;Objectively, stuff has become easier, but then why am I thinking as hard as I ever have?&quot; He notes that while AI can accelerate the coding process, it doesn't inherently solve the fundamental challenges of product development. For companies in the pre-product-market fit stage, AI might help in &quot;swinging a lot,&quot; but Raad emphasizes the greater value of &quot;thinking a lot instead of swinging a lot.&quot;</p>
+<p>Even for Open Code, which has achieved significant product-market fit, the challenge isn't a lack of features but an abundance of directions. &quot;There's a million different directions we can go in,&quot; Raad explains. The ease with which AI can generate solutions can lead to a &quot;Frankenstein&quot; product if not managed carefully. Shipping too many features, even if individually useful, can result in a cohesive, unmanageable codebase. The core issue, Raad argues, is that &quot;just because we can ship 10 times more doesn't mean we have 10 times as many good ideas to ship out there.&quot; This realization has led Open Code to focus on &quot;how do I like slow everyone down?&quot; and re-evaluate what aspects of traditional development processes still hold value.</p>
+<h2>From Minecraft Modding to Open Source Leadership</h2>
+<p>Raad's journey into technology began with a childhood fascination for programming, influenced by his software engineer father. His early forays included working on the modding framework for Minecraft, where he discovered a passion for creating &quot;interesting sandboxes&quot; and observing user behavior. This experience, coupled with interactions with experienced programmers in the modding community, laid a foundation for his future endeavors.</p>
+<p>After founding a startup that was acquired and a subsequent stint at a healthcare tech company, Raad found himself drawn to open source. He joined the team behind SST (Serverless Stack), a toolkit for building full-stack applications. During this period, he also contributed to OpenNext, a project that addressed the need for deploying Next.js applications on AWS, highlighting his ability to identify and fill gaps in the developer ecosystem.</p>
+<h2>The Genesis of Open Code</h2>
+<p>The inspiration for Open Code emerged from a period of reflection after OpenCode's sister company, SST, achieved profitability. Raad and his co-founders recognized the transformative potential of AI in dev tools but also saw the &quot;stupid&quot; aspects of much of the market. They took &quot;a few swings at a few ideas&quot; before realizing that &quot;cloud code was the first AI coding tool that stuck for us.&quot; This personal adoption led to the question: &quot;Why weren't we the ones that built this?&quot;</p>
+<p>The strategic positioning of Open Code was key. Raad identified a significant gap: &quot;no coding agent that was like, we are the open source option.&quot; This, combined with the intense competition among model providers, created a valuable niche. By establishing Open Code as the open-source alternative, they could leverage the competition to their advantage, a strategy that has proven highly effective.</p>
+<h2>Navigating Hypergrowth and Market Dynamics</h2>
+<p>Open Code's growth has been nothing short of explosive, reaching millions of monthly active users in less than a year. This rapid ascent, however, has come with its own set of challenges. Raad recounts the unexpected surge in January 2025, which was partly fueled by Anthropic's decision to ban subscriptions for their models within Open Code. This incident, while initially disruptive, inadvertently created a PR win for Open Code when OpenAI officially announced support shortly after.</p>
+<p>This event exemplifies Raad's strategic approach: &quot;pick one temporary bad guy and then galvanize all their competitors.&quot; This tactic allowed Open Code to rally industry support and solidify its position as a neutral platform. &quot;If you get your positioning right, the world just keeps handing you wins that you didn't even expect,&quot; he notes.</p>
+<h2>The Business of Inference and GPU Constraints</h2>
+<p>The profitability of AI inference is a topic Raad finds particularly interesting. He explains that the cost of delivering a token is primarily driven by electricity and hardware, with significant margins possible, especially with open-source models. While large companies like OpenAI and Anthropic may enjoy even higher margins due to their scale and GPU deals, the underlying economics of inference are strong.</p>
+<p>However, the industry faces a critical bottleneck: GPU supply. &quot;The demand for inference is growing... but we haven't made our production of GPUs grow exponentially,&quot; Raad states. This scarcity leads to hoarding and intense competition for resources, impacting even companies of Open Code's size. Big tech companies, with their massive spending power, are vacuuming up available capacity, making it challenging for smaller players to secure the necessary hardware.</p>
+<h2>The &quot;Muted Prickle&quot; and the Erosion of Judgment</h2>
+<p>A significant concern for Raad is the impact of AI agents on engineering judgment. He describes the &quot;muted prickle&quot; that engineers used to feel when writing &quot;hacky&quot; code. This discomfort served as a feedback mechanism, encouraging more thoughtful design and refactoring. With AI agents, this feedback loop is disrupted. &quot;The agent will just do the hacky thing for you,&quot; Raad observes, leading to a proliferation of suboptimal code without the engineer experiencing the immediate negative consequences. This can result in a codebase that is harder to maintain and refactor in the long run.</p>
+<p>This observation led to a memo to his team outlining three key challenges: shipping features that aren't worth shipping, absorbing too many hacks, and neglecting code cleanup. The most concerning aspect, Raad admits, is that &quot;I don't think we're trading this off to move faster. I think we're moving at a normal pace.&quot; The illusion of speed created by AI can mask a lack of genuine progress.</p>
+<h2>The Enduring Value of Quality and Taste</h2>
+<p>In an era where AI can rapidly generate code, Raad emphasizes that quality and &quot;taste&quot; remain crucial differentiators. He argues that while some companies may achieve success with &quot;crappy products,&quot; this is not a sustainable model for building truly great software. &quot;If you start to be lazy in one place, you start to become lazy everywhere. It's like an infection.&quot;</p>
+<p>Raad admires companies like HashiCorp, led by Mitchell Hashimoto, for their commitment to building well-executed, open-source products that become industry standards. He believes that true quality stems from an irrational commitment to excellence, doing things that are not strictly necessary but contribute to a superior user experience. This commitment is what allows smaller companies to compete against larger, more heavily funded entities.</p>
+<h2>The Future of Engineering Leadership</h2>
+<p>The advent of AI is reshaping the role of engineering leadership. Raad notes a shift towards engineers focusing on &quot;how to make it easy to ship code that is to safely ship code.&quot; This involves setting up guardrails, ensuring robust testing, and establishing clear patterns within the codebase to guide AI agents. While this might seem novel, Raad points out that it's essentially an amplification of age-old challenges: &quot;How do we get a junior engineer to ship code safely without breaking stuff?&quot;</p>
+<p>The increased use of AI agents, which can be seen as &quot;a bunch of idiots&quot; working 24/7, necessitates stronger guardrails. This has led to a renewed appreciation for older patterns like Domain-Driven Design, which, despite their verbosity, promote modularity and safety. The key, Raad suggests, is to leverage AI to automate the tedious aspects of these patterns, allowing engineers to benefit from their structure without the manual overhead.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>AI accelerates, but doesn't solve fundamental product challenges:</strong> While AI tools can speed up coding, they don't inherently improve strategic thinking or product design.</li>
+<li><strong>Beware the illusion of speed:</strong> Shipping more features with AI doesn't automatically mean faster progress or better products. Focus on shipping valuable, cohesive features.</li>
+<li><strong>Strategic positioning is crucial:</strong> Identifying and owning a unique market position, like Open Code's open-source stance, can be a powerful competitive advantage.</li>
+<li><strong>Quality and taste remain differentiators:</strong> In a crowded market, a commitment to building high-quality, well-designed products is essential for long-term success.</li>
+<li><strong>Feedback loops are vital:</strong> Maintaining direct feedback loops, both from users and within the codebase, is critical for sharp judgment and continuous improvement.</li>
+<li><strong>Embrace the &quot;muted prickle&quot;:</strong> Engineers need to remain aware of the consequences of their code, even when AI agents are involved, to avoid a decline in judgment.</li>
+<li><strong>Adaptability is key:</strong> The role of engineers and engineering leaders is evolving, requiring a focus on safety, guardrails, and leveraging AI to amplify human capabilities.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
