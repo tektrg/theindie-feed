@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pragmatic Engineer - TypeScript, C# and Turbo Pascal with Anders Hejlsberg - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Anders Hejlsberg, a titan in the world of programming languages, has shaped the way millions of developers code. From the lightning-fast Turbo Pascal to the ubiquitous C# and the revolutionary TypeScr...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=K-Xv8D8NjTk" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>The Pragmatic Engineer - TypeScript, C# and Turbo Pascal with Anders Hejlsberg</h1>
+      <time datetime="2026-05-13T16:49:20.000Z">
+        Wednesday, May 13, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Anders Hejlsberg: The Architect of Modern Programming Languages</h1>
+<p>Anders Hejlsberg, a titan in the world of programming languages, has shaped the way millions of developers code. From the lightning-fast Turbo Pascal to the ubiquitous C# and the revolutionary TypeScript, his influence is undeniable. In this conversation, Hejlsberg delves into the origins of these groundbreaking languages, the strategic decisions behind their creation, and his insights into the future of software development, particularly in the age of AI.</p>
+<h2>The Genesis of Turbo Pascal and Delphi</h2>
+<p>Hejlsberg's journey into programming began in a high school in Copenhagen in the mid-1970s, where he gained access to an HP 2100 computer. This early exposure to hardware and the fundamental principles of computing ignited a passion that would define his career. He recalls the simplicity of those early days, where one could &quot;see all the way to the bottom&quot; of the system, a stark contrast to the layered complexity of modern software.</p>
+<p>His first foray into compiler development was a small Pascal compiler for an 8-bit Z80-based kit computer, the Nascom. This project, born out of a desire for a more robust programming language than the ubiquitous Microsoft BASIC, laid the groundwork for what would become Turbo Pascal.</p>
+<p>Joining Borland in the early 1980s, Hejlsberg was instrumental in the creation of Turbo Pascal. The name &quot;Turbo&quot; was a deliberate choice, reflecting the language's speed and interactivity, mirroring the automotive trend of the era. The success of Turbo Pascal wasn't solely due to its compiler; it was the integrated development experience that set it apart. The IDE, which allowed for editing, compiling, running, and debugging within a single environment, was revolutionary. This holistic approach to developer productivity, making the entire cycle as interactive as interpreted languages but with the performance of compiled ones, was a core tenet from day one.</p>
+<p>The evolution continued with Delphi, which emerged in the era of graphical user interfaces (GUIs) and client-server applications. Delphi aimed to combine the rapid application development (RAD) capabilities of Microsoft's Visual Basic with the power of a compiled language, targeting enterprise-level database applications. The Visual Component Library (VCL) in Delphi was a significant innovation, enabling developers to create reusable components and a drag-and-drop visual design experience.</p>
+<h2>The Birth of C# and the .NET Revolution</h2>
+<p>Hejlsberg's career took a pivotal turn when he joined Microsoft in 1996. Initially tasked with architecting Microsoft's Java development tools, the landscape shifted dramatically with the Sun Microsystems lawsuit over Java. This legal battle, coupled with a strategic realization that relying on licensed technology from a competitor was precarious, spurred Microsoft to develop its own platform.</p>
+<p>At the time, Microsoft's development ecosystem was largely split between the ease of use of Visual Basic and the power of C++. Developers craved a language that offered the best of both worlds: the productivity of Visual Basic, the power and expressiveness of C++, and modern features like garbage collection and exception handling. This confluence of needs led to the genesis of .NET and C#.</p>
+<p>The design goals for C# were ambitious: an object-oriented language with managed code for cross-platform targeting, garbage collection, exception handling, and a unified object system. Properties, methods, and events were made first-class citizens, reflecting the component-oriented nature of modern application development. The vision was to create a language that was both powerful and productive, capable of competing with Java and satisfying the diverse needs of the developer community.</p>
+<p>The development of C# was a collaborative effort, involving a small, dedicated team of experienced language designers. Their iterative process of proposing, critiquing, and refining ideas in focused meetings was key to shaping the language. The implementation itself was initially done in C++, with the compiler eventually being rewritten in C# itself through the Roslyn project, enabling a self-hosting environment.</p>
+<h2>The Rise of TypeScript and the Power of Tooling</h2>
+<p>The explosion of JavaScript in the early 2000s, fueled by advancements in browser engines like Google's V8, the ratification of HTML5, and the mobile revolution, presented a new challenge. While JavaScript was becoming the de facto language of the web, its tooling was notoriously poor, hindering the development of large-scale applications.</p>
+<p>Microsoft's internal project, ScriptSharp, which allowed C# code to be cross-compiled into JavaScript, highlighted a potential path. However, Hejlsberg recognized that the real solution lay in improving JavaScript itself. This led to the creation of TypeScript, a superset of JavaScript that adds an optional static type system.</p>
+<p>The decision to make TypeScript open-source was crucial. Hejlsberg understood that a proprietary language from Microsoft would never gain traction in the JavaScript ecosystem. Despite internal resistance, the team pushed for open-sourcing, initially on CodePlex and later migrating to GitHub, which significantly boosted adoption.</p>
+<p>The popularity of TypeScript, as evidenced by its rise to the most popular language on GitHub, is attributed not just to its type system but, more importantly, to the enhanced tooling it enables. The erasable type system allows for robust static analysis, enabling features like intelligent code completion, refactoring, and error detection within IDEs. This focus on developer productivity through superior tooling is a recurring theme in Hejlsberg's work.</p>
+<p>The TypeScript compiler pipeline, while following a typical lexer-parser-binder-type checker-emitter structure, is optimized for interactive use within IDEs. This requires a highly deferred and lazy approach to analysis, ensuring rapid feedback to developers even in large codebases.</p>
+<h2>AI and the Future of Programming</h2>
+<p>The advent of AI and AI agents is profoundly impacting software development. Hejlsberg sees AI as a powerful tool for augmenting developer productivity, particularly in tasks like code generation, review, and testing. He notes that AI tools are becoming increasingly adept at handling repetitive tasks and even assisting with complex code migrations.</p>
+<p>However, he emphasizes that AI does not absolve developers from understanding the underlying principles of programming. The need for determinism in applications, especially in critical domains like finance, means that programming languages will remain essential for providing a reliable foundation. AI's strength lies in its ability to process vast amounts of data and identify patterns, but the responsibility for correctness and the ultimate design still rests with human developers.</p>
+<p>Hejlsberg believes that languages with strong type systems and inference capabilities, like TypeScript, are particularly well-suited for AI development. Types help guide AI in generating more accurate code, while inference allows for conciseness and efficiency. He also highlights the importance of locality in code structure, which helps manage the context window limitations of AI models.</p>
+<h2>The Enduring Craft of Software Development</h2>
+<p>With over 40 years of experience in language design, Hejlsberg has witnessed the evolution of software development firsthand. He observes that the craft is shifting from pure code writing to code review, architecture, and oversight, as AI agents take on more of the coding tasks. This requires a different kind of enjoyment and engagement, focusing on the bigger picture and the overall system design.</p>
+<p>He stresses that developers will remain relevant, not as mere coders, but as architects, reviewers, and responsible parties for the software they create. The ultimate product, he argues, is not just the code but the entire developer experience, encompassing the language, the tools, and the workflow.</p>
+<p>For those aspiring to build robust and influential software, Hejlsberg recommends Niklaus Wirth's &quot;Programs plus Data Structures equals Algorithms.&quot; This foundational text, he believes, still holds immense relevance for understanding the core principles of computer science and programming language design.</p>
+<h3>Key Takeaways</h3>
+<ul>
+<li><strong>Developer Productivity is Paramount:</strong> From Turbo Pascal's interactive IDE to TypeScript's powerful tooling, Hejlsberg's work consistently prioritizes making developers more productive and efficient.</li>
+<li><strong>The Whole Experience Matters:</strong> The product is not just the language or the compiler, but the entire development cycle, including the IDE and the workflow.</li>
+<li><strong>Open Source is Essential for Ecosystem Adoption:</strong> For languages targeting broad developer communities, open-sourcing is a critical factor for success.</li>
+<li><strong>Types Enable Better Tooling:</strong> Static type systems, as demonstrated by TypeScript, are crucial for building sophisticated and scalable developer tools.</li>
+<li><strong>AI is an Augmentation, Not a Replacement:</strong> AI tools can significantly enhance developer productivity but do not eliminate the need for human understanding, responsibility, and architectural oversight.</li>
+<li><strong>Long-Term Vision is Key:</strong> Building influential programming languages is a marathon, not a sprint, often requiring a decade or more to reach maturity and widespread adoption.</li>
+<li><strong>Simplicity and Elegance Drive Adoption:</strong> Languages that are powerful yet easy to understand and use, like Pascal, C#, and TypeScript, tend to resonate most with developers.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
