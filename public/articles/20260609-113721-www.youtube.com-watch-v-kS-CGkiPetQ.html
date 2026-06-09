@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veritasium - Google Maps is unreasonably fast. Let me explain - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Imagine trying to find the absolute shortest driving route from New York to San Francisco. With over 64 million intersections in North America, the number of possible routes is astronomical – around 1...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=kS-CGkiPetQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Veritasium - Google Maps is unreasonably fast. Let me explain</h1>
+      <time datetime="2026-05-30T14:46:43.000Z">
+        Saturday, May 30, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Algorithm That Powers Google Maps</h1>
+<p>Imagine trying to find the absolute shortest driving route from New York to San Francisco. With over 64 million intersections in North America, the number of possible routes is astronomical – around 10 to the power of 220. Even if you could check a billion routes per second, it would take over 10 to the power of 200 years to test them all. This isn't just a problem for navigation; any system requiring navigation, like a robot or a video game character, faces the same challenge. Yet, services like Google Maps can find you a route in mere seconds. How is this possible?</p>
+<p>The answer lies in the power of shortest path algorithms, a concept that traces its origins back to a shopping trip in Amsterdam in 1956.</p>
+<h2>The Birth of a 20-Minute Invention</h2>
+<p>Edsger Dijkstra, a computer scientist working on ARMAC, an early computer at the Mathematical Center in the Netherlands, needed a compelling demonstration of its capabilities. At the time, computers were widely considered useless, so much so that Dijkstra himself was humorously listed as a &quot;theoretical physicist&quot; on his marriage license because &quot;programmer&quot; wasn't recognized as a profession. He needed a problem that non-mathematicians could understand and appreciate the solution to.</p>
+<p>During a shopping trip with his fiancée, Dijkstra conceived of the perfect problem: &quot;What's the shortest way to travel from Rotterdam to Groningen?&quot; This question led to the development of the shortest path algorithm.</p>
+<h3>Breadth-First Search: The Simple Approach</h3>
+<p>A simplified way to visualize this is with a graph, where cities are nodes and roads are edges. The most basic approach, known as Breadth-First Search (BFS), explores all neighboring nodes from the starting point. It systematically checks all nodes one step away, then two steps away, and so on. This guarantees finding the shortest path in terms of the number of steps.</p>
+<p>However, BFS treats all roads as equal. In reality, roads have different lengths. To account for this, we assign weights to the edges, representing distances. This is where BFS becomes insufficient, and Dijkstra needed a more sophisticated method.</p>
+<h2>Dijkstra's Algorithm: Finding the Shortest Weighted Path</h2>
+<p>Dijkstra's breakthrough came during another moment of reflection, this time over coffee on a cafe terrace. His idea was to keep track of the shortest known distance (or &quot;cost&quot;) from the source node to every other node in the graph.</p>
+<p>The algorithm starts with the source node having a cost of zero and all other nodes having an infinite cost. Then, it iteratively explores the node with the lowest current cost among the unexplored nodes. For each explored node, it examines its neighbors and updates their costs if a shorter path is found through the current node.</p>
+<p>For example, if the current node has a cost of 3 and an edge to a neighbor has a weight of 2, the neighbor's cost is updated to 5. If later, another path to that same neighbor is found with a cost of 4, its cost is updated again to 4. This process continues, always selecting the unexplored node with the lowest cost, until the destination is reached.</p>
+<p>Dijkstra's algorithm guarantees finding the shortest path because, at each step, it has already explored all possible paths with costs lower than the current lowest-cost unexplored node. If the lowest cost among unexplored nodes is 18, it means all paths with costs less than 18 have already been considered, and if none reached the destination, then the current lowest-cost path to the destination must be the shortest.</p>
+<p>Dijkstra famously described his algorithm as a &quot;20-minute invention&quot; that he designed &quot;without pencil and paper,&quot; which he believed forced him to avoid unnecessary complexities.</p>
+<h2>The First Route Planner</h2>
+<p>When ARMAC was officially inaugurated in 1956, Dijkstra demonstrated his algorithm by having audience members choose two towns on a map. ARMAC then printed the shortest route, and the demonstration was a resounding success. While the algorithm sat in his papers for years, it was eventually published in 1959 and became a cornerstone of his fame.</p>
+<p>Despite its elegance, Dijkstra's algorithm isn't always sufficient for modern applications like Google Maps. Consider navigating from Newark Airport to the Central Park Zoo. Dijkstra's algorithm would explore outwards in all directions, checking all possible 10km journeys, then 20km, and so on. This search frontier can become enormous, encompassing areas far from the target, like Staten Island and large parts of New Jersey. While it might find the route quickly (around a tenth of a second on a phone), the sheer number of nodes explored can be inefficient for massive networks.</p>
+<h2>A* Search: Adding Heuristics for Smarter Navigation</h2>
+<p>The problem with Dijkstra's algorithm is that it explores in all directions, even those moving away from the target. To improve efficiency, we can introduce a heuristic – an educated guess – to guide the search.</p>
+<p>The A* (A-star) search algorithm modifies Dijkstra's by prioritizing nodes that are not only close to the source but also appear to be closer to the target. This is achieved by adding the straight-line distance (calculated using longitude and latitude) from a node to the target as part of its cost. The algorithm then orders nodes by their total cost (path from source + estimated distance to target).</p>
+<p>This &quot;penalizes&quot; moves that take the search further away from the destination, making the search frontier head more directly towards the target. A* can significantly reduce the number of nodes explored, often by an order of magnitude. This makes it highly effective for applications like video game NPCs, where efficient pathfinding is crucial.</p>
+<p>However, optimizing for the shortest <em>geographic distance</em> isn't always the same as optimizing for the fastest <em>travel time</em>. When considering travel time, A* can sometimes be outperformed by a well-tuned Dijkstra because the heuristic calculations themselves can add overhead.</p>
+<h2>Bi-directional Search and Road Network Hierarchy</h2>
+<p>To further optimize, map applications employ other strategies. One is <strong>bi-directional search</strong>, where the search is run simultaneously from both the source and the target. The two search frontiers meet in the middle, significantly reducing the overall search area.</p>
+<p>Another crucial insight is the <strong>hierarchy of road networks</strong>. Humans intuitively understand that we tend to use local roads to get to a highway, then use the highway for long distances, and finally exit the highway to use local roads again near our destination. Traditional algorithms like Dijkstra and A* don't inherently understand this hierarchy, treating a local road and a highway with the same weight as equally viable options.</p>
+<h3>Customizable Contraction Hierarchies</h3>
+<p>To address this, modern routing algorithms leverage pre-processed hierarchies. This involves automatically ordering nodes by their importance. For example, an intersection connecting two highways is far more important than one leading to a cul-de-sac.</p>
+<p>This pre-processing step, known as <strong>nested dissection</strong>, identifies &quot;bottleneck&quot; nodes that are critical for connecting different parts of the graph. For instance, bridges over a major river or key intersections that split the graph into roughly equal halves are identified as highly important. This process is repeated recursively, creating a hierarchy of node importance.</p>
+<p>Once this hierarchy is established, a bi-directional search can be performed, but it's constrained to only move <em>up</em> the hierarchy from both directions. This drastically limits the search space.</p>
+<p>To ensure that the shortest path is always found, even with this hierarchical search, <strong>shortcuts</strong> are introduced. These are artificial edges added between nodes that represent the shortest path using only lower-ranked nodes. This prevents the algorithm from missing a shorter route that might involve local roads, even if the hierarchical search initially bypasses it.</p>
+<p>This entire process, combining hierarchical ordering, bi-directional search, and shortcuts, is known as a <strong>Customizable Contraction Hierarchy (CCH)</strong>.</p>
+<h2>The Speed of Modern Mapping</h2>
+<p>The CCH approach breaks down into three phases:</p>
+<ol>
+<li><strong>Ordering Nodes and Adding Shortcuts:</strong> This is the most computationally intensive part, done once unless the road network changes significantly. For North America, this might take around 1 hour and 40 minutes.</li>
+<li><strong>Calculating Shortcut Weights:</strong> This step is rerun when traffic updates occur and needs to be relatively fast, taking seconds to minutes.</li>
+<li><strong>The Actual Search:</strong> This is the query phase, which needs to be incredibly fast.</li>
+</ol>
+<p>On the North American network, a well-tuned Dijkstra might take around seven seconds and explore most of the 64 million nodes. In contrast, a CCH can find the shortest path in approximately 200 microseconds – that's 35,000 times faster, exploring only about 1,450 nodes. This is the kind of speed that allows map applications to provide near-instantaneous directions.</p>
+<h2>Simplicity and Reliability</h2>
+<p>The enduring success of Dijkstra's algorithm, even as the foundation for highly complex systems like CCH, speaks to its fundamental elegance. Dijkstra himself believed that &quot;simplicity is prerequisite for reliability.&quot; He understood that ultimately, programmers are accountable for their work, not the machines. His hope was that his emphasis on thoughtful design would serve as a lasting legacy, encouraging others to approach problems with the same rigor and elegance.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Shortest path algorithms are essential for navigation and many other computational problems.</li>
+<li>Dijkstra's algorithm, developed in 1956, was a groundbreaking solution for finding the shortest path in weighted graphs.</li>
+<li>BFS is a simple method for unweighted graphs, while Dijkstra handles weighted edges.</li>
+<li>A* search improves efficiency by using heuristics to guide the search towards the target.</li>
+<li>Modern mapping applications use advanced techniques like bi-directional search and road network hierarchies.</li>
+<li>Customizable Contraction Hierarchies (CCH) combine hierarchical pre-processing with bi-directional search and shortcuts to achieve extremely fast query times.</li>
+<li>The simplicity and reliability of Dijkstra's core ideas continue to influence even the most advanced routing algorithms today.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
