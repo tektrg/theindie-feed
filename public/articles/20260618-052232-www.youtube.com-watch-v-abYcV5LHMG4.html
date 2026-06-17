@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - Scaling Past Informal AI - Carina Hong, Axiom Math - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Axiom Math, a seven-month-old company, has secured a significant $200 million Series A funding round, valuing the company at $1.6 billion. This substantial investment underscores a burgeoning belief i...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=abYcV5LHMG4" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - Scaling Past Informal AI - Carina Hong, Axiom Math</h1>
+      <time datetime="2026-06-03T19:11:22.000Z">
+        Thursday, June 4, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Axiom Math: Scaling Brilliance with Verified AI</h1>
+<p>Axiom Math, a seven-month-old company, has secured a significant $200 million Series A funding round, valuing the company at $1.6 billion. This substantial investment underscores a burgeoning belief in the commercial viability of formal mathematics and verified AI, a domain traditionally viewed as niche. Axiom's mission extends beyond simply proving mathematical theorems; they aim to leverage formal methods to scale and compound superintelligence, fundamentally changing how we approach AI development and deployment.</p>
+<h2>The Math Startup Thesis: Beyond Pure Research</h2>
+<p>The substantial funding round prompts the question: how can a &quot;math startup&quot; justify such a valuation? Axiom's thesis, akin to Anthropic's early focus on coding, posits that structured and formal data, like that found in mathematics, offers a more horizontal and transferable advantage than initially perceived. While their core DNA is rooted in mathematics, with a mission to create AI that can act as a superhuman mathematician, their work has profound implications for verified reasoning and AI safety.</p>
+<p>This approach contrasts with the common perception of formal verification as a tedious, compliance-driven process focused on eliminating errors and hallucinations. For Axiom, verified AI is about &quot;scaling brilliance&quot; and &quot;compounding super intelligence.&quot; They draw parallels to mathematicians like Ramanujan, whose intuitive brilliance was amplified and transformed into theorems through the rigorous process of proof. Similarly, the structured, step-by-step logical deduction inherent in mathematical proofs, when translated into code, can serve as a powerful foundation for AI.</p>
+<h2>Verified AI: Scaling Brilliance, Not Fixing Lousiness</h2>
+<p>Formal verification, a field predating deep learning, has historically been applied in safety-critical domains like aerospace and critical infrastructure. However, Axiom views it not as a burden, but as a performance enhancer. They believe that verified generation leads to increased sample efficiency, allowing a startup with fewer resources than frontier labs to achieve or even surpass superhuman performance on complex tasks.</p>
+<p>This was demonstrated by Axiom's performance on the Putnam exam, a prestigious undergraduate mathematics competition. While the best human score was 110 out of 120, Axiom achieved a perfect score of 120, outperforming even leading LLMs like DeepSeek, which scored 103. This achievement signifies a paradigm shift, suggesting that formal mathematical systems, despite potentially less training data, can rival or exceed the performance of informal LLMs.</p>
+<h2>Axiom's System: Lean Data, RL, and the Putnam Perfect Score</h2>
+<p>Axiom's success is built upon their heavy reliance on &quot;Lean data&quot; – proofs written in the Lean formal language. Lean is a computer program that acts as a formal language for mathematical proofs, similar to its cousins Coq and Isabelle. When a proof is written and compiled in Lean, and assuming no &quot;weird things&quot; like unchecked tactics are used, it is guaranteed to be correct. This is rooted in the Curry-Howard correspondence, which links proofs to programs.</p>
+<p>Lean is a Turing-complete, functional programming language that can be used for both coding and mathematics. Axiom leverages Lean's capabilities by fine-tuning foundation models using Reinforcement Learning (RL) for formal mathematics. Their approach involves recursively decomposing proof goals into sub-goals and learning to backtrack, aiming to innovate beyond standard RL pipelines.</p>
+<h2>Mathematical Discovery: Before the Conjecture</h2>
+<p>Axiom is also investing heavily in &quot;mathematical discovery&quot; tools, which they plan to open-source. These tools are designed to assist mathematicians and theoretical physicists in formulating conjectures and constructions, a crucial pre-proving step. These tools can suggest interesting examples, sequences, or graph constructions, aiding in the initial stages of problem-solving. This initiative is spearheaded by team members with a history of solving complex mathematical problems, including counter-example finding for conjectures and solving long-standing problems like the global Leono function.</p>
+<h2>Rice's Theorem, Incompleteness, and Practical Limits</h2>
+<p>While theoretical limitations like Rice's Theorem suggest that not all programs can be formally verified, Axiom focuses on verifying the &quot;majority of useful programs.&quot; Their vision is to integrate verification into the coding process, allowing AI to generate formally verified code components. This could range from front-end websites to more complex distributed systems. The goal is to provide a system where AI can either generate a formally verified program or state that a task is currently too difficult.</p>
+<p>The process involves generating code and its corresponding proof. Axiom's performance on the Code Marina benchmark, a code verification benchmark, demonstrates their capability. While GPT-4 achieved a low pass rate, Axiom's system achieved a 99% success rate on code-with-proof generation, solving 187 out of 189 problems. This success is attributed to using Lean for proofs and a strongly typed language like Rust for code, creating a more cohesive objective function for RL.</p>
+<h2>Code With Proof — The Verina Benchmark</h2>
+<p>The Verina benchmark, developed by researchers from Berkeley and Meta, aims to evaluate AI's ability to generate code with accompanying proofs. Axiom's impressive performance highlights the potential of their approach. The challenge lies in ensuring that the generated code truly satisfies the verifiability conditions of the problem statement. While human mathematicians rely on peer review and consensus, Axiom's system leverages the formal guarantees of Lean to ensure correctness.</p>
+<p>However, the problem of underspecification remains. Humans are notoriously bad at specifying every desired outcome, leading to potential gaps in formal specifications. Axiom acknowledges this limitation, stating, &quot;Currently, the vision as of currently is anything that can be specified can be proven.&quot; They are exploring ways to address this through techniques like mutation-based LM unit test generation, which can help propose specifications.</p>
+<h2>Proof Trees, Context Windows, and Scaling Limits</h2>
+<p>The sheer size of formal proofs can be a challenge. Axiom notes that for every line of code, there can be up to 20 lines of proof. While they haven't established a definitive scaling law for this relationship, they believe their &quot;Axium Improver,&quot; an ensemble system of post-trained models, can handle increasingly complex proof trees. They are not currently running into theoretical constraints, focusing instead on execution and scaling.</p>
+<p>The problem of context windows in LLMs is also a consideration. Axiom's approach involves auto-formalization, where informal proofs are converted into formal ones, and then back into informal summaries. This process helps manage large proof structures and maintain consistency.</p>
+<h2>Collaboration, Polymath, and Human Attention as the Bottleneck</h2>
+<p>Axiom believes that verified AI will foster greater collaboration, moving beyond human-human collaboration to human-AI and even AI-AI collaboration. They see verification not as a barrier to entry for closed industries, but as a catalyst for openness. The desire to understand, driven by human curiosity, will ensure that even with AI-generated proofs, humans will continue to engage with and explore mathematical concepts. Human attention, rather than computational power, is seen as the ultimate bottleneck.</p>
+<h2>Founding Story — Obsession, Law School, and Julie Zhuo</h2>
+<p>Karina Hong's journey to founding Axiom Math is a testament to her deep-seated passion for mathematics and AI. After pursuing neuroscience at Oxford and AI research at UCL Gatsby, she enrolled in Stanford's JD-PhD program. During her year in law school, she found herself increasingly drawn to technology and the progress of AI, particularly in reasoning. This obsession, coupled with conversations with her CTO, Shoubo, led her to realize the immense potential of AI in mathematics.</p>
+<p>A pivotal moment came when she met Julie Zhuo, a former Facebook PM, who advised her to &quot;follow your energy.&quot; This led Hong to pivot from academia to entrepreneurship, founding Axiom Math with the belief that AI-driven mathematical reasoning would be a significant part of the future.</p>
+<h2>The Bigger Vision — AGI, Science, and Transfer Learning</h2>
+<p>Axiom's vision extends beyond mathematics to encompass AGI, AI for science, and even law. They believe that the structured reasoning developed through formal mathematics can unlock capabilities in diverse fields. The core of their strategy lies in the belief that advancements in math and formal verification will drive progress across scientific disciplines and beyond.</p>
+<p>The company's success is attributed to its team of expert mathematicians who are also users of the system they are developing, creating a rapid iteration loop. This interdisciplinary approach, combining mathematical rigor with applied ML and codegen expertise, is seen as a key differentiator.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Verified AI for Scaling Brilliance:</strong> Axiom Math redefines formal verification not as a means to fix errors, but as a tool to scale and compound intelligence.</li>
+<li><strong>Math as a Horizontal Advantage:</strong> The structured nature of mathematics provides a powerful foundation for AI, with transferable applications beyond pure math.</li>
+<li><strong>Lean and Formal Proofs:</strong> Axiom leverages the Lean formal language to generate and verify mathematical proofs, ensuring correctness and enabling performance gains.</li>
+<li><strong>Mathematical Discovery:</strong> Axiom is developing tools to assist in the pre-conjecture stages of mathematical research, aiming to democratize discovery.</li>
+<li><strong>Code-with-Proof Generation:</strong> The company is pioneering the generation of code accompanied by formal proofs, a critical step towards trustworthy AI.</li>
+<li><strong>Human Attention as the Bottleneck:</strong> Despite AI's rapid progress, human curiosity and taste will remain crucial in guiding research and development.</li>
+<li><strong>Startup Advantage:</strong> Axiom believes that a focused startup environment allows for sustained dedication to long-term, ambitious goals, unlike larger organizations that may face shifting priorities.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
