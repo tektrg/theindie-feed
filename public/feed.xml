@@ -7,8 +7,76 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 06:22:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 22:20:51 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pragmatic Engineer - CI/CD with Robert Erez</title>
+      <link>https://myfeed.theindie.app/articles/20260618-052017-www.youtube.com-watch-v-2x0eq5oDOJY.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260618-052017-www.youtube.com-watch-v-2x0eq5oDOJY.html</guid>
+      <pubDate>Wed, 17 Jun 2026 16:40:37 GMT</pubDate>
+      <description><![CDATA[Continuous Integration and Continuous Delivery (CI/CD) remain some of the most challenging yet crucial aspects of modern software engineering. As the industry evolves, driven by new technologies like...]]></description>
+      <content:encoded><![CDATA[<h1>The Evolving Landscape of CI/CD: From Skype to AI and Beyond</h1>
+<p>Continuous Integration and Continuous Delivery (CI/CD) remain some of the most challenging yet crucial aspects of modern software engineering. As the industry evolves, driven by new technologies like Kubernetes and AI, the practices and philosophies surrounding CI/CD are also shifting. This article delves into the journey of CI/CD, exploring its historical roots, the impact of new platforms, the rise of GitOps, the nuances of progressive delivery, and the future implications of AI.</p>
+<h2>From Weekly Releases to Continuous Delivery: A Skype Story</h2>
+<p>The journey into the world of CI/CD often begins with early experiences that highlight the limitations of traditional release processes. For Rob Erez, a CI/CD expert with over a decade of experience, this journey started at Skype in the early 2010s. At the time, deployments were a weekly affair, requiring sign-off from a Change Advisory Board (CAB). This process felt cumbersome for a web-based application running on Azure, where the team had the capability to deploy at any time.</p>
+<p>&quot;We'd make these changes through the week, but we'd kind of have to hold them back,&quot; Rob recalls. The team found a way to work around the system, building and shipping code as it became ready. This involved a robust process of committing code, running multiple layers of testing, and deploying to staging before production. This self-managed process was, in essence, a form of continuous delivery.</p>
+<p>A particularly memorable aspect of their process was the use of &quot;canary deployments,&quot; where new releases were rolled out to a small percentage of their customer base. New Zealand, being the first country to reach a new day and an English-speaking demographic, served as their consistent canary. This allowed them to test new features in a live environment with minimal risk, a practice that opened Rob's eyes to the power of progressive delivery.</p>
+<h2>The Rise of Octopus Deploy and the CI/CD Spectrum</h2>
+<p>After his time at Skype, Rob joined Octopus Deploy, a company specializing in deployment automation. This move solidified his deep involvement in the CI/CD space. He explains the distinction between Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment:</p>
+<ul>
+<li><strong>Continuous Integration (CI):</strong> The practice of frequently merging code changes into a single branch, followed by automated testing.</li>
+<li><strong>Continuous Delivery (CD):</strong> Extends CI by ensuring that code changes are not only integrated and tested but also ready to be deployed to production at any time. This involves testing the deployment process itself.</li>
+<li><strong>Continuous Deployment:</strong> The ultimate stage where code changes that pass all automated tests are automatically deployed to production without manual intervention.</li>
+</ul>
+<p>While Continuous Deployment offers significant benefits, Rob emphasizes that it's not a one-size-fits-all solution. Industries with stringent regulations and compliance requirements may need to retain manual gates for production releases. However, achieving Continuous Delivery, where changes are always deployable, is a valuable goal for most teams, as it significantly mitigates risk.</p>
+<h2>Kubernetes: The Cloud-Native Unifier, On-Premises Powerhouse</h2>
+<p>The advent of Kubernetes has dramatically reshaped the infrastructure landscape. Originally developed by Google, Kubernetes emerged as a powerful container orchestration platform. Its open-source nature and adoption by major cloud providers like AWS and Azure helped level the playing field, making it easier for organizations to move workloads between different cloud environments.</p>
+<p>&quot;Kubernetes came along at the time when there was a bunch of plays in the field for container orchestration,&quot; Rob notes. While other solutions existed, Kubernetes eventually emerged as the dominant force due to its robust features and broad ecosystem support.</p>
+<p>Interestingly, despite being labeled &quot;cloud-native,&quot; Kubernetes has found significant traction in on-premises deployments. Many organizations leverage Kubernetes to manage their own data centers or even run clusters on research vessels at sea. This allows them to benefit from Kubernetes' declarative configuration and self-healing capabilities while maintaining greater control over their infrastructure. The ability to define a desired state and have Kubernetes continuously reconcile reality with that state simplifies complex infrastructure management.</p>
+<h2>GitOps: Declarative Infrastructure and Version Control</h2>
+<p>GitOps has emerged as a prominent trend, particularly in conjunction with Kubernetes. At its core, GitOps is a methodology for managing infrastructure and application deployments using Git as the single source of truth. The key pillars of GitOps, as defined by Weaveworks, are:</p>
+<ol>
+<li><strong>Declarative:</strong> The desired state of the system is declared.</li>
+<li><strong>Versioned and Immutable:</strong> The desired state is stored in a version-controlled, immutable repository.</li>
+<li><strong>Pull vs. Push:</strong> GitOps agents pull the desired state from the repository and apply it to the cluster.</li>
+<li><strong>Continuous Reconciliation:</strong> GitOps agents continuously ensure that the actual state matches the desired state.</li>
+</ol>
+<p>While the name &quot;GitOps&quot; suggests an absolute reliance on Git, Rob points out that the core principles don't strictly require it. The emphasis is on declarative state, versioning, and continuous reconciliation. The challenge arises when trying to apply GitOps dogma to all aspects of infrastructure, such as managing secrets, which are often better handled outside of a Git repository. The trend is towards adopting GitOps principles for managing infrastructure, especially within Kubernetes, as it provides a structured and auditable way to manage deployments.</p>
+<h2>Progressive Delivery: De-risking Releases with Feature Toggles</h2>
+<p>Progressive delivery represents an evolution beyond continuous delivery, focusing on releasing changes in a more controlled and gradual manner. This approach aims to minimize the impact of potential issues by releasing features to a subset of users before a full rollout. Common strategies include:</p>
+<ul>
+<li><strong>Canary Deployments:</strong> Rolling out a new version to a small percentage of traffic and gradually increasing it while monitoring performance and user feedback.</li>
+<li><strong>Blue-Green Deployments:</strong> Running two identical production environments, one active (blue) and one idle (green). Traffic is switched from blue to green after validation, allowing for quick rollback if issues arise.</li>
+<li><strong>Feature Toggles (Feature Flags):</strong> A more granular approach where specific features can be turned on or off independently of deployments. This allows for decoupling feature releases from code deployments, offering precise control over who sees a feature and when.</li>
+</ul>
+<p>Rob advocates strongly for feature toggles, highlighting their advantages in terms of granular control, rapid rollback capabilities (often in seconds), and the ability to decouple deployment from release. This is particularly relevant in an era where AI-generated code might increase the velocity of deployments, making risk mitigation even more critical.</p>
+<h2>Rollbacks: The &quot;Roll Forward&quot; Philosophy</h2>
+<p>The concept of &quot;rollback&quot; is often discussed in CI/CD, but Rob argues for a &quot;roll forward&quot; philosophy. While stateless systems can often be rolled back by reverting to a previous version, stateful systems, particularly those involving database schema changes, present significant challenges. Attempting a rollback with schema drift can lead to complex inconsistencies.</p>
+<p>Instead, Rob advises that if a bug is discovered, the focus should be on creating a hotfix and rolling forward to a new, corrected version. This approach, combined with the rapid rollback capabilities of feature toggles, provides a more robust strategy for managing issues.</p>
+<h2>The Rise of Platform Teams and Evolving Development Environments</h2>
+<p>The increasing complexity of software development and deployment has led to the rise of <strong>platform teams</strong>. These teams aim to provide standardized, self-service mechanisms for application teams, abstracting away much of the underlying infrastructure complexity. This allows application developers to focus on writing code rather than managing deployment scripts and infrastructure configurations.</p>
+<p>The evolution of development environments also continues. While traditional Dev, Test, and Prod environments remain common, the concept of <strong>ephemeral environments</strong> is gaining traction. These temporary environments are spun up for specific features or pull requests, allowing developers to test and validate their work in isolation before merging. This accelerates feedback loops and improves the quality of code before it reaches more formal testing stages.</p>
+<h2>AI's Impact on CI/CD: Velocity and Risk Mitigation</h2>
+<p>The integration of AI into the software development lifecycle is undeniable. While the full impact on CI/CD is still unfolding, it's clear that AI will drive increased velocity in code generation and potentially influence how pipelines are managed.</p>
+<p>Rob anticipates a shift in focus from the speed of the pipeline itself to risk mitigation. With AI generating more code, the emphasis will be on ensuring the quality and safety of these releases. This will likely lead to increased adoption of progressive delivery techniques, especially feature toggles, to manage the rollout of AI-generated features and to quickly disable them if issues arise.</p>
+<h2>The Enduring Importance of On-Premises and Hybrid Offerings</h2>
+<p>Despite the prevailing narrative of &quot;everything in the cloud,&quot; Rob highlights the continued relevance of on-premises and hybrid solutions. Many organizations, particularly in finance, government, and regulated industries, require on-premises deployments for control, compliance, and security reasons.</p>
+<p>Octopus Deploy's dual strategy of offering both SaaS and on-premises solutions exemplifies this reality. Managing both presents unique engineering challenges, especially concerning upgrade paths and backward compatibility for long-standing on-premises installations. However, the demand for these solutions remains strong, underscoring that a one-size-fits-all cloud-only approach is not universally applicable.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Progressive Delivery is Key:</strong> Moving beyond simple continuous delivery, progressive delivery techniques like canary deployments and feature toggles are crucial for de-risking releases.</li>
+<li><strong>Embrace &quot;Roll Forward&quot;:</strong> For stateful systems, especially with schema changes, focus on rolling forward with fixes rather than attempting complex rollbacks.</li>
+<li><strong>Feature Toggles are Powerful:</strong> Feature toggles offer granular control, rapid rollback, and decouple feature releases from deployments, becoming increasingly vital with AI-driven development.</li>
+<li><strong>GitOps Principles, Not Dogma:</strong> While GitOps offers valuable principles for declarative infrastructure management, avoid dogmatic adherence and focus on what works best for your team.</li>
+<li><strong>On-Premises Remains Relevant:</strong> The demand for on-premises and hybrid solutions persists, driven by control, compliance, and specific business needs.</li>
+<li><strong>AI Will Drive Velocity and Risk Focus:</strong> AI will accelerate code generation, shifting CI/CD focus towards robust risk mitigation and progressive rollout strategies.</li>
+<li><strong>Platform Teams Streamline Development:</strong> Platform teams provide standardized tools and processes, enabling application teams to focus on core development.</li>
+<li><strong>Ephemeral Environments Accelerate Feedback:</strong> Temporary, feature-specific environments speed up testing and validation cycles.</li>
+<li><strong>Maintain Feature Toggle Hygiene:</strong> While powerful, feature toggles require ongoing management to prevent code bloat and ensure they are removed when no longer needed.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>YouTube Music - When AI Agents Run Businesses — Lukas Petersson and Axel Backlund of Andon Labs</title>
       <link>https://myfeed.theindie.app/articles/20260617-132133-music.youtube.com-watch-v-T8u7wOXhDb0.html</link>
@@ -5551,18 +5619,6 @@
       <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/shorts/W8XNHsZWFSo">Claude's new features are insane #ad</a></p>
 <hr>
 <p><img src="https://www.youtube.com/watch?v=embed" alt=""></p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Anhedonia - Meet Openclaw UI</title>
-      <link>https://myfeed.theindie.app/articles/20260415-204041-www.youtube.com-watch-v-ImtTIsFwlO0.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260415-204041-www.youtube.com-watch-v-ImtTIsFwlO0.html</guid>
-      <pubDate>Wed, 15 Apr 2026 13:40:55 GMT</pubDate>
-      <description><![CDATA[...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=ImtTIsFwlO0">Meet Openclaw UI</a></p>
-<hr>
-<p><img src="https://www.youtube.com/watch?v=ImtTIsFwlO0" alt=""></p>
 ]]></content:encoded>
       
     </item>
