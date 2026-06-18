@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - 🔬 The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Alex Reeves, Head of Science at Biohub, discusses the groundbreaking advancements in protein language modeling, particularly the development of ESM-C, a comprehensive world model for protein biology....">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=XdevS0GSuiQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - 🔬 The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub</h1>
+      <time datetime="2026-05-27T17:32:38.000Z">
+        Thursday, May 28, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Unlocking Protein Biology: Alex Reeves on ESM-2, ESM-C, and the Future of AI in Science</h1>
+<p>Alex Reeves, Head of Science at Biohub, discusses the groundbreaking advancements in protein language modeling, particularly the development of ESM-C, a comprehensive world model for protein biology. He shares insights into the &quot;bitter lesson&quot; of scaling laws in AI, the importance of data diversity, and how these models are paving the way for programmable biology and accelerating scientific discovery.</p>
+<h2>The Power of Scaling Laws in Protein Biology</h2>
+<p>Reeves' commitment to the &quot;bitter lesson&quot; – the idea that scaling up models and data often leads to emergent capabilities – stems from his work since 2018. His team pioneered transformer language models for protein biology, observing that as models grew in size and were trained on vast evolutionary data, new biological insights and capabilities emerged. This approach is rooted in the understanding that protein sequences are not arbitrary; they are shaped by evolutionary constraints. Amino acids at different positions in a sequence are interdependent, influencing how a protein folds into a three-dimensional structure. By training models to predict amino acid sequences across billions of evolutionary contexts, these models learn the underlying biological principles governing protein formation and function.</p>
+<h2>ESM-C: A World Model for Protein Biology</h2>
+<p>The latest development, ESM-C, represents a significant leap forward. It's not just a language model but a &quot;world model&quot; of protein biology. This model builds upon the foundation of ESM-2, incorporating structural prediction capabilities and leveraging mechanistic interpretability to reveal the underlying features the model uses.</p>
+<p>ESM-C has been trained on an unprecedented dataset of 6.8 billion non-redundant protein sequences. From this, it has predicted structures for 1.1 billion unique protein clusters, providing the most comprehensive picture of protein structure and function to date. This vast dataset allows for the identification of intricate linkages across evolution, revealing shared functional patterns even between distantly related proteins, such as gene editing systems.</p>
+<h2>Mechanistic Interpretability: Unveiling Biological Hierarchies</h2>
+<p>A key aspect of ESM-C's development involves mechanistic interpretability, using techniques like sparse autoencoders. This analysis has revealed a hierarchical structure of features within the model's representation space. These learned features correspond remarkably well to decades of biological understanding, from basic biochemical properties and structural building blocks to complex functional themes. This emergence of biological knowledge without explicit prior programming is a testament to the power of large-scale language modeling.</p>
+<p>Reeves explains that the model develops internal &quot;latent variables&quot; to solve the complex task of predicting amino acid sequences. These variables effectively represent underlying biological concepts, such as the &quot;nucleophilic elbow,&quot; a functional motif found across diverse protein families. The model's ability to identify and represent such motifs with a single feature, even in evolutionarily distant proteins, highlights its deep understanding of biological organization.</p>
+<h2>The Crucial Role of Data: Beyond UNIREF</h2>
+<p>While ESM-2 demonstrated the benefits of scaling compute and parameters, ESM-C's breakthrough lies in its data. The training data for ESM-2 was primarily UNIREF, a curated dataset. For ESM-C, the critical addition was metagenomic sequencing data. This data, collected from diverse environments like hydrothermal vents and the human gut, captures the vast, often noisy, and unannotated protein diversity present in nature.</p>
+<p>Metagenomic sequencing involves collecting environmental samples and sequencing all the genetic material within them, without necessarily identifying the specific organisms or even confirming if a sequence is a complete protein. This approach, while noisy, provides an unparalleled breadth of evolutionary contexts, proving crucial for ESM-C's enhanced capabilities. Reeves emphasizes that this data-driven approach, rather than relying on extensive built-in inductive biases like AlphaFold, allows the model to learn the underlying structure of protein biology organically.</p>
+<h2>Programmable Biology and Therapeutic Design</h2>
+<p>ESM-C is not just a descriptive model; it's a tool for programmable biology. By treating it as a &quot;world model,&quot; researchers can search its latent space to find protein molecules that satisfy specific design criteria. This has already led to the successful design of mini-protein binders and, more excitingly, single-chain variable fragments (SCFVs) and antibodies.</p>
+<p>SCFVs are a therapeutic modality derived from antibodies, offering potential advantages in drug development. Reeves notes that ESM-C can identify antibodies with the necessary affinity for therapeutic function, a significant advancement in the field of protein design, which has historically found designing larger antibody structures more challenging. While full immunoglobulin G (IgG) designs haven't been attempted yet, Reeves sees no fundamental reason why they wouldn't be achievable.</p>
+<h2>The Future: A New Scientific Paradigm</h2>
+<p>Biohub, under Reeves' leadership, is focused on building a scientific institution for a new paradigm that integrates frontier experimental biology, technology, and artificial intelligence. This paradigm is characterized by:</p>
+<ul>
+<li><strong>Data Generation:</strong> Accelerating the creation of vast, multi-modal datasets.</li>
+<li><strong>Computational Predictive Representations:</strong> Developing increasingly capable digital models of biological complexity, from molecules to cells and physiology.</li>
+<li><strong>Feedback Loops:</strong> Utilizing scalable intelligence to reason over millions of scientific hypotheses, predict experimental outcomes, and iteratively refine understanding.</li>
+</ul>
+<p>The goal is to move beyond simply observing biology to actively modeling, simulating, and ultimately controlling it. This involves bridging the gap between molecular-level understanding and the complex dynamics of cellular systems.</p>
+<h2>The Virtual Cell Initiative and Data Collection</h2>
+<p>Biohub's ambitious Virtual Biology Initiative, backed by significant investment, aims to catalyze data creation and technology development for a comprehensive understanding of cellular biology. Key principles guiding this initiative include:</p>
+<ul>
+<li><strong>Speed:</strong> Rapidly generating data, moving beyond the decades-long timelines of past biological discoveries.</li>
+<li><strong>Generalization:</strong> Creating models that can predict outcomes in novel contexts and serve as &quot;oracles&quot; for biological inquiry. This requires scaling interventional biology, such as perturbation experiments, and integrating multi-modal measurements (transcriptomics, proteomics, epigenetics, etc.).</li>
+<li><strong>Spatial Biology:</strong> Understanding cells within their complex systemic context, not in isolation, to grasp disease mechanisms.</li>
+</ul>
+<p>Reeves highlights the need for new technologies to enable simultaneous measurement of multiple biological layers and to scale existing technologies by orders of magnitude. The focus is on both improving current assays and developing next-generation technologies for data collection.</p>
+<h2>Bottlenecks and Opportunities</h2>
+<p>While compute remains a significant bottleneck for AI development, Reeves points out that in biology, experimental science and data generation are the primary limitations. He believes there's still vast untapped potential in publicly available protein sequence data, with estimates suggesting hundreds of billions of sequences yet to be fully leveraged.</p>
+<p>The ultimate goal is to create a comprehensive, information-theoretic description of the cell, akin to understanding the &quot;underlying programs&quot; that govern its behavior. This, Reeves suggests, will be key to understanding and ultimately curing diseases.</p>
+<h2>Call to Action</h2>
+<p>Biohub is releasing ESM-C under an MIT license, making it freely available for researchers worldwide. Reeves encourages the scientific community to use this powerful tool, collaborate, and help accelerate the pace of discovery in protein biology and beyond. The aim is to build the foundational tools that empower scientists to tackle humanity's most pressing health challenges.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
