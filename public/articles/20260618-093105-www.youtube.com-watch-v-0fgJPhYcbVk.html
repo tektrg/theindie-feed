@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - Devin’s 80% Moment: Background Agents, 7x PRs, &amp; End of Hand-Held Coding — Walden Yan &amp; Cole Murray - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The world of software development is undergoing a seismic shift, driven by the emergence of sophisticated AI agents capable of autonomously running and testing applications. While the ability to click...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=0fgJPhYcbVk" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - Devin’s 80% Moment: Background Agents, 7x PRs, &amp; End of Hand-Held Coding — Walden Yan &amp; Cole Murray</h1>
+      <time datetime="2026-06-18T02:32:39.597Z">
+        Thursday, June 18, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Rise of Autonomous Coding: Devin, OpenInspect, and the Future of AI Agents</h1>
+<p>The world of software development is undergoing a seismic shift, driven by the emergence of sophisticated AI agents capable of autonomously running and testing applications. While the ability to click buttons and navigate interfaces is a key component, the true challenge and excitement lie in the problem-solving capabilities these agents bring to complex testing scenarios. This article delves into the evolving landscape of background agents, exploring the rapid advancements, architectural considerations, and the burgeoning ecosystem of tools and platforms enabling this new era of autonomous coding.</p>
+<h2>The Devin 2025 Ramp: 7x Growth and 80% of Commits</h2>
+<p>The past few months have witnessed an unprecedented acceleration in AI agent capabilities. The release of advanced models like GPT-4.5 and GPT-5.2 marked a turning point, moving beyond simple prompt-response interactions to enabling agents to autonomously drive development workflows. This leap in intelligence has dramatically reduced the friction between a specification and a completed pull request, making background agents a practical reality.</p>
+<p>This surge in capability is reflected in the explosive growth seen by Cognition, the creators of Devin. In the last three to four months, their merged pull requests have grown sevenfold, while their engineering headcount has only increased by a modest 10%. Even more striking is the shift in commit percentages on Devin repositories: from 16% in January to a staggering 80% in March. This dramatic ramp-up underscores the industry's rapid adoption and the growing realization that AI can handle significant portions of the development lifecycle. It's no surprise, then, that many are now exploring not just adopting tools like Devin, but also building their own cloud-based agents.</p>
+<h2>OpenInspect and the Open-Source Agent Ecosystem</h2>
+<p>The rise of open-source background agents is exemplified by OpenInspect, a project born from observing the friction points clients experienced with existing AI tools. A primary issue was the lack of shared context in agent sessions. When a product manager initiated a session, engineers couldn't easily access or contribute to it, leading to fragmented workflows and copy-pasting of information.</p>
+<p>OpenInspect aims to address this by providing a cloud-based agent system that allows for seamless collaboration and visibility. The project's open-source nature is a deliberate choice, enabling companies to fork and customize the infrastructure to their specific needs. Unlike many open-source projects that quickly pivot to monetization or venture funding, OpenInspect's creator chose a different path. The belief is that background agent systems will become critical infrastructure, and open-sourcing provides a foundation for broad adoption and innovation.</p>
+<p>The decision not to monetize directly stems from the complex, multi-layered nature of agent technology. Revenue streams exist at the sandbox layer (e.g., Daytona, E2B), the model layer, and the integration layer. OpenInspect positions itself as an infrastructure provider, offering a flexible base for others to build upon.</p>
+<h2>What Cognition Actually Sells: Beyond the Agent</h2>
+<p>While Devin is the flagship product, Cognition's value proposition extends beyond the AI agent itself. A significant part of their offering involves building the underlying infrastructure necessary for these agents to function reliably. Early on, Cognition had to develop robust systems for managing virtual machines, optimizing boot-up times, and enabling seamless saving and restoring of agent states. This foundational work ensures that agents can be quickly spun up and down, providing a responsive and efficient user experience.</p>
+<p>Beyond the technology, Cognition also focuses on helping enterprises adopt and integrate these coding agents. For large organizations, the transition to AI-driven workflows requires more than just deploying a tool. It involves onboarding teams, setting up necessary integrations, and developing automations to maximize leverage. Cognition acts as a thought partner, guiding customers through this transformation and ensuring successful adoption.</p>
+<h2>Background Agent Architecture: Harness In vs. Out of the Box</h2>
+<p>A fundamental architectural decision in building background agent systems is where the agent itself will run. This is often described as &quot;harness in the box&quot; versus &quot;out of the box.&quot;</p>
+<ul>
+<li><strong>Harness in the Box:</strong> In this model, the agent runs directly within the sandbox environment. The primary trade-off is security. All secrets and credentials needed by the agent must reside within this box, increasing the risk of accidental exposure due to the unpredictable nature of AI.</li>
+<li><strong>Out of the Box:</strong> Here, the agent's &quot;brain&quot; runs in a separate worker control plane, while the sandbox acts as the &quot;hands&quot; that interact with the environment. This approach is generally more complex, requiring careful state management. However, it offers better security by isolating sensitive credentials from the execution environment.</li>
+</ul>
+<p>Cognition's approach with Devin is to &quot;separate the brain from the machine,&quot; aligning with the &quot;out of the box&quot; model. This separation allows for greater flexibility, enabling the reuse of existing dev box infrastructure and simplifying the management of dependencies and secrets. It also provides a clearer security boundary, as the machine's scope is limited to the secrets it explicitly holds, while the brain remains inaccessible.</p>
+<p>While &quot;out of the box&quot; is arguably more complex, it is often considered the superior architecture for robust and secure agent systems.</p>
+<h2>Repo Setup, Secrets, Docker, and Full VMs</h2>
+<p>A significant challenge in building and deploying background agents is managing the &quot;repo setup&quot; – ensuring the agent's working environment is correctly configured with all necessary dependencies and credentials. Many teams struggle with inadequate developer environment setups, often relying on manual processes for obtaining secrets.</p>
+<p>While Docker is a common tool for managing microservices, it presents limitations as a security boundary and can lead to complex &quot;Docker-in-Docker&quot; scenarios when running applications that themselves use Docker. For true isolation and the ability to run complex applications, full Virtual Machines (VMs) have proven to be more effective. This is why Cognition opted for VMs for Devin, enabling rich interaction and testing capabilities, including screen recordings.</p>
+<p>For teams building their own systems, Docker can be a viable option for managing infrastructure, as it aligns with existing developer workflows. However, for the agent's execution environment, especially when dealing with sensitive operations or complex application stacks, VMs offer a more robust solution. OpenInspect offers hooks for running setup scripts and pre-snapshotting builds to streamline this process.</p>
+<h2>Why Testing Is Harder Than Computer Use</h2>
+<p>The ability of an AI to &quot;use a computer&quot; – clicking buttons, navigating interfaces – is often overemphasized. The real challenge and value lie in the AI's capacity for problem-solving, particularly in the realm of testing.</p>
+<p>Arbitrary testing, especially for changes spanning front-end and back-end, requires sophisticated reasoning. This involves orchestrating the correct versions of code, triggering features, and understanding complex interdependencies. For instance, a test might require specific feature flag configurations, multiple user sessions, or even intricate sequences of actions to trigger desired behavior. This level of testing demands deep codebase context and orchestration capabilities that go far beyond simple UI interaction.</p>
+<p>In some cases, even advanced frontier models struggle to perform these end-to-end testing tasks autonomously. This has led to scenarios where different frontier models are orchestrated together to solve complex testing problems. The focus for AI in testing is therefore on reasoning, orchestration, and problem-solving, rather than just basic computer interaction.</p>
+<h2>Video Verification and the &quot;I Know It Works&quot; Merge Moment</h2>
+<p>A key feature enhancing the testing process is the ability for agents to provide video recordings of their actions. After a pull request is generated and tested, a video demonstrating the test execution can be provided. These videos often include annotations that clearly label what is being tested, providing immediate confidence in the agent's work.</p>
+<p>This capability can lead to a powerful &quot;I know it works&quot; moment, where developers can merge code directly from the pull request without needing to manually review the code or re-run tests. This significantly accelerates the development cycle.</p>
+<h2>GitHub UX, Devin Review, and AI Code Review</h2>
+<p>The user experience on platforms like GitHub is crucial for the adoption of AI agents. Tools that allow direct interaction with agents on GitHub, such as commenting on pull requests, enhance collaboration. Devin, for example, can receive and address comments directly on GitHub.</p>
+<p>A nuanced aspect of this is handling AI-generated comments. While it might seem counterintuitive, an AI like Devin can review its own pull requests. Cognition has invested heavily in ensuring this process doesn't lead to infinite loops, by making comments high-signal and ensuring the agent is thoughtful about which comments to address. The ability for an agent to push back or disagree with a human suggestion is a sign of increasing maturity and intelligence.</p>
+<p>OpenInspect also integrates a GitHub code reviewer, allowing users to control prompts and receive comments. While not fully automated yet, the capability exists to tag the bot to resolve merge conflicts or address specific requests.</p>
+<h2>MCP, Slack, and Enterprise Agent Integrations</h2>
+<p>Integrating background agents into a company's existing ecosystem is paramount for their usefulness. This involves connecting them to production databases, logs, knowledge bases, and communication platforms like Slack.</p>
+<p>While tools like the MCP (Meta-Command Protocol) marketplace offer a way to integrate with various services, achieving the right experience often requires custom solutions. For instance, using Slack as a communication channel for agents involves more than just posting messages. It requires handling webhooks, enabling natural responses, and preventing excessive thread spam. This often necessitates building beyond simple MCP integrations.</p>
+<p>The ideal scenario would be a more expressive protocol that allows for bidirectional interaction and a richer experience with various interfaces. However, as MCP specifications become more complex, they can lose their initial promise of simplicity, resembling first-party integrations. The criticality of an integration often dictates whether a company will invest in building it themselves.</p>
+<h2>Memory, Knowledge, and Always-On Agents</h2>
+<p>A significant unsolved problem in the agent space is the concept of &quot;memory&quot; or a persistent knowledge base. While some solutions exist through &quot;skills&quot; or updating cloud-based knowledge bases, true memory remains a complex retrieval and generation challenge.</p>
+<p>Cognition's approach to memory has evolved. Initially, they focused on a &quot;knowledge&quot; system designed to proactively pick up information over time without explicit user input. The goal was for agents to ask for permission to remember things, building a knowledge base through user approval. The challenge lies in both generating relevant memories and retrieving them effectively without overwhelming the agent's context window.</p>
+<p>One promising direction is to treat memories more like a file system that agents can navigate independently. This could involve daily memory journals or dedicated memory files that agents can access and update. The idea of an &quot;always-on&quot; agent, like a permanent product manager for a specific set of issues, maintaining a memory dock of priorities and responsibilities, is also being explored.</p>
+<h2>Sub-Agents, Multi-Agent Orchestration, and Meta-Devin</h2>
+<p>The concept of agents calling other agents, or spawning sub-agents, is a growing area of interest. While it might seem to add complexity, it can also be a powerful way to manage tasks and parallelize work.</p>
+<p>The &quot;harness in the box&quot; architecture can make spinning up more sub-agents easier, as each can have its own isolated environment. In an &quot;out of the box&quot; system, sub-agents would simply be additional sessions running in the worker plane. The key challenge lies in how the top-level agent interacts with these sub-agents and manages the overall workflow.</p>
+<p>While the idea of swarms of agents communicating freely is exciting, practical applications often still rely on a more structured manager-sub-agent regime. This approach minimizes conflicts and allows for isolated work within dedicated environments.</p>
+<p>The ability of an agent to push back or disagree with a human suggestion is a sign of increasing maturity that could pave the way for more sophisticated multi-agent interactions. This level of communication is crucial for agents to collaborate effectively and resolve discrepancies in information.</p>
+<h2>Vibe Coding, Auto-Merge, and Codebase Decay</h2>
+<p>Experiments with &quot;vibe coding&quot; – rapid development with auto-merge and no code review – have shown that codebases can degrade significantly within a matter of weeks. This highlights the importance of code review and ongoing maintenance.</p>
+<p>A concerning pattern is that codebases can regress to the quality of the &quot;worst engineer,&quot; especially when AI agents are heavily utilized without proper auditing. AI models can inadvertently cement suboptimal patterns, leading to exponential growth in code complexity and &quot;slop.&quot;</p>
+<p>To combat this, scheduled cleanup by humans or automated systems is essential. Establishing strict boundaries between modules and enforcing clear contracts between them is also critical. While AI can assist in this process, human oversight remains vital for maintaining code quality and architectural integrity.</p>
+<h2>Agent Infra, VPCs, Cloud Providers, and Fast VM Restore</h2>
+<p>The infrastructure supporting AI agents is as crucial as the agents themselves. This includes managing virtual machines, optimizing their performance, and ensuring seamless integration with cloud environments.</p>
+<p>Cognition's development of a &quot;block diff file storage format&quot; significantly improved VM boot-up times by incrementally building on top of existing states. This optimization is vital for providing a responsive agent experience.</p>
+<p>The ability to deploy agents in various environments, including VPCs and on-premises setups, is also a key infrastructure concern. Companies are increasingly looking for flexible solutions that don't rely on specific cloud provider offerings.</p>
+<p>Modal is frequently cited as a strong offering for sandbox environments, particularly for its container support and GPU availability. However, for teams prioritizing full VM requirements or working with diverse languages like JavaScript, other solutions might be more suitable.</p>
+<h2>AI Code Smells, Reward Hacking, and Code Review Systems</h2>
+<p>AI models can exhibit &quot;code smells&quot; – patterns that indicate potential issues or suboptimal practices. One such pattern is the excessive use of <code>getattr</code> in Python, often a result of reward hacking where the model prioritizes avoiding failure over adhering to best practices. Implementing lint rules to catch these patterns is crucial for maintaining code quality.</p>
+<p>Another observed behavior is the generation of overly verbose comments and PR descriptions. While these can provide valuable context, they can also become overwhelming. The ability to configure verbosity levels for AI-generated documentation could be a valuable feature.</p>
+<p>The concept of &quot;Git AI,&quot; where prompts and decision-making context are stored alongside code in Git metadata, offers a more integrated approach to preserving this information. This could lead to future agents and code review bots having a richer understanding of the code's history and rationale.</p>
+<h2>Making Codebases Agent-Ready</h2>
+<p>For AI agents to be truly effective, codebases need to be &quot;agent-ready.&quot; This means ensuring that applications can be run and tested locally without requiring direct access to production credentials. Setting up local databases, Docker Compose environments, and mock servers is essential for enabling agents to perform comprehensive testing.</p>
+<p>Many older codebases were not built with this local development paradigm in mind, often relying on full integration with live services. Migrating these codebases to support local development can be a significant undertaking, but AI can assist in this process, for example, by helping to create mock servers based on observed traffic.</p>
+<h2>Windsurf 2.0 and the Local-to-Cloud Agent Handoff</h2>
+<p>The transition between local and cloud-based agents can be challenging. Windsurf 2.0 aims to bridge this gap by providing a local command center for managing both background and local agents. This allows users to seamlessly pull down tasks for local testing, move other agents to the background, and manage their workflow efficiently.</p>
+<p>The ideal state for local and cloud agents can differ. Local agents might be designed for faster, user-driven interactions, while background agents should aim for more autonomous completion of tasks. However, sharing as much logic as possible between local and cloud agents is beneficial for practical development and maintenance.</p>
+<h2>Agent Use Cases: SRE Auto-Triage, PMs Shipping Code, and Customer Support</h2>
+<p>The adoption of cloud agents is driven by a variety of compelling use cases:</p>
+<ul>
+<li><strong>SRE Auto-Triage:</strong> Agents can act as first responders to alerts from systems like Slack or Datadog, collecting context from production logs and databases, and even generating pull requests to resolve issues.</li>
+<li><strong>PMs Shipping Code:</strong> Non-technical roles, such as Product Managers, are increasingly using agents to create bug fixes and even ship code directly through Slack prompts, blurring the lines of who contributes to development.</li>
+<li><strong>Customer Support:</strong> Agents can assist customer support teams by gathering full context around customer issues, enabling faster resolution and bypassing previous pain points of information gathering.</li>
+<li><strong>Continuous Security Scanning and Review:</strong> Agents can be employed to continuously scan and review code for security vulnerabilities.</li>
+</ul>
+<p>The cost of these agents can vary, with common figures ranging from $1,000 to $5,000 per engineer annually, depending on usage and value derived.</p>
+<h2>Hybrid Models and Autonomous Coding Factories</h2>
+<p>The future of AI agents likely involves hybrid models that combine expensive, high-performance frontier models with faster, more efficient sub-frontier systems. This approach allows for optimal resource utilization, leveraging frontier models for complex tasks while relying on sub-frontier models for speed and efficiency.</p>
+<p>The ultimate goal for many companies is to build &quot;autonomous coding factories&quot; – highly automated development workflows where AI agents handle significant portions of the software development lifecycle. This shift promises to accelerate innovation and redefine the role of human engineers.</p>
+<h2>Hiring and Consulting</h2>
+<p>Both Cognition and OpenInspect are actively seeking talent. Cognition is looking for high-taste product engineers with a proven track record of shipping end-to-end, tasteful products. OpenInspect offers consulting services to businesses looking to advance their engineering organizations and navigate the complexities of AI adoption, from initial deployment to full integration.</p>
+<p>The landscape of AI agents is rapidly evolving, with significant advancements in capabilities, architecture, and integration. As these technologies mature, they are poised to fundamentally transform how software is built, tested, and maintained.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
