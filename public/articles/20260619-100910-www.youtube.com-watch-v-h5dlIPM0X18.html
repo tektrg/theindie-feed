@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - Why AI Labs With Unlimited GPUs Still Fail — Anjney Midha, AMP - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The AI landscape is booming, with numerous labs boasting ample funding and computational power. Yet, many struggle to deliver tangible results, leading to talent drain and a fraying organizational cul...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=h5dlIPM0X18" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - Why AI Labs With Unlimited GPUs Still Fail — Anjney Midha, AMP</h1>
+      <time datetime="2026-06-18T17:25:22.000Z">
+        Friday, June 19, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Culture of Compute: Why AI Labs Waste Resources and How to Fix It</h1>
+<p>The AI landscape is booming, with numerous labs boasting ample funding and computational power. Yet, many struggle to deliver tangible results, leading to talent drain and a fraying organizational culture. Anshumita, CEO and founder of Amp, argues that the root cause is a misalignment between stated missions and actual actions, a problem that extends to the very infrastructure powering AI development.</p>
+<h2>Why AI Compute Is Being Wasted</h2>
+<p>A key indicator of inefficiency in AI compute lies in its utilization metrics. Node utilization, which measures the percentage of GPUs in a data center that are actively used, should ideally be around 95%. At Google, for instance, 95% utilization is considered an outage, with 96% being the standard. Many single-down clusters, however, fall short of this benchmark.</p>
+<p>Beyond node utilization, MFU (Machine Utilization) should ideally be between 60% and 70% for best-in-class performance. The discrepancy often stems from a leadership and alignment issue. When the entities funding and deploying compute clusters are not in sync with those managing and measuring their output, wastage compounds rapidly. This is exacerbated by the rapid scaling demanded in the AI space, where iterative, common-sense approaches are often abandoned for speed.</p>
+<p>&quot;AI scaling doesn't change the In fact, if anything, AI scaling should be putting a premium on the value of common sense and infrastructure because the margin of error now is so much lower and the cost of wastage are so much higher,&quot; Anshumita emphasizes. While AI capabilities are indeed novel, this doesn't excuse a disregard for fundamental infrastructure principles. The &quot;move fast, break things&quot; mantra of early tech companies needs to evolve into &quot;move fast with responsible infrastructure.&quot;</p>
+<h2>Responsible Infrastructure and Data Center Backlash</h2>
+<p>The rapid expansion of data centers, crucial for AI compute, is increasingly facing community backlash. Scott Nolan, founder of General Matter, proposed a solution: allocate a portion of the marginal cost of compute per hour to the local community. For example, a $4/hour compute cost could be increased to $4.50, with the extra 50 cents directly benefiting the community. This approach would foster clear public benefit and enhance the perceived reliability of the compute.</p>
+<p>Currently, up to 20% of data centers in the US are at risk of not securing community support, not just due to concerns about jobs, but also about power grid impact, environmental considerations, and permitting. A shift towards offering tangible benefits, such as reduced electricity costs for the community, could transform data centers from potential liabilities into welcomed partners. Failure to address these concerns could lead to regulatory scrutiny for those prioritizing speed over responsible development.</p>
+<p>Anshumita advocates for partnering with established, reliable data center providers with long-term track records, rather than solely relying on newer &quot;neo-clouds.&quot; These seasoned providers understand infrastructure management and have weathered economic cycles, offering a stability that is crucial for the long-term health of the AI ecosystem.</p>
+<h2>AMP Grid: Making FLOPs Flow Like Megawatts</h2>
+<p>Amp is building a &quot;compute grid&quot; with the ambitious goal of making FLOPs (floating-point operations per second) flow as seamlessly as megawatts. This involves a pooling and utilization layer across multiple clouds and silicon providers, aiming to address the current fragmentation and lack of fungibility in compute resources.</p>
+<p>&quot;We see ourselves as what's called an independent system operator,&quot; Anshumita explains, drawing a parallel to the historical development of the electric grid. Just as independent system operators (ISOs) coordinated power generation and transmission without owning the assets themselves, Amp aims to be a neutral coordinator for compute resources. This model has historically proven to be the most enduring, relying on long-term demand anchors from various industries to ensure base load capacity and flexible utilization.</p>
+<p>The technical implementation began at the scheduling layer, leveraging expertise from Google's Borg X Borg GQM scheduler. The core principles revolve around abstraction and composition, bundling and unbundling, and horizontalization. Amp's grid aims to provide a guaranteed base load for its partners while allowing for flexible, on-demand spikes in compute capacity.</p>
+<p>This approach mirrors the concept of interruptible demand, where jobs can be dynamically prioritized based on a credit system or bidding mechanism. While this system has proven effective internally at Google, Anshumita notes that its limitations might have contributed to Google missing out on opportunities like GPT.</p>
+<h2>Foundry, Frontier Labs, and Research Hoarding</h2>
+<p>Amp operates as a holding company with an infrastructure business (Amp Grid) and a capital business called Foundry. Foundry incubates and invests in new frontier AI labs, recognizing that significant research progress often occurs within existing large organizations. However, Anshumita points out a critical issue: the hoarding of research.</p>
+<p>&quot;So much of that has never seen the light of day,&quot; she laments regarding research from labs like DeepMind. Even when papers are published, there can be significant embargo periods, leading to an &quot;adverse selection problem&quot; where only less impactful research is publicly shared. This hoarding of knowledge has negative externalities, representing a market failure that needs to be addressed.</p>
+<h2>Gigawatt-Scale Compute and End-of-Life Prediction</h2>
+<p>Amp's ambition extends to securing a base load pool of 1.3 gigawatts of compute capacity, with an estimated need for 6 gigawatts over the next four years to support the advancement of frontier research. This compute is crucial for a wide range of applications, including scientific discovery and, notably, end-of-life prediction in healthcare.</p>
+<p>Anshumita's personal journey into this field began during her graduate studies in bioinformatics at Stanford. She was struck by the cultural differences in approaching death, particularly the Western tendency to view it as a terminal event to be delayed at all costs. This often leads to aggressive, costly, and quality-of-life-diminishing end-of-life care, consuming a significant portion of healthcare spending.</p>
+<p>The core problem, she explains, is the lack of precise prognostication. Physicians, fearing medical malpractice, often provide broad timeframes, leaving patients in uncertainty. An AI system capable of making more precise end-of-life predictions could empower patients to make informed decisions about their remaining time, leading to better palliative care and reduced healthcare costs.</p>
+<p>While the technology for such AI systems exists, regulatory hurdles remain. The challenge lies in shifting the burden of clinical diagnosis from physicians to AI. Anshumita is now focused on incubating solutions to this problem, advocating for patient empowerment through AI-driven end-of-life prediction. This mission, alongside the development of &quot;net positive data centers,&quot; forms the core of Amp's public benefit corporation structure.</p>
+<h2>Frontier Systems, Output Maxing, and Alignment</h2>
+<p>The discipline Anshumita is exploring, variously termed &quot;frontier systems&quot; or &quot;frontier labs,&quot; can be encapsulated as &quot;output maxing.&quot; It's about maximizing the effective use of available resources, whether it's GPUs or healthcare spending. This philosophy extends to AI development, where efficiency and nuanced approaches are paramount, even with the advent of powerful models like GPT.</p>
+<p>&quot;I think there's a philosophy I think we all owe it to ourselves to do output maxing with a new capability called AI on a global level,&quot; she states. From an engineering perspective, this translates to a focus on alignment. Full-stack alignment within an organization or system is incredibly difficult but yields immense benefits.</p>
+<p>The challenge lies in scaling without losing this alignment. This can be achieved through standardization of protocols and API specifications that allow for lossless communication, or by developing entirely new capabilities that unlock such abundance that standardization becomes less critical.</p>
+<h2>Compute Markets, SF Compute, and Non-NVIDIA Chips</h2>
+<p>The burgeoning demand for compute has led to efforts like SF Compute, which aims to standardize futures contracts for compute. Anshumita sees such initiatives as crucial for accelerating the development of compute markets by injecting demand or supply shocks. Amp's grid aims to be a two-way protocol, allowing entities like SF Compute to seamlessly connect for either demand or supply.</p>
+<p>The current compute market is characterized by explosive demand, with excess capacity quickly disappearing. This scarcity is driving innovation in alternative chip architectures beyond NVIDIA. Companies like Matrox are designing chips that adhere to NVIDIA's reference architecture, allowing them to plug into existing infrastructure and focus their innovation on systems co-design.</p>
+<p>&quot;The compute demand is so high. Like I don't I think Nvidia's not able to meet the demand of production. So we just need more chips,&quot; Anshumita observes. This collaborative approach, where companies leverage existing standards to innovate in specific areas, is seen as healthy for unlocking new bottlenecks.</p>
+<h2>Trust Boundaries, Co-Design, and Researcher CEOs</h2>
+<p>For chip teams to excel in co-design, they require early visibility into future model generations, as chip development takes years. When operating within a large organization like Google, this visibility is facilitated by tight trust boundaries. However, leaving this boundary as a startup introduces significant risk. Anshumita's work involves helping chip teams gain access to trust within the independent ecosystem.</p>
+<p>She also champions the idea of &quot;researcher CEOs,&quot; individuals who possess both deep scientific expertise and the leadership capabilities to drive innovation. She argues that the rigorous discipline required to excel in scientific research translates directly to the performance needed for great leadership. &quot;Being a good CEO is hard. Being a great CEO actually requires a level of performance that scientists who have already published at the top of their field have accomplished,&quot; she asserts.</p>
+<h2>Rishi Valley, Singapore, and Money as a Measure</h2>
+<p>Anshumita's personal journey, from a spartan boarding school in India to a scholarship program in Singapore, has instilled in her a deep appreciation for resourcefulness and a nuanced view of money. Her upbringing at Rishi Valley, a school emphasizing simplicity and discipline, and her time in a cramped dorm in Singapore, have shaped her perspective.</p>
+<p>&quot;I don't need much to be happy in life,&quot; she reflects. For her, money is not an end in itself but a tool for pursuing meaningful missions. This perspective contrasts with the &quot;mercenary&quot; aspects of Silicon Valley, where large sums of money can sometimes lead individuals to lose sight of their core principles.</p>
+<h2>Closing Thoughts</h2>
+<p>The conversation highlights the critical importance of culture, alignment, and first-principles thinking in the AI era. As the field rapidly advances, the ability to manage resources efficiently, foster strong organizational cultures, and maintain a clear mission will be paramount for success. The challenges of compute scarcity, research hoarding, and the ethical implications of AI demand a thoughtful and disciplined approach, moving beyond mere competition to a focus on genuine leadership and impact.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
