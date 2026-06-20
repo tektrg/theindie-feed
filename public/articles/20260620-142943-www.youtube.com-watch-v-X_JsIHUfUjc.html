@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y Combinator - How to Build a Self-Improving Company with AI - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The traditional corporate structure, much like the Roman legions of old, relies on nested hierarchies and human conduits for information flow. This model, where human beings are the primary means of p...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=X_JsIHUfUjc" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Y Combinator - How to Build a Self-Improving Company with AI</h1>
+      <time datetime="2026-05-21T14:00:51.000Z">
+        Thursday, May 21, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The AI-Native Company: Beyond Roman Legions</h1>
+<p>The traditional corporate structure, much like the Roman legions of old, relies on nested hierarchies and human conduits for information flow. This model, where human beings are the primary means of passing orders and relaying intelligence up and down the chain, is being fundamentally challenged by the advent of AI. Jack Dorsey's observation that hierarchical organization is the default for economic units of value is increasingly being questioned, as AI has the potential to break this paradigm.</p>
+<h2>The Flaw in the &quot;Copilot&quot; Mental Model</h2>
+<p>For a long time, the primary way people thought about AI's utility in business was through productivity gains. The idea was to add AI tools, like co-pilots for engineers, to existing workflows to make them 20% more productive, enabling them to ship more software. However, this perspective is fundamentally flawed. It's akin to simply adding a more powerful engine to an old way of working, rather than reimagining the entire vehicle.</p>
+<p>Instead, we should consider how AI can redefine what a company is and how it operates. The true potential lies in extracting and codifying the domain knowledge that currently resides within individuals, Slack messages, emails, and internal documentation. This collective &quot;know-how&quot; is what truly defines how a company functions.</p>
+<h2>Extracting and Legitimizing Domain Knowledge</h2>
+<p>By making this domain knowledge &quot;legible&quot; to AI, organizations can transition from hierarchical structures to intelligent, AI-powered entities. AI is not merely a tool to be bolted onto the side of a company or a productivity enhancer for existing roles. Instead, a company can be reimagined as a series of recursive, self-improving AI loops. This is a critical shift because it allows the company to continuously enhance itself, even when human employees are not actively engaged.</p>
+<h2>The Recursive Self-Improving Loop</h2>
+<p>This AI loop can be broken down into several key components:</p>
+<ul>
+<li><strong>Sensor Layer:</strong> This is the input mechanism, gathering data from the outside world. This could include customer emails, support tickets, code changes, subscription cancellations, or product telemetry.</li>
+<li><strong>Policy/Decision Layer:</strong> This layer defines the rules and constraints for the AI. It dictates what actions can be taken autonomously, when human permission is required, and what needs to be logged.</li>
+<li><strong>Tool Layer:</strong> This represents the AI's capabilities, akin to Gary's coding skills. It comprises deterministic APIs and functions that the AI can call, such as querying a database or checking a calendar.</li>
+<li><strong>Quality Gate:</strong> This acts as a safeguard, incorporating deterministic checks, safety filters, and human review for high-risk operations.</li>
+<li><strong>Learning Mechanism:</strong> This component allows the system to learn from its interactions with the real world, identify areas of failure, and feed that information back into the loop for continuous improvement.</li>
+</ul>
+<p>When each step of this process can be executed with minimal or no human intervention, the system becomes progressively better over time.</p>
+<h2>The &quot;Holy Shit&quot; Moment at YC</h2>
+<p>An illustrative example of this self-improvement loop in action comes from Y Combinator (YC). Initially, an agent was developed to answer simple queries, like when a partner last had office hours with a specific company. This evolved to a more sophisticated agent that could, for instance, identify relevant founders for introductions based on a company's needs by querying databases and utilizing retrieval-augmented generation (RAG).</p>
+<p>However, the true breakthrough occurred when a monitoring agent was implemented. This agent analyzed every query made by YC employees, identifying when queries succeeded and, crucially, when they failed. When a query failed, the agent would investigate why, determining if new tools were needed, if skills files required updates, or if a different database or index was necessary. This process now happens overnight: code is written, a merge request is submitted, an agent reviews it, and it's merged and deployed. The next day, when a human makes the same query, it succeeds.</p>
+<p>This isn't just about making individuals 20-30% more effective; it's about the AI actively self-improving. By identifying parts of a company that can operate within such loops and minimizing human intervention to a monitoring or supervisory role, organizations can leverage AI to continuously enhance their operations.</p>
+<h2>Self-Optimizing Product and Support Loops</h2>
+<p>This concept extends to various business functions. For instance, an agent could analyze product analytics to pinpoint friction points in the sales funnel, research best practices, implement and run A/B tests, select the best-performing version, and deploy it. This creates a self-optimizing product loop that iterates continuously.</p>
+<p>Similarly, in customer service, incoming suggestions can be triaged by an AI acting as a chief product officer and chief technology officer. The AI can decide which suggestions to discard, which align with the roadmap, and then, overnight, write and deploy the necessary code to implement them, shipping the improvements to customers without direct human involvement.</p>
+<h2>Burn Tokens, Not Headcount</h2>
+<p>The implications of this shift are profound. Companies are now demonstrating significantly higher revenue per employee, a trend likely to continue. The primary constraint will soon become token usage, not headcount. While measuring token usage directly can be simplistic and gameable, it points towards a fundamental change in resource allocation. Experimentation with AI capabilities is paramount in this early phase.</p>
+<p>Middle management, as a coordination function, is becoming obsolete. AI can handle these coordination tasks, freeing up human capital. The essential roles are now those of individual contributors (ICs) – builders and operators – and crucially, Directly Responsible Individuals (DRIs) who are single points of accountability for getting things done. Companies can be effectively built around ICs, rendering traditional middle management redundant.</p>
+<h2>Make Everything Legible to AI</h2>
+<p>To build a self-improving company, the entire organization must become legible to AI. This means meticulously recording everything:</p>
+<ul>
+<li><strong>Partner Emails:</strong> Every email sent to a YC partner is now stored in the YC database.</li>
+<li><strong>Slack Messages and DMs:</strong> All internal communications are captured.</li>
+<li><strong>Office Hours Recordings:</strong> For the past several months, all office hour sessions have been recorded.</li>
+</ul>
+<p>If an event or interaction is not recorded, it effectively hasn't happened from the AI's perspective. This recorded data forms the foundation for AI comprehension. To handle the vastness of this data, techniques like diarization are crucial to aggregate, synthesize, and extract the most important information, providing the AI with concise &quot;breadcrumbs.&quot;</p>
+<h3>Regenerating the YC User Manual</h3>
+<p>A prime example of this is the regeneration of the YC user manual. With approximately 2,000 hours of recorded office hours, an AI was tasked with creating a new manual. By diarizing and categorizing the advice into areas like fundraising, hiring, and co-founder disputes, a 150-page manual was generated in a single weekend, significantly surpassing the previous version. This manual can now be updated monthly, becoming a living repository of YC's advice to founders. This updated knowledge can then be fed into AI agents, providing founders with the combined wisdom of multiple partners.</p>
+<h2>Software Is Ephemeral, Context Is Valuable</h2>
+<p>The principle of legibility extends to the artifacts produced by the company. If an artifact can self-improve, it's valuable; otherwise, it can be discarded. Internal software, such as dashboards, can now be generated on-demand with high quality using tools like Codex. Operations teams should leverage this intelligence to create their own dashboards and workflows, treating this software as ephemeral. The data, however, should be meticulously stored.</p>
+<p>The true value lies in the comprehension of how functions operate and how events are run. The software to execute these tasks can be generated for a specific event and then discarded, as models will improve and new software can be regenerated based on the original instructions. Business context and skills are the enduring assets, while the software built upon them is transient.</p>
+<h2>Where Humans Still Matter</h2>
+<p>In this AI-native company, humans occupy a crucial role around the periphery, interfacing with the real world where AI models currently cannot reach. This includes:</p>
+<ul>
+<li><strong>Novel Situations:</strong> Dealing with unprecedented scenarios.</li>
+<li><strong>Ethical Considerations:</strong> Navigating complex moral dilemmas.</li>
+<li><strong>High-Stakes Moments:</strong> Handling critical junctures, such as a founder contemplating a difficult decision like breaking up with a co-founder.</li>
+<li><strong>Sales Conversations:</strong> While AI can assist, human presence is likely to remain essential in sales for the foreseeable future.</li>
+</ul>
+<p>The core of the company becomes a &quot;company brain&quot; composed of data, communications, skills, and know-how. Humans act as the interface between this intelligence and the tangible world.</p>
+<p>For founders building companies today, the question is: would you start your company in this new shape? For those small enough, there is no excuse not to. For those already established, the opportunity exists to rip up and rebuild with an AI-native architecture.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
