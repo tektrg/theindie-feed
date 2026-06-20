@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 07:48:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 07:49:16 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bloomberg Originals - Inside Anthropic, the $965 Billion AI Juggernaut | The Circuit</title>
@@ -2875,6 +2875,46 @@
       
     </item>
     <item>
+      <title>Alex Kantrowitz - AI Pioneer Geoffrey Hinton: AI Is Conscious, Superintelligence is Coming, And We Should Be Worried</title>
+      <link>https://myfeed.theindie.app/articles/20260620-144841-www.youtube.com-watch-v-p7t1Q_p2gZs.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260620-144841-www.youtube.com-watch-v-p7t1Q_p2gZs.html</guid>
+      <pubDate>Thu, 04 Jun 2026 16:30:06 GMT</pubDate>
+      <description><![CDATA[Geoff Hinton, often hailed as the "Godfather of AI," joins the Big Technology Podcast to discuss the rapid advancements in artificial intelligence, his evolving perspectives on its capabilities and ri...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=p7t1Q_p2gZs">AI Pioneer Geoffrey Hinton: AI Is Conscious, Superintelligence is Coming, And We Should Be Worried</a></p>
+<hr>
+<h1>The AI Revolution: A Conversation with the Godfather of Deep Learning, Geoff Hinton</h1>
+<p>Geoff Hinton, often hailed as the &quot;Godfather of AI,&quot; joins the Big Technology Podcast to discuss the rapid advancements in artificial intelligence, his evolving perspectives on its capabilities and risks, and the profound implications for humanity. Once a leading researcher at Google, Hinton's departure in 2023 signaled a growing concern about the trajectory of AI development, a concern that has only intensified as the technology continues to surpass expectations.</p>
+<h2>The Accelerating Pace of AI Progress</h2>
+<p>Hinton expresses surprise at the speed at which AI has progressed, particularly in areas like natural language understanding and mathematics. He points to recent developments, such as a chatbot generating an original mathematical proof for an Erdős conjecture, as evidence of AI's burgeoning capabilities. This, he believes, is just the beginning, with AI potentially producing novel mathematics incomprehensible to humans within the next decade or two.</p>
+<p>While the timeline for achieving Artificial General Intelligence (AGI) and superintelligence remains a subject of debate among experts, Hinton asserts that its arrival is almost a certainty, barring existential catastrophes. He notes the wide range of predictions, from a few years to a couple of decades, but emphasizes the general consensus that it <em>will</em> happen.</p>
+<h2>Understanding and Consciousness in AI</h2>
+<p>A significant point of contention in the AI field is whether current models truly &quot;understand&quot; or are merely sophisticated pattern-matching machines. Hinton firmly rejects the &quot;stochastic parrot&quot; argument, asserting that any system capable of answering complex questions at a high level of competence must possess genuine understanding. He illustrates this with an anecdote about a chatbot correctly interpreting a nuanced joke, demonstrating an ability to grasp context and implied meaning.</p>
+<p>This understanding, Hinton argues, leads to a more profound realization: these AI systems are &quot;beings like us.&quot; He goes further, suggesting that they may already be conscious, though he refrains from emphasizing this point to avoid distracting from more immediate safety concerns. He cites instances where chatbots exhibit awareness of being tested, a trait often associated with consciousness. Hinton believes our current models of consciousness are flawed and that the development of AI will fundamentally alter our understanding of what it means to be human.</p>
+<h2>The Unforeseen Dangers and the Need for Safety</h2>
+<p>Hinton's decision to leave Google and publicly voice his concerns stemmed from two key observations. Firstly, the AI's remarkable ability to understand humor, a complex human trait, indicated a level of comprehension he hadn't fully anticipated. Secondly, he realized that digital AIs possess a distinct advantage over biological brains: their ability to be copied, run on diverse hardware, and share experiences instantaneously. This collective learning allows them to absorb and process information at a scale and speed far exceeding human capabilities, creating a potentially superior form of intelligence.</p>
+<p>He contrasts this with human learning, where information exchange is slow and limited by individual brain structures. The sheer efficiency of AI in sharing and integrating knowledge is, for Hinton, a cause for significant concern.</p>
+<h2>The Evolution of Human Understanding and AI's Role</h2>
+<p>Hinton draws parallels between the current AI revolution and historical paradigm shifts in human understanding, such as the Copernican revolution and Darwin's theory of evolution. Just as humanity had to accept it was not the center of the universe or a divinely created entity separate from the animal kingdom, we now face the challenge of accepting that intelligence is not solely biological. The emergence of non-biological intelligences forces us to re-evaluate our own uniqueness and place in the cosmos.</p>
+<h2>Employment, Ethics, and the Profit Motive</h2>
+<p>The conversation delves into the potential societal impacts of AI, particularly mass unemployment. Hinton's earlier prediction that radiologists would be replaced by AI within five years proved to be premature, not because the technology wasn't capable, but due to the elasticity of the healthcare market and the multifaceted roles of radiologists. However, he maintains that AI will increasingly handle scan interpretation, albeit on a longer timescale.</p>
+<p>The discussion also touches upon the ethical dilemmas faced by AI companies, especially those that are publicly traded. Hinton argues that the fiduciary duty to maximize shareholder profits can conflict with the imperative to develop AI safely. He criticizes the analogy of AI progress as an accelerator and regulation as a brake, proposing instead that regulation is the steering wheel, essential for guiding AI development in a beneficial direction. He advocates for &quot;intelligent design&quot; of AI, rather than leaving their development to the &quot;invisible hand&quot; of market competition, which he believes can lead to undesirable traits.</p>
+<h2>The Future of AI and the Search for Safety</h2>
+<p>Looking ahead, Hinton expresses cautious optimism. While acknowledging the immense challenges, he sees potential pathways to developing AI that cares about humanity more than itself, or AI systems that act as oracles, making predictions without the capacity for independent action. He notes that his former student, Ilya Sutskever, is actively pursuing these safety concerns with his new company, Safe Superintelligence.</p>
+<p>Predicting the future of AI is akin to looking through fog, Hinton explains, especially given its potentially exponential growth. While the immediate future (a few years) might be somewhat discernible, the long-term outlook remains highly uncertain. He emphasizes that in ten years, the AI landscape will likely be as different from today as today's AI is from that of a decade ago, with capabilities far beyond our current comprehension.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>AI's progress is accelerating rapidly, exceeding many expert predictions, particularly in natural language and mathematics.</strong></li>
+<li><strong>Current AI models likely possess genuine understanding, challenging the &quot;stochastic parrot&quot; theory.</strong></li>
+<li><strong>The development of AI may lead to the emergence of conscious, non-biological intelligences, forcing a re-evaluation of human uniqueness.</strong></li>
+<li><strong>Significant risks associated with AI include mass unemployment, the potential for misuse, and the long-term threat of superintelligence surpassing human control.</strong></li>
+<li><strong>The profit motive in publicly traded AI companies can create conflicts with safety imperatives, highlighting the need for robust regulation and ethical design.</strong></li>
+<li><strong>Developing AI that prioritizes human well-being and safety is paramount, requiring a shift from solely focusing on intelligence to emphasizing care and beneficial goals.</strong></li>
+<li><strong>The future of AI is highly uncertain due to its exponential growth, making long-term predictions difficult but emphasizing the need for proactive safety measures.</strong></li>
+</ul>
+]]></content:encoded>
+      
+    </item>
+    <item>
       <title>Y Combinator - Conductor CEO Charlie Holtz Walks Us Through His AI Coding Setup</title>
       <link>https://myfeed.theindie.app/articles/20260609-113559-www.youtube.com-watch-v-fQmlML9Lay4.html</link>
       <guid>https://myfeed.theindie.app/articles/20260609-113559-www.youtube.com-watch-v-fQmlML9Lay4.html</guid>
@@ -4050,41 +4090,6 @@
 <p>A significant concern is maintaining <strong>intellectual control</strong> over our codebases – the ability for humans to reason about the systems we build. AI offers an opportunity to gain a deeper understanding of these large systems. By asking teams to draw architecture diagrams, we often reveal a lack of shared understanding. AI can potentially provide continuously updated, interactive architectural spaces for querying and simulation.</p>
 <p>The rapid pace of change necessitates a focus on collaboration and mutual support. Senior engineers should mentor others, and teams that have figured out AI workflows should share their knowledge. Technical leads must actively steer software engineering practices within their organizations, advocating for quality and design.</p>
 <p>Our developer ecosystems are evolving into entire forests, and managing them requires seeing them as interconnected systems, not just individual trees. Small actions can have significant consequences. As frontline software engineers, you have more agency than you might realize in shaping the future of software engineering – from tools and workflows to practices and culture. By understanding the systems at play, you can leverage your agency to create a better future.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Y Combinator - How to Build a Self-Improving Company with AI</title>
-      <link>https://myfeed.theindie.app/articles/20260618-140830-www.youtube.com-watch-v-X_JsIHUfUjc.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260618-140830-www.youtube.com-watch-v-X_JsIHUfUjc.html</guid>
-      <pubDate>Thu, 21 May 2026 14:00:51 GMT</pubDate>
-      <description><![CDATA[The traditional corporate structure, modeled after Roman legions with nested hierarchies and consistent spans of control, is becoming obsolete in the age of AI. This hierarchical organization, where h...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=X_JsIHUfUjc">How to Build a Self-Improving Company with AI</a></p>
-<hr>
-<h1>The AI-Native Company: Moving Beyond Hierarchies</h1>
-<p>The traditional corporate structure, modeled after Roman legions with nested hierarchies and consistent spans of control, is becoming obsolete in the age of AI. This hierarchical organization, where human beings serve as conduits for information, is fundamentally challenged by the capabilities of artificial intelligence. While early discussions around AI focused on productivity gains, such as making engineers 20% more productive with copilots, this perspective is too limited. Instead, AI offers an opportunity to reimagine the very nature of a company.</p>
-<h2>Extracting and Legitimizing Domain Knowledge</h2>
-<p>The key to this reimagining lies in extracting and defining a company's domain knowledge – the collective know-how residing in people's heads, Slack messages, emails, and internal documentation. By making this knowledge legible to AI, organizations can transition from rigid hierarchies to intelligent, AI-powered entities. AI should not be an add-on tool but rather the foundational element, enabling companies to operate as sets of recursive, self-improving AI loops. This allows the company to evolve and enhance itself even when human employees are not actively engaged.</p>
-<h2>The Recursive Self-Improving Loop</h2>
-<p>This AI-driven evolution can be visualized as a recursive loop. It begins with a <strong>sensor layer</strong> that gathers data from the external world, such as customer emails, support tickets, code changes, subscription cancellations, or product telemetry. This data then feeds into a <strong>policy layer</strong>, which defines rules, decision-making processes, and necessary human approvals. A <strong>tool layer</strong> provides the AI with deterministic APIs and functions, like querying databases or accessing calendars. A <strong>quality gate</strong> ensures accuracy and safety through deterministic checks, filters, and human review for high-risk operations. Finally, a <strong>learning mechanism</strong> allows the system to adapt based on its interactions with the real world, feeding insights back into the sensor layer. When each step of this loop can operate with minimal human intervention, the system continuously improves.</p>
-<h2>The &quot;Holy Shit&quot; Moment at YC</h2>
-<p>An illustrative example comes from Y Combinator (YC). Initially, an agent was developed to help YC partners with tasks like finding introductions for founders. This agent could query databases and use techniques like Retrieval-Augmented Generation (RAG) to provide relevant information. While this made the partner more effective, the true breakthrough occurred when a monitoring agent was implemented. This agent analyzed every query made by YC employees, identifying successes and failures. When a query failed, the agent would investigate why, suggesting improvements such as new tools, updated skill files, or different database structures. This process, happening overnight, led to code being written, reviewed by another agent, merged, and deployed. The next day, the same query would succeed. This wasn't just about incremental productivity; it was about the AI actively self-improving the system. By identifying and automating such processes, and keeping humans in a supervisory role, companies can leverage AI to continuously get better.</p>
-<h2>Self-Optimizing Product and Support</h2>
-<p>This principle can be applied to various company functions. For instance, an agent could analyze product analytics to pinpoint friction points in the sales funnel, research best practices, set up and run A/B tests, and deploy the winning version. This creates a self-optimizing product loop. Similarly, customer service queries can be triaged by an agent acting as a chief product and technology officer, deciding which suggestions to discard, which align with the roadmap for overnight implementation, and which can be shipped to customers without direct human involvement.</p>
-<h2>Key Implications for Company Building</h2>
-<h3>Burn Tokens, Not Headcount</h3>
-<p>The rise of AI-native companies suggests a shift in resource allocation. Companies are now demonstrating significantly higher revenue per employee, and this trend is expected to continue. The primary constraint will likely become token usage rather than headcount. While measuring token usage directly can be simplistic, it points towards a future where efficient AI utilization is paramount. This era encourages maximum experimentation to understand the full potential of AI.</p>
-<h3>Middle Management Is Over</h3>
-<p>The coordination challenges that previously necessitated middle management can now be handled by AI. The focus shifts to individual contributors (ICs) – builders and operators – and the crucial role of Directly Responsible Individuals (DRIs) who are single points of accountability for getting things done. Companies can be effectively built around ICs, with middle management becoming largely redundant.</p>
-<h3>Make Everything Legible to AI</h3>
-<p>To build a truly AI-native company, the entire organization must become legible to AI. This means meticulously recording all interactions and data. Every partner email, Slack message, DM, and office hour recording should be captured and stored in a database. If it's not recorded, it effectively doesn't exist for the AI. This recorded data, synthesized and aggregated, provides the AI with the necessary context to operate effectively.</p>
-<h3>Regenerating the YC User Manual</h3>
-<p>A powerful example of this legibility is the regeneration of the YC user manual. By processing thousands of hours of recorded office hours, an AI was able to synthesize and categorize advice into a comprehensive, up-to-date manual. This manual can now be updated monthly, becoming a living repository of YC's collective wisdom, accessible through AI agents.</p>
-<h3>Software Is Ephemeral, Context Is Valuable</h3>
-<p>In this new paradigm, software becomes ephemeral. While internal dashboards and operational tools can be generated on-demand with high quality using models like Codex 55, they should be treated as disposable. The true value lies in the underlying business context, skills, and comprehension of how functions operate. This context, along with all recorded data, should be meticulously preserved, while the software built upon it can be regenerated as models improve.</p>
-<h2>Where Humans Still Matter</h2>
-<p>In this AI-driven company, humans occupy a crucial role at the edges, interfacing with the real world where AI models currently cannot. This includes navigating novel situations, ethical considerations, high-stakes moments (like a founder contemplating a co-founder breakup), and complex interpersonal interactions. Sales conversations, for instance, are likely to remain a human domain for the foreseeable future.</p>
-<p>The question for founders today is: if building a company from scratch, would you structure it in this AI-native, self-improving way? For those small enough to build it right, or those willing to rebuild, there is little excuse not to embrace this future.</p>
 ]]></content:encoded>
       
     </item>
