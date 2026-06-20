@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 07:47:37 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 07:48:26 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bloomberg Originals - Inside Anthropic, the $965 Billion AI Juggernaut | The Circuit</title>
@@ -2222,6 +2222,61 @@
       
     </item>
     <item>
+      <title>Stanford Online - Stanford CS153 Frontier Systems | Scale, AGI, and the Future of Everything</title>
+      <link>https://myfeed.theindie.app/articles/20260620-144752-www.youtube.com-watch-v-F_7M4Hc-usM.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260620-144752-www.youtube.com-watch-v-F_7M4Hc-usM.html</guid>
+      <pubDate>Mon, 15 Jun 2026 17:58:40 GMT</pubDate>
+      <description><![CDATA[The landscape of startups and technological progress is in constant flux, and few individuals have navigated these shifts as profoundly as Sam Altman. In a recent discussion, Altman reflected on his e...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=F_7M4Hc-usM">Stanford CS153 Frontier Systems | Scale, AGI, and the Future of Everything</a></p>
+<hr>
+<h1>The Unfolding Utility of Intelligence: A Conversation with Sam Altman</h1>
+<p>The landscape of startups and technological progress is in constant flux, and few individuals have navigated these shifts as profoundly as Sam Altman. In a recent discussion, Altman reflected on his experiences, the evolution of AI, and the fundamental changes shaping the future of innovation. He emphasized the concept of &quot;scale&quot; as a critical, often underestimated, driver of progress and explored how the very nature of building and deploying technology is being redefined.</p>
+<h2>The Shifting Sands of Startups</h2>
+<p>Altman, who previously taught &quot;How to Start a Startup&quot; at Stanford in 2014, noted how dramatically the field has changed. He mused about updating the course, highlighting that the current environment for startups is vastly different from even a few years ago. The advent of powerful AI models has fundamentally altered the equation, enabling startups to achieve what once required massive engineering teams with relatively modest resources.</p>
+<p>&quot;What you can take on, the level of ambition you can have, the speed of which you can move, the amount of stuff you can do at once, is just totally different,&quot; Altman observed. He pointed out that the ability to leverage AI for tasks like automated coding has democratized capabilities, allowing a small team to accomplish what was previously the domain of hundreds.</p>
+<h2>Scale as an Emergent Property</h2>
+<p>A recurring theme in Altman's discourse is the power of scale, a concept he has observed repeatedly throughout his career. He posits that emergent properties often arise when pushing systems to scales previously unexplored, yielding returns far beyond initial expectations. This phenomenon is evident in AI model scaling, but also in collaborative research settings and the economic efficiencies of large organizations.</p>
+<p>Altman recalled his time at Y Combinator, where the prevailing wisdom suggested the accelerator had become too large. However, he recognized that the network effects and emergent properties within larger batches of companies were a crucial part of YC's success, a benefit that simply didn't exist at smaller scales.</p>
+<p>&quot;Empirically speaking, when you find a time that you can push on, you can push something to a scale people have not tried before and it's already working in some interesting way at the smaller scale. More often than not, that seems to be a good idea,&quot; he stated. He also noted that many are hesitant to pursue such scaling, often due to the inherent challenges and the tendency for things to &quot;break&quot; in unpredictable ways.</p>
+<h2>Navigating Human Systems at Scale</h2>
+<p>Scaling technology also presents significant challenges in managing human elements. Altman stressed the importance of a clear goal, a well-defined plan, and transparent decision-making processes when organizing people at scale. He highlighted the power of a unified vision, using OpenAI's commitment to scaling deep learning as an example.</p>
+<p>&quot;We did not evolve to be good at thinking about exponentials,&quot; Altman remarked, explaining that humans often struggle to grasp the implications of exponential growth in scaling laws, revenue, or organizational complexity. He believes that first-principles reasoning is crucial for helping people understand and embrace these exponential trajectories.</p>
+<h2>From GPT-3 API to ChatGPT: Discovering the Killer App</h2>
+<p>The journey of OpenAI's models, from GPT-3 to ChatGPT, offers a compelling case study in identifying and scaling a product. Initially, the GPT-3 API, launched in 2020, struggled to gain traction. However, a serendipitous viral moment on Twitter revealed a surprising use case: users were primarily engaging with the API for conversational purposes, not for the intended business applications.</p>
+<p>&quot;We saw this a lot like more people were using they couldn't get the API to work for their business, but they were using their API key to just chat,&quot; Altman explained. This observation led to the development of ChatGPT, which, despite initial skepticism, became a global phenomenon. The rapid growth and user engagement signaled a &quot;guaranteed hit,&quot; prompting OpenAI to rapidly scale the product and its underlying models.</p>
+<h2>The Promise and Evolution of Code Generation</h2>
+<p>The focus then shifted to Codex, OpenAI's code generation model. Altman revealed that the initial plan was to &quot;go all in on code&quot; before the breakthrough with ChatGPT. The belief was that code generation and robotics would be the key modalities for AI to interact with and control both digital and physical environments.</p>
+<p>&quot;Our kind of internal belief at the time was that coding was how these models would control things on computers and robots were how these models would control things in the physical world,&quot; he said. While the current pipeline for AI development, involving pre-training, mid-training, post-training, and reinforcement learning, has been effective, Altman anticipates a significant rewrite of this pipeline in the future.</p>
+<h2>Intelligence as the Next Utility</h2>
+<p>Altman drew a powerful analogy between the current development of AI and the advent of electricity as a utility. Just as early electricity companies didn't initially sell &quot;electricity&quot; but rather &quot;light at night,&quot; Altman believes that the way intelligence is marketed and understood will need to evolve.</p>
+<p>&quot;I suspect that even if we're totally right and intelligence is going to become this new utility that every company, every customer, every government just needs access to... I kind of don't think at least right now the right way for us to analogize that is we're selling intelligence,&quot; he stated. The challenge lies in finding the right analogy to convey the value of accessible, on-demand intelligence to the broader public.</p>
+<p>He further elaborated on the concept of utility, distinguishing between compute as a utility and tokens as a utility. For consumers and businesses, the focus will likely be on the latter – abstracting away the underlying hardware and focusing on accessibility, cost, and performance.</p>
+<h2>The One-Person Frontier Lab and the Future of Education</h2>
+<p>Reflecting on the &quot;one-person frontier lab&quot; project for students, Altman suggested focusing on the &quot;inference part of the stack&quot; – making intelligence cheap and abundant. He believes this area is currently underinvested in, despite the rapid advancements in model training.</p>
+<p>Altman also expressed concern about the pace of adaptation in the education system. He predicted that the widespread availability of tools like ChatGPT would force a rapid redesign of curricula, emphasizing critical thinking and AI-augmented learning. However, he admitted to a &quot;prediction error,&quot; noting the lack of significant systemic change in education since ChatGPT's launch.</p>
+<h2>The Exponential Trajectory of AI and Societal Repercussions</h2>
+<p>When asked about his &quot;spiciest take,&quot; Altman reiterated his belief in the continued exponential progress of AI. He argued that if this trajectory holds, the world and society's capabilities will be &quot;completely different&quot; in the coming years.</p>
+<p>He also addressed the debate around Large Language Models (LLMs) being a &quot;dead end,&quot; refuting the notion by highlighting their ability to discover new knowledge and surpass human capabilities in certain domains. He criticized the field's past limitations, attributing them to a generation of scientists who were overly certain about what scaling would not produce.</p>
+<p>Altman outlined two major &quot;forks&quot; for the future:</p>
+<ol>
+<li><strong>Democratization vs. Concentration:</strong> The technology could become widely democratized, or it could remain concentrated in a few powerful companies. He strongly advocates for the former, viewing it as essential for a fair and representative future, despite potential safety and stability arguments for concentration.</li>
+<li><strong>Compute Distribution:</strong> The equitable distribution of compute resources will be a critical economic challenge. As compute becomes an essential utility, its pricing and accessibility will shape future economic models, potentially necessitating new approaches beyond traditional capitalism or communism.</li>
+</ol>
+<p>He emphasized that while solutions like universal basic income and universal ownership stakes are discussed, the specific challenge of distributing compute equitably is often overlooked.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Scale is a fundamental driver of progress:</strong> Pushing systems to unprecedented scales often unlocks emergent properties and unexpected returns.</li>
+<li><strong>AI has democratized capabilities:</strong> Startups can now achieve what once required massive resources, fundamentally altering the startup landscape.</li>
+<li><strong>The &quot;utility&quot; model is key:</strong> Intelligence is evolving into a utility, similar to electricity, requiring new ways of framing its value and accessibility.</li>
+<li><strong>Education must adapt rapidly:</strong> The current educational system is not adequately preparing students for an AI-augmented future.</li>
+<li><strong>Exponential AI growth is inevitable:</strong> Continued exponential progress in AI will lead to profound societal transformations.</li>
+<li><strong>Democratization of AI is crucial:</strong> Ensuring widespread access to AI is vital for a fair and equitable future, despite arguments for concentration based on safety.</li>
+<li><strong>Compute distribution is a critical challenge:</strong> The equitable access to computing power will be a defining economic issue of the AI era.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
+    <item>
       <title>AWS Events - A leader’s guide to advanced team structures in an agentic world | AWS Events</title>
       <link>https://myfeed.theindie.app/articles/20260618-140913-www.youtube.com-watch-v-O7u6myBRsns.html</link>
       <guid>https://myfeed.theindie.app/articles/20260618-140913-www.youtube.com-watch-v-O7u6myBRsns.html</guid>
@@ -4030,67 +4085,6 @@
 <h2>Where Humans Still Matter</h2>
 <p>In this AI-driven company, humans occupy a crucial role at the edges, interfacing with the real world where AI models currently cannot. This includes navigating novel situations, ethical considerations, high-stakes moments (like a founder contemplating a co-founder breakup), and complex interpersonal interactions. Sales conversations, for instance, are likely to remain a human domain for the foreseeable future.</p>
 <p>The question for founders today is: if building a company from scratch, would you structure it in this AI-native, self-improving way? For those small enough to build it right, or those willing to rebuild, there is little excuse not to embrace this future.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Y Combinator - How to Build a Self-Improving Company with AI</title>
-      <link>https://myfeed.theindie.app/articles/20260620-142943-www.youtube.com-watch-v-X_JsIHUfUjc.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260620-142943-www.youtube.com-watch-v-X_JsIHUfUjc.html</guid>
-      <pubDate>Thu, 21 May 2026 14:00:51 GMT</pubDate>
-      <description><![CDATA[The traditional corporate structure, much like the Roman legions of old, relies on nested hierarchies and human conduits for information flow. This model, where human beings are the primary means of p...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=X_JsIHUfUjc">How to Build a Self-Improving Company with AI</a></p>
-<hr>
-<h1>The AI-Native Company: Beyond Roman Legions</h1>
-<p>The traditional corporate structure, much like the Roman legions of old, relies on nested hierarchies and human conduits for information flow. This model, where human beings are the primary means of passing orders and relaying intelligence up and down the chain, is being fundamentally challenged by the advent of AI. Jack Dorsey's observation that hierarchical organization is the default for economic units of value is increasingly being questioned, as AI has the potential to break this paradigm.</p>
-<h2>The Flaw in the &quot;Copilot&quot; Mental Model</h2>
-<p>For a long time, the primary way people thought about AI's utility in business was through productivity gains. The idea was to add AI tools, like co-pilots for engineers, to existing workflows to make them 20% more productive, enabling them to ship more software. However, this perspective is fundamentally flawed. It's akin to simply adding a more powerful engine to an old way of working, rather than reimagining the entire vehicle.</p>
-<p>Instead, we should consider how AI can redefine what a company is and how it operates. The true potential lies in extracting and codifying the domain knowledge that currently resides within individuals, Slack messages, emails, and internal documentation. This collective &quot;know-how&quot; is what truly defines how a company functions.</p>
-<h2>Extracting and Legitimizing Domain Knowledge</h2>
-<p>By making this domain knowledge &quot;legible&quot; to AI, organizations can transition from hierarchical structures to intelligent, AI-powered entities. AI is not merely a tool to be bolted onto the side of a company or a productivity enhancer for existing roles. Instead, a company can be reimagined as a series of recursive, self-improving AI loops. This is a critical shift because it allows the company to continuously enhance itself, even when human employees are not actively engaged.</p>
-<h2>The Recursive Self-Improving Loop</h2>
-<p>This AI loop can be broken down into several key components:</p>
-<ul>
-<li><strong>Sensor Layer:</strong> This is the input mechanism, gathering data from the outside world. This could include customer emails, support tickets, code changes, subscription cancellations, or product telemetry.</li>
-<li><strong>Policy/Decision Layer:</strong> This layer defines the rules and constraints for the AI. It dictates what actions can be taken autonomously, when human permission is required, and what needs to be logged.</li>
-<li><strong>Tool Layer:</strong> This represents the AI's capabilities, akin to Gary's coding skills. It comprises deterministic APIs and functions that the AI can call, such as querying a database or checking a calendar.</li>
-<li><strong>Quality Gate:</strong> This acts as a safeguard, incorporating deterministic checks, safety filters, and human review for high-risk operations.</li>
-<li><strong>Learning Mechanism:</strong> This component allows the system to learn from its interactions with the real world, identify areas of failure, and feed that information back into the loop for continuous improvement.</li>
-</ul>
-<p>When each step of this process can be executed with minimal or no human intervention, the system becomes progressively better over time.</p>
-<h2>The &quot;Holy Shit&quot; Moment at YC</h2>
-<p>An illustrative example of this self-improvement loop in action comes from Y Combinator (YC). Initially, an agent was developed to answer simple queries, like when a partner last had office hours with a specific company. This evolved to a more sophisticated agent that could, for instance, identify relevant founders for introductions based on a company's needs by querying databases and utilizing retrieval-augmented generation (RAG).</p>
-<p>However, the true breakthrough occurred when a monitoring agent was implemented. This agent analyzed every query made by YC employees, identifying when queries succeeded and, crucially, when they failed. When a query failed, the agent would investigate why, determining if new tools were needed, if skills files required updates, or if a different database or index was necessary. This process now happens overnight: code is written, a merge request is submitted, an agent reviews it, and it's merged and deployed. The next day, when a human makes the same query, it succeeds.</p>
-<p>This isn't just about making individuals 20-30% more effective; it's about the AI actively self-improving. By identifying parts of a company that can operate within such loops and minimizing human intervention to a monitoring or supervisory role, organizations can leverage AI to continuously enhance their operations.</p>
-<h2>Self-Optimizing Product and Support Loops</h2>
-<p>This concept extends to various business functions. For instance, an agent could analyze product analytics to pinpoint friction points in the sales funnel, research best practices, implement and run A/B tests, select the best-performing version, and deploy it. This creates a self-optimizing product loop that iterates continuously.</p>
-<p>Similarly, in customer service, incoming suggestions can be triaged by an AI acting as a chief product officer and chief technology officer. The AI can decide which suggestions to discard, which align with the roadmap, and then, overnight, write and deploy the necessary code to implement them, shipping the improvements to customers without direct human involvement.</p>
-<h2>Burn Tokens, Not Headcount</h2>
-<p>The implications of this shift are profound. Companies are now demonstrating significantly higher revenue per employee, a trend likely to continue. The primary constraint will soon become token usage, not headcount. While measuring token usage directly can be simplistic and gameable, it points towards a fundamental change in resource allocation. Experimentation with AI capabilities is paramount in this early phase.</p>
-<p>Middle management, as a coordination function, is becoming obsolete. AI can handle these coordination tasks, freeing up human capital. The essential roles are now those of individual contributors (ICs) – builders and operators – and crucially, Directly Responsible Individuals (DRIs) who are single points of accountability for getting things done. Companies can be effectively built around ICs, rendering traditional middle management redundant.</p>
-<h2>Make Everything Legible to AI</h2>
-<p>To build a self-improving company, the entire organization must become legible to AI. This means meticulously recording everything:</p>
-<ul>
-<li><strong>Partner Emails:</strong> Every email sent to a YC partner is now stored in the YC database.</li>
-<li><strong>Slack Messages and DMs:</strong> All internal communications are captured.</li>
-<li><strong>Office Hours Recordings:</strong> For the past several months, all office hour sessions have been recorded.</li>
-</ul>
-<p>If an event or interaction is not recorded, it effectively hasn't happened from the AI's perspective. This recorded data forms the foundation for AI comprehension. To handle the vastness of this data, techniques like diarization are crucial to aggregate, synthesize, and extract the most important information, providing the AI with concise &quot;breadcrumbs.&quot;</p>
-<h3>Regenerating the YC User Manual</h3>
-<p>A prime example of this is the regeneration of the YC user manual. With approximately 2,000 hours of recorded office hours, an AI was tasked with creating a new manual. By diarizing and categorizing the advice into areas like fundraising, hiring, and co-founder disputes, a 150-page manual was generated in a single weekend, significantly surpassing the previous version. This manual can now be updated monthly, becoming a living repository of YC's advice to founders. This updated knowledge can then be fed into AI agents, providing founders with the combined wisdom of multiple partners.</p>
-<h2>Software Is Ephemeral, Context Is Valuable</h2>
-<p>The principle of legibility extends to the artifacts produced by the company. If an artifact can self-improve, it's valuable; otherwise, it can be discarded. Internal software, such as dashboards, can now be generated on-demand with high quality using tools like Codex. Operations teams should leverage this intelligence to create their own dashboards and workflows, treating this software as ephemeral. The data, however, should be meticulously stored.</p>
-<p>The true value lies in the comprehension of how functions operate and how events are run. The software to execute these tasks can be generated for a specific event and then discarded, as models will improve and new software can be regenerated based on the original instructions. Business context and skills are the enduring assets, while the software built upon them is transient.</p>
-<h2>Where Humans Still Matter</h2>
-<p>In this AI-native company, humans occupy a crucial role around the periphery, interfacing with the real world where AI models currently cannot reach. This includes:</p>
-<ul>
-<li><strong>Novel Situations:</strong> Dealing with unprecedented scenarios.</li>
-<li><strong>Ethical Considerations:</strong> Navigating complex moral dilemmas.</li>
-<li><strong>High-Stakes Moments:</strong> Handling critical junctures, such as a founder contemplating a difficult decision like breaking up with a co-founder.</li>
-<li><strong>Sales Conversations:</strong> While AI can assist, human presence is likely to remain essential in sales for the foreseeable future.</li>
-</ul>
-<p>The core of the company becomes a &quot;company brain&quot; composed of data, communications, skills, and know-how. Humans act as the interface between this intelligence and the tangible world.</p>
-<p>For founders building companies today, the question is: would you start your company in this new shape? For those small enough, there is no excuse not to. For those already established, the opportunity exists to rip up and rebuild with an AI-native architecture.</p>
 ]]></content:encoded>
       
     </item>
