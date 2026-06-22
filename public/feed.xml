@@ -7,8 +7,69 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jun 2026 03:14:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 22:20:45 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan</title>
+      <link>https://myfeed.theindie.app/articles/20260623-052016-www.youtube.com-watch-v-j8BAficRjEc.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260623-052016-www.youtube.com-watch-v-j8BAficRjEc.html</guid>
+      <pubDate>Mon, 22 Jun 2026 22:20:44 GMT</pubDate>
+      <description><![CDATA[The rapid advancement of AI, particularly in large language models (LLMs) and coding agents, presents a new frontier in security. While AI offers transformative potential, it also introduces unique vu...]]></description>
+      <content:encoded><![CDATA[<h1>AI Security: Navigating the Evolving Landscape with Gray Swan</h1>
+<p>The rapid advancement of AI, particularly in large language models (LLMs) and coding agents, presents a new frontier in security. While AI offers transformative potential, it also introduces unique vulnerabilities that differ significantly from traditional software. Gray Swan, a company born from extensive research at Carnegie Mellon University, is dedicated to empowering individuals and organizations to use AI safely and securely. Matt Fredrikson and Zico Kolter, co-founders of Gray Swan, discuss the evolving challenges and solutions in AI security, from automated red teaming to enterprise-grade guardrails.</p>
+<h2>The Unique Challenges of AI Security</h2>
+<p>Unlike traditional software, AI systems, especially LLMs, exhibit fundamentally different behaviors and possess inherent vulnerabilities. They can be &quot;tricked&quot; in ways analogous to human susceptibility, requiring a distinct security mindset. The widespread adoption of a few core models, like Codex and Claude, amplifies the impact of any discovered vulnerabilities, creating new classes of exploits.</p>
+<p>&quot;AI systems have inherent inherent different types of vulnerabilities,&quot; explains Zico Kolter. &quot;They can be tricked like people get tricked sometimes, right? And so you need a different mindset about security when you're thinking about AI systems.&quot;</p>
+<p>Gray Swan's mission is to address these challenges by understanding, testing, and mitigating the security risks associated with deploying AI. This involves treating AI models as potentially untrusted entities and focusing on the security risks they introduce, rather than solely on using AI to enhance traditional cybersecurity.</p>
+<h2>Red Teaming: Pushing the Boundaries of AI Safety</h2>
+<p>A core component of Gray Swan's approach is rigorous red teaming. This involves actively trying to break AI models to identify vulnerabilities before malicious actors can exploit them. Gray Swan operates two key initiatives in this space:</p>
+<ul>
+<li><strong>The Gray Swan Arena:</strong> This community-driven platform hosts prize challenges where red teamers, both human and automated, compete to find ways to circumvent AI model safety and security objectives. With a Discord community of around 15,000 participants, the Arena generates valuable data and insights for model developers.</li>
+<li><strong>Automated Red Teaming (Shade):</strong> Gray Swan has developed a family of models, collectively known as Shade, specifically designed for automated red teaming. These models are becoming increasingly adept at identifying vulnerabilities, even surpassing human red teamers in certain experiments. &quot;One thing that we are finding and I think we're we're kind of crossing this point too is that in a lot of the latest experiments we can do much better than the human red teamers,&quot; states Kolter. &quot;Now when I say we I mean our automated red teaming models a system called shade that system is now actually quite a bit better at breaking uh models than humans are.&quot;</li>
+</ul>
+<p>These efforts are crucial for testing base models and, increasingly, for evaluating agents built on top of them, which incorporate tool use and downstream applications.</p>
+<h2>Testing Claude, Codex, and Beyond</h2>
+<p>Gray Swan's testing methodologies are applied to various cutting-edge models. For instance, they participated in the Mythos preview, focusing on the model's robustness against indirect prompt injection. This involves assessing how well the model maintains its original objectives when exposed to untrusted content fetched from external sources.</p>
+<p>Beyond specific model evaluations, Gray Swan assists frontier labs in testing their safeguards against various adversarial activities, including cyber misuse, and provides comprehensive safety and security assessments.</p>
+<h2>The Rise of AI Agents and the &quot;Lethal Trifecta&quot;</h2>
+<p>The increasing sophistication of AI agents, capable of autonomous operation and tool use, introduces new attack vectors. The &quot;lethal trifecta,&quot; a concept coined by Simon Wilson, describes the core components of prompt injection risks:</p>
+<ol>
+<li><strong>Ingesting Untrusted Data:</strong> The ability of an agent to process information from external, untrusted sources.</li>
+<li><strong>Access to Private Information:</strong> The agent's capability to access sensitive internal data.</li>
+<li><strong>Exfiltration Capability:</strong> The ability to send this private information to an external destination.</li>
+</ol>
+<p>When these three elements converge, they create significant security risks. This is particularly relevant for agents that utilize computer use capabilities, such as controlling web browsers or executing code.</p>
+<h2>Cygnal: Enterprise-Grade Guardrails for AI</h2>
+<p>To counter these vulnerabilities, Gray Swan offers <strong>Cygnal (Signal)</strong>, a specialized filter model designed to act as guardrails for AI agents. Signal sits between the user, the LLM, and any tool calls, actively monitoring for policy violations.</p>
+<p>&quot;The other side of what we do is exactly this defense side. And so this is a model called signal which is essentially a filter model that sits between your user the LLM the LLM and any tool calls and exactly does this level of looking for policy violations,&quot; explains Fredrikson.</p>
+<p>Signal is a custom-trained model that works best when tailored to specific enterprise policies. This is crucial because, unlike general-purpose base models, enterprises often have unique security requirements and data access restrictions that need to be enforced.</p>
+<h2>The Trade-off Between Usability and Security</h2>
+<p>A persistent challenge in AI security is the inherent trade-off between an agent's usability and its security. Limiting an agent's capabilities to enhance security can hinder its effectiveness and utility. Conversely, granting agents broad access and functionality increases their potential attack surface.</p>
+<p>&quot;Our goal with signal with shade to assess these vulnerabilities with signal to protect it is to shift that point up and to the right,&quot; says Kolter, referring to the Pareto frontier of usability versus security. Gray Swan aims to improve this balance, allowing organizations to deploy powerful AI agents with a higher degree of confidence.</p>
+<h2>The Future of AI Security: Automation and Specialization</h2>
+<p>The future of AI security, according to Fredrikson and Kolter, lies in increased automation and specialization.</p>
+<ul>
+<li><strong>Automating AI Research:</strong> The ability of AI agents to automate scientific research, including interpretability studies and the development of more secure code, holds immense promise. This could accelerate the pace of discovery and problem-solving in AI security.</li>
+<li><strong>Enterprise Adoption:</strong> As more non-AI companies adopt AI tools like Codex, Claude, and OpenClaw, the demand for robust security solutions will skyrocket. Gray Swan anticipates significant growth in enterprise deployments of its technology.</li>
+<li><strong>AI Insurance and Compliance:</strong> The emergence of AI insurance markets, like that offered by AI Underwriting Company (AUC), signifies a growing recognition of AI risks. Gray Swan's tools can play a vital role in assessing these risks and prescribing mitigation strategies, creating a synergistic relationship with insurance providers.</li>
+<li><strong>Agent Identity and Permissions:</strong> Establishing secure agent identities and granular permission systems is a critical, yet largely unsolved, problem. The current default of agents inheriting user permissions is unsustainable. Future solutions will likely involve distinct agent personas and more sophisticated access control mechanisms.</li>
+</ul>
+<h2>The Inevitable &quot;Gray Swan&quot; Event</h2>
+<p>The name &quot;Gray Swan&quot; itself reflects the company's philosophy: acknowledging unlikely but foreseeable events. The founders believe that a major, publicly reported prompt injection breach is an event that, while not guaranteed, is highly probable and can be anticipated.</p>
+<p>&quot;A grey swan is an unlikely event you can kind of see coming,&quot; Kolter states. &quot;And that's kind of where we are with all this. Right. This is going to happen. We know it's coming. It's not going to shock anyone when it happens.&quot;</p>
+<p>Gray Swan's mission is to help organizations get ahead of these predictable risks, ensuring that the transformative power of AI can be harnessed responsibly and securely.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>AI security presents unique challenges distinct from traditional cybersecurity due to the inherent nature of AI models.</li>
+<li>Gray Swan employs automated red teaming (Shade) and a community-driven arena to identify and exploit AI vulnerabilities.</li>
+<li>The &quot;lethal trifecta&quot; (ingesting untrusted data, accessing private info, exfiltrating data) highlights key prompt injection risks.</li>
+<li>Cygnal (Signal) provides enterprise-grade guardrails to mitigate AI agent vulnerabilities.</li>
+<li>The future of AI security involves automating research, scaling enterprise solutions, and developing robust agent identity and permission systems.</li>
+<li>A major AI security incident, a &quot;gray swan&quot; event, is considered likely and preventable with proactive measures.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep. 220: AI Answers - The 2026 State of AI for Business Report</title>
       <link>https://myfeed.theindie.app/articles/20260622-101335-www.youtube.com-watch-v-UtDMhGCVjqo.html</link>
@@ -4400,54 +4461,6 @@
 <p><strong>1:09:48</strong> · Yeah, stay tuned for that. We'll we'll invite you and your team um whoever can make it. We'll feature this paper once it's in final preprint form and spend some time on it for an hour on the way in space paper club.</p>
 <p><strong>1:10:01</strong> · Yeah. Uh, thanks for chatting with us.</p>
 <p><strong>1:10:03</strong> · Awesome. Yeah, great to meet you guys.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Latent Space - 🔬 The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub</title>
-      <link>https://myfeed.theindie.app/articles/20260619-052152-www.youtube.com-watch-v-XdevS0GSuiQ.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260619-052152-www.youtube.com-watch-v-XdevS0GSuiQ.html</guid>
-      <pubDate>Wed, 27 May 2026 17:32:38 GMT</pubDate>
-      <description><![CDATA[Alex Reeves, Head of Science at Biohub, discusses the groundbreaking advancements in protein language modeling, particularly the development of ESM-C, a comprehensive world model for protein biology....]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=XdevS0GSuiQ">🔬 The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub</a></p>
-<hr>
-<h1>Unlocking Protein Biology: Alex Reeves on ESM-2, ESM-C, and the Future of AI in Science</h1>
-<p>Alex Reeves, Head of Science at Biohub, discusses the groundbreaking advancements in protein language modeling, particularly the development of ESM-C, a comprehensive world model for protein biology. He shares insights into the &quot;bitter lesson&quot; of scaling laws in AI, the importance of data diversity, and how these models are paving the way for programmable biology and accelerating scientific discovery.</p>
-<h2>The Power of Scaling Laws in Protein Biology</h2>
-<p>Reeves' commitment to the &quot;bitter lesson&quot; – the idea that scaling up models and data often leads to emergent capabilities – stems from his work since 2018. His team pioneered transformer language models for protein biology, observing that as models grew in size and were trained on vast evolutionary data, new biological insights and capabilities emerged. This approach is rooted in the understanding that protein sequences are not arbitrary; they are shaped by evolutionary constraints. Amino acids at different positions in a sequence are interdependent, influencing how a protein folds into a three-dimensional structure. By training models to predict amino acid sequences across billions of evolutionary contexts, these models learn the underlying biological principles governing protein formation and function.</p>
-<h2>ESM-C: A World Model for Protein Biology</h2>
-<p>The latest development, ESM-C, represents a significant leap forward. It's not just a language model but a &quot;world model&quot; of protein biology. This model builds upon the foundation of ESM-2, incorporating structural prediction capabilities and leveraging mechanistic interpretability to reveal the underlying features the model uses.</p>
-<p>ESM-C has been trained on an unprecedented dataset of 6.8 billion non-redundant protein sequences. From this, it has predicted structures for 1.1 billion unique protein clusters, providing the most comprehensive picture of protein structure and function to date. This vast dataset allows for the identification of intricate linkages across evolution, revealing shared functional patterns even between distantly related proteins, such as gene editing systems.</p>
-<h2>Mechanistic Interpretability: Unveiling Biological Hierarchies</h2>
-<p>A key aspect of ESM-C's development involves mechanistic interpretability, using techniques like sparse autoencoders. This analysis has revealed a hierarchical structure of features within the model's representation space. These learned features correspond remarkably well to decades of biological understanding, from basic biochemical properties and structural building blocks to complex functional themes. This emergence of biological knowledge without explicit prior programming is a testament to the power of large-scale language modeling.</p>
-<p>Reeves explains that the model develops internal &quot;latent variables&quot; to solve the complex task of predicting amino acid sequences. These variables effectively represent underlying biological concepts, such as the &quot;nucleophilic elbow,&quot; a functional motif found across diverse protein families. The model's ability to identify and represent such motifs with a single feature, even in evolutionarily distant proteins, highlights its deep understanding of biological organization.</p>
-<h2>The Crucial Role of Data: Beyond UNIREF</h2>
-<p>While ESM-2 demonstrated the benefits of scaling compute and parameters, ESM-C's breakthrough lies in its data. The training data for ESM-2 was primarily UNIREF, a curated dataset. For ESM-C, the critical addition was metagenomic sequencing data. This data, collected from diverse environments like hydrothermal vents and the human gut, captures the vast, often noisy, and unannotated protein diversity present in nature.</p>
-<p>Metagenomic sequencing involves collecting environmental samples and sequencing all the genetic material within them, without necessarily identifying the specific organisms or even confirming if a sequence is a complete protein. This approach, while noisy, provides an unparalleled breadth of evolutionary contexts, proving crucial for ESM-C's enhanced capabilities. Reeves emphasizes that this data-driven approach, rather than relying on extensive built-in inductive biases like AlphaFold, allows the model to learn the underlying structure of protein biology organically.</p>
-<h2>Programmable Biology and Therapeutic Design</h2>
-<p>ESM-C is not just a descriptive model; it's a tool for programmable biology. By treating it as a &quot;world model,&quot; researchers can search its latent space to find protein molecules that satisfy specific design criteria. This has already led to the successful design of mini-protein binders and, more excitingly, single-chain variable fragments (SCFVs) and antibodies.</p>
-<p>SCFVs are a therapeutic modality derived from antibodies, offering potential advantages in drug development. Reeves notes that ESM-C can identify antibodies with the necessary affinity for therapeutic function, a significant advancement in the field of protein design, which has historically found designing larger antibody structures more challenging. While full immunoglobulin G (IgG) designs haven't been attempted yet, Reeves sees no fundamental reason why they wouldn't be achievable.</p>
-<h2>The Future: A New Scientific Paradigm</h2>
-<p>Biohub, under Reeves' leadership, is focused on building a scientific institution for a new paradigm that integrates frontier experimental biology, technology, and artificial intelligence. This paradigm is characterized by:</p>
-<ul>
-<li><strong>Data Generation:</strong> Accelerating the creation of vast, multi-modal datasets.</li>
-<li><strong>Computational Predictive Representations:</strong> Developing increasingly capable digital models of biological complexity, from molecules to cells and physiology.</li>
-<li><strong>Feedback Loops:</strong> Utilizing scalable intelligence to reason over millions of scientific hypotheses, predict experimental outcomes, and iteratively refine understanding.</li>
-</ul>
-<p>The goal is to move beyond simply observing biology to actively modeling, simulating, and ultimately controlling it. This involves bridging the gap between molecular-level understanding and the complex dynamics of cellular systems.</p>
-<h2>The Virtual Cell Initiative and Data Collection</h2>
-<p>Biohub's ambitious Virtual Biology Initiative, backed by significant investment, aims to catalyze data creation and technology development for a comprehensive understanding of cellular biology. Key principles guiding this initiative include:</p>
-<ul>
-<li><strong>Speed:</strong> Rapidly generating data, moving beyond the decades-long timelines of past biological discoveries.</li>
-<li><strong>Generalization:</strong> Creating models that can predict outcomes in novel contexts and serve as &quot;oracles&quot; for biological inquiry. This requires scaling interventional biology, such as perturbation experiments, and integrating multi-modal measurements (transcriptomics, proteomics, epigenetics, etc.).</li>
-<li><strong>Spatial Biology:</strong> Understanding cells within their complex systemic context, not in isolation, to grasp disease mechanisms.</li>
-</ul>
-<p>Reeves highlights the need for new technologies to enable simultaneous measurement of multiple biological layers and to scale existing technologies by orders of magnitude. The focus is on both improving current assays and developing next-generation technologies for data collection.</p>
-<h2>Bottlenecks and Opportunities</h2>
-<p>While compute remains a significant bottleneck for AI development, Reeves points out that in biology, experimental science and data generation are the primary limitations. He believes there's still vast untapped potential in publicly available protein sequence data, with estimates suggesting hundreds of billions of sequences yet to be fully leveraged.</p>
-<p>The ultimate goal is to create a comprehensive, information-theoretic description of the cell, akin to understanding the &quot;underlying programs&quot; that govern its behavior. This, Reeves suggests, will be key to understanding and ultimately curing diseases.</p>
-<h2>Call to Action</h2>
-<p>Biohub is releasing ESM-C under an MIT license, making it freely available for researchers worldwide. Reeves encourages the scientific community to use this powerful tool, collaborate, and help accelerate the pace of discovery in protein biology and beyond. The aim is to build the foundational tools that empower scientists to tackle humanity's most pressing health challenges.</p>
 ]]></content:encoded>
       
     </item>

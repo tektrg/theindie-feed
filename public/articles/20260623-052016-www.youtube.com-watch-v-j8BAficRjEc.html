@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The rapid advancement of AI, particularly in large language models (LLMs) and coding agents, presents a new frontier in security. While AI offers transformative potential, it also introduces unique vu...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=j8BAficRjEc" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan</h1>
+      <time datetime="2026-06-22T22:20:44.152Z">
+        Tuesday, June 23, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>AI Security: Navigating the Evolving Landscape with Gray Swan</h1>
+<p>The rapid advancement of AI, particularly in large language models (LLMs) and coding agents, presents a new frontier in security. While AI offers transformative potential, it also introduces unique vulnerabilities that differ significantly from traditional software. Gray Swan, a company born from extensive research at Carnegie Mellon University, is dedicated to empowering individuals and organizations to use AI safely and securely. Matt Fredrikson and Zico Kolter, co-founders of Gray Swan, discuss the evolving challenges and solutions in AI security, from automated red teaming to enterprise-grade guardrails.</p>
+<h2>The Unique Challenges of AI Security</h2>
+<p>Unlike traditional software, AI systems, especially LLMs, exhibit fundamentally different behaviors and possess inherent vulnerabilities. They can be &quot;tricked&quot; in ways analogous to human susceptibility, requiring a distinct security mindset. The widespread adoption of a few core models, like Codex and Claude, amplifies the impact of any discovered vulnerabilities, creating new classes of exploits.</p>
+<p>&quot;AI systems have inherent inherent different types of vulnerabilities,&quot; explains Zico Kolter. &quot;They can be tricked like people get tricked sometimes, right? And so you need a different mindset about security when you're thinking about AI systems.&quot;</p>
+<p>Gray Swan's mission is to address these challenges by understanding, testing, and mitigating the security risks associated with deploying AI. This involves treating AI models as potentially untrusted entities and focusing on the security risks they introduce, rather than solely on using AI to enhance traditional cybersecurity.</p>
+<h2>Red Teaming: Pushing the Boundaries of AI Safety</h2>
+<p>A core component of Gray Swan's approach is rigorous red teaming. This involves actively trying to break AI models to identify vulnerabilities before malicious actors can exploit them. Gray Swan operates two key initiatives in this space:</p>
+<ul>
+<li><strong>The Gray Swan Arena:</strong> This community-driven platform hosts prize challenges where red teamers, both human and automated, compete to find ways to circumvent AI model safety and security objectives. With a Discord community of around 15,000 participants, the Arena generates valuable data and insights for model developers.</li>
+<li><strong>Automated Red Teaming (Shade):</strong> Gray Swan has developed a family of models, collectively known as Shade, specifically designed for automated red teaming. These models are becoming increasingly adept at identifying vulnerabilities, even surpassing human red teamers in certain experiments. &quot;One thing that we are finding and I think we're we're kind of crossing this point too is that in a lot of the latest experiments we can do much better than the human red teamers,&quot; states Kolter. &quot;Now when I say we I mean our automated red teaming models a system called shade that system is now actually quite a bit better at breaking uh models than humans are.&quot;</li>
+</ul>
+<p>These efforts are crucial for testing base models and, increasingly, for evaluating agents built on top of them, which incorporate tool use and downstream applications.</p>
+<h2>Testing Claude, Codex, and Beyond</h2>
+<p>Gray Swan's testing methodologies are applied to various cutting-edge models. For instance, they participated in the Mythos preview, focusing on the model's robustness against indirect prompt injection. This involves assessing how well the model maintains its original objectives when exposed to untrusted content fetched from external sources.</p>
+<p>Beyond specific model evaluations, Gray Swan assists frontier labs in testing their safeguards against various adversarial activities, including cyber misuse, and provides comprehensive safety and security assessments.</p>
+<h2>The Rise of AI Agents and the &quot;Lethal Trifecta&quot;</h2>
+<p>The increasing sophistication of AI agents, capable of autonomous operation and tool use, introduces new attack vectors. The &quot;lethal trifecta,&quot; a concept coined by Simon Wilson, describes the core components of prompt injection risks:</p>
+<ol>
+<li><strong>Ingesting Untrusted Data:</strong> The ability of an agent to process information from external, untrusted sources.</li>
+<li><strong>Access to Private Information:</strong> The agent's capability to access sensitive internal data.</li>
+<li><strong>Exfiltration Capability:</strong> The ability to send this private information to an external destination.</li>
+</ol>
+<p>When these three elements converge, they create significant security risks. This is particularly relevant for agents that utilize computer use capabilities, such as controlling web browsers or executing code.</p>
+<h2>Cygnal: Enterprise-Grade Guardrails for AI</h2>
+<p>To counter these vulnerabilities, Gray Swan offers <strong>Cygnal (Signal)</strong>, a specialized filter model designed to act as guardrails for AI agents. Signal sits between the user, the LLM, and any tool calls, actively monitoring for policy violations.</p>
+<p>&quot;The other side of what we do is exactly this defense side. And so this is a model called signal which is essentially a filter model that sits between your user the LLM the LLM and any tool calls and exactly does this level of looking for policy violations,&quot; explains Fredrikson.</p>
+<p>Signal is a custom-trained model that works best when tailored to specific enterprise policies. This is crucial because, unlike general-purpose base models, enterprises often have unique security requirements and data access restrictions that need to be enforced.</p>
+<h2>The Trade-off Between Usability and Security</h2>
+<p>A persistent challenge in AI security is the inherent trade-off between an agent's usability and its security. Limiting an agent's capabilities to enhance security can hinder its effectiveness and utility. Conversely, granting agents broad access and functionality increases their potential attack surface.</p>
+<p>&quot;Our goal with signal with shade to assess these vulnerabilities with signal to protect it is to shift that point up and to the right,&quot; says Kolter, referring to the Pareto frontier of usability versus security. Gray Swan aims to improve this balance, allowing organizations to deploy powerful AI agents with a higher degree of confidence.</p>
+<h2>The Future of AI Security: Automation and Specialization</h2>
+<p>The future of AI security, according to Fredrikson and Kolter, lies in increased automation and specialization.</p>
+<ul>
+<li><strong>Automating AI Research:</strong> The ability of AI agents to automate scientific research, including interpretability studies and the development of more secure code, holds immense promise. This could accelerate the pace of discovery and problem-solving in AI security.</li>
+<li><strong>Enterprise Adoption:</strong> As more non-AI companies adopt AI tools like Codex, Claude, and OpenClaw, the demand for robust security solutions will skyrocket. Gray Swan anticipates significant growth in enterprise deployments of its technology.</li>
+<li><strong>AI Insurance and Compliance:</strong> The emergence of AI insurance markets, like that offered by AI Underwriting Company (AUC), signifies a growing recognition of AI risks. Gray Swan's tools can play a vital role in assessing these risks and prescribing mitigation strategies, creating a synergistic relationship with insurance providers.</li>
+<li><strong>Agent Identity and Permissions:</strong> Establishing secure agent identities and granular permission systems is a critical, yet largely unsolved, problem. The current default of agents inheriting user permissions is unsustainable. Future solutions will likely involve distinct agent personas and more sophisticated access control mechanisms.</li>
+</ul>
+<h2>The Inevitable &quot;Gray Swan&quot; Event</h2>
+<p>The name &quot;Gray Swan&quot; itself reflects the company's philosophy: acknowledging unlikely but foreseeable events. The founders believe that a major, publicly reported prompt injection breach is an event that, while not guaranteed, is highly probable and can be anticipated.</p>
+<p>&quot;A grey swan is an unlikely event you can kind of see coming,&quot; Kolter states. &quot;And that's kind of where we are with all this. Right. This is going to happen. We know it's coming. It's not going to shock anyone when it happens.&quot;</p>
+<p>Gray Swan's mission is to help organizations get ahead of these predictable risks, ensuring that the transformative power of AI can be harnessed responsibly and securely.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>AI security presents unique challenges distinct from traditional cybersecurity due to the inherent nature of AI models.</li>
+<li>Gray Swan employs automated red teaming (Shade) and a community-driven arena to identify and exploit AI vulnerabilities.</li>
+<li>The &quot;lethal trifecta&quot; (ingesting untrusted data, accessing private info, exfiltrating data) highlights key prompt injection risks.</li>
+<li>Cygnal (Signal) provides enterprise-grade guardrails to mitigate AI agent vulnerabilities.</li>
+<li>The future of AI security involves automating research, scaling enterprise solutions, and developing robust agent identity and permission systems.</li>
+<li>A major AI security incident, a &quot;gray swan&quot; event, is considered likely and preventable with proactive measures.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
