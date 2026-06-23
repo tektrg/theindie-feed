@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pragmatic Engineer - Slow down to speed up: AI and software engineering - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="A recent security breach at Meta, coupled with widespread industry shifts, highlights the profound impact of Artificial Intelligence on software development. This article delves into the specifics of...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=5wks1W-auKY" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>The Pragmatic Engineer - Slow down to speed up: AI and software engineering</h1>
+      <time datetime="2026-06-23T15:26:35.000Z">
+        Tuesday, June 23, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Instagram Exploit and the AI Revolution in Software Engineering</h1>
+<p>A recent security breach at Meta, coupled with widespread industry shifts, highlights the profound impact of Artificial Intelligence on software development. This article delves into the specifics of the Instagram exploit, explores how AI is reshaping tech companies, and offers advice for navigating this rapidly evolving landscape.</p>
+<h2>The Instagram Exploit at Meta</h2>
+<p>The week began with a significant security incident at Meta, impacting thousands of users and causing considerable disruption. The exploit, described as &quot;goofy&quot; by industry insiders, allowed for unauthorized account takeovers.</p>
+<p>The process involved two primary steps:</p>
+<ol>
+<li><strong>Location Faking:</strong> An attacker would use a VPN to spoof their location to the victim's country.</li>
+<li><strong>AI-Assisted Account Recovery:</strong> The attacker would then contact Meta AI, claiming their account was hacked and requesting a verification code be sent to an email address they controlled.</li>
+</ol>
+<p>Astonishingly, this was the extent of the exploit. Meta AI would send the verification code directly to the attacker, enabling them to take over any Instagram account. This vulnerability, dubbed a &quot;zero-off password reset,&quot; bypassed standard security protocols.</p>
+<p>The incident raises serious questions about Meta's robust engineering culture, its advanced automated rollout systems, and its dedicated trust and safety teams, which comprise nearly 100 engineers. Adding to the turmoil, Meta's Chief Information Security Officer announced their resignation shortly after the incident, amidst an ongoing outage investigation.</p>
+<p>Further details revealed that the code responsible for this breach was AI-generated, reviewed by AI, and critically, not by humans. This points to a deeper issue within Meta, characterized by a confluence of factors: &quot;AI maxing,&quot; layoffs, and what can be described as &quot;AI psychosis.&quot;</p>
+<h3>AI Maxing and Layoffs: A Toxic Mix</h3>
+<p>&quot;AI maxing&quot; refers to a trend where engineers were incentivized to inflate their AI token usage, often by using AI for trivial tasks, to climb internal leaderboards and improve performance evaluations. At Meta, this led to engineers burning through AI resources excessively, simply to appear productive.</p>
+<p>This behavior was exacerbated by recent layoffs. With 10% of Meta's staff, approximately 8,000 people, being let go, employees became increasingly anxious about their job security. The fear of being laid off for not demonstrating sufficient AI usage led to further inflation of token counts. Engineers, instead of focusing on their core responsibilities, were preoccupied with &quot;token maxing&quot; to protect their positions.</p>
+<h3>AI Psychosis and the Trust &amp; Safety Team</h3>
+<p>The situation was further compounded by significant organizational changes within Meta's trust and safety teams. Approximately 40% of the highly skilled trust and safety team, primarily based in London, was reassigned to manual AI data labeling tasks. These engineers, accustomed to critical security work, were given no choice in the matter, a stark departure from Meta's previous employee-centric approach.</p>
+<p>This massive reallocation of resources, coupled with the ongoing layoffs, has left many teams understaffed, some even lacking on-call coverage. This situation, unprecedented for Meta, is a direct consequence of a top-down push to build a state-of-the-art AI model, seemingly at the expense of business stability and employee morale. The company's engineering culture, built over two decades, is reportedly suffering, with engineers feeling like disposable tools rather than valued contributors.</p>
+<h2>Everything Changed in the Last 6 Months</h2>
+<p>The software engineering landscape has undergone a dramatic transformation in the past six months, largely driven by advancements in AI. Prominent figures in the industry, like David Heinemeier Hansson (creator of Ruby on Rails), have noted a significant shift. Previously skeptical of AI's coding capabilities, he now reports that AI is writing most of his code, often producing better results than he can.</p>
+<p>This sentiment is echoed by independent software engineers and industry observers. The release of advanced models like Opus 4.6 and GPT 5.4 in late 2023 has elevated AI agents to a level of genuine usefulness.</p>
+<p>Data from companies like Linear and Cursor further illustrates this acceleration:</p>
+<ul>
+<li><strong>Linear</strong> reports that teams using AI agents are shipping five times more code.</li>
+<li><strong>Cursor</strong> has seen the lines of code produced by its developers nearly double in a year, with the size of pull requests tripling, effectively leading to a six-fold increase in code output.</li>
+</ul>
+<p>Crucially, the rate at which developers are accepting AI-generated changes without manual review has also surged, indicating a growing trust in these tools.</p>
+<h3>What is Happening Across Tech Companies?</h3>
+<p>The industry is rapidly integrating AI into its core development processes:</p>
+<ul>
+<li><strong>Anthropic:</strong> The company behind Claude AI, is heavily invested in AI agents. Their founder, Boris Dzyuba, runs multiple agents simultaneously, shipping dozens of pull requests daily. Anthropic's internal tool, Claude Code, now generates a significant portion of their code.</li>
+<li><strong>OpenAI:</strong> Internally, OpenAI utilizes a &quot;fix it&quot; button that allows engineers to screenshot bugs, which are then addressed by Codex, generating pull requests for review. While AI code review is prevalent, critical code still requires human oversight.</li>
+<li><strong>Cursor:</strong> This company has fully embraced AI agents, developing its own coding model and operating vast GPU infrastructure. They are also reportedly in talks to be acquired by SpaceX.</li>
+<li><strong>Google:</strong> Google has integrated Gemini into its custom development environment, Cider. While the AI is powerful, Gemini is reportedly not as advanced as competitors like Opus or GPT 5.5, leading to slower AI adoption compared to other tech giants.</li>
+<li><strong>Meta:</strong> Despite the internal focus on building a superior AI model, Meta has an internal coding tool called Metamate. However, the public disclosure of prompts used by staff engineers has caused internal friction.</li>
+<li><strong>Uber:</strong> With around 3,000 engineers, Uber has developed extensive in-house AI tooling, including an agent builder, a CLI tool akin to Cloud Code, and background agents for large-scale operations. They are also implementing systems to manage AI code reviews and identify risky code changes.</li>
+</ul>
+<p>Many other large tech companies, including Stripe, Shopify, and Airbnb, are also building their own internal AI development platforms, indicating a widespread industry trend.</p>
+<h2>Industry-Wide Trends</h2>
+<p>Several overarching trends are emerging across the tech industry:</p>
+<h3>1. Shifting from Individual Productivity to Team Outcomes</h3>
+<p>Laura Tacho, formerly of DX and now at AWS, observes that many organizations get stuck focusing on AI as an individual productivity tool. The companies achieving significant results, however, are approaching AI from a business outcome perspective, aiming to deploy faster, ship more features with maintained quality, or improve overall quality. Spotify, for instance, prioritizes maintaining quality with AI integration, even if it means a slower rollout. The key is building agentic systems that reduce handoffs, improve information access, and remove friction while upholding quality standards.</p>
+<h3>2. Token Maxing and Tooling Addiction</h3>
+<p>The pressure to appear productive has led to &quot;token maxing,&quot; where engineers artificially inflate AI usage. This behavior, driven by internal leaderboards and a lack of budget scrutiny in some companies, is unsustainable. Furthermore, the pricing models of AI tools can foster addiction, with users feeling compelled to maximize their usage to justify costs, leading to escalating expenses.</p>
+<h3>3. The Flattening of Middle Management</h3>
+<p>Middle management roles are being reduced or reassigned as companies flatten their organizational structures. This trend, often attributed to AI's ability to automate management tasks, raises concerns about the erosion of engineering culture, as good management plays a crucial role in fostering innovation and addressing technical challenges.</p>
+<h3>4. CEOs and CTOs Returning to Coding</h3>
+<p>Concurrently, CEOs and CTOs are increasingly engaging in coding, often with renewed enthusiasm, using AI tools to assist them. This trend, while potentially beneficial for understanding technical challenges, occurs alongside the reduction of middle management, potentially leaving engineers with less support.</p>
+<h3>5. The Rise of AI Budgets as a Major Issue</h3>
+<p>A significant and unexpected trend is the emergence of AI budgets as a critical concern for companies. Previously, AI costs were often overlooked, but with increased usage and the implementation of API pricing, these costs are escalating rapidly, forcing companies to set strict caps on AI spending.</p>
+<h2>Software Craft Trends</h2>
+<p>The rapid adoption of AI is also impacting the fundamental practices of software engineering:</p>
+<h3>1. A Drop in Quality Everywhere</h3>
+<p>Despite the speed AI offers, there's a noticeable decline in software quality. Examples include Anthropic's flagship website experiencing persistent bugs for weeks and OpenAI's agent builder launching with numerous unresolved issues. Amazon experienced a major outage due to an AI-generated code change, leading to a requirement for senior engineer review of all AI-generated modifications.</p>
+<h3>2. Open Source AI Tools Leading the Way</h3>
+<p>Companies like Open Code, which provides an open-source AI coding assistant, are finding success not by outperforming competitors in AI usage, but by focusing on quality and thoughtful design. Their founder, Dax, admits they are intentionally using AI less to ensure better judgment and build more impactful features.</p>
+<h3>3. Everything is Breaking</h3>
+<p>The reliability of core developer tools is also being questioned. GitHub experienced a significant outage where pull requests disappeared for hours, attributed to load increases that the platform seemingly failed to anticipate. This fragility extends to user interfaces, with increasingly bizarre bugs becoming commonplace.</p>
+<h3>4. &quot;Slob&quot; Buries the Software Engineer Who Still Cares</h3>
+<p>The influx of AI-generated code is overwhelming developers who prioritize quality. Many engineers are simply accepting AI suggestions without thorough review, leading to a decline in code integrity. Those who do meticulously review code are facing burnout, feeling unrewarded, and are often leaving their companies. This trend is exacerbated by the reduction in engineering management, leaving fewer individuals to champion quality.</p>
+<h3>5. AI Amplifies Experience</h3>
+<p>AI tools tend to amplify the skills of experienced engineers. For instance, successfully using AI for formal verification requires deep expertise in the relevant specification languages. Junior engineers may be able to generate code, but it often lacks maintainability. This highlights the importance of domain expertise and foundational engineering principles.</p>
+<h3>6. Old Patterns Are Coming Back</h3>
+<p>As AI agents act as new junior engineers, traditional enterprise patterns like Domain-Driven Design and robust guardrails are becoming essential to manage and control AI-generated code.</p>
+<h2>Advice for Software Engineers</h2>
+<p>Navigating this new era requires a strategic approach:</p>
+<ul>
+<li><strong>Slow Down to Speed Up:</strong> Cap your daily AI agent usage to what you can realistically review or verify. Consider building your own verification systems if you choose not to read every line of code.</li>
+<li><strong>Be the Chief Tech Debt Remover:</strong> AI makes it cheaper to remove technical debt. Embrace this opportunity to improve your codebase and your own efficiency.</li>
+<li><strong>Experiment with AI Usage:</strong> There's no one-size-fits-all approach. Explore different AI agent configurations and usage patterns to find what works best for you.</li>
+<li><strong>Spend More Time Thinking and Understanding:</strong> AI can handle the coding. Dedicate more time to conceptualization, problem-solving, and understanding the underlying systems.</li>
+<li><strong>Don't Outsource Learning:</strong> Resist the temptation to let AI write code while you skip the learning process. Ensure you understand the code being generated to maintain your own mental model and capacity.</li>
+<li><strong>Future-Proof Your Career:</strong> Focus on building things that leverage AI and LLMs. Explore AI engineering roles, build side projects, and demonstrate your AI proficiency.</li>
+<li><strong>Think Like a Product Manager:</strong> Understand the business context, talk to product managers, and become a domain expert in your industry. This will make you invaluable.</li>
+</ul>
+<h2>Advice for Engineering Leaders</h2>
+<ul>
+<li><strong>Stay Hands-On:</strong> Leaders must remain technically engaged. AI can assist in this, but a disconnect from the codebase will lead to obsolescence.</li>
+<li><strong>Integrate AI at the System Level:</strong> Focus on using AI to remove friction across systems, rather than solely on people management.</li>
+<li><strong>Embrace Less People Management:</strong> The business expects leaders to do less people management. If you love it, you may need to find ways to balance it or accept a reduced role.</li>
+<li><strong>Support Career Growth:</strong> Engineers may receive less career support and potentially fewer pay rises for a period, but this is a consequence of evolving management structures.</li>
+</ul>
+<p>The pace of change in the software industry has never been faster. While it's easy to feel overwhelmed, by focusing on quality, continuous learning, and strategic AI integration, engineers and leaders can not only keep up but also thrive in this new era.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
