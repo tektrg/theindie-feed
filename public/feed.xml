@@ -7,8 +7,51 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 22:22:13 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 22:20:47 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pragmatic Engineer - Tech interviews with NeetCode</title>
+      <link>https://myfeed.theindie.app/articles/20260625-052019-www.youtube.com-watch-v-xafwfGVBxos.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260625-052019-www.youtube.com-watch-v-xafwfGVBxos.html</guid>
+      <pubDate>Wed, 24 Jun 2026 17:13:15 GMT</pubDate>
+      <description><![CDATA[The tech industry is in constant flux, with predictions of coding interviews becoming obsolete due to AI-powered tools and the increasing emphasis on skills beyond pure coding. Nav Singh, known to man...]]></description>
+      <content:encoded><![CDATA[<h1>The Evolving Landscape of Software Engineering: AI, Interviews, and the Human Element</h1>
+<p>The tech industry is in constant flux, with predictions of coding interviews becoming obsolete due to AI-powered tools and the increasing emphasis on skills beyond pure coding. Nav Singh, known to many as NeetCode, joins the conversation to discuss these shifts, his own journey, and what it truly takes to succeed as a software engineer today.</p>
+<h2>The Enduring Grip of Coding Interviews</h2>
+<p>Despite the rapid advancements in AI's coding capabilities, traditional data structures and algorithms (DSA) interviews remain a cornerstone of the hiring process at many big tech companies. This persistence is puzzling to many, as AI can now generate code with remarkable accuracy, seemingly rendering manual coding skills less critical for day-to-day tasks.</p>
+<p>Neet explains that DSA interviews were never solely about assessing raw coding ability. Instead, they served as a proxy for evaluating a candidate's problem-solving skills and their ability to think critically. Furthermore, companies often struggle to find effective and scalable methods for evaluating candidates. The DSA format, while imperfect, has proven to be a sticky and standardized approach that is difficult to replace. Changing such established processes within large organizations is a monumental task, requiring significant retraining and bureaucratic navigation.</p>
+<h2>From Electrical Engineering to a Love-Hate Relationship with Code</h2>
+<p>Neet's journey into tech began with an interest in math and physics, leading him to study electrical engineering. His initial foray into programming was a required C class, which he found challenging at first. However, as he grasped core concepts like variables, loops, and functions, a profound appreciation for the complexity and infinite possibilities of programming emerged.</p>
+<p>This passion for deep understanding, however, sometimes clashes with the realities of professional software development. Neet expresses a &quot;love-hate relationship&quot; with programming, noting that the business-driven nature of the industry often dictates the problems solved, which may not always align with personal interests. This sentiment echoes his initial discomfort with the CAP theorem, which he found to be an incomplete and &quot;hand-wavy&quot; explanation of distributed systems, contrasting with his desire for deterministic, deep understanding.</p>
+<h2>The Amazon Experience: A Harsh Introduction to Big Tech</h2>
+<p>After graduating, Neet joined Amazon, a seemingly straightforward path into big tech. However, his experience in the Alexa division was far from smooth. He describes a highly stressful environment with demanding deadlines and a culture that implicitly pressured employees to work extreme hours. The lack of a supportive onboarding process for new graduates and the pervasive atmosphere of intense competition left a significant impact.</p>
+<p>This challenging experience led Neet to impulsively quit after just two months. He later regretted this decision, realizing the financial and career implications. The experience, however, provided valuable lessons about company culture and the importance of a healthy work environment.</p>
+<h2>Google vs. Amazon: A Tale of Two Cultures</h2>
+<p>His subsequent move to Google offered a stark contrast. Neet found Google to be a supportive and friendly environment, a complete reversal from his Amazon experience. Initially, he carried over the &quot;Amazon PTSD,&quot; working independently and hesitating to ask questions. However, a supportive manager and a challenging project allowed him to demonstrate his capabilities, leading to a surprisingly quick promotion to L4. This success boosted his confidence and made him more comfortable engaging with his colleagues and asking questions, a trait typically expected of junior engineers.</p>
+<p>This experience highlighted how ingrained reflexes from previous company cultures can significantly impact an engineer's adaptation to a new environment.</p>
+<h2>The Genesis of NeetCode</h2>
+<p>During his year of intense LeetCode preparation between Amazon and Google, Neet began creating tutorial videos for his platform, NeetCode. He found the existing resources to be complex and difficult to follow, prompting him to share his own deep dives into algorithms and data structures. The channel gained significant traction after he announced his acceptance into Google, adding immense credibility to his content.</p>
+<p>The viral success of the free website cataloging his videos eventually led him to a pivotal decision: leaving Google to pursue NeetCode full-time. The allure of diving deep into algorithms and data structures, a passion he couldn't fully indulge at Google, combined with the opportunity to build his own venture, proved irresistible.</p>
+<h2>Embracing the Entrepreneurial Leap</h2>
+<p>Leaving a stable, high-profile job at Google for the uncertainty of entrepreneurship was a significant risk. Neet acknowledges the comfort and resources Google provided but felt the timing was right to seize the opportunity with NeetCode. The transition wasn't without its challenges, particularly in learning to delegate and manage a team, skills he had to develop over time through trial and error.</p>
+<p>His approach to building NeetCode has been pragmatic, prioritizing business value and user experience over chasing technological perfection. He famously built a code execution service in just three days using AI, which significantly reduced costs but introduced a minor bug. His decision to leave the bug unfixed, opting for redundancy instead, exemplifies his focus on overall business impact and cost-effectiveness over absolute code perfection.</p>
+<h2>The Value of Effort in an AI-Driven World</h2>
+<p>Neet argues that the effort invested in learning and problem-solving, even if seemingly abstract or &quot;pointless&quot; at the time, compounds over a career. He believes that skills like systems thinking and domain expertise are becoming increasingly crucial differentiators, especially as AI handles more of the rote coding tasks.</p>
+<p>He observes that while AI makes building things easier, it also makes building <em>value</em> significantly harder. The ease of generating features can lead to cluttered products and a dilution of focus. This is why, Neet contends, personality traits like &quot;agency&quot;—the drive to learn, adapt, and get things done—are becoming more important than ever. In a world where information is readily available through prompts, the ability to ask the right questions, understand context, and drive initiatives is paramount.</p>
+<h2>The Future of Software Engineers: Adaptability and Human Skills</h2>
+<p>The rise of AI is not signaling the extinction of programmers, but rather a dramatic shift in the field. Neet believes that while the nature of coding will change, the core principles of problem-solving, critical thinking, and engineering decisions will remain. He highlights the importance of adaptability, as seen in Microsoft's voluntary buyouts targeting experienced employees who may be less inclined to embrace new ways of working.</p>
+<p>He also emphasizes the growing importance of &quot;soft skills&quot; and human connection. In an era of AI-assisted development, the ability to communicate, collaborate, and build trust becomes a significant differentiator. This is evident in the success of individuals like Boris, who humanizes his product, Cloud Code, through personal engagement and transparency.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Coding interviews persist:</strong> Despite AI, DSA interviews remain a standard for evaluating problem-solving and critical thinking, not just coding prowess.</li>
+<li><strong>Effort is the new differentiator:</strong> As AI makes many technical tasks easier, the willingness to put in effort, learn deeply, and develop skills like systems thinking and agency becomes crucial.</li>
+<li><strong>Personality and soft skills matter:</strong> Traits like agency, communication, and the ability to build trust are increasingly valued over purely technical skills.</li>
+<li><strong>Pragmatism over perfection:</strong> Focusing on delivering business value and making sound trade-offs is more important than achieving absolute code perfection, especially in a fast-paced environment.</li>
+<li><strong>Adaptability is key:</strong> The tech landscape is constantly evolving, and engineers must be willing to adapt, learn new tools, and embrace new ways of working to stay relevant.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
     <item>
       <title>The Pragmatic Engineer - Slow down to speed up: AI and software engineering</title>
       <link>https://myfeed.theindie.app/articles/20260624-052145-www.youtube.com-watch-v-5wks1W-auKY.html</link>
@@ -4239,69 +4282,6 @@
 <p>So this is the actual takeaway. Spawning agents is not the skill. Anyone can run 20.</p>
 <p><strong>The real skill is designing the system around the one serial resource that cannot be cloned or parallelized. That resource is your attention.</strong></p>
 <p>Architect it the way you architect anything else you depend on in production.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>Veritasium - Google Maps is unreasonably fast. Let me explain</title>
-      <link>https://myfeed.theindie.app/articles/20260609-113721-www.youtube.com-watch-v-kS-CGkiPetQ.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260609-113721-www.youtube.com-watch-v-kS-CGkiPetQ.html</guid>
-      <pubDate>Sat, 30 May 2026 14:46:43 GMT</pubDate>
-      <description><![CDATA[Imagine trying to find the absolute shortest driving route from New York to San Francisco. With over 64 million intersections in North America, the number of possible routes is astronomical – around 1...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=kS-CGkiPetQ">Google Maps is unreasonably fast. Let me explain</a></p>
-<hr>
-<h1>The Algorithm That Powers Google Maps</h1>
-<p>Imagine trying to find the absolute shortest driving route from New York to San Francisco. With over 64 million intersections in North America, the number of possible routes is astronomical – around 10 to the power of 220. Even if you could check a billion routes per second, it would take over 10 to the power of 200 years to test them all. This isn't just a problem for navigation; any system requiring navigation, like a robot or a video game character, faces the same challenge. Yet, services like Google Maps can find you a route in mere seconds. How is this possible?</p>
-<p>The answer lies in the power of shortest path algorithms, a concept that traces its origins back to a shopping trip in Amsterdam in 1956.</p>
-<h2>The Birth of a 20-Minute Invention</h2>
-<p>Edsger Dijkstra, a computer scientist working on ARMAC, an early computer at the Mathematical Center in the Netherlands, needed a compelling demonstration of its capabilities. At the time, computers were widely considered useless, so much so that Dijkstra himself was humorously listed as a &quot;theoretical physicist&quot; on his marriage license because &quot;programmer&quot; wasn't recognized as a profession. He needed a problem that non-mathematicians could understand and appreciate the solution to.</p>
-<p>During a shopping trip with his fiancée, Dijkstra conceived of the perfect problem: &quot;What's the shortest way to travel from Rotterdam to Groningen?&quot; This question led to the development of the shortest path algorithm.</p>
-<h3>Breadth-First Search: The Simple Approach</h3>
-<p>A simplified way to visualize this is with a graph, where cities are nodes and roads are edges. The most basic approach, known as Breadth-First Search (BFS), explores all neighboring nodes from the starting point. It systematically checks all nodes one step away, then two steps away, and so on. This guarantees finding the shortest path in terms of the number of steps.</p>
-<p>However, BFS treats all roads as equal. In reality, roads have different lengths. To account for this, we assign weights to the edges, representing distances. This is where BFS becomes insufficient, and Dijkstra needed a more sophisticated method.</p>
-<h2>Dijkstra's Algorithm: Finding the Shortest Weighted Path</h2>
-<p>Dijkstra's breakthrough came during another moment of reflection, this time over coffee on a cafe terrace. His idea was to keep track of the shortest known distance (or &quot;cost&quot;) from the source node to every other node in the graph.</p>
-<p>The algorithm starts with the source node having a cost of zero and all other nodes having an infinite cost. Then, it iteratively explores the node with the lowest current cost among the unexplored nodes. For each explored node, it examines its neighbors and updates their costs if a shorter path is found through the current node.</p>
-<p>For example, if the current node has a cost of 3 and an edge to a neighbor has a weight of 2, the neighbor's cost is updated to 5. If later, another path to that same neighbor is found with a cost of 4, its cost is updated again to 4. This process continues, always selecting the unexplored node with the lowest cost, until the destination is reached.</p>
-<p>Dijkstra's algorithm guarantees finding the shortest path because, at each step, it has already explored all possible paths with costs lower than the current lowest-cost unexplored node. If the lowest cost among unexplored nodes is 18, it means all paths with costs less than 18 have already been considered, and if none reached the destination, then the current lowest-cost path to the destination must be the shortest.</p>
-<p>Dijkstra famously described his algorithm as a &quot;20-minute invention&quot; that he designed &quot;without pencil and paper,&quot; which he believed forced him to avoid unnecessary complexities.</p>
-<h2>The First Route Planner</h2>
-<p>When ARMAC was officially inaugurated in 1956, Dijkstra demonstrated his algorithm by having audience members choose two towns on a map. ARMAC then printed the shortest route, and the demonstration was a resounding success. While the algorithm sat in his papers for years, it was eventually published in 1959 and became a cornerstone of his fame.</p>
-<p>Despite its elegance, Dijkstra's algorithm isn't always sufficient for modern applications like Google Maps. Consider navigating from Newark Airport to the Central Park Zoo. Dijkstra's algorithm would explore outwards in all directions, checking all possible 10km journeys, then 20km, and so on. This search frontier can become enormous, encompassing areas far from the target, like Staten Island and large parts of New Jersey. While it might find the route quickly (around a tenth of a second on a phone), the sheer number of nodes explored can be inefficient for massive networks.</p>
-<h2>A* Search: Adding Heuristics for Smarter Navigation</h2>
-<p>The problem with Dijkstra's algorithm is that it explores in all directions, even those moving away from the target. To improve efficiency, we can introduce a heuristic – an educated guess – to guide the search.</p>
-<p>The A* (A-star) search algorithm modifies Dijkstra's by prioritizing nodes that are not only close to the source but also appear to be closer to the target. This is achieved by adding the straight-line distance (calculated using longitude and latitude) from a node to the target as part of its cost. The algorithm then orders nodes by their total cost (path from source + estimated distance to target).</p>
-<p>This &quot;penalizes&quot; moves that take the search further away from the destination, making the search frontier head more directly towards the target. A* can significantly reduce the number of nodes explored, often by an order of magnitude. This makes it highly effective for applications like video game NPCs, where efficient pathfinding is crucial.</p>
-<p>However, optimizing for the shortest <em>geographic distance</em> isn't always the same as optimizing for the fastest <em>travel time</em>. When considering travel time, A* can sometimes be outperformed by a well-tuned Dijkstra because the heuristic calculations themselves can add overhead.</p>
-<h2>Bi-directional Search and Road Network Hierarchy</h2>
-<p>To further optimize, map applications employ other strategies. One is <strong>bi-directional search</strong>, where the search is run simultaneously from both the source and the target. The two search frontiers meet in the middle, significantly reducing the overall search area.</p>
-<p>Another crucial insight is the <strong>hierarchy of road networks</strong>. Humans intuitively understand that we tend to use local roads to get to a highway, then use the highway for long distances, and finally exit the highway to use local roads again near our destination. Traditional algorithms like Dijkstra and A* don't inherently understand this hierarchy, treating a local road and a highway with the same weight as equally viable options.</p>
-<h3>Customizable Contraction Hierarchies</h3>
-<p>To address this, modern routing algorithms leverage pre-processed hierarchies. This involves automatically ordering nodes by their importance. For example, an intersection connecting two highways is far more important than one leading to a cul-de-sac.</p>
-<p>This pre-processing step, known as <strong>nested dissection</strong>, identifies &quot;bottleneck&quot; nodes that are critical for connecting different parts of the graph. For instance, bridges over a major river or key intersections that split the graph into roughly equal halves are identified as highly important. This process is repeated recursively, creating a hierarchy of node importance.</p>
-<p>Once this hierarchy is established, a bi-directional search can be performed, but it's constrained to only move <em>up</em> the hierarchy from both directions. This drastically limits the search space.</p>
-<p>To ensure that the shortest path is always found, even with this hierarchical search, <strong>shortcuts</strong> are introduced. These are artificial edges added between nodes that represent the shortest path using only lower-ranked nodes. This prevents the algorithm from missing a shorter route that might involve local roads, even if the hierarchical search initially bypasses it.</p>
-<p>This entire process, combining hierarchical ordering, bi-directional search, and shortcuts, is known as a <strong>Customizable Contraction Hierarchy (CCH)</strong>.</p>
-<h2>The Speed of Modern Mapping</h2>
-<p>The CCH approach breaks down into three phases:</p>
-<ol>
-<li><strong>Ordering Nodes and Adding Shortcuts:</strong> This is the most computationally intensive part, done once unless the road network changes significantly. For North America, this might take around 1 hour and 40 minutes.</li>
-<li><strong>Calculating Shortcut Weights:</strong> This step is rerun when traffic updates occur and needs to be relatively fast, taking seconds to minutes.</li>
-<li><strong>The Actual Search:</strong> This is the query phase, which needs to be incredibly fast.</li>
-</ol>
-<p>On the North American network, a well-tuned Dijkstra might take around seven seconds and explore most of the 64 million nodes. In contrast, a CCH can find the shortest path in approximately 200 microseconds – that's 35,000 times faster, exploring only about 1,450 nodes. This is the kind of speed that allows map applications to provide near-instantaneous directions.</p>
-<h2>Simplicity and Reliability</h2>
-<p>The enduring success of Dijkstra's algorithm, even as the foundation for highly complex systems like CCH, speaks to its fundamental elegance. Dijkstra himself believed that &quot;simplicity is prerequisite for reliability.&quot; He understood that ultimately, programmers are accountable for their work, not the machines. His hope was that his emphasis on thoughtful design would serve as a lasting legacy, encouraging others to approach problems with the same rigor and elegance.</p>
-<h2>Key Takeaways</h2>
-<ul>
-<li>Shortest path algorithms are essential for navigation and many other computational problems.</li>
-<li>Dijkstra's algorithm, developed in 1956, was a groundbreaking solution for finding the shortest path in weighted graphs.</li>
-<li>BFS is a simple method for unweighted graphs, while Dijkstra handles weighted edges.</li>
-<li>A* search improves efficiency by using heuristics to guide the search towards the target.</li>
-<li>Modern mapping applications use advanced techniques like bi-directional search and road network hierarchies.</li>
-<li>Customizable Contraction Hierarchies (CCH) combine hierarchical pre-processing with bi-directional search and shortcuts to achieve extremely fast query times.</li>
-<li>The simplicity and reliability of Dijkstra's core ideas continue to influence even the most advanced routing algorithms today.</li>
-</ul>
 ]]></content:encoded>
       
     </item>
