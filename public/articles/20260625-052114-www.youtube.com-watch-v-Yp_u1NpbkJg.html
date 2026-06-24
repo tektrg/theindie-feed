@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - The Agent Cloud: Databricks’ Bet on the Future of AI — Matei Zaharia and Reynold Xin - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Databricks is making a significant bet on the future of AI with its &quot;Agent Cloud&quot; initiative, aiming to fundamentally reshape how software is built and used. At the core of this vision are two key pil...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=Yp_u1NpbkJg" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - The Agent Cloud: Databricks’ Bet on the Future of AI — Matei Zaharia and Reynold Xin</h1>
+      <time datetime="2026-06-24T18:40:29.000Z">
+        Thursday, June 25, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Databricks' Agent Cloud: A Bet on the Future of AI</h1>
+<p>Databricks is making a significant bet on the future of AI with its &quot;Agent Cloud&quot; initiative, aiming to fundamentally reshape how software is built and used. At the core of this vision are two key pillars: Omnigents, an infrastructure layer for building and managing AI agents, and LTAP, a new database architecture designed for real-time analytics and transactional workloads.</p>
+<h2>Omnigent and the Agent Infrastructure Layer</h2>
+<p>The development of Omnigents was driven by converging needs observed both internally and externally. Databricks' internal development infrastructure team built tools like &quot;Isaac&quot; to wrap and leverage coding agents, and advanced engineers began constructing complex agent workflows with custom UIs. Simultaneously, the research team developed agents like &quot;Genie&quot; for data science, encountering challenges with model switching and the need for collaborative features like session sharing and history.</p>
+<p>&quot;The agent is like completely useless if you can't share sessions with someone and have history and have search and all this like layer on top of it for collaboration,&quot; explained Matei Zaharia, co-founder of Databricks. This realization led to the development of Omnigents, a platform designed to address these common problems by enabling the delivery and control of agents, ensuring security, and promoting portability.</p>
+<p>The architecture of Omnigents draws parallels to foundational concepts in computing, such as network protocols and open sharing mechanisms. The concept of &quot;Open Sharing,&quot; where entities can share real-time views of data tables, highlights the need for designed interoperability between parties moving at different speeds. This mirrors the interaction between agents, users, and tools, emphasizing the importance of a robust infrastructure layer.</p>
+<p>The inspiration for Omnigents also stemmed from practical frustrations. Reynold Xin, another co-founder of Databricks, recalled a period of intense coding where he had to keep his laptop tethered to his phone while driving, feeling it was a step back in programming's evolution. This led to the development of cloud sandboxes that remain active and accessible, not just for running agentic sessions but for general development.</p>
+<p>&quot;I remember Reynold saying, 'I have to be able to open a shell like my own shell and like list files and like tail them and stuff',&quot; Matei recalled. This feedback loop, where practical user needs directly inform product development, is a hallmark of Databricks' approach.</p>
+<h2>Agent Clouds, Common APIs, and Open Source</h2>
+<p>Databricks has open-sourced the Omnigents platform, creating what they term an &quot;Agent Cloud.&quot; This platform includes runner and server components with a uniform API, allowing for pluggable persistence and compute layers. The open-source nature is strategic, fostering a network effect and encouraging community collaboration.</p>
+<p>&quot;One of the reasons to open source something is if you think it's a layer that will actually there'll be some network effect. It'll benefit from many people collaborating on it,&quot; Matei explained, drawing a parallel to the success of Spark. By providing an open platform, Databricks enables developers to build and customize agent applications, preventing the proliferation of fragmented, internal frameworks.</p>
+<p>The platform's core value lies in its common API, which abstracts away the complexities of interacting with different language models. This API allows users to send messages and files to an agent session and receive streaming text or tool calls. Databricks maps various models, including Claude, Codex, Phi, and OpenAI's SDK, to this unified interface, reducing the maintenance burden for developers who would otherwise have to adapt to individual model API changes.</p>
+<p>Since its release, Omnigents has seen rapid adoption, with a significant number of pull requests and ecosystem integrations within days. This includes support for Kubernetes, various cloud sandboxes, and integrations with agent harnesses like Cursor and CLI.</p>
+<h2>Databricks Scale and Internal AI Workflows</h2>
+<p>Databricks operates at an immense scale. The company launches an estimated 50 to 60 million virtual machines daily across three clouds, processing exabytes of data. This massive compute infrastructure provides a fertile ground for developing and testing AI-driven solutions.</p>
+<p>Internally, Databricks leverages its own tools to analyze AI usage patterns, gaining insights into model performance for different programming languages and identifying areas for optimization. This internal adoption serves as a crucial validation ground for their products.</p>
+<h2>Agent Security, Governance, and Spend Controls</h2>
+<p>A significant focus for Omnigents is on security, governance, and spend controls. The platform introduces &quot;contextual policies&quot; that go beyond simple allow/disallow rules. These policies track the state of an agent session, allowing for more nuanced security decisions based on past actions. For instance, an agent might be permitted to install a new package from NPM, but if it has previously accessed a large number of confidential documents, that action might be blocked.</p>
+<p>&quot;It's both more secure and more useful by having a more powerful engine essentially,&quot; Matei noted. This stateful approach also extends to cost management, allowing users to set spending caps for agent sessions and receive alerts when those limits are approached.</p>
+<p>This focus on governance is informed by Databricks' extensive experience with Unity Catalog, its data governance layer. The integration of AI governance with data governance is seen as critical for enterprise adoption.</p>
+<h2>LTAP and the Database Dream</h2>
+<p>The second major initiative is LTAP, a new database architecture that aims to unify transactional (OLTP) and analytical (OLAP) workloads. Traditionally, these two types of databases have distinct architectures, leading to complex data pipelines and the need for Change Data Capture (CDC) to synchronize data between them. CDC, while fundamental, is often brittle and prone to failure, leading to late-night alerts for data engineers.</p>
+<p>&quot;CDC is like a very boring but one of the most fundamental operations like powering modern society. But it's so brittle that uh we joke that it's should be called continuous data corruption,&quot; Reynold quipped.</p>
+<p>The dream of a single database engine capable of handling both OLTP and OLAP workloads has long been the &quot;holy grail of database engineering.&quot; However, previous attempts often resulted in compromises, lacking the performance and ecosystem support of specialized databases.</p>
+<p>LTAP's approach is to unify the storage layer. By writing data in a column-oriented format (like Parquet) directly to the data lake, analytics can access data immediately without the delay of traditional pipelines. This is enabled by Databricks' lakehouse architecture and a clever use of idle CPU resources to transcode data from row-oriented formats (ideal for OLTP) to column-oriented formats (ideal for analytics).</p>
+<p>&quot;We think you can get 99% of what you need by unifying the storage,&quot; Matei stated. This approach eliminates the need for separate replication and CDC processes, making data immediately available for reasoning and analytics.</p>
+<h2>Lakebase, Parquet, and Live Data for Agents</h2>
+<p>The breakthrough for LTAP came from leveraging the lakehouse architecture, specifically the separation of storage and compute. The key innovation was changing the data lake storage from row-oriented Postgres pages to column-oriented Parquet files. This was driven by an engineer's observation that idle CPUs in the storage fleet could be used for transcoding.</p>
+<p>This transcoding process not only makes data analytics-ready but also improves compression, allowing for faster writes to object stores. The result is a system with no performance overhead and no compromise, offering the benefits of both OLTP and OLAP without the traditional trade-offs.</p>
+<p>This rapid prototyping and implementation culture is a core part of Databricks' success. &quot;If you set yourself up so people do that, that would be great. And that happened a bit with Omni John too,&quot; Matei remarked, highlighting the company's encouragement of innovation and quick iteration.</p>
+<h2>Databricks’ Culture of Fast Prototyping</h2>
+<p>Databricks fosters a culture of rapid prototyping and incremental development. The company prioritizes hiring and empowering talented individuals, encouraging them to experiment and settle debates through practical implementation. This approach ensures that products are built with real-world user needs in mind, often starting with a tight feedback loop with target customers.</p>
+<p>This philosophy is evident in the development of products like Delta Lake, which was initially built to meet the specific, large-scale requirements of a major customer. Similarly, features for Omnigents were developed based on a &quot;wish list&quot; of ideas, with the team delivering on all of them for the initial launch.</p>
+<h2>The Dream Engine and Rewriting the Database Stack</h2>
+<p>Databricks is undertaking an ambitious project to rewrite its database engine from scratch, dubbed the &quot;Dream Engine.&quot; Recognizing that most analytical database engines are about a decade old and have accumulated technical debt through incremental additions, the company aims to build a new system from the ground up, leveraging modern knowledge and workflows.</p>
+<p>This endeavor is not without its challenges, including the risk of &quot;second system syndrome,&quot; where ambitious second projects fail due to over-engineering. However, Databricks has assembled a team of top database engineers who are not new to building complex systems.</p>
+<p>The &quot;Dream Engine&quot; project employs a novel approach: instead of relying solely on academic papers, it uses a &quot;factory&quot; model. This factory analyzes trillions of data points from past workloads to build machine learning models that predict the performance of different algorithms and data structures for specific query types. This allows for the selection of the most optimal implementations at both design and runtime.</p>
+<p>&quot;Many of them are very counterintuitive. It isn't actually things that you think it might work super well actually don't work that well in practice,&quot; Matei observed, highlighting the power of data-driven optimization.</p>
+<h2>Vector Databases, Query Engines, and LTAP</h2>
+<p>The conversation touched upon the evolving landscape of databases, including vector databases and specialized transactional databases like TigerBeetle. The consensus is that many of these specialized categories may eventually be absorbed into more general-purpose storage and query layers.</p>
+<p>The thesis of ELT (Extract, Load, Transform) is seen as collapsing the storage layer, not necessarily the query layer. Databricks does not believe in collapsing the query layer into a single HTAP-style database, arguing that agents can effectively work with different SQL dialects. The focus remains on making data accessible and unified.</p>
+<h2>Databricks vs Snowflake</h2>
+<p>When comparing Databricks to Snowflake, a key differentiator highlighted is Databricks' commitment to open standards. &quot;The biggest fundamental difference... is open. Like Databricks had never had a proprietary format,&quot; Matei stated. This openness, coupled with a strong focus on AI and machine learning from the outset, has shaped Databricks' trajectory.</p>
+<p>While Snowflake focused on managing valuable data for business users with a proprietary storage format, Databricks started with large-scale batch processing and ingest, keeping data in open formats. This &quot;start open and start large&quot; approach has allowed Databricks to evolve its capabilities to serve both bulk processing and high-speed business user needs.</p>
+<p>The initial partnership between Databricks and Snowflake, where Databricks handled ingest and compute and Snowflake provided fast SQL warehousing, eventually led to customers questioning the need for separate systems. This dynamic has driven Databricks to expand its SQL capabilities and Snowflake to move upstream in the compute stack.</p>
+<h2>Mosaic, DBRX, Genie, and Specialized Models</h2>
+<p>Databricks' model strategy, particularly following the acquisition of Mosaic, has focused on making AI models useful rather than solely on training frontier models. While they have released open-source models like DBRX, their primary emphasis is on building systems that leverage these models effectively.</p>
+<p>This includes developing specialized models for high-volume use cases, such as document parsing, which are significantly more cost-effective and performant than general-purpose frontier models. They are also developing specialized sub-agents for coding tasks and exploring &quot;advisor models&quot; to assist in complex workflows.</p>
+<p>The ease of model customization is expected to increase over time, driven by smarter base models, improved RL fine-tuning, and more sophisticated synthetic data generation.</p>
+<h2>Context, AI Runtime, and RL Fine-Tuning</h2>
+<p>The concept of &quot;context is the new oil&quot; is central to Databricks' vision. As technology advances, the value of data increases, enabling more informed decisions and automated insights. AI agents can leverage this context to proactively identify issues and provide solutions.</p>
+<p>Databricks offers an &quot;AI Runtime&quot; that provides on-demand GPU clusters with a software stack for training. They also engage with customers on more advanced solutions, including building evaluations, generating synthetic data, and deploying forward-deployed solutions architects.</p>
+<h2>Why Data + Agents May Rewrite Software</h2>
+<p>The core thesis is that once data is in the right place, AI models, particularly generic agents with strong reasoning capabilities, can effectively &quot;rewrite&quot; traditional software. By combining accessible data with powerful agents, Databricks believes that &quot;magic will come out.&quot; This approach is being applied to specific domains like security and customer data platforms, where getting the data right is paramount to unlocking the potential of AI.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Agent Cloud:</strong> Databricks is building an infrastructure layer (Omnigents) for creating, managing, and deploying AI agents, emphasizing collaboration, security, and portability.</li>
+<li><strong>LTAP Architecture:</strong> A new database architecture aims to unify transactional and analytical workloads, eliminating complex data pipelines and enabling real-time analytics.</li>
+<li><strong>Open Source Strategy:</strong> Databricks leverages open source to foster community, encourage adoption, and build a robust ecosystem around its platforms.</li>
+<li><strong>Culture of Innovation:</strong> Rapid prototyping, customer-centric development, and a focus on practical problem-solving are core to Databricks' product development.</li>
+<li><strong>Data as the Foundation:</strong> The availability and quality of data are seen as the critical enablers for powerful AI agents and the future of software.</li>
+<li><strong>Specialized AI Models:</strong> Databricks focuses on developing specialized AI models for specific use cases where they offer significant advantages in cost and performance.</li>
+<li><strong>Openness and Scale:</strong> Databricks' commitment to open formats and its massive operational scale differentiate it in the cloud data platform market.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
