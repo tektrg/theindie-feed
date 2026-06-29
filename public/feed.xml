@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2026 06:44:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 06:45:42 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Financial Times - The AI factory: the rewiring of India&apos;s tech industry | FT Film</title>
@@ -726,6 +726,47 @@
 <li>Lifestyle factors like sleep, diet, exercise, stress management, and continuous learning are crucial for brain health and Alzheimer's prevention.</li>
 <li>Chronic stress can shrink the hippocampus, impairing memory, but practices like meditation can reverse this effect.</li>
 <li>Building cognitive reserve through lifelong learning creates an Alzheimer's-resistant brain.</li>
+</ul>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>Mondo Startups - The Satisfying Death of Stack Overflow</title>
+      <link>https://myfeed.theindie.app/articles/20260629-134510-www.youtube.com-watch-v-LqWHmiugBWc.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260629-134510-www.youtube.com-watch-v-LqWHmiugBWc.html</guid>
+      <pubDate>Fri, 26 Jun 2026 10:00:36 GMT</pubDate>
+      <description><![CDATA[Stack Overflow was once an indispensable tool for programmers worldwide. When developers encountered an error, their first instinct was to Google it, land on Stack Overflow, and hope for a pre-existin...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=LqWHmiugBWc">The Satisfying Death of Stack Overflow</a></p>
+<hr>
+<h1>Stack Overflow: From Developer Lifeline to AI Battleground</h1>
+<p>Stack Overflow was once an indispensable tool for programmers worldwide. When developers encountered an error, their first instinct was to Google it, land on Stack Overflow, and hope for a pre-existing solution. For years, this system propelled Stack Overflow to become one of the most critical websites in the software development landscape. However, the very rules that made it so useful also sowed seeds of discontent. Duplicate closures, downvotes, and stringent moderation transformed a valuable forum into a space where many users felt intimidated to participate. The advent of generative AI then delivered what many saw as the final blow. This raises a crucial question: How did Stack Overflow, once a cornerstone of developer resources, find itself in a fight for relevance? And can its pivot to AI save it, or will it further alienate the very community that built the platform?</p>
+<h2>Explosive Growth and a Compounding Network Effect</h2>
+<p>Stack Overflow was founded in 2008 by programmers Jeff Atwood and Joel Spolsky, who aimed to solve a pervasive problem: programming knowledge was scattered across the internet in hard-to-find locations. Answers to common bugs were buried in forums, lost in online manuals, or hidden within obscure textbooks, making the resolution of daily errors a significant challenge for software engineers. Their solution was Stack Overflow, a website designed to become the central hub for programming questions and answers.</p>
+<p>Atwood envisioned the website as a free, open alternative to cluttered forums and paywalled resources. Leveraging their popular programming blogs, Atwood and Spolsky promoted Stack Overflow to their readers, leading to an explosive initial growth. As programmers began asking questions and receiving responses, the site's popularity surged through word-of-mouth recommendations and strong search engine performance.</p>
+<p>The platform's core strategy was to consolidate individual questions into a vast database of programming queries and their solutions. This allowed other users to search for their problems and find answers instantly, without waiting for a manual response. A voting system enabled users to upvote the best answers and downvote the worst, ensuring that the most effective solutions typically rose to the top. This gamified approach incentivized continued participation and answering questions. To prevent the forum from being overwhelmed by repetitive queries, duplicate questions were merged and archived.</p>
+<p>Throughout the early 2010s, Stack Overflow experienced remarkable growth, largely due to a compounding network effect that few other forums achieved. Its users were collectively building the most comprehensive programming Q&amp;A database for free. Google further amplified this effect; as the accumulation of high-quality pages increased, Stack Overflow's search engine rankings climbed, attracting an even larger user base. By 2016, Wired reported that 40 million developers visited Stack Overflow monthly.</p>
+<p>To further monetize its user base, the company launched Stack Overflow Careers in 2009. This initiative involved charging modest fees for developers seeking jobs and more substantial fees for employers looking to recruit talent. By 2016, the company's revenue streams were primarily derived from display advertising and talent acquisition services, which they argued monetized their user base without introducing spammy or low-quality advertisements. However, this golden era for Stack Overflow was not destined to last.</p>
+<h2>The Moderation Meltdown and Shifting Business Models</h2>
+<p>One of Stack Overflow's most contentious features was its handling of duplicate questions. When a moderator identified a question that had already been answered elsewhere on the site, the thread would be closed, directing the user to the existing answer. While this system aimed to streamline the platform and prevent redundancy, many users found it overly restrictive. A 2019 study indicated that approximately 53% of closed Stack Overflow posts were due to duplication.</p>
+<p>For new users seeking assistance, receiving an almost immediate rejection felt profoundly discouraging. Furthermore, the provided links to existing answers were often outdated or incorrect. While closing duplicates improved site navigation, it also contributed to a sense of alienation and unwelcomeness among users. The voting system also proved problematic for less experienced users asking basic questions. High-reputation users could quickly downvote or close what they deemed &quot;weak&quot; questions. While this protected content quality, it fostered a perception of a brutal environment for newcomers, discouraging participation. The fear of receiving irrelevant answers or facing criticism from moderators deterred many from posting their queries.</p>
+<p>In 2018, Joel Spolsky acknowledged that while Stack Overflow's voting system had encouraged positive behavior, downvotes had also made many users feel unhappy and unwelcome, leading to reduced overall participation. Consequently, Stack Overflow developed a reputation for being an unfriendly, elitist website with moderators who were perceived as dismissive of certain types of questions. Numerous developers shared experiences of their genuine questions being mocked, downvoted, or closed before they could receive help. This led many to seek alternative communities on platforms like Reddit, Discord, and YouTube, which were often perceived as more helpful and less judgmental.</p>
+<p>This trend was reflected in the data: Stack Overflow's question and answer counts peaked in 2014, followed by a gradual decline. The platform's cultural issues began to intersect with its business challenges. While the public Q&amp;A site generated immense value, direct monetization proved difficult. The company sought ways to generate revenue without damaging the community. During the late 2010s, senior leadership focused on transforming Stack Overflow from an advertising and recruiting business into a Software as a Service (SaaS) company. Joel Spolsky announced Stack Overflow for Teams in May 2018, hailing it as the platform's most significant upgrade. With a new CEO in 2019, the company increasingly positioned itself as a product-led SaaS business.</p>
+<p>Despite user frustrations and an evolving business model, Stack Overflow secured significant investment, raising $40 million in 2015 and an additional $85 million in 2020. The COVID-19 pandemic initially provided a boost. The surge in remote work and the booming tech sector led to increased hiring and a greater need for developer support, causing Q&amp;A activity to rise noticeably in late 2020 and early 2021. In mid-2021, the Dutch investment firm Prosus acquired Stack Overflow for $1.8 billion. However, as the pandemic-driven surge subsided, Stack Overflow continued to seek a viable pivot as its core business faced decline. By 2022, the company had shut down its jobs board and shifted its focus further towards enterprise tools. Then, just months later, ChatGPT emerged.</p>
+<h2>The Final Straw: Generative AI's Impact</h2>
+<p>The launch of ChatGPT in late 2022 marked a seismic shift. Generative AI's capabilities in coding quickly became apparent. Developers realized that ChatGPT could address their specific errors within their exact context, without requiring them to pose public questions. While not always perfect, AI proved incredibly useful for generating boilerplate code or fixing minor bugs. Before AI, the Stack Overflow workflow was often a laborious process: copying an error message, searching Google, opening multiple tabs, sifting through old answers, and scrutinizing comments to verify the solution's applicability.</p>
+<p>With ChatGPT, users could paste their exact error, describe their setup, ask follow-up questions, and receive an answer tailored to their code. Even if the AI didn't always provide a 100% accurate solution, it offered a demonstrably superior experience compared to the potential for public shaming on Stack Overflow.</p>
+<p>The impact was almost immediate. A 2024 study revealed that ChatGPT caused a 25% drop in Stack Overflow activity within six months of its launch. The contribution side of the platform deteriorated even faster than overall traffic. DevClass reported a staggering 78% year-over-year decline in Stack Overflow question volume. It became clear that developers overwhelmingly preferred receiving help from AI over navigating the arduous process of asking questions on Stack Overflow. Developer behavior shifted as AI tools provided faster and more pleasant solutions to programming errors than Stack Overflow ever could.</p>
+<p>Stack Overflow's own survey data corroborated this trend. In 2025, 84% of respondents indicated they used or planned to use AI tools, with 51% of professional developers reporting daily usage. Initially, Stack Overflow attempted to resist AI. In late 2022, leadership imposed a site-wide ban on AI-generated code, citing its inaccuracy and potential to overwhelm the platform. However, the company failed to adequately empower its moderators to enforce this ban, and AI-generated code gradually infiltrated the forums.</p>
+<p>In June 2023, moderators went on strike, citing Stack Overflow's failure to allow effective moderation, despite the company's AI code ban. Although the strike concluded in August, it highlighted the deeply strained relationship between the moderators and Stack Overflow. Subsequently, Stack Overflow announced a surprising partnership with OpenAI, focused on selling its Q&amp;A data to train ChatGPT on programming questions. From a business perspective, this move was logical. AI companies were actively seeking high-quality human-generated content for training, and Stack Overflow had amassed a vast database of coding questions over nearly 15 years.</p>
+<p>However, developers viewed this as a significant contradiction. Users and moderators had dedicated years to writing answers, editing posts, and maintaining the site. Now, the company was monetizing that free labor by selling access to AI companies. Stack Overflow also launched Overflow AI, with plans to integrate it across its main website and enterprise tools. This represented a complete reversal from the AI content ban that users remembered from the previous year.</p>
+<p>Currently, Stack Overflow usage continues to trend downward, suggesting the company has been outcompeted by AI. Companies like OpenAI are leveraging Stack Overflow as a data source to train their models. This creates a detrimental cycle: developers increasingly rely on AI instead of asking new questions. A decrease in new questions leads to fewer new answers, making Stack Overflow less useful. As Stack Overflow becomes less valuable, the human-generated data that AI companies initially sought begins to diminish. Once Stack Overflow's data reserves are depleted, it's conceivable that both AI labs and its former users will abandon the company, leaving it to decline.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>From Essential Resource to Challenged Platform:</strong> Stack Overflow evolved from a critical, go-to resource for developers to a platform facing significant challenges due to its own moderation policies and the rise of AI.</li>
+<li><strong>The Double-Edged Sword of Moderation:</strong> While strict moderation and duplicate closures aimed to maintain quality, they alienated new users and contributed to a perception of elitism.</li>
+<li><strong>The AI Disruption:</strong> Generative AI, particularly ChatGPT, offered a more personalized, immediate, and less intimidating way for developers to find coding solutions, directly impacting Stack Overflow's user engagement and contribution rates.</li>
+<li><strong>A Contradictory Pivot:</strong> Stack Overflow's partnership with OpenAI to sell its data for AI training, after initially banning AI-generated content, highlights the complex and often contradictory business decisions made in response to market shifts.</li>
+<li><strong>The Data Loop:</strong> The increasing reliance on AI for coding solutions creates a feedback loop where fewer new questions are asked on Stack Overflow, diminishing its value as a data source for AI training and potentially leading to its further decline.</li>
 </ul>
 ]]></content:encoded>
       
@@ -4175,100 +4216,6 @@
 <li><strong>Democratization of AI is crucial:</strong> Ensuring widespread access to AI is vital for a fair and equitable future, despite arguments for concentration based on safety.</li>
 <li><strong>Compute distribution is a critical challenge:</strong> The equitable access to computing power will be a defining economic issue of the AI era.</li>
 </ul>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>AWS Events - A leader’s guide to advanced team structures in an agentic world | AWS Events</title>
-      <link>https://myfeed.theindie.app/articles/20260618-140913-www.youtube.com-watch-v-O7u6myBRsns.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260618-140913-www.youtube.com-watch-v-O7u6myBRsns.html</guid>
-      <pubDate>Fri, 12 Jun 2026 23:32:26 GMT</pubDate>
-      <description><![CDATA[The landscape of business is undergoing a seismic shift, driven by the rapid advancement of Artificial Intelligence. As organizations grapple with this new reality, the conversation has moved beyond i...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=O7u6myBRsns">A leader’s guide to advanced team structures in an agentic world | AWS Events</a></p>
-<hr>
-<h1>Navigating the AI Revolution: Economics, Talent, Structure, and Governance</h1>
-<p>The landscape of business is undergoing a seismic shift, driven by the rapid advancement of Artificial Intelligence. As organizations grapple with this new reality, the conversation has moved beyond <em>if</em> AI should be adopted to <em>how</em> it can be effectively integrated. This involves building capable teams, establishing robust organizational structures, and implementing sound governance. This article outlines a framework for navigating these challenges, drawing on executive insights, research, and Amazon's internal experiences.</p>
-<h2>The AI Imperative: Staying Ahead of the Curve</h2>
-<p>A widely cited quote captures the essence of the current AI challenge: &quot;AI won't take your job. Someone using AI will.&quot; This highlights that the true threat isn't the technology itself, but rather the individuals and organizations that embrace and leverage it more effectively. AI lacks ambition, P&amp;L targets, or a desire for your position. Instead, it's the people who integrate AI into their thinking and workflows who will gain a competitive edge. The critical question for professionals and companies alike is not whether AI will replace them, but whether they are adapting quickly enough to stay ahead of those who are already utilizing these tools.</p>
-<p>This phenomenon is not unprecedented. Every technological wave has brought similar discussions. Just as the tractor transformed farming, AI is transforming jobs. It's not about elimination, but about evolution. Those who learn to &quot;drive the tractor&quot; – to work with AI – will be the ones who remain relevant.</p>
-<h2>The Data on AI's Impact: Reshaping, Not Replacing</h2>
-<p>Contrary to widespread fears of mass unemployment, empirical research suggests a more nuanced reality. A study by Anthropic, combining data from the ONET database, AI usage logs, and exposure scores, revealed a significant gap between the theoretical capabilities of AI and its observed application in the workforce. While AI <em>could</em> theoretically automate a large percentage of tasks across various professions, its actual observed exposure is considerably lower.</p>
-<p>Crucially, since the launch of ChatGPT in 2022, there has been no systematic increase in unemployment for workers in the most theoretically exposed occupations. However, the data does indicate a slowdown in the hiring of younger talent in these roles, suggesting that entry-level positions are where the initial reshaping is occurring.</p>
-<p>Perhaps most surprisingly, the workers most exposed to AI are disproportionately older, more educated, and better paid. This challenges the earlier narrative that AI would primarily displace lower-skilled workers. Instead, the data points to a reshaping of the labor market, with entry-level roles being the first to feel the impact.</p>
-<h2>Agentic AI and Business Strategy: Compressing Timelines, Shifting Value</h2>
-<p>Agentic AI is dramatically compressing business timelines. Tasks that once required extensive development teams and multi-year budgets can now be accomplished by a single motivated engineer over a weekend. This reality forces a critical self-assessment: are competitors, armed with frontier AI models, capable of replicating your product lines at a fraction of the cost, headcount, and time? For many, the honest answer is uncertain.</p>
-<p>While AI can facilitate product creation, a successful business relies on more than just the product itself. The traditional &quot;moats&quot; built over decades – such as proprietary technology or established market positions – are being rapidly eroded by AI. Conversely, AI makes inherently human-centric advantages more valuable. These include years of operational experience, deep-seated trust, and unique capabilities that cannot be easily replicated or accelerated by AI.</p>
-<h2>The Economics of AI: From Build to Use and Compose</h2>
-<p>The economic landscape of AI is characterized by a widening gap between the cost of training large models and the cost of using them. Training costs are escalating rapidly, while inference costs are plummeting. This means that building a frontier model is becoming prohibitively expensive for most, accessible only to a handful of large companies. However, the cost of <em>using</em> these powerful models is collapsing towards zero.</p>
-<p>This economic reality suggests a strategic approach to AI investment, categorized into three worlds:</p>
-<ol>
-<li><strong>Use:</strong> Leveraging end-to-end managed AI solutions where someone else operates the AI. This offers the highest leverage but the lowest differentiation.</li>
-<li><strong>Compose:</strong> Stitching together frontier APIs within a specific business context. This involves bringing your workflow and leveraging external intelligence, offering medium leverage and medium differentiation.</li>
-<li><strong>Build:</strong> Training or fine-tuning your own models. This provides the highest control and differentiation but comes with the highest cost and slowest speed.</li>
-</ol>
-<p>The optimal strategy is not to reside in a single world but to allow economics and differentiation to guide workflow decisions. A healthy path involves starting with frontier models, then strategically shifting to &quot;use&quot; and &quot;compose&quot; as economics become clearer, and finally moving high-volume, high-differentiation tasks to &quot;build&quot; when it truly provides a competitive advantage. The unhealthy path is to commit to a &quot;build&quot; strategy prematurely without understanding workflows, potentially leading to significant financial waste.</p>
-<h2>The Talent Revolution: From Builders to Orchestrators</h2>
-<p>The definition of value in the tech industry is shifting. For decades, technical expertise meant the ability to build, code, and design. Now, the most valuable individuals will be those who can orchestrate AI agents effectively. This involves pointing an agent at a problem, evaluating its output, steering its iterations, and knowing when to intervene. This requires a new skill set, often described as the &quot;expert generalist.&quot;</p>
-<p>This shift emphasizes characteristics like curiosity, collaboration, customer focus, and a deep understanding of first principles. Agentic AI amplifies these traits, rewarding fundamental knowledge over superficial certifications. When hiring, organizations should prioritize these enduring qualities over specific, rapidly changing frameworks.</p>
-<p>As AI integrates into teams, specialists will need to broaden their understanding of adjacent domains and improve their cross-functional communication. Conversely, generalists will gain specialist-level depth on demand, enabling them to tackle complex, domain-specific tasks. This convergence is leading to the emergence of the &quot;Renaissance developer&quot; or &quot;polymath with steering hands.&quot;</p>
-<p>The implications for hiring are profound. Domain experts who can now leverage AI to build are becoming incredibly valuable. Instead of teams of specialists with handoffs, the future likely holds smaller teams of two to three expert generalists supported by AI agents that fill specialized gaps. This &quot;hyperconvergence&quot; reduces coordination overhead and streamlines workflows.</p>
-<p>However, this transition is not without its challenges:</p>
-<ul>
-<li><strong>Expert Multiplier:</strong> AI significantly amplifies the capabilities of knowledgeable individuals.</li>
-<li><strong>Bottleneck Shift:</strong> The challenge moves from &quot;can we build it?&quot; to &quot;do we have the data and the decision-making speed to keep up?&quot;</li>
-<li><strong>Verification Tax:</strong> While AI generates code faster, validating it becomes more complex and time-consuming.</li>
-<li><strong>Deskilling Trap:</strong> Junior developers using AI may become faster but understand less of the underlying code, potentially hindering long-term expertise development.</li>
-</ul>
-<h2>Team Structure: The Hourglass Model</h2>
-<p>The traditional pyramid structure, with a broad base of juniors and a narrow top of seniors, is becoming outdated. An overreaction can lead to a diamond shape, with a thin base, a flat middle of managers overseeing AI, and a narrow top.</p>
-<p>The emerging model for execution is the <strong>inverted pyramid</strong>, a pod of three to five senior, full-stack engineers leveraging AI for execution. However, this structure alone lacks a learning path. The <strong>hourglass</strong> model represents the learning organization, with execution at the top, a lean middle, and juniors learning the craft at the bottom. Both the inverted pyramid (for execution pods) and the hourglass (for the broader organization) are crucial.</p>
-<p>Many organizations are currently heading towards the diamond, cutting junior talent to show immediate ROI from AI investments. This is a dangerous short-term strategy. The jobs are not disappearing but bifurcating, leading to a hollowing out of the middle and an explosion at the top. The hourglass model is essential for rebuilding the junior pipeline deliberately, as expertise takes a generation to build. Companies that stop training juniors today will face a severe talent shortage in the future.</p>
-<h2>Organizational Structure: Embracing Non-Determinism</h2>
-<p>The organizational structures that were effective in the age of cloud are fundamentally breaking in an agentic world. Boundaries between functions like security, architecture, and foundation services are dissolving. The CIO role is shifting from an owner of the stack to a conductor.</p>
-<p>The traditional operating model, optimized for determinism (runbooks, change advisory boards, strict SLAs), is no longer sufficient. Agentic AI thrives on non-determinism – handling unforeseen cases, adapting, and reasoning about goals rather than just following steps. This requires a tolerance for variance in execution while maintaining strictness in outcome measurement. The discipline shifts from tightening execution to relaxing it and focusing on defining the desired outcomes, allowing agents to find their own paths.</p>
-<p>This leads to a re-evaluation of operational models:</p>
-<ul>
-<li><strong>Model A (Traditional IT Ops):</strong> Engineering builds, then throws it over the wall to operations. This model, already strained by cloud, breaks in an agentic world due to deterministic runbooks, ticket culture, lack of operator authority over models and data, model degradation, and ITIL's inability to keep pace. Most AI pilots fail because operators cannot debug what they cannot see or reason about.</li>
-<li><strong>Model B (Embedded):</strong> &quot;You build it, you run it.&quot; The same small team of engineers builds and operates their pod. This leads to high deployment frequency and low change failure rates, but it breaks at scale due to duplication of effort and inconsistency across pods.</li>
-<li><strong>Model C (Pods + Platform):</strong> This model combines embedded pods with a shared platform providing essential infrastructure for AI runtime, memory, identity, and observability. The platform enables autonomy and accountability for pods while ensuring consistency and governance.</li>
-</ul>
-<p>Model A is obsolete. Organizations must transition to either Model B (for smaller scales) or Model C (for medium to large scales).</p>
-<h2>Governance: Singapore's Framework for Agentic AI</h2>
-<p>Effective governance is paramount in the agentic AI era. Singapore's Model AI Governance Framework for Agentic AI, launched by IMDA, provides a leading example. This framework, an extension of their earlier AI governance work, focuses on four key dimensions:</p>
-<ol>
-<li><strong>Risk Assessment:</strong> Upfront, structured evaluation before deployment.</li>
-<li><strong>Human Accountability:</strong> Every agent action is traceable to a named human.</li>
-<li><strong>Technical Guardrails:</strong> Implementing controls throughout the AI lifecycle.</li>
-<li><strong>End-User Transparency:</strong> Users must know they are interacting with an agent and understand its capabilities.</li>
-</ol>
-<p>Distinctive features of Singapore's framework include:</p>
-<ul>
-<li><strong>Mandatory Agent Identity Management:</strong> Agents must have verifiable identities before acting.</li>
-<li><strong>Integrated Testing Frameworks:</strong> Concrete testing based on risk categories.</li>
-<li><strong>Explicitly Addresses Multi-Agent Coordination Risk:</strong> Tackles challenges arising from agents interacting with each other.</li>
-<li><strong>Voluntary but Directional:</strong> Serves as a de facto standard for doing business with the Singapore government and in regulated sectors.</li>
-<li><strong>Addresses the Deskilling Trap:</strong> Focuses on approaches that continue to train human successors.</li>
-</ul>
-<p>Amazon's Agent Core initiative has independently converged on the same four governance dimensions:</p>
-<ol>
-<li><strong>Who's the agent?</strong></li>
-<li><strong>Who authorized it?</strong></li>
-<li><strong>What is the agent allowed to do?</strong></li>
-<li><strong>Is the agent performing as expected?</strong></li>
-<li><strong>Can we audit what it did?</strong></li>
-</ol>
-<p>This governance is implemented as code, enforced at the gateway before the LLM processes a request, separating policy ownership (security teams) from agent development (engineering teams). This &quot;governance as infrastructure&quot; ensures that policies are enforced consistently and continuously.</p>
-<h2>Actionable Steps for Monday Morning</h2>
-<p>To navigate this complex landscape, leaders should take the following six steps in order:</p>
-<ol>
-<li><strong>Economics:</strong> Select one workflow and determine if it lives in &quot;use,&quot; &quot;compose,&quot; or &quot;build.&quot;</li>
-<li><strong>Talent:</strong> Define the composition of your AI pods (three to five senior engineers). If you cannot staff a senior-only pod, focus on &quot;use&quot; or &quot;compose.&quot;</li>
-<li><strong>Structure:</strong> Honestly assess your current operational model (A, B, or C) and develop a transition plan if you are in Model A.</li>
-<li><strong>Governance:</strong> Implement the core governance questions for your agentic AI initiatives.</li>
-<li><strong>People:</strong> Invest in senior domain experts who possess deep customer, regulatory, and product knowledge – areas AI cannot easily replicate.</li>
-<li><strong>Pipeline:</strong> Protect your junior talent pipeline. Do not cut entry-level hiring to fund senior AI roles. Both are essential for current success and future resilience.</li>
-</ol>
-<p>The companies that will thrive in the coming decade will not be those with the most advanced AI, but those with the most effective operating models built around AI.</p>
 ]]></content:encoded>
       
     </item>
