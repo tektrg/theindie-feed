@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrico Tartarotti - The Weird Future Of User Interfaces - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The way we interact with technology is on the cusp of a massive transformation. While early attempts to replace traditional user interfaces (UIs) with AI agents and voice commands have largely fallen...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=f32W5BEzWN0" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Enrico Tartarotti - The Weird Future Of User Interfaces</h1>
+      <time datetime="2026-06-23T15:03:01.000Z">
+        Tuesday, June 23, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Future of Interaction: Beyond Buttons and Chatbots</h1>
+<p>The way we interact with technology is on the cusp of a massive transformation. While early attempts to replace traditional user interfaces (UIs) with AI agents and voice commands have largely fallen short, and the dominance of buttons, menus, and screens persists, a more nuanced and powerful future is emerging. This future isn't about eliminating UIs entirely, nor is it about a complete takeover by chatbots. Instead, it's a sophisticated integration of direct manipulation, agentic AI, and a revolutionary new paradigm: generative UI.</p>
+<h2>The Failure of UI Elimination</h2>
+<p>For years, the tech industry has pursued the idea of a frictionless interface, envisioning a future where we simply tell our devices what to do. This vision has manifested in various forms, from dedicated AI hardware like the Humane Pin and Rabbit R1, to integrated AI features in existing software and operating systems. Microsoft's new AI device and the mandatory Copilot key on Windows computers are recent examples. Even voice assistants like Siri, Alexa, and Google Home were initially hailed as the future of computing, promising to streamline our interactions.</p>
+<p>However, these attempts have largely failed to displace established interfaces. The core problem lies in trying to replace intuitive, efficient interactions with less effective alternatives for common tasks. Booking an Uber, ordering coffee, or sending a message are tasks that graphical user interfaces (GUIs) excel at. Users are already familiar with these apps, and the muscle memory developed over years of use makes them incredibly efficient. As the speaker notes, &quot;You don't have to remember all your commands, just open up a menu and here they are, all the available ones.&quot; The ability to unlock your phone and navigate to an app without looking is a testament to the power of direct manipulation.</p>
+<h2>The Rise of Agentic AI and the Terminal</h2>
+<p>On the other end of the spectrum, a different kind of revolution is unfolding organically. Tools initially designed for software engineers, such as coding assistants like Claude Coder and Codex, are seeing widespread adoption by everyday users. These tools empower individuals to automate complex tasks, edit videos, organize files, and even manage personal finances without ever touching a traditional UI.</p>
+<p>The speaker shares a personal anecdote of using a coding agent to manage their taxes, connecting to Gmail to pull receipts, searching Google Photos, matching information, and saving it all to Notion for their accountant. This was achieved &quot;without clicking a single button or using a single graphical user interface.&quot; This shift is so profound that users are becoming &quot;annoyed when a tool I use doesn't connect to my coding agent.&quot;</p>
+<p>This trend is forcing established tech products to adapt. Companies like Linear and PostHog have transitioned from traditional UIs to more agent-friendly interfaces. Salesforce has even released a &quot;headless&quot; version of its product, designed to be used by agents rather than humans. Notion and Google have followed suit by releasing Command Line Interfaces (CLIs), allowing AI tools to interact with their services programmatically. This signifies a move away from designing for human interaction towards designing for machine interaction.</p>
+<h2>Direct Manipulation: The Power of the GUI</h2>
+<p>To understand why the agentic approach is gaining traction for complex tasks, we must first appreciate the fundamental strength of the GUI: direct manipulation. This is the principle of interacting directly with on-screen elements – pinching to zoom, dragging files to the trash, or tapping to edit. It's intuitive because it mirrors physical actions.</p>
+<p>Direct manipulation shines when the number of elements and actions is manageable. The Starbucks app, with its limited options for ordering coffee, is a perfect example. However, as complexity increases, GUIs can become overwhelming. Endless menus, submenus, panels, and customizable dashboards can turn a tool into a daunting learning experience. This is where agentic AI, with its &quot;indirect manipulation&quot; through natural language, becomes a more appealing solution for highly complex tasks.</p>
+<h2>Generative UI: The Missing Link</h2>
+<p>The dichotomy between simple GUIs and complex agentic systems leaves a significant gap. Most of our daily interactions with technology fall into a middle ground: browsing the web, writing presentations, booking flights, and managing email. These tasks are too complex for a simple button-and-menu structure but don't necessarily require a fully agentic approach.</p>
+<p>This is where <strong>generative UI</strong> emerges as the revolutionary solution. Instead of a designer pre-building every screen and element, generative UI allows AI to construct interfaces on the fly, based on the user's intent and the context of the task.</p>
+<p>There are three levels of generative UI:</p>
+<ul>
+<li><strong>Level 1: On-Demand Generation:</strong> This is where AI generates a UI based on a prompt. For example, asking an AI to explain relativity might result in an interactive visualization rather than a wall of text. Google's upcoming search features, which will generate small apps to visualize complex topics, fall into this category. While currently slow, this generation speed is expected to improve rapidly.</li>
+<li><strong>Level 2: Adaptive UI:</strong> This level retains a familiar UI structure but allows specific components to be generative. When booking a flight, for instance, a standard interface might be used for selecting airports and dates, but the results could be presented in a dynamic, adaptive way. Imagine a slider that visualizes flight prices across different dates, a UI element that no human designer might have conceived. Airbnb's CEO Brian Chesky has acknowledged that chat-based interfaces for booking didn't work, and they are now focusing on AI models for generative UI. This shift fundamentally changes how products are built, moving from designing screens to designing rules and UI kits that AI can use to assemble interfaces.</li>
+<li><strong>Level 3: Fully Generative UI:</strong> In this ultimate stage, the entire product becomes generative UI. The rules governing what the product shows <em>are</em> the product itself.</li>
+</ul>
+<h2>The Integrated Future</h2>
+<p>The future of human-computer interaction is not a single paradigm but a harmonious blend of these approaches. We will continue to use traditional GUIs with direct manipulation for simple, familiar tasks. Agentic systems will handle complex, repetitive, or time-consuming jobs. And generative UI will dynamically create the most appropriate interface for tasks that fall in between, adapting to complexity and user needs in real-time.</p>
+<p>This integration is already happening. The speaker is implementing generative UI for specific feedback breakdowns in their product, Flask, while relying on traditional UI for video feedback and agentic systems for administrative tasks. Just as the graphical user interface revolutionized computing 40 years ago, generative UI, combined with agentic AI and direct manipulation, is poised to shape the next era of technological interaction. The decisions made behind the scenes, in how these systems are designed and integrated, will be the most critical and least talked-about aspect of the technology we use every day.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Attempts to completely eliminate traditional user interfaces (UIs) with AI agents have largely failed for common, simple tasks where GUIs excel.</li>
+<li>Agentic AI is gaining organic traction for complex tasks, empowering users to automate and delegate work without direct UI interaction.</li>
+<li>Direct manipulation, the core principle of GUIs, remains highly effective for tasks with a manageable number of elements and actions.</li>
+<li>Generative UI is a new paradigm where AI constructs interfaces on the fly, adapting to user needs and context.</li>
+<li>The future of interaction will be a hybrid model, integrating traditional GUIs, agentic AI, and generative UI to provide the best interface for every task.</li>
+<li>Product development is shifting from designing screens to designing the rules and components that AI will use to generate interfaces.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
