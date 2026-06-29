@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boxoffice Movie Scenes - The Knock Knock Scene - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="A lost pair of friends, stranded and without their phones, found unexpected assistance from a kind stranger when they couldn&#039;t locate the house they were looking for. The two women, Emma and Ashley, f...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=8UG4bp3vXGM" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Boxoffice Movie Scenes - The Knock Knock Scene</h1>
+      <time datetime="2023-07-19T21:00:05.000Z">
+        Thursday, July 20, 2023
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>A Chance Encounter and a Helping Hand</h1>
+<p>A lost pair of friends, stranded and without their phones, found unexpected assistance from a kind stranger when they couldn't locate the house they were looking for.</p>
+<p>The two women, Emma and Ashley, found themselves in a predicament. Their phones were out of commission – one was wet, and the other had been left at home. Having been dropped off by a taxi, they had been walking for about 20 minutes, their feet aching, trying to find the residence of someone named Gregory. Their attempts to get directions were met with polite but unhelpful responses.</p>
+<p>&quot;The gregories no I don't know anyone around here by that name,&quot; one person told them. When asked for the address, Emma admitted, &quot;I don't I honestly don't know my phone got wet and she left hers at her house.&quot;</p>
+<p>Just as they were beginning to despair, a generous offer was made. &quot;Well if you guys want you can come in and use my phone,&quot; a voice offered. Relieved, they accepted, explaining that all their contacts were on their phones and they didn't even know their own numbers by heart.</p>
+<p>Inside, they were offered an iPad and towels, a welcome comfort as they were feeling the cold. &quot;Girls I'm so sorry it was warmer here I hope you don't mind we are freezing here,&quot; one of the women said.</p>
+<p>&quot;Oh my God thank you this is beyond embarrassing,&quot; the other replied.</p>
+<p>Their host introduced himself as Bill, and the women introduced themselves as Evan and Ashley. Bill's willingness to help was a lifesaver. &quot;Not everyone would just let to total strangers into their house these days,&quot; Evan remarked. Bill, with a touch of humor, responded, &quot;Well you don't look that dangerous worst case scenario I know I can take the both of you.&quot; Evan playfully countered, &quot;I'm not so sure I do air boxing.&quot;</p>
+<p>Bill then inquired about the address they were looking for. &quot;His name's Evan Evan 458 Kent,&quot; one of them stated. Bill's reaction suggested a misunderstanding. &quot;Whoa we're like far it was Kantner and not Cantor the cab must have misunderstood us.&quot;</p>
+<p>&quot;I told you that he was going the wrong way spoke English I mean his English was worse than mine,&quot; one of the women added.</p>
+<p>&quot;This is so don't worry about it I'll call an Uber,&quot; Bill offered. However, the women were hesitant to impose further. &quot;No no no no we can find a cab outside it's no problem.&quot;</p>
+<p>Bill assured them that cabs were not readily available in their area and that Uber was the most reliable option. &quot;Not around here you won't trust me it's the only reliable way.&quot;</p>
+<p>Still feeling a bit sheepish, one of them said, &quot;Um you sure I feel like such an idiot we don't want to ruin your night.&quot;</p>
+<p>&quot;No really it's fine,&quot; Bill reassured them. &quot;It's looking for a driver and it'll be here in 45 minutes.&quot; The long wait was met with a sigh, &quot;That long the rain or like you even got one.&quot;</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Unexpected kindness can emerge in challenging situations.</li>
+<li>Technology reliance can leave individuals vulnerable when devices fail.</li>
+<li>Offering help to strangers, even with simple resources like a phone or computer, can make a significant difference.</li>
+<li>Miscommunication, especially with language barriers, can lead to significant inconveniences.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
