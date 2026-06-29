@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeetCode - Are we really doing this again - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The landscape of software development is in constant flux, and recent pronouncements from prominent figures in the AI and coding communities have sparked considerable debate. The idea that coding is &quot;...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=vM6DNlsdpsg" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>NeetCode - Are we really doing this again</h1>
+      <time datetime="2026-06-23T14:00:27.000Z">
+        Tuesday, June 23, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The &quot;Solved&quot; Coding Paradigm: Hype, Loops, and the Search for Clarity</h1>
+<p>The landscape of software development is in constant flux, and recent pronouncements from prominent figures in the AI and coding communities have sparked considerable debate. The idea that coding is &quot;largely solved&quot; has been amplified by claims that even the act of prompting AI for code is now obsolete, replaced by a new paradigm of &quot;writing loops.&quot; This shift, however, has been met with confusion and a demand for clearer communication from those at the forefront of these advancements.</p>
+<h2>The Evolution of AI in Coding</h2>
+<p>It began with Boris, the creator of Claude Code, stating that coding itself was largely solved, with him no longer writing code but instead prompting Claude to do so. This was a significant statement, suggesting a fundamental change in how software is created. More recently, Boris has pushed this idea even further, suggesting that prompting itself is now dead. This implies that the new way of coding, which was just emerging, has already been superseded.</p>
+<p>This sentiment is echoed by others. The creator of Open Claw, now at OpenAI, advises against prompting coding agents directly, instead advocating for the design of &quot;loops that prompt your agents.&quot; This concept of &quot;loop engineering&quot; has gained traction, with proponents suggesting it's the next evolutionary step in AI-assisted development.</p>
+<h2>The Ambiguity of &quot;Loops&quot;</h2>
+<p>Despite the confident pronouncements, the practical implementation and benefits of this &quot;loop engineering&quot; remain unclear to many observers. When pressed for details about their workflows, these proponents often offer vague explanations or provide examples that are difficult to parse.</p>
+<p>One such example comes from the creator of Codeex, who described a loop that &quot;maintains your repos, wakes up every 5 minutes, and directs work to threads.&quot; This loop supposedly uses an orchestrator skill combined with triage, auto-review, and computer use skills to allow some work to land autonomously. While this hints at the potential for automated workflows, the core mechanism of how these &quot;loops&quot; function and are orchestrated remains largely opaque.</p>
+<p>Jared, the creator of Bun, also weighed in, stating that when working on large projects, his first thought is how to structure workflows with as many parallel AI agents as possible. This was met with a similar sentiment from others, who suggested that manually managing each parallel agent is now an outdated approach, and the focus should be on writing loops that generate prompts for these agents. Jared's recent porting of Bun, a massive codebase, using AI further highlights the potential of these technologies, though details on his methodology have been slow to emerge.</p>
+<h2>The Search for Honest Communication</h2>
+<p>A common theme emerging from these discussions is a perceived lack of clear and honest communication from the pioneers in this field. This ambiguity leaves many developers feeling like they are being left behind, struggling to keep up with a rapidly evolving landscape without a clear understanding of the underlying principles or practical applications.</p>
+<h2>The Reality vs. The Hype</h2>
+<p>The reality of these advanced AI coding tools often falls short of the marketing hype. While the potential is immense, the practical implementation and the clarity of communication surrounding these developments are crucial for widespread adoption and understanding.</p>
+<h3>Code Rabbit: Enhancing Code Understanding</h3>
+<p>For developers grappling with understanding complex codebases, tools like Code Rabbit offer a more grounded approach. This AI code reviewer helps organize changes into logical layers, allowing for a more structured review process. Features like the &quot;change stack&quot; group related files, enabling developers to review ideas cohesively rather than jumping between unrelated files. This focus on practical tools for code comprehension stands in contrast to the more abstract pronouncements about the future of coding.</p>
+<h2>Deconstructing &quot;Loop Engineering&quot;</h2>
+<p>The concept of &quot;loop engineering&quot; has been further explored by figures like former Google Cloud director, who described a loop that automates daily tasks. This loop reads CI failures, open issues, and recent commits, then drafts fixes using sub-agents and reviews them against project skills and existing tests. Connectors then open pull requests and update tickets. Anything the loop cannot handle is triaged for human intervention. The &quot;state file&quot; is central to this process, ensuring the loop can resume where it left off.</p>
+<p>While this example provides a more concrete illustration, the underlying message remains that the engineer designs the loop once, rather than prompting individual steps. This is seen as the core innovation, applicable across different AI coding platforms.</p>
+<h3>The Triviality of the Concept?</h3>
+<p>However, some argue that the core concept of these &quot;loops&quot; is relatively simple. It essentially involves setting up a long-running task, or a loop, that continues until an end state is met or runs continuously like a cron job. For those who have been working with automation and scripting for years, this may seem like a trivial concept, yet it's being presented as a revolutionary paradigm.</p>
+<h3>A Practical Example: Bug Report Automation</h3>
+<p>Consider a scenario where a developer receives bug reports. Instead of manually validating and fixing them, the proposed &quot;loop&quot; approach involves an agent that reads all bug reports every 24 hours. For each report, a sub-agent is spawned to validate and attempt to fix the bug, potentially opening a pull request. The human developer then acts as the final arbiter, deciding whether to merge the changes.</p>
+<p>This process involves several technical considerations:</p>
+<ul>
+<li><strong>Thread Independence:</strong> Each sub-agent needs to operate independently to avoid conflicts.</li>
+<li><strong>Work Trees:</strong> Using separate work trees (similar to branches in Git) for each agent ensures changes are isolated.</li>
+<li><strong>Data Access:</strong> Agents might need direct database access or a more robust API, like browser access, to interact with bug tracking systems. The trade-off between speed (direct SQL access) and safety (browser interaction) is a key consideration.</li>
+</ul>
+<p>This example illustrates a system that runs periodically and ongoing, potentially for a long time.</p>
+<h3>Bounded Loops and Exponential Decay</h3>
+<p>Another type of loop could be a &quot;bounded&quot; task, such as a migration. However, the accuracy of AI agents becomes critical in these scenarios. If an agent is only correct 95% of the time, repeated iterations can lead to compounding errors, a concept akin to exponential decay. This highlights the need for perfect accuracy or robust error handling in long-running, iterative processes.</p>
+<h2>Discovering Limitations</h2>
+<p>The initial excitement around &quot;loop engineering&quot; is now being tempered by the discovery of its limitations. The creator of Flask, for instance, found that loops only worked effectively for reviews, where an AI could identify issues and then be tasked with fixing them. This suggests that AI is adept at identifying problems but may struggle with complex, open-ended implementation tasks.</p>
+<p>Jared's observation that loops work best around a &quot;task queue&quot; (more like a &quot;for each&quot; loop) rather than a continuous &quot;while&quot; loop further underscores these limitations. This implies that AI-driven loops are more suited for processing predefined sequences of tasks rather than open-ended, continuous operations.</p>
+<h2>The Role of Incentives and Honesty</h2>
+<p>The rapid evolution and sometimes contradictory pronouncements surrounding AI in coding can be attributed, in part, to the incentives of the companies involved. Companies like Anthropic and OpenAI have a vested interest in building hype around agentic coding, as it aligns with their product development. Google, on the other hand, may have less direct incentive to promote this specific area.</p>
+<p>This difference in incentives can lead to varying levels of transparency and honesty. While some companies are pushing the narrative of revolutionary advancements, others may be more cautious and balanced in their assessments.</p>
+<h3>The Importance of Rollbacks</h3>
+<p>A critical aspect often overlooked in the rush towards faster development is the importance of rollbacks. The ability to revert to a previous stable state is a crucial safety valve. If software can be released faster than problems can be detected, rollbacks become complicated by the accumulation of conflicting changes. This underscores the need to consider the entire system, including safety mechanisms, when adopting new development paradigms.</p>
+<h2>Conclusion: Navigating the Hype</h2>
+<p>The current discourse around AI in coding is characterized by a mix of genuine innovation and significant hype. While the concept of &quot;loop engineering&quot; offers a glimpse into potential future workflows, the lack of clear communication and the discovery of limitations suggest that the field is still in its nascent stages. Developers are urged to critically evaluate the pronouncements from industry leaders, focusing on practical applications and understanding the underlying principles rather than getting lost in the buzzwords. The pursuit of clarity and honest communication is paramount to navigating this rapidly evolving landscape and ensuring that technological advancements truly benefit the software development community.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>The idea of &quot;coding being solved&quot; has evolved to suggest that even prompting AI is now obsolete, replaced by &quot;writing loops.&quot;</li>
+<li>&quot;Loop engineering&quot; aims to automate complex coding tasks by designing systems that orchestrate AI agents.</li>
+<li>A lack of clear communication and concrete examples from proponents has led to confusion and a feeling of being left behind.</li>
+<li>The practical effectiveness of &quot;loops&quot; is still being explored, with limitations emerging, particularly regarding continuous, open-ended tasks.</li>
+<li>The incentives of companies involved can influence the narrative and hype surrounding AI in coding.</li>
+<li>Fundamental software development principles, like the importance of rollbacks, remain critical even with advanced AI tools.</li>
+<li>Developers should focus on understanding the core concepts and practical applications rather than solely on the hype.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
