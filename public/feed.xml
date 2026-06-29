@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2026 06:47:17 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 06:48:08 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Financial Times - The AI factory: the rewiring of India&apos;s tech industry | FT Film</title>
@@ -1874,6 +1874,174 @@
 <p><strong>1:05:30</strong> · Yeah, thanks, Mike. And I think we may be uh seeing Taylor again on the podcast sometime soon. So, for sure. [laughter] Happy to come back.</p>
 <p><strong>1:05:37</strong> · All right. Thank you.</p>
 <p><strong>1:05:39</strong> · Thanks for listening to AI Answers. To keep learning, visit smarterx.ai where you'll find on demand courses, [music] upcoming classes, and practical resources to guide your AI journey. And if you've got a question for a future episode, we'd love to [music] hear it. That's it for now. Continue exploring and keep asking great questions about AI.</p>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>Kun Chen - L8 Principal&apos;s Agentic Engineering Workflow</title>
+      <link>https://myfeed.theindie.app/articles/20260629-134731-www.youtube.com-watch-v-iQyg-KypKAA.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260629-134731-www.youtube.com-watch-v-iQyg-KypKAA.html</guid>
+      <pubDate>Sat, 20 Jun 2026 16:15:37 GMT</pubDate>
+      <description><![CDATA[This guide details a robust agent engineering workflow designed for maximum productivity and enjoyment, moving beyond basic demos to real-world application. The author, Kun, a former principal enginee...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=iQyg-KypKAA">L8 Principal's Agentic Engineering Workflow</a></p>
+<hr>
+<h1>Mastering Agent Engineering: A Comprehensive Workflow for Productivity</h1>
+<p>This guide details a robust agent engineering workflow designed for maximum productivity and enjoyment, moving beyond basic demos to real-world application. The author, Kun, a former principal engineer at Meta, Microsoft, and Atlassian, shares insights gained from building and shipping dozens of production-ready coding agents daily. The core philosophy emphasizes a terminal-centric approach, efficient use of memory and skills, and strategic delegation to a growing &quot;crew&quot; of AI agents.</p>
+<h2>Why I Work in the Terminal</h2>
+<p>A fundamental aspect of this workflow is the heavy reliance on the terminal. While graphical user interfaces (GUIs) offer richer visuals, the terminal provides two critical advantages for productivity:</p>
+<ol>
+<li><strong>Uninterrupted Flow:</strong> Keeping hands on the keyboard minimizes context switching. Constantly moving to a mouse breaks concentration and disrupts the creative flow. Terminal applications are inherently keyboard-driven, ensuring hands remain in one place.</li>
+<li><strong>Ubiquitous Access:</strong> The terminal allows for a consistent workflow across all devices, including mobile. This means the same powerful tools and environments are accessible anywhere.</li>
+</ol>
+<p>For those who prefer GUIs, the concepts discussed remain applicable, focusing on the underlying principles of agent interaction rather than specific interface mechanics.</p>
+<h2>WezTerm and My Lua Config</h2>
+<p>The terminal emulator of choice is <strong>WezTerm</strong>. Its key strengths include:</p>
+<ul>
+<li><strong>Cross-Platform Consistency:</strong> WezTerm functions identically on Windows, macOS, and Linux, a significant advantage for developers working across different operating systems.</li>
+<li><strong>High Customizability:</strong> It can be configured extensively using Lua scripts, allowing for dynamic and personalized settings. Changes can be hot-reloaded instantly, making configuration a seamless process.</li>
+</ul>
+<h2>What is tmux?</h2>
+<p>Within WezTerm, <strong>tmux</strong> (terminal multiplexer) is essential for managing multiple agent sessions. tmux allows users to:</p>
+<ul>
+<li><strong>Split Panes:</strong> Divide the terminal into multiple independent panes, enabling simultaneous viewing of an agent's output, an editor, and command execution.</li>
+<li><strong>Create Tabs (Windows):</strong> Organize multiple agent sessions into separate tabs, facilitating parallel work.</li>
+<li><strong>Persistent Sessions:</strong> tmux sessions persist even if the terminal is closed or the connection is lost. This means work can be resumed exactly where it left off, even from a different device.</li>
+</ul>
+<p>While tmux offers immense power, default configurations can be basic. Customizing tmux with keybindings and styling is recommended for an optimal experience.</p>
+<h2>Neovim as Editor</h2>
+<p>The preferred text editor is <strong>Neovim</strong>, a modern evolution of Vim. Neovim, like Vim, is designed for keyboard-centric operation:</p>
+<ul>
+<li><strong>Efficient Navigation:</strong> Movement, scrolling, and editing are performed using a vast array of keyboard shortcuts.</li>
+<li><strong>Modal Editing:</strong> Neovim operates in different modes (e.g., insert mode for typing, normal mode for navigation and commands), allowing for precise control.</li>
+<li><strong>Plugin Ecosystem:</strong> A rich plugin system extends Neovim's capabilities, enabling features like fuzzy file finding and code searching directly within the editor.</li>
+</ul>
+<p>While Neovim has a learning curve, mastering it leads to significantly faster and more fluid code editing.</p>
+<h2>Agent Harnesses</h2>
+<p>To interact with AI models, an &quot;agent harness&quot; is required. The author regularly uses four:</p>
+<ul>
+<li><strong>Cloud Code (Anthropic):</strong> A practical choice for Anthropic's models, offering a sensible default experience and a rich feature set, though it can sometimes be buggy and less customizable.</li>
+<li><strong>Codex COI:</strong> Written in Rust, it's known for its speed and open-source nature, allowing for self-inspection and workarounds. It's less feature-rich and customizable.</li>
+<li><strong>Pi Coding Agent:</strong> Emphasizes minimalism and extensibility, ideal for users who want to tinker and customize extensively.</li>
+<li><strong>Open Code:</strong> Features a smooth UI, broad model integration, and a more complete feature set than Pi, making it a good &quot;grab-and-go&quot; model-agnostic option.</li>
+</ul>
+<p>For this walkthrough, <strong>Cloud Code</strong> is used for familiarity, but the workflow is designed to be model-agnostic, acknowledging the rapidly evolving AI landscape.</p>
+<h2>My Global Memory File</h2>
+<p>Agents, as fresh recruits, need onboarding. This is achieved through memory files and skills.</p>
+<ul>
+<li><strong>Global Memory File:</strong> This file, located in a specific path for each harness (e.g., <code>~/.cloudcode/config/memory.md</code>), is loaded into the system prompt of <em>every</em> agent session. It's kept minimal (around 27 lines) to avoid token waste. It stores personal preferences, such as:
+<ul>
+<li>Avoiding em-dashes in favor of plain dashes.</li>
+<li>A crucial instruction: &quot;When making technical decisions, don't give too much weight to development cost.&quot; This addresses a bias in AI models trained on human data, which often overestimate development time. AI can code much faster, and this rule corrects the AI's tendency to favor seemingly &quot;cheaper&quot; but potentially lower-quality solutions.</li>
+<li>A directive for bug fixes: &quot;Always start with reproducing the bug in an end-to-end setting as closely aligned with how an end-user would experience it as possible.&quot; This prioritizes end-to-end testing over unit tests, which are often insufficient.</li>
+</ul>
+</li>
+</ul>
+<h2>Project-Level Memory File</h2>
+<p>Each project can have its own memory file (e.g., <code>highbit/agents/memory.md</code>). This file is more verbose and serves as the collective learning for agents working on that specific project. It includes:</p>
+<ul>
+<li>Project context and repository layout.</li>
+<li>Key terminology and component explanations.</li>
+<li>End-to-end testing procedures and conventions.</li>
+</ul>
+<p>This file is built incrementally. When an agent makes a mistake, the correction is added to the memory file, allowing agents to learn and improve over time.</p>
+<h2>Using Skills</h2>
+<p>To manage the growing size of memory files and improve efficiency, conditionally useful information can be moved into <strong>skills</strong>. For example, end-to-end testing instructions are only relevant when an agent is making changes.</p>
+<ul>
+<li><strong>Extracting to Skills:</strong> Agents can be prompted to extract specific sections from memory files into skills.</li>
+<li><strong>Skill Management:</strong> Tools like <code>npc-skills</code> (from Vercel) help manage skills.</li>
+<li><strong>Skill Creator:</strong> For harnesses that don't natively support skill creation, a &quot;Skill Creator&quot; skill can be installed to teach the agent how to generate new skills.</li>
+</ul>
+<p>Skills use <strong>progressive disclosure</strong>: only a small description is loaded into the system prompt initially, and the full skill content is loaded only when the agent decides to use it. This prevents token bloat.</p>
+<h3>How Skills May Hurt Your Agent</h3>
+<p>Caution is advised when installing random skills from the internet. These can pose security risks (e.g., exposing API keys) and may degrade performance. A skill with 177,000 GitHub stars was evaluated and found to increase token usage by 5% while worsening results. Popularity does not equate to effectiveness; rigorous evaluation is crucial.</p>
+<h2>Voice Input</h2>
+<p>A significant productivity boost comes from adopting <strong>voice input</strong>. Talking is approximately three times faster than typing.</p>
+<ul>
+<li><strong>Transcription:</strong> Voice input is transcribed locally using <strong>Open Super Whisper</strong>, a free and open-source application that runs the Whisper model on the user's machine, ensuring quality and privacy.</li>
+<li><strong>Fallback to Typing:</strong> Typing is reserved for inputs like URLs or file paths, which are impractical to speak aloud.</li>
+</ul>
+<h2>The Importance of Agent Ergonomics</h2>
+<p>The design of external tools agents use significantly impacts their performance.</p>
+<ul>
+<li><strong>GitHub CLI vs. API:</strong> Benchmarks show that using the GitHub CLI is three times cheaper in token cost and more than twice as fast as using the GitHub API for the same tasks.</li>
+<li><strong>Axi Design Standards:</strong> The author developed <strong>Axi</strong>, a set of design standards for tools to optimize for agent ergonomics. Principles include using token-efficient output formats (saving ~40% tokens compared to JSON) and designing tools that treat agents as first-class citizens. Axi-based tools (like GitHub Axi and Chrome DevTools Axi) have demonstrated reduced turns and token usage for agents.</li>
+</ul>
+<h2>Planning with Interactive Artifacts</h2>
+<p>For complex planning, <strong>Lavish</strong> is a critical tool. It allows agents to generate interactive HTML artifacts that visualize options and prototypes, making discussions much more efficient than reading walls of text in the terminal.</p>
+<ul>
+<li><strong>Lavish Editor:</strong> This tool instructs agents to create HTML visualizations consistent with the project's design system.</li>
+<li><strong>Annotated Feedback:</strong> Users can annotate specific parts of the artifact to provide precise feedback to the agent.</li>
+<li><strong>Decision Making:</strong> Interactive elements allow users to make decisions directly within Lavish, which are then sent back to the agent.</li>
+</ul>
+<p>This interactive approach drastically improves the clarity and efficiency of the planning phase.</p>
+<h2>Validating Code Changes</h2>
+<p>The author's approach to code validation shifts from manual diff review to a more managerial role, leveraging automation.</p>
+<ul>
+<li>
+<p><strong>The Bottleneck of Manual Review:</strong> AI can generate code rapidly, making manual review a significant bottleneck.</p>
+</li>
+<li>
+<p><strong>&quot;No Mistakes&quot; Pipeline:</strong> This free and open-source tool orchestrates a comprehensive validation pipeline:</p>
+<ul>
+<li>Creates a branch and commits changes in an isolated worktree.</li>
+<li>Analyzes the agent's intent and rebases changes onto the latest main branch.</li>
+<li>Performs an adversarial review in a fresh context window.</li>
+<li>Tests changes end-to-end, recording evidence (screenshots, videos, logs).</li>
+<li>Updates documentation and checks for linting issues.</li>
+<li>Pushes the branch and raises a Pull Request (PR).</li>
+<li>Monitors the PR for merge conflicts or CI failures.</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk Assessment:</strong> The &quot;No Mistakes&quot; pipeline provides a risk assessment for each change. Low-risk changes are often merged without detailed diff review, as the pipeline is trusted to catch most issues. Higher-risk changes warrant more human scrutiny. This allows for scaling code changes significantly.</p>
+</li>
+</ul>
+<h2>Long-Running Tasks</h2>
+<p>To keep agents busy during periods of inactivity (like sleep), the <strong>&quot;Goodnight, Have Fun&quot;</strong> tool is used.</p>
+<ul>
+<li><strong>Objective-Based Execution:</strong> Users provide an objective, and the tool runs the agent in a loop until a stop condition is met.</li>
+<li><strong>Example:</strong> An agent is tasked with acting as a seven-year-old child using an app, identifying and fixing usability problems.</li>
+<li><strong>Monitoring:</strong> Progress can be monitored via token usage, iterations, and commits.</li>
+<li><strong>Verifiable Objectives:</strong> This tool is well-suited for tasks with verifiable objectives, such as reducing page load time or improving test coverage.</li>
+</ul>
+<p>While similar functionality exists in Cloud Code and Codex, &quot;Goodnight, Have Fun&quot; offers more precise control over token and iteration caps.</p>
+<h2>Parallel Worktrees and Agents</h2>
+<p>To manage multiple agents working concurrently without conflicts, <strong>Git worktrees</strong> are employed.</p>
+<ul>
+<li><strong>Worktree Isolation:</strong> Each worktree is a separate clone of the repository, allowing agents to operate independently.</li>
+<li><strong>Treehouse Tool:</strong> To manage the overhead of creating and tracking worktrees, <strong>Treehouse</strong> was developed. It simplifies the creation of fresh worktrees, tracks their status, and reuses idle worktrees to avoid unnecessary creation.</li>
+</ul>
+<p>This enables running multiple agent sessions in parallel, each in its own isolated environment, significantly increasing parallel work capacity.</p>
+<h2>First Mate</h2>
+<p>As the number of parallel agent sessions grows, managing them becomes exhausting. The <strong>First Mate</strong> is introduced as a higher-level agent that orchestrates and manages the other agents.</p>
+<ul>
+<li><strong>Centralized Management:</strong> The First Mate acts as a captain's assistant, delegating tasks to the crew of agents and handling their coordination.</li>
+<li><strong>Workflow Integration:</strong> It integrates with tools like Treehouse and &quot;No Mistakes&quot; to manage worktrees, run agents, and validate changes.</li>
+<li><strong>Customizable Transcription:</strong> Open Super Whisper can be customized with a system prompt to improve transcription accuracy for project-specific vocabulary.</li>
+<li><strong>Task Delegation:</strong> The First Mate can handle multiple complex tasks concurrently, such as updating CLIs across several projects or analyzing open issues.</li>
+</ul>
+<p>This layer of abstraction allows the user to focus on the strategic direction (&quot;where should we go next?&quot;) rather than the operational details of managing individual agents.</p>
+<h2>The Captain's Mindset</h2>
+<p>With the First Mate handling operational overhead, the user's focus shifts to higher-level strategy. This requires a mindset shift from &quot;sailor&quot; to &quot;captain&quot;:</p>
+<ul>
+<li><strong>Understanding What Matters:</strong> Dedicate energy to understanding user needs, the competitive landscape, and defining a clear vision (the &quot;treasure map&quot;).</li>
+<li><strong>Strategic Direction:</strong> Crafting the overarching goals and direction for the crew of agents.</li>
+</ul>
+<p>By mastering this workflow, users can transition from directly managing individual agents to becoming a strategic captain, leading a powerful crew to achieve ambitious goals. All tools mentioned are free and open-source, available on the author's GitHub.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Terminal-Centric Workflow:</strong> Maximize productivity by keeping hands on the keyboard and maintaining a consistent environment.</li>
+<li><strong>tmux for Parallelism:</strong> Effectively manage multiple agent sessions using tmux for splitting panes and creating tabs.</li>
+<li><strong>Memory and Skills:</strong> Onboard agents with global and project-level memory files, and use skills to manage conditional knowledge efficiently.</li>
+<li><strong>Voice Input:</strong> Leverage voice for faster and more fluid interaction with agents.</li>
+<li><strong>Agent Ergonomics:</strong> Choose tools designed for efficiency with AI agents to save time and cost.</li>
+<li><strong>Interactive Planning:</strong> Utilize tools like Lavish for clear and efficient planning with visual artifacts.</li>
+<li><strong>Automated Validation:</strong> Employ pipelines like &quot;No Mistakes&quot; to automate code validation and scaling.</li>
+<li><strong>Long-Running Tasks:</strong> Use tools like &quot;Goodnight, Have Fun&quot; to keep agents productive during idle periods.</li>
+<li><strong>Parallel Worktrees:</strong> Manage multiple concurrent agent tasks without conflicts using Git worktrees and management tools like Treehouse.</li>
+<li><strong>First Mate for Orchestration:</strong> Delegate agent management to a higher-level agent to focus on strategic direction.</li>
+<li><strong>Captain's Mindset:</strong> Shift focus from operational details to strategic planning and vision.</li>
+</ul>
 ]]></content:encoded>
       
     </item>
@@ -4126,69 +4294,6 @@
 <p><strong>1:14:42</strong> · So, the X AI got rolled into SpaceX and it IPOed last week. So, we'll see see where that goes from here.</p>
 <p><strong>1:14:49</strong> · All right, Mike, thanks as always. Uh, I'm going to go catch a flight to New York.</p>
 <p><strong>1:14:52</strong> · All right, safe travels later. Thanks for listening to the Artificial Intelligence Show. Visit smarterx.ai AI to continue on your AI learning journey. And join more than 100,000 [music] professionals and business leaders who have subscribed to our weekly newsletters, downloaded AI blueprints, [music] attended virtual and in-person events, taken online AI courses, and earned professional certificates from our AI academy, and engaged in the Smarter [music] X Slack community. Until next time, stay curious and explore AI.</p>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>The Artificial Intelligence Show Podcast - Ep. 219: Claude Fable 5, OpenAI IPO, Apple Siri AI Unveiled &amp; Is the Era of Affordable AI Over?</title>
-      <link>https://myfeed.theindie.app/articles/20260617-131928-www.youtube.com-watch-v-Q9Eofxj3QQI.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260617-131928-www.youtube.com-watch-v-Q9Eofxj3QQI.html</guid>
-      <pubDate>Tue, 16 Jun 2026 11:00:32 GMT</pubDate>
-      <description><![CDATA[This week on The Artificial Intelligence Show, Paul Ritzer and Mike Kaput dive into a whirlwind of AI news, from government intervention in model releases to major company IPO filings and long-awaited...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=Q9Eofxj3QQI">Ep. 219: Claude Fable 5, OpenAI IPO, Apple Siri AI Unveiled &amp; Is the Era of Affordable AI Over?</a></p>
-<hr>
-<h1>The AI Show: Anthropic's Fable 5 Pullback, OpenAI's IPO, and Apple's Siri Overhaul</h1>
-<p>This week on The Artificial Intelligence Show, Paul Ritzer and Mike Kaput dive into a whirlwind of AI news, from government intervention in model releases to major company IPO filings and long-awaited product updates. The conversation kicks off with the dramatic withdrawal of Anthropic's Claude Fable 5 and Mythos 5 models due to national security concerns, followed by an in-depth look at OpenAI's confidential IPO filing and Apple's significant AI-powered Siri upgrade. The episode also touches on the evolving cost of AI, the potential shift away from offshoring, the rise of &quot;loops&quot; in AI agent interaction, and the future trajectory from AGI to ASI.</p>
-<h2>Anthropic's Fable 5 and Government Intervention</h2>
-<p>The most immediate and dramatic news of the week revolves around Anthropic's Fable 5 and Mythos 5 models. Fable 5, Anthropic's new flagship model, was touted as a major leap in capabilities, with early reports highlighting its prowess in coding, vision, and long-context tasks. The payments company Stripe, for instance, claimed Fable 5 compressed months of engineering work into days, completing a 50 million line code migration in a single day.</p>
-<p>However, just days after Fable 5's release, the U.S. government issued national security export controls, barring Anthropic from distributing these models to foreign nationals. This action forced Anthropic to disable the models for all users, as selective filtering based on citizenship proved unfeasible. The government's intervention reportedly stemmed from researchers at Amazon discovering a method to &quot;jailbreak&quot; Fable 5, potentially enabling cyberattacks. Amazon CEO Andy Jassy is said to have personally raised these findings with senior administration officials.</p>
-<p>Anthropic has disputed the severity of the vulnerabilities, stating they were minor and replicable with other publicly available models, and that no universal jailbreak has been found. Despite this, Anthropic's technical staff traveled to Washington to meet with White House officials, and as of this recording, both models remain unavailable.</p>
-<p>This situation has significant implications, as Anthropic warns that such stringent standards could halt all new model deployments for frontier model providers. The incident also highlights the growing tension between rapid AI advancement and the slower pace of policy and regulation.</p>
-<h3>Dario's Essay and Policy Proposals</h3>
-<p>Prior to the government's intervention, Dario Amodei, CEO of Anthropic, published an essay titled &quot;Policy on the AI Exponential.&quot; In it, he addressed the rapid pace of AI development, noting that models have evolved from barely writing coherent code to writing most of the code at major AI companies in just four years. He emphasized the mismatch between AI's exponential growth and policy's slow progression, warning that &quot;in the several years that it can take Congress to act, AI can go from an amusing toy to the full country of geniuses.&quot;</p>
-<p>Amodei outlined five core areas for regulation and public safety: regulation and public safety, macroeconomics and tax policy, scientific innovation, balance of power between state and society, and geopolitics. Within the regulation and public safety section, he proposed that frontier AI models, like airplanes, should undergo technical testing and auditing, with releases blocked or reversed if they don't meet high safety standards. He specifically suggested that the government should have the power to block or deter deployment if third-party assessments deem a model to present unacceptable risks, with safeguards against political favoritism.</p>
-<p>Anthropic also released two policy proposals: an advanced AI framework for governing increasingly capable systems and an economic policy framework addressing potential job displacement. These frameworks explore scenarios for unemployment ranging from 5% to unprecedented levels, and discuss the economic transition ahead, particularly in the context of recursive self-improvement.</p>
-<h2>OpenAI Files for IPO</h2>
-<p>In other major news, OpenAI has officially kicked off its initial public offering (IPO) process by filing the necessary paperwork confidentially. The company is reportedly targeting a public listing within the next year, with a valuation around $850 billion. OpenAI plans to transform ChatGPT into a &quot;super app&quot; by integrating codecs, AI agents, and various other features to drive revenue.</p>
-<p>Sam Altman, OpenAI's CEO, has suggested that the pace of recursive self-improvement in AI could influence the IPO timing, stating that a faster &quot;RSI takeoff&quot; might make delaying the IPO advantageous. This indicates a strategic approach to timing the market, potentially waiting for their next model release to be on par with or surpass competitors like Anthropic.</p>
-<p>OpenAI also published a post titled &quot;Built to Benefit Everyone: Our Plan,&quot; outlining its third phase of development. This phase focuses on reshaping the economy around AI, with the goal of building an automated AI researcher, accelerating scientific progress and economic growth, and providing everyone with personal AGI. The messaging emphasizes that AI should work for people, augmenting their capabilities rather than entirely automating tasks, and that human judgment and values remain crucial.</p>
-<h2>Apple's Siri AI Is Finally Here</h2>
-<p>After years of speculation and anticipation, Apple has unveiled a significantly overhauled Siri, now powered by AI. Dubbed &quot;Siri AI,&quot; the new virtual assistant is designed to be more conversational, knowledgeable, and capable. It can understand on-screen context, search across personal data like messages, emails, and photos, pull in real-time web information, and take actions across apps and devices. Siri AI will maintain a conversation history in a dedicated app, synced privately via iCloud, and will be available across Apple's ecosystem, including iPhone, iPad, Mac, Apple Watch, and Vision Pro.</p>
-<p>While a beta version is expected later this year for English-speaking users, Apple has not provided a firm release date for the full version. Analyst Gene Munster estimates a full release could be as late as spring 2027, but notes that Apple has a significant advantage as competitors currently lack compelling personalized AI. Beyond Siri, Apple also announced new parental controls, screen time features, and performance enhancements for its apps.</p>
-<h2>Is the Era of Affordable AI Over?</h2>
-<p>A recent analysis from SemiAnalysis suggests that the era of cheap AI might be coming to an end. The firm tested subscription plans from Anthropic and OpenAI, finding that the generous token allowances on plans like Claude's $200/month offering delivered up to $8,000 worth of tokens at API pricing, and a $200 ChatGPT plan yielded about $14,000. This indicates that AI labs have been heavily subsidizing their power users.</p>
-<p>As companies transition to pay-as-you-go models, costs are beginning to rise. Meta, for example, is reportedly curbing employee AI usage due to escalating internal AI costs, which have reached billions. OpenAI is reportedly considering drastic price cuts to preempt a user war with Anthropic, but the fundamental constraint remains the immense compute power required for these models. This situation creates significant uncertainty around AI pricing, with potential for substantial increases in per-seat costs. Google, with its profitable and financially secure position, is seen as having the most flexibility in navigating these pricing challenges.</p>
-<h2>Opendoor Ends Offshoring for AI-Native Workers</h2>
-<p>Opendoor, a major real estate company, is winding down its India-based operations and bringing that work back to the United States. CEO Cass Neaten framed this move as bringing operational work closer to their American customers. The company has unified its systems and hired AI-native, customer-facing teams in the U.S., making in-person work closer to customers more efficient. This shift reflects a broader trend where the increasing power of AI agents reduces the need for offshoring manual workflows, allowing companies to consolidate operations and leverage AI tools to enhance productivity and impact.</p>
-<h2>From Prompts to Loops: The Next Frontier of AI Interaction</h2>
-<p>A new paradigm is emerging in AI interaction, particularly for coding agents: moving from direct prompting to designing &quot;loops&quot; that prompt the agents. This involves creating small systems that automate the prompting process, allowing agents to iterate on tasks, evaluate their own output, and continue prompting until a goal is met. This approach, championed by figures like Peter Steinberger and Boris Churnney, signifies a shift towards agents performing more of the work autonomously, with human roles evolving to designing and managing these automated loops. While currently at the frontier of AI usage, this trend could fundamentally change how average users interact with AI assistants in the future.</p>
-<h2>From AGI to ASI: The Path to Superintelligence</h2>
-<p>A new paper from Google DeepMind, titled &quot;From AGI to ASI,&quot; explores the potential trajectories from Artificial General Intelligence (AGI) to Artificial Superintelligence (ASI). The paper, co-authored by DeepMind co-founder Shane Legg, outlines four potential pathways: scaling current AI, new AI paradigm shifts, recursive self-improvement, and ASI emerging from large groups of AI agents. It also discusses potential frictions that could slow down these advancements. The paper highlights the uncertainty surrounding AI's future progress and emphasizes the need for a massive, interdisciplinary effort to prepare for a future where AI capabilities could significantly surpass human organizations. Notably, the paper includes &quot;summary instructions&quot; for AI assistants, a novel approach to guiding AI in understanding and summarizing research.</p>
-<h2>Europe 2031: A Warning on AI Stagnation</h2>
-<p>A report titled &quot;Europe 2031: What Getting AI Wrong Means for Us&quot; paints a stark picture of Europe sliding into economic and geopolitical irrelevance by 2031 due to missteps in AI adoption. The report, authored by AI researchers, think tankers, and investors, identifies three key mistakes: underestimating AI's speed of development, misjudging its transformative potential, and overestimating Europe's ability to catch up. The scenario suggests that by 2031, the U.S. could possess over 12 times Europe's compute capacity, leading to significant economic consequences for the continent, including loss of competitive advantage, reduced tax bases, and rising unemployment. The core argument is that Europe needs to course-correct rapidly to avoid obsolescence.</p>
-<h2>AI Use Case Spotlight: Activating Research with AI</h2>
-<p>Smarter X's Director of Research, Taylor Ray, spearheaded the creation of the 2026 State of AI for Business report, which involved analyzing over 100,000 data points. The team then faced the challenge of activating this extensive research for their internal teams. To address this, they developed a Claude project designed to generate custom internal activation briefs for each of their eight business units. By loading the project with context about each unit's goals and priorities, the AI could map the report's findings directly to specific team needs, providing actionable insights and &quot;quick wins.&quot; This approach highlights the power of AI in not only generating content but also in facilitating its practical application and activation across an organization.</p>
-<h2>AI Product and Funding Updates</h2>
-<p>This week's product and funding updates include:</p>
-<ul>
-<li><strong>Anthropic launched Claude Core:</strong> A program placing early-career fellows with mission-driven nonprofits to build AI tools, with Anthropic covering salary, benefits, and training.</li>
-<li><strong>Google upgraded NotebookLM:</strong> Adding more agentic capabilities, including code execution for data analysis, generation of spreadsheets and charts, and tools to discover and add web sources.</li>
-<li><strong>River AI unveiled:</strong> A new startup from XAI co-founder Igor Babushkin, focused on developing personalized AI agents controlled by users.</li>
-<li><strong>Meta announced America's Workforce Academy:</strong> A free program offering fast-track certification in skilled trades, backed by a $115 million investment tied to its AI infrastructure buildout.</li>
-<li><strong>Meta also announced a program to provide free Ray-Ban Meta AI glasses to over 130,000 eligible blind veterans in America</strong>, aiming to assist them with reading and navigation.</li>
-</ul>
-<h2>Key Takeaways</h2>
-<ul>
-<li><strong>Government Intervention in AI:</strong> The withdrawal of Anthropic's Fable 5 and Mythos 5 models highlights the growing role of governments in regulating advanced AI, driven by national security concerns. This raises questions about the future of AI releases and global access.</li>
-<li><strong>OpenAI's IPO Path:</strong> OpenAI's confidential IPO filing signals its ambition to become a public company, but strategic timing will be crucial, influenced by competitive pressures and the rapid evolution of AI capabilities.</li>
-<li><strong>Apple's AI Leap:</strong> The overhaul of Siri represents a significant step for Apple in integrating AI into its ecosystem, aiming to provide a more intuitive and powerful user experience for billions of iPhone users.</li>
-<li><strong>The Shifting Cost of AI:</strong> The era of heavily subsidized AI access may be ending, with potential price increases for AI services as companies grapple with the high cost of compute and usage.</li>
-<li><strong>AI's Impact on Work and Offshoring:</strong> The trend of bringing AI-powered operations back in-house, as seen with Opendoor, suggests a potential shift away from traditional offshoring models.</li>
-<li><strong>Evolution of AI Interaction:</strong> The rise of &quot;loops&quot; for prompting AI agents indicates a move towards more automated and sophisticated AI interactions, where human roles focus on system design and oversight.</li>
-<li><strong>The Road to Superintelligence:</strong> Research into the pathways from AGI to ASI underscores the accelerating pace of AI development and the need for proactive planning and interdisciplinary collaboration.</li>
-<li><strong>Europe's AI Challenge:</strong> The &quot;Europe 2031&quot; report serves as a critical warning about the consequences of falling behind in AI adoption, emphasizing the need for swift and decisive action.</li>
-<li><strong>Activating AI Research:</strong> Leveraging AI to create personalized activation briefs for research findings demonstrates a practical and effective way to drive adoption and impact within organizations.</li>
-</ul>
 ]]></content:encoded>
       
     </item>
