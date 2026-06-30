@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - 🔬 &quot;The Most Innovative Diffusion Research Is Happening in Drug Discovery, Not Image Generation&quot; - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The field of artificial intelligence is rapidly transforming various industries, and drug discovery is no exception. While image generation and large language models have captured public attention, so...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=YQWXxnkK4dw" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - 🔬 &quot;The Most Innovative Diffusion Research Is Happening in Drug Discovery, Not Image Generation&quot;</h1>
+      <time datetime="2026-06-30T22:20:59.490Z">
+        Wednesday, July 1, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Frontier of AI in Drug Discovery: Genesis Molecular AI's Vision</h1>
+<p>The field of artificial intelligence is rapidly transforming various industries, and drug discovery is no exception. While image generation and large language models have captured public attention, some of the most fundamental and innovative AI research is now happening in the realm of 3D structure prediction and molecular design. This is the domain where Genesis Molecular AI is making significant strides, aiming to accelerate the creation of life-saving medicines.</p>
+<h2>From Physics to AI: The Genesis Team's Journey</h2>
+<p>The Genesis Molecular AI team brings a unique blend of expertise, with a strong foundation in physics and computer science. Sergey Udov, CTO, and Evan Fineberg, CEO, both physics majors, found their way into machine learning, recognizing the deep parallels between the two disciplines. Sergey, after a stint at Meta leading the Llama 2 and Llama 3 pre-training efforts, returned to his roots by joining Genesis. Evan, during his PhD at Stanford, focused on graph machine learning for molecules, realizing the potential of applying AI to the complex world of molecular interactions.</p>
+<p>&quot;Molecules are really networks of atoms and bonds and spatial interactions,&quot; explains Evan. &quot;And if you're at the right place in the right time to bring to bear our backgrounds in in physics to improve AI algorithms for looking at molecules, uh we published a few papers in the area of graph machine learning.&quot;</p>
+<p>This interdisciplinary approach is crucial for tackling the intricate challenges of drug discovery, where understanding the precise 3D structure and interactions of molecules is paramount.</p>
+<h2>The Challenge of Protein-Small Molecule Interactions</h2>
+<p>For years, predicting the interaction between proteins and small molecules – a cornerstone of drug discovery – has been a significant hurdle for machine learning. Traditional approaches often struggled with the vast search space of potential molecules and the complexity of biological systems.</p>
+<p>&quot;Drug discovery is akin to finding a key for a lock where the lock is usually a protein... and where the drug is the key and it's usually some some small molecule or a peptide or or an antibody,&quot; says Evan. &quot;A necessary but not sufficient part of that process is finding a molecule that binds well to that receptor or that protein.&quot;</p>
+<p>A key hypothesis that proved difficult to test was that accurately predicting the 3D structure of protein-ligand complexes would directly lead to more accurate predictions of binding affinity and potency. The challenge lay in the lack of accurate and efficient models for predicting these complex 3D structures.</p>
+<p>&quot;That was a hypothesis that fundamentally could not be tested because models for predicting those 3D poses, the 3D structures of complexes were so bad or if you can predict this, it requires so much computational tech resources that you might as well just solve the problem,&quot; Evan elaborates.</p>
+<h2>Pearl: A Breakthrough in Structure Prediction</h2>
+<p>Genesis Molecular AI's Pearl model represents a significant advancement in this area. Pearl is a structure prediction model that takes a protein sequence and a ligand representation as input and predicts how they will interact in 3D space.</p>
+<p>&quot;It's a structure prediction model which basically means it takes as an input a protein sequence and a liant representation that you try to attach to this protein and it predicts how this protein and liant are going to look together uh as a structure in the 3D space,&quot; explains Sergey.</p>
+<p>The sheer scale of the molecular search space – an estimated 10^60 drug-like small molecules – makes brute-force searching impossible. Pearl tackles this by leveraging advanced AI techniques, including diffusion models, which are also used in image and video generation.</p>
+<p>&quot;One fundamental block of our models is diffusion based head. So it's like the same diffusion models what people are using for image and video generation. Well, we use them for crystal structure generation, right?&quot; Sergey notes.</p>
+<h2>Beyond Pattern Matching: Generalization and Physical Priors</h2>
+<p>A common pitfall in machine learning for scientific domains is that models can become mere pattern matchers, excelling only on data similar to their training set. Genesis Molecular AI has focused on building models that can generalize and extrapolate, incorporating physical principles into their architecture.</p>
+<p>&quot;The same with when you fire up claude or catchb or what have you, it's going to do best when it's closest to the train data and it's going to pattern match off it,&quot; Evan states. &quot;So I think that has been the big sense of urgency in AI meeting the physical world is how to extrapolate how to make generalizable models.&quot;</p>
+<p>The company emphasizes the importance of incorporating physical priors without overly biasing the model. This approach, they believe, is analogous to how convolutional neural networks leverage the prior knowledge that images are grids of pixels.</p>
+<h2>The Importance of Resolution: The One Angstrom Threshold</h2>
+<p>A critical aspect of Genesis's approach is their focus on achieving high-resolution predictions, aiming for an accuracy of one angstrom or better. This level of precision is crucial for accurately modeling molecular interactions.</p>
+<p>&quot;The details really matter here; like with two angstrom accuracy your entire aromatic ring can be flipped and it will still be a valid output,&quot; Evan explains. &quot;The worst part is that unlike an image which is blurry, uh you you don't even know it's blurry, right? You flip you flip around an aromatic ring and it looks just fine.&quot;</p>
+<p>This level of accuracy is essential for downstream applications, such as predicting binding affinity and designing new molecules. If the predicted structure is inaccurate, subsequent predictions and designs will be fundamentally flawed.</p>
+<h2>Integrating Physics and Computation with Wet Lab Data</h2>
+<p>Genesis Molecular AI's success is built on a synergistic approach that combines advanced AI modeling with physics-based simulations and real-world experimental data.</p>
+<p>&quot;We were building a variety of tools for the problems of drug discovery at hand. Some of which were using physics-based methods for predicting potency or or even for helping predict certain enemy properties,&quot; says Evan. &quot;And same with molecular generation... So we've been working on that problem and those things happened to be available when we wanted to to take what was then the very nent area of co-olding... and take it to the realm of useful.&quot;</p>
+<p>Their partnership with companies like Insight is crucial for this feedback loop. Insight's expertise in generating high-quality experimental data allows Genesis to continuously train and refine their models, creating a rapid design-make-test-analyze cycle.</p>
+<p>&quot;What we thrive on is continuous learning of the models. So we want to have design, make, test, analyze cycles that are as rapid as possible and continuously fine-tune in some cases depending retrain the models based on what we see in the lab,&quot; Evan notes.</p>
+<h2>Agents and the Future of Drug Discovery</h2>
+<p>Genesis Molecular AI is also exploring the potential of AI agents to automate and accelerate the drug discovery process. These agents, powered by large language models, can orchestrate various tools and models to make decisions and advance drug discovery campaigns.</p>
+<p>&quot;The prerequisite for that was we needed the underlying models for pose 3D 3D complex prediction potency ad me to all be good enough for an agent using these models 24/7 to create molecules that medicinal chemists would actually want to make and not laugh at,&quot; Evan states.</p>
+<p>The company envisions a future where humans and agents collaborate, with humans providing strategic direction and agents executing complex tasks, leading to unprecedented productivity and creativity in drug discovery.</p>
+<h2>The Bottleneck and the Call to Action</h2>
+<p>When asked about the biggest bottleneck in their industry, both Sergey and Evan pointed to the scarcity of GPUs. The high demand from LLM companies is impacting the availability of computational resources crucial for drug discovery research.</p>
+<p>For AI engineers and scientists, Genesis Molecular AI offers a compelling opportunity to work on cutting-edge architectures and tackle some of the most challenging and impactful problems in science.</p>
+<p>&quot;Our architectures and our models are actually very different and very very interesting to work with,&quot; Sergey enthuses. &quot;So if somebody is excited excited about working on architectures. Well, this space is actually very very interesting place to work.&quot;</p>
+<p>The company emphasizes that working at Genesis offers not only intellectual engagement but also the chance to influence the field and contribute to the creation of medicines that can change lives.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>Diffusion models are a powerful primitive for 3D structure prediction in drug discovery.</strong></li>
+<li><strong>Incorporating physical priors and focusing on high-resolution predictions (sub-angstrom accuracy) is crucial for accurate molecular modeling.</strong></li>
+<li><strong>Genesis Molecular AI leverages a synergistic approach combining advanced AI, physics-based simulations, and wet lab data.</strong></li>
+<li><strong>AI agents have the potential to significantly accelerate drug discovery by automating complex tasks and orchestrating various tools.</strong></li>
+<li><strong>The scarcity of GPUs is a major bottleneck for AI-driven drug discovery.</strong></li>
+<li><strong>The field of AI for drug discovery offers unique and intellectually stimulating challenges for AI researchers.</strong></li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+</body>
+</html>
