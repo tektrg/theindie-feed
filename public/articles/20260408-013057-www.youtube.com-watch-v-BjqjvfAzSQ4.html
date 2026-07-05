@@ -151,5 +151,54 @@
     });
   });
 })();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
 </body>
 </html>

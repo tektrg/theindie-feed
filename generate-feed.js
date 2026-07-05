@@ -73,6 +73,56 @@ const THEME_CONTROL_SCRIPT = `(function () {
   });
 })();`;
 
+const READER_MODE_SCRIPT = `(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();`;
+
 function faviconLink(prefix) {
   return `<link rel="icon" type="image/svg+xml" href="${prefix}favicon.svg">`;
 }
@@ -301,6 +351,7 @@ function generateArticlePage(article) {
     <p>End of article. Return to the chronological edition for the rest of the feed.</p>
   </footer>
   <script>${THEME_CONTROL_SCRIPT}</script>
+  <script>${READER_MODE_SCRIPT}</script>
 </body>
 </html>`;
 
