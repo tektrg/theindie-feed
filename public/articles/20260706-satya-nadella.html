@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satya Nadella on X: &#039;A frontier without an ecosystem is not stable&#039; - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="🔗 Source: Satya Nadella on X A frontier without an ecosystem is not stable I’ve been thinking a lot about the future of the firm in an AI-driven economy. This transition is different than any previou...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://x.com/satyanadella/status/2066182223213293753" target="_blank" rel="noopener">Read at x.com</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Satya Nadella on X: &#039;A frontier without an ecosystem is not stable&#039;</h1>
+      <time datetime="2026-07-06T00:00:00.000Z">
+        Monday, July 6, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><strong>🔗 Source:</strong> <a href="https://x.com/satyanadella/status/2066182223213293753">Satya Nadella on X</a></p>
+<hr>
+<p>A frontier without an ecosystem is not stable</p>
+<p>I’ve been thinking a lot about the future of the firm in an AI-driven economy.</p>
+<p>This transition is different than any previous platform shift. In the past, we used digital systems to enhance human productivity. Now, we are using AI to reason and act on our behalf.</p>
+<p>Future of the firm:</p>
+<ul>
+<li>A frontier without an ecosystem is not stable.</li>
+<li>AI as a reasoning agent, not just a tool.</li>
+<li>Transition differs from previous digital shifts.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
