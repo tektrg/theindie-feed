@@ -7,7 +7,7 @@
     <link>https://myfeed.theindie.app</link>
     <description>YouTube and web notes, distilled into a chronological digest.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 06:30:30 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 06:31:55 GMT</lastBuildDate>
     <atom:link href="https://myfeed.theindie.app/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Artificial Intelligence Show Podcast - Ep.223: AI Washing, Flatter Org Charts, Advice for Students, Agent Security &amp; the AI Writing Gap</title>
@@ -1984,6 +1984,71 @@
 <li>The future of AI security involves automating research, scaling enterprise solutions, and developing robust agent identity and permission systems.</li>
 <li>A major AI security incident, a &quot;gray swan&quot; event, is considered likely and preventable with proactive measures.</li>
 </ul>
+]]></content:encoded>
+      
+    </item>
+    <item>
+      <title>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan</title>
+      <link>https://myfeed.theindie.app/articles/20260706-133057-www.youtube.com-watch-v-j8BAficRjEc-list-PLWEAb1SXhjlfkEF_PxzYHonU_v5LPMI8L-inde.html</link>
+      <guid>https://myfeed.theindie.app/articles/20260706-133057-www.youtube.com-watch-v-j8BAficRjEc-list-PLWEAb1SXhjlfkEF_PxzYHonU_v5LPMI8L-inde.html</guid>
+      <pubDate>Mon, 22 Jun 2026 20:45:21 GMT</pubDate>
+      <description><![CDATA[The rapid advancement of AI, particularly large language models (LLMs) and AI agents, has brought about unprecedented capabilities but also introduced novel security challenges. Grace Swan, a company...]]></description>
+      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=j8BAficRjEc&amp;list=PLWEAb1SXhjlfkEF_PxzYHonU_v5LPMI8L&amp;index=2">AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan</a></p>
+<hr>
+<h1>The Evolving Landscape of AI Security: Red Teaming, Guardrails, and the Future of AI Safety</h1>
+<p>The rapid advancement of AI, particularly large language models (LLMs) and AI agents, has brought about unprecedented capabilities but also introduced novel security challenges. Grace Swan, a company at the forefront of AI security, is dedicated to empowering everyone to use AI safely and securely. Their mission is to address the inherent vulnerabilities in AI systems, moving beyond traditional cybersecurity concerns to tackle the unique risks posed by AI itself.</p>
+<h2>Why AI Security is Fundamentally Different</h2>
+<p>AI systems behave fundamentally differently from traditional software. While AI can be used to enhance cybersecurity, AI systems themselves possess inherent vulnerabilities that can be exploited. These vulnerabilities are not just theoretical; they can lead to correlated failures across widely used models, creating new classes of exploits. This necessitates a distinct mindset for AI security, one that acknowledges AI's unique characteristics and potential for unexpected behavior.</p>
+<p>Grace Swan's work stems from years of research at Carnegie Mellon University, focusing on the new attack surfaces and vulnerabilities in deep learning systems. They aim to understand the scope of these issues, test for them rigorously, and develop robust inference methods and safeguards to prevent negative outcomes.</p>
+<h2>Testing the Frontiers: Claude, Codex, and Prompt Injection</h2>
+<p>When a new AI model emerges, like Anthropic's Claude, Grace Swan employs a range of testing methodologies. A primary concern is the model's robustness against indirect prompt injection, especially for agents that fetch untrusted content from the web. The goal is to ensure these agents remain true to their original objectives and are not hijacked by malicious inputs.</p>
+<p>Beyond prompt injection, Grace Swan assists frontier AI labs in testing specific safeguards against activities like cyber misuse. They provide adversarial safety and security evaluations to help developers assess progress and identify areas for improvement between model iterations.</p>
+<h2>Gray Swan Arena and Automated Red Teaming</h2>
+<p>Grace Swan operates two key offerings in the AI security space:</p>
+<ol>
+<li>
+<p><strong>The Gray Swan Arena:</strong> This platform fosters a community of red teamers through prize challenges. These challenges are often designed around the specific needs of AI labs, incentivizing participants to find ways to circumvent model safety and security objectives. The Arena boasts a large community, providing valuable data and insights to model developers.</p>
+</li>
+<li>
+<p><strong>Automated Red Teaming:</strong> Grace Swan trains a suite of models, including a system named &quot;Shade,&quot; to perform rigorous automated red teaming. These models are designed to identify vulnerabilities in both base LLMs and agents built on top of them. Notably, these automated systems are increasingly outperforming human red teamers in finding ways to break models, a significant development in the field.</p>
+</li>
+</ol>
+<h2>AI That Breaks Models Better Than Humans</h2>
+<p>The nature of red teaming involves finding out-of-distribution behaviors that bypass a model's normal operations. While human red teamers have historically been crucial, automated systems like Shade are now demonstrating superior capabilities. In recent competitions, Shade has proven more effective at breaking models than human participants, highlighting a shift in the red teaming landscape. This advancement is attributed to specialized training for red teaming tasks, as simply scaling up models does not inherently improve their safety or their ability to be red teamed.</p>
+<h2>LLMs as Alien Intelligence</h2>
+<p>The adversarial nature of red teaming and prompt injection often reveals the alien nature of LLM intelligence. While these models are undoubtedly intelligent, their intelligence differs significantly from human cognition. Adversarial attacks expose this difference by highlighting scenarios that fool AIs but not humans, and vice versa. This allows for a unique, experimentally controllable way to probe and understand these systems, akin to controlled experiments in neuroscience, even if fundamental understanding remains elusive.</p>
+<h2>Humans vs. AI Agents in Security</h2>
+<p>A recent challenge, the &quot;Human Browser Agent Robustness Challenge,&quot; pitted human participants against AI browser agents in a test of their susceptibility to deception. Red teamers could choose to either fish humans or prompt inject browser agents. The results were surprising: while humans also fell prey to deception, some AI models proved remarkably robust, while others were easily prompt injected. This underscores that AI and humans fall for different types of vulnerabilities, and the goal is to achieve a security posture that is better than human operators, not necessarily identical.</p>
+<p>The challenge also highlighted the issue of &quot;eval awareness,&quot; where models aware they are being tested might behave differently, either by refusing tasks or by sandbagging their performance. The ideal scenario is to evaluate models in a way that reflects their real-world behavior.</p>
+<h2>Red Teaming, Jailbreaks, and Capability Elicitation</h2>
+<p>Red teaming is not just about finding vulnerabilities; it's also a powerful tool for capability elicitation. When a model refuses a task it is capable of performing, crafting prompts to overcome this refusal becomes an adversarial red teaming problem. This process helps ensure models are not effectively refusing tasks they are designed to handle.</p>
+<h2>Cygnal: Guardrails for AI Agents</h2>
+<p>Complementing their red teaming efforts, Grace Swan offers &quot;Cygnal,&quot; a specialized filter model that acts as a guardrail for AI agents. Cygnal sits between the user, the LLM, and any tool calls, monitoring for policy violations. Unlike base models that don't inherently improve in robustness with scale, Cygnal is custom-trained to be robust against adversarial attacks and policy violations.</p>
+<p>The effectiveness of Cygnal stems from Grace Swan's ability to train it using their red teaming capabilities, specifically targeting policy violations that organizations want to enforce. This is crucial because, as research shows, model capability does not always correlate with attack success rates. A dedicated security layer is essential for enterprises.</p>
+<h3>When to Adopt AI Security Solutions</h3>
+<p>Enterprises often turn to solutions like Cygnal after experiencing incidents. The most severe issues typically arise when AI agents are integrated with tools that allow for computer use, such as controlling a browser or executing code. Indirect prompt injection is a common vector, but sometimes agents can cause significant damage, like erasing databases, due to unexpected behavior.</p>
+<p>While prompt engineering and system prompts can offer some protection, they are often insufficient against sophisticated adversarial attacks. Enterprises with unique policies and specific constraints—such as preventing certain agents from accessing particular databases—find dedicated models like Cygnal to be extremely effective.</p>
+<h2>The Lethal Trifecta of AI Risk</h2>
+<p>The &quot;lethal trifecta&quot; describes the core components that create significant risk in AI systems:</p>
+<ol>
+<li><strong>Ingesting Untrusted Data:</strong> The ability to parse external data from untrusted sources is a prerequisite for many AI applications.</li>
+<li><strong>Access to Private Information:</strong> The agent must have access to sensitive internal data.</li>
+<li><strong>Ability to Exfiltrate Data:</strong> The agent must be able to send this private information elsewhere.</li>
+</ol>
+<p>These three elements, when combined, create a potent risk profile. Grace Swan's approach is not to achieve provable mitigation (akin to zero-bug software), but to significantly improve the Pareto frontier of usability versus security. By integrating solutions like Cygnal, AI agents can achieve a much better balance, allowing for productive use while minimizing security risks.</p>
+<h2>The Future of AI Security</h2>
+<p>The future of AI security lies in continued research, automation, and the development of specialized tools. Grace Swan is focused on scaling their enterprise deployments, bringing the security capabilities developed for frontier labs to a broader audience.</p>
+<h3>Automating AI Research</h3>
+<p>A significant area of future development is the automation of AI research itself. By leveraging AI agents, researchers can accelerate the process of understanding AI models, identifying vulnerabilities, and developing more robust systems. This includes advances in interpretability, allowing for a deeper understanding of model behavior and the circuits that drive it.</p>
+<h3>OpenClaw and the Computer-Use Security Problem</h3>
+<p>Tools like Microsoft's OpenClaw, which enable agents to interact with the computer, present a significant attack surface. Grace Swan has developed numerous countermeasures for OpenClaw, recognizing that while these tools are powerful, they require robust security measures. The challenge lies in balancing the usability and power of these agents with the need for security, a trade-off Grace Swan aims to optimize with solutions like Cygnal.</p>
+<h3>Agent Identity, Permissions, and Enterprise AI</h3>
+<p>A critical emerging area is agent-native identity and permissions. Currently, many agents operate with the same permissions as the human user, a default that is unsustainable. The future will likely involve more granular control over agent identities and capabilities, potentially through distinct personas for different applications and contexts. This will require careful consideration of usability and the potential for privilege escalation.</p>
+<h3>AI Insurance and Compliance</h3>
+<p>The burgeoning field of AI insurance, exemplified by companies like AIC, represents another parallel to traditional cybersecurity. Assessing AI deployment risk, prescribing mitigations, and providing insurance coverage are becoming essential. Grace Swan's tools can play a vital role in this ecosystem by providing the rigorous assessment and mitigation strategies that insurers require.</p>
+<h2>The Inevitable Gray Swan Event</h2>
+<p>The name &quot;Gray Swan&quot; itself reflects the company's philosophy: anticipating unlikely but foreseeable events. The major AI security breaches that are bound to happen are not entirely unpredictable. While the exact timing and nature may be uncertain, the potential for significant damage from AI vulnerabilities is clear. Grace Swan's mission is to help organizations get ahead of these events, providing the tools and expertise to build more secure AI systems.</p>
+<p>As AI continues to evolve, the focus on security must evolve in tandem. By fostering a community of researchers and developers, and by building robust tools, Grace Swan is working towards a future where AI can be deployed safely and securely, unlocking its full potential for innovation.</p>
 ]]></content:encoded>
       
     </item>
@@ -4106,55 +4171,6 @@
 <li><strong>Regulation Debate:</strong> Anthropic advocates for a balanced approach to AI regulation, including pre-release testing and auditing, while cautioning against extreme positions.</li>
 <li><strong>Responsibility and Trust:</strong> The company emphasizes its responsibility to anticipate and address the risks of AI, aiming to earn trust through its actions rather than just words.</li>
 <li><strong>Hope for the Best, Plan for the Worst:</strong> Anthropic's leadership hopes for a utopian AI future but actively plans for and mitigates potential catastrophic outcomes.</li>
-</ul>
-]]></content:encoded>
-      
-    </item>
-    <item>
-      <title>CNBC International - 143 Investors Said No. Now WHOOP Is Worth $10 Billion</title>
-      <link>https://myfeed.theindie.app/articles/20260618-140738-www.youtube.com-watch-v-GHyH31hzeOA-pp-ugUEEgJlbg%3D%3D.html</link>
-      <guid>https://myfeed.theindie.app/articles/20260618-140738-www.youtube.com-watch-v-GHyH31hzeOA-pp-ugUEEgJlbg%3D%3D.html</guid>
-      <pubDate>Thu, 18 Jun 2026 07:08:12 GMT</pubDate>
-      <description><![CDATA[At just 22 years old, with no prior entrepreneurial experience or full-time job, Will Ahmed embarked on a journey to build a company at the complex intersection of hardware, software, data science, an...]]></description>
-      <content:encoded><![CDATA[<p><strong>🎥 Watch on YouTube:</strong> <a href="https://www.youtube.com/watch?v=GHyH31hzeOA&amp;pp=ugUEEgJlbg%3D%3D">143 Investors Said No. Now WHOOP Is Worth $10 Billion</a></p>
-<hr>
-<h1>From Skepticism to $10.1 Billion: The WHOOP Story</h1>
-<p>At just 22 years old, with no prior entrepreneurial experience or full-time job, Will Ahmed embarked on a journey to build a company at the complex intersection of hardware, software, data science, and medicine. Facing widespread skepticism and hundreds of rejections from investors, Ahmed's perseverance laid the foundation for what would become WHOOP, a company now valued at $10.1 billion and trusted by elite athletes worldwide.</p>
-<h2>The Genesis of an Obsession</h2>
-<p>Ahmed's fascination with sports and technology began in his childhood on Long Island. This passion led him to captain the men's varsity squash team at Harvard. However, his athletic pursuits revealed a personal struggle: overtraining. He would experience periods of peak fitness followed by sudden, unexplained exhaustion, a phenomenon he found deeply frustrating and personally betraying.</p>
-<p>This personal challenge sparked a broader inquiry. Ahmed realized that while we possess extensive data about our environment and technology, our own bodies remain largely a mystery. &quot;Why do we know so much information about the weather tomorrow or our computer or our car? But maybe the most important engine in the world, our body, we don't know anything about,&quot; he questioned. This led him to a simple yet profound question: &quot;How do you measure the human body?&quot;</p>
-<p>His research involved delving into hundreds of medical papers, culminating in his own paper titled &quot;The Feedback Tool: Measuring Intensity Recovery and Sleep.&quot; This academic exploration solidified his resolve. In the fall of his senior year at Harvard, Ahmed made the daunting decision to forgo traditional career paths in finance or consulting, opting instead to start his own company. This commitment, he admits, was one of the scariest decisions of his life, marked by an overwhelming sense of the unknown and a lack of a clear playbook.</p>
-<h2>Building the Unmeasurable</h2>
-<p>Ahmed's vision for WHOOP was not to create another step counter. He aimed to develop a wearable device that could continuously track internal bodily metrics, including sleep, strain, and recovery. &quot;WHOOP is a wearable device that continuously measures everything about your body and sends all of that data to your phone and to the cloud where we give you all sorts of insights to make you healthier,&quot; he explained.</p>
-<p>However, in 2012, the wearable technology market was nascent, with only about five million devices sold annually. Existing products offered superficial data, failing to capture the physiological nuances of the human body. Ahmed sought to bridge this gap, combining the accessibility of a consumer wearable with the sophisticated physiological data typically found in clinical or elite performance settings.</p>
-<p>The path was fraught with obstacles. Hundreds of investors dismissed his idea, leading Ahmed to adopt a daily mantra of resilience: &quot;Every day I just try to pick myself up and put one foot in front of the other and keep building.&quot; The skepticism wasn't limited to investors; the market was also becoming crowded with tech giants like Nike, and soon Apple, entering the wearable space. A prevailing narrative suggested that WHOOP should focus solely on software and algorithms, leveraging existing hardware. However, Ahmed recognized that no existing wearable could accurately measure the body's internal state.</p>
-<p>Developing a product that met his exacting standards was a multi-year endeavor. &quot;It took many years to build a product that I wasn't embarrassed by,&quot; he stated. The entrepreneurial challenge lay in balancing the pursuit of perfection with the practicalities of product development.</p>
-<h2>The Elite Athlete Gambit</h2>
-<p>Once a viable product was developed, Ahmed made another strategic, counterintuitive decision: to target elite athletes rather than the mass consumer market. He believed professional athletes, whose careers depended on optimal recovery, would be the ideal early adopters. &quot;We started with professional athletes because we felt professional athletes, first of all, needed to understand sleep and recovery and strain. They were getting paid millions of dollars ultimately, based on how they recovered, but they couldn't measure recovery. So, it seemed obvious that that would be a good market.&quot;</p>
-<p>Crucially, he also saw the potential for these high-profile users to build WHOOP's brand around performance and make health monitoring aspirational. &quot;Professional athletes, if we could get them to really love WHOOP, would help us create a brand around performance, and make health monitoring aspirational, and make health monitoring, dare I say, cool.&quot; This strategy proved effective, with athletes like LeBron James and Michael Phelps becoming early adopters, and WHOOP's adoption spreading organically through locker rooms via word-of-mouth.</p>
-<h2>The Brink of Bankruptcy and Personal Crisis</h2>
-<p>Despite the growing brand recognition and technological prowess, the business itself was teetering on the edge. By 2017-2018, WHOOP had a strong brand and powerful technology, but had not yet established a sustainable business model. &quot;We hadn't yet figured out how to make a real business out of it. We didn't have mass adoption yet. So, our sales numbers still weren't where they needed to be.&quot; Investors grew concerned, questioning the path to profitability.</p>
-<p>This period of intense pressure nearly broke Ahmed. At 24, with tens of millions of dollars raised and a team of 30-40 employees, he felt overwhelmed. &quot;I felt totally strung out in building this business. I really was very stressed. I didn't fully understand how to deal with those emotions. I was drinking too much coffee. I was drinking too much alcohol.&quot; He described himself as still a kid thrust into the CEO role without the necessary coping mechanisms.</p>
-<p>The stress culminated in a panic attack that led to his hospitalization. This critical moment forced a profound realization: WHOOP's failure could stem not from a flawed idea, but from the founder's inability to evolve at the pace of the business. &quot;I also realized in that moment that WHOOP could ultimately fail in large part because of me. Like if I didn't keep growing and evolving with the pace of this business, it was going to be my fault the business failed, not the idea or the technology or anything else.&quot;</p>
-<p>Following this crisis, Ahmed committed to personal growth, incorporating meditation and stress management techniques into his routine, and consciously working to become the leader WHOOP needed.</p>
-<h2>The Subscription Pivot and Sustained Growth</h2>
-<p>However, personal transformation alone wasn't enough. WHOOP needed a viable business model. By 2017, the company was facing financial ruin, &quot;a week away from declaring bankruptcy before we got a deal done.&quot;</p>
-<p>In a pivotal move in May 2018, Ahmed fundamentally altered WHOOP's business model by eliminating the one-time hardware purchase. The WHOOP strap became free, bundled with a monthly membership. This shift recognized that health monitoring is an ongoing journey, not a singular event. &quot;We realized that health monitoring was a continuous journey in people's lives, it wasn't a one-time thing. And we needed to invest in new software features and capabilities on a relentless basis, and that felt to us much more like actually a subscription or a membership than a one-time hardware sale.&quot; This membership model aligned WHOOP with its members' continuous needs, fostering a deep focus on delivering value week after week, month after month.</p>
-<h2>Expanding Horizons: Wellness and Medical Insights</h2>
-<p>Today, Ahmed envisions WHOOP as more than just a fitness tracker, seeing a blurring of lines between performance and health. &quot;The worlds of performance and health are really blurring. Delivering this data around sleep and recovery and exercise, health alerts, even medical capabilities is something that every human needs. Great health is performance, and high-performing people want to be healthy.&quot;</p>
-<p>In May 2025, WHOOP launched WHOOP 5.0 and WHOOP MG, introducing features like &quot;WHOOP Age&quot; (a measure of physiological age based on behaviors and physiology) and &quot;Heart Screener with ECG and Blood Pressure Insights.&quot; The &quot;WHOOP Age&quot; feature quickly became the most screenshotted and popular in the app, indicating a strong user desire for health control and a sense of rejuvenation.</p>
-<p>However, the introduction of features like Blood Pressure Insights also highlighted the evolving regulatory landscape. Two months after their launch, the FDA issued a warning letter, suggesting that the Blood Pressure Insights feature might require medical device clearance. WHOOP maintains its stance that these are wellness tools, underscoring the increasing complexity of navigating the space between wellness and medicine.</p>
-<p>Currently, WHOOP boasts approximately 2.7 million members across over 200 countries. Sales commitments more than doubled in 2025, signaling robust growth. The company's latest fundraising round in March 2026 secured $575 million from a diverse group of investors, including sovereign wealth funds from the Gulf (Abu Dhabi's 2PointZero Mubadala and Qatar's QIA), U.S. health institutions like Mayo Clinic and Abbott, and prominent athletes. This funding is earmarked for accelerating research and development, technological advancements, and global expansion.</p>
-<h2>The Entrepreneurial Imperative</h2>
-<p>For Will Ahmed, the focus has shifted from survival to scaling. He emphasizes that starting a company should not be driven by glamour, but by an unyielding obsession with solving a problem. &quot;You shouldn't start a company because you think it's glamorous. But if you see a problem in the world that you're obsessed with, and you can't stop thinking about... then you should go for it.&quot; He believes that a mission worth fighting for empowers entrepreneurs to persevere through the most challenging periods and emerge stronger on the other side.</p>
-<h2>Key Takeaways</h2>
-<ul>
-<li><strong>Resilience is paramount:</strong> Will Ahmed faced hundreds of investor rejections and a near-bankruptcy situation, underscoring the importance of perseverance in entrepreneurship.</li>
-<li><strong>Identify a deep problem:</strong> Ahmed's obsession with understanding the human body, stemming from personal overtraining, provided the foundational motivation for WHOOP.</li>
-<li><strong>Strategic market entry:</strong> Targeting elite athletes first helped build brand credibility and aspirational value for WHOOP.</li>
-<li><strong>Adaptable business models:</strong> The pivot to a subscription-based model was crucial for WHOOP's long-term viability and alignment with customer needs.</li>
-<li><strong>Founder growth is essential:</strong> Personal well-being and continuous self-improvement are critical for founders to lead growing companies.</li>
-<li><strong>The evolving health tech landscape:</strong> WHOOP's journey highlights the increasing convergence of wellness and medical technology, and the associated regulatory considerations.</li>
 </ul>
 ]]></content:encoded>
       

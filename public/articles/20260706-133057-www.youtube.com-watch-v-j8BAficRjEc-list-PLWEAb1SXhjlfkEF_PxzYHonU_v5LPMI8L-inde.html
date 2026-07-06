@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="The rapid advancement of AI, particularly large language models (LLMs) and AI agents, has brought about unprecedented capabilities but also introduced novel security challenges. Grace Swan, a company...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=j8BAficRjEc&amp;list=PLWEAb1SXhjlfkEF_PxzYHonU_v5LPMI8L&amp;index=2" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - AI Security After Codex and Claude Code — Zico Kolter &amp; Matt Fredrikson, Gray Swan</h1>
+      <time datetime="2026-06-22T20:45:21.000Z">
+        Tuesday, June 23, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Evolving Landscape of AI Security: Red Teaming, Guardrails, and the Future of AI Safety</h1>
+<p>The rapid advancement of AI, particularly large language models (LLMs) and AI agents, has brought about unprecedented capabilities but also introduced novel security challenges. Grace Swan, a company at the forefront of AI security, is dedicated to empowering everyone to use AI safely and securely. Their mission is to address the inherent vulnerabilities in AI systems, moving beyond traditional cybersecurity concerns to tackle the unique risks posed by AI itself.</p>
+<h2>Why AI Security is Fundamentally Different</h2>
+<p>AI systems behave fundamentally differently from traditional software. While AI can be used to enhance cybersecurity, AI systems themselves possess inherent vulnerabilities that can be exploited. These vulnerabilities are not just theoretical; they can lead to correlated failures across widely used models, creating new classes of exploits. This necessitates a distinct mindset for AI security, one that acknowledges AI's unique characteristics and potential for unexpected behavior.</p>
+<p>Grace Swan's work stems from years of research at Carnegie Mellon University, focusing on the new attack surfaces and vulnerabilities in deep learning systems. They aim to understand the scope of these issues, test for them rigorously, and develop robust inference methods and safeguards to prevent negative outcomes.</p>
+<h2>Testing the Frontiers: Claude, Codex, and Prompt Injection</h2>
+<p>When a new AI model emerges, like Anthropic's Claude, Grace Swan employs a range of testing methodologies. A primary concern is the model's robustness against indirect prompt injection, especially for agents that fetch untrusted content from the web. The goal is to ensure these agents remain true to their original objectives and are not hijacked by malicious inputs.</p>
+<p>Beyond prompt injection, Grace Swan assists frontier AI labs in testing specific safeguards against activities like cyber misuse. They provide adversarial safety and security evaluations to help developers assess progress and identify areas for improvement between model iterations.</p>
+<h2>Gray Swan Arena and Automated Red Teaming</h2>
+<p>Grace Swan operates two key offerings in the AI security space:</p>
+<ol>
+<li>
+<p><strong>The Gray Swan Arena:</strong> This platform fosters a community of red teamers through prize challenges. These challenges are often designed around the specific needs of AI labs, incentivizing participants to find ways to circumvent model safety and security objectives. The Arena boasts a large community, providing valuable data and insights to model developers.</p>
+</li>
+<li>
+<p><strong>Automated Red Teaming:</strong> Grace Swan trains a suite of models, including a system named &quot;Shade,&quot; to perform rigorous automated red teaming. These models are designed to identify vulnerabilities in both base LLMs and agents built on top of them. Notably, these automated systems are increasingly outperforming human red teamers in finding ways to break models, a significant development in the field.</p>
+</li>
+</ol>
+<h2>AI That Breaks Models Better Than Humans</h2>
+<p>The nature of red teaming involves finding out-of-distribution behaviors that bypass a model's normal operations. While human red teamers have historically been crucial, automated systems like Shade are now demonstrating superior capabilities. In recent competitions, Shade has proven more effective at breaking models than human participants, highlighting a shift in the red teaming landscape. This advancement is attributed to specialized training for red teaming tasks, as simply scaling up models does not inherently improve their safety or their ability to be red teamed.</p>
+<h2>LLMs as Alien Intelligence</h2>
+<p>The adversarial nature of red teaming and prompt injection often reveals the alien nature of LLM intelligence. While these models are undoubtedly intelligent, their intelligence differs significantly from human cognition. Adversarial attacks expose this difference by highlighting scenarios that fool AIs but not humans, and vice versa. This allows for a unique, experimentally controllable way to probe and understand these systems, akin to controlled experiments in neuroscience, even if fundamental understanding remains elusive.</p>
+<h2>Humans vs. AI Agents in Security</h2>
+<p>A recent challenge, the &quot;Human Browser Agent Robustness Challenge,&quot; pitted human participants against AI browser agents in a test of their susceptibility to deception. Red teamers could choose to either fish humans or prompt inject browser agents. The results were surprising: while humans also fell prey to deception, some AI models proved remarkably robust, while others were easily prompt injected. This underscores that AI and humans fall for different types of vulnerabilities, and the goal is to achieve a security posture that is better than human operators, not necessarily identical.</p>
+<p>The challenge also highlighted the issue of &quot;eval awareness,&quot; where models aware they are being tested might behave differently, either by refusing tasks or by sandbagging their performance. The ideal scenario is to evaluate models in a way that reflects their real-world behavior.</p>
+<h2>Red Teaming, Jailbreaks, and Capability Elicitation</h2>
+<p>Red teaming is not just about finding vulnerabilities; it's also a powerful tool for capability elicitation. When a model refuses a task it is capable of performing, crafting prompts to overcome this refusal becomes an adversarial red teaming problem. This process helps ensure models are not effectively refusing tasks they are designed to handle.</p>
+<h2>Cygnal: Guardrails for AI Agents</h2>
+<p>Complementing their red teaming efforts, Grace Swan offers &quot;Cygnal,&quot; a specialized filter model that acts as a guardrail for AI agents. Cygnal sits between the user, the LLM, and any tool calls, monitoring for policy violations. Unlike base models that don't inherently improve in robustness with scale, Cygnal is custom-trained to be robust against adversarial attacks and policy violations.</p>
+<p>The effectiveness of Cygnal stems from Grace Swan's ability to train it using their red teaming capabilities, specifically targeting policy violations that organizations want to enforce. This is crucial because, as research shows, model capability does not always correlate with attack success rates. A dedicated security layer is essential for enterprises.</p>
+<h3>When to Adopt AI Security Solutions</h3>
+<p>Enterprises often turn to solutions like Cygnal after experiencing incidents. The most severe issues typically arise when AI agents are integrated with tools that allow for computer use, such as controlling a browser or executing code. Indirect prompt injection is a common vector, but sometimes agents can cause significant damage, like erasing databases, due to unexpected behavior.</p>
+<p>While prompt engineering and system prompts can offer some protection, they are often insufficient against sophisticated adversarial attacks. Enterprises with unique policies and specific constraints—such as preventing certain agents from accessing particular databases—find dedicated models like Cygnal to be extremely effective.</p>
+<h2>The Lethal Trifecta of AI Risk</h2>
+<p>The &quot;lethal trifecta&quot; describes the core components that create significant risk in AI systems:</p>
+<ol>
+<li><strong>Ingesting Untrusted Data:</strong> The ability to parse external data from untrusted sources is a prerequisite for many AI applications.</li>
+<li><strong>Access to Private Information:</strong> The agent must have access to sensitive internal data.</li>
+<li><strong>Ability to Exfiltrate Data:</strong> The agent must be able to send this private information elsewhere.</li>
+</ol>
+<p>These three elements, when combined, create a potent risk profile. Grace Swan's approach is not to achieve provable mitigation (akin to zero-bug software), but to significantly improve the Pareto frontier of usability versus security. By integrating solutions like Cygnal, AI agents can achieve a much better balance, allowing for productive use while minimizing security risks.</p>
+<h2>The Future of AI Security</h2>
+<p>The future of AI security lies in continued research, automation, and the development of specialized tools. Grace Swan is focused on scaling their enterprise deployments, bringing the security capabilities developed for frontier labs to a broader audience.</p>
+<h3>Automating AI Research</h3>
+<p>A significant area of future development is the automation of AI research itself. By leveraging AI agents, researchers can accelerate the process of understanding AI models, identifying vulnerabilities, and developing more robust systems. This includes advances in interpretability, allowing for a deeper understanding of model behavior and the circuits that drive it.</p>
+<h3>OpenClaw and the Computer-Use Security Problem</h3>
+<p>Tools like Microsoft's OpenClaw, which enable agents to interact with the computer, present a significant attack surface. Grace Swan has developed numerous countermeasures for OpenClaw, recognizing that while these tools are powerful, they require robust security measures. The challenge lies in balancing the usability and power of these agents with the need for security, a trade-off Grace Swan aims to optimize with solutions like Cygnal.</p>
+<h3>Agent Identity, Permissions, and Enterprise AI</h3>
+<p>A critical emerging area is agent-native identity and permissions. Currently, many agents operate with the same permissions as the human user, a default that is unsustainable. The future will likely involve more granular control over agent identities and capabilities, potentially through distinct personas for different applications and contexts. This will require careful consideration of usability and the potential for privilege escalation.</p>
+<h3>AI Insurance and Compliance</h3>
+<p>The burgeoning field of AI insurance, exemplified by companies like AIC, represents another parallel to traditional cybersecurity. Assessing AI deployment risk, prescribing mitigations, and providing insurance coverage are becoming essential. Grace Swan's tools can play a vital role in this ecosystem by providing the rigorous assessment and mitigation strategies that insurers require.</p>
+<h2>The Inevitable Gray Swan Event</h2>
+<p>The name &quot;Gray Swan&quot; itself reflects the company's philosophy: anticipating unlikely but foreseeable events. The major AI security breaches that are bound to happen are not entirely unpredictable. While the exact timing and nature may be uncertain, the potential for significant damage from AI vulnerabilities is clear. Grace Swan's mission is to help organizations get ahead of these events, providing the tools and expertise to build more secure AI systems.</p>
+<p>As AI continues to evolve, the focus on security must evolve in tandem. By fostering a community of researchers and developers, and by building robust tools, Grace Swan is working towards a future where AI can be deployed safely and securely, unlocking its full potential for innovation.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
