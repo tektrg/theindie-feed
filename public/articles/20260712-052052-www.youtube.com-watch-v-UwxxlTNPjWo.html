@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - The 100,000 Sandbox Problem — Akshat Bubna, Modal CTO - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Modal, a cloud platform designed from the ground up for AI applications, is rapidly evolving. Initially focused on providing a superior runtime for general-purpose workloads, the company has strategic...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=UwxxlTNPjWo" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - The 100,000 Sandbox Problem — Akshat Bubna, Modal CTO</h1>
+      <time datetime="2026-07-08T22:42:38.000Z">
+        Thursday, July 9, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Modal: Building the Future of AI Infrastructure</h1>
+<p>Modal, a cloud platform designed from the ground up for AI applications, is rapidly evolving. Initially focused on providing a superior runtime for general-purpose workloads, the company has strategically shifted its focus to cater to the burgeoning needs of AI development and deployment. This evolution, driven by close collaboration with cutting-edge startups and a deep understanding of emerging trends, has positioned Modal as a key player in the AI infrastructure landscape.</p>
+<h2>Modal's Origin Story: Beyond Kubernetes</h2>
+<p>Modal's journey began with a desire to address the inherent complexities and limitations of existing workflow orchestration tools, particularly those built on Kubernetes. The CEO, Eric, recognized that Kubernetes, while powerful, was often cumbersome to manage, ill-suited for bursty workloads and custom container images, and suffered from a poor developer experience.</p>
+<p>&quot;It's because you have to run them on Kubernetes. Kubernetes is hard to manage. It's not built for burstiness and um custom images and has a terrible developer experience,&quot; Ashhat, CTO of Modal, explained.</p>
+<p>The initial vision was to build a better runtime, a primitive that could solve problems for data pipelines, ETL, job queues, and general bursty processing. However, the team soon realized the potential for this primitive to underpin a broader collection of products. The addition of GPUs a year before ChatGPT's explosion was a prescient move, though the team initially underestimated its impact.</p>
+<p>A core tenet of Modal's early development was a commitment to a superior developer experience, encapsulated by the concept of &quot;self-provisioning infrastructure.&quot; This meant moving away from extensive YAML configurations towards a more code-centric approach, where infrastructure requirements could be defined using decorators directly within the code. This philosophy, which Ashhat described as &quot;everything can just be in decorators next colloccated with the code,&quot; aimed to condense the surface area of configuration and enable more dynamic and expressive code.</p>
+<h2>From Developer Experience to Agent Experience</h2>
+<p>The rapid advancements in AI, particularly the rise of agents, have prompted Modal to further refine its focus. The company has shifted its SDK team's perspective from &quot;developer experience&quot; (DX) to &quot;agent experience&quot; (AX).</p>
+<p>&quot;We've actually changed our SDK team to think about agent experience instead of uh developer experience,&quot; Ashhat stated. &quot;And and we think that the same benefits that apply for DX also actually apply for AX.&quot;</p>
+<p>This shift recognizes that agents, like developers, benefit from simplified infrastructure management. The idea is to empower agents to make changes through simple decorators, enabling a self-provisioning runtime where changes are visible in real-time, rather than requiring them to parse complex configuration files.</p>
+<p>However, the team acknowledges that while agents might not be scrutinizing code in the same way developers do, observability remains paramount. &quot;One thing we actually still see is is really important is observability. How good is your dashboard?&quot; Ashhat noted. This human element of interpreting observable actions and making judgment calls is seen as increasingly critical.</p>
+<h2>Modal's AI Cloud Primitives</h2>
+<p>Modal positions itself as a cloud platform built with primitives specifically for AI applications. While not aiming to compete with general-purpose cloud providers for traditional web server workloads, Modal excels in areas requiring specialized compute, accelerators, and significant scaling up and down.</p>
+<p>&quot;We're not trying to compete with the renders uh of of the world. Uh because yeah, we think the differentiator for us is the um our other workloads that need specialized compute, need to scale up and down a lot,&quot; Ashhat explained.</p>
+<p>The company's approach of building alongside startups has fostered innovation. Modal engineers often embed themselves within customer organizations, enabling rapid iteration and problem-solving. This close collaboration has been instrumental in shaping Modal's product roadmap, allowing them to anticipate and address emerging needs.</p>
+<h2>Sandboxes, Agent Loops, and Proto-Cognition</h2>
+<p>A significant development for Modal was the introduction of sandboxes in May 2023, predating the widespread recognition of their importance. The first example showcased was using Modal's sandboxes to create an agent loop, allowing an agent to iterate on itself. This was a precursor to what would later be termed &quot;proto-cognition.&quot;</p>
+<p>&quot;The first example we published was uh we took small developer and put in a loop uh so the agent can iterate on itself,&quot; Ashhat recalled.</p>
+<p>This early work highlighted the challenges of training models for self-correction and tool-calling, as models would often diverge after several iterations. However, it laid the groundwork for Modal's understanding of agentic workflows.</p>
+<h2>Elastic Inference, GPU Snapshotting, and Scalability</h2>
+<p>Modal's primary use case today is elastic inference, with a strong initial product-market fit in serving custom models for companies in audio, video, robotics, and computational biology. These companies often deploy numerous models across different regions, leading to complex autoscaling challenges.</p>
+<p>&quot;The autoscaling problem becomes even harder because then you have to scale within a certain region and those cycles sort of are offset so different times you need to scale up in different regions,&quot; Ashhat elaborated.</p>
+<p>To address this, Modal has incorporated GPU snapshotting, allowing the GPU state to be captured and reloaded, significantly reducing cold start times. This capability is crucial for inference workloads that require burstiness and on-demand training, such as reinforcement learning (RL) rollouts, which can necessitate tens of thousands of sandboxes.</p>
+<h2>DeFlash, Speculative Decoding, and Auto Endpoints</h2>
+<p>Modal has been deepening its involvement in Large Language Model (LLM) inference, recognizing that its autoscaling advantages are not universally available. A key innovation in this area is DeFlash, an open-sourced block-based speculative decoding system.</p>
+<p>&quot;Speculative decoding is you have a smaller model uh called a draft model predict tokens ahead of the bigger model and then you have the bigger model uh verify all of this,&quot; Ashhat explained. This technique can yield significant speedups by batching verification and increasing the &quot;accept length&quot; of predicted tokens.</p>
+<p>To make frontier-level model performance accessible to everyone, Modal launched Auto Endpoints. These endpoints provide optimized inference with features like DeFlash baked in, offering a seamless experience for users who may not want to manage the underlying code. Users can start with a pre-configured endpoint and then &quot;eject&quot; into the full Modal experience for greater customization.</p>
+<p>&quot;Our vision for this is why we launched auto endpoints is we want to make frontier level performance available to everyone,&quot; Ashhat stated.</p>
+<h2>Production-Grade Inference and the Agent Lifecycle</h2>
+<p>Modal is not just about raw GPU compute; it's about providing production-grade inference capabilities. This includes managing tail latency, ensuring reliable request delivery, and offering true scaling to zero.</p>
+<p>The company is focused on the entire model lifecycle, from data preparation and training to inference, and also on the agent lifecycle, supporting background agents that require persistent storage and other services. The success of Ramp Inspect, a background agent built on Modal, highlights the platform's ability to handle reactive and complex agentic tasks.</p>
+<h2>Modal's 17-Cloud Supercloud Strategy</h2>
+<p>Modal operates a unique &quot;supercloud&quot; strategy, leveraging capacity across 17 cloud providers. This capital-light approach, focusing on the software layer, allows for rapid innovation and flexibility.</p>
+<p>&quot;We don't have our own data centers. We we just run across a lot of NeoClouds and providers,&quot; Ashhat confirmed.</p>
+<p>This distributed infrastructure enables Modal to offer specialized compute and networking capabilities, including precise data locality and low-latency options, which are crucial for many AI workloads.</p>
+<h2>Networked Sandboxes, Private IPv6, and RDMA</h2>
+<p>Modal's networking capabilities are expanding to meet the demands of sophisticated AI applications. Their sandboxes now support multi-container pods, enabling more complex application architectures. For outbound networking control, Modal has developed features for managing egress traffic and injecting credentials.</p>
+<p>Emerging use cases include sandboxes spanning multiple nodes, facilitated by an overlay network using private IPv6 addresses (i6PN). This was initially developed for Modal's distributed training product, which utilizes RDMA networking for high-speed inter-node communication.</p>
+<p>&quot;We have support for that for a different reason and yeah we'll see if that becomes safe like just a open socket it's a this is directly like NTLS we do support that,&quot; Ashhat noted regarding the overlay network.</p>
+<h2>Multi-Node Training and Auto Research</h2>
+<p>Modal's multi-node training capabilities are designed for smaller-scale post-training and fine-tuning of models, enabling higher inference quality. This is particularly useful for researchers exploring different branches of model development.</p>
+<p>The platform also supports &quot;auto research,&quot; a concept that involves AI-driven hyperparameter sweeps guided by model intuition. Modal's internal teams use this harness to automate their own FTE efforts, optimizing configurations and even experimenting with different GPU types.</p>
+<p>&quot;It's pretty much tweaking parameters, but it's it's basically a hyperparameter sweep that's guided by some sort of model intuition. So it's like much more efficient than um whatever other sweeper you would have,&quot; Ashhat explained.</p>
+<h2>Compute Strategy, Capacity Planning, and Batch Tiers</h2>
+<p>The rapid growth of AI workloads has necessitated a sophisticated approach to capacity planning. Modal employs a dedicated &quot;compute strategy&quot; team to manage its diverse and fungible capacity across various GPU types and regions.</p>
+<p>&quot;There's a lot of interesting financial questions of like uh like what is the blend between one year and three year reservations? How do we forecast our own capacity?&quot; Ashhat described.</p>
+<p>This expertise allows Modal to offer differentiated pricing, including a batch tier for customers who do not require low latency, providing results within a 24-hour window at a significantly reduced cost.</p>
+<h2>Open Models, Real-Time AI, and Production Agent Infra</h2>
+<p>Modal is building primitives to simplify the deployment and management of open-source models for inference. This includes everything from training gyms to high-performance endpoints.</p>
+<p>Beyond LLMs, Modal is seeing significant traction in real-time audio and video processing, necessitating features like regional routing with fallbacks for low-latency user experiences. For agents, the focus is on providing the necessary infrastructure beyond basic sandboxes and file systems, enabling the development of production-ready agents.</p>
+<h2>Specialized Sandboxes and Managed Agents</h2>
+<p>While Modal provides robust sandboxes, the company emphasizes the need for &quot;hard guardrails&quot; for certain agentic operations, especially at the sandbox level, to prevent unintended consequences.</p>
+<p>Modal is excited to partner with foundation labs and other harness providers, but stresses that when building production-grade agents, companies often require more control over compute primitives, file processing, snapshotting, networking, and potentially GPUs. This is where Modal aims to provide specialized sandbox solutions.</p>
+<p>&quot;We don't really have an opinion on the harness whether it runs in it's a cloud manage agent and you hook it up to modal sandbox you run the harness in modal sandbox,&quot; Ashhat clarified.</p>
+<h2>Why AI Made Infrastructure Exciting Again</h2>
+<p>For infrastructure professionals, the current era driven by AI is exceptionally exciting. The immense scale and complexity of AI workloads have revitalized a field that had become somewhat stagnant.</p>
+<p>&quot;It was boring actually for for a while and you couldn't really get people excited about data infrastructure,&quot; Ashhat remarked. &quot;And like now everyone gives a crap. That's true. It is a very exciting time and I think a lot of that's driven by just uh the amount of scale all of this stuff needs.&quot;</p>
+<p>Modal sees potential in diverse fields beyond LLMs, including drug discovery, computational biology, and robotics, where its primitives can be applied to solve complex problems.</p>
+<h2>Model APIs, Differentiated Products, and Agentic Video</h2>
+<p>Modal's approach to model deployment differs from simply providing API tokens. Instead, they offer starter code, enabling companies to build fully functioning backends and differentiate their products.</p>
+<p>&quot;The point is that this is an example starter code. But you can you can tweak it however you want,&quot; Ashhat explained.</p>
+<p>This philosophy extends to areas like agentic video production, where companies are using Modal's GPU sandboxes to build agents that can manipulate video or integrate with tools like Adobe.</p>
+<h2>CI, Coding-Agent Infra, SDKs, and Modal Bench</h2>
+<p>Modal is bullish on the CI/CD market, recognizing that the rise of coding agents will drive increased demand for more efficient CI processes. They are exploring how primitives like memory snapshotting and restoring can optimize CI by reducing wasted time on artifact preparation and dependency management.</p>
+<p>The company offers SDKs in Python, Go, and TypeScript, with Python and TypeScript remaining dominant for ML and agent development, respectively. Modal Bench, a benchmark developed by the company, helps identify areas where agents struggle, allowing Modal to add relevant features and improve its platform.</p>
+<h2>The Future of Modal: Primitives for a New Era</h2>
+<p>Modal's core mission remains building primitives that simplify the lives of its users. This includes enabling companies to post-train and deploy open-source models, providing high-performance inference endpoints, and supporting real-time AI applications with features like regional routing.</p>
+<p>For agents, the focus is on providing the necessary infrastructure for production deployments, moving beyond basic sandboxes and file systems to address evolving customer needs. The company believes that by focusing on the infrastructure layer and offering robust, flexible primitives, they can empower the next generation of AI-powered companies and applications.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
