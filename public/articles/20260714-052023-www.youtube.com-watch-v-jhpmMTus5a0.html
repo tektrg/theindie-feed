@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latent Space - The AI Memory Problem: Why Long Context Isn’t Enough — Dan Biderman, Engram Co-founder &amp; CEO - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Dan Bman, co-founder and CEO of Engram, recently joined the Laton Space Cooking Show, not just to discuss his company&#039;s $98 million seed round, but also to share his unique journey from Israeli naval...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=jhpmMTus5a0" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Latent Space - The AI Memory Problem: Why Long Context Isn’t Enough — Dan Biderman, Engram Co-founder &amp; CEO</h1>
+      <time datetime="2026-07-13T22:20:52.974Z">
+        Tuesday, July 14, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>Engram's Dan Bman on Building Continual Learning AI and the Future of Enterprise Knowledge</h1>
+<p>Dan Bman, co-founder and CEO of Engram, recently joined the Laton Space Cooking Show, not just to discuss his company's $98 million seed round, but also to share his unique journey from Israeli naval special operations to leading a cutting-edge AI research firm. The conversation, peppered with the practicalities of cooking beef meatballs, delved into Engram's core mission: revolutionizing how AI interacts with vast amounts of enterprise data through continual learning and efficient knowledge representation.</p>
+<h2>From Special Operations to Computational Neuroscience</h2>
+<p>Bman's path to AI leadership is unconventional. After serving in naval special operations, an experience he describes as &quot;very entrepreneurial&quot; and focused on &quot;finding and identifying crazy things we could do,&quot; he pursued cognitive neuroscience in Israel. This led him to New York for a PhD in computational neuroscience, a field that had long been interested in neural networks before their recent surge in popularity.</p>
+<p>His academic work focused on &quot;data efficiency&quot; – achieving more with less data. This principle, he explains, was a constant theme throughout his papers, always plotting cost against accuracy. This efficiency-driven mindset carried over to his time at Mosaic, where he worked on LoRA, and later at Stanford with co-founders Chris Ray and Scott Linderman. It was here, alongside co-founders Sabri, Jack, and Jesse, that the seeds for Engram were sown.</p>
+<p>The Israeli military culture, Bman notes, plays a role in fostering a certain maturity and social skill set early on. &quot;You're not just in a student mode... you interact with grown-ups and you have resources and you argue your budgets.&quot; He also highlights the Israeli culture's emphasis on giving individuals &quot;multiple shots at goal,&quot; allowing for redirection and growth throughout one's career.</p>
+<h2>The Problem of Context Rot and Knowledge Compaction</h2>
+<p>Engram's core focus is on addressing the limitations of current AI models when dealing with massive datasets, a problem Bman refers to as &quot;context rot.&quot; As the volume of data, particularly within enterprises, grows exponentially – potentially reaching trillions of tokens – the ability of models to effectively process and recall information becomes increasingly challenging.</p>
+<p>&quot;The current problem in... we want the best of both worlds,&quot; Bman explains. &quot;Every knowledge worker if they can't write notes and they cannot document the events of the day they would be at a disadvantage. But if you wipe their brain every evening, they would also be at a severe disadvantage.&quot; He likens current LLMs to a chef entering the kitchen for the first time, reading a textbook, and measuring everything meticulously, but lacking the intuitive understanding of an experienced chef.</p>
+<p>Engram's approach involves creating &quot;knowledge cartridges&quot; – compact, compressed representations of vast corpora. These cartridges are trained using gradient descent, much like pre-training a model, allowing them to encapsulate knowledge in a way that is potentially a thousand times more compressed than raw text. This enables models to operate with significantly fewer tokens, leading to greater accuracy and reduced confusion.</p>
+<p>&quot;The idea is that in many cases it makes sense to go beyond textual representations,&quot; Bman states. While acknowledging the value of notes and cookbooks, he emphasizes that true expertise lies in the internalized intuition and learning that goes beyond mere recitation.</p>
+<h2>Beyond RAG: Neural Memory and Test-Time Training</h2>
+<p>While Retrieval Augmented Generation (RAG) is a valuable tool, Bman sees it as only part of the solution. He poses the question: &quot;Can you come up with an example where only in-weight training would work where in-context learning will fail?&quot; He believes that continual learning and memory are essentially &quot;questions of long context in disguise.&quot;</p>
+<p>Engram is exploring a form of &quot;neural memory trace&quot; that exists within the model's weights, distinct from textual representations. This, combined with advancements in compaction (models managing their own context), aims to create a more robust and less confused AI.</p>
+<p>A key area of Engram's research is &quot;test-time training,&quot; or &quot;test-time compute.&quot; Instead of models spending extensive time &quot;prefilling&quot; or reading through vast amounts of data, Engram aims to scale training compute to a different time, allowing the model to immediately begin decoding or generating output. This is particularly relevant given the immense memory consumption of current models when processing large contexts – a single Wikipedia article can consume as much GPU memory as the entire set of parameters for a large model.</p>
+<h2>Enterprise Knowledge and Personal AI</h2>
+<p>Engram is focusing on enterprise use cases, where the scale of data and the stakes are high. They are working with companies like Harvey, dealing with vast file systems and complex queries that are not easily searchable with RAG. For instance, identifying all uncompleted M&amp;A deals in a year requires a holistic understanding across numerous client matters, a task that can be prohibitively expensive and time-consuming for current frontier models.</p>
+<p>&quot;The kind of queries where the whole is greater than the sum of its parts,&quot; Bman explains, &quot;that's where this kind of magic of training comes in.&quot; He believes that learning from a large corpus creates associations within the model, enabling it to infer and generalize in ways that RAG alone cannot.</p>
+<p>Looking further ahead, Engram's ambition is for every person to have a personalized AI model, a set of weights that represents their unique knowledge and expertise. This &quot;ultimate continual learning&quot; would function like a Tamagotchi, growing and improving as the user interacts with it, with the user controlling and incentivized to nurture their AI. While this vision may eventually run on personal devices, Engram's immediate focus is on enterprise solutions.</p>
+<h2>The Art of Internalization vs. Externalization</h2>
+<p>The question of what knowledge should reside &quot;in the weights&quot; versus what should be handled by RAG is a central challenge, mirroring the study of human memory. Bman notes that while some forgetting is healthy, the goal is for models to learn autonomously what to internalize and what to externalize.</p>
+<p>&quot;The holy grail is have the model learn for itself,&quot; he states. This involves models operating with both a &quot;notebook&quot; for external notes and a &quot;brain&quot; for internalized knowledge, deciding when to access each through training. User feedback is valuable, but the ultimate aim is for the model to discern and learn independently, rather than relying on constant human supervision.</p>
+<h2>Doing More With Less: The Future Paradigm</h2>
+<p>Engram's work is driven by the principle that &quot;efficiency and intelligence cannot really be decoupled.&quot; The current paradigm of &quot;doing more with more&quot; has been successful, but Bman believes the next frontier involves &quot;doing more with less&quot; to tackle increasingly ambitious and longer-horizon tasks. This efficiency is not about creating cheaper products, but about unlocking the ability to solve harder problems.</p>
+<p>The company is actively hiring researchers and infrastructure engineers who can contribute to building these complex systems. The challenges involve not only the research into continual learning and cost-efficient knowledge integration but also the massive infrastructure required to manage and deploy these learning systems across millions of endpoints.</p>
+<h2>A Taste of Success</h2>
+<p>The conversation culminated in a shared meal of beef meatballs, vegetables, and yellow rice, prepared during the show. The dish, a Mediterranean-inspired recipe Bman discovered while visiting his parents, was deemed a success, earning an &quot;eight out of ten, nine out of ten.&quot; The experience, Bman reflected, made for a &quot;funnest podcast&quot; and a comfortable environment for discussing complex ideas.</p>
+<p>Engram can be found at angram.com, and Dan Bman can be reached at dan@angram.com. The company is actively seeking talented individuals to join their mission of building the future of continual learning AI.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
