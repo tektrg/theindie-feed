@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stanford Online - Stanford CS229: Machine Learning Lecture 1 - Andrew Ng (Autumn 2018) - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Welcome to CS229 Machine Learning. This course has a long history at Stanford and is a cornerstone for many students looking to become experts in machine learning. Many of the products and services yo...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=jGwO_UgTS7I" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Stanford Online - Stanford CS229: Machine Learning Lecture 1 - Andrew Ng (Autumn 2018)</h1>
+      <time datetime="2020-04-17T20:07:45.000Z">
+        Saturday, April 18, 2020
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>CS229 Machine Learning: A Comprehensive Introduction</h1>
+<p>Welcome to CS229 Machine Learning. This course has a long history at Stanford and is a cornerstone for many students looking to become experts in machine learning. Many of the products and services you use today were built by former students of this very class. Our goal this quarter is to equip you with the knowledge and tools to become future leaders in this rapidly evolving field, whether you aim to innovate within large tech companies, launch your own startup, or transform industries like healthcare, transportation, or autonomous systems.</p>
+<p>The demand for machine learning skills is immense and continues to grow. Machine learning and AI are no longer confined to the tech industry; they are being applied in fields as diverse as English literature, law, manufacturing, and logistics. The pace of progress in machine learning has accelerated dramatically, creating unprecedented opportunities for meaningful and impactful work. Just as the internet revolutionized industries two decades ago, machine learning is poised to do the same today, offering unique opportunities for those who master its principles.</p>
+<h2>Course Logistics and Structure</h2>
+<p>This course will cover a broad range of machine learning topics over the next 10 weeks. We aim to make you an expert in machine learning, capable of building significant applications in both academic and professional settings. The field has become pervasive, extending far beyond traditional tech companies. My own experience leading AI transformations at Google and Baidu has shown me the profound impact machine learning can have. This course will prepare you for roles in leading tech companies or to drive innovation in other sectors. For those interested in research, you will gain the skills to read, understand, and contribute to cutting-edge machine learning research.</p>
+<p>The curriculum is constantly updated to reflect the accelerating pace of progress in machine learning. This year, we are transitioning to a digital-only format for course materials and shifting programming assignments from MATLAB/Octave to Python and NumPy.</p>
+<h3>Prerequisites</h3>
+<p>We assume a foundational understanding of basic computer science principles, including Big O notation, data structures like queues, stacks, and binary trees. Familiarity with basic probability (random variables, expected value, variance) and linear algebra (matrices, vectors, matrix-vector multiplication) is also expected. For those who feel their knowledge in these areas is rusty, we will offer review sessions on Fridays covering prerequisite material, including basic probability, statistics, and Python/NumPy.</p>
+<h3>Homework and Projects</h3>
+<p>A significant part of learning machine learning involves hands-on practice. You will engage with homework assignments and an open-ended class project.</p>
+<p><strong>Academic Integrity:</strong> We encourage you to form study groups, as collaborative learning can be highly beneficial in technical courses like this. However, while discussing homework problems with friends is encouraged, the final solutions you submit must be your own work. Please refer to the detailed honor code on the course website for specific guidelines on collaboration. This is crucial for maintaining the integrity and value of the CS229 credential, which is recognized by employers.</p>
+<p><strong>Class Project:</strong> One of the most rewarding aspects of CS229 is the class project. You will work in small groups (ideally 2-3 people, with a maximum of 4 for exceptional scope) to complete a meaningful machine learning project. Previous projects have spanned diverse applications, from medical diagnostics and art generation to engineering challenges and literary analysis. The course website features examples of past projects to inspire your own ideas. Starting to brainstorm project ideas and potential collaborators today is highly recommended.</p>
+<h3>Lectures and Discussion Sections</h3>
+<p>Main lectures will be held on Mondays and Wednesdays. All lectures are recorded and made available online. Additionally, discussion sections are held on Fridays, taught by TAs. Attendance at discussion sections is optional, and no material critical for exams will be introduced exclusively in these sessions.</p>
+<p>The first three discussion sections will focus on reviewing prerequisite material: linear algebra, basic probability and statistics, and Python/NumPy. Subsequent sections will cover more advanced, optional topics such as convex optimization, Hidden Markov Models, and time series analysis.</p>
+<h3>Online Tools</h3>
+<p>We will utilize Piazza for online discussions. This platform is highly encouraged for technical and logistical questions, as it often leads to faster responses from both TAs and fellow students. For private matters, you may email the class staff directly. Gradescope will be used for online grading.</p>
+<h3>Course Structure Changes</h3>
+<p>This year, we are making two significant logistical changes:</p>
+<ol>
+<li><strong>Programming Language:</strong> We are transitioning programming assignments to Python and NumPy.</li>
+<li><strong>Midterm Exam:</strong> Instead of a timed midterm exam, we will have a take-home midterm.</li>
+</ol>
+<h2>Introduction to Machine Learning</h2>
+<p>Machine learning is a field that empowers computers to learn without explicit programming. Arthur Samuel, a pioneer in the field, defined it as &quot;a field of study that gives computers the ability to learn without being explicitly programmed.&quot; This concept was revolutionary decades ago, demonstrated by his checkers-playing program that learned to outperform its creator. Today, we are accustomed to AI surpassing human performance in narrow tasks, but Samuel's work was an early testament to this potential.</p>
+<p>Tom Mitchell's definition offers a more formal perspective: &quot;A program is said to learn from experience E with respect to task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.&quot; Here, experience refers to the data the program learns from, the task is what the program aims to achieve, and the performance measure quantifies its success.</p>
+<h3>Major Categories of Machine Learning Tools</h3>
+<p>The course will explore several key categories of machine learning tools:</p>
+<h4>1. Supervised Learning</h4>
+<p>Supervised learning involves learning a mapping from input features (X) to output labels (Y) based on a labeled dataset.</p>
+<ul>
+<li><strong>Regression:</strong> Predicting a continuous output value. An example is predicting housing prices based on features like size.</li>
+<li><strong>Classification:</strong> Predicting a discrete output value. Examples include determining if a tumor is benign or malignant based on its size, or classifying emails as spam or not spam.
+<ul>
+<li><strong>Logistic Regression:</strong> A common algorithm for classification tasks.</li>
+<li><strong>Support Vector Machines (SVMs):</strong> Powerful algorithms capable of handling high-dimensional feature spaces, even infinite-dimensional ones, through techniques like kernels.</li>
+</ul>
+</li>
+</ul>
+<p>A classic example of supervised learning is autonomous driving, where a system learns to steer a vehicle by observing human drivers' inputs (images from the road) and corresponding steering actions.</p>
+<h4>2. Machine Learning Strategy (Learning Theory)</h4>
+<p>Beyond specific algorithms, effective machine learning practice requires strategic decision-making. This involves understanding how to systematically approach a machine learning project, making informed choices about data collection, algorithm selection, and model debugging. The goal is to evolve machine learning from an art based on intuition to a systematic engineering discipline. This section will equip you with principles to efficiently build effective learning systems, akin to how experienced software engineers use profilers to optimize code.</p>
+<h4>3. Deep Learning</h4>
+<p>Deep learning, a subfield of machine learning, has seen rapid advancements and is a major focus in current research. We will cover the basics of training neural networks, understanding their architecture and capabilities. While CS229 provides a broad overview of machine learning algorithms, CS230 specifically focuses on deep learning.</p>
+<h4>4. Unsupervised Learning</h4>
+<p>Unsupervised learning deals with unlabeled data (only inputs X, no outputs Y). The goal is to discover interesting structures, patterns, or relationships within the data.</p>
+<ul>
+<li><strong>Clustering:</strong> Grouping similar data points together. Examples include identifying clusters of news articles on the same topic, segmenting customers into distinct market groups, or analyzing genetic data.</li>
+<li><strong>Independent Component Analysis (ICA):</strong> Used for problems like the &quot;cocktail party problem,&quot; where the goal is to separate mixed audio signals into individual voices.</li>
+<li><strong>Learning Analogies:</strong> Discovering relationships in text data, such as &quot;man is to woman as king is to queen.&quot;</li>
+</ul>
+<p>While supervised learning has driven much of the recent economic value from machine learning, unsupervised learning remains crucial for exploratory data analysis and cutting-edge research.</p>
+<h4>5. Reinforcement Learning</h4>
+<p>Reinforcement learning involves training an agent to make sequential decisions in an environment to maximize a cumulative reward. This is akin to training a pet: rewarding good behavior and penalizing bad behavior.</p>
+<ul>
+<li><strong>Robotics:</strong> Training robots, such as autonomous helicopters or robot dogs, to perform complex tasks like flying or navigating obstacles without explicit programming.</li>
+<li><strong>Game Playing:</strong> Achieving superhuman performance in games like Atari or Go (e.g., AlphaGo).</li>
+<li><strong>Optimization:</strong> Applying reinforcement learning to optimize logistic systems and other complex processes.</li>
+</ul>
+<h3>Course Overview</h3>
+<p>Over the next 10 weeks, you will learn about supervised learning, machine learning strategy, deep learning, unsupervised learning, and reinforcement learning. We encourage you to actively engage with the material, form study groups, and participate in discussions on Piazza.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>CS229 provides a comprehensive foundation in machine learning, preparing students for careers in research and industry.</li>
+<li>The course covers supervised learning, machine learning strategy, deep learning, unsupervised learning, and reinforcement learning.</li>
+<li>Hands-on experience through homework and a class project is central to the learning process.</li>
+<li>Academic integrity is paramount; collaboration is encouraged for learning, but submitted work must be original.</li>
+<li>The course emphasizes a systematic, engineering approach to machine learning, moving beyond intuition and &quot;black magic.&quot;</li>
+<li>Active participation on Piazza and forming study groups are highly recommended for success.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
