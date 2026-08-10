@@ -27,11 +27,22 @@ git commit -m "$COMMIT_MSG"
 
 echo ""
 echo "🚀 Pushing to GitHub..."
-git push
+if ! git push; then
+  echo ""
+  echo "FEED_PUBLISH_FAILED: git push rejected. Commit is local-only; feed.xml on the live site is now STALE."
+  echo "  Repo: $(git remote get-url origin)"
+  echo "  Active gh account: $(gh auth status 2>&1 | grep -A1 'Active account: true' | head -1 | sed 's/^[[:space:]]*//')"
+  echo "  Fix: confirm this repo's pinned credential.helper points at the account with push access, then re-run: cd $(pwd) && git push"
+  exit 1
+fi
 
 echo ""
 echo "☁️  Deploying to Cloudflare Pages..."
-npx wrangler pages deploy public --project-name "${CLOUDFLARE_PAGES_PROJECT:-theindie-feed}" --branch "${CLOUDFLARE_PAGES_BRANCH:-main}"
+if ! npx wrangler pages deploy public --project-name "${CLOUDFLARE_PAGES_PROJECT:-theindie-feed}" --branch "${CLOUDFLARE_PAGES_BRANCH:-main}"; then
+  echo ""
+  echo "FEED_PUBLISH_FAILED: git push succeeded but Cloudflare Pages deploy failed. Site may be stale."
+  exit 1
+fi
 
 echo ""
 echo "✅ Done! Feed has been pushed and deployed."
