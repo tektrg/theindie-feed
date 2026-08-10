@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y Combinator - Jeff Dean: The 1% Rule for Building in AI - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Jeff Dean, a titan in the field of artificial intelligence and systems engineering, shares his insights on the rapid evolution of AI, the future of hardware, and the crucial skills for aspiring founde...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=CxXgV54KzpQ" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Y Combinator - Jeff Dean: The 1% Rule for Building in AI</h1>
+      <time datetime="2026-07-30T21:03:53.000Z">
+        Friday, July 31, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <h1>The Future of AI: From Junior Engineers to Self-Improving Systems and Beyond</h1>
+<p>Jeff Dean, a titan in the field of artificial intelligence and systems engineering, shares his insights on the rapid evolution of AI, the future of hardware, and the crucial skills for aspiring founders. From his foundational work on MapReduce and TPUs to his bold predictions about AI's capabilities, Dean offers a compelling look at where the field is heading and how individuals can contribute to its advancement.</p>
+<h2>AI Models: Beyond Junior Engineers</h2>
+<p>A year ago, Jeff Dean famously predicted that AI models had reached the level of a junior engineer. Reflecting on this statement, he notes that AI's ability to handle longer-running, agent-based coding tasks has advanced even faster than he anticipated. Beyond coding, these agent-based systems are now demonstrating significant capabilities in other domains, a trend Dean believes will be increasingly important.</p>
+<p>Looking ahead to 2027, Dean predicts a surge in the automation of Machine Learning (ML) systems themselves. This involves ML systems improving their own capabilities through extensive experimentation, breaking down complex problems into sub-problems, and running these in automated, iterative loops. This self-improvement cycle, he suggests, will not be limited to ML but will extend to other scientific and engineering fields where measurable objectives can be defined.</p>
+<h2>The &quot;It Fits the Memory&quot; Moment of Today</h2>
+<p>Drawing a parallel to Google Search's historical shift from hard drives to RAM in 2001, Dean identifies a similar &quot;it fits the memory&quot; moment for AI today. This moment centers on the realization that high-performance, low-energy inference hardware is critical for making AI systems accessible to a wider audience. The key, he explains, lies in specialized hardware that can achieve significantly lower latency and higher energy efficiency compared to general-purpose devices like GPUs or TPUs. This specialization is crucial for reducing the wait times users experience when interacting with AI models, thereby unlocking new possibilities.</p>
+<h2>AI Agents: Running for Weeks and Tackling Complex Tasks</h2>
+<p>An assumption that many in the AI community may still hold, according to Dean, is the limitation on how long AI agents can operate. He asserts that agent-based systems, powered by highly capable models, can already run for days or even weeks to accomplish incredibly complex tasks. These tasks can include implementing entirely new versions of software in different programming languages, focusing on improved safety or performance properties.</p>
+<h2>The Napkin Math Behind TPUs and the Energy Imperative</h2>
+<p>Dean is renowned for his ability to perform &quot;napkin math&quot; – quick calculations that reveal fundamental truths about system design. A prime example is the origin of the Tensor Processing Unit (TPU). In 2013, the dramatic improvement in speech recognition accuracy due to deep learning models, coupled with their computational expense, led to a back-of-the-envelope calculation. If speech recognition became widely adopted, the existing CPU infrastructure would require a massive, cost-prohibitive doubling of Google's server fleet.</p>
+<p>This calculation highlighted the need for specialized hardware. The resulting TPUs were designed for low-precision dense linear algebra, the core of most modern ML algorithms. This specialization yielded chips that were 30 to 80 times more energy-efficient and 20 to 30 times lower in latency than CPUs and GPUs of the time, laying a foundational stone for today's AI advancements.</p>
+<p>A critical insight from Dean is that energy has become the primary unit of measurement in AI. He points out that performing a calculation costs roughly one picojoule, while moving data for that calculation can cost a thousand times more. This stark difference dictates many design decisions in AI, including the necessity of batching data to amortize the energy cost of data movement. This energy constraint means that what might seem like a &quot;model problem&quot; is often, in fact, an energy or data I/O problem.</p>
+<h2>Context Engineering: The Next Frontier</h2>
+<p>The focus of AI progress is shifting from solely improving models (larger parameters, more data) to encompassing the entire system around the model. This includes retrieval tools, memory, agent capabilities, and what is broadly termed &quot;context engineering.&quot; Dean explains that the model is just one piece of the puzzle; the overall system needs to effectively utilize tools, retrieve relevant information, maintain a history of past interactions, and integrate this information into the model's current context.</p>
+<p>Unlike the vast, undifferentiated training data, the context provided directly to the model for a specific problem is much clearer. The ability to understand available tools, decompose problems into sequences of tool calls, and evaluate different approaches is becoming paramount. This shift is significant because, unlike the resource-intensive process of training large models, context engineering is accessible to anyone with API access to models like Gemini, allowing them to build their own retrieval systems and tool integrations.</p>
+<p>To excel at context engineering, Dean advises using AI models to solve problems and observing where they falter. Improvements can often be made not by adjusting model parameters, but by providing better guidelines, writing skills for tool usage, and creating self-improving setups.</p>
+<h2>Where Startups Can Still Win Against Giants</h2>
+<p>While large organizations like Google are building general-purpose models and infrastructure, Dean sees significant opportunities for smaller teams. Startups can win by focusing on specific domains where a highly tailored solution, perhaps with a specialized model and a set of unique skills, can offer a significant advantage. The key is to identify domains where general models are not yet proficient or where a deep passion for a niche problem can drive innovation. However, he cautions that founders must also consider the durability of their advantage, as general models are rapidly improving across a wider range of tasks.</p>
+<p>The most important criterion for founders, Dean emphasizes, is to pick a problem they are genuinely excited about and believe will be useful. He suggests looking for areas where current general models fail completely (0-1% success rate) rather than areas where they show partial success, as the latter indicates capabilities that are likely to improve rapidly. This could involve building products that leverage unique data access, such as personal user information, or developing highly specialized, niche models for domains like protein folding (AlphaFold), material science, or chip design, where a focused approach can yield superior accuracy and affordability.</p>
+<h2>The Scarce Skill: Taste and Vision</h2>
+<p>As AI agents become more capable of writing code and managing complex tasks, the scarce skill will shift from execution to direction. Dean likens this to research, where the ability to identify the right problem to solve is often more critical than the technical execution. This &quot;high-level wisdom&quot; of knowing what to work on, he believes, is something models will not easily replicate.</p>
+<p>Developing this &quot;taste&quot; is a blend of experience, learning from past successes and failures, and engaging in &quot;crazy thought experiments.&quot; These thought experiments involve questioning fundamental assumptions, such as the industry's long-standing pursuit of perfectly reliable transistors. Dean posits that exploring systems built from inherently unreliable components, much like the human brain, could unlock new design methodologies and fabrication possibilities.</p>
+<h2>AI That Builds Better AI: The Self-Improving Loop</h2>
+<p>Dean is particularly excited about systems that can compound and build AI that builds AI. This concept is rooted in the scientific method: proposing an experiment, implementing the necessary tools, running the experiment, and evaluating the results. By automating this loop and drastically reducing its latency, AI can tackle a vast array of problems in science, engineering, and ML model design.</p>
+<p>This automated loop enables recursive self-improvement. For instance, in quantum chemistry, colleagues trained a neural network to approximate computationally intensive simulations, achieving a 300,000x speedup. This dramatically accelerates scientific discovery by allowing for the screening of millions of possibilities.</p>
+<h2>The Lesson of Rejection and Building Something That Matters</h2>
+<p>Even groundbreaking ideas can face rejection, as exemplified by the paper on distillation by Jeff Dean, Geoffrey Hinton, and Oriol Vinyals, which was initially rejected from a major conference. The lesson, Dean stresses, is to persevere.</p>
+<p>Reflecting on his career, Dean advises aspiring founders and engineers to focus on working on problems they deeply care about, with colleagues they enjoy, and where their work can make a positive impact on the world. Whether joining a frontier lab or starting a company, the ultimate goal should be to contribute something meaningful.</p>
+<p>When building teams, Dean emphasizes finding individuals with complementary skills, low egos, and a collaborative spirit. He views an engineering or research career as an ongoing process of adding new tools to one's &quot;tool belt&quot; to tackle increasingly complex problems.</p>
+<p>Looking ahead, Dean hopes future innovators will tackle problems in areas like new hardware approaches, more data-efficient ML algorithms, continuous learning, multi-agent interactions, and fostering better discourse and connection among people globally. The world, he concludes, is full of problems waiting to be solved, and the pursuit of making &quot;even cooler things occur&quot; is a worthwhile endeavor.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>AI's rapid advancement:</strong> AI models are quickly surpassing the capabilities of junior engineers, excelling in complex, agent-based tasks and showing promise in diverse domains.</li>
+<li><strong>Hardware specialization is key:</strong> Low-latency, energy-efficient inference hardware is crucial for widespread AI accessibility, representing a significant &quot;it fits the memory&quot; moment.</li>
+<li><strong>Energy as the primary constraint:</strong> The vast energy cost of data movement compared to computation dictates many AI system designs, including batching strategies.</li>
+<li><strong>Context engineering is the new frontier:</strong> Building effective AI systems now relies heavily on managing context, tools, and retrieval, a skill accessible to many.</li>
+<li><strong>Startups can find niches:</strong> Focusing on specific domains with specialized models or unique data access can provide a competitive edge against general-purpose AI.</li>
+<li><strong>Taste and vision are paramount:</strong> The ability to identify impactful problems and guide AI agents is a scarce and valuable skill.</li>
+<li><strong>Question assumptions:</strong> Thought experiments, even those that seem unconventional, can lead to breakthrough innovations.</li>
+<li><strong>Self-improving AI systems:</strong> Automating the scientific method through rapid experimentation loops will accelerate progress across many fields.</li>
+<li><strong>Perseverance is crucial:</strong> Rejection is a part of innovation; the key is to continue pursuing impactful ideas.</li>
+<li><strong>Build something that matters:</strong> Focus on problems you care about, collaborate with great people, and strive to make a positive difference in the world.</li>
+</ul>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
