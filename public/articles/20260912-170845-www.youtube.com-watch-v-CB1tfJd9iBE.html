@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Plane Corporation - The 5 Levels of Running Coding Agents - The Indie Feed</title>
+  <script>(function () {
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      document.documentElement.dataset.theme = storedTheme;
+    } else {
+      delete document.documentElement.dataset.theme;
+    }
+  } catch (error) {}
+})();</script>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="0:00 · If you want to scale a software product nowadays, you&#039;re going to be building with AI coding agents, lots of them, and pretty quickly the hard part stops being how to prompt them and becomes ho...">
+</head>
+<body class="article-page">
+  <header class="site-header">
+    <nav class="topbar" aria-label="Article navigation">
+      <a class="back-link" href="../index.html">Back to feed</a>
+      <div class="topbar__actions">
+        <a class="button-link" href="https://www.youtube.com/watch?v=CB1tfJd9iBE" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="theme-control" aria-label="Theme preference">
+        <span class="theme-control__label">Theme</span>
+        <button type="button" data-theme-choice="system">System</button>
+        <button type="button" data-theme-choice="light">Light</button>
+        <button type="button" data-theme-choice="dark">Dark</button>
+      </div>
+      </div>
+    </nav>
+    <div class="article-masthead">
+      <p class="kicker">The Indie Feed / Article</p>
+      <h1>Control Plane Corporation - The 5 Levels of Running Coding Agents</h1>
+      <time datetime="2026-09-05T21:25:36.000Z">
+        Sunday, September 6, 2026
+      </time>
+    </div>
+  </header>
+  <main>
+    <article class="article-body">
+      <p><img src="https://www.youtube.com/watch?v=CB1tfJd9iBE" alt=""></p>
+<h2>Transcript</h2>
+<h3>Intro</h3>
+<p><strong>0:00</strong> · If you want to scale a software product nowadays, you're going to be building with AI coding agents, lots of them, and pretty quickly the hard part stops being how to prompt them and becomes how to manage them and where they actually run.</p>
+<p><strong>0:11</strong> · One agent in your IDE is easy. Dozens of agents across different repos, tools, and infrastructure gets complicated fast. In this video, I'll show you the five levels of managing agents that I've personally worked through. By the end, you'll know some of the tools available at each level, what problems they solve, and how to tame the agent chaos. I'm Matt. I've been a software engineer for 20 years, and this year alone I've burned through literally billions of tokens, which is kind of silly. These levels are what I've worked through personally and some of the tools that have served me well. This is not the definitive list, but I think what I've learned can save you some time.</p>
+<h3>The five levels</h3>
+<p><strong>0:43</strong> · All right, let's dive in with level one, which is where almost everyone starts, one agent inside the IDE, Cursor, Co-pilot, whatever editor you're probably already using. You give it a task, it changes some files, you review the diff, and you move on. Honestly, this is still a great way to work. new to vibe coding with agents, you can still get an enormous amount of stuff done without ever leaving this level.</p>
+<h3>Level one IDE</h3>
+<p><strong>1:05</strong> · And I should mention that these levels aren't necessarily better as you go up.</p>
+<p><strong>1:09</strong> · You're not a better developer or a person at level five than you are at level one. These levels are about managing complexity in the product and with the agents. But eventually, personally, I started wanting less between me and the agent. The IDE is choosing a lot of the workflow for me, how the agent runs, how I interact with it, what gets exposed, and often there's another subscription on top of the expensive models that you're already paying for. So, the realization for me at this level was that the agent doesn't need to live inside an IDE. It's really just a process.</p>
+<h3>Level two terminal</h3>
+<p><strong>1:39</strong> · So, that brings us to level two, which is running the agent directly in the terminal, Claude Code, CodeX, Open Code, whatever you want. For me, this immediately feels faster and more direct. I pick the agent, I pick the model, the machine, the tools, the environment around it. A lot of the ecosystem around this is also open source, so open code tmux herder. We'll talk more about those in a minute. I'm not locked into one proprietary IDE deciding how the workflow works and then paying 40 bucks a month or whatever on top of that.</p>
+<p><strong>2:08</strong> · I found it also becomes much easier to script, combine tools, SSH into other machines, or move the exact same workflow somewhere else entirely. Now, there's a ton of personal preference here. I'm on Arch Linux. I'm used to keyboard nav. I really like toolies like lazy docker and lazy get.</p>
+<p><strong>2:26</strong> · Basically, I'm a nerd and so the terminal just kind of feels natural to me. If you're not used to the terminal at all, no problem, and jumping into a full terminal-based workflow is a big leap if you're used to a classic Mac UI.</p>
+<p><strong>2:38</strong> · So, levels one and two are about where you interact with the agents and there's a huge amount of personal preference here. Whatever you choose, once you get an agent working on something, the next obvious question is, &quot;Why would I stop at just one agent?&quot; So, level three is obviously running multiple agents at once, and I think everyone gets here pretty fast. You send agent one off on a task and you sit back and you realize that you should probably go do something else, and so you dispatch agent two. And now both of them are working, and so you might as well get agent number three working.</p>
+<h3>Level three multi-agent</h3>
+<p><strong>3:07</strong> · Next thing you know, you've got 12 terminal windows open and you can't remember which agent is doing what. So, the most obvious tool for this is tmux, which I switched to, and tmux has been around forever. It's the obvious first step for this. It keeps multiple sessions alive in the background. Each agent can have its own pane, and you can manage simultaneously. You can attach and detach and reattach. It's really great. It makes managing the processes much, much easier. Now, tmux has been around for almost 20 years. It definitely works.</p>
+<p><strong>3:35</strong> · It's a little clunky to set up, and while it has a lot of great stuff, it wasn't built with agents in mind from scratch. It's still not obvious which agent is actually working right now, which one is sitting there waiting on a question that I haven't answered yet, which one finished 2 hours ago and I just haven't checked in with it. There is extra tooling that can add this to tmux, but that does bring me to Herder, which fixes a lot of this by default. Think of Herder like tmux, but it was designed from the ground up to manage agents.</p>
+<p><strong>4:04</strong> · It manages the sessions, so I'm not the one holding five or 25 mental tabs open. Now, I don't want to turn this into a Herder tutorial, but it's been a huge win for me and solved a lot of the minor annoyances I had with tmux. So, tmux will always have a special place in my heart, but this does raise an immediate problem when you've got dozens of agents running. Every one of those agents is still running on the machine in front of me. If I close the laptop, then all of it stops.</p>
+<p><strong>4:31</strong> · That brings us naturally to level four, which is getting the agents off of your machine. Now, I kind of backed into this one a couple of years ago before cloud agents were really common. I have a laptop and I have a desktop and I ran into two issues pretty quick. I needed the desktop GPU for training ML models or other GPU intensive stuff, but that tied me to the desk, which isn't really fun. Number two, I'd be working on my laptop at a coffee shop or on a plane or whatever, have a bunch of agents at work, and then they'd all die and I'd have to resume it later.</p>
+<h3>Level four remote machine</h3>
+<p><strong>5:02</strong> · It was just annoying. So, I put the laptop and the desktop on the same Tailscale network. I SSH from the laptop to the desktop, fire up tmux, I hadn't found Herder yet at that point, and boom, I'm working on my desktop from my laptop. As long as the desktop doesn't die, the agents continue to run. I can run GPU-based workloads, shut the laptop down, and nothing is lost. It was a massive productivity gain. But with Herder, it's even easier.</p>
+<p><strong>5:28</strong> · I just start Herder with the remote flag, point it at the desktop machine on my laptop over the Tailnet, and it handles the SSH connection for you.</p>
+<p><strong>5:36</strong> · Super cool, another win for Herder, which is why it's become my daily driver. The catch here is obviously you need a second machine and you need to keep it on and reachable all the time.</p>
+<p><strong>5:46</strong> · It's worked really well for me for months, but it does naturally lead to the next and final level, which is level five. Level five is where you just move off of physical hardware completely and all the agents run in the cloud. Now, Cursor, Codex, Claude, they all have cloud agents now and that's one really simple way to accomplish pushing all of your agents into the cloud. It's not my preference most of the time. For me, this is the same reason I moved from IDEs to the terminal a long time ago. I just want more control than the vendor managed solutions give me. I want to choose the agent.</p>
+<h3>Level five cloud</h3>
+<p><strong>6:16</strong> · I want it to feel like my desktop, just disposable and in the cloud. So, I've been testing this out with control plane sandboxes and I'll just walk you through what I've been doing with those recently. First, I put together a custom image with my usual tools, my dot files, Claude code, open code Herder and then I just launch a sandbox from that image. Control plane spins this up in like a minute and then I connect to it, start Herder and hand a few agents some work. And just like before, the agents can now work uninterrupted and it's not dependent on any of my hardware. Super cool.</p>
+<p><strong>6:45</strong> · The compute in control plane does have a cost while you're running it, but if you're not actively doing anything with it, you just suspend the sandbox, your compute goes to zero and then later on you can resume that instance again. Same as if you turned off your desktop machine. So, it gives you a ton of control and flexibility and the really cool thing about this versus something like Cursor is that I get to decide how connected that sandbox is.</p>
+<p><strong>7:07</strong> · I can leave it completely isolated, reaching nothing outside itself, which is super safe, or I can connect it to my whole infrastructure in control plane if I want it to have access. Because the sandboxes run inside control plane, I can give it access to resources in AWS, GCP, Azure, whatever, including all the identity management and credentials that are controlled and managed in control plane.</p>
+<p><strong>7:32</strong> · So, think of it like this, Cursor, Claude and Codex give their agents remote computers, control plane gives you remote computers that any agent can inhabit and then you decide where that computer lives. So, I think there are things at each level here that are absolute wins. For me, Herder and remote agents of any kind was a huge productivity boost. Some of these are preference or they depend on specific use cases. If you haven't tried something on this list, give it a go.</p>
+<p><strong>7:59</strong> · Let us know in the comments how it worked. There's links in the description if you want to try out Control Plane.</p>
+<p><strong>8:04</strong> · And definitely give tmux or for short Herder a try if you haven't made that jump yet.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>End of article. Return to the chronological edition for the rest of the feed.</p>
+  </footer>
+  <script>(function () {
+  var buttons = document.querySelectorAll('[data-theme-choice]');
+  var root = document.documentElement;
+
+  function applyTheme(theme) {
+    if (theme === 'system') {
+      delete root.dataset.theme;
+    } else {
+      root.dataset.theme = theme;
+    }
+
+    buttons.forEach(function (button) {
+      var isSelected = button.dataset.themeChoice === theme;
+      button.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    try {
+      localStorage.setItem('indie-feed-theme', theme);
+    } catch (error) {}
+  }
+
+  var initialTheme = 'system';
+  try {
+    var storedTheme = localStorage.getItem('indie-feed-theme');
+    if (storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system') {
+      initialTheme = storedTheme;
+    }
+  } catch (error) {}
+
+  applyTheme(initialTheme);
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyTheme(button.dataset.themeChoice);
+    });
+  });
+})();</script>
+  <script>(function () {
+  // E-reader friendly keyboard/button page-turn navigation
+  function nextPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) + amount);
+    }
+  }
+
+  function prevPage() {
+    var overlap = 40;
+    var amount = window.innerHeight - overlap;
+    if (amount < 100) amount = window.innerHeight;
+    
+    if (window.scrollBy) {
+      window.scrollBy(0, -amount);
+    } else {
+      window.scrollTo(0, (window.pageYOffset || document.documentElement.scrollTop) - amount);
+    }
+  }
+
+  document.addEventListener('keydown', function (e) {
+    // Skip if user is focusing an input field
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+      return;
+    }
+
+    switch (e.key) {
+      case 'PageDown':
+      case 'ArrowDown':
+      case ' ': // Spacebar
+      case 'ArrowRight':
+        e.preventDefault();
+        nextPage();
+        break;
+      case 'PageUp':
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        prevPage();
+        break;
+    }
+  });
+})();</script>
+</body>
+</html>
